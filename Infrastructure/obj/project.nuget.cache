@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "os5aZqBcWsY=",
+  "dgSpecHash": "7lv62eaTb5g=",
   "success": true,
   "projectFilePath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Infrastructure\\Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\willk\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

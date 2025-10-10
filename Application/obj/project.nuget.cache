@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1pNE0/pULo=",
+  "dgSpecHash": "z1lUuCHhcL4=",
   "success": true,
   "projectFilePath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\willk\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
