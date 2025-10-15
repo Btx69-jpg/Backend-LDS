@@ -60,8 +60,25 @@ namespace Domain.Entities
          * 
          * Retororna o pedido de adesão adicionado ou null se não for possível adicionar
          */
-        public MembershipRequests addMemberShipRequest(MembershipRequests membershipRequests) {
-            return null;
+        public MembershipRequests AddMembershipRequest(MembershipRequests membershipRequests) {
+            if (membershipRequests == null)
+            {
+                return null;
+            }
+
+            if (MembershipRequests.Any(mr => mr.Id == membershipRequests.Id))
+            {
+                return null;
+            }
+
+            MembershipRequests.Add(membershipRequests);
+
+            membershipRequests.Player = this;
+            membershipRequests.idPlayer = this.Id;
+
+            counterMembershipRequests = MembershipRequests.Count;
+
+            return membershipRequests;
         }
 
         /***
