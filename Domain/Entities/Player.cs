@@ -88,8 +88,33 @@ namespace Domain.Entities
          *  
          *  Retorna o pedido de adesão removido ou null se não for possível remover
          */
-        public MembershipRequests RemoveMembershipRequest(MembershipRequests membershipRequests)
+        public MembershipRequests removeMembershipRequest(MembershipRequests membershipRequests)
         {
+            if (membershipRequests == null)
+            {
+                return null;
+            }
+
+            var existing = MembershipRequests.FirstOrDefault(mr => mr.Id == membershipRequests.Id);
+            if (existing == null)
+            {
+                return null;
+            }
+
+            MembershipRequests.Remove(existing);
+            counterMembershipRequests = MembershipRequests.Count;
+
+            return existing;
+        }
+
+        /***
+         * Metodo que permite obter um pedido de adesão a uma equipa pelo seu id
+         * 
+         * id: O id do pedido de adesão a obter
+         * 
+         * Retorna o pedido de adesão com o id especificado ou null se não for encontrado
+         */
+        public MembershipRequests getMembershipRequestById(Guid id) {
             return null;
         }
 
