@@ -50,7 +50,7 @@ namespace Domain.Entities
          */
         private MembershipRequests FindMembershipRequest(Guid idMembershipRequest)
         {
-            return null;
+            return MembershipRequests.FirstOrDefault(mr => mr.Id == idMembershipRequest);
         }
 
         /***
@@ -60,7 +60,8 @@ namespace Domain.Entities
          * 
          * Retororna o pedido de adesão adicionado ou null se não for possível adicionar
          */
-        public MembershipRequests addMemberShipRequest(MembershipRequests membershipRequests) {
+        public MembershipRequests AddMembershipRequest(MembershipRequests membershipRequests)
+        {
             return null;
         }
 
@@ -71,18 +72,8 @@ namespace Domain.Entities
          *  
          *  Retorna o pedido de adesão removido ou null se não for possível remover
          */
-        public MembershipRequests removeMembershipRequest(MembershipRequests membershipRequests) {
-            return null;
-        }
-
-        /***
-         * Metodo que permite obter um pedido de adesão a uma equipa pelo seu id
-         * 
-         * id: O id do pedido de adesão a obter
-         * 
-         * Retorna o pedido de adesão com o id especificado ou null se não for encontrado
-         */
-        public MembershipRequests getMembershipRequestById(Guid id) {
+        public MembershipRequests RemoveMembershipRequest(MembershipRequests membershipRequests)
+        {
             return null;
         }
 
