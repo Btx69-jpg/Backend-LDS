@@ -71,8 +71,23 @@ namespace Domain.Entities
          *  
          *  Retorna o pedido de adesão removido ou null se não for possível remover
          */
-        public MembershipRequests removeMembershipRequest(MembershipRequests membershipRequests) {
-            return null;
+        public MembershipRequests removeMembershipRequest(MembershipRequests membershipRequests)
+        {
+            if (membershipRequests == null)
+            {
+                return null;
+            }
+
+            var existing = MembershipRequests.FirstOrDefault(mr => mr.Id == membershipRequests.Id);
+            if (existing == null)
+            {
+                return null;
+            }
+
+            MembershipRequests.Remove(existing);
+            counterMembershipRequests = MembershipRequests.Count;
+
+            return existing;
         }
 
         /***
