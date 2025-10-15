@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\migrations\\20251014161312_updatedatabasefields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20251014161312_updatedatabasefields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,19 +23,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20251014161312_UpdateDataBaseFields.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Migrations\\20251014161312_UpdateDataBaseFields.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251014161312_UpdateDataBaseFields.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Migrations\\20251014161312_UpdateDataBaseFields.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251014161312_UpdateDataBaseFields.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T16:13:12.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "AmateurFootballContext.cs",
               "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Data\\AmateurFootballContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AmateurFootballContext.cs",
