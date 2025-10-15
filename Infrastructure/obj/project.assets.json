@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\willk\\.nuget\\packages\\",
-      "outputPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,11 +107,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj": {
-              "projectPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj"
+            "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Application.csproj"
             },
-            "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Domain\\Domain.csproj"
+            "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Domain.csproj"
             }
           }
         }

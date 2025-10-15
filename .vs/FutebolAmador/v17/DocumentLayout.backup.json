@@ -3,24 +3,68 @@
   "WorkspaceRootPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\matchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\matchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\statsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\statsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -31,20 +75,8 @@
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\validators\\createteamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\validators\\createteamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -53,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|solutionrelative:tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +110,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "Api\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAAAYAAACQmZmZmZk+wA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:52.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MatchService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MatchService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MatchService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MatchService.cs",
+              "RelativeToolTip": "Application\\Services\\MatchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:30.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MembershipService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MembershipService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MembershipService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MembershipService.cs",
+              "RelativeToolTip": "Application\\Services\\MembershipService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:29.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SearchService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\SearchService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\SearchService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\SearchService.cs",
+              "RelativeToolTip": "Application\\Services\\SearchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:27.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StatsService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\StatsService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\StatsService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\StatsService.cs",
+              "RelativeToolTip": "Application\\Services\\StatsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:25.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "Application\\Services\\TeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:23.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:21.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Api\\WeatherForecast.cs",
@@ -90,11 +209,12 @@
               "RelativeToolTip": "Api\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:37:26.788Z"
+              "WhenOpened": "2025-10-03T10:37:26.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Api.http",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.http",
               "RelativeDocumentMoniker": "Api\\Api.http",
@@ -102,24 +222,25 @@
               "RelativeToolTip": "Api\\Api.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-03T10:37:10.709Z"
+              "WhenOpened": "2025-10-03T10:37:10.709Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ChatService.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\ChatService.cs",
               "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\ChatService.cs",
               "RelativeToolTip": "Application\\Services\\ChatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T09:46:00.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\NotificationService.cs",
@@ -127,11 +248,12 @@
               "RelativeToolTip": "Application\\Services\\NotificationService.cs",
               "ViewState": "AgIAAAQAAAAgAAAAAAAhwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T16:38:12.967Z"
+              "WhenOpened": "2025-09-30T16:38:12.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -143,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "Api.csproj",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.csproj",
               "RelativeDocumentMoniker": "Api\\Api.csproj",
@@ -155,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\WeatherForecastController.cs",
@@ -167,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "EquipaController.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\EquipaController.cs",
@@ -179,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "CreateTeamValidator.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Validators\\CreateTeamValidator.cs",
               "RelativeDocumentMoniker": "Application\\Validators\\CreateTeamValidator.cs",
@@ -191,19 +313,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "CreateTeamDto.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\DTOs\\CreateTeamDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\CreateTeamDto.cs",
               "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\DTOs\\CreateTeamDto.cs",
               "RelativeToolTip": "Application\\DTOs\\CreateTeamDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAACYmZmZmZkvwA0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:50:41.413Z"
+              "WhenOpened": "2025-09-27T16:50:41.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\NotificationHub.cs",
               "RelativeDocumentMoniker": "Api\\Hubs\\NotificationHub.cs",
@@ -211,11 +334,12 @@
               "RelativeToolTip": "Api\\Hubs\\NotificationHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:16:16.62Z"
+              "WhenOpened": "2025-09-26T17:16:16.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "Api\\Hubs\\ChatHub.cs",
@@ -223,11 +347,12 @@
               "RelativeToolTip": "Api\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:14:30.51Z"
+              "WhenOpened": "2025-09-26T17:14:30.51Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Tests.csproj",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\Tests.csproj",
               "RelativeDocumentMoniker": "Tests\\Tests.csproj",
@@ -239,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Domain.csproj",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
@@ -251,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
@@ -259,11 +384,12 @@
               "RelativeToolTip": "Api\\Program.cs",
               "ViewState": "AgIAAAkAAABgZmZmZmYkwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:08:16.537Z"
+              "WhenOpened": "2025-09-26T16:08:16.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Tests\\UnitTest1.cs",
