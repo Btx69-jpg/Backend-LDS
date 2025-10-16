@@ -5,7 +5,6 @@
     "\\Domain",
     "\\Domain\\Entities",
     "\\Domain\\Enums",
-    "\\Domain\\Interfaces",
     "\\Infrastructure",
     "\\Infrastructure\\Data"
   ],
