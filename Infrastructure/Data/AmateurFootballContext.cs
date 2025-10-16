@@ -53,11 +53,8 @@ namespace Infrastructure.Data
                 .IsRequired(false) // A chave estrangeira não é obrigatória (o último rank não tem próximo)
                 .OnDelete(DeleteBehavior.Restrict); // Evita eliminação em cascata
 
-            //Herança — TPH: uma tabela Users com discriminator
             modelBuilder.Entity<Users>()
-                .HasDiscriminator<string>("UserType")
-                .HasValue<Player>("Player")
-                .HasValue<SuperAdmin>("SuperAdmin");
+                    .UseTptMappingStrategy();
         }
     }
 }

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\domain\\entities\\rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Teams.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Domain\\Entities\\Teams.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Teams.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Domain\\Entities\\Teams.cs",
+              "RelativeToolTip": "Domain\\Entities\\Teams.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:13:35.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rank.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Domain\\Entities\\Rank.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Rank.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Domain\\Entities\\Rank.cs",
+              "RelativeToolTip": "Domain\\Entities\\Rank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:13:22.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AmateurFootballContext.cs",
               "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Data\\AmateurFootballContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AmateurFootballContext.cs",
               "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Data\\AmateurFootballContext.cs",
               "RelativeToolTip": "Infrastructure\\Data\\AmateurFootballContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T16:10:01.377Z",
               "EditorCaption": ""
