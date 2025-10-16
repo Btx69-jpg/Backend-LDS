@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using Domain.Exceptions;
 /***
  * Entidade que representa uma equipa desportiva.
  */
@@ -21,6 +21,7 @@ namespace Domain.Entities
 
         public Pitch Pitch { get; set; }
 
+        [ForeignKey("Pitch")]
         public Guid IdPitch { get; set; } //FK
 
         public DateTime DataFoundation { get; set; }
@@ -28,12 +29,6 @@ namespace Domain.Entities
         public const int MaxPlayers = 32; //Validar se é mesmo 32
 
         public const int MaxAdmins = 4;
-
-        [Range(1, MaxPlayers, ErrorMessage = "O número minimo de players é 1 de máximo 32")]
-        public int MemberCount { get; set; }
-
-        [Range(1, MaxAdmins, ErrorMessage = "O número minimo de admins é 1 de máximo 4")]
-        public int AdminCount { get; set; }
 
         public ICollection<Player> Members { get; set; } = new List<Player>();
 
@@ -45,26 +40,20 @@ namespace Domain.Entities
 
         public Rank? Rank { get; set; }
 
+        [ForeignKey("Rank")]
         public Guid? IdRank { get; set; } //FK
 
-        [Range(0, int.MaxValue, ErrorMessage = "Um equipa tem 0 ou pedidos de adesão")]
-        public int CountMemvberShipsRequests { get; set; }
-
         public ICollection<MembershipRequests> MembershipRequests { get; set; } = new List<MembershipRequests>();
-
-        [Range(0, int.MaxValue, ErrorMessage = "Um equipa tem 0 ou mais convites de partida enviados")]
-        public int CountSendInvites { get; set; }
 
         [InverseProperty("Sender")]
         public ICollection<MatchInvite> SentInvites { get; set; } = new List<MatchInvite>();
 
-        [Range(0, int.MaxValue, ErrorMessage = "Um equipa tem 0 ou recevidos pedidos de partidas recebidos")]
-        public int CountReceivedIntes { get; set; }
         [InverseProperty("Receiver")]
         public ICollection<MatchInvite> ReceivedInvites { get; set; } = new List<MatchInvite>();
 
         public Calendar Calendar { get; set; }
 
+        [ForeignKey("Calendar")]
         public Guid IdCalendar { get; set; } //FK
 
         //EF
@@ -78,13 +67,8 @@ namespace Domain.Entities
             Pitch = pitch;
             IdPitch = pitch.Id;
             DataFoundation = DateTime.Now;
-            MemberCount = 1;
-            AdminCount = 1;
             AverageAge = 18;
             CurrentPoints = 0;
-            CountMemvberShipsRequests = 0;
-            CountSendInvites = 0;
-            CountReceivedIntes = 0;
             Calendar = new Calendar();
             IdCalendar = Calendar.Id;
         }
@@ -194,6 +178,18 @@ namespace Domain.Entities
             return null;
         }
 
+        /*
+         Falta metodos da partida Aceitar, Negociar, etc
+
+        Falta:
+        - Aceitar
+        - Negociar
+        - Enviar
+        Metodos Implementados
+        - Refuse
+         */
+
+
         /***
          * Método que adiciona um convite de partida enviado pela equipa.
          * 
@@ -201,9 +197,32 @@ namespace Domain.Entities
          * 
          * Retorna o convite de partida adicionado, ou null se a adição não for possível.
          */
-        public MatchInvite AddSendMatchInvite(MatchInvite matchInvite)
+        public void SendMatchInvite(MatchInvite matchInvite)
         {
-            return null;
+            if (matchInvite == null) {
+                throw new ArgumentNullException("O convite de partida não pode ser nulo");
+            }
+
+            if (this.SentInvites.Contains(matchInvite)) {
+                throw new MatchInviteException("O convite de partida que recebeu já está na lista de convites");
+            }
+
+            this.SentInvites.Add(matchInvite);
+        }
+
+        public void ReceiveMatchInvite(MatchInvite matchInvite)
+        {
+            if (matchInvite == null)
+            {
+                throw new ArgumentNullException("O convite de partida não pode ser nulo");
+            }
+
+            if (this.ReceivedInvites.Contains(matchInvite))
+            {
+                throw new MatchInviteException("O convite de partida que recebeu já está na lista de convites");
+            }
+
+            this.ReceivedInvites.Add(matchInvite);
         }
 
         /***
@@ -212,11 +231,49 @@ namespace Domain.Entities
          * matchInvite: Convite de partida a remover.
          * 
          * Retorna o convite de partida removido, ou null se a remoção não for possível.
-         */
-        public MatchInvite RemoveSendMatchInvite(MatchInvite matchInvite)
+         * 
+         * !!apagar da BD, falta
+         * 
+         * public MatchInvite RefuseMatchInvite(Guid idMatchInvite)
         {
-            return null;
+            
         }
+         */
+        public bool removeSendMatchInvite(MatchInvite matchInvite)
+        {
+            bool sucess = true;
+            if (matchInvite == null)
+            {
+                throw new ArgumentNullException("O match Invite está a nulo");
+            }
+
+            if (!this.SentInvites.Contains(matchInvite)) {
+                throw new Exception("O match Invite enviado não existe");
+            }
+
+            this.SentInvites.Remove(matchInvite);
+            
+            return sucess; 
+        }
+
+        public bool removeReceiverMatchInvite(MatchInvite matchInvite)
+        {
+            bool sucess = true;
+            if (matchInvite == null)
+            {
+                throw new ArgumentNullException("O match Invite está a nulo");
+            }
+
+            if (!this.ReceivedInvites.Contains(matchInvite))
+            {
+                throw new Exception("O match Invite enviado não existe");
+            }
+
+            this.ReceivedInvites.Remove(matchInvite);
+
+            return sucess;
+        }
+
 
         /***
          * Método que mostra um convite de partida enviado específico da equipa.
@@ -227,48 +284,44 @@ namespace Domain.Entities
          */
         public MatchInvite ShowSendMatchInvite(Guid idMatchInvite)
         {
-            return null;
+
+            if (idMatchInvite == Guid.Empty)
+            {
+                throw new ArgumentNullException("O id da match não pode ser nulo");
+            }
+
+            MatchInvite? matchInvite = this.SentInvites.FirstOrDefault(i => i.Id == idMatchInvite);
+
+            if (matchInvite == null)
+            {
+                throw new MatchInviteException("A Match invite a eliminar não existe!");
+            }
+
+            return matchInvite;
         }
 
-        /***
-         * Método que adiciona um convite de partida recebido pela equipa.
-         * 
-         * matchInvite: Convite de partida a adicionar.
-         * 
-         * Retorna o convite de partida adicionado, ou null se a adição não for possível.
-         */
-        public MatchInvite AddReceivedMatchInvite(MatchInvite matchInvite) 
+        public MatchInvite ShowReceivedMatchInvite(Guid idMatchInvite)
         {
-            return null;
-        }
 
-        /***
-         * Método que remove um convite de partida recebido pela equipa.
-         * 
-         * matchInvite: Convite de partida a remover.
-         * 
-         * Retorna o convite de partida removido, ou null se a remoção não for possível.
-         */
-        public MatchInvite RemoveReceivedMatchInvite(MatchInvite matchInvite) 
-        {
-            return null;
-        }
 
-        /***
-         * Método que mostra um convite de partida recebido específico da equipa.
-         * 
-         * idMatchInvite: ID do convite de partida a mostrar.
-         * 
-         * Retorna o convite de partida se encontrado, ou null se não encontrado.
-         */
-        public MatchInvite ShowReceivedMatchInvite(Guid idMatchInvite) 
-        {
-            return null;
+            if (idMatchInvite == Guid.Empty)
+            {
+                throw new ArgumentNullException("O id da match não pode ser nulo");
+            }
+
+            MatchInvite? matchInvite = this.ReceivedInvites.FirstOrDefault(i => i.Id == idMatchInvite);
+
+            if (matchInvite == null)
+            {
+                throw new MatchInviteException("A Match invite a eliminar não existe!");
+            }
+
+            return matchInvite;
         }
 
         public override string ToString()
         {
-            return $"Team: {Name}, Description: {Description}, Founded: {DataFoundation.ToShortDateString()}, Members: {MemberCount}, Admins: {AdminCount}, Average Age: {AverageAge}, Current Points: {CurrentPoints}";
+            return $"Team: {Name}, Description: {Description}, Founded: {DataFoundation.ToShortDateString()}, Average Age: {AverageAge}, Current Points: {CurrentPoints}";
         }
     }
 }
