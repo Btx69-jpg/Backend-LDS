@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\api\\controllers\\matchinvitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\matchinvitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\application\\dtos\\sendmatchinvitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\dtos\\sendmatchinvitedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\amateurfootballcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SendMatchInviteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\DTOs\\SendMatchInviteDTO.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\SendMatchInviteDTO.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\DTOs\\SendMatchInviteDTO.cs",
-              "RelativeToolTip": "Application\\DTOs\\SendMatchInviteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20251016144044_UpdateDataBaseRankAndRemoveCounts.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20251016144044_UpdateDataBaseRankAndRemoveCounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T07:40:18.162Z"
+              "WhenOpened": "2025-10-16T14:40:44.862Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MatchInviteController.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\MatchInviteController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\MatchInviteController.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\MatchInviteController.cs",
-              "RelativeToolTip": "Api\\Controllers\\MatchInviteController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AmateurFootballContext.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Data\\AmateurFootballContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\AmateurFootballContext.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Data\\AmateurFootballContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\AmateurFootballContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:36:35.076Z",
+              "WhenOpened": "2025-10-16T14:28:07.352Z",
               "EditorCaption": ""
             }
           ]
