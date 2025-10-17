@@ -99,7 +99,7 @@ namespace Infrastructure.Migrations
                     b.Property<int>("MatchStatus")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("TimeStart")
+                    b.Property<DateTime?>("TimeStart")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("idPitch")
