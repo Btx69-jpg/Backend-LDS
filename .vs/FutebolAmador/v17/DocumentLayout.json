@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\teamstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\teamstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\membershiprequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\membershiprequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamStatistics.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\TeamStatistics.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\TeamStatistics.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\TeamStatistics.cs",
+              "RelativeToolTip": "Domain\\Entities\\TeamStatistics.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:01:07.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Teams.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\Teams.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Teams.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\Teams.cs",
+              "RelativeToolTip": "Domain\\Entities\\Teams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:01:05.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SuperAdmin.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\SuperAdmin.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\SuperAdmin.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\SuperAdmin.cs",
+              "RelativeToolTip": "Domain\\Entities\\SuperAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:00:54.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MembershipRequests.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\MembershipRequests.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\MembershipRequests.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\MembershipRequests.cs",
+              "RelativeToolTip": "Domain\\Entities\\MembershipRequests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:01:00.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITeamRepository.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\ITeamRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ITeamRepository.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\ITeamRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ITeamRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T18:57:15.921Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
