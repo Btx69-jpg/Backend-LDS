@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\teamstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\teamstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\repositories\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\entities\\membershiprequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\membershiprequests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\interfaces\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +38,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPlayerRepository.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IPlayerRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IPlayerRepository.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IPlayerRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\IPlayerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T20:33:57.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T20:16:36.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T20:13:24.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:04:36.911Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeamStatistics.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\TeamStatistics.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\TeamStatistics.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\TeamStatistics.cs",
-              "RelativeToolTip": "Domain\\Entities\\TeamStatistics.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ITeamRepository.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\ITeamRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\ITeamRepository.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\Repositories\\ITeamRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\Repositories\\ITeamRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T19:01:07.064Z",
+              "WhenOpened": "2025-10-18T19:10:53.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Teams.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\Teams.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Teams.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\Teams.cs",
-              "RelativeToolTip": "Domain\\Entities\\Teams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T19:01:05.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SuperAdmin.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\SuperAdmin.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\SuperAdmin.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\SuperAdmin.cs",
-              "RelativeToolTip": "Domain\\Entities\\SuperAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T19:00:54.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MembershipRequests.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\MembershipRequests.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\MembershipRequests.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Entities\\MembershipRequests.cs",
-              "RelativeToolTip": "Domain\\Entities\\MembershipRequests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T19:01:00.083Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ITeamRepository.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\ITeamRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\ITeamRepository.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Interfaces\\ITeamRepository.cs",
-              "RelativeToolTip": "Application\\Interfaces\\ITeamRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAgAAAAAAAAAA==",
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "Application\\Services\\TeamService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwC0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:57:15.921Z",
+              "WhenOpened": "2025-10-10T20:24:23.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "Api\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:52.964Z",
               "EditorCaption": ""
             }
           ]
