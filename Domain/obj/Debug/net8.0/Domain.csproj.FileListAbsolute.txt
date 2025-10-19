@@ -1,14 +1,3 @@
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\bin\Debug\net8.0\Domain.deps.json
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\bin\Debug\net8.0\Domain.dll
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\bin\Debug\net8.0\Domain.pdb
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.dll
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\refint\Domain.dll
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\Domain.pdb
-C:\Faculdade\3ano\LDS\Projeto\backend\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\artur\OneDrive\Desktop\universidade\3_ano\1_Semestre\LDS\Projeto\Backend\lds_25_26\Domain\bin\Debug\net8.0\Domain.deps.json
 C:\Users\artur\OneDrive\Desktop\universidade\3_ano\1_Semestre\LDS\Projeto\Backend\lds_25_26\Domain\bin\Debug\net8.0\Domain.dll
 C:\Users\artur\OneDrive\Desktop\universidade\3_ano\1_Semestre\LDS\Projeto\Backend\lds_25_26\Domain\bin\Debug\net8.0\Domain.pdb

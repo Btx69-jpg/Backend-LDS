@@ -96,15 +96,5 @@
     "C:\\Users\\artur\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\artur\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Tests\\obj\\project.nuget.cache: '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Tests\\Tests.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Tests\\Tests.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }
