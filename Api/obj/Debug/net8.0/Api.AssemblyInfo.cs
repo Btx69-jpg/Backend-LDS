@@ -15,11 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57c09b37378ba7bae7c3728daaf6f3f37c11b0fa")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c520e64853fe199d5dd5f4a1124848b776c9c7d3")]
->>>>>>> features/GestaoPartidas
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d06bef221d9926039efdea5eefc6d1f3f00425e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
