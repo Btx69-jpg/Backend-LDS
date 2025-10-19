@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 /**
  * Entidade que representa um convite de partida entre duas equipas
@@ -9,26 +10,31 @@ namespace Domain.Entities
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid IdSender { get; set; } //FK e PK
-        public Guid IdReceiver { get; set; } //FK e PK
 
         public Teams Sender { get; set; }
         public Teams Receiver { get; set; }
 
+        [ForeignKey("Sender")]
+        public Guid IdSender { get; set; } //FK e
+
+        [ForeignKey("Receiver")]
+        public Guid IdReceiver { get; set; } //FK 
         public DateTime GameDate { get; set; }
 
         public Pitch Pitch { get; set; }
 
+        [ForeignKey("Pitch")]
         public Guid IdPitch { get; set; } //FK
 
         public Chat Chat { get; set; } //FK
 
+        [ForeignKey("Chat")]
         public Guid IdChat { get; set; } //FK
 
         //FK
         protected MatchInvite() { }
 
-        public MatchInvite(Teams sender, Teams receiver, DateTime gameDate, Pitch pitch, Chat chat)
+        public MatchInvite(Teams sender, Teams receiver, DateTime gameDate, Pitch pitch)
         {
             Sender = sender;
             IdSender = sender.Id;
@@ -37,10 +43,40 @@ namespace Domain.Entities
             GameDate = gameDate;
             Pitch = pitch;
             IdPitch = pitch.Id;
-            Chat = chat;
-            IdChat = chat.Id;
+            Chat = new Chat();
+            IdChat = Chat.Id;
         }
 
+        public bool NegociateMatchInvite(DateTime gameDate, Pitch pitch)
+        {
+            bool hasChanged = false;
+
+            if (this.GameDate != gameDate)
+            {
+                this.GameDate = gameDate;
+                hasChanged = true;
+            }
+
+            if (this.Pitch != pitch)
+            {
+                this.IdPitch = pitch.Id;
+                this.Pitch = pitch;
+                hasChanged = true;
+            }
+
+            if (hasChanged)
+            {
+                Teams tempTeam = this.Sender;
+
+                this.IdSender = this.IdReceiver;
+                this.Sender = Receiver;
+
+                this.IdReceiver = tempTeam.Id;
+                this.Receiver = tempTeam;
+            }
+
+            return hasChanged;
+        }
 
         public override string ToString()
         {
