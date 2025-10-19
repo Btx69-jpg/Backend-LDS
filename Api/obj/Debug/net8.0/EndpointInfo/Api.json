@@ -297,6 +297,184 @@
         }
       }
     },
+    "/api/{idPlayer}/MembershipRequests/received-from-teams": {
+      "get": {
+        "tags": [
+          "MembershipRequests"
+        ],
+        "parameters": [
+          {
+            "name": "idPlayer",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/{idPlayer}/MembershipRequests/sent": {
+      "get": {
+        "tags": [
+          "MembershipRequests"
+        ],
+        "parameters": [
+          {
+            "name": "idPlayer",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/{idPlayer}/MembershipRequests": {
+      "post": {
+        "tags": [
+          "MembershipRequests"
+        ],
+        "parameters": [
+          {
+            "name": "idPlayer",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendMembershipRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendMembershipRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendMembershipRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/{idTeam}/MembershipRequests/accept": {
+      "post": {
+        "tags": [
+          "MembershipRequests"
+        ],
+        "parameters": [
+          {
+            "name": "idTeam",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/{idTeam}/MembershipRequests/refuse": {
+      "delete": {
+        "tags": [
+          "MembershipRequests"
+        ],
+        "parameters": [
+          {
+            "name": "idTeam",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string",
+                "format": "uuid"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Team/{id}": {
       "get": {
         "tags": [
@@ -521,6 +699,28 @@
             "maxLength": 50,
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendMembershipRequestDTO": {
+        "type": "object",
+        "properties": {
+          "idPlayer": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "idTeam": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "sender": {
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false

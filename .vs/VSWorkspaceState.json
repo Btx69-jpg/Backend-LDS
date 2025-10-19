@@ -1,13 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Application",
-    "\\Domain",
-    "\\Domain\\Entities",
-    "\\Domain\\Enums",
-    "\\Infrastructure",
-    "\\Infrastructure\\Data"
+    ""
   ],
-  "SelectedNode": "\\Infrastructure\\Data\\AmateurFootballContext.cs",
   "PreviewInSolutionExplorer": false
 }

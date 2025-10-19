@@ -63,6 +63,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Api.Controllers.MembershipRequestsController",
+    "Method": "SendRequest",
+    "RelativePath": "api/{idPlayer}/MembershipRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPlayer",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.Membership.SendMembershipRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MembershipRequestsController",
+    "Method": "GetRequestsReceivedFromTeams",
+    "RelativePath": "api/{idPlayer}/MembershipRequests/received-from-teams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPlayer",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MembershipRequestsController",
+    "Method": "GetRequestsSentByPlayer",
+    "RelativePath": "api/{idPlayer}/MembershipRequests/sent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPlayer",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Api.Controllers.MatchInviteController",
     "Method": "NegociateMatchInvite",
     "RelativePath": "api/{idTeam}/MatchInvite",
@@ -78,6 +131,48 @@
       {
         "Name": "dto",
         "Type": "Application.DTOs.SendMatchInviteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MembershipRequestsController",
+    "Method": "AcceptRequest",
+    "RelativePath": "api/{idTeam}/MembershipRequests/accept",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTeam",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "idMembershipRequest",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MembershipRequestsController",
+    "Method": "RefuseRequest",
+    "RelativePath": "api/{idTeam}/MembershipRequests/refuse",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTeam",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "idMembershipRequest",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
