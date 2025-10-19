@@ -9,7 +9,7 @@ namespace Domain.Entities
 {
     public class Player : Users
     {
-        public Position Position { get; set; }
+        public Position Position { get; set; } // teste
 
         public const int minHeight = 100;
 
