@@ -55,17 +55,13 @@ namespace Domain.Entities
          */
         private int CalculateAge()
         {
-            return 0;
-        }
+            var today = DateOnly.FromDateTime(DateTime.Today);
+            int age = today.Year - DateOfBirth.Year;
 
-        /*
-         * Metodo que calcula a idade de um jogador, com base no dia atual - a sua data de nascimento
-         *
-         * Retorna a idade do jogador
-         */
-        public int agePalyer()
-        {
-            return 0;
+            if (today < new DateOnly(today.Year, DateOfBirth.Month, DateOfBirth.Day))
+                age--;
+
+            return age;
         }
         public override string ToString()
         {
