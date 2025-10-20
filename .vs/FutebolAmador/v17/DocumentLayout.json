@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\interfaces\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\dtos\\playerdtos\\playerdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\dtos\\playerdtos\\playerdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\iandi\\documents\\github\\lds_25_26\\application\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +29,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 209,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 199,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,61 +43,76 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 201,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerService.cs",
-              "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\PlayerService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\PlayerService.cs",
-              "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\PlayerService.cs",
-              "RelativeToolTip": "Application\\Services\\PlayerService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA+wBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:02:34.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\DTOs\\PlayerDTOs\\PlayerDetailsDTO.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\PlayerDTOs\\PlayerDetailsDTO.cs",
-              "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\DTOs\\PlayerDTOs\\PlayerDetailsDTO.cs",
-              "RelativeToolTip": "Application\\DTOs\\PlayerDTOs\\PlayerDetailsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:40:52.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "IPlayerService.cs",
               "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Interfaces\\Services\\IPlayerService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\IPlayerService.cs",
               "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Interfaces\\Services\\IPlayerService.cs",
               "RelativeToolTip": "Application\\Interfaces\\Services\\IPlayerService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:29:02.161Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 191,
-          "SelectedChildIndex": 0,
-          "Children": [
+              "WhenOpened": "2025-10-20T18:42:30.311Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Api\\Controllers\\PlayerController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\PlayerController.cs",
               "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Api\\Controllers\\PlayerController.cs",
               "RelativeToolTip": "Api\\Controllers\\PlayerController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:25:40.396Z",
+              "WhenOpened": "2025-10-20T18:42:02.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\UserService.cs",
+              "RelativeToolTip": "Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:41:50.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "Application\\Services\\TeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:39:16.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\PlayerService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\PlayerService.cs",
+              "ToolTip": "C:\\Users\\iandi\\Documents\\GitHub\\lds_25_26\\Application\\Services\\PlayerService.cs",
+              "RelativeToolTip": "Application\\Services\\PlayerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:39:01.491Z",
               "EditorCaption": ""
             }
           ]
