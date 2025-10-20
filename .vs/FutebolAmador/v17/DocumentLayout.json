@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\matchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\application\\services\\matchinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\matchinviteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\application\\interfaces\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\repositories\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\infrastructure\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84C140C8-4B09-467E-9BD1-96A8A15DD827}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\application\\interfaces\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\interfaces\\services\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\users\\artur\\onedrive\\desktop\\universidade\\3_ano\\1_semestre\\lds\\projeto\\backend\\lds_25_26\\api\\controllers\\matchinvitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\matchinvitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +22,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatchInviteController.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\MatchInviteController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\MatchInviteController.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\MatchInviteController.cs",
+              "RelativeToolTip": "Api\\Controllers\\MatchInviteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T17:14:07.82Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatchInviteService.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\MatchInviteService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MatchInviteService.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\MatchInviteService.cs",
+              "RelativeToolTip": "Application\\Services\\MatchInviteService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T17:14:35.189Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
@@ -46,80 +62,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITeamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Interfaces\\Repositories\\ITeamRepository.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\ITeamRepository.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Interfaces\\Repositories\\ITeamRepository.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Repositories\\ITeamRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:58:58.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MatchInviteService.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\MatchInviteService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\MatchInviteService.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\MatchInviteService.cs",
-              "RelativeToolTip": "Application\\Services\\MatchInviteService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAWwEYAAAAAAAAAAAAAAA==",
+              "Title": "MatchRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Repositories\\MatchRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\MatchRepository.cs",
+              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Repositories\\MatchRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\MatchRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwC8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:57:09.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Repositories\\TeamRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\TeamRepository.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Repositories\\TeamRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\TeamRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwC4AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:47:36.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITeamService.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Interfaces\\Services\\ITeamService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\Services\\ITeamService.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Interfaces\\Services\\ITeamService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\Services\\ITeamService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:44:07.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeamController.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\TeamController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\TeamController.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Api\\Controllers\\TeamController.cs",
-              "RelativeToolTip": "Api\\Controllers\\TeamController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIA4wCkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T12:41:23.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeamService.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\TeamService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
-              "ToolTip": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Application\\Services\\TeamService.cs",
-              "RelativeToolTip": "Application\\Services\\TeamService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T11:56:51.022Z",
+              "WhenOpened": "2025-10-20T17:21:42.043Z",
               "EditorCaption": ""
             }
           ]
