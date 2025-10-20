@@ -1,98 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\",
+  "WorkspaceRootPath": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\dtos\\createteamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\matchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\matchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\matchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\statsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\statsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\statsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{3A309D5E-5B87-4E8C-8654-5F890E45A825}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\application\\validators\\createteamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\application\\validators\\createteamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB900836-84E4-4E17-B8AF-BF22CAA5AD84}|Application\\Application.csproj|solutionrelative:application\\validators\\createteamvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|solutionrelative:tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE054166-13C3-4B59-9ECC-352B6288516A}|Tests\\Tests.csproj|solutionrelative:tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\projeto\\backend\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|c:\\faculdade\\3ano\\lds\\project\\backend\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{214D9975-243B-417F-9D15-9CBB3C663ECD}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Api\\Controllers\\EquipaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,158 +97,136 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TeamController.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\TeamController.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Controllers\\TeamController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\TeamController.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Controllers\\TeamController.cs",
               "RelativeToolTip": "Api\\Controllers\\TeamController.cs",
-              "ViewState": "AgIAAAYAAACQmZmZmZk+wA8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T20:24:52.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MatchService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MatchService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\MatchService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MatchService.cs",
-              "RelativeToolTip": "Application\\Services\\MatchService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:30.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MembershipService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MembershipService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\MembershipService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\MembershipService.cs",
-              "RelativeToolTip": "Application\\Services\\MembershipService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:29.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SearchService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\SearchService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\SearchService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\SearchService.cs",
-              "RelativeToolTip": "Application\\Services\\SearchService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:27.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "StatsService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\StatsService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\StatsService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\StatsService.cs",
-              "RelativeToolTip": "Application\\Services\\StatsService.cs",
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\TeamService.cs",
+              "RelativeToolTip": "Application\\Services\\TeamService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:25.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T20:24:23.994Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "TeamService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\TeamService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\TeamService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\TeamService.cs",
-              "RelativeToolTip": "Application\\Services\\TeamService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:23.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\UserService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\UserService.cs",
               "RelativeToolTip": "Application\\Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T20:24:21.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "Api\\WeatherForecast.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\WeatherForecast.cs",
-              "RelativeToolTip": "Api\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T10:37:26.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T20:24:21.527Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Api.http",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.http",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Api.http",
               "RelativeDocumentMoniker": "Api\\Api.http",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.http",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Api.http",
               "RelativeToolTip": "Api\\Api.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-03T10:37:10.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T10:37:10.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ChatService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\ChatService.cs",
+              "RelativeToolTip": "Application\\Services\\ChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T09:46:00.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\NotificationService.cs",
+              "RelativeToolTip": "Application\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAQAAAAgAAAAAAAhwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T16:38:12.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MembershipService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\MembershipService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MembershipService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\MembershipService.cs",
+              "RelativeToolTip": "Application\\Services\\MembershipService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:29.168Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ChatService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\ChatService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ChatService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\ChatService.cs",
-              "RelativeToolTip": "Application\\Services\\ChatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "MatchService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\MatchService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\MatchService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\MatchService.cs",
+              "RelativeToolTip": "Application\\Services\\MatchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T09:46:00.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T20:24:30.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StatsService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\StatsService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\StatsService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\StatsService.cs",
+              "RelativeToolTip": "Application\\Services\\StatsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:24:25.053Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Services\\NotificationService.cs",
-              "RelativeToolTip": "Application\\Services\\NotificationService.cs",
-              "ViewState": "AgIAAAQAAAAgAAAAAAAhwAsAAAAAAAAAAAAAAA==",
+              "Title": "SearchService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\SearchService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\SearchService.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Services\\SearchService.cs",
+              "RelativeToolTip": "Application\\Services\\SearchService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T16:38:12.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-10T20:24:27.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Application.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Application.csproj",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Application.csproj",
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -265,11 +234,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "Api.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.csproj",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Api.csproj",
               "RelativeDocumentMoniker": "Api\\Api.csproj",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Api.csproj",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Api.csproj",
               "RelativeToolTip": "Api\\Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -277,35 +246,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T07:26:38.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "EquipaController.cs",
               "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\EquipaController.cs",
+              "RelativeDocumentMoniker": "..\\..\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs",
               "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs",
-              "RelativeToolTip": "Api\\Controllers\\EquipaController.cs",
+              "RelativeToolTip": "..\\..\\Projeto\\backend\\Api\\Controllers\\EquipaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T07:26:09.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "CreateTeamValidator.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Validators\\CreateTeamValidator.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Validators\\CreateTeamValidator.cs",
               "RelativeDocumentMoniker": "Application\\Validators\\CreateTeamValidator.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\Validators\\CreateTeamValidator.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\Validators\\CreateTeamValidator.cs",
               "RelativeToolTip": "Application\\Validators\\CreateTeamValidator.cs",
               "ViewState": "AgIAAAgAAACAMzMzMzMTwBgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -315,48 +272,45 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CreateTeamDto.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\DTOs\\CreateTeamDto.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\DTOs\\CreateTeamDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\CreateTeamDto.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Application\\DTOs\\CreateTeamDto.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Application\\DTOs\\CreateTeamDto.cs",
               "RelativeToolTip": "Application\\DTOs\\CreateTeamDto.cs",
               "ViewState": "AgIAAAQAAACYmZmZmZkvwA0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:50:41.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T16:50:41.413Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "NotificationHub.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\NotificationHub.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Hubs\\NotificationHub.cs",
               "RelativeDocumentMoniker": "Api\\Hubs\\NotificationHub.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\NotificationHub.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Hubs\\NotificationHub.cs",
               "RelativeToolTip": "Api\\Hubs\\NotificationHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:16:16.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:16:16.62Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\ChatHub.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "Api\\Hubs\\ChatHub.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "Api\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:14:30.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:14:30.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "Tests.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\Tests.csproj",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Tests\\Tests.csproj",
               "RelativeDocumentMoniker": "Tests\\Tests.csproj",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\Tests.csproj",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Tests\\Tests.csproj",
               "RelativeToolTip": "Tests\\Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -364,11 +318,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Domain.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Domain\\Domain.csproj",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Domain\\Domain.csproj",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Domain\\Domain.csproj",
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -378,22 +332,21 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Program.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Api\\Program.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Api\\Program.cs",
               "RelativeToolTip": "Api\\Program.cs",
               "ViewState": "AgIAAAkAAABgZmZmZmYkwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:08:16.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:08:16.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Projeto\\backend\\Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Faculdade\\3ano\\LDS\\Project\\Backend\\Tests\\UnitTest1.cs",
               "RelativeToolTip": "Tests\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
