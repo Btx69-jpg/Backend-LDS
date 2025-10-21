@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTRu6d4sUNo=",
+  "dgSpecHash": "cMgdTVhbt+s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\CodigoProjeto\\Backend-LDS\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artur\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\artur\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

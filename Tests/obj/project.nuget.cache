@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "egZH3UYoW/U=",
+  "dgSpecHash": "iS/cprTHnM4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\Projeto\\Backend\\lds_25_26\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\CodigoProjeto\\Backend-LDS\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artur\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\artur\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
