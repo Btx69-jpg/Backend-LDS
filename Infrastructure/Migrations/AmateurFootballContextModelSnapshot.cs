@@ -193,6 +193,30 @@ namespace Infrastructure.Migrations
                     b.ToTable("Pitch");
                 });
 
+            modelBuilder.Entity("Domain.Entities.PostPoneMatch", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdMatch")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("IdTeamPostPone")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("PostPoneDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdMatch");
+
+                    b.HasIndex("IdTeamPostPone");
+
+                    b.ToTable("PostPoneMatch");
+                });
+
             modelBuilder.Entity("Domain.Entities.Rank", b =>
                 {
                     b.Property<Guid>("Id")
@@ -247,7 +271,7 @@ namespace Infrastructure.Migrations
                     b.Property<int>("MatchResult")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("MatchesId")
+                    b.Property<Guid>("MatchesId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("NumGoals")
@@ -426,13 +450,13 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.Chat", "Chat")
                         .WithMany()
                         .HasForeignKey("IdChat")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.Pitch", "Pitch")
                         .WithMany()
                         .HasForeignKey("idPitch")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Chat");
@@ -474,6 +498,25 @@ namespace Infrastructure.Migrations
                     b.Navigation("Actor");
                 });
 
+            modelBuilder.Entity("Domain.Entities.PostPoneMatch", b =>
+                {
+                    b.HasOne("Domain.Entities.Matches", "Match")
+                        .WithMany()
+                        .HasForeignKey("IdMatch")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.Teams", "Team")
+                        .WithMany()
+                        .HasForeignKey("IdTeamPostPone")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Match");
+
+                    b.Navigation("Team");
+                });
+
             modelBuilder.Entity("Domain.Entities.Rank", b =>
                 {
                     b.HasOne("Domain.Entities.Rank", "NextRank")
@@ -499,9 +542,13 @@ namespace Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Matches", null)
+                    b.HasOne("Domain.Entities.Matches", "Match")
                         .WithMany("Teams")
-                        .HasForeignKey("MatchesId");
+                        .HasForeignKey("MatchesId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Match");
 
                     b.Navigation("Team");
                 });
@@ -511,7 +558,7 @@ namespace Infrastructure.Migrations
                     b.HasOne("Domain.Entities.Calendar", "Calendar")
                         .WithMany()
                         .HasForeignKey("IdCalendar")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Domain.Entities.Pitch", "Pitch")

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "jCfqOp4h8HY=",
   "success": true,
   "projectFilePath": "C:\\Users\\FranciscoMiguelPerei\\OneDrive - Instituto Politecnico do Porto\\Ambiente de Trabalho\\3 ANO\\LDS\\Backend\\lds_25_26\\Domain\\Domain.csproj",
+=======
+  "dgSpecHash": "hZvtyPuTnMg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\CodigoProjeto\\Backend-LDS\\Domain\\Domain.csproj",
+>>>>>>> features/GestaoPartidas
   "expectedPackageFiles": [],
   "logs": []
 }

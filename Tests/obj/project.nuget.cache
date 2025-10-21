@@ -1,12 +1,18 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "En1wB7NZJ5I=",
 =======
   "dgSpecHash": "egZH3UYoW/U=",
 >>>>>>> features/GestaoPartidas
   "success": true,
   "projectFilePath": "C:\\Users\\FranciscoMiguelPerei\\OneDrive - Instituto Politecnico do Porto\\Ambiente de Trabalho\\3 ANO\\LDS\\Backend\\lds_25_26\\Tests\\Tests.csproj",
+=======
+  "dgSpecHash": "iS/cprTHnM4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\CodigoProjeto\\Backend-LDS\\Tests\\Tests.csproj",
+>>>>>>> features/GestaoPartidas
   "expectedPackageFiles": [
 <<<<<<< HEAD
     "C:\\Users\\FranciscoMiguelPerei\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

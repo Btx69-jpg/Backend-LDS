@@ -1,12 +1,18 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "f/45jvCdXy8=",
 =======
   "dgSpecHash": "WTRu6d4sUNo=",
 >>>>>>> features/GestaoPartidas
   "success": true,
   "projectFilePath": "C:\\Users\\FranciscoMiguelPerei\\OneDrive - Instituto Politecnico do Porto\\Ambiente de Trabalho\\3 ANO\\LDS\\Backend\\lds_25_26\\Infrastructure\\Infrastructure.csproj",
+=======
+  "dgSpecHash": "cMgdTVhbt+s=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artur\\OneDrive\\Desktop\\universidade\\3_ano\\1_Semestre\\LDS\\CodigoProjeto\\Backend-LDS\\Infrastructure\\Infrastructure.csproj",
+>>>>>>> features/GestaoPartidas
   "expectedPackageFiles": [
 <<<<<<< HEAD
     "C:\\Users\\FranciscoMiguelPerei\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

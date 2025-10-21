@@ -35,28 +35,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Application.DTOs.AcceptRefusePostPoneDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Api.Controllers.MatchController",
-    "Method": "RejectPostponeMatch",
-    "RelativePath": "AcceptPostponeMatch",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idTeam",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.AcceptRefusePostPoneDTO",
+        "Type": "Application.DTOs.PostPoneGame.AcceptRefusePostPoneDTO",
         "IsRequired": true
       }
     ],
@@ -64,20 +43,15 @@
   },
   {
     "ContainingType": "Api.Controllers.MatchInviteController",
-    "Method": "NegociateMatchInvite",
+    "Method": "GetAllMatchInvitesTeam",
     "RelativePath": "api/{idTeam}/MatchInvite",
-    "HttpMethod": "PUT",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "idTeam",
         "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Application.DTOs.SendMatchInviteDTO",
         "IsRequired": true
       }
     ],
@@ -130,7 +104,28 @@
       },
       {
         "Name": "dto",
-        "Type": "Application.DTOs.SendMatchInviteDTO",
+        "Type": "Application.DTOs.MatchInvites.SendMatchInviteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MatchInviteController",
+    "Method": "NegociateMatchInvite",
+    "RelativePath": "Negociate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTeam",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.MatchInvites.SendMatchInviteDTO",
         "IsRequired": true
       }
     ],
@@ -151,8 +146,24 @@
       },
       {
         "Name": "dto",
-        "Type": "Application.DTOs.PostponeMatchDTO",
+        "Type": "Application.DTOs.PostPoneGame.PostponeMatchDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MatchController",
+    "Method": "GetListPostPoneMatchTeam",
+    "RelativePath": "PostPoneMatchs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTeam",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -173,6 +184,27 @@
       {
         "Name": "idMatchInvite",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.MatchController",
+    "Method": "RejectPostponeMatch",
+    "RelativePath": "RejectPostponeMatch",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTeam",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.PostPoneGame.AcceptRefusePostPoneDTO",
         "IsRequired": true
       }
     ],

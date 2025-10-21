@@ -85,7 +85,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/RejectPostponeMatch": {
       "delete": {
         "tags": [
           "Match"
@@ -119,6 +121,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/PostPoneMatchs": {
+      "get": {
+        "tags": [
+          "Match"
+        ],
+        "parameters": [
+          {
+            "name": "idTeam",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -255,7 +279,7 @@
         }
       }
     },
-    "/api/{idTeam}/MatchInvite": {
+    "/Negociate": {
       "put": {
         "tags": [
           "MatchInvite"
@@ -263,8 +287,7 @@
         "parameters": [
           {
             "name": "idTeam",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "string",
               "format": "uuid"
@@ -290,6 +313,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/{idTeam}/MatchInvite": {
+      "get": {
+        "tags": [
+          "MatchInvite"
+        ],
+        "parameters": [
+          {
+            "name": "idTeam",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -473,7 +519,7 @@
           "idMatch",
           "idOpponent",
           "idTeam",
-          "matchDate"
+          "postPoneDate"
         ],
         "type": "object",
         "properties": {
@@ -481,7 +527,7 @@
             "type": "string",
             "format": "uuid"
           },
-          "matchDate": {
+          "postPoneDate": {
             "type": "string",
             "format": "date-time"
           },
