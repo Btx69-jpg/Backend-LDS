@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService
+  commentId: T:Application.Interfaces.Services.IPlayerAuthorizationService
+  id: IPlayerAuthorizationService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(System.String,System.Guid)
+  - Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(System.String,System.Guid)
+  - Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(System.String,System.Guid)
+  - Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IPlayerAuthorizationService
+  nameWithType: IPlayerAuthorizationService
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/IPlayerAuthorizationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IPlayerAuthorizationService
+    path: ../Application/Interfaces/Services/IPlayerAuthorizationService.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface IPlayerAuthorizationService
+    content.vb: Public Interface IPlayerAuthorizationService
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(System.String,System.Guid)
+  id: UserAuthorizationIsAdminTeamById(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IPlayerAuthorizationService
+  langs:
+  - csharp
+  - vb
+  name: UserAuthorizationIsAdminTeamById(string, Guid)
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(string, Guid)
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IPlayerAuthorizationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserAuthorizationIsAdminTeamById
+    path: ../Application/Interfaces/Services/IPlayerAuthorizationService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UserAuthorizationIsAdminTeamById(string userId, Guid idTeam)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UserAuthorizationIsAdminTeamById(userId As String, idTeam As Guid) As Task
+  overload: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById*
+  nameWithType.vb: IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById(String, System.Guid)
+  name.vb: UserAuthorizationIsAdminTeamById(String, Guid)
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(System.String,System.Guid)
+  id: UserAuthorizationIsMemberTeamById(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IPlayerAuthorizationService
+  langs:
+  - csharp
+  - vb
+  name: UserAuthorizationIsMemberTeamById(string, Guid)
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(string, Guid)
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IPlayerAuthorizationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserAuthorizationIsMemberTeamById
+    path: ../Application/Interfaces/Services/IPlayerAuthorizationService.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UserAuthorizationIsMemberTeamById(string userId, Guid idTeam)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UserAuthorizationIsMemberTeamById(userId As String, idTeam As Guid) As Task
+  overload: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById*
+  nameWithType.vb: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById(String, System.Guid)
+  name.vb: UserAuthorizationIsMemberTeamById(String, Guid)
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(System.String,System.Guid)
+  id: UserAuthorizationIsMemberTeamNotAdminById(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IPlayerAuthorizationService
+  langs:
+  - csharp
+  - vb
+  name: UserAuthorizationIsMemberTeamNotAdminById(string, Guid)
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(string, Guid)
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IPlayerAuthorizationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserAuthorizationIsMemberTeamNotAdminById
+    path: ../Application/Interfaces/Services/IPlayerAuthorizationService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UserAuthorizationIsMemberTeamNotAdminById(string userId, Guid idTeam)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UserAuthorizationIsMemberTeamNotAdminById(userId As String, idTeam As Guid) As Task
+  overload: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById*
+  nameWithType.vb: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById(String, System.Guid)
+  name.vb: UserAuthorizationIsMemberTeamNotAdminById(String, Guid)
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(System.String)
+  commentId: M:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(System.String)
+  id: UserAuthorizationIsPlayerWithoutTeamById(System.String)
+  parent: Application.Interfaces.Services.IPlayerAuthorizationService
+  langs:
+  - csharp
+  - vb
+  name: UserAuthorizationIsPlayerWithoutTeamById(string)
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(string)
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IPlayerAuthorizationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserAuthorizationIsPlayerWithoutTeamById
+    path: ../Application/Interfaces/Services/IPlayerAuthorizationService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UserAuthorizationIsPlayerWithoutTeamById(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UserAuthorizationIsPlayerWithoutTeamById(userId As String) As Task
+  overload: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById*
+  nameWithType.vb: IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(String)
+  fullName.vb: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById(String)
+  name.vb: UserAuthorizationIsPlayerWithoutTeamById(String)
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById*
+  commentId: Overload:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html#Application_Interfaces_Services_IPlayerAuthorizationService_UserAuthorizationIsAdminTeamById_System_String_System_Guid_
+  name: UserAuthorizationIsAdminTeamById
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsAdminTeamById
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById*
+  commentId: Overload:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html#Application_Interfaces_Services_IPlayerAuthorizationService_UserAuthorizationIsMemberTeamById_System_String_System_Guid_
+  name: UserAuthorizationIsMemberTeamById
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamById
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById*
+  commentId: Overload:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html#Application_Interfaces_Services_IPlayerAuthorizationService_UserAuthorizationIsMemberTeamNotAdminById_System_String_System_Guid_
+  name: UserAuthorizationIsMemberTeamNotAdminById
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsMemberTeamNotAdminById
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById*
+  commentId: Overload:Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html#Application_Interfaces_Services_IPlayerAuthorizationService_UserAuthorizationIsPlayerWithoutTeamById_System_String_
+  name: UserAuthorizationIsPlayerWithoutTeamById
+  nameWithType: IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService.UserAuthorizationIsPlayerWithoutTeamById

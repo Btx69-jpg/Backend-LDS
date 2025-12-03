@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Chat
+  commentId: N:Application.DTOs.Chat
+  id: Application.DTOs.Chat
+  children:
+  - Application.DTOs.Chat.ChatRoomDto
+  - Application.DTOs.Chat.CreateChatRoomDto
+  - Application.DTOs.Chat.CreateChatRoomRequestDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Chat
+  nameWithType: Application.DTOs.Chat
+  fullName: Application.DTOs.Chat
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Chat.ChatRoomDto
+  commentId: T:Application.DTOs.Chat.ChatRoomDto
+  href: Application.DTOs.Chat.ChatRoomDto.html
+  name: ChatRoomDto
+  nameWithType: ChatRoomDto
+  fullName: Application.DTOs.Chat.ChatRoomDto
+- uid: Application.DTOs.Chat.CreateChatRoomDto
+  commentId: T:Application.DTOs.Chat.CreateChatRoomDto
+  parent: Application.DTOs.Chat
+  href: Application.DTOs.Chat.CreateChatRoomDto.html
+  name: CreateChatRoomDto
+  nameWithType: CreateChatRoomDto
+  fullName: Application.DTOs.Chat.CreateChatRoomDto
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+  commentId: T:Application.DTOs.Chat.CreateChatRoomRequestDto
+  parent: Application.DTOs.Chat
+  href: Application.DTOs.Chat.CreateChatRoomRequestDto.html
+  name: CreateChatRoomRequestDto
+  nameWithType: CreateChatRoomRequestDto
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto
+- uid: Application.DTOs.Chat
+  commentId: N:Application.DTOs.Chat
+  href: Application.html
+  name: Application.DTOs.Chat
+  nameWithType: Application.DTOs.Chat
+  fullName: Application.DTOs.Chat
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html

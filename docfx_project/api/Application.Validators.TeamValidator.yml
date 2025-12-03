@@ -1,0 +1,1993 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.TeamValidator
+  commentId: T:Application.Validators.TeamValidator
+  id: TeamValidator
+  parent: Application.Validators
+  children:
+  - Application.Validators.TeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  - Application.Validators.TeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  - Application.Validators.TeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  - Application.Validators.TeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  - Application.Validators.TeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  - Application.Validators.TeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  - Application.Validators.TeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  - Application.Validators.TeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  - Application.Validators.TeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  - Application.Validators.TeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  - Application.Validators.TeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  - Application.Validators.TeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  - Application.Validators.TeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  - Application.Validators.TeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  - Application.Validators.TeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  - Application.Validators.TeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  - Application.Validators.TeamValidator.ValidateVariableSearchTeam(System.Guid)
+  - Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  langs:
+  - csharp
+  - vb
+  name: TeamValidator
+  nameWithType: TeamValidator
+  fullName: Application.Validators.TeamValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamValidator
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: 'public class TeamValidator : ITeamValidator'
+    content.vb: Public Class TeamValidator Implements ITeamValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.TeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  commentId: M:Application.Validators.TeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  id: CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: CreateTeamValidation(CreateTeamDto?, Rank, Team?, Player?)
+  nameWithType: TeamValidator.CreateTeamValidation(CreateTeamDto?, Rank, Team?, Player?)
+  fullName: Application.Validators.TeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto?, Domain.Entities.Rank, Domain.Entities.Team?, Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateTeamValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void CreateTeamValidation(CreateTeamDto? createTeamDto, Rank rank, Team? team, Player? playerCreating)
+    parameters:
+    - id: createTeamDto
+      type: Application.DTOs.Team.CreateTeamDto
+    - id: rank
+      type: Domain.Entities.Rank
+    - id: team
+      type: Domain.Entities.Team
+    - id: playerCreating
+      type: Domain.Entities.Player
+    content.vb: Public Sub CreateTeamValidation(createTeamDto As CreateTeamDto, rank As Rank, team As Team, playerCreating As Player)
+  overload: Application.Validators.TeamValidator.CreateTeamValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  nameWithType.vb: TeamValidator.CreateTeamValidation(CreateTeamDto, Rank, Team, Player)
+  fullName.vb: Application.Validators.TeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto, Domain.Entities.Rank, Domain.Entities.Team, Domain.Entities.Player)
+  name.vb: CreateTeamValidation(CreateTeamDto, Rank, Team, Player)
+- uid: Application.Validators.TeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  id: UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: UpdateTeamValidation(Team?, Team?)
+  nameWithType: TeamValidator.UpdateTeamValidation(Team?, Team?)
+  fullName: Application.Validators.TeamValidator.UpdateTeamValidation(Domain.Entities.Team?, Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateTeamValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 47
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void UpdateTeamValidation(Team? existingTeamNewName, Team? updatingTeam)
+    parameters:
+    - id: existingTeamNewName
+      type: Domain.Entities.Team
+    - id: updatingTeam
+      type: Domain.Entities.Team
+    content.vb: Public Sub UpdateTeamValidation(existingTeamNewName As Team, updatingTeam As Team)
+  overload: Application.Validators.TeamValidator.UpdateTeamValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.UpdateTeamValidation(Team, Team)
+  fullName.vb: Application.Validators.TeamValidator.UpdateTeamValidation(Domain.Entities.Team, Domain.Entities.Team)
+  name.vb: UpdateTeamValidation(Team, Team)
+- uid: Application.Validators.TeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  id: DeleteTeamValidation(Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: DeleteTeamValidation(Team?)
+  nameWithType: TeamValidator.DeleteTeamValidation(Team?)
+  fullName: Application.Validators.TeamValidator.DeleteTeamValidation(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteTeamValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 69
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void DeleteTeamValidation(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub DeleteTeamValidation(team As Team)
+  overload: Application.Validators.TeamValidator.DeleteTeamValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.DeleteTeamValidation(Team)
+  fullName.vb: Application.Validators.TeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  name.vb: DeleteTeamValidation(Team)
+- uid: Application.Validators.TeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  commentId: M:Application.Validators.TeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  id: GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByIdValidation(TeamDetailsDto)
+  nameWithType: TeamValidator.GetTeamByIdValidation(TeamDetailsDto)
+  fullName: Application.Validators.TeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByIdValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 82
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetTeamByIdValidation(TeamDetailsDto team)
+    parameters:
+    - id: team
+      type: Application.DTOs.Team.TeamDetailsDto
+    content.vb: Public Sub GetTeamByIdValidation(team As TeamDetailsDto)
+  overload: Application.Validators.TeamValidator.GetTeamByIdValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+- uid: Application.Validators.TeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  commentId: M:Application.Validators.TeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  id: GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: GetAllTeamsValidation(IEnumerable<Team?>)
+  nameWithType: TeamValidator.GetAllTeamsValidation(IEnumerable<Team?>)
+  fullName: Application.Validators.TeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable<Domain.Entities.Team?>)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllTeamsValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 90
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetAllTeamsValidation(IEnumerable<Team?> Teams)
+    parameters:
+    - id: Teams
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.Team}
+    content.vb: Public Sub GetAllTeamsValidation(Teams As IEnumerable(Of Team))
+  overload: Application.Validators.TeamValidator.GetAllTeamsValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  nameWithType.vb: TeamValidator.GetAllTeamsValidation(IEnumerable(Of Team))
+  fullName.vb: Application.Validators.TeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable(Of Domain.Entities.Team))
+  name.vb: GetAllTeamsValidation(IEnumerable(Of Team))
+- uid: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Validators.TeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  id: RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayerFromTeamValidation(Team?, Player?, Player?)
+  nameWithType: TeamValidator.RemovePlayerFromTeamValidation(Team?, Player?, Player?)
+  fullName: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team?, Domain.Entities.Player?, Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RemovePlayerFromTeamValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 109
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void RemovePlayerFromTeamValidation(Team? team, Player? playerRemoving, Player? playerRemoved)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: playerRemoving
+      type: Domain.Entities.Player
+    - id: playerRemoved
+      type: Domain.Entities.Player
+    content.vb: Public Sub RemovePlayerFromTeamValidation(team As Team, playerRemoving As Player, playerRemoved As Player)
+  overload: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  nameWithType.vb: TeamValidator.RemovePlayerFromTeamValidation(Team, Player, Player)
+  fullName.vb: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  name.vb: RemovePlayerFromTeamValidation(Team, Player, Player)
+- uid: Application.Validators.TeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  id: GetTeamMembersValidation(Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: GetTeamMembersValidation(Team?)
+  nameWithType: TeamValidator.GetTeamMembersValidation(Team?)
+  fullName: Application.Validators.TeamValidator.GetTeamMembersValidation(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamMembersValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 131
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetTeamMembersValidation(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub GetTeamMembersValidation(team As Team)
+  overload: Application.Validators.TeamValidator.GetTeamMembersValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.GetTeamMembersValidation(Team)
+  fullName.vb: Application.Validators.TeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  name.vb: GetTeamMembersValidation(Team)
+- uid: Application.Validators.TeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  id: GetMembershipRequestsValidation(Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsValidation(Team?)
+  nameWithType: TeamValidator.GetMembershipRequestsValidation(Team?)
+  fullName: Application.Validators.TeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 140
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetMembershipRequestsValidation(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub GetMembershipRequestsValidation(team As Team)
+  overload: Application.Validators.TeamValidator.GetMembershipRequestsValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.GetMembershipRequestsValidation(Team)
+  fullName.vb: Application.Validators.TeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  name.vb: GetMembershipRequestsValidation(Team)
+- uid: Application.Validators.TeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  commentId: M:Application.Validators.TeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  id: ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ApproveMembershipRequestValidation(Team?, Guid)
+  nameWithType: TeamValidator.ApproveMembershipRequestValidation(Team?, Guid)
+  fullName: Application.Validators.TeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team?, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ApproveMembershipRequestValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 154
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ApproveMembershipRequestValidation(Team? team, Guid requestToDelete)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: requestToDelete
+      type: System.Guid
+    content.vb: Public Sub ApproveMembershipRequestValidation(team As Team, requestToDelete As Guid)
+  overload: Application.Validators.TeamValidator.ApproveMembershipRequestValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  nameWithType.vb: TeamValidator.ApproveMembershipRequestValidation(Team, Guid)
+  fullName.vb: Application.Validators.TeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team, System.Guid)
+  name.vb: ApproveMembershipRequestValidation(Team, Guid)
+- uid: Application.Validators.TeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  commentId: M:Application.Validators.TeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  id: RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequestValidation(Team?, Guid)
+  nameWithType: TeamValidator.RejectMembershipRequestValidation(Team?, Guid)
+  fullName: Application.Validators.TeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team?, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequestValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 169
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void RejectMembershipRequestValidation(Team? team, Guid requestToDelete)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: requestToDelete
+      type: System.Guid
+    content.vb: Public Sub RejectMembershipRequestValidation(team As Team, requestToDelete As Guid)
+  overload: Application.Validators.TeamValidator.RejectMembershipRequestValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  nameWithType.vb: TeamValidator.RejectMembershipRequestValidation(Team, Guid)
+  fullName.vb: Application.Validators.TeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team, System.Guid)
+  name.vb: RejectMembershipRequestValidation(Team, Guid)
+- uid: Application.Validators.TeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  id: SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestValidation(MembershipRequest?, Team?)
+  nameWithType: TeamValidator.SendMembershipRequestValidation(MembershipRequest?, Team?)
+  fullName: Application.Validators.TeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest?, Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 182
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void SendMembershipRequestValidation(MembershipRequest? mr, Team? team)
+    parameters:
+    - id: mr
+      type: Domain.Entities.MembershipRequest
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub SendMembershipRequestValidation(mr As MembershipRequest, team As Team)
+  overload: Application.Validators.TeamValidator.SendMembershipRequestValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.SendMembershipRequestValidation(MembershipRequest, Team)
+  fullName.vb: Application.Validators.TeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest, Domain.Entities.Team)
+  name.vb: SendMembershipRequestValidation(MembershipRequest, Team)
+- uid: Application.Validators.TeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Validators.TeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  id: DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: DemoteAdminToMemberValidation(Team?, Player?, Player?)
+  nameWithType: TeamValidator.DemoteAdminToMemberValidation(Team?, Player?, Player?)
+  fullName: Application.Validators.TeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team?, Domain.Entities.Player?, Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DemoteAdminToMemberValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 208
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void DemoteAdminToMemberValidation(Team? team, Player? adminToDemote, Player? adminDemoting)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: adminToDemote
+      type: Domain.Entities.Player
+    - id: adminDemoting
+      type: Domain.Entities.Player
+    content.vb: Public Sub DemoteAdminToMemberValidation(team As Team, adminToDemote As Player, adminDemoting As Player)
+  overload: Application.Validators.TeamValidator.DemoteAdminToMemberValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  nameWithType.vb: TeamValidator.DemoteAdminToMemberValidation(Team, Player, Player)
+  fullName.vb: Application.Validators.TeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  name.vb: DemoteAdminToMemberValidation(Team, Player, Player)
+- uid: Application.Validators.TeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Validators.TeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  id: PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: PromoteMemberToAdminValidation(Team?, Player?, Player?)
+  nameWithType: TeamValidator.PromoteMemberToAdminValidation(Team?, Player?, Player?)
+  fullName: Application.Validators.TeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team?, Domain.Entities.Player?, Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PromoteMemberToAdminValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 231
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void PromoteMemberToAdminValidation(Team? team, Player? memberToPromote, Player? memberPromoting)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: memberToPromote
+      type: Domain.Entities.Player
+    - id: memberPromoting
+      type: Domain.Entities.Player
+    content.vb: Public Sub PromoteMemberToAdminValidation(team As Team, memberToPromote As Player, memberPromoting As Player)
+  overload: Application.Validators.TeamValidator.PromoteMemberToAdminValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  nameWithType.vb: TeamValidator.PromoteMemberToAdminValidation(Team, Player, Player)
+  fullName.vb: Application.Validators.TeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  name.vb: PromoteMemberToAdminValidation(Team, Player, Player)
+- uid: Application.Validators.TeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  id: GetTeamScheduleValidation(Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: GetTeamScheduleValidation(Team?)
+  nameWithType: TeamValidator.GetTeamScheduleValidation(Team?)
+  fullName: Application.Validators.TeamValidator.GetTeamScheduleValidation(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamScheduleValidation
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 264
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetTeamScheduleValidation(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub GetTeamScheduleValidation(team As Team)
+  overload: Application.Validators.TeamValidator.GetTeamScheduleValidation*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.GetTeamScheduleValidation(Team)
+  fullName.vb: Application.Validators.TeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  name.vb: GetTeamScheduleValidation(Team)
+- uid: Application.Validators.TeamValidator.ValidateVariableSearchTeam(System.Guid)
+  commentId: M:Application.Validators.TeamValidator.ValidateVariableSearchTeam(System.Guid)
+  id: ValidateVariableSearchTeam(System.Guid)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVariableSearchTeam(Guid)
+  nameWithType: TeamValidator.ValidateVariableSearchTeam(Guid)
+  fullName: Application.Validators.TeamValidator.ValidateVariableSearchTeam(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateVariableSearchTeam
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 277
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateVariableSearchTeam(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    content.vb: Public Sub ValidateVariableSearchTeam(idTeam As Guid)
+  overload: Application.Validators.TeamValidator.ValidateVariableSearchTeam*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+- uid: Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  id: ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVaribleSearchTeamWithFilters(Guid, FilterListTeamDto)
+  nameWithType: TeamValidator.ValidateVaribleSearchTeamWithFilters(Guid, FilterListTeamDto)
+  fullName: Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterListTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateVaribleSearchTeamWithFilters
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 285
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateVaribleSearchTeamWithFilters(Guid idTeam, FilterListTeamDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterListTeamDto
+    content.vb: Public Sub ValidateVaribleSearchTeamWithFilters(idTeam As Guid, filter As FilterListTeamDto)
+  overload: Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+- uid: Application.Validators.TeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Validators.TeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  id: ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilterTeams(FilterListTeamDto?)
+  nameWithType: TeamValidator.ValidateFilterTeams(FilterListTeamDto?)
+  fullName: Application.Validators.TeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFilterTeams
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 291
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateFilterTeams(FilterListTeamDto? filter)
+    parameters:
+    - id: filter
+      type: Application.DTOs.Filters.FilterListTeamDto
+    content.vb: Public Sub ValidateFilterTeams(filter As FilterListTeamDto)
+  overload: Application.Validators.TeamValidator.ValidateFilterTeams*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  nameWithType.vb: TeamValidator.ValidateFilterTeams(FilterListTeamDto)
+  fullName.vb: Application.Validators.TeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  name.vb: ValidateFilterTeams(FilterListTeamDto)
+- uid: Application.Validators.TeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  commentId: M:Application.Validators.TeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  id: ValidateTeamSearch(Domain.Entities.Team)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamSearch(Team?)
+  nameWithType: TeamValidator.ValidateTeamSearch(Team?)
+  fullName: Application.Validators.TeamValidator.ValidateTeamSearch(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamSearch
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 296
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateTeamSearch(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub ValidateTeamSearch(team As Team)
+  overload: Application.Validators.TeamValidator.ValidateTeamSearch*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  nameWithType.vb: TeamValidator.ValidateTeamSearch(Team)
+  fullName.vb: Application.Validators.TeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  name.vb: ValidateTeamSearch(Team)
+- uid: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  id: ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Validators.TeamValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFiltersGetPlayersWithout(FilterTeamDto?)
+  nameWithType: TeamValidator.ValidateFiltersGetPlayersWithout(FilterTeamDto?)
+  fullName: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/TeamValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFiltersGetPlayersWithout
+    path: ../Application/Validators/TeamValidator.cs
+    startLine: 304
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateFiltersGetPlayersWithout(FilterTeamDto? filter)
+    parameters:
+    - id: filter
+      type: Application.DTOs.Filters.FilterTeamDto
+    content.vb: Public Sub ValidateFiltersGetPlayersWithout(filter As FilterTeamDto)
+  overload: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout*
+  implements:
+  - Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  nameWithType.vb: TeamValidator.ValidateFiltersGetPlayersWithout(FilterTeamDto)
+  fullName.vb: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  name.vb: ValidateFiltersGetPlayersWithout(FilterTeamDto)
+references:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  href: Application.html
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.ITeamValidator
+  commentId: T:Application.Interfaces.Validators.ITeamValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ITeamValidator.html
+  name: ITeamValidator
+  nameWithType: ITeamValidator
+  fullName: Application.Interfaces.Validators.ITeamValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Validators.TeamValidator.CreateTeamValidation*
+  commentId: Overload:Application.Validators.TeamValidator.CreateTeamValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_CreateTeamValidation_Application_DTOs_Team_CreateTeamDto_Domain_Entities_Rank_Domain_Entities_Team_Domain_Entities_Player_
+  name: CreateTeamValidation
+  nameWithType: TeamValidator.CreateTeamValidation
+  fullName: Application.Validators.TeamValidator.CreateTeamValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_CreateTeamValidation_Application_DTOs_Team_CreateTeamDto_Domain_Entities_Rank_Domain_Entities_Team_Domain_Entities_Player_
+  name: CreateTeamValidation(CreateTeamDto, Rank, Team, Player)
+  nameWithType: ITeamValidator.CreateTeamValidation(CreateTeamDto, Rank, Team, Player)
+  fullName: Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto, Domain.Entities.Rank, Domain.Entities.Team, Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+    name: CreateTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_CreateTeamValidation_Application_DTOs_Team_CreateTeamDto_Domain_Entities_Rank_Domain_Entities_Team_Domain_Entities_Player_
+  - name: (
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.CreateTeamValidation(Application.DTOs.Team.CreateTeamDto,Domain.Entities.Rank,Domain.Entities.Team,Domain.Entities.Player)
+    name: CreateTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_CreateTeamValidation_Application_DTOs_Team_CreateTeamDto_Domain_Entities_Rank_Domain_Entities_Team_Domain_Entities_Player_
+  - name: (
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Application.DTOs.Team.CreateTeamDto
+  commentId: T:Application.DTOs.Team.CreateTeamDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.CreateTeamDto.html
+  name: CreateTeamDto
+  nameWithType: CreateTeamDto
+  fullName: Application.DTOs.Team.CreateTeamDto
+- uid: Domain.Entities.Rank
+  commentId: T:Domain.Entities.Rank
+  parent: Domain.Entities
+  href: Domain.Entities.Rank.html
+  name: Rank
+  nameWithType: Rank
+  fullName: Domain.Entities.Rank
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities.Player
+  commentId: T:Domain.Entities.Player
+  parent: Domain.Entities
+  href: Domain.Entities.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Domain.Entities.Player
+- uid: Application.DTOs.Team
+  commentId: N:Application.DTOs.Team
+  href: Application.html
+  name: Application.DTOs.Team
+  nameWithType: Application.DTOs.Team
+  fullName: Application.DTOs.Team
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Validators.TeamValidator.UpdateTeamValidation*
+  commentId: Overload:Application.Validators.TeamValidator.UpdateTeamValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_UpdateTeamValidation_Domain_Entities_Team_Domain_Entities_Team_
+  name: UpdateTeamValidation
+  nameWithType: TeamValidator.UpdateTeamValidation
+  fullName: Application.Validators.TeamValidator.UpdateTeamValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_UpdateTeamValidation_Domain_Entities_Team_Domain_Entities_Team_
+  name: UpdateTeamValidation(Team, Team)
+  nameWithType: ITeamValidator.UpdateTeamValidation(Team, Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team, Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+    name: UpdateTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_UpdateTeamValidation_Domain_Entities_Team_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.UpdateTeamValidation(Domain.Entities.Team,Domain.Entities.Team)
+    name: UpdateTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_UpdateTeamValidation_Domain_Entities_Team_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.DeleteTeamValidation*
+  commentId: Overload:Application.Validators.TeamValidator.DeleteTeamValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_DeleteTeamValidation_Domain_Entities_Team_
+  name: DeleteTeamValidation
+  nameWithType: TeamValidator.DeleteTeamValidation
+  fullName: Application.Validators.TeamValidator.DeleteTeamValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DeleteTeamValidation_Domain_Entities_Team_
+  name: DeleteTeamValidation(Team)
+  nameWithType: ITeamValidator.DeleteTeamValidation(Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+    name: DeleteTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DeleteTeamValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.DeleteTeamValidation(Domain.Entities.Team)
+    name: DeleteTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DeleteTeamValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.GetTeamByIdValidation*
+  commentId: Overload:Application.Validators.TeamValidator.GetTeamByIdValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_GetTeamByIdValidation_Application_DTOs_Team_TeamDetailsDto_
+  name: GetTeamByIdValidation
+  nameWithType: TeamValidator.GetTeamByIdValidation
+  fullName: Application.Validators.TeamValidator.GetTeamByIdValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamByIdValidation_Application_DTOs_Team_TeamDetailsDto_
+  name: GetTeamByIdValidation(TeamDetailsDto)
+  nameWithType: ITeamValidator.GetTeamByIdValidation(TeamDetailsDto)
+  fullName: Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+    name: GetTeamByIdValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamByIdValidation_Application_DTOs_Team_TeamDetailsDto_
+  - name: (
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamByIdValidation(Application.DTOs.Team.TeamDetailsDto)
+    name: GetTeamByIdValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamByIdValidation_Application_DTOs_Team_TeamDetailsDto_
+  - name: (
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: )
+- uid: Application.DTOs.Team.TeamDetailsDto
+  commentId: T:Application.DTOs.Team.TeamDetailsDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.TeamDetailsDto.html
+  name: TeamDetailsDto
+  nameWithType: TeamDetailsDto
+  fullName: Application.DTOs.Team.TeamDetailsDto
+- uid: Application.Validators.TeamValidator.GetAllTeamsValidation*
+  commentId: Overload:Application.Validators.TeamValidator.GetAllTeamsValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_GetAllTeamsValidation_System_Collections_Generic_IEnumerable_Domain_Entities_Team__
+  name: GetAllTeamsValidation
+  nameWithType: TeamValidator.GetAllTeamsValidation
+  fullName: Application.Validators.TeamValidator.GetAllTeamsValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+  parent: Application.Interfaces.Validators.ITeamValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetAllTeamsValidation_System_Collections_Generic_IEnumerable_Domain_Entities_Team__
+  name: GetAllTeamsValidation(IEnumerable<Team>)
+  nameWithType: ITeamValidator.GetAllTeamsValidation(IEnumerable<Team>)
+  fullName: Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable<Domain.Entities.Team>)
+  nameWithType.vb: ITeamValidator.GetAllTeamsValidation(IEnumerable(Of Team))
+  fullName.vb: Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable(Of Domain.Entities.Team))
+  name.vb: GetAllTeamsValidation(IEnumerable(Of Team))
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+    name: GetAllTeamsValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetAllTeamsValidation_System_Collections_Generic_IEnumerable_Domain_Entities_Team__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetAllTeamsValidation(System.Collections.Generic.IEnumerable{Domain.Entities.Team})
+    name: GetAllTeamsValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetAllTeamsValidation_System_Collections_Generic_IEnumerable_Domain_Entities_Team__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.Team}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.Team}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Team>
+  nameWithType: IEnumerable<Team>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.Team>
+  nameWithType.vb: IEnumerable(Of Team)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.Team)
+  name.vb: IEnumerable(Of Team)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation*
+  commentId: Overload:Application.Validators.TeamValidator.RemovePlayerFromTeamValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_RemovePlayerFromTeamValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: RemovePlayerFromTeamValidation
+  nameWithType: TeamValidator.RemovePlayerFromTeamValidation
+  fullName: Application.Validators.TeamValidator.RemovePlayerFromTeamValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RemovePlayerFromTeamValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: RemovePlayerFromTeamValidation(Team, Player, Player)
+  nameWithType: ITeamValidator.RemovePlayerFromTeamValidation(Team, Player, Player)
+  fullName: Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: RemovePlayerFromTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RemovePlayerFromTeamValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.RemovePlayerFromTeamValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: RemovePlayerFromTeamValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RemovePlayerFromTeamValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Application.Validators.TeamValidator.GetTeamMembersValidation*
+  commentId: Overload:Application.Validators.TeamValidator.GetTeamMembersValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_GetTeamMembersValidation_Domain_Entities_Team_
+  name: GetTeamMembersValidation
+  nameWithType: TeamValidator.GetTeamMembersValidation
+  fullName: Application.Validators.TeamValidator.GetTeamMembersValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamMembersValidation_Domain_Entities_Team_
+  name: GetTeamMembersValidation(Team)
+  nameWithType: ITeamValidator.GetTeamMembersValidation(Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+    name: GetTeamMembersValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamMembersValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamMembersValidation(Domain.Entities.Team)
+    name: GetTeamMembersValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamMembersValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.GetMembershipRequestsValidation*
+  commentId: Overload:Application.Validators.TeamValidator.GetMembershipRequestsValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_GetMembershipRequestsValidation_Domain_Entities_Team_
+  name: GetMembershipRequestsValidation
+  nameWithType: TeamValidator.GetMembershipRequestsValidation
+  fullName: Application.Validators.TeamValidator.GetMembershipRequestsValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetMembershipRequestsValidation_Domain_Entities_Team_
+  name: GetMembershipRequestsValidation(Team)
+  nameWithType: ITeamValidator.GetMembershipRequestsValidation(Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+    name: GetMembershipRequestsValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetMembershipRequestsValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetMembershipRequestsValidation(Domain.Entities.Team)
+    name: GetMembershipRequestsValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetMembershipRequestsValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.ApproveMembershipRequestValidation*
+  commentId: Overload:Application.Validators.TeamValidator.ApproveMembershipRequestValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ApproveMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  name: ApproveMembershipRequestValidation
+  nameWithType: TeamValidator.ApproveMembershipRequestValidation
+  fullName: Application.Validators.TeamValidator.ApproveMembershipRequestValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ApproveMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  name: ApproveMembershipRequestValidation(Team, Guid)
+  nameWithType: ITeamValidator.ApproveMembershipRequestValidation(Team, Guid)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+    name: ApproveMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ApproveMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ApproveMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+    name: ApproveMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ApproveMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Validators.TeamValidator.RejectMembershipRequestValidation*
+  commentId: Overload:Application.Validators.TeamValidator.RejectMembershipRequestValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_RejectMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  name: RejectMembershipRequestValidation
+  nameWithType: TeamValidator.RejectMembershipRequestValidation
+  fullName: Application.Validators.TeamValidator.RejectMembershipRequestValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RejectMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  name: RejectMembershipRequestValidation(Team, Guid)
+  nameWithType: ITeamValidator.RejectMembershipRequestValidation(Team, Guid)
+  fullName: Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+    name: RejectMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RejectMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.RejectMembershipRequestValidation(Domain.Entities.Team,System.Guid)
+    name: RejectMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_RejectMembershipRequestValidation_Domain_Entities_Team_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Validators.TeamValidator.SendMembershipRequestValidation*
+  commentId: Overload:Application.Validators.TeamValidator.SendMembershipRequestValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_SendMembershipRequestValidation_Domain_Entities_MembershipRequest_Domain_Entities_Team_
+  name: SendMembershipRequestValidation
+  nameWithType: TeamValidator.SendMembershipRequestValidation
+  fullName: Application.Validators.TeamValidator.SendMembershipRequestValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_SendMembershipRequestValidation_Domain_Entities_MembershipRequest_Domain_Entities_Team_
+  name: SendMembershipRequestValidation(MembershipRequest, Team)
+  nameWithType: ITeamValidator.SendMembershipRequestValidation(MembershipRequest, Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest, Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+    name: SendMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_SendMembershipRequestValidation_Domain_Entities_MembershipRequest_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.MembershipRequest
+    name: MembershipRequest
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.SendMembershipRequestValidation(Domain.Entities.MembershipRequest,Domain.Entities.Team)
+    name: SendMembershipRequestValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_SendMembershipRequestValidation_Domain_Entities_MembershipRequest_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.MembershipRequest
+    name: MembershipRequest
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Domain.Entities.MembershipRequest
+  commentId: T:Domain.Entities.MembershipRequest
+  parent: Domain.Entities
+  href: Domain.Entities.MembershipRequest.html
+  name: MembershipRequest
+  nameWithType: MembershipRequest
+  fullName: Domain.Entities.MembershipRequest
+- uid: Application.Validators.TeamValidator.DemoteAdminToMemberValidation*
+  commentId: Overload:Application.Validators.TeamValidator.DemoteAdminToMemberValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_DemoteAdminToMemberValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: DemoteAdminToMemberValidation
+  nameWithType: TeamValidator.DemoteAdminToMemberValidation
+  fullName: Application.Validators.TeamValidator.DemoteAdminToMemberValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DemoteAdminToMemberValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: DemoteAdminToMemberValidation(Team, Player, Player)
+  nameWithType: ITeamValidator.DemoteAdminToMemberValidation(Team, Player, Player)
+  fullName: Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: DemoteAdminToMemberValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DemoteAdminToMemberValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.DemoteAdminToMemberValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: DemoteAdminToMemberValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_DemoteAdminToMemberValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Application.Validators.TeamValidator.PromoteMemberToAdminValidation*
+  commentId: Overload:Application.Validators.TeamValidator.PromoteMemberToAdminValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_PromoteMemberToAdminValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: PromoteMemberToAdminValidation
+  nameWithType: TeamValidator.PromoteMemberToAdminValidation
+  fullName: Application.Validators.TeamValidator.PromoteMemberToAdminValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_PromoteMemberToAdminValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  name: PromoteMemberToAdminValidation(Team, Player, Player)
+  nameWithType: ITeamValidator.PromoteMemberToAdminValidation(Team, Player, Player)
+  fullName: Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: PromoteMemberToAdminValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_PromoteMemberToAdminValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.PromoteMemberToAdminValidation(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.Player)
+    name: PromoteMemberToAdminValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_PromoteMemberToAdminValidation_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_Player_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Application.Validators.TeamValidator.GetTeamScheduleValidation*
+  commentId: Overload:Application.Validators.TeamValidator.GetTeamScheduleValidation
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_GetTeamScheduleValidation_Domain_Entities_Team_
+  name: GetTeamScheduleValidation
+  nameWithType: TeamValidator.GetTeamScheduleValidation
+  fullName: Application.Validators.TeamValidator.GetTeamScheduleValidation
+- uid: Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamScheduleValidation_Domain_Entities_Team_
+  name: GetTeamScheduleValidation(Team)
+  nameWithType: ITeamValidator.GetTeamScheduleValidation(Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+    name: GetTeamScheduleValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamScheduleValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.GetTeamScheduleValidation(Domain.Entities.Team)
+    name: GetTeamScheduleValidation
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_GetTeamScheduleValidation_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.ValidateVariableSearchTeam*
+  commentId: Overload:Application.Validators.TeamValidator.ValidateVariableSearchTeam
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ValidateVariableSearchTeam_System_Guid_
+  name: ValidateVariableSearchTeam
+  nameWithType: TeamValidator.ValidateVariableSearchTeam
+  fullName: Application.Validators.TeamValidator.ValidateVariableSearchTeam
+- uid: Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVariableSearchTeam_System_Guid_
+  name: ValidateVariableSearchTeam(Guid)
+  nameWithType: ITeamValidator.ValidateVariableSearchTeam(Guid)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+    name: ValidateVariableSearchTeam
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVariableSearchTeam_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateVariableSearchTeam(System.Guid)
+    name: ValidateVariableSearchTeam
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVariableSearchTeam_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters*
+  commentId: Overload:Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ValidateVaribleSearchTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  name: ValidateVaribleSearchTeamWithFilters
+  nameWithType: TeamValidator.ValidateVaribleSearchTeamWithFilters
+  fullName: Application.Validators.TeamValidator.ValidateVaribleSearchTeamWithFilters
+- uid: Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVaribleSearchTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  name: ValidateVaribleSearchTeamWithFilters(Guid, FilterListTeamDto)
+  nameWithType: ITeamValidator.ValidateVaribleSearchTeamWithFilters(Guid, FilterListTeamDto)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterListTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+    name: ValidateVaribleSearchTeamWithFilters
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVaribleSearchTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateVaribleSearchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+    name: ValidateVaribleSearchTeamWithFilters
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateVaribleSearchTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterListTeamDto
+  commentId: T:Application.DTOs.Filters.FilterListTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterListTeamDto.html
+  name: FilterListTeamDto
+  nameWithType: FilterListTeamDto
+  fullName: Application.DTOs.Filters.FilterListTeamDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Validators.TeamValidator.ValidateFilterTeams*
+  commentId: Overload:Application.Validators.TeamValidator.ValidateFilterTeams
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ValidateFilterTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: ValidateFilterTeams
+  nameWithType: TeamValidator.ValidateFilterTeams
+  fullName: Application.Validators.TeamValidator.ValidateFilterTeams
+- uid: Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFilterTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: ValidateFilterTeams(FilterListTeamDto)
+  nameWithType: ITeamValidator.ValidateFilterTeams(FilterListTeamDto)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+    name: ValidateFilterTeams
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFilterTeams_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateFilterTeams(Application.DTOs.Filters.FilterListTeamDto)
+    name: ValidateFilterTeams
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFilterTeams_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+- uid: Application.Validators.TeamValidator.ValidateTeamSearch*
+  commentId: Overload:Application.Validators.TeamValidator.ValidateTeamSearch
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ValidateTeamSearch_Domain_Entities_Team_
+  name: ValidateTeamSearch
+  nameWithType: TeamValidator.ValidateTeamSearch
+  fullName: Application.Validators.TeamValidator.ValidateTeamSearch
+- uid: Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateTeamSearch_Domain_Entities_Team_
+  name: ValidateTeamSearch(Team)
+  nameWithType: ITeamValidator.ValidateTeamSearch(Team)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+    name: ValidateTeamSearch
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateTeamSearch_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateTeamSearch(Domain.Entities.Team)
+    name: ValidateTeamSearch
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateTeamSearch_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout*
+  commentId: Overload:Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout
+  href: Application.Validators.TeamValidator.html#Application_Validators_TeamValidator_ValidateFiltersGetPlayersWithout_Application_DTOs_Filters_FilterTeamDto_
+  name: ValidateFiltersGetPlayersWithout
+  nameWithType: TeamValidator.ValidateFiltersGetPlayersWithout
+  fullName: Application.Validators.TeamValidator.ValidateFiltersGetPlayersWithout
+- uid: Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Interfaces.Validators.ITeamValidator
+  href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFiltersGetPlayersWithout_Application_DTOs_Filters_FilterTeamDto_
+  name: ValidateFiltersGetPlayersWithout(FilterTeamDto)
+  nameWithType: ITeamValidator.ValidateFiltersGetPlayersWithout(FilterTeamDto)
+  fullName: Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+    name: ValidateFiltersGetPlayersWithout
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFiltersGetPlayersWithout_Application_DTOs_Filters_FilterTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+    href: Application.DTOs.Filters.FilterTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ITeamValidator.ValidateFiltersGetPlayersWithout(Application.DTOs.Filters.FilterTeamDto)
+    name: ValidateFiltersGetPlayersWithout
+    href: Application.Interfaces.Validators.ITeamValidator.html#Application_Interfaces_Validators_ITeamValidator_ValidateFiltersGetPlayersWithout_Application_DTOs_Filters_FilterTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+    href: Application.DTOs.Filters.FilterTeamDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterTeamDto
+  commentId: T:Application.DTOs.Filters.FilterTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamDto.html
+  name: FilterTeamDto
+  nameWithType: FilterTeamDto
+  fullName: Application.DTOs.Filters.FilterTeamDto

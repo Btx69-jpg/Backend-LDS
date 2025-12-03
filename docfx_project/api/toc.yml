@@ -1,0 +1,984 @@
+### YamlMime:TableOfContent
+items:
+- uid: Api.BackGroundServices
+  name: Api.BackGroundServices
+  type: Namespace
+  items:
+  - uid: Api.BackGroundServices.NotificationBackGroundService
+    name: NotificationBackGroundService
+    type: Class
+- uid: Api.Controllers
+  name: Api.Controllers
+  type: Namespace
+  items:
+  - uid: Api.Controllers.CalendarController
+    name: CalendarController
+    type: Class
+  - uid: Api.Controllers.ChatController
+    name: ChatController
+    type: Class
+  - uid: Api.Controllers.CompetitiveMatchesController
+    name: CompetitiveMatchesController
+    type: Class
+  - uid: Api.Controllers.LeaderboardController
+    name: LeaderboardController
+    type: Class
+  - uid: Api.Controllers.MatchInviteController
+    name: MatchInviteController
+    type: Class
+  - uid: Api.Controllers.PlayerController
+    name: PlayerController
+    type: Class
+  - uid: Api.Controllers.PostPoneMatchController
+    name: PostPoneMatchController
+    type: Class
+  - uid: Api.Controllers.SuperAdminController
+    name: SuperAdminController
+    type: Class
+  - uid: Api.Controllers.TeamController
+    name: TeamController
+    type: Class
+  - uid: Api.Controllers.UserController
+    name: UserController
+    type: Class
+- uid: Api.Extensions
+  name: Api.Extensions
+  type: Namespace
+  items:
+  - uid: Api.Extensions.DependencyInjection
+    name: DependencyInjection
+    type: Class
+  - uid: Api.Extensions.FirebaseAuthenticationExtensions
+    name: FirebaseAuthenticationExtensions
+    type: Class
+  - uid: Api.Extensions.HubMappingExtensions
+    name: HubMappingExtensions
+    type: Class
+  - uid: Api.Extensions.SwaggerServiceExtension
+    name: SwaggerServiceExtension
+    type: Class
+- uid: Api.Hubs
+  name: Api.Hubs
+  type: Namespace
+  items:
+  - uid: Api.Hubs.FinishMatchHub
+    name: FinishMatchHub
+    type: Class
+  - uid: Api.Hubs.NotificationHub
+    name: NotificationHub
+    type: Class
+  - uid: Api.Hubs.RankMatchMakerHub
+    name: RankMatchMakerHub
+    type: Class
+  - uid: Api.Hubs.StartMatchHub
+    name: StartMatchHub
+    type: Class
+- uid: Api.Hubs.Notification
+  name: Api.Hubs.Notification
+  type: Namespace
+  items:
+  - uid: Api.Hubs.Notification.NotificationService
+    name: NotificationService
+    type: Class
+- uid: Api.Middlewares
+  name: Api.Middlewares
+  type: Namespace
+  items:
+  - uid: Api.Middlewares.GlobalExceptionHandler
+    name: GlobalExceptionHandler
+    type: Class
+- uid: Application
+  name: Application
+  type: Namespace
+  items:
+  - uid: Application.DependecyInjection
+    name: DependecyInjection
+    type: Class
+- uid: Application.DTOs
+  name: Application.DTOs
+  type: Namespace
+  items:
+  - uid: Application.DTOs.FirebaseLoginResponseDto
+    name: FirebaseLoginResponseDto
+    type: Class
+  - uid: Application.DTOs.LoginDto
+    name: LoginDto
+    type: Class
+  - uid: Application.DTOs.LoginResponseDto
+    name: LoginResponseDto
+    type: Class
+  - uid: Application.DTOs.ProfileSetupDto
+    name: ProfileSetupDto
+    type: Class
+- uid: Application.DTOs.Chat
+  name: Application.DTOs.Chat
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Chat.ChatRoomDto
+    name: ChatRoomDto
+    type: Class
+  - uid: Application.DTOs.Chat.CreateChatRoomDto
+    name: CreateChatRoomDto
+    type: Class
+  - uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+    name: CreateChatRoomRequestDto
+    type: Class
+- uid: Application.DTOs.Filters
+  name: Application.DTOs.Filters
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Filters.FilterCalendarDto
+    name: FilterCalendarDto
+    type: Class
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    type: Class
+  - uid: Application.DTOs.Filters.FilterMatchInvitesDto
+    name: FilterMatchInvitesDto
+    type: Class
+  - uid: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+    name: FilterMembershipRequestsPlayer
+    type: Class
+  - uid: Application.DTOs.Filters.FilterMembershipRequestsTeam
+    name: FilterMembershipRequestsTeam
+    type: Class
+  - uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+    name: FilterPostPoneMatchDto
+    type: Class
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+    type: Class
+  - uid: Application.DTOs.Filters.FilterTeamPlayers
+    name: FilterTeamPlayers
+    type: Class
+- uid: Application.DTOs.Match
+  name: Application.DTOs.Match
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Match.InfoMatch
+    name: InfoMatch
+    type: Class
+  - uid: Application.DTOs.Match.InfoMatchCalendar
+    name: InfoMatchCalendar
+    type: Class
+  - uid: Application.DTOs.Match.MatchDto
+    name: MatchDto
+    type: Class
+  - uid: Application.DTOs.Match.ResultMatchDto
+    name: ResultMatchDto
+    type: Class
+- uid: Application.DTOs.MatchInvites
+  name: Application.DTOs.MatchInvites
+  type: Namespace
+  items:
+  - uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+    name: InfoMatchInviteDto
+    type: Class
+  - uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+    name: SendMatchInviteDto
+    type: Class
+- uid: Application.DTOs.MemberShip
+  name: Application.DTOs.MemberShip
+  type: Namespace
+  items:
+  - uid: Application.DTOs.MemberShip.MemberShipRequestDto
+    name: MemberShipRequestDto
+    type: Class
+- uid: Application.DTOs.Membership
+  name: Application.DTOs.Membership
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Membership.PlayerDto
+    name: PlayerDto
+    type: Class
+  - uid: Application.DTOs.Membership.SendMembershipRequestDTO
+    name: SendMembershipRequestDTO
+    type: Class
+- uid: Application.DTOs.Pitch
+  name: Application.DTOs.Pitch
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Pitch.PitchDto
+    name: PitchDto
+    type: Class
+- uid: Application.DTOs.Player
+  name: Application.DTOs.Player
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Player.InfoPlayerDto
+    name: InfoPlayerDto
+    type: Class
+  - uid: Application.DTOs.Player.PlayerDataCompleteDto
+    name: PlayerDataCompleteDto
+    type: Class
+  - uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+    name: PlayerWithoutTeamInfoDto
+    type: Class
+- uid: Application.DTOs.PlayerDTOs
+  name: Application.DTOs.PlayerDTOs
+  type: Namespace
+  items:
+  - uid: Application.DTOs.PlayerDTOs.CreatePlayerDto
+    name: CreatePlayerDto
+    type: Class
+  - uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+    name: PlayerDetailsDto
+    type: Class
+  - uid: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+    name: UpdatePlayerDto
+    type: Class
+- uid: Application.DTOs.PostPoneGame
+  name: Application.DTOs.PostPoneGame
+  type: Namespace
+  items:
+  - uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    name: AcceptRefusePostPoneDto
+    type: Class
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    type: Class
+  - uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+    name: PostPoneMatchDto
+    type: Class
+- uid: Application.DTOs.Rank
+  name: Application.DTOs.Rank
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Rank.InfoRankDto
+    name: InfoRankDto
+    type: Class
+- uid: Application.DTOs.RankMatchMaker
+  name: Application.DTOs.RankMatchMaker
+  type: Namespace
+  items:
+  - uid: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+    name: CriteriaMatchMaker
+    type: Class
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    type: Class
+  - uid: Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto
+    name: InfoTeamRankMatchMakerDto
+    type: Class
+  - uid: Application.DTOs.RankMatchMaker.StartSearchDto
+    name: StartSearchDto
+    type: Class
+- uid: Application.DTOs.SuperAdmin
+  name: Application.DTOs.SuperAdmin
+  type: Namespace
+  items:
+  - uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    name: CreateSuperAdminDTO
+    type: Class
+  - uid: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+    name: SuperAdminDetailsDTO
+    type: Class
+  - uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    name: UpdateSuperAdminDTO
+    type: Class
+- uid: Application.DTOs.Team
+  name: Application.DTOs.Team
+  type: Namespace
+  items:
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    type: Class
+  - uid: Application.DTOs.Team.InfoTeamsDto
+    name: InfoTeamsDto
+    type: Class
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    type: Class
+  - uid: Application.DTOs.Team.TeamDto
+    name: TeamDto
+    type: Class
+  - uid: Application.DTOs.Team.TeamLeaderboardDto
+    name: TeamLeaderboardDto
+    type: Class
+  - uid: Application.DTOs.Team.TeamStatisticsDto
+    name: TeamStatisticsDto
+    type: Class
+- uid: Application.Hubs
+  name: Application.Hubs
+  type: Namespace
+  items:
+  - uid: Application.Hubs.EntryHubFinishMatch
+    name: EntryHubFinishMatch
+    type: Class
+  - uid: Application.Hubs.JoinFinishMatch
+    name: JoinFinishMatch
+    type: Class
+  - uid: Application.Hubs.JoinStartMatchResult
+    name: JoinStartMatchResult
+    type: Class
+- uid: Application.Interfaces.Hub
+  name: Application.Interfaces.Hub
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Hub.IFinishMatchHub
+    name: IFinishMatchHub
+    type: Interface
+  - uid: Application.Interfaces.Hub.IRankMatchMakerHub
+    name: IRankMatchMakerHub
+    type: Interface
+  - uid: Application.Interfaces.Hub.IStartMatchHub
+    name: IStartMatchHub
+    type: Interface
+- uid: Application.Interfaces.Repositories
+  name: Application.Interfaces.Repositories
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Repositories.ICancelledMatchRepository
+    name: ICancelledMatchRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IMatchInviteRepository
+    name: IMatchInviteRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IMatchRepository
+    name: IMatchRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IMembershipRequestRepository
+    name: IMembershipRequestRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IPitchRepository
+    name: IPitchRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IPlayerRepository
+    name: IPlayerRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IRankRepository
+    name: IRankRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository
+    name: ISuperAdminRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+    name: ITeamPostPoneGameRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.ITeamRepository
+    name: ITeamRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.ITeamStatisticsRepository
+    name: ITeamStatisticsRepository
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IUnityOfWork
+    name: IUnityOfWork
+    type: Interface
+  - uid: Application.Interfaces.Repositories.IUserRepository
+    name: IUserRepository
+    type: Interface
+- uid: Application.Interfaces.Services
+  name: Application.Interfaces.Services
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Services.IAuthService
+    name: IAuthService
+    type: Interface
+  - uid: Application.Interfaces.Services.IChatRoomService
+    name: IChatRoomService
+    type: Interface
+  - uid: Application.Interfaces.Services.ILeaderboardService
+    name: ILeaderboardService
+    type: Interface
+  - uid: Application.Interfaces.Services.IMatchInviteService
+    name: IMatchInviteService
+    type: Interface
+  - uid: Application.Interfaces.Services.IMatchMakerService
+    name: IMatchMakerService
+    type: Interface
+  - uid: Application.Interfaces.Services.IMatchService
+    name: IMatchService
+    type: Interface
+  - uid: Application.Interfaces.Services.IMembershipRequestService
+    name: IMembershipRequestService
+    type: Interface
+  - uid: Application.Interfaces.Services.IPlayerAuthorizationService
+    name: IPlayerAuthorizationService
+    type: Interface
+  - uid: Application.Interfaces.Services.IPlayerService
+    name: IPlayerService
+    type: Interface
+  - uid: Application.Interfaces.Services.ISuperAdminService
+    name: ISuperAdminService
+    type: Interface
+  - uid: Application.Interfaces.Services.ITeamService
+    name: ITeamService
+    type: Interface
+- uid: Application.Interfaces.Services.Hub
+  name: Application.Interfaces.Services.Hub
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+    name: IManagerFinishMatchService
+    type: Interface
+  - uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+    name: IManagerRankMatchMakerService
+    type: Interface
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService
+    name: IManagerStartMatchService
+    type: Interface
+  - uid: Application.Interfaces.Services.Hub.INotificationService
+    name: INotificationService
+    type: Interface
+- uid: Application.Interfaces.Services.Hub.ClienteService
+  name: Application.Interfaces.Services.Hub.ClienteService
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+    name: IFinishMatchHubClientService
+    type: Interface
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+    name: IRankMatchMakerHubClientService
+    type: Interface
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+    name: IStartMatchHubClientService
+    type: Interface
+- uid: Application.Interfaces.Validators
+  name: Application.Interfaces.Validators
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Validators.ICalendarValidator
+    name: ICalendarValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.IMatchInviteValidator
+    name: IMatchInviteValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.IMembershipValidator
+    name: IMembershipValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+    name: IPlayerAuthorizationValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.IPlayerValidator
+    name: IPlayerValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator
+    name: ISuperAdminValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.ITeamValidator
+    name: ITeamValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.IUserDataValidator
+    name: IUserDataValidator
+    type: Interface
+- uid: Application.Interfaces.Validators.Hub
+  name: Application.Interfaces.Validators.Hub
+  type: Namespace
+  items:
+  - uid: Application.Interfaces.Validators.Hub.IFinishMatchValidator
+    name: IFinishMatchValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.Hub.IGeralHubValidator
+    name: IGeralHubValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+    name: IHubFinshMatchValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.Hub.INotificationValidator
+    name: INotificationValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+    name: IRankMatchMakerValidator
+    type: Interface
+  - uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+    name: IStartMatchHubValidator
+    type: Interface
+- uid: Application.Services
+  name: Application.Services
+  type: Namespace
+  items:
+  - uid: Application.Services.FireBaseAuthService
+    name: FireBaseAuthService
+    type: Class
+  - uid: Application.Services.FirebaseChatService
+    name: FirebaseChatService
+    type: Class
+  - uid: Application.Services.LeaderboardService
+    name: LeaderboardService
+    type: Class
+  - uid: Application.Services.MatchInviteService
+    name: MatchInviteService
+    type: Class
+  - uid: Application.Services.MatchMakerService
+    name: MatchMakerService
+    type: Class
+  - uid: Application.Services.MatchService
+    name: MatchService
+    type: Class
+  - uid: Application.Services.MembershipService
+    name: MembershipService
+    type: Class
+  - uid: Application.Services.PlayerAuthorizationService
+    name: PlayerAuthorizationService
+    type: Class
+  - uid: Application.Services.PlayerService
+    name: PlayerService
+    type: Class
+  - uid: Application.Services.SuperAdminService
+    name: SuperAdminService
+    type: Class
+  - uid: Application.Services.TeamService
+    name: TeamService
+    type: Class
+- uid: Application.Services.BackGroundServices
+  name: Application.Services.BackGroundServices
+  type: Namespace
+  items:
+  - uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+    name: RankMatchMakerBackGroundService
+    type: Class
+- uid: Application.Services.Hub
+  name: Application.Services.Hub
+  type: Namespace
+  items:
+  - uid: Application.Services.Hub.ManagerFinishMatchService
+    name: ManagerFinishMatchService
+    type: Class
+  - uid: Application.Services.Hub.ManagerRankMatchMakerService
+    name: ManagerRankMatchMakerService
+    type: Class
+  - uid: Application.Services.Hub.ManagerStartMatchService
+    name: ManagerStartMatchService
+    type: Class
+- uid: Application.Services.Hub.ClientService
+  name: Application.Services.Hub.ClientService
+  type: Namespace
+  items:
+  - uid: Application.Services.Hub.ClientService.FinishMatchHubClientService
+    name: FinishMatchHubClientService
+    type: Class
+  - uid: Application.Services.Hub.ClientService.RankMatchMakerHubClientService
+    name: RankMatchMakerHubClientService
+    type: Class
+  - uid: Application.Services.Hub.ClientService.StartMatchHubClientService
+    name: StartMatchHubClientService
+    type: Class
+- uid: Application.Validators
+  name: Application.Validators
+  type: Namespace
+  items:
+  - uid: Application.Validators.CalendarValidator
+    name: CalendarValidator
+    type: Class
+  - uid: Application.Validators.MatchInviteValidator
+    name: MatchInviteValidator
+    type: Class
+  - uid: Application.Validators.MembershipValidator
+    name: MembershipValidator
+    type: Class
+  - uid: Application.Validators.PlayerAuthorizationValidator
+    name: PlayerAuthorizationValidator
+    type: Class
+  - uid: Application.Validators.PlayerValidator
+    name: PlayerValidator
+    type: Class
+  - uid: Application.Validators.SuperAdminValidator
+    name: SuperAdminValidator
+    type: Class
+  - uid: Application.Validators.TeamValidator
+    name: TeamValidator
+    type: Class
+  - uid: Application.Validators.UserDataValidator
+    name: UserDataValidator
+    type: Class
+- uid: Application.Validators.Hubs
+  name: Application.Validators.Hubs
+  type: Namespace
+  items:
+  - uid: Application.Validators.Hubs.FinishMatchValidator
+    name: FinishMatchValidator
+    type: Class
+  - uid: Application.Validators.Hubs.GeralHubValidator
+    name: GeralHubValidator
+    type: Class
+  - uid: Application.Validators.Hubs.HubFinshMatchValidator
+    name: HubFinshMatchValidator
+    type: Class
+  - uid: Application.Validators.Hubs.NotificationValidator
+    name: NotificationValidator
+    type: Class
+  - uid: Application.Validators.Hubs.RankMatchMakerValidator
+    name: RankMatchMakerValidator
+    type: Class
+  - uid: Application.Validators.Hubs.StartMatchHubValidator
+    name: StartMatchHubValidator
+    type: Class
+- uid: Domain.Constants
+  name: Domain.Constants
+  type: Namespace
+  items:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    type: Class
+  - uid: Domain.Constants.ModelConstants.CancelledMatchConst
+    name: ModelConstants.CancelledMatchConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+    name: ModelConstants.DeafultCriteriaMatchMaker
+    type: Class
+  - uid: Domain.Constants.ModelConstants.FinishMatchHubConst
+    name: ModelConstants.FinishMatchHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.GeneralConst
+    name: ModelConstants.GeneralConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.GeralTimeInHubConst
+    name: ModelConstants.GeralTimeInHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+    name: ModelConstants.HoursValidToCompetitiveMatch
+    type: Class
+  - uid: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+    name: ModelConstants.ManagerRankMatchMakerServiceConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.MessageConst
+    name: ModelConstants.MessageConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.NotificationHubConst
+    name: ModelConstants.NotificationHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.PitchConst
+    name: ModelConstants.PitchConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.PlayerConst
+    name: ModelConstants.PlayerConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.RankConts
+    name: ModelConstants.RankConts
+    type: Class
+  - uid: Domain.Constants.ModelConstants.RankMatchMakerHubConst
+    name: ModelConstants.RankMatchMakerHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.RouteHubConst
+    name: ModelConstants.RouteHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.StartMatchHubConst
+    name: ModelConstants.StartMatchHubConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.TeamConst
+    name: ModelConstants.TeamConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.TeamLeaderBoardConst
+    name: ModelConstants.TeamLeaderBoardConst
+    type: Class
+  - uid: Domain.Constants.ModelConstants.UserConst
+    name: ModelConstants.UserConst
+    type: Class
+- uid: Domain.Entities
+  name: Domain.Entities
+  type: Namespace
+  items:
+  - uid: Domain.Entities.Calendar
+    name: Calendar
+    type: Class
+  - uid: Domain.Entities.CancelledMatch
+    name: CancelledMatch
+    type: Class
+  - uid: Domain.Entities.Chat
+    name: Chat
+    type: Class
+  - uid: Domain.Entities.MatchInvite
+    name: MatchInvite
+    type: Class
+  - uid: Domain.Entities.Matches
+    name: Matches
+    type: Class
+  - uid: Domain.Entities.MembershipRequest
+    name: MembershipRequest
+    type: Class
+  - uid: Domain.Entities.Message
+    name: Message
+    type: Class
+  - uid: Domain.Entities.Pitch
+    name: Pitch
+    type: Class
+  - uid: Domain.Entities.Player
+    name: Player
+    type: Class
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+    type: Class
+  - uid: Domain.Entities.Rank
+    name: Rank
+    type: Class
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+    type: Class
+  - uid: Domain.Entities.Team
+    name: Team
+    type: Class
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+    type: Class
+  - uid: Domain.Entities.User
+    name: User
+    type: Class
+- uid: Domain.Enums
+  name: Domain.Enums
+  type: Namespace
+  items:
+  - uid: Domain.Enums.MatchResult
+    name: MatchResult
+    type: Enum
+  - uid: Domain.Enums.MatchStatus
+    name: MatchStatus
+    type: Enum
+  - uid: Domain.Enums.Position
+    name: Position
+    type: Enum
+  - uid: Domain.Enums.StatusPostPone
+    name: StatusPostPone
+    type: Enum
+- uid: Domain.Exceptions
+  name: Domain.Exceptions
+  type: Namespace
+  items:
+  - uid: Domain.Exceptions.AuthenticationException
+    name: AuthenticationException
+    type: Class
+  - uid: Domain.Exceptions.BusinessRuleException
+    name: BusinessRuleException
+    type: Class
+  - uid: Domain.Exceptions.EmptyCollectionException
+    name: EmptyCollectionException
+    type: Class
+  - uid: Domain.Exceptions.MatchException
+    name: MatchException
+    type: Class
+  - uid: Domain.Exceptions.MatchInviteException
+    name: MatchInviteException
+    type: Class
+  - uid: Domain.Exceptions.NotFindException
+    name: NotFindException
+    type: Class
+  - uid: Domain.Exceptions.NotFoundException
+    name: NotFoundException
+    type: Class
+  - uid: Domain.Exceptions.ValidationException
+    name: ValidationException
+    type: Class
+  - uid: Domain.Exceptions.ValidatorException
+    name: ValidatorException
+    type: Class
+- uid: Infrastructure
+  name: Infrastructure
+  type: Namespace
+  items:
+  - uid: Infrastructure.DependencyInjection
+    name: DependencyInjection
+    type: Class
+- uid: Infrastructure.Data
+  name: Infrastructure.Data
+  type: Namespace
+  items:
+  - uid: Infrastructure.Data.AmateurFootballContext
+    name: AmateurFootballContext
+    type: Class
+- uid: Infrastructure.Migrations
+  name: Infrastructure.Migrations
+  type: Namespace
+  items:
+  - uid: Infrastructure.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+  - uid: Infrastructure.Migrations.MigracaoTeste
+    name: MigracaoTeste
+    type: Class
+  - uid: Infrastructure.Migrations.phoneFix
+    name: phoneFix
+    type: Class
+- uid: Infrastructure.Repositories
+  name: Infrastructure.Repositories
+  type: Namespace
+  items:
+  - uid: Infrastructure.Repositories.CancelledMatchRepository
+    name: CancelledMatchRepository
+    type: Class
+  - uid: Infrastructure.Repositories.MatchInviteRepository
+    name: MatchInviteRepository
+    type: Class
+  - uid: Infrastructure.Repositories.MatchRepository
+    name: MatchRepository
+    type: Class
+  - uid: Infrastructure.Repositories.MembershipRequestRepository
+    name: MembershipRequestRepository
+    type: Class
+  - uid: Infrastructure.Repositories.PitchRepository
+    name: PitchRepository
+    type: Class
+  - uid: Infrastructure.Repositories.PlayerRepository
+    name: PlayerRepository
+    type: Class
+  - uid: Infrastructure.Repositories.RankRepository
+    name: RankRepository
+    type: Class
+  - uid: Infrastructure.Repositories.SuperAdminRepository
+    name: SuperAdminRepository
+    type: Class
+  - uid: Infrastructure.Repositories.TeamPostPoneGame
+    name: TeamPostPoneGame
+    type: Class
+  - uid: Infrastructure.Repositories.TeamRepository
+    name: TeamRepository
+    type: Class
+  - uid: Infrastructure.Repositories.TeamStatisticsRepository
+    name: TeamStatisticsRepository
+    type: Class
+  - uid: Infrastructure.Repositories.UnityOfWork
+    name: UnityOfWork
+    type: Class
+  - uid: Infrastructure.Repositories.UserRepository
+    name: UserRepository
+    type: Class
+- uid: IntegrationTests.Controllers
+  name: IntegrationTests.Controllers
+  type: Namespace
+  items:
+  - uid: IntegrationTests.Controllers.FirebaseAuthIntegrationTests
+    name: FirebaseAuthIntegrationTests
+    type: Class
+- uid: Tests.Integration
+  name: Tests.Integration
+  type: Namespace
+  items:
+  - uid: Tests.Integration.ApiTestAppFactory
+    name: ApiTestAppFactory
+    type: Class
+  - uid: Tests.Integration.TestAuthHandler
+    name: TestAuthHandler
+    type: Class
+- uid: Tests.Integration.Calendar
+  name: Tests.Integration.Calendar
+  type: Namespace
+  items:
+  - uid: Tests.Integration.Calendar.CalendarIntegrationTests
+    name: CalendarIntegrationTests
+    type: Class
+- uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  name: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  type: Namespace
+  items:
+  - uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests
+    name: FinishMatchControllerIntegrationTests
+    type: Class
+  - uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests
+    name: FinishMatchIntegrationTests
+    type: Class
+- uid: Tests.Integration.ClassTests.HubTests.NotificationTests
+  name: Tests.Integration.ClassTests.HubTests.NotificationTests
+  type: Namespace
+  items:
+  - uid: Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests
+    name: NotificationHubIntegrationTests
+    type: Class
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  name: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  type: Namespace
+  items:
+  - uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests
+    name: CompetitiveMatchesControllerTests
+    type: Class
+  - uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+    name: RankMatchMakerBackGroundServicesTests
+    type: Class
+  - uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests
+    name: RankMatchMakerHubIntegrationTests
+    type: Class
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  name: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  type: Namespace
+  items:
+  - uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests
+    name: StartMatchControllerIntegrationTests
+    type: Class
+  - uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+    name: StartMatchHubIntegrationTests
+    type: Class
+- uid: Tests.Integration.Helpers
+  name: Tests.Integration.Helpers
+  type: Namespace
+  items:
+  - uid: Tests.Integration.Helpers.OneShotRankMatchMakerHostedService
+    name: OneShotRankMatchMakerHostedService
+    type: Class
+- uid: Tests.Integration.Leaderboard
+  name: Tests.Integration.Leaderboard
+  type: Namespace
+  items:
+  - uid: Tests.Integration.Leaderboard.LeaderboardIntegrationTests
+    name: LeaderboardIntegrationTests
+    type: Class
+- uid: Tests.Integration.MatchInvite
+  name: Tests.Integration.MatchInvite
+  type: Namespace
+  items:
+  - uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+    name: MatchInviteIntegrationTests
+    type: Class
+- uid: Tests.Integration.Membership
+  name: Tests.Integration.Membership
+  type: Namespace
+  items:
+  - uid: Tests.Integration.Membership.TeamMembershipIntegrationTests
+    name: TeamMembershipIntegrationTests
+    type: Class
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  name: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  type: Namespace
+  items:
+  - uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+    name: NotificationBackGroundServiceTests
+    type: Class
+  - uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests
+    name: RankMatchMakerBackGroundServiceTests
+    type: Class
+- uid: Tests.Unit.ApplicationTests.ServicesTests
+  name: Tests.Unit.ApplicationTests.ServicesTests
+  type: Namespace
+  items:
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests
+    name: LeadboardServiceTests
+    type: Class
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests
+    name: PlayerAuthorizationServiceTests
+    type: Class
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+    name: PlayerServiceTest
+    type: Class
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  name: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  type: Namespace
+  items:
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+    name: FinishMatchServiceTests
+    type: Class
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests
+    name: StartMatchTests
+    type: Class
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  name: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  type: Namespace
+  items:
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.ManagerRankMatchMakerManagerServiceTests
+    name: ManagerRankMatchMakerManagerServiceTests
+    type: Class
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+    name: MatchMakerServiceTests
+    type: Class
+- uid: Unit.ApplicationTests.ServicesTests
+  name: Unit.ApplicationTests.ServicesTests
+  type: Namespace
+  items:
+  - uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+    name: MatchInviteServiceTests
+    type: Class
+  - uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+    name: MatchServiceTests
+    type: Class
+  - uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+    name: MembershipServiceTests
+    type: Class
+  - uid: Unit.ApplicationTests.ServicesTests.TeamServiceTests
+    name: TeamServiceTests
+    type: Class
+memberLayout: SamePage

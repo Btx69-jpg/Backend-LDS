@@ -1,0 +1,376 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.IUserRepository
+  commentId: T:Application.Interfaces.Repositories.IUserRepository
+  id: IUserRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Application.Interfaces.Repositories.IUserRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IUserRepository
+    path: ../Application/Interfaces/Repositories/IUserRepository.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface IUserRepository
+    content.vb: Public Interface IUserRepository
+- uid: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  id: GetAllUsersAsync
+  parent: Application.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllUsersAsync()
+  nameWithType: IUserRepository.GetAllUsersAsync()
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllUsersAsync
+    path: ../Application/Interfaces/Repositories/IUserRepository.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<User>> GetAllUsersAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+    content.vb: Function GetAllUsersAsync() As Task(Of List(Of User))
+  overload: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync*
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  id: GetUserByIdAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByIdAsync(string)
+  nameWithType: IUserRepository.GetUserByIdAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByIdAsync
+    path: ../Application/Interfaces/Repositories/IUserRepository.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<User?> GetUserByIdAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+    content.vb: Function GetUserByIdAsync(userId As String) As Task(Of User)
+  overload: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync*
+  nameWithType.vb: IUserRepository.GetUserByIdAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(String)
+  name.vb: GetUserByIdAsync(String)
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  id: GetUserByEmailAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByEmailAsync(string)
+  nameWithType: IUserRepository.GetUserByEmailAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByEmailAsync
+    path: ../Application/Interfaces/Repositories/IUserRepository.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<User?> GetUserByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+    content.vb: Function GetUserByEmailAsync(email As String) As Task(Of User)
+  overload: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync*
+  nameWithType.vb: IUserRepository.GetUserByEmailAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(String)
+  name.vb: GetUserByEmailAsync(String)
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  id: GetUserByPhoneAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByPhoneAsync(string)
+  nameWithType: IUserRepository.GetUserByPhoneAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByPhoneAsync
+    path: ../Application/Interfaces/Repositories/IUserRepository.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<User?> GetUserByPhoneAsync(string phone)
+    parameters:
+    - id: phone
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+    content.vb: Function GetUserByPhoneAsync(phone As String) As Task(Of User)
+  overload: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync*
+  nameWithType.vb: IUserRepository.GetUserByPhoneAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(String)
+  name.vb: GetUserByPhoneAsync(String)
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  href: Application.Interfaces.Repositories.IUserRepository.html#Application_Interfaces_Repositories_IUserRepository_GetAllUsersAsync
+  name: GetAllUsersAsync
+  nameWithType: IUserRepository.GetAllUsersAsync
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<User>>
+  nameWithType: Task<List<User>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.User>>
+  nameWithType.vb: Task(Of List(Of User))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.User))
+  name.vb: Task(Of List(Of User))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.User
+    name: User
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync
+  href: Application.Interfaces.Repositories.IUserRepository.html#Application_Interfaces_Repositories_IUserRepository_GetUserByIdAsync_System_String_
+  name: GetUserByIdAsync
+  nameWithType: IUserRepository.GetUserByIdAsync
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Domain.Entities.User}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.User
+    name: User
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync
+  href: Application.Interfaces.Repositories.IUserRepository.html#Application_Interfaces_Repositories_IUserRepository_GetUserByEmailAsync_System_String_
+  name: GetUserByEmailAsync
+  nameWithType: IUserRepository.GetUserByEmailAsync
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync
+  href: Application.Interfaces.Repositories.IUserRepository.html#Application_Interfaces_Repositories_IUserRepository_GetUserByPhoneAsync_System_String_
+  name: GetUserByPhoneAsync
+  nameWithType: IUserRepository.GetUserByPhoneAsync
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync

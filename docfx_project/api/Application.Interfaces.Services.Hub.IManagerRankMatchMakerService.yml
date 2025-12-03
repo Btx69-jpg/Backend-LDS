@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  id: IManagerRankMatchMakerService
+  parent: Application.Interfaces.Services.Hub
+  children:
+  - Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync(System.Nullable{System.Guid},System.String)
+  - Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  - Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(System.Guid,System.String)
+  - Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker(Application.DTOs.RankMatchMaker.CriteriaMatchMaker)
+  langs:
+  - csharp
+  - vb
+  name: IManagerRankMatchMakerService
+  nameWithType: IManagerRankMatchMakerService
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IManagerRankMatchMakerService
+    path: ../Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: public interface IManagerRankMatchMakerService
+    content.vb: Public Interface IManagerRankMatchMakerService
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  id: JoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  langs:
+  - csharp
+  - vb
+  name: JoinRankMatchMaker(string, Guid, TimeOnly, string)
+  nameWithType: IManagerRankMatchMakerService.JoinRankMatchMaker(string, Guid, TimeOnly, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker(string, System.Guid, System.TimeOnly, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinRankMatchMaker
+    path: ../Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<EntryRankMatchMakerHub> JoinRankMatchMaker(string idPlayer, Guid idTeam, TimeOnly hoursGame, string connectionId)
+    parameters:
+    - id: idPlayer
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    - id: hoursGame
+      type: System.TimeOnly
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+    content.vb: Function JoinRankMatchMaker(idPlayer As String, idTeam As Guid, hoursGame As TimeOnly, connectionId As String) As Task(Of EntryRankMatchMakerHub)
+  overload: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker*
+  nameWithType.vb: IManagerRankMatchMakerService.JoinRankMatchMaker(String, Guid, TimeOnly, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker(String, System.Guid, System.TimeOnly, String)
+  name.vb: JoinRankMatchMaker(String, Guid, TimeOnly, String)
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(System.Guid,System.String)
+  id: LeaveRankMatchMakerAsync(System.Guid,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  langs:
+  - csharp
+  - vb
+  name: LeaveRankMatchMakerAsync(Guid, string)
+  nameWithType: IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(Guid, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveRankMatchMakerAsync
+    path: ../Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<bool> LeaveRankMatchMakerAsync(Guid teamId, string connectionId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function LeaveRankMatchMakerAsync(teamId As Guid, connectionId As String) As Task(Of Boolean)
+  overload: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync*
+  nameWithType.vb: IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(Guid, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync(System.Guid, String)
+  name.vb: LeaveRankMatchMakerAsync(Guid, String)
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync(System.Nullable{System.Guid},System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync(System.Nullable{System.Guid},System.String)
+  id: HandleDisconnectAsync(System.Nullable{System.Guid},System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync(Guid?, string)
+  nameWithType: IManagerRankMatchMakerService.HandleDisconnectAsync(Guid?, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync(System.Guid?, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync
+    path: ../Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<bool> HandleDisconnectAsync(Guid? maybeTeamId, string connectionId)
+    parameters:
+    - id: maybeTeamId
+      type: System.Nullable{System.Guid}
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function HandleDisconnectAsync(maybeTeamId As Guid?, connectionId As String) As Task(Of Boolean)
+  overload: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync*
+  nameWithType.vb: IManagerRankMatchMakerService.HandleDisconnectAsync(Guid?, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync(System.Guid?, String)
+  name.vb: HandleDisconnectAsync(Guid?, String)
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker(Application.DTOs.RankMatchMaker.CriteriaMatchMaker)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker(Application.DTOs.RankMatchMaker.CriteriaMatchMaker)
+  id: MatchMaker(Application.DTOs.RankMatchMaker.CriteriaMatchMaker)
+  parent: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  langs:
+  - csharp
+  - vb
+  name: MatchMaker(CriteriaMatchMaker)
+  nameWithType: IManagerRankMatchMakerService.MatchMaker(CriteriaMatchMaker)
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker(Application.DTOs.RankMatchMaker.CriteriaMatchMaker)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchMaker
+    path: ../Application/Interfaces/Services/Hub/IManagerRankMatchMakerService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<Dictionary<EntryRankMatchMakerHub, EntryRankMatchMakerHub>> MatchMaker(CriteriaMatchMaker criteria)
+    parameters:
+    - id: criteria
+      type: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}}
+    content.vb: Function MatchMaker(criteria As CriteriaMatchMaker) As Task(Of Dictionary(Of EntryRankMatchMakerHub, EntryRankMatchMakerHub))
+  overload: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker*
+references:
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker
+  href: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html#Application_Interfaces_Services_Hub_IManagerRankMatchMakerService_JoinRankMatchMaker_System_String_System_Guid_System_TimeOnly_System_String_
+  name: JoinRankMatchMaker
+  nameWithType: IManagerRankMatchMakerService.JoinRankMatchMaker
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.JoinRankMatchMaker
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.TimeOnly
+  commentId: T:System.TimeOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  name: TimeOnly
+  nameWithType: TimeOnly
+  fullName: System.TimeOnly
+- uid: System.Threading.Tasks.Task{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<EntryRankMatchMakerHub>
+  nameWithType: Task<EntryRankMatchMakerHub>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>
+  nameWithType.vb: Task(Of EntryRankMatchMakerHub)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub)
+  name.vb: Task(Of EntryRankMatchMakerHub)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync
+  href: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html#Application_Interfaces_Services_Hub_IManagerRankMatchMakerService_LeaveRankMatchMakerAsync_System_Guid_System_String_
+  name: LeaveRankMatchMakerAsync
+  nameWithType: IManagerRankMatchMakerService.LeaveRankMatchMakerAsync
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.LeaveRankMatchMakerAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync
+  href: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html#Application_Interfaces_Services_Hub_IManagerRankMatchMakerService_HandleDisconnectAsync_System_Nullable_System_Guid__System_String_
+  name: HandleDisconnectAsync
+  nameWithType: IManagerRankMatchMakerService.HandleDisconnectAsync
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.HandleDisconnectAsync
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker
+  href: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html#Application_Interfaces_Services_Hub_IManagerRankMatchMakerService_MatchMaker_Application_DTOs_RankMatchMaker_CriteriaMatchMaker_
+  name: MatchMaker
+  nameWithType: IManagerRankMatchMakerService.MatchMaker
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.MatchMaker
+- uid: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+  commentId: T:Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+  parent: Application.DTOs.RankMatchMaker
+  href: Application.DTOs.RankMatchMaker.CriteriaMatchMaker.html
+  name: CriteriaMatchMaker
+  nameWithType: CriteriaMatchMaker
+  fullName: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Dictionary<EntryRankMatchMakerHub, EntryRankMatchMakerHub>>
+  nameWithType: Task<Dictionary<EntryRankMatchMakerHub, EntryRankMatchMakerHub>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>>
+  nameWithType.vb: Task(Of Dictionary(Of EntryRankMatchMakerHub, EntryRankMatchMakerHub))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.Dictionary(Of Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub))
+  name.vb: Task(Of Dictionary(Of EntryRankMatchMakerHub, EntryRankMatchMakerHub))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: )
+  - name: )
+- uid: Application.DTOs.RankMatchMaker
+  commentId: N:Application.DTOs.RankMatchMaker
+  href: Application.html
+  name: Application.DTOs.RankMatchMaker
+  nameWithType: Application.DTOs.RankMatchMaker
+  fullName: Application.DTOs.RankMatchMaker
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html

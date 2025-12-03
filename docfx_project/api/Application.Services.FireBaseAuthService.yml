@@ -1,0 +1,1366 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.FireBaseAuthService
+  commentId: T:Application.Services.FireBaseAuthService
+  id: FireBaseAuthService
+  parent: Application.Services
+  children:
+  - Application.Services.FireBaseAuthService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Repositories.ISuperAdminRepository,Microsoft.Extensions.Configuration.IConfiguration,System.Net.Http.HttpClient)
+  - Application.Services.FireBaseAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  - Application.Services.FireBaseAuthService.DeleteUserAsync(System.String)
+  - Application.Services.FireBaseAuthService.GetFullUserData(System.String)
+  - Application.Services.FireBaseAuthService.LoginAsync(System.String,System.String)
+  - Application.Services.FireBaseAuthService.LogoutAsync(System.String)
+  - Application.Services.FireBaseAuthService.RegisterUser(System.String,System.String,System.String)
+  - Application.Services.FireBaseAuthService.UpdateEmailAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: FireBaseAuthService
+  nameWithType: FireBaseAuthService
+  fullName: Application.Services.FireBaseAuthService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FireBaseAuthService
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: 'public class FireBaseAuthService : IAuthService'
+    content.vb: Public Class FireBaseAuthService Implements IAuthService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.IAuthService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.FireBaseAuthService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Repositories.ISuperAdminRepository,Microsoft.Extensions.Configuration.IConfiguration,System.Net.Http.HttpClient)
+  commentId: M:Application.Services.FireBaseAuthService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Repositories.ISuperAdminRepository,Microsoft.Extensions.Configuration.IConfiguration,System.Net.Http.HttpClient)
+  id: '#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Repositories.ISuperAdminRepository,Microsoft.Extensions.Configuration.IConfiguration,System.Net.Http.HttpClient)'
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: FireBaseAuthService(FirestoreDb, ITeamRepository, IPlayerRepository, IPlayerValidator, ISuperAdminRepository, IConfiguration, HttpClient)
+  nameWithType: FireBaseAuthService.FireBaseAuthService(FirestoreDb, ITeamRepository, IPlayerRepository, IPlayerValidator, ISuperAdminRepository, IConfiguration, HttpClient)
+  fullName: Application.Services.FireBaseAuthService.FireBaseAuthService(Google.Cloud.Firestore.FirestoreDb, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository, Application.Interfaces.Validators.IPlayerValidator, Application.Interfaces.Repositories.ISuperAdminRepository, Microsoft.Extensions.Configuration.IConfiguration, System.Net.Http.HttpClient)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 26
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: public FireBaseAuthService(FirestoreDb firestoreDb, ITeamRepository teamRepository, IPlayerRepository playerRepository, IPlayerValidator playerValidator, ISuperAdminRepository superAdminRepository, IConfiguration configuration, HttpClient httpClient)
+    parameters:
+    - id: firestoreDb
+      type: Google.Cloud.Firestore.FirestoreDb
+    - id: teamRepository
+      type: Application.Interfaces.Repositories.ITeamRepository
+    - id: playerRepository
+      type: Application.Interfaces.Repositories.IPlayerRepository
+    - id: playerValidator
+      type: Application.Interfaces.Validators.IPlayerValidator
+    - id: superAdminRepository
+      type: Application.Interfaces.Repositories.ISuperAdminRepository
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    content.vb: Public Sub New(firestoreDb As FirestoreDb, teamRepository As ITeamRepository, playerRepository As IPlayerRepository, playerValidator As IPlayerValidator, superAdminRepository As ISuperAdminRepository, configuration As IConfiguration, httpClient As HttpClient)
+  overload: Application.Services.FireBaseAuthService.#ctor*
+  nameWithType.vb: FireBaseAuthService.New(FirestoreDb, ITeamRepository, IPlayerRepository, IPlayerValidator, ISuperAdminRepository, IConfiguration, HttpClient)
+  fullName.vb: Application.Services.FireBaseAuthService.New(Google.Cloud.Firestore.FirestoreDb, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository, Application.Interfaces.Validators.IPlayerValidator, Application.Interfaces.Repositories.ISuperAdminRepository, Microsoft.Extensions.Configuration.IConfiguration, System.Net.Http.HttpClient)
+  name.vb: New(FirestoreDb, ITeamRepository, IPlayerRepository, IPlayerValidator, ISuperAdminRepository, IConfiguration, HttpClient)
+- uid: Application.Services.FireBaseAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  commentId: M:Application.Services.FireBaseAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  id: ChangePasswordAsync(System.String,System.String,System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: ChangePasswordAsync(string, string, string)
+  nameWithType: FireBaseAuthService.ChangePasswordAsync(string, string, string)
+  fullName: Application.Services.FireBaseAuthService.ChangePasswordAsync(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ChangePasswordAsync
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 41
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task ChangePasswordAsync(string userId, string currentPassword, string newPassword)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: currentPassword
+      type: System.String
+    - id: newPassword
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ChangePasswordAsync(userId As String, currentPassword As String, newPassword As String) As Task
+  overload: Application.Services.FireBaseAuthService.ChangePasswordAsync*
+  implements:
+  - Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  nameWithType.vb: FireBaseAuthService.ChangePasswordAsync(String, String, String)
+  fullName.vb: Application.Services.FireBaseAuthService.ChangePasswordAsync(String, String, String)
+  name.vb: ChangePasswordAsync(String, String, String)
+- uid: Application.Services.FireBaseAuthService.DeleteUserAsync(System.String)
+  commentId: M:Application.Services.FireBaseAuthService.DeleteUserAsync(System.String)
+  id: DeleteUserAsync(System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserAsync(string)
+  nameWithType: FireBaseAuthService.DeleteUserAsync(string)
+  fullName: Application.Services.FireBaseAuthService.DeleteUserAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteUserAsync
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 72
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public void DeleteUserAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    content.vb: Public Sub DeleteUserAsync(userId As String)
+  overload: Application.Services.FireBaseAuthService.DeleteUserAsync*
+  implements:
+  - Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  nameWithType.vb: FireBaseAuthService.DeleteUserAsync(String)
+  fullName.vb: Application.Services.FireBaseAuthService.DeleteUserAsync(String)
+  name.vb: DeleteUserAsync(String)
+- uid: Application.Services.FireBaseAuthService.LoginAsync(System.String,System.String)
+  commentId: M:Application.Services.FireBaseAuthService.LoginAsync(System.String,System.String)
+  id: LoginAsync(System.String,System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: LoginAsync(string, string)
+  nameWithType: FireBaseAuthService.LoginAsync(string, string)
+  fullName: Application.Services.FireBaseAuthService.LoginAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LoginAsync
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 77
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<LoginResponseDto> LoginAsync(string email, string password)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+    content.vb: Public Function LoginAsync(email As String, password As String) As Task(Of LoginResponseDto)
+  overload: Application.Services.FireBaseAuthService.LoginAsync*
+  implements:
+  - Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  nameWithType.vb: FireBaseAuthService.LoginAsync(String, String)
+  fullName.vb: Application.Services.FireBaseAuthService.LoginAsync(String, String)
+  name.vb: LoginAsync(String, String)
+- uid: Application.Services.FireBaseAuthService.LogoutAsync(System.String)
+  commentId: M:Application.Services.FireBaseAuthService.LogoutAsync(System.String)
+  id: LogoutAsync(System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: LogoutAsync(string)
+  nameWithType: FireBaseAuthService.LogoutAsync(string)
+  fullName: Application.Services.FireBaseAuthService.LogoutAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogoutAsync
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 111
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task LogoutAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LogoutAsync(userId As String) As Task
+  overload: Application.Services.FireBaseAuthService.LogoutAsync*
+  implements:
+  - Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  nameWithType.vb: FireBaseAuthService.LogoutAsync(String)
+  fullName.vb: Application.Services.FireBaseAuthService.LogoutAsync(String)
+  name.vb: LogoutAsync(String)
+- uid: Application.Services.FireBaseAuthService.RegisterUser(System.String,System.String,System.String)
+  commentId: M:Application.Services.FireBaseAuthService.RegisterUser(System.String,System.String,System.String)
+  id: RegisterUser(System.String,System.String,System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: RegisterUser(string, string, string)
+  nameWithType: FireBaseAuthService.RegisterUser(string, string, string)
+  fullName: Application.Services.FireBaseAuthService.RegisterUser(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RegisterUser
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 116
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<string> RegisterUser(string email, string password, string phoneNumber)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    - id: phoneNumber
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function RegisterUser(email As String, password As String, phoneNumber As String) As Task(Of String)
+  overload: Application.Services.FireBaseAuthService.RegisterUser*
+  implements:
+  - Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  nameWithType.vb: FireBaseAuthService.RegisterUser(String, String, String)
+  fullName.vb: Application.Services.FireBaseAuthService.RegisterUser(String, String, String)
+  name.vb: RegisterUser(String, String, String)
+- uid: Application.Services.FireBaseAuthService.UpdateEmailAsync(System.String,System.String)
+  commentId: M:Application.Services.FireBaseAuthService.UpdateEmailAsync(System.String,System.String)
+  id: UpdateEmailAsync(System.String,System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: UpdateEmailAsync(string, string)
+  nameWithType: FireBaseAuthService.UpdateEmailAsync(string, string)
+  fullName: Application.Services.FireBaseAuthService.UpdateEmailAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateEmailAsync
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 133
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task UpdateEmailAsync(string userId, string newEmail)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: newEmail
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateEmailAsync(userId As String, newEmail As String) As Task
+  overload: Application.Services.FireBaseAuthService.UpdateEmailAsync*
+  implements:
+  - Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  nameWithType.vb: FireBaseAuthService.UpdateEmailAsync(String, String)
+  fullName.vb: Application.Services.FireBaseAuthService.UpdateEmailAsync(String, String)
+  name.vb: UpdateEmailAsync(String, String)
+- uid: Application.Services.FireBaseAuthService.GetFullUserData(System.String)
+  commentId: M:Application.Services.FireBaseAuthService.GetFullUserData(System.String)
+  id: GetFullUserData(System.String)
+  parent: Application.Services.FireBaseAuthService
+  langs:
+  - csharp
+  - vb
+  name: GetFullUserData(string)
+  nameWithType: FireBaseAuthService.GetFullUserData(string)
+  fullName: Application.Services.FireBaseAuthService.GetFullUserData(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FireBaseAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetFullUserData
+    path: ../Application/Services/FireBaseAuthService.cs
+    startLine: 154
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<LoginResponseDto> GetFullUserData(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+    content.vb: Public Function GetFullUserData(userId As String) As Task(Of LoginResponseDto)
+  overload: Application.Services.FireBaseAuthService.GetFullUserData*
+  implements:
+  - Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  nameWithType.vb: FireBaseAuthService.GetFullUserData(String)
+  fullName.vb: Application.Services.FireBaseAuthService.GetFullUserData(String)
+  name.vb: GetFullUserData(String)
+references:
+- uid: Application.Services
+  commentId: N:Application.Services
+  href: Application.html
+  name: Application.Services
+  nameWithType: Application.Services
+  fullName: Application.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.IAuthService
+  commentId: T:Application.Interfaces.Services.IAuthService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: Application.Interfaces.Services.IAuthService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Services.FireBaseAuthService.#ctor*
+  commentId: Overload:Application.Services.FireBaseAuthService.#ctor
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService__ctor_Google_Cloud_Firestore_FirestoreDb_Application_Interfaces_Repositories_ITeamRepository_Application_Interfaces_Repositories_IPlayerRepository_Application_Interfaces_Validators_IPlayerValidator_Application_Interfaces_Repositories_ISuperAdminRepository_Microsoft_Extensions_Configuration_IConfiguration_System_Net_Http_HttpClient_
+  name: FireBaseAuthService
+  nameWithType: FireBaseAuthService.FireBaseAuthService
+  fullName: Application.Services.FireBaseAuthService.FireBaseAuthService
+  nameWithType.vb: FireBaseAuthService.New
+  fullName.vb: Application.Services.FireBaseAuthService.New
+  name.vb: New
+- uid: Google.Cloud.Firestore.FirestoreDb
+  commentId: T:Google.Cloud.Firestore.FirestoreDb
+  parent: Google.Cloud.Firestore
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/632133143ad27e28c99d8f0cb2e89aafced9e2e1/apis/Google.Cloud.Firestore/Google.Cloud.Firestore/FirestoreDb.cs
+  name: FirestoreDb
+  nameWithType: FirestoreDb
+  fullName: Google.Cloud.Firestore.FirestoreDb
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: Application.Interfaces.Validators.IPlayerValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IPlayerValidator.html
+  name: IPlayerValidator
+  nameWithType: IPlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository
+  commentId: T:Application.Interfaces.Repositories.ISuperAdminRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ISuperAdminRepository.html
+  name: ISuperAdminRepository
+  nameWithType: ISuperAdminRepository
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: Google.Cloud.Firestore
+  commentId: N:Google.Cloud.Firestore
+  isExternal: true
+  name: Google.Cloud.Firestore
+  nameWithType: Google.Cloud.Firestore
+  fullName: Google.Cloud.Firestore
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Firestore
+    name: Firestore
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Firestore
+    name: Firestore
+    isExternal: true
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Application.Services.FireBaseAuthService.ChangePasswordAsync*
+  commentId: Overload:Application.Services.FireBaseAuthService.ChangePasswordAsync
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_ChangePasswordAsync_System_String_System_String_System_String_
+  name: ChangePasswordAsync
+  nameWithType: FireBaseAuthService.ChangePasswordAsync
+  fullName: Application.Services.FireBaseAuthService.ChangePasswordAsync
+- uid: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_ChangePasswordAsync_System_String_System_String_System_String_
+  name: ChangePasswordAsync(string, string, string)
+  nameWithType: IAuthService.ChangePasswordAsync(string, string, string)
+  fullName: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(string, string, string)
+  nameWithType.vb: IAuthService.ChangePasswordAsync(String, String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(String, String, String)
+  name.vb: ChangePasswordAsync(String, String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+    name: ChangePasswordAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_ChangePasswordAsync_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+    name: ChangePasswordAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_ChangePasswordAsync_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.FireBaseAuthService.DeleteUserAsync*
+  commentId: Overload:Application.Services.FireBaseAuthService.DeleteUserAsync
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_DeleteUserAsync_System_String_
+  name: DeleteUserAsync
+  nameWithType: FireBaseAuthService.DeleteUserAsync
+  fullName: Application.Services.FireBaseAuthService.DeleteUserAsync
+- uid: Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_DeleteUserAsync_System_String_
+  name: DeleteUserAsync(string)
+  nameWithType: IAuthService.DeleteUserAsync(string)
+  fullName: Application.Interfaces.Services.IAuthService.DeleteUserAsync(string)
+  nameWithType.vb: IAuthService.DeleteUserAsync(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.DeleteUserAsync(String)
+  name.vb: DeleteUserAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+    name: DeleteUserAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_DeleteUserAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+    name: DeleteUserAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_DeleteUserAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.FireBaseAuthService.LoginAsync*
+  commentId: Overload:Application.Services.FireBaseAuthService.LoginAsync
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_LoginAsync_System_String_System_String_
+  name: LoginAsync
+  nameWithType: FireBaseAuthService.LoginAsync
+  fullName: Application.Services.FireBaseAuthService.LoginAsync
+- uid: Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LoginAsync_System_String_System_String_
+  name: LoginAsync(string, string)
+  nameWithType: IAuthService.LoginAsync(string, string)
+  fullName: Application.Interfaces.Services.IAuthService.LoginAsync(string, string)
+  nameWithType.vb: IAuthService.LoginAsync(String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.LoginAsync(String, String)
+  name.vb: LoginAsync(String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+    name: LoginAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LoginAsync_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+    name: LoginAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LoginAsync_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<LoginResponseDto>
+  nameWithType: Task<LoginResponseDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.LoginResponseDto>
+  nameWithType.vb: Task(Of LoginResponseDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.LoginResponseDto)
+  name.vb: Task(Of LoginResponseDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.LoginResponseDto
+    name: LoginResponseDto
+    href: Application.DTOs.LoginResponseDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.LoginResponseDto
+    name: LoginResponseDto
+    href: Application.DTOs.LoginResponseDto.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Application.Services.FireBaseAuthService.LogoutAsync*
+  commentId: Overload:Application.Services.FireBaseAuthService.LogoutAsync
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_LogoutAsync_System_String_
+  name: LogoutAsync
+  nameWithType: FireBaseAuthService.LogoutAsync
+  fullName: Application.Services.FireBaseAuthService.LogoutAsync
+- uid: Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LogoutAsync_System_String_
+  name: LogoutAsync(string)
+  nameWithType: IAuthService.LogoutAsync(string)
+  fullName: Application.Interfaces.Services.IAuthService.LogoutAsync(string)
+  nameWithType.vb: IAuthService.LogoutAsync(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.LogoutAsync(String)
+  name.vb: LogoutAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+    name: LogoutAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LogoutAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+    name: LogoutAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LogoutAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.FireBaseAuthService.RegisterUser*
+  commentId: Overload:Application.Services.FireBaseAuthService.RegisterUser
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_RegisterUser_System_String_System_String_System_String_
+  name: RegisterUser
+  nameWithType: FireBaseAuthService.RegisterUser
+  fullName: Application.Services.FireBaseAuthService.RegisterUser
+- uid: Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_RegisterUser_System_String_System_String_System_String_
+  name: RegisterUser(string, string, string)
+  nameWithType: IAuthService.RegisterUser(string, string, string)
+  fullName: Application.Interfaces.Services.IAuthService.RegisterUser(string, string, string)
+  nameWithType.vb: IAuthService.RegisterUser(String, String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.RegisterUser(String, String, String)
+  name.vb: RegisterUser(String, String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+    name: RegisterUser
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_RegisterUser_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+    name: RegisterUser
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_RegisterUser_System_String_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.FireBaseAuthService.UpdateEmailAsync*
+  commentId: Overload:Application.Services.FireBaseAuthService.UpdateEmailAsync
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_UpdateEmailAsync_System_String_System_String_
+  name: UpdateEmailAsync
+  nameWithType: FireBaseAuthService.UpdateEmailAsync
+  fullName: Application.Services.FireBaseAuthService.UpdateEmailAsync
+- uid: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_UpdateEmailAsync_System_String_System_String_
+  name: UpdateEmailAsync(string, string)
+  nameWithType: IAuthService.UpdateEmailAsync(string, string)
+  fullName: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(string, string)
+  nameWithType.vb: IAuthService.UpdateEmailAsync(String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(String, String)
+  name.vb: UpdateEmailAsync(String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+    name: UpdateEmailAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_UpdateEmailAsync_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+    name: UpdateEmailAsync
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_UpdateEmailAsync_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.FireBaseAuthService.GetFullUserData*
+  commentId: Overload:Application.Services.FireBaseAuthService.GetFullUserData
+  href: Application.Services.FireBaseAuthService.html#Application_Services_FireBaseAuthService_GetFullUserData_System_String_
+  name: GetFullUserData
+  nameWithType: FireBaseAuthService.GetFullUserData
+  fullName: Application.Services.FireBaseAuthService.GetFullUserData
+- uid: Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  isExternal: true
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_GetFullUserData_System_String_
+  name: GetFullUserData(string)
+  nameWithType: IAuthService.GetFullUserData(string)
+  fullName: Application.Interfaces.Services.IAuthService.GetFullUserData(string)
+  nameWithType.vb: IAuthService.GetFullUserData(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.GetFullUserData(String)
+  name.vb: GetFullUserData(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+    name: GetFullUserData
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_GetFullUserData_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+    name: GetFullUserData
+    href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_GetFullUserData_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

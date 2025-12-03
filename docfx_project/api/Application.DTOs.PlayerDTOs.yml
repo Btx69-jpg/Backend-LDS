@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.PlayerDTOs
+  commentId: N:Application.DTOs.PlayerDTOs
+  id: Application.DTOs.PlayerDTOs
+  children:
+  - Application.DTOs.PlayerDTOs.CreatePlayerDto
+  - Application.DTOs.PlayerDTOs.PlayerDetailsDto
+  - Application.DTOs.PlayerDTOs.UpdatePlayerDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.PlayerDTOs
+  nameWithType: Application.DTOs.PlayerDTOs
+  fullName: Application.DTOs.PlayerDTOs
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.PlayerDTOs.CreatePlayerDto
+  commentId: T:Application.DTOs.PlayerDTOs.CreatePlayerDto
+  parent: Application.DTOs.PlayerDTOs
+  href: Application.DTOs.PlayerDTOs.CreatePlayerDto.html
+  name: CreatePlayerDto
+  nameWithType: CreatePlayerDto
+  fullName: Application.DTOs.PlayerDTOs.CreatePlayerDto
+- uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+  commentId: T:Application.DTOs.PlayerDTOs.PlayerDetailsDto
+  parent: Application.DTOs.PlayerDTOs
+  href: Application.DTOs.PlayerDTOs.PlayerDetailsDto.html
+  name: PlayerDetailsDto
+  nameWithType: PlayerDetailsDto
+  fullName: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+- uid: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+  commentId: T:Application.DTOs.PlayerDTOs.UpdatePlayerDto
+  parent: Application.DTOs.PlayerDTOs
+  href: Application.DTOs.PlayerDTOs.UpdatePlayerDto.html
+  name: UpdatePlayerDto
+  nameWithType: UpdatePlayerDto
+  fullName: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+- uid: Application.DTOs.PlayerDTOs
+  commentId: N:Application.DTOs.PlayerDTOs
+  href: Application.html
+  name: Application.DTOs.PlayerDTOs
+  nameWithType: Application.DTOs.PlayerDTOs
+  fullName: Application.DTOs.PlayerDTOs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PlayerDTOs
+    name: PlayerDTOs
+    href: Application.DTOs.PlayerDTOs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PlayerDTOs
+    name: PlayerDTOs
+    href: Application.DTOs.PlayerDTOs.html

@@ -1,0 +1,1086 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.Hubs.RankMatchMakerValidator
+  commentId: T:Application.Validators.Hubs.RankMatchMakerValidator
+  id: RankMatchMakerValidator
+  parent: Application.Validators.Hubs
+  children:
+  - Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  - Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  - Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  - Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  - Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  langs:
+  - csharp
+  - vb
+  name: RankMatchMakerValidator
+  nameWithType: RankMatchMakerValidator
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RankMatchMakerValidator
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  syntax:
+    content: 'public class RankMatchMakerValidator : IRankMatchMakerValidator'
+    content.vb: Public Class RankMatchMakerValidator Implements IRankMatchMakerValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  commentId: M:Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  id: ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  parent: Application.Validators.Hubs.RankMatchMakerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVariableJoinRankMatchMaker(string, Guid, TimeOnly, string)
+  nameWithType: RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(string, Guid, TimeOnly, string)
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(string, System.Guid, System.TimeOnly, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateVariableJoinRankMatchMaker
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public void ValidateVariableJoinRankMatchMaker(string idPlayer, Guid idTeam, TimeOnly hoursGame, string connectionId)
+    parameters:
+    - id: idPlayer
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    - id: hoursGame
+      type: System.TimeOnly
+    - id: connectionId
+      type: System.String
+    content.vb: Public Sub ValidateVariableJoinRankMatchMaker(idPlayer As String, idTeam As Guid, hoursGame As TimeOnly, connectionId As String)
+  overload: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker*
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  nameWithType.vb: RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(String, Guid, TimeOnly, String)
+  fullName.vb: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(String, System.Guid, System.TimeOnly, String)
+  name.vb: ValidateVariableJoinRankMatchMaker(String, Guid, TimeOnly, String)
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  commentId: M:Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  id: ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  parent: Application.Validators.Hubs.RankMatchMakerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateHoursToMatch(double, Matches)
+  nameWithType: RankMatchMakerValidator.ValidateHoursToMatch(double, Matches)
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch(double, Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateHoursToMatch
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 36
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public void ValidateHoursToMatch(double differenteHoursNowAndGame, Matches match)
+    parameters:
+    - id: differenteHoursNowAndGame
+      type: System.Double
+    - id: match
+      type: Domain.Entities.Matches
+    content.vb: Public Sub ValidateHoursToMatch(differenteHoursNowAndGame As Double, match As Matches)
+  overload: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch*
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  nameWithType.vb: RankMatchMakerValidator.ValidateHoursToMatch(Double, Matches)
+  fullName.vb: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch(Double, Domain.Entities.Matches)
+  name.vb: ValidateHoursToMatch(Double, Matches)
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  commentId: M:Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  id: ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  parent: Application.Validators.Hubs.RankMatchMakerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamJoinRankMatchMaker(Team?)
+  nameWithType: RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Team?)
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamJoinRankMatchMaker
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 49
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public void ValidateTeamJoinRankMatchMaker(Team? team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub ValidateTeamJoinRankMatchMaker(team As Team)
+  overload: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker*
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  nameWithType.vb: RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Team)
+  fullName.vb: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  name.vb: ValidateTeamJoinRankMatchMaker(Team)
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  commentId: M:Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  id: ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  parent: Application.Validators.Hubs.RankMatchMakerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateJoinRankMatchMaker(Team, float, string, bool?, ConcurrentDictionary<Guid, EntryRankMatchMakerHub>?)
+  nameWithType: RankMatchMakerValidator.ValidateJoinRankMatchMaker(Team, float, string, bool?, ConcurrentDictionary<Guid, EntryRankMatchMakerHub>?)
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team, float, string, bool?, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateJoinRankMatchMaker
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 57
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public void ValidateJoinRankMatchMaker(Team team, float averageAge, string city, bool? findUser, ConcurrentDictionary<Guid, EntryRankMatchMakerHub>? hub)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: averageAge
+      type: System.Single
+    - id: city
+      type: System.String
+    - id: findUser
+      type: System.Nullable{System.Boolean}
+    - id: hub
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+    content.vb: Public Sub ValidateJoinRankMatchMaker(team As Team, averageAge As Single, city As String, findUser As Boolean?, hub As ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub))
+  overload: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker*
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  nameWithType.vb: RankMatchMakerValidator.ValidateJoinRankMatchMaker(Team, Single, String, Boolean?, ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub))
+  fullName.vb: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team, Single, String, Boolean?, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub))
+  name.vb: ValidateJoinRankMatchMaker(Team, Single, String, Boolean?, ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub))
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  commentId: M:Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  id: ValidateLeaveRankMatchMaker(System.Guid)
+  parent: Application.Validators.Hubs.RankMatchMakerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateLeaveRankMatchMaker(Guid)
+  nameWithType: RankMatchMakerValidator.ValidateLeaveRankMatchMaker(Guid)
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/RankMatchMakerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateLeaveRankMatchMaker
+    path: ../Application/Validators/Hubs/RankMatchMakerValidator.cs
+    startLine: 85
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public void ValidateLeaveRankMatchMaker(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    content.vb: Public Sub ValidateLeaveRankMatchMaker(idTeam As Guid)
+  overload: Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker*
+  implements:
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+references:
+- uid: Application.Validators.Hubs
+  commentId: N:Application.Validators.Hubs
+  href: Application.html
+  name: Application.Validators.Hubs
+  nameWithType: Application.Validators.Hubs
+  fullName: Application.Validators.Hubs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  - name: .
+  - uid: Application.Validators.Hubs
+    name: Hubs
+    href: Application.Validators.Hubs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  - name: .
+  - uid: Application.Validators.Hubs
+    name: Hubs
+    href: Application.Validators.Hubs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html
+  name: IRankMatchMakerValidator
+  nameWithType: IRankMatchMakerValidator
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker*
+  commentId: Overload:Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html#Application_Validators_Hubs_RankMatchMakerValidator_ValidateVariableJoinRankMatchMaker_System_String_System_Guid_System_TimeOnly_System_String_
+  name: ValidateVariableJoinRankMatchMaker
+  nameWithType: RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateVariableJoinRankMatchMaker
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  commentId: M:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+  parent: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateVariableJoinRankMatchMaker_System_String_System_Guid_System_TimeOnly_System_String_
+  name: ValidateVariableJoinRankMatchMaker(string, Guid, TimeOnly, string)
+  nameWithType: IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(string, Guid, TimeOnly, string)
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(string, System.Guid, System.TimeOnly, string)
+  nameWithType.vb: IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(String, Guid, TimeOnly, String)
+  fullName.vb: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(String, System.Guid, System.TimeOnly, String)
+  name.vb: ValidateVariableJoinRankMatchMaker(String, Guid, TimeOnly, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+    name: ValidateVariableJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateVariableJoinRankMatchMaker_System_String_System_Guid_System_TimeOnly_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.TimeOnly
+    name: TimeOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateVariableJoinRankMatchMaker(System.String,System.Guid,System.TimeOnly,System.String)
+    name: ValidateVariableJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateVariableJoinRankMatchMaker_System_String_System_Guid_System_TimeOnly_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.TimeOnly
+    name: TimeOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.TimeOnly
+  commentId: T:System.TimeOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  name: TimeOnly
+  nameWithType: TimeOnly
+  fullName: System.TimeOnly
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch*
+  commentId: Overload:Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html#Application_Validators_Hubs_RankMatchMakerValidator_ValidateHoursToMatch_System_Double_Domain_Entities_Matches_
+  name: ValidateHoursToMatch
+  nameWithType: RankMatchMakerValidator.ValidateHoursToMatch
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateHoursToMatch
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateHoursToMatch_System_Double_Domain_Entities_Matches_
+  name: ValidateHoursToMatch(double, Matches)
+  nameWithType: IRankMatchMakerValidator.ValidateHoursToMatch(double, Matches)
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(double, Domain.Entities.Matches)
+  nameWithType.vb: IRankMatchMakerValidator.ValidateHoursToMatch(Double, Matches)
+  fullName.vb: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(Double, Domain.Entities.Matches)
+  name.vb: ValidateHoursToMatch(Double, Matches)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+    name: ValidateHoursToMatch
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateHoursToMatch_System_Double_Domain_Entities_Matches_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateHoursToMatch(System.Double,Domain.Entities.Matches)
+    name: ValidateHoursToMatch
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateHoursToMatch_System_Double_Domain_Entities_Matches_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker*
+  commentId: Overload:Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html#Application_Validators_Hubs_RankMatchMakerValidator_ValidateTeamJoinRankMatchMaker_Domain_Entities_Team_
+  name: ValidateTeamJoinRankMatchMaker
+  nameWithType: RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateTeamJoinRankMatchMaker
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateTeamJoinRankMatchMaker_Domain_Entities_Team_
+  name: ValidateTeamJoinRankMatchMaker(Team)
+  nameWithType: IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Team)
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+    name: ValidateTeamJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateTeamJoinRankMatchMaker_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateTeamJoinRankMatchMaker(Domain.Entities.Team)
+    name: ValidateTeamJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateTeamJoinRankMatchMaker_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker*
+  commentId: Overload:Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html#Application_Validators_Hubs_RankMatchMakerValidator_ValidateJoinRankMatchMaker_Domain_Entities_Team_System_Single_System_String_System_Nullable_System_Boolean__System_Collections_Concurrent_ConcurrentDictionary_System_Guid_Application_DTOs_RankMatchMaker_EntryRankMatchMakerHub__
+  name: ValidateJoinRankMatchMaker
+  nameWithType: RankMatchMakerValidator.ValidateJoinRankMatchMaker
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateJoinRankMatchMaker
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  commentId: M:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  parent: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateJoinRankMatchMaker_Domain_Entities_Team_System_Single_System_String_System_Nullable_System_Boolean__System_Collections_Concurrent_ConcurrentDictionary_System_Guid_Application_DTOs_RankMatchMaker_EntryRankMatchMakerHub__
+  name: ValidateJoinRankMatchMaker(Team, float, string, bool?, ConcurrentDictionary<Guid, EntryRankMatchMakerHub>)
+  nameWithType: IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Team, float, string, bool?, ConcurrentDictionary<Guid, EntryRankMatchMakerHub>)
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team, float, string, bool?, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>)
+  nameWithType.vb: IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Team, Single, String, Boolean?, ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub))
+  fullName.vb: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team, Single, String, Boolean?, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub))
+  name.vb: ValidateJoinRankMatchMaker(Team, Single, String, Boolean?, ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub))
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+    name: ValidateJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateJoinRankMatchMaker_Domain_Entities_Team_System_Single_System_String_System_Nullable_System_Boolean__System_Collections_Concurrent_ConcurrentDictionary_System_Guid_Application_DTOs_RankMatchMaker_EntryRankMatchMakerHub__
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateJoinRankMatchMaker(Domain.Entities.Team,System.Single,System.String,System.Nullable{System.Boolean},System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+    name: ValidateJoinRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateJoinRankMatchMaker_Domain_Entities_Team_System_Single_System_String_System_Nullable_System_Boolean__System_Collections_Concurrent_ConcurrentDictionary_System_Guid_Application_DTOs_RankMatchMaker_EntryRankMatchMakerHub__
+  - name: (
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: )
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.Guid,Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<Guid, EntryRankMatchMakerHub>
+  nameWithType: ConcurrentDictionary<Guid, EntryRankMatchMakerHub>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>
+  nameWithType.vb: ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub)
+  name.vb: ConcurrentDictionary(Of Guid, EntryRankMatchMakerHub)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+- uid: Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker*
+  commentId: Overload:Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html#Application_Validators_Hubs_RankMatchMakerValidator_ValidateLeaveRankMatchMaker_System_Guid_
+  name: ValidateLeaveRankMatchMaker
+  nameWithType: RankMatchMakerValidator.ValidateLeaveRankMatchMaker
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator.ValidateLeaveRankMatchMaker
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  commentId: M:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  parent: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateLeaveRankMatchMaker_System_Guid_
+  name: ValidateLeaveRankMatchMaker(Guid)
+  nameWithType: IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(Guid)
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+    name: ValidateLeaveRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateLeaveRankMatchMaker_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.ValidateLeaveRankMatchMaker(System.Guid)
+    name: ValidateLeaveRankMatchMaker
+    href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html#Application_Interfaces_Validators_Hub_IRankMatchMakerValidator_ValidateLeaveRankMatchMaker_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )

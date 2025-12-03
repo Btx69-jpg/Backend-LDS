@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.ILeaderboardService
+  commentId: T:Application.Interfaces.Services.ILeaderboardService
+  id: ILeaderboardService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync
+  langs:
+  - csharp
+  - vb
+  name: ILeaderboardService
+  nameWithType: ILeaderboardService
+  fullName: Application.Interfaces.Services.ILeaderboardService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/ILeaderboardService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ILeaderboardService
+    path: ../Application/Interfaces/Services/ILeaderboardService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface ILeaderboardService
+    content.vb: Public Interface ILeaderboardService
+- uid: Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync
+  commentId: M:Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync
+  id: GetLeaderboardAsync
+  parent: Application.Interfaces.Services.ILeaderboardService
+  langs:
+  - csharp
+  - vb
+  name: GetLeaderboardAsync()
+  nameWithType: ILeaderboardService.GetLeaderboardAsync()
+  fullName: Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/ILeaderboardService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetLeaderboardAsync
+    path: ../Application/Interfaces/Services/ILeaderboardService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<TeamLeaderboardDto>> GetLeaderboardAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+    content.vb: Function GetLeaderboardAsync() As Task(Of List(Of TeamLeaderboardDto))
+  overload: Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync*
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync*
+  commentId: Overload:Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync
+  href: Application.Interfaces.Services.ILeaderboardService.html#Application_Interfaces_Services_ILeaderboardService_GetLeaderboardAsync
+  name: GetLeaderboardAsync
+  nameWithType: ILeaderboardService.GetLeaderboardAsync
+  fullName: Application.Interfaces.Services.ILeaderboardService.GetLeaderboardAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<TeamLeaderboardDto>>
+  nameWithType: Task<List<TeamLeaderboardDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Team.TeamLeaderboardDto>>
+  nameWithType.vb: Task(Of List(Of TeamLeaderboardDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Team.TeamLeaderboardDto))
+  name.vb: Task(Of List(Of TeamLeaderboardDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamLeaderboardDto
+    name: TeamLeaderboardDto
+    href: Application.DTOs.Team.TeamLeaderboardDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamLeaderboardDto
+    name: TeamLeaderboardDto
+    href: Application.DTOs.Team.TeamLeaderboardDto.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

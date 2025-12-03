@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Domain.Exceptions | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Domain.Exceptions | docfx_project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Domain.Exceptions">
+
+  <h1 id="Domain_Exceptions" data-uid="Domain.Exceptions" class="text-break">Namespace Domain.Exceptions</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.AuthenticationException.html">AuthenticationException</a></dt>
+      <dd><p>Representa erros que ocorrem durante o processo de autenticação ou autorização de um utilizador.</p>
+<p>Esta é uma classe de exceção personalizada que herda de [Exception] e é utilizada na camada de Serviço
+para sinalizar falhas de credenciais (senha/email incorretos) ou problemas de acesso.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.BusinessRuleException.html">BusinessRuleException</a></dt>
+      <dd><p>Representa erros que ocorrem quando uma regra de negócio ou uma lógica de domínio da aplicação é violada.</p>
+<p>Esta exceção é lançada na camada de Serviço/Domínio para sinalizar que a operação não pode ser concluída,
+mesmo que não haja falha de sistema, rede ou autenticação.
+Exemplo: Tentar agendar uma partida para uma data passada.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.EmptyCollectionException.html">EmptyCollectionException</a></dt>
+      <dd><p>Representa erros que ocorrem quando uma operação esperava uma coleção, lista ou resultado que não fosse vazio, mas recebeu uma coleção com zero elementos.</p>
+<p>Esta exceção é útil na camada de Serviço/Domínio para sinalizar à camada de apresentação que não há dados a serem processados.
+Exemplo: Tentar obter o primeiro elemento de uma lista vazia.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.MatchException.html">MatchException</a></dt>
+      <dd><p>Representa erros que ocorrem especificamente durante as operações de gestão de partidas (Match).</p>
+<p>Esta exceção é lançada na camada de Serviço/Domínio para sinalizar problemas relacionados com o ciclo de vida,
+estado (Status), ou validade de um jogo (ex: tentar iniciar um jogo já finalizado, ou aceitar um convite inválido).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.MatchInviteException.html">MatchInviteException</a></dt>
+      <dd><p>Representa erros que ocorrem especificamente durante o ciclo de vida de um convite de partida (Match Invite).</p>
+<p>Esta exceção é lançada na camada de Serviço/Domínio para sinalizar problemas relacionados com a validade,
+estado, ou regras de negócio de um convite (ex: tentar negociar um convite já aceite ou rejeitado).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.NotFindException.html">NotFindException</a></dt>
+      <dd><p>Representa erros que ocorrem quando uma entidade ou recurso específico procurado na base de dados ou no domínio não é encontrado.</p>
+<p>Esta exceção é lançada na camada de Repositório/Serviço e geralmente mapeia para um código de erro HTTP 404 (Not Found) na camada de API.
+Exemplo: Tentar obter um jogador por ID que não existe.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.NotFoundException.html">NotFoundException</a></dt>
+      <dd><p>Representa erros que ocorrem quando uma entidade ou recurso específico procurado na base de dados ou no domínio não é encontrado.</p>
+<p>Esta exceção é lançada na camada de Repositório/Serviço para sinalizar a ausência de um recurso
+(corresponde ao código de status HTTP 404 - Not Found).
+Exemplo: Tentar obter um objeto por um ID que não existe.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.ValidationException.html">ValidationException</a></dt>
+      <dd><p>Representa erros que ocorrem quando a validação de dados falha.</p>
+<p>Esta exceção é lançada na camada de Domínio/Serviço quando os dados de entrada (input)
+não cumprem as regras de formato, comprimento ou intervalo (range) esperadas.
+Geralmente mapeia para um código de erro HTTP 400 (Bad Request).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Domain.Exceptions.ValidatorException.html">ValidatorException</a></dt>
+      <dd><p>Representa erros que ocorrem quando a validação de dados ou regras de domínio falha no processo de validação dedicado.</p>
+<p>Esta exceção é lançada na camada de Serviço/Domínio após a execução de um objeto Validador (Validator)
+que detetou dados inválidos ou inconsistentes.
+Exemplo: Tentar criar uma entidade com um campo obrigatório em falta.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

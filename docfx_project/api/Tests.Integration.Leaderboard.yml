@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.Leaderboard
+  commentId: N:Tests.Integration.Leaderboard
+  id: Tests.Integration.Leaderboard
+  children:
+  - Tests.Integration.Leaderboard.LeaderboardIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.Leaderboard
+  nameWithType: Tests.Integration.Leaderboard
+  fullName: Tests.Integration.Leaderboard
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.Leaderboard.LeaderboardIntegrationTests
+  commentId: T:Tests.Integration.Leaderboard.LeaderboardIntegrationTests
+  href: Tests.Integration.Leaderboard.LeaderboardIntegrationTests.html
+  name: LeaderboardIntegrationTests
+  nameWithType: LeaderboardIntegrationTests
+  fullName: Tests.Integration.Leaderboard.LeaderboardIntegrationTests

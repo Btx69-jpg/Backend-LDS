@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.Hub
+  commentId: N:Application.Services.Hub
+  id: Application.Services.Hub
+  children:
+  - Application.Services.Hub.ManagerFinishMatchService
+  - Application.Services.Hub.ManagerRankMatchMakerService
+  - Application.Services.Hub.ManagerStartMatchService
+  langs:
+  - csharp
+  - vb
+  name: Application.Services.Hub
+  nameWithType: Application.Services.Hub
+  fullName: Application.Services.Hub
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Services.Hub.ManagerFinishMatchService
+  commentId: T:Application.Services.Hub.ManagerFinishMatchService
+  href: Application.Services.Hub.ManagerFinishMatchService.html
+  name: ManagerFinishMatchService
+  nameWithType: ManagerFinishMatchService
+  fullName: Application.Services.Hub.ManagerFinishMatchService
+- uid: Application.Services.Hub.ManagerRankMatchMakerService
+  commentId: T:Application.Services.Hub.ManagerRankMatchMakerService
+  href: Application.Services.Hub.ManagerRankMatchMakerService.html
+  name: ManagerRankMatchMakerService
+  nameWithType: ManagerRankMatchMakerService
+  fullName: Application.Services.Hub.ManagerRankMatchMakerService
+- uid: Application.Services.Hub.ManagerStartMatchService
+  commentId: T:Application.Services.Hub.ManagerStartMatchService
+  href: Application.Services.Hub.ManagerStartMatchService.html
+  name: ManagerStartMatchService
+  nameWithType: ManagerStartMatchService
+  fullName: Application.Services.Hub.ManagerStartMatchService

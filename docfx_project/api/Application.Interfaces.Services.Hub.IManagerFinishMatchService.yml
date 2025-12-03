@@ -1,0 +1,495 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  id: IManagerFinishMatchService
+  parent: Application.Interfaces.Services.Hub
+  children:
+  - Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  - Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  - Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  - Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IManagerFinishMatchService
+  nameWithType: IManagerFinishMatchService
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IManagerFinishMatchService
+    path: ../Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: public interface IManagerFinishMatchService
+    content.vb: Public Interface IManagerFinishMatchService
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  id: JoinHubAsync(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync(Guid, ResultMatchDto, string, string)
+  nameWithType: IManagerFinishMatchService.JoinHubAsync(Guid, ResultMatchDto, string, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync(System.Guid, Application.DTOs.Match.ResultMatchDto, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync
+    path: ../Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<JoinFinishMatch> JoinHubAsync(Guid matchId, ResultMatchDto finishMatch, string userId, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: finishMatch
+      type: Application.DTOs.Match.ResultMatchDto
+    - id: userId
+      type: System.String
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.Hubs.JoinFinishMatch}
+    content.vb: Function JoinHubAsync(matchId As Guid, finishMatch As ResultMatchDto, userId As String, connectionId As String) As Task(Of JoinFinishMatch)
+  overload: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync*
+  nameWithType.vb: IManagerFinishMatchService.JoinHubAsync(Guid, ResultMatchDto, String, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync(System.Guid, Application.DTOs.Match.ResultMatchDto, String, String)
+  name.vb: JoinHubAsync(Guid, ResultMatchDto, String, String)
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  id: UpdateResult(System.Guid,Application.DTOs.Match.ResultMatchDto,System.String,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult(Guid, ResultMatchDto, string, string)
+  nameWithType: IManagerFinishMatchService.UpdateResult(Guid, ResultMatchDto, string, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult(System.Guid, Application.DTOs.Match.ResultMatchDto, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult
+    path: ../Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<JoinFinishMatch> UpdateResult(Guid matchId, ResultMatchDto finishMatch, string userId, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: finishMatch
+      type: Application.DTOs.Match.ResultMatchDto
+    - id: userId
+      type: System.String
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.Hubs.JoinFinishMatch}
+    content.vb: Function UpdateResult(matchId As Guid, finishMatch As ResultMatchDto, userId As String, connectionId As String) As Task(Of JoinFinishMatch)
+  overload: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult*
+  nameWithType.vb: IManagerFinishMatchService.UpdateResult(Guid, ResultMatchDto, String, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult(System.Guid, Application.DTOs.Match.ResultMatchDto, String, String)
+  name.vb: UpdateResult(Guid, ResultMatchDto, String, String)
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  id: LeaveHubAsync(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync(Guid, Guid, string)
+  nameWithType: IManagerFinishMatchService.LeaveHubAsync(Guid, Guid, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync
+    path: ../Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<bool> LeaveHubAsync(Guid matchId, Guid teamId, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: teamId
+      type: System.Guid
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function LeaveHubAsync(matchId As Guid, teamId As Guid, connectionId As String) As Task(Of Boolean)
+  overload: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync*
+  nameWithType.vb: IManagerFinishMatchService.LeaveHubAsync(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync(System.Guid, System.Guid, String)
+  name.vb: LeaveHubAsync(Guid, Guid, String)
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  id: HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync(Guid?, Guid?, string)
+  nameWithType: IManagerFinishMatchService.HandleDisconnectAsync(Guid?, Guid?, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync
+    path: ../Application/Interfaces/Services/Hub/IManagerFinishMatchService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task<bool> HandleDisconnectAsync(Guid? maybeMatchId, Guid? maybeTeamId, string connectionId)
+    parameters:
+    - id: maybeMatchId
+      type: System.Nullable{System.Guid}
+    - id: maybeTeamId
+      type: System.Nullable{System.Guid}
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function HandleDisconnectAsync(maybeMatchId As Guid?, maybeTeamId As Guid?, connectionId As String) As Task(Of Boolean)
+  overload: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync*
+  nameWithType.vb: IManagerFinishMatchService.HandleDisconnectAsync(Guid?, Guid?, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, String)
+  name.vb: HandleDisconnectAsync(Guid?, Guid?, String)
+references:
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync
+  href: Application.Interfaces.Services.Hub.IManagerFinishMatchService.html#Application_Interfaces_Services_Hub_IManagerFinishMatchService_JoinHubAsync_System_Guid_Application_DTOs_Match_ResultMatchDto_System_String_System_String_
+  name: JoinHubAsync
+  nameWithType: IManagerFinishMatchService.JoinHubAsync
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.JoinHubAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.DTOs.Match.ResultMatchDto
+  commentId: T:Application.DTOs.Match.ResultMatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.ResultMatchDto.html
+  name: ResultMatchDto
+  nameWithType: ResultMatchDto
+  fullName: Application.DTOs.Match.ResultMatchDto
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Application.Hubs.JoinFinishMatch}
+  commentId: T:System.Threading.Tasks.Task{Application.Hubs.JoinFinishMatch}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JoinFinishMatch>
+  nameWithType: Task<JoinFinishMatch>
+  fullName: System.Threading.Tasks.Task<Application.Hubs.JoinFinishMatch>
+  nameWithType.vb: Task(Of JoinFinishMatch)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Hubs.JoinFinishMatch)
+  name.vb: Task(Of JoinFinishMatch)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Hubs.JoinFinishMatch
+    name: JoinFinishMatch
+    href: Application.Hubs.JoinFinishMatch.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Hubs.JoinFinishMatch
+    name: JoinFinishMatch
+    href: Application.Hubs.JoinFinishMatch.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  href: Application.html
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult
+  href: Application.Interfaces.Services.Hub.IManagerFinishMatchService.html#Application_Interfaces_Services_Hub_IManagerFinishMatchService_UpdateResult_System_Guid_Application_DTOs_Match_ResultMatchDto_System_String_System_String_
+  name: UpdateResult
+  nameWithType: IManagerFinishMatchService.UpdateResult
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.UpdateResult
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync
+  href: Application.Interfaces.Services.Hub.IManagerFinishMatchService.html#Application_Interfaces_Services_Hub_IManagerFinishMatchService_LeaveHubAsync_System_Guid_System_Guid_System_String_
+  name: LeaveHubAsync
+  nameWithType: IManagerFinishMatchService.LeaveHubAsync
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.LeaveHubAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync
+  href: Application.Interfaces.Services.Hub.IManagerFinishMatchService.html#Application_Interfaces_Services_Hub_IManagerFinishMatchService_HandleDisconnectAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_
+  name: HandleDisconnectAsync
+  nameWithType: IManagerFinishMatchService.HandleDisconnectAsync
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService.HandleDisconnectAsync
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

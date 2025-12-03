@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  id: MatchMakerServiceTests
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  children:
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup
+  langs:
+  - csharp
+  - vb
+  name: MatchMakerServiceTests
+  nameWithType: MatchMakerServiceTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchMakerServiceTests
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 7
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class MatchMakerServiceTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class MatchMakerServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup
+  id: Setup
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: MatchMakerServiceTests.Setup()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Setup
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 21
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  id: LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId()
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 157
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o serviço encontra o 'match' perfeito (único válido).")]
+
+      public void LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId()
+    content.vb: >-
+      <Test(Description:="Testa se o serviço encontra o 'match' perfeito (único válido).")>
+
+      Public Sub LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o serviço encontra o 'match' perfeito (único válido).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  id: LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId()
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 170
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, sem 'match' de rank igual, encontra o 'match' adjacente (único válido).")]
+
+      public void LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId()
+    content.vb: >-
+      <Test(Description:="Testa se, sem 'match' de rank igual, encontra o 'match' adjacente (único válido).")>
+
+      Public Sub LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, sem 'match' de rank igual, encontra o 'match' adjacente (único válido).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  id: LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull()
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 187
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se retorna 'null' quando o 'finder' não cumpre critérios (ex: pontos muito altos).")]
+
+      public void LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull()
+    content.vb: >-
+      <Test(Description:="Testa se retorna 'null' quando o 'finder' não cumpre critérios (ex: pontos muito altos).")>
+
+      Public Sub LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: "Testa se retorna 'null' quando o 'finder' não cumpre critérios (ex: pontos muito altos)."
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  id: LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull()
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 198
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o serviço retorna 'null' quando a lista de equipas em espera está vazia.")]
+
+      public void LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull()
+    content.vb: >-
+      <Test(Description:="Testa se o serviço retorna 'null' quando a lista de equipas em espera está vazia.")>
+
+      Public Sub LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o serviço retorna 'null' quando a lista de equipas em espera está vazia.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  id: LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull()
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 208
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o serviço retorna 'null' quando uma equipa cumpre todos os critérios, exceto a data/hora do jogo.")]
+
+      public void LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull()
+    content.vb: >-
+      <Test(Description:="Testa se o serviço retorna 'null' quando uma equipa cumpre todos os critérios, exceto a data/hora do jogo.")>
+
+      Public Sub LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o serviço retorna 'null' quando uma equipa cumpre todos os critérios, exceto a data/hora do jogo.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  id: LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches()
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 227
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, com critérios apertados, o serviço forma apenas pares óbvios e agrupa por data.")]
+
+      public void LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches()
+    content.vb: >-
+      <Test(Description:="Testa se, com critérios apertados, o serviço forma apenas pares óbvios e agrupa por data.")>
+
+      Public Sub LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, com critérios apertados, o serviço forma apenas pares óbvios e agrupa por data.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  id: LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches()
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 243
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, com critérios largos, o serviço forma os pares óbvios E os pares que antes falhavam.")]
+
+      public void LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches()
+    content.vb: >-
+      <Test(Description:="Testa se, com critérios largos, o serviço forma os pares óbvios E os pares que antes falhavam.")>
+
+      Public Sub LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, com critérios largos, o serviço forma os pares óbvios E os pares que antes falhavam.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+  id: LogicMatchMaker_DoesNotReuseMatchedTeams
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMaker_DoesNotReuseMatchedTeams()
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMaker_DoesNotReuseMatchedTeams
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 260
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se equipas que já têm 'match' (como 'left') não são reutilizadas (como 'right').")]
+
+      public void LogicMatchMaker_DoesNotReuseMatchedTeams()
+    content.vb: >-
+      <Test(Description:="Testa se equipas que já têm 'match' (como 'left') não são reutilizadas (como 'right').")>
+
+      Public Sub LogicMatchMaker_DoesNotReuseMatchedTeams()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se equipas que já têm 'match' (como 'left') não são reutilizadas (como 'right').
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  id: LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates()
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 276
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se equipas com datas de jogo diferentes nunca dão 'match', mesmo sendo pares perfeitos.")]
+
+      public void LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates()
+    content.vb: >-
+      <Test(Description:="Testa se equipas com datas de jogo diferentes nunca dão 'match', mesmo sendo pares perfeitos.")>
+
+      Public Sub LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se equipas com datas de jogo diferentes nunca dão 'match', mesmo sendo pares perfeitos.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  id: LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary()
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/RankMatchMakerTests/MatchMakerServiceTests.cs
+    startLine: 291
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se uma lista vazia ou com menos de 2 equipas retorna um dicionário vazio.")]
+
+      public void LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary()
+    content.vb: >-
+      <Test(Description:="Testa se uma lista vazia ou com menos de 2 equipas retorna um dicionário vazio.")>
+
+      Public Sub LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se uma lista vazia ou com menos de 2 equipas retorna um dicionário vazio.
+references:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  commentId: N:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  href: Tests.html
+  name: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  nameWithType: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+    name: HubsTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+    name: RankMatchMakerTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+    name: HubsTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests
+    name: RankMatchMakerTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_Setup
+  name: Setup
+  nameWithType: MatchMakerServiceTests.Setup
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.Setup
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  name: LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenPerfectMatchExists_ReturnsOldestTeamId
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  name: LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoSameRankMatchButAdjacentRankExists_ReturnsAdjacentTeamId
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  name: LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenNoMatchMeetsCriteria_ReturnsNull
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  name: LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenSearchListIsEmpty_ReturnsNull
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  name: LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  nameWithType: MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMakerJoinHub_WhenMatchExistsButDifferentGameDate_ReturnsNull
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  name: LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithTightCriteria_FindsOnlyCloseMatches
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  name: LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithLooseCriteria_FindsAdditionalMatches
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMaker_DoesNotReuseMatchedTeams
+  name: LogicMatchMaker_DoesNotReuseMatchedTeams
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotReuseMatchedTeams
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  name: LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_DoesNotMatchTeamsWithDifferentGameDates
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_RankMatchMakerTests_MatchMakerServiceTests_LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  name: LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  nameWithType: MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.LogicMatchMaker_WithEmptyOrSingleTeamList_ReturnsEmptyDictionary

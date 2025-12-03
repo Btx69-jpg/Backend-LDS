@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.ServicesTests
+  commentId: N:Tests.Unit.ApplicationTests.ServicesTests
+  id: Tests.Unit.ApplicationTests.ServicesTests
+  children:
+  - Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: Tests.Unit.ApplicationTests.ServicesTests
+  nameWithType: Tests.Unit.ApplicationTests.ServicesTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests
+  href: Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests.html
+  name: LeadboardServiceTests
+  nameWithType: LeadboardServiceTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests.html
+  name: PlayerAuthorizationServiceTests
+  nameWithType: PlayerAuthorizationServiceTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html
+  name: PlayerServiceTest
+  nameWithType: PlayerServiceTest
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest

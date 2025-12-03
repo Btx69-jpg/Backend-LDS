@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Middlewares
+  commentId: N:Api.Middlewares
+  id: Api.Middlewares
+  children:
+  - Api.Middlewares.GlobalExceptionHandler
+  langs:
+  - csharp
+  - vb
+  name: Api.Middlewares
+  nameWithType: Api.Middlewares
+  fullName: Api.Middlewares
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Api.Middlewares.GlobalExceptionHandler
+  commentId: T:Api.Middlewares.GlobalExceptionHandler
+  href: Api.Middlewares.GlobalExceptionHandler.html
+  name: GlobalExceptionHandler
+  nameWithType: GlobalExceptionHandler
+  fullName: Api.Middlewares.GlobalExceptionHandler

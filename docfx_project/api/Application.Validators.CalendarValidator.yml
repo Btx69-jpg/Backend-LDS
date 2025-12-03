@@ -1,0 +1,1982 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.CalendarValidator
+  commentId: T:Application.Validators.CalendarValidator
+  id: CalendarValidator
+  parent: Application.Validators
+  children:
+  - Application.Validators.CalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  - Application.Validators.CalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  - Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  - Application.Validators.CalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  - Application.Validators.CalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  - Application.Validators.CalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  - Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  - Application.Validators.CalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  - Application.Validators.CalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  - Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  - Application.Validators.CalendarValidator.ValidateTeamCalendar(System.Guid)
+  - Application.Validators.CalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  - Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  - Application.Validators.CalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  - Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  - Application.Validators.CalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  langs:
+  - csharp
+  - vb
+  name: CalendarValidator
+  nameWithType: CalendarValidator
+  fullName: Application.Validators.CalendarValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CalendarValidator
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: 'public class CalendarValidator : ICalendarValidator'
+    content.vb: Public Class CalendarValidator Implements ICalendarValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.CalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  commentId: M:Application.Validators.CalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  id: ExistsMatch(Domain.Entities.Matches)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ExistsMatch(Matches)
+  nameWithType: CalendarValidator.ExistsMatch(Matches)
+  fullName: Application.Validators.CalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ExistsMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ExistsMatch(Matches match)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    content.vb: Public Sub ExistsMatch(match As Matches)
+  overload: Application.Validators.CalendarValidator.ExistsMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+- uid: Application.Validators.CalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  commentId: M:Application.Validators.CalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  id: ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ExistsTeamStatistics(TeamStatistics)
+  nameWithType: CalendarValidator.ExistsTeamStatistics(TeamStatistics)
+  fullName: Application.Validators.CalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ExistsTeamStatistics
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 21
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ExistsTeamStatistics(TeamStatistics team)
+    parameters:
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    content.vb: Public Sub ExistsTeamStatistics(team As TeamStatistics)
+  overload: Application.Validators.CalendarValidator.ExistsTeamStatistics*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+- uid: Application.Validators.CalendarValidator.ValidateTeamCalendar(System.Guid)
+  commentId: M:Application.Validators.CalendarValidator.ValidateTeamCalendar(System.Guid)
+  id: ValidateTeamCalendar(System.Guid)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamCalendar(Guid)
+  nameWithType: CalendarValidator.ValidateTeamCalendar(Guid)
+  fullName: Application.Validators.CalendarValidator.ValidateTeamCalendar(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamCalendar
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 28
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateTeamCalendar(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    content.vb: Public Sub ValidateTeamCalendar(idTeam As Guid)
+  overload: Application.Validators.CalendarValidator.ValidateTeamCalendar*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+- uid: Application.Validators.CalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  id: ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilterCalendar(Guid, FilterCalendarDto)
+  nameWithType: CalendarValidator.ValidateFilterCalendar(Guid, FilterCalendarDto)
+  fullName: Application.Validators.CalendarValidator.ValidateFilterCalendar(System.Guid, Application.DTOs.Filters.FilterCalendarDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFilterCalendar
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 36
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateFilterCalendar(Guid idTeam, FilterCalendarDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterCalendarDto
+    content.vb: Public Sub ValidateFilterCalendar(idTeam As Guid, filter As FilterCalendarDto)
+  overload: Application.Validators.CalendarValidator.ValidateFilterCalendar*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+- uid: Application.Validators.CalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  id: ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatePostPoneMatchDto(Guid, PostPoneMatchDto)
+  nameWithType: CalendarValidator.ValidatePostPoneMatchDto(Guid, PostPoneMatchDto)
+  fullName: Application.Validators.CalendarValidator.ValidatePostPoneMatchDto(System.Guid, Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidatePostPoneMatchDto
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 52
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidatePostPoneMatchDto(Guid idTeam, PostPoneMatchDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.PostPoneMatchDto
+    content.vb: Public Sub ValidatePostPoneMatchDto(idTeam As Guid, dto As PostPoneMatchDto)
+  overload: Application.Validators.CalendarValidator.ValidatePostPoneMatchDto*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+- uid: Application.Validators.CalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Validators.CalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  id: ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatorPostPoneMatch(Matches, DateTime, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: CalendarValidator.ValidatorPostPoneMatch(Matches, DateTime, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Validators.CalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches, System.DateTime, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidatorPostPoneMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 69
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidatorPostPoneMatch(Matches match, DateTime newDate, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    - id: newDate
+      type: System.DateTime
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: opponetTeam
+      type: Domain.Entities.TeamStatistics
+    - id: idOpponnent
+      type: System.Guid
+    content.vb: Public Sub ValidatorPostPoneMatch(match As Matches, newDate As Date, team As TeamStatistics, idTeam As Guid, opponetTeam As TeamStatistics, idOpponnent As Guid)
+  overload: Application.Validators.CalendarValidator.ValidatorPostPoneMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  nameWithType.vb: CalendarValidator.ValidatorPostPoneMatch(Matches, Date, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName.vb: Application.Validators.CalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches, Date, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  name.vb: ValidatorPostPoneMatch(Matches, Date, TeamStatistics, Guid, TeamStatistics, Guid)
+- uid: Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  id: ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAcceptPostPoneMatchDto(Guid, AcceptRefusePostPoneDto)
+  nameWithType: CalendarValidator.ValidateAcceptPostPoneMatchDto(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateAcceptPostPoneMatchDto
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 97
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateAcceptPostPoneMatchDto(Guid idTeam, AcceptRefusePostPoneDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    content.vb: Public Sub ValidateAcceptPostPoneMatchDto(idTeam As Guid, dto As AcceptRefusePostPoneDto)
+  overload: Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+- uid: Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  commentId: M:Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  id: ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatorAcceptPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid, Matches)
+  nameWithType: CalendarValidator.ValidatorAcceptPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid, Matches)
+  fullName: Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch, Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidatorAcceptPostPoneMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 107
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidatorAcceptPostPoneMatch(PostPoneMatch postPoneMatch, Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent, Matches matcheFind)
+    parameters:
+    - id: postPoneMatch
+      type: Domain.Entities.PostPoneMatch
+    - id: match
+      type: Domain.Entities.Matches
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: opponetTeam
+      type: Domain.Entities.TeamStatistics
+    - id: idOpponnent
+      type: System.Guid
+    - id: matcheFind
+      type: Domain.Entities.Matches
+    content.vb: Public Sub ValidatorAcceptPostPoneMatch(postPoneMatch As PostPoneMatch, match As Matches, team As TeamStatistics, idTeam As Guid, opponetTeam As TeamStatistics, idOpponnent As Guid, matcheFind As Matches)
+  overload: Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+- uid: Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  id: ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateRejectPostPoneMatchDTO(Guid, AcceptRefusePostPoneDto)
+  nameWithType: CalendarValidator.ValidateRejectPostPoneMatchDTO(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateRejectPostPoneMatchDTO
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 124
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateRejectPostPoneMatchDTO(Guid idTeam, AcceptRefusePostPoneDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    content.vb: Public Sub ValidateRejectPostPoneMatchDTO(idTeam As Guid, dto As AcceptRefusePostPoneDto)
+  overload: Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+- uid: Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  id: ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidatorRejectPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: CalendarValidator.ValidatorRejectPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch, Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidatorRejectPostPoneMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 134
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidatorRejectPostPoneMatch(PostPoneMatch postPoneMatch, Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent)
+    parameters:
+    - id: postPoneMatch
+      type: Domain.Entities.PostPoneMatch
+    - id: match
+      type: Domain.Entities.Matches
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: opponetTeam
+      type: Domain.Entities.TeamStatistics
+    - id: idOpponnent
+      type: System.Guid
+    content.vb: Public Sub ValidatorRejectPostPoneMatch(postPoneMatch As PostPoneMatch, match As Matches, team As TeamStatistics, idTeam As Guid, opponetTeam As TeamStatistics, idOpponnent As Guid)
+  overload: Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+- uid: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Validators.CalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  id: ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVariabelCancelMatch(Guid, Guid, string)
+  nameWithType: CalendarValidator.ValidateVariabelCancelMatch(Guid, Guid, string)
+  fullName: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateVariabelCancelMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 146
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateVariabelCancelMatch(Guid idTeam, Guid idMatch, string description)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatch
+      type: System.Guid
+    - id: description
+      type: System.String
+    content.vb: Public Sub ValidateVariabelCancelMatch(idTeam As Guid, idMatch As Guid, description As String)
+  overload: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  nameWithType.vb: CalendarValidator.ValidateVariabelCancelMatch(Guid, Guid, String)
+  fullName.vb: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch(System.Guid, System.Guid, String)
+  name.vb: ValidateVariabelCancelMatch(Guid, Guid, String)
+- uid: Application.Validators.CalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Validators.CalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  id: ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateCancelMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: CalendarValidator.ValidateCancelMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Validators.CalendarValidator.ValidateCancelMatch(Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateCancelMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 171
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateCancelMatch(Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponent, Guid idOpponent)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: opponent
+      type: Domain.Entities.TeamStatistics
+    - id: idOpponent
+      type: System.Guid
+    content.vb: Public Sub ValidateCancelMatch(match As Matches, team As TeamStatistics, idTeam As Guid, opponent As TeamStatistics, idOpponent As Guid)
+  overload: Application.Validators.CalendarValidator.ValidateCancelMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+- uid: Application.Validators.CalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Validators.CalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  id: validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: validateResultMatch(Guid, ResultMatchDto)
+  nameWithType: CalendarValidator.validateResultMatch(Guid, ResultMatchDto)
+  fullName: Application.Validators.CalendarValidator.validateResultMatch(System.Guid, Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: validateResultMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 195
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void validateResultMatch(Guid idTeam, ResultMatchDto result)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: result
+      type: Application.DTOs.Match.ResultMatchDto
+    content.vb: Public Sub validateResultMatch(idTeam As Guid, result As ResultMatchDto)
+  overload: Application.Validators.CalendarValidator.validateResultMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+- uid: Application.Validators.CalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  id: ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFinishMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid, ResultMatchDto)
+  nameWithType: CalendarValidator.ValidateFinishMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid, ResultMatchDto)
+  fullName: Application.Validators.CalendarValidator.ValidateFinishMatch(Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid, Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFinishMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 207
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateFinishMatch(Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponent, Guid idOponnent, ResultMatchDto result)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    - id: team
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: opponent
+      type: Domain.Entities.TeamStatistics
+    - id: idOponnent
+      type: System.Guid
+    - id: result
+      type: Application.DTOs.Match.ResultMatchDto
+    content.vb: Public Sub ValidateFinishMatch(match As Matches, team As TeamStatistics, idTeam As Guid, opponent As TeamStatistics, idOponnent As Guid, result As ResultMatchDto)
+  overload: Application.Validators.CalendarValidator.ValidateFinishMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+- uid: Application.Validators.CalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  commentId: M:Application.Validators.CalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  id: ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateCancelFinishMatch(Matches, Team)
+  nameWithType: CalendarValidator.ValidateCancelFinishMatch(Matches, Team)
+  fullName: Application.Validators.CalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches, Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateCancelFinishMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 236
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateCancelFinishMatch(Matches match, Team team)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Public Sub ValidateCancelFinishMatch(match As Matches, team As Team)
+  overload: Application.Validators.CalendarValidator.ValidateCancelFinishMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+- uid: Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  commentId: M:Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  id: ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  parent: Application.Validators.CalendarValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilterPostPoneMatch(FilterPostPoneMatchDto)
+  nameWithType: CalendarValidator.ValidateFilterPostPoneMatch(FilterPostPoneMatchDto)
+  fullName: Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/CalendarValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFilterPostPoneMatch
+    path: ../Application/Validators/CalendarValidator.cs
+    startLine: 249
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void ValidateFilterPostPoneMatch(FilterPostPoneMatchDto filter)
+    parameters:
+    - id: filter
+      type: Application.DTOs.Filters.FilterPostPoneMatchDto
+    content.vb: Public Sub ValidateFilterPostPoneMatch(filter As FilterPostPoneMatchDto)
+  overload: Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch*
+  implements:
+  - Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+references:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  href: Application.html
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.ICalendarValidator
+  commentId: T:Application.Interfaces.Validators.ICalendarValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ICalendarValidator.html
+  name: ICalendarValidator
+  nameWithType: ICalendarValidator
+  fullName: Application.Interfaces.Validators.ICalendarValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Validators.CalendarValidator.ExistsMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ExistsMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ExistsMatch_Domain_Entities_Matches_
+  name: ExistsMatch
+  nameWithType: CalendarValidator.ExistsMatch
+  fullName: Application.Validators.CalendarValidator.ExistsMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsMatch_Domain_Entities_Matches_
+  name: ExistsMatch(Matches)
+  nameWithType: ICalendarValidator.ExistsMatch(Matches)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+    name: ExistsMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsMatch_Domain_Entities_Matches_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)
+    name: ExistsMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsMatch_Domain_Entities_Matches_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Validators.CalendarValidator.ExistsTeamStatistics*
+  commentId: Overload:Application.Validators.CalendarValidator.ExistsTeamStatistics
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ExistsTeamStatistics_Domain_Entities_TeamStatistics_
+  name: ExistsTeamStatistics
+  nameWithType: CalendarValidator.ExistsTeamStatistics
+  fullName: Application.Validators.CalendarValidator.ExistsTeamStatistics
+- uid: Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsTeamStatistics_Domain_Entities_TeamStatistics_
+  name: ExistsTeamStatistics(TeamStatistics)
+  nameWithType: ICalendarValidator.ExistsTeamStatistics(TeamStatistics)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+    name: ExistsTeamStatistics
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsTeamStatistics_Domain_Entities_TeamStatistics_
+  - name: (
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)
+    name: ExistsTeamStatistics
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ExistsTeamStatistics_Domain_Entities_TeamStatistics_
+  - name: (
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: )
+- uid: Domain.Entities.TeamStatistics
+  commentId: T:Domain.Entities.TeamStatistics
+  parent: Domain.Entities
+  href: Domain.Entities.TeamStatistics.html
+  name: TeamStatistics
+  nameWithType: TeamStatistics
+  fullName: Domain.Entities.TeamStatistics
+- uid: Application.Validators.CalendarValidator.ValidateTeamCalendar*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateTeamCalendar
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateTeamCalendar_System_Guid_
+  name: ValidateTeamCalendar
+  nameWithType: CalendarValidator.ValidateTeamCalendar
+  fullName: Application.Validators.CalendarValidator.ValidateTeamCalendar
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateTeamCalendar_System_Guid_
+  name: ValidateTeamCalendar(Guid)
+  nameWithType: ICalendarValidator.ValidateTeamCalendar(Guid)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+    name: ValidateTeamCalendar
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateTeamCalendar_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)
+    name: ValidateTeamCalendar
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateTeamCalendar_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Validators.CalendarValidator.ValidateFilterCalendar*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateFilterCalendar
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateFilterCalendar_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  name: ValidateFilterCalendar
+  nameWithType: CalendarValidator.ValidateFilterCalendar
+  fullName: Application.Validators.CalendarValidator.ValidateFilterCalendar
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterCalendar_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  name: ValidateFilterCalendar(Guid, FilterCalendarDto)
+  nameWithType: ICalendarValidator.ValidateFilterCalendar(Guid, FilterCalendarDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid, Application.DTOs.Filters.FilterCalendarDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+    name: ValidateFilterCalendar
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterCalendar_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterCalendarDto
+    name: FilterCalendarDto
+    href: Application.DTOs.Filters.FilterCalendarDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+    name: ValidateFilterCalendar
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterCalendar_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterCalendarDto
+    name: FilterCalendarDto
+    href: Application.DTOs.Filters.FilterCalendarDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterCalendarDto
+  commentId: T:Application.DTOs.Filters.FilterCalendarDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterCalendarDto.html
+  name: FilterCalendarDto
+  nameWithType: FilterCalendarDto
+  fullName: Application.DTOs.Filters.FilterCalendarDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Validators.CalendarValidator.ValidatePostPoneMatchDto*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidatePostPoneMatchDto
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidatePostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_
+  name: ValidatePostPoneMatchDto
+  nameWithType: CalendarValidator.ValidatePostPoneMatchDto
+  fullName: Application.Validators.CalendarValidator.ValidatePostPoneMatchDto
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatePostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_
+  name: ValidatePostPoneMatchDto(Guid, PostPoneMatchDto)
+  nameWithType: ICalendarValidator.ValidatePostPoneMatchDto(Guid, PostPoneMatchDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid, Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+    name: ValidatePostPoneMatchDto
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatePostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+    name: PostPoneMatchDto
+    href: Application.DTOs.PostPoneGame.PostPoneMatchDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+    name: ValidatePostPoneMatchDto
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatePostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+    name: PostPoneMatchDto
+    href: Application.DTOs.PostPoneGame.PostPoneMatchDto.html
+  - name: )
+- uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+  commentId: T:Application.DTOs.PostPoneGame.PostPoneMatchDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.PostPoneMatchDto.html
+  name: PostPoneMatchDto
+  nameWithType: PostPoneMatchDto
+  fullName: Application.DTOs.PostPoneGame.PostPoneMatchDto
+- uid: Application.DTOs.PostPoneGame
+  commentId: N:Application.DTOs.PostPoneGame
+  href: Application.html
+  name: Application.DTOs.PostPoneGame
+  nameWithType: Application.DTOs.PostPoneGame
+  fullName: Application.DTOs.PostPoneGame
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+- uid: Application.Validators.CalendarValidator.ValidatorPostPoneMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidatorPostPoneMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidatorPostPoneMatch_Domain_Entities_Matches_System_DateTime_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidatorPostPoneMatch
+  nameWithType: CalendarValidator.ValidatorPostPoneMatch
+  fullName: Application.Validators.CalendarValidator.ValidatorPostPoneMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorPostPoneMatch_Domain_Entities_Matches_System_DateTime_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidatorPostPoneMatch(Matches, DateTime, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: ICalendarValidator.ValidatorPostPoneMatch(Matches, DateTime, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches, System.DateTime, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  nameWithType.vb: ICalendarValidator.ValidatorPostPoneMatch(Matches, Date, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName.vb: Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches, Date, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  name.vb: ValidatorPostPoneMatch(Matches, Date, TeamStatistics, Guid, TeamStatistics, Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidatorPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorPostPoneMatch_Domain_Entities_Matches_System_DateTime_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidatorPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorPostPoneMatch_Domain_Entities_Matches_System_DateTime_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateAcceptPostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: ValidateAcceptPostPoneMatchDto
+  nameWithType: CalendarValidator.ValidateAcceptPostPoneMatchDto
+  fullName: Application.Validators.CalendarValidator.ValidateAcceptPostPoneMatchDto
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateAcceptPostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: ValidateAcceptPostPoneMatchDto(Guid, AcceptRefusePostPoneDto)
+  nameWithType: ICalendarValidator.ValidateAcceptPostPoneMatchDto(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+    name: ValidateAcceptPostPoneMatchDto
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateAcceptPostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    name: AcceptRefusePostPoneDto
+    href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+    name: ValidateAcceptPostPoneMatchDto
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateAcceptPostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    name: AcceptRefusePostPoneDto
+    href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  - name: )
+- uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  commentId: T:Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  name: AcceptRefusePostPoneDto
+  nameWithType: AcceptRefusePostPoneDto
+  fullName: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+- uid: Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidatorAcceptPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_Matches_
+  name: ValidatorAcceptPostPoneMatch
+  nameWithType: CalendarValidator.ValidatorAcceptPostPoneMatch
+  fullName: Application.Validators.CalendarValidator.ValidatorAcceptPostPoneMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorAcceptPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_Matches_
+  name: ValidatorAcceptPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid, Matches)
+  nameWithType: ICalendarValidator.ValidatorAcceptPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid, Matches)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch, Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.Matches)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+    name: ValidatorAcceptPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorAcceptPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_Matches_
+  - name: (
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)
+    name: ValidatorAcceptPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorAcceptPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_Matches_
+  - name: (
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+- uid: Domain.Entities.PostPoneMatch
+  commentId: T:Domain.Entities.PostPoneMatch
+  parent: Domain.Entities
+  href: Domain.Entities.PostPoneMatch.html
+  name: PostPoneMatch
+  nameWithType: PostPoneMatch
+  fullName: Domain.Entities.PostPoneMatch
+- uid: Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateRejectPostPoneMatchDTO_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: ValidateRejectPostPoneMatchDTO
+  nameWithType: CalendarValidator.ValidateRejectPostPoneMatchDTO
+  fullName: Application.Validators.CalendarValidator.ValidateRejectPostPoneMatchDTO
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateRejectPostPoneMatchDTO_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: ValidateRejectPostPoneMatchDTO(Guid, AcceptRefusePostPoneDto)
+  nameWithType: ICalendarValidator.ValidateRejectPostPoneMatchDTO(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+    name: ValidateRejectPostPoneMatchDTO
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateRejectPostPoneMatchDTO_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    name: AcceptRefusePostPoneDto
+    href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+    name: ValidateRejectPostPoneMatchDTO
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateRejectPostPoneMatchDTO_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    name: AcceptRefusePostPoneDto
+    href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  - name: )
+- uid: Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidatorRejectPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidatorRejectPostPoneMatch
+  nameWithType: CalendarValidator.ValidatorRejectPostPoneMatch
+  fullName: Application.Validators.CalendarValidator.ValidatorRejectPostPoneMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorRejectPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidatorRejectPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: ICalendarValidator.ValidatorRejectPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch, Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidatorRejectPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorRejectPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidatorRejectPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidatorRejectPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateVariabelCancelMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateVariabelCancelMatch_System_Guid_System_Guid_System_String_
+  name: ValidateVariabelCancelMatch
+  nameWithType: CalendarValidator.ValidateVariabelCancelMatch
+  fullName: Application.Validators.CalendarValidator.ValidateVariabelCancelMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateVariabelCancelMatch_System_Guid_System_Guid_System_String_
+  name: ValidateVariabelCancelMatch(Guid, Guid, string)
+  nameWithType: ICalendarValidator.ValidateVariabelCancelMatch(Guid, Guid, string)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid, System.Guid, string)
+  nameWithType.vb: ICalendarValidator.ValidateVariabelCancelMatch(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid, System.Guid, String)
+  name.vb: ValidateVariabelCancelMatch(Guid, Guid, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+    name: ValidateVariabelCancelMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateVariabelCancelMatch_System_Guid_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)
+    name: ValidateVariabelCancelMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateVariabelCancelMatch_System_Guid_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Validators.CalendarValidator.ValidateCancelMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateCancelMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateCancelMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidateCancelMatch
+  nameWithType: CalendarValidator.ValidateCancelMatch
+  fullName: Application.Validators.CalendarValidator.ValidateCancelMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  name: ValidateCancelMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  nameWithType: ICalendarValidator.ValidateCancelMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidateCancelMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)
+    name: ValidateCancelMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Validators.CalendarValidator.validateResultMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.validateResultMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_validateResultMatch_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  name: validateResultMatch
+  nameWithType: CalendarValidator.validateResultMatch
+  fullName: Application.Validators.CalendarValidator.validateResultMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_validateResultMatch_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  name: validateResultMatch(Guid, ResultMatchDto)
+  nameWithType: ICalendarValidator.validateResultMatch(Guid, ResultMatchDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid, Application.DTOs.Match.ResultMatchDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+    name: validateResultMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_validateResultMatch_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Match.ResultMatchDto
+    name: ResultMatchDto
+    href: Application.DTOs.Match.ResultMatchDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)
+    name: validateResultMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_validateResultMatch_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Match.ResultMatchDto
+    name: ResultMatchDto
+    href: Application.DTOs.Match.ResultMatchDto.html
+  - name: )
+- uid: Application.DTOs.Match.ResultMatchDto
+  commentId: T:Application.DTOs.Match.ResultMatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.ResultMatchDto.html
+  name: ResultMatchDto
+  nameWithType: ResultMatchDto
+  fullName: Application.DTOs.Match.ResultMatchDto
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  href: Application.html
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+- uid: Application.Validators.CalendarValidator.ValidateFinishMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateFinishMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateFinishMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  name: ValidateFinishMatch
+  nameWithType: CalendarValidator.ValidateFinishMatch
+  fullName: Application.Validators.CalendarValidator.ValidateFinishMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFinishMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  name: ValidateFinishMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid, ResultMatchDto)
+  nameWithType: ICalendarValidator.ValidateFinishMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid, ResultMatchDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches, Domain.Entities.TeamStatistics, System.Guid, Domain.Entities.TeamStatistics, System.Guid, Application.DTOs.Match.ResultMatchDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+    name: ValidateFinishMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFinishMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Match.ResultMatchDto
+    name: ResultMatchDto
+    href: Application.DTOs.Match.ResultMatchDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)
+    name: ValidateFinishMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFinishMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Application_DTOs_Match_ResultMatchDto_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Match.ResultMatchDto
+    name: ResultMatchDto
+    href: Application.DTOs.Match.ResultMatchDto.html
+  - name: )
+- uid: Application.Validators.CalendarValidator.ValidateCancelFinishMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateCancelFinishMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateCancelFinishMatch_Domain_Entities_Matches_Domain_Entities_Team_
+  name: ValidateCancelFinishMatch
+  nameWithType: CalendarValidator.ValidateCancelFinishMatch
+  fullName: Application.Validators.CalendarValidator.ValidateCancelFinishMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelFinishMatch_Domain_Entities_Matches_Domain_Entities_Team_
+  name: ValidateCancelFinishMatch(Matches, Team)
+  nameWithType: ICalendarValidator.ValidateCancelFinishMatch(Matches, Team)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches, Domain.Entities.Team)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+    name: ValidateCancelFinishMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelFinishMatch_Domain_Entities_Matches_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)
+    name: ValidateCancelFinishMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateCancelFinishMatch_Domain_Entities_Matches_Domain_Entities_Team_
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch*
+  commentId: Overload:Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch
+  href: Application.Validators.CalendarValidator.html#Application_Validators_CalendarValidator_ValidateFilterPostPoneMatch_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  name: ValidateFilterPostPoneMatch
+  nameWithType: CalendarValidator.ValidateFilterPostPoneMatch
+  fullName: Application.Validators.CalendarValidator.ValidateFilterPostPoneMatch
+- uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  commentId: M:Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  parent: Application.Interfaces.Validators.ICalendarValidator
+  href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterPostPoneMatch_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  name: ValidateFilterPostPoneMatch(FilterPostPoneMatchDto)
+  nameWithType: ICalendarValidator.ValidateFilterPostPoneMatch(FilterPostPoneMatchDto)
+  fullName: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+    name: ValidateFilterPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterPostPoneMatch_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+    name: FilterPostPoneMatchDto
+    href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)
+    name: ValidateFilterPostPoneMatch
+    href: Application.Interfaces.Validators.ICalendarValidator.html#Application_Interfaces_Validators_ICalendarValidator_ValidateFilterPostPoneMatch_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+    name: FilterPostPoneMatchDto
+    href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+  commentId: T:Application.DTOs.Filters.FilterPostPoneMatchDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  name: FilterPostPoneMatchDto
+  nameWithType: FilterPostPoneMatchDto
+  fullName: Application.DTOs.Filters.FilterPostPoneMatchDto

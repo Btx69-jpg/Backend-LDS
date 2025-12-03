@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.MatchStatus
+  commentId: T:Domain.Enums.MatchStatus
+  id: MatchStatus
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.MatchStatus.CANCELED
+  - Domain.Enums.MatchStatus.DONE
+  - Domain.Enums.MatchStatus.IN_PROGRESS
+  - Domain.Enums.MatchStatus.POST_PONED
+  - Domain.Enums.MatchStatus.SCHEDULED
+  langs:
+  - csharp
+  - vb
+  name: MatchStatus
+  nameWithType: MatchStatus
+  fullName: Domain.Enums.MatchStatus
+  type: Enum
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchStatus
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: >-
+    Define os possíveis estados do ciclo de vida de uma partida ou jogo.
+
+    Utilizado para rastrear o status do jogo desde o agendamento até à conclusão ou cancelamento.
+  example: []
+  syntax:
+    content: public enum MatchStatus
+    content.vb: Public Enum MatchStatus
+- uid: Domain.Enums.MatchStatus.SCHEDULED
+  commentId: F:Domain.Enums.MatchStatus.SCHEDULED
+  id: SCHEDULED
+  parent: Domain.Enums.MatchStatus
+  langs:
+  - csharp
+  - vb
+  name: SCHEDULED
+  nameWithType: MatchStatus.SCHEDULED
+  fullName: Domain.Enums.MatchStatus.SCHEDULED
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SCHEDULED
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida foi agendada/confirmada e aguarda a data de início.
+  example: []
+  syntax:
+    content: SCHEDULED = 0
+    return:
+      type: Domain.Enums.MatchStatus
+- uid: Domain.Enums.MatchStatus.IN_PROGRESS
+  commentId: F:Domain.Enums.MatchStatus.IN_PROGRESS
+  id: IN_PROGRESS
+  parent: Domain.Enums.MatchStatus
+  langs:
+  - csharp
+  - vb
+  name: IN_PROGRESS
+  nameWithType: MatchStatus.IN_PROGRESS
+  fullName: Domain.Enums.MatchStatus.IN_PROGRESS
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IN_PROGRESS
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida está a ser jogada neste momento (Live).
+  example: []
+  syntax:
+    content: IN_PROGRESS = 1
+    return:
+      type: Domain.Enums.MatchStatus
+- uid: Domain.Enums.MatchStatus.DONE
+  commentId: F:Domain.Enums.MatchStatus.DONE
+  id: DONE
+  parent: Domain.Enums.MatchStatus
+  langs:
+  - csharp
+  - vb
+  name: DONE
+  nameWithType: MatchStatus.DONE
+  fullName: Domain.Enums.MatchStatus.DONE
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DONE
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 21
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida foi concluída e o resultado final foi reportado.
+  example: []
+  syntax:
+    content: DONE = 2
+    return:
+      type: Domain.Enums.MatchStatus
+- uid: Domain.Enums.MatchStatus.POST_PONED
+  commentId: F:Domain.Enums.MatchStatus.POST_PONED
+  id: POST_PONED
+  parent: Domain.Enums.MatchStatus
+  langs:
+  - csharp
+  - vb
+  name: POST_PONED
+  nameWithType: MatchStatus.POST_PONED
+  fullName: Domain.Enums.MatchStatus.POST_PONED
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: POST_PONED
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 26
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida foi reagendada para uma data futura (adiada).
+  example: []
+  syntax:
+    content: POST_PONED = 3
+    return:
+      type: Domain.Enums.MatchStatus
+- uid: Domain.Enums.MatchStatus.CANCELED
+  commentId: F:Domain.Enums.MatchStatus.CANCELED
+  id: CANCELED
+  parent: Domain.Enums.MatchStatus
+  langs:
+  - csharp
+  - vb
+  name: CANCELED
+  nameWithType: MatchStatus.CANCELED
+  fullName: Domain.Enums.MatchStatus.CANCELED
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchStatus.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CANCELED
+    path: ../Domain/Enums/MatchStatus.cs
+    startLine: 31
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida foi permanentemente cancelada e não será jogada.
+  example: []
+  syntax:
+    content: CANCELED = 4
+    return:
+      type: Domain.Enums.MatchStatus
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Enums.MatchStatus
+  commentId: T:Domain.Enums.MatchStatus
+  parent: Domain.Enums
+  href: Domain.Enums.MatchStatus.html
+  name: MatchStatus
+  nameWithType: MatchStatus
+  fullName: Domain.Enums.MatchStatus

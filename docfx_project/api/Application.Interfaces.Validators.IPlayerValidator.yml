@@ -1,0 +1,580 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.IPlayerValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerValidator
+  id: IPlayerValidator
+  parent: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto,Domain.Entities.User,Domain.Entities.User)
+  - Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player)
+  - Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player)
+  - Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator(Domain.Entities.Player)
+  - Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player)
+  - Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  - Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto,Domain.Entities.Player,Domain.Entities.User[])
+  - Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IPlayerValidator
+  nameWithType: IPlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IPlayerValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: public interface IPlayerValidator
+    content.vb: Public Interface IPlayerValidator
+- uid: Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player)
+  id: PlayerExists(Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: PlayerExists(Player?)
+  nameWithType: IPlayerValidator.PlayerExists(Player?)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PlayerExists
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void PlayerExists(Player? player)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub PlayerExists(player As Player)
+  overload: Application.Interfaces.Validators.IPlayerValidator.PlayerExists*
+  nameWithType.vb: IPlayerValidator.PlayerExists(Player)
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player)
+  name.vb: PlayerExists(Player)
+- uid: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto,Domain.Entities.User,Domain.Entities.User)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto,Domain.Entities.User,Domain.Entities.User)
+  id: CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto,Domain.Entities.User,Domain.Entities.User)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: CreatePlayerValidator(CreatePlayerDto, User?, User?)
+  nameWithType: IPlayerValidator.CreatePlayerValidator(CreatePlayerDto, User?, User?)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto, Domain.Entities.User?, Domain.Entities.User?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreatePlayerValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void CreatePlayerValidator(CreatePlayerDto CreatePlayerDto, User? phoneUser, User? emailUser)
+    parameters:
+    - id: CreatePlayerDto
+      type: Application.DTOs.PlayerDTOs.CreatePlayerDto
+    - id: phoneUser
+      type: Domain.Entities.User
+    - id: emailUser
+      type: Domain.Entities.User
+    content.vb: Sub CreatePlayerValidator(CreatePlayerDto As CreatePlayerDto, phoneUser As User, emailUser As User)
+  overload: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator*
+  nameWithType.vb: IPlayerValidator.CreatePlayerValidator(CreatePlayerDto, User, User)
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto, Domain.Entities.User, Domain.Entities.User)
+  name.vb: CreatePlayerValidator(CreatePlayerDto, User, User)
+- uid: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player)
+  id: DeletePlayerValidator(Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: DeletePlayerValidator(Player?)
+  nameWithType: IPlayerValidator.DeletePlayerValidator(Player?)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeletePlayerValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void DeletePlayerValidator(Player? player)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub DeletePlayerValidator(player As Player)
+  overload: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator*
+  nameWithType.vb: IPlayerValidator.DeletePlayerValidator(Player)
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player)
+  name.vb: DeletePlayerValidator(Player)
+- uid: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player)
+  id: GetPlayerByIdValidator(Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByIdValidator(Player?)
+  nameWithType: IPlayerValidator.GetPlayerByIdValidator(Player?)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByIdValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void GetPlayerByIdValidator(Player? player)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub GetPlayerByIdValidator(player As Player)
+  overload: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator*
+  nameWithType.vb: IPlayerValidator.GetPlayerByIdValidator(Player)
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player)
+  name.vb: GetPlayerByIdValidator(Player)
+- uid: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto,Domain.Entities.Player,Domain.Entities.User[])
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto,Domain.Entities.Player,Domain.Entities.User[])
+  id: UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto,Domain.Entities.Player,Domain.Entities.User[])
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerValidator(UpdatePlayerDto, Player, User[])
+  nameWithType: IPlayerValidator.UpdatePlayerValidator(UpdatePlayerDto, Player, User[])
+  fullName: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto, Domain.Entities.Player, Domain.Entities.User[])
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void UpdatePlayerValidator(UpdatePlayerDto UpdatePlayerDto, Player player, User[] existingPlayers)
+    parameters:
+    - id: UpdatePlayerDto
+      type: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+    - id: player
+      type: Domain.Entities.Player
+    - id: existingPlayers
+      type: Domain.Entities.User[]
+    content.vb: Sub UpdatePlayerValidator(UpdatePlayerDto As UpdatePlayerDto, player As Player, existingPlayers As User())
+  overload: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator*
+  nameWithType.vb: IPlayerValidator.UpdatePlayerValidator(UpdatePlayerDto, Player, User())
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto, Domain.Entities.Player, Domain.Entities.User())
+  name.vb: UpdatePlayerValidator(UpdatePlayerDto, Player, User())
+- uid: Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator(Domain.Entities.Player)
+  id: LeaveTeamValidator(Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeamValidator(Player)
+  nameWithType: IPlayerValidator.LeaveTeamValidator(Player)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator(Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeamValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void LeaveTeamValidator(Player player)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub LeaveTeamValidator(player As Player)
+  overload: Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator*
+- uid: Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  id: ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFiltersListTeams(FilterListTeamDto)
+  nameWithType: IPlayerValidator.ValidateFiltersListTeams(FilterListTeamDto)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFiltersListTeams
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 20
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateFiltersListTeams(FilterListTeamDto filter)
+    parameters:
+    - id: filter
+      type: Application.DTOs.Filters.FilterListTeamDto
+    content.vb: Sub ValidateFiltersListTeams(filter As FilterListTeamDto)
+  overload: Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams*
+- uid: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(System.Boolean)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(System.Boolean)
+  id: ValidateHasChangeDataPlayer(System.Boolean)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateHasChangeDataPlayer(bool)
+  nameWithType: IPlayerValidator.ValidateHasChangeDataPlayer(bool)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(bool)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateHasChangeDataPlayer
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 22
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateHasChangeDataPlayer(bool hasChange)
+    parameters:
+    - id: hasChange
+      type: System.Boolean
+    content.vb: Sub ValidateHasChangeDataPlayer(hasChange As Boolean)
+  overload: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer*
+  nameWithType.vb: IPlayerValidator.ValidateHasChangeDataPlayer(Boolean)
+  fullName.vb: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(Boolean)
+  name.vb: ValidateHasChangeDataPlayer(Boolean)
+- uid: Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  commentId: M:Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  id: SendMembershipRequestValidator(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  parent: Application.Interfaces.Validators.IPlayerValidator
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestValidator(Player, Team, MembershipRequest)
+  nameWithType: IPlayerValidator.SendMembershipRequestValidator(Player, Team, MembershipRequest)
+  fullName: Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator(Domain.Entities.Player, Domain.Entities.Team, Domain.Entities.MembershipRequest)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IPlayerValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestValidator
+    path: ../Application/Interfaces/Validators/IPlayerValidator.cs
+    startLine: 24
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void SendMembershipRequestValidator(Player player, Team team, MembershipRequest request)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    - id: team
+      type: Domain.Entities.Team
+    - id: request
+      type: Domain.Entities.MembershipRequest
+    content.vb: Sub SendMembershipRequestValidator(player As Player, team As Team, request As MembershipRequest)
+  overload: Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator*
+references:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Validators.IPlayerValidator.PlayerExists*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.PlayerExists
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_PlayerExists_Domain_Entities_Player_
+  name: PlayerExists
+  nameWithType: IPlayerValidator.PlayerExists
+  fullName: Application.Interfaces.Validators.IPlayerValidator.PlayerExists
+- uid: Domain.Entities.Player
+  commentId: T:Domain.Entities.Player
+  parent: Domain.Entities
+  href: Domain.Entities.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Domain.Entities.Player
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_CreatePlayerValidator_Application_DTOs_PlayerDTOs_CreatePlayerDto_Domain_Entities_User_Domain_Entities_User_
+  name: CreatePlayerValidator
+  nameWithType: IPlayerValidator.CreatePlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator
+- uid: Application.DTOs.PlayerDTOs.CreatePlayerDto
+  commentId: T:Application.DTOs.PlayerDTOs.CreatePlayerDto
+  parent: Application.DTOs.PlayerDTOs
+  href: Application.DTOs.PlayerDTOs.CreatePlayerDto.html
+  name: CreatePlayerDto
+  nameWithType: CreatePlayerDto
+  fullName: Application.DTOs.PlayerDTOs.CreatePlayerDto
+- uid: Domain.Entities.User
+  commentId: T:Domain.Entities.User
+  parent: Domain.Entities
+  href: Domain.Entities.User.html
+  name: User
+  nameWithType: User
+  fullName: Domain.Entities.User
+- uid: Application.DTOs.PlayerDTOs
+  commentId: N:Application.DTOs.PlayerDTOs
+  href: Application.html
+  name: Application.DTOs.PlayerDTOs
+  nameWithType: Application.DTOs.PlayerDTOs
+  fullName: Application.DTOs.PlayerDTOs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PlayerDTOs
+    name: PlayerDTOs
+    href: Application.DTOs.PlayerDTOs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PlayerDTOs
+    name: PlayerDTOs
+    href: Application.DTOs.PlayerDTOs.html
+- uid: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_DeletePlayerValidator_Domain_Entities_Player_
+  name: DeletePlayerValidator
+  nameWithType: IPlayerValidator.DeletePlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator
+- uid: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_GetPlayerByIdValidator_Domain_Entities_Player_
+  name: GetPlayerByIdValidator
+  nameWithType: IPlayerValidator.GetPlayerByIdValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator
+- uid: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_UpdatePlayerValidator_Application_DTOs_PlayerDTOs_UpdatePlayerDto_Domain_Entities_Player_Domain_Entities_User___
+  name: UpdatePlayerValidator
+  nameWithType: IPlayerValidator.UpdatePlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator
+- uid: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+  commentId: T:Application.DTOs.PlayerDTOs.UpdatePlayerDto
+  parent: Application.DTOs.PlayerDTOs
+  href: Application.DTOs.PlayerDTOs.UpdatePlayerDto.html
+  name: UpdatePlayerDto
+  nameWithType: UpdatePlayerDto
+  fullName: Application.DTOs.PlayerDTOs.UpdatePlayerDto
+- uid: Domain.Entities.User[]
+  isExternal: true
+  name: User[]
+  nameWithType: User[]
+  fullName: Domain.Entities.User[]
+  nameWithType.vb: User()
+  fullName.vb: Domain.Entities.User()
+  name.vb: User()
+  spec.csharp:
+  - uid: Domain.Entities.User
+    name: User
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Domain.Entities.User
+    name: User
+  - name: (
+  - name: )
+- uid: Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_LeaveTeamValidator_Domain_Entities_Player_
+  name: LeaveTeamValidator
+  nameWithType: IPlayerValidator.LeaveTeamValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator
+- uid: Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_ValidateFiltersListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: ValidateFiltersListTeams
+  nameWithType: IPlayerValidator.ValidateFiltersListTeams
+  fullName: Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams
+- uid: Application.DTOs.Filters.FilterListTeamDto
+  commentId: T:Application.DTOs.Filters.FilterListTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterListTeamDto.html
+  name: FilterListTeamDto
+  nameWithType: FilterListTeamDto
+  fullName: Application.DTOs.Filters.FilterListTeamDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_ValidateHasChangeDataPlayer_System_Boolean_
+  name: ValidateHasChangeDataPlayer
+  nameWithType: IPlayerValidator.ValidateHasChangeDataPlayer
+  fullName: Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator*
+  commentId: Overload:Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator
+  href: Application.Interfaces.Validators.IPlayerValidator.html#Application_Interfaces_Validators_IPlayerValidator_SendMembershipRequestValidator_Domain_Entities_Player_Domain_Entities_Team_Domain_Entities_MembershipRequest_
+  name: SendMembershipRequestValidator
+  nameWithType: IPlayerValidator.SendMembershipRequestValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities.MembershipRequest
+  commentId: T:Domain.Entities.MembershipRequest
+  parent: Domain.Entities
+  href: Domain.Entities.MembershipRequest.html
+  name: MembershipRequest
+  nameWithType: MembershipRequest
+  fullName: Domain.Entities.MembershipRequest

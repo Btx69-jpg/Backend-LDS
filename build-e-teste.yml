@@ -43,8 +43,25 @@ jobs:
       - name: Build (dotnet build)
         run: dotnet build FutebolAmador.sln --configuration Release --no-restore
 
-      # 6. Guarda os artefactos (como o teu 'artifacts:')
-      - name: Upload Artifacts
+      # 6. Instalar DocFX (Ferramenta Global)
+      - name: Instalar DocFX
+        run: dotnet tool update -g docfx
+
+      # 7. Gerar Documentação
+      - name: Gerar Site DocFX
+        run: |
+          cd docfx_project
+          docfx metadata
+          docfx build
+
+      # 8. Guardar o Site Gerado (Para poderes fazer download ou deploy)
+      - name: Upload Artefacto Documentação
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-site
+          path: docfx_project/_site
+
+      # 9. Guardar os Binários (App)      - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-output # Nome do "pacote"

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure
+  commentId: N:Infrastructure
+  id: Infrastructure
+  children:
+  - Infrastructure.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure
+  nameWithType: Infrastructure
+  fullName: Infrastructure
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.DependencyInjection
+  commentId: T:Infrastructure.DependencyInjection
+  href: Infrastructure.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Infrastructure.DependencyInjection

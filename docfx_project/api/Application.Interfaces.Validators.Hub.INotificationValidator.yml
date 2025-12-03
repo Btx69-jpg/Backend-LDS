@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator
+  commentId: T:Application.Interfaces.Validators.Hub.INotificationValidator
+  id: INotificationValidator
+  parent: Application.Interfaces.Validators.Hub
+  children:
+  - Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  langs:
+  - csharp
+  - vb
+  name: INotificationValidator
+  nameWithType: INotificationValidator
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/INotificationValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: INotificationValidator
+    path: ../Application/Interfaces/Validators/Hub/INotificationValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: public interface INotificationValidator
+    content.vb: Public Interface INotificationValidator
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  commentId: M:Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  id: ValidateTeamMembershipAsync(System.Guid,System.String)
+  parent: Application.Interfaces.Validators.Hub.INotificationValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamMembershipAsync(Guid, string?)
+  nameWithType: INotificationValidator.ValidateTeamMembershipAsync(Guid, string?)
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid, string?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/INotificationValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamMembershipAsync
+    path: ../Application/Interfaces/Validators/Hub/INotificationValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: Task ValidateTeamMembershipAsync(Guid teamId, string? userId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ValidateTeamMembershipAsync(teamId As Guid, userId As String) As Task
+  overload: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync*
+  nameWithType.vb: INotificationValidator.ValidateTeamMembershipAsync(Guid, String)
+  fullName.vb: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid, String)
+  name.vb: ValidateTeamMembershipAsync(Guid, String)
+references:
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync*
+  commentId: Overload:Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync
+  href: Application.Interfaces.Validators.Hub.INotificationValidator.html#Application_Interfaces_Validators_Hub_INotificationValidator_ValidateTeamMembershipAsync_System_Guid_System_String_
+  name: ValidateTeamMembershipAsync
+  nameWithType: INotificationValidator.ValidateTeamMembershipAsync
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

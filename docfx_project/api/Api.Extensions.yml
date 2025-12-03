@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Extensions
+  commentId: N:Api.Extensions
+  id: Api.Extensions
+  children:
+  - Api.Extensions.DependencyInjection
+  - Api.Extensions.FirebaseAuthenticationExtensions
+  - Api.Extensions.HubMappingExtensions
+  - Api.Extensions.SwaggerServiceExtension
+  langs:
+  - csharp
+  - vb
+  name: Api.Extensions
+  nameWithType: Api.Extensions
+  fullName: Api.Extensions
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Api.Extensions.DependencyInjection
+  commentId: T:Api.Extensions.DependencyInjection
+  href: Api.Extensions.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: Api.Extensions.DependencyInjection
+- uid: Api.Extensions.FirebaseAuthenticationExtensions
+  commentId: T:Api.Extensions.FirebaseAuthenticationExtensions
+  href: Api.Extensions.FirebaseAuthenticationExtensions.html
+  name: FirebaseAuthenticationExtensions
+  nameWithType: FirebaseAuthenticationExtensions
+  fullName: Api.Extensions.FirebaseAuthenticationExtensions
+- uid: Api.Extensions.HubMappingExtensions
+  commentId: T:Api.Extensions.HubMappingExtensions
+  href: Api.Extensions.HubMappingExtensions.html
+  name: HubMappingExtensions
+  nameWithType: HubMappingExtensions
+  fullName: Api.Extensions.HubMappingExtensions
+- uid: Api.Extensions.SwaggerServiceExtension
+  commentId: T:Api.Extensions.SwaggerServiceExtension
+  href: Api.Extensions.SwaggerServiceExtension.html
+  name: SwaggerServiceExtension
+  nameWithType: SwaggerServiceExtension
+  fullName: Api.Extensions.SwaggerServiceExtension

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ITeamRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ITeamRepository | docfx_project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Application_Interfaces_Repositories_ITeamRepository.md&amp;value=---%0Auid%3A%20Application.Interfaces.Repositories.ITeamRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Application.Interfaces.Repositories.ITeamRepository">
+
+
+
+  <h1 id="Application_Interfaces_Repositories_ITeamRepository" data-uid="Application.Interfaces.Repositories.ITeamRepository" class="text-break">
+Interface ITeamRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Application.html">Application</a>.<a class="xref" href="Application.Interfaces.html">Interfaces</a>.<a class="xref" href="Application.Interfaces.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Application.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITeamRepository</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_AddAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.AddAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_AddAsync_Domain_Entities_Team_" data-uid="Application.Interfaces.Repositories.ITeamRepository.AddAsync(Domain.Entities.Team)">
+  AddAsync(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddAsync(Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_DeleteTeam_" data-uid="Application.Interfaces.Repositories.ITeamRepository.DeleteTeam*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_DeleteTeam_Domain_Entities_Team_" data-uid="Application.Interfaces.Repositories.ITeamRepository.DeleteTeam(Domain.Entities.Team)">
+  DeleteTeam(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteTeam(Team teamToRemove)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamToRemove</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetAdminsIdsByTeamIdAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetAdminsIdsByTeamIdAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)">
+  GetAdminsIdsByTeamIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; GetAdminsIdsByTeamIdAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetAllTeamsAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetAllTeamsAsync" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync">
+  GetAllTeamsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;Team&gt;?&gt; GetAllTeamsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvites_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvites_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites(System.Guid)">
+  GetByIdWithReceivedInvites(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetByIdWithReceivedInvites(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvitesAndCalendar_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvitesAndCalendar_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)">
+  GetByIdWithReceivedInvitesAndCalendar(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetByIdWithReceivedInvitesAndCalendar(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeam_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeam" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam">
+  GetListPlayersWithoutTeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;PlayerWithoutTeamInfoDto&gt;&gt; GetListPlayersWithoutTeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Player.PlayerWithoutTeamInfoDto.html">PlayerWithoutTeamInfoDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeamtWithFilters_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeamtWithFilters_Application_DTOs_Filters_FilterTeamDto_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)">
+  GetListPlayersWithoutTeamtWithFilters(FilterTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;PlayerWithoutTeamInfoDto&gt;&gt; GetListPlayersWithoutTeamtWithFilters(FilterTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterTeamDto.html">FilterTeamDto</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Player.PlayerWithoutTeamInfoDto.html">PlayerWithoutTeamInfoDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListTeams_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeams*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeams(FilterListTeamDto?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeams(FilterListTeamDto? filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsByTeamsWithFilters_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsByTeamsWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeamsByTeamsWithFilters(Guid, FilterListTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsByTeamsWithFilters(Guid idTeam, FilterListTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsForTeams_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsForTeams_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams(System.Guid)">
+  GetListTeamsForTeams(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsForTeams(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayer_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayer" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer">
+  GetListTeamsPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsPlayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayersWithFilters_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayersWithFilters_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeamsPlayersWithFilters(FilterListTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsPlayersWithFilters(FilterListTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetMemberIdsByTeamIdAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetMemberIdsByTeamIdAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)">
+  GetMemberIdsByTeamIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; GetMemberIdsByTeamIdAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetOpponentTeamById_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetOpponentTeamById_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById(System.Guid)">
+  GetOpponentTeamById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TeamDto&gt; GetOpponentTeamById(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamDto.html">TeamDto</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync(System.Guid)">
+  GetTeamByIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamByIdAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdWithPitchAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdWithPitchAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync(System.Guid)">
+  GetTeamByIdWithPitchAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamByIdWithPitchAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameAsync_System_String_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(System.String)">
+  GetTeamByNameAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamByNameAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameWithMembersAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameWithMembersAsync_System_String_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(System.String)">
+  GetTeamByNameWithMembersAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamByNameWithMembersAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamDetailsDtoAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamDetailsDtoAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync(System.Guid)">
+  GetTeamDetailsDtoAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TeamDetailsDto?&gt; GetTeamDetailsDtoAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamDetailsDto.html">TeamDetailsDto</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForDeletionAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForDeletionAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync(System.Guid)">
+  GetTeamForDeletionAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamForDeletionAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForMemberManagementAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForMemberManagementAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync(System.Guid)">
+  GetTeamForMemberManagementAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamForMemberManagementAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForMembershipRequestAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForMembershipRequestAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync(System.Guid)">
+  GetTeamForMembershipRequestAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamForMembershipRequestAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForUpdateAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamForUpdateAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync(System.Guid)">
+  GetTeamForUpdateAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamForUpdateAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamPlayersDtoAsyncWithFilters_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamPlayersDtoAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)">
+  GetTeamPlayersDtoAsyncWithFilters(Guid, FilterTeamPlayers)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;PlayerDetailsDto&gt;&gt; GetTeamPlayersDtoAsyncWithFilters(Guid teamId, FilterTeamPlayers filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterTeamPlayers.html">FilterTeamPlayers</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.PlayerDTOs.PlayerDetailsDto.html">PlayerDetailsDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTeamWitchMemberRankAndPitchAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTeamWitchMemberRankAndPitchAsync_System_Guid_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)">
+  GetTeamWitchMemberRankAndPitchAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Team?&gt; GetTeamWitchMemberRankAndPitchAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_GetTopTeamsAsync_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_GetTopTeamsAsync_System_Int32_" data-uid="Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(System.Int32)">
+  GetTopTeamsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;TeamLeaderboardDto&gt;&gt; GetTopTeamsAsync(int top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamLeaderboardDto.html">TeamLeaderboardDto</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Repositories_ITeamRepository_UpdateTeam_" data-uid="Application.Interfaces.Repositories.ITeamRepository.UpdateTeam*"></a>
+
+  <h3 id="Application_Interfaces_Repositories_ITeamRepository_UpdateTeam_Domain_Entities_Team_" data-uid="Application.Interfaces.Repositories.ITeamRepository.UpdateTeam(Domain.Entities.Team)">
+  UpdateTeam(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateTeam(Team updatedTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updatedTeam</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Repositories/ITeamRepository.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

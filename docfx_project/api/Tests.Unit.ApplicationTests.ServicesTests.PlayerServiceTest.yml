@@ -1,0 +1,1669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  id: PlayerServiceTest
+  parent: Tests.Unit.ApplicationTests.ServicesTests
+  children:
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(System.String,System.String)
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(System.String,System.String,System.Int32,System.String)
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  - Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  langs:
+  - csharp
+  - vb
+  name: PlayerServiceTest
+  nameWithType: PlayerServiceTest
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PlayerServiceTest
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 17
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class PlayerServiceTest
+    content.vb: >-
+      <TestFixture>
+
+      Public Class PlayerServiceTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp
+  id: SetUp
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: PlayerServiceTest.SetUp()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SetUp
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 36
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void SetUp()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub SetUp()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  id: CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()
+  nameWithType: PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 207
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: cria um jogador válido e retorna o Id gerado")]
+
+      public Task CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: cria um jogador válido e retorna o Id gerado")>
+
+      Public Function CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: cria um jogador válido e retorna o Id gerado'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  id: DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()
+  nameWithType: PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 242
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: elimina um jogador existente com sucesso")]
+
+      public Task DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: elimina um jogador existente com sucesso")>
+
+      Public Function DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: elimina um jogador existente com sucesso'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+  id: DeletePlayerAsync_PlayerNotFound_ThrowsException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: DeletePlayerAsync_PlayerNotFound_ThrowsException()
+  nameWithType: PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeletePlayerAsync_PlayerNotFound_ThrowsException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 267
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança NotFoundException quando o jogador não é encontrado")]
+
+      public void DeletePlayerAsync_PlayerNotFound_ThrowsException()
+    content.vb: >-
+      <Test(Description:="Validação: lança NotFoundException quando o jogador não é encontrado")>
+
+      Public Sub DeletePlayerAsync_PlayerNotFound_ThrowsException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança NotFoundException quando o jogador não é encontrado'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  id: GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()
+  nameWithType: PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 294
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: encontra um jogador e retorna os seus detalhes (DTO)")]
+
+      public Task GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: encontra um jogador e retorna os seus detalhes (DTO)")>
+
+      Public Function GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: encontra um jogador e retorna os seus detalhes (DTO)'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  id: GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+  nameWithType: PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 326
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança Exception quando o jogador não é encontrado")]
+
+      public void GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+    content.vb: >-
+      <Test(Description:="Validação: lança Exception quando o jogador não é encontrado")>
+
+      Public Sub GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança Exception quando o jogador não é encontrado'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  id: UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 342
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: atualiza dados válidos do jogador")]
+
+      public Task UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: atualiza dados válidos do jogador")>
+
+      Public Function UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: atualiza dados válidos do jogador'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  id: UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 382
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: atualiza o email para um que está disponível")]
+
+      public Task UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: atualiza o email para um que está disponível")>
+
+      Public Function UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: atualiza o email para um que está disponível'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  id: UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 405
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção quando o jogador a atualizar não existe")]
+
+      public void UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção quando o jogador a atualizar não existe")>
+
+      Public Sub UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção quando o jogador a atualizar não existe'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  id: UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 429
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção quando o novo email já está em uso por outro jogador")]
+
+      public void UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção quando o novo email já está em uso por outro jogador")>
+
+      Public Sub UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção quando o novo email já está em uso por outro jogador'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  id: UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 458
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção quando não há nenhuma alteração nos dados")]
+
+      public void UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção quando não há nenhuma alteração nos dados")>
+
+      Public Sub UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção quando não há nenhuma alteração nos dados'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  id: UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 483
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança ValidationException quando a morada tem formato inválido no update")]
+
+      public void UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança ValidationException quando a morada tem formato inválido no update")>
+
+      Public Sub UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança ValidationException quando a morada tem formato inválido no update'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(System.String,System.String,System.Int32,System.String)
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(System.String,System.String,System.Int32,System.String)
+  id: UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(System.String,System.String,System.Int32,System.String)
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string, string, int, string)
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string, string, int, string)
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string, string, int, string)
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 509
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção para vários campos inválidos")]
+
+      [TestCase(new object?[] { "invalid-email.com", "912345678", 180, "Email format is invalid" })]
+
+      [TestCase(new object?[] { "valid@email.com", "12345", 180, "Phone number must have 9 digits" })]
+
+      [TestCase(new object?[] { "valid@email.com", "91234567A", 180, "must only contain digits" })]
+
+      [TestCase(new object?[] { "valid@email.com", "012345678", 180, "cannot start with '0'" })]
+
+      [TestCase(new object?[] { "valid@email.com", "912345678", 99, "Height value is invalid" })]
+
+      [TestCase(new object?[] { "valid@email.com", "912345678", 251, "Height value is invalid" })]
+
+      public Task UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string email, string phone, int height, string expectedError)
+    parameters:
+    - id: email
+      type: System.String
+    - id: phone
+      type: System.String
+    - id: height
+      type: System.Int32
+    - id: expectedError
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção para vários campos inválidos")>
+
+      <TestCase(New Object() { "invalid-email.com", "912345678", 180, "Email format is invalid" })>
+
+      <TestCase(New Object() { "valid@email.com", "12345", 180, "Phone number must have 9 digits" })>
+
+      <TestCase(New Object() { "valid@email.com", "91234567A", 180, "must only contain digits" })>
+
+      <TestCase(New Object() { "valid@email.com", "012345678", 180, "cannot start with '0'" })>
+
+      <TestCase(New Object() { "valid@email.com", "912345678", 99, "Height value is invalid" })>
+
+      <TestCase(New Object() { "valid@email.com", "912345678", 251, "Height value is invalid" })>
+
+      Public Function UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(email As String, phone As String, height As Integer, expectedError As String) As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção para vários campos inválidos'
+  nameWithType.vb: PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(String, String, Integer, String)
+  fullName.vb: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(String, String, Integer, String)
+  name.vb: UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(String, String, Integer, String)
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+  id: LeaveTeam_PlayerNotFound_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_PlayerNotFound_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_PlayerNotFound_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 546
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção quando o jogador não é encontrado")]
+
+      public void LeaveTeam_PlayerNotFound_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção quando o jogador não é encontrado")>
+
+      Public Sub LeaveTeam_PlayerNotFound_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção quando o jogador não é encontrado'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  id: LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+  nameWithType: PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 564
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança exceção quando o jogador não pertence a nenhuma equipa")]
+
+      public void LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+    content.vb: >-
+      <Test(Description:="Validação: lança exceção quando o jogador não pertence a nenhuma equipa")>
+
+      Public Sub LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança exceção quando o jogador não pertence a nenhuma equipa'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+  id: LeaveTeam_RegularMember_LeavesSuccessfully
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_RegularMember_LeavesSuccessfully()
+  nameWithType: PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_RegularMember_LeavesSuccessfully
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 582
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: Membro regular sai da equipa")]
+
+      public Task LeaveTeam_RegularMember_LeavesSuccessfully()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: Membro regular sai da equipa")>
+
+      Public Function LeaveTeam_RegularMember_LeavesSuccessfully() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: Membro regular sai da equipa'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  id: LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()
+  nameWithType: PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 616
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: Admin sai da equipa, mas existe outro admin")]
+
+      public Task LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: Admin sai da equipa, mas existe outro admin")>
+
+      Public Function LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: Admin sai da equipa, mas existe outro admin'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  id: LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()
+  nameWithType: PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 648
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: Último admin sai, promove o membro mais antigo")]
+
+      public Task LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: Último admin sai, promove o membro mais antigo")>
+
+      Public Function LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: Último admin sai, promove o membro mais antigo'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  id: LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()
+  nameWithType: PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 685
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: Último admin e único membro sai, eliminando a equipa")]
+
+      public Task LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: Último admin e único membro sai, eliminando a equipa")>
+
+      Public Function LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: Último admin e único membro sai, eliminando a equipa'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  id: GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetListTeams_WhenTeamsExist_ReturnsListOfTeams()
+  nameWithType: PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 719
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: retorna a lista completa de equipas do repositório")]
+
+      public Task GetListTeams_WhenTeamsExist_ReturnsListOfTeams()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: retorna a lista completa de equipas do repositório")>
+
+      Public Function GetListTeams_WhenTeamsExist_ReturnsListOfTeams() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: retorna a lista completa de equipas do repositório'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  id: GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()
+  nameWithType: PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 735
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: retorna uma lista vazia se o repositório não encontrar equipas")]
+
+      public Task GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: retorna uma lista vazia se o repositório não encontrar equipas")>
+
+      Public Function GetListTeams_WhenNoTeamsExist_ReturnsEmptyList() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: retorna uma lista vazia se o repositório não encontrar equipas'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  id: GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 752
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: retorna uma lista filtrada quando os filtros são válidos")]
+
+      public Task GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: retorna uma lista filtrada quando os filtros são válidos")>
+
+      Public Function GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: retorna uma lista filtrada quando os filtros são válidos'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  id: GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 782
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: retorna a lista completa quando os filtros estão vazios")]
+
+      public Task GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: retorna a lista completa quando os filtros estão vazios")>
+
+      Public Function GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: retorna a lista completa quando os filtros estão vazios'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  id: GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 801
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: retorna uma lista filtrada quando um filtro complexo (vários campos) é usado")]
+
+      public Task GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: retorna uma lista filtrada quando um filtro complexo (vários campos) é usado")>
+
+      Public Function GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: retorna uma lista filtrada quando um filtro complexo (vários campos) é usado'
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(System.String,System.String)
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(System.String,System.String)
+  id: GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(System.String,System.String)
+  parent: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest
+  langs:
+  - csharp
+  - vb
+  name: GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string, string)
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string, string)
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string, string)
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs
+    startLine: 839
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: lança InvalidOperationException para intervalos de filtro inválidos")]
+
+      [TestCase("Points", "O numero minimo de pontos de uma equipa, não deve ser superior ao numero maximo")]
+
+      [TestCase("Age", "O numero minimo de idade minima tem de ser inferior à idade media maxima")]
+
+      [TestCase("Players", "O número minimo de membros deve ser superior ao numero maximo de membros")]
+
+      public void GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string filterType, string expectedError)
+    parameters:
+    - id: filterType
+      type: System.String
+    - id: expectedError
+      type: System.String
+    content.vb: >-
+      <Test(Description:="Validação: lança InvalidOperationException para intervalos de filtro inválidos")>
+
+      <TestCase("Points", "O numero minimo de pontos de uma equipa, não deve ser superior ao numero maximo")>
+
+      <TestCase("Age", "O numero minimo de idade minima tem de ser inferior à idade media maxima")>
+
+      <TestCase("Players", "O número minimo de membros deve ser superior ao numero maximo de membros")>
+
+      Public Sub GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(filterType As String, expectedError As String)
+  overload: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: lança InvalidOperationException para intervalos de filtro inválidos'
+  - type: NUnit.Framework.TestCaseAttribute
+    ctor: NUnit.Framework.TestCaseAttribute.#ctor(System.Object,System.Object)
+    arguments:
+    - type: System.String
+      value: Points
+    - type: System.String
+      value: O numero minimo de pontos de uma equipa, não deve ser superior ao numero maximo
+  - type: NUnit.Framework.TestCaseAttribute
+    ctor: NUnit.Framework.TestCaseAttribute.#ctor(System.Object,System.Object)
+    arguments:
+    - type: System.String
+      value: Age
+    - type: System.String
+      value: O numero minimo de idade minima tem de ser inferior à idade media maxima
+  - type: NUnit.Framework.TestCaseAttribute
+    ctor: NUnit.Framework.TestCaseAttribute.#ctor(System.Object,System.Object)
+    arguments:
+    - type: System.String
+      value: Players
+    - type: System.String
+      value: O número minimo de membros deve ser superior ao numero maximo de membros
+  nameWithType.vb: PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(String, String)
+  fullName.vb: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(String, String)
+  name.vb: GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(String, String)
+references:
+- uid: Tests.Unit.ApplicationTests.ServicesTests
+  commentId: N:Tests.Unit.ApplicationTests.ServicesTests
+  href: Tests.html
+  name: Tests.Unit.ApplicationTests.ServicesTests
+  nameWithType: Tests.Unit.ApplicationTests.ServicesTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_SetUp
+  name: SetUp
+  nameWithType: PlayerServiceTest.SetUp
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  name: CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  nameWithType: PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  name: DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  nameWithType: PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerNotFound_ThrowsException
+  name: DeletePlayerAsync_PlayerNotFound_ThrowsException
+  nameWithType: PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  name: GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  nameWithType: PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  name: GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  nameWithType: PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  name: UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  name: UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  name: UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  name: UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  name: UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  name: UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException_System_String_System_String_System_Int32_System_String_
+  name: UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException
+  nameWithType: PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotFound_ThrowsValidationException
+  name: LeaveTeam_PlayerNotFound_ThrowsValidationException
+  nameWithType: PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  name: LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  nameWithType: PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_RegularMember_LeavesSuccessfully
+  name: LeaveTeam_RegularMember_LeavesSuccessfully
+  nameWithType: PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  name: LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  nameWithType: PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  name: LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  nameWithType: PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  name: LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  nameWithType: PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  name: GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  nameWithType: PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  name: GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  nameWithType: PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  name: GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  name: GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  name: GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList
+- uid: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html#Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException_System_String_System_String_
+  name: GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException
+  nameWithType: PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException

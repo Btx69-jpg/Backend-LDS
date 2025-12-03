@@ -1,0 +1,800 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.IMatchService
+  commentId: T:Application.Interfaces.Services.IMatchService
+  id: IMatchService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  - Application.Interfaces.Services.IMatchService.CancelMatch(System.Guid,System.Guid,System.String)
+  - Application.Interfaces.Services.IMatchService.GetCalendar(System.Guid)
+  - Application.Interfaces.Services.IMatchService.GetCalendarWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  - Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam(System.Guid)
+  - Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  - Application.Interfaces.Services.IMatchService.GetMatchById(System.Guid,System.Guid)
+  - Application.Interfaces.Services.IMatchService.PostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  - Application.Interfaces.Services.IMatchService.RejectPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  langs:
+  - csharp
+  - vb
+  name: IMatchService
+  nameWithType: IMatchService
+  fullName: Application.Interfaces.Services.IMatchService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IMatchService
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface IMatchService
+    content.vb: Public Interface IMatchService
+- uid: Application.Interfaces.Services.IMatchService.GetCalendar(System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchService.GetCalendar(System.Guid)
+  id: GetCalendar(System.Guid)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: GetCalendar(Guid)
+  nameWithType: IMatchService.GetCalendar(Guid)
+  fullName: Application.Interfaces.Services.IMatchService.GetCalendar(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendar
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<InfoMatchCalendar>> GetCalendar(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+    content.vb: Function GetCalendar(idTeam As Guid) As Task(Of List(Of InfoMatchCalendar))
+  overload: Application.Interfaces.Services.IMatchService.GetCalendar*
+- uid: Application.Interfaces.Services.IMatchService.GetCalendarWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  commentId: M:Application.Interfaces.Services.IMatchService.GetCalendarWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  id: GetCalendarWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: GetCalendarWithFilters(Guid, FilterCalendarDto)
+  nameWithType: IMatchService.GetCalendarWithFilters(Guid, FilterCalendarDto)
+  fullName: Application.Interfaces.Services.IMatchService.GetCalendarWithFilters(System.Guid, Application.DTOs.Filters.FilterCalendarDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendarWithFilters
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<InfoMatchCalendar>> GetCalendarWithFilters(Guid idTeam, FilterCalendarDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterCalendarDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+    content.vb: Function GetCalendarWithFilters(idTeam As Guid, filter As FilterCalendarDto) As Task(Of List(Of InfoMatchCalendar))
+  overload: Application.Interfaces.Services.IMatchService.GetCalendarWithFilters*
+- uid: Application.Interfaces.Services.IMatchService.GetMatchById(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchService.GetMatchById(System.Guid,System.Guid)
+  id: GetMatchById(System.Guid,System.Guid)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: GetMatchById(Guid, Guid)
+  nameWithType: IMatchService.GetMatchById(Guid, Guid)
+  fullName: Application.Interfaces.Services.IMatchService.GetMatchById(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchById
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<InfoMatch> GetMatchById(Guid idTeam, Guid idMatch)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatch
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Match.InfoMatch}
+    content.vb: Function GetMatchById(idTeam As Guid, idMatch As Guid) As Task(Of InfoMatch)
+  overload: Application.Interfaces.Services.IMatchService.GetMatchById*
+- uid: Application.Interfaces.Services.IMatchService.PostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  commentId: M:Application.Interfaces.Services.IMatchService.PostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  id: PostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch(Guid, PostPoneMatchDto)
+  nameWithType: IMatchService.PostPoneMatch(Guid, PostPoneMatchDto)
+  fullName: Application.Interfaces.Services.IMatchService.PostPoneMatch(System.Guid, Application.DTOs.PostPoneGame.PostPoneMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<InfoPostPoneMatch> PostPoneMatch(Guid idTeam, PostPoneMatchDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.PostPoneMatchDto
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.PostPoneGame.InfoPostPoneMatch}
+    content.vb: Function PostPoneMatch(idTeam As Guid, dto As PostPoneMatchDto) As Task(Of InfoPostPoneMatch)
+  overload: Application.Interfaces.Services.IMatchService.PostPoneMatch*
+- uid: Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  id: AcceptPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: AcceptPostPoneMatch(Guid, AcceptRefusePostPoneDto)
+  nameWithType: IMatchService.AcceptPostPoneMatch(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptPostPoneMatch
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<MatchDto> AcceptPostPoneMatch(Guid idTeam, AcceptRefusePostPoneDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+    content.vb: Function AcceptPostPoneMatch(idTeam As Guid, dto As AcceptRefusePostPoneDto) As Task(Of MatchDto)
+  overload: Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch*
+- uid: Application.Interfaces.Services.IMatchService.RejectPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  commentId: M:Application.Interfaces.Services.IMatchService.RejectPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  id: RejectPostPoneMatch(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: RejectPostPoneMatch(Guid, AcceptRefusePostPoneDto)
+  nameWithType: IMatchService.RejectPostPoneMatch(Guid, AcceptRefusePostPoneDto)
+  fullName: Application.Interfaces.Services.IMatchService.RejectPostPoneMatch(System.Guid, Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectPostPoneMatch
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task RejectPostPoneMatch(Guid idTeam, AcceptRefusePostPoneDto dto)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RejectPostPoneMatch(idTeam As Guid, dto As AcceptRefusePostPoneDto) As Task
+  overload: Application.Interfaces.Services.IMatchService.RejectPostPoneMatch*
+- uid: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam(System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam(System.Guid)
+  id: GetListPostPoneMatchTeam(System.Guid)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: GetListPostPoneMatchTeam(Guid)
+  nameWithType: IMatchService.GetListPostPoneMatchTeam(Guid)
+  fullName: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListPostPoneMatchTeam
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<InfoPostPoneMatch>> GetListPostPoneMatchTeam(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+    content.vb: Function GetListPostPoneMatchTeam(idTeam As Guid) As Task(Of List(Of InfoPostPoneMatch))
+  overload: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam*
+- uid: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  commentId: M:Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  id: GetListPostPoneMatchTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: GetListPostPoneMatchTeamWithFilters(Guid, FilterPostPoneMatchDto)
+  nameWithType: IMatchService.GetListPostPoneMatchTeamWithFilters(Guid, FilterPostPoneMatchDto)
+  fullName: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterPostPoneMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListPostPoneMatchTeamWithFilters
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<InfoPostPoneMatch>> GetListPostPoneMatchTeamWithFilters(Guid idTeam, FilterPostPoneMatchDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterPostPoneMatchDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+    content.vb: Function GetListPostPoneMatchTeamWithFilters(idTeam As Guid, filter As FilterPostPoneMatchDto) As Task(Of List(Of InfoPostPoneMatch))
+  overload: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters*
+- uid: Application.Interfaces.Services.IMatchService.CancelMatch(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.IMatchService.CancelMatch(System.Guid,System.Guid,System.String)
+  id: CancelMatch(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Services.IMatchService
+  langs:
+  - csharp
+  - vb
+  name: CancelMatch(Guid, Guid, string)
+  nameWithType: IMatchService.CancelMatch(Guid, Guid, string)
+  fullName: Application.Interfaces.Services.IMatchService.CancelMatch(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CancelMatch
+    path: ../Application/Interfaces/Services/IMatchService.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task CancelMatch(Guid idTeam, Guid idMatch, string description)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatch
+      type: System.Guid
+    - id: description
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CancelMatch(idTeam As Guid, idMatch As Guid, description As String) As Task
+  overload: Application.Interfaces.Services.IMatchService.CancelMatch*
+  nameWithType.vb: IMatchService.CancelMatch(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Services.IMatchService.CancelMatch(System.Guid, System.Guid, String)
+  name.vb: CancelMatch(Guid, Guid, String)
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.IMatchService.GetCalendar*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.GetCalendar
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_GetCalendar_System_Guid_
+  name: GetCalendar
+  nameWithType: IMatchService.GetCalendar
+  fullName: Application.Interfaces.Services.IMatchService.GetCalendar
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoMatchCalendar>>
+  nameWithType: Task<List<InfoMatchCalendar>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Match.InfoMatchCalendar>>
+  nameWithType.vb: Task(Of List(Of InfoMatchCalendar))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Match.InfoMatchCalendar))
+  name.vb: Task(Of List(Of InfoMatchCalendar))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Match.InfoMatchCalendar
+    name: InfoMatchCalendar
+    href: Application.DTOs.Match.InfoMatchCalendar.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Match.InfoMatchCalendar
+    name: InfoMatchCalendar
+    href: Application.DTOs.Match.InfoMatchCalendar.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.IMatchService.GetCalendarWithFilters*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.GetCalendarWithFilters
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_GetCalendarWithFilters_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  name: GetCalendarWithFilters
+  nameWithType: IMatchService.GetCalendarWithFilters
+  fullName: Application.Interfaces.Services.IMatchService.GetCalendarWithFilters
+- uid: Application.DTOs.Filters.FilterCalendarDto
+  commentId: T:Application.DTOs.Filters.FilterCalendarDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterCalendarDto.html
+  name: FilterCalendarDto
+  nameWithType: FilterCalendarDto
+  fullName: Application.DTOs.Filters.FilterCalendarDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Interfaces.Services.IMatchService.GetMatchById*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.GetMatchById
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_GetMatchById_System_Guid_System_Guid_
+  name: GetMatchById
+  nameWithType: IMatchService.GetMatchById
+  fullName: Application.Interfaces.Services.IMatchService.GetMatchById
+- uid: System.Threading.Tasks.Task{Application.DTOs.Match.InfoMatch}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Match.InfoMatch}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<InfoMatch>
+  nameWithType: Task<InfoMatch>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Match.InfoMatch>
+  nameWithType.vb: Task(Of InfoMatch)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Match.InfoMatch)
+  name.vb: Task(Of InfoMatch)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Match.InfoMatch
+    name: InfoMatch
+    href: Application.DTOs.Match.InfoMatch.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Match.InfoMatch
+    name: InfoMatch
+    href: Application.DTOs.Match.InfoMatch.html
+  - name: )
+- uid: Application.Interfaces.Services.IMatchService.PostPoneMatch*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.PostPoneMatch
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_PostPoneMatch_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_
+  name: PostPoneMatch
+  nameWithType: IMatchService.PostPoneMatch
+  fullName: Application.Interfaces.Services.IMatchService.PostPoneMatch
+- uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+  commentId: T:Application.DTOs.PostPoneGame.PostPoneMatchDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.PostPoneMatchDto.html
+  name: PostPoneMatchDto
+  nameWithType: PostPoneMatchDto
+  fullName: Application.DTOs.PostPoneGame.PostPoneMatchDto
+- uid: System.Threading.Tasks.Task{Application.DTOs.PostPoneGame.InfoPostPoneMatch}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.PostPoneGame.InfoPostPoneMatch}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<InfoPostPoneMatch>
+  nameWithType: Task<InfoPostPoneMatch>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.PostPoneGame.InfoPostPoneMatch>
+  nameWithType.vb: Task(Of InfoPostPoneMatch)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.PostPoneGame.InfoPostPoneMatch)
+  name.vb: Task(Of InfoPostPoneMatch)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: )
+- uid: Application.DTOs.PostPoneGame
+  commentId: N:Application.DTOs.PostPoneGame
+  href: Application.html
+  name: Application.DTOs.PostPoneGame
+  nameWithType: Application.DTOs.PostPoneGame
+  fullName: Application.DTOs.PostPoneGame
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+- uid: Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_AcceptPostPoneMatch_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: AcceptPostPoneMatch
+  nameWithType: IMatchService.AcceptPostPoneMatch
+  fullName: Application.Interfaces.Services.IMatchService.AcceptPostPoneMatch
+- uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  commentId: T:Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  name: AcceptRefusePostPoneDto
+  nameWithType: AcceptRefusePostPoneDto
+  fullName: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+- uid: System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MatchDto>
+  nameWithType: Task<MatchDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Match.MatchDto>
+  nameWithType.vb: Task(Of MatchDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Match.MatchDto)
+  name.vb: Task(Of MatchDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Match.MatchDto
+    name: MatchDto
+    href: Application.DTOs.Match.MatchDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Match.MatchDto
+    name: MatchDto
+    href: Application.DTOs.Match.MatchDto.html
+  - name: )
+- uid: Application.Interfaces.Services.IMatchService.RejectPostPoneMatch*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.RejectPostPoneMatch
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_RejectPostPoneMatch_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_
+  name: RejectPostPoneMatch
+  nameWithType: IMatchService.RejectPostPoneMatch
+  fullName: Application.Interfaces.Services.IMatchService.RejectPostPoneMatch
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_GetListPostPoneMatchTeam_System_Guid_
+  name: GetListPostPoneMatchTeam
+  nameWithType: IMatchService.GetListPostPoneMatchTeam
+  fullName: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeam
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoPostPoneMatch>>
+  nameWithType: Task<List<InfoPostPoneMatch>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.PostPoneGame.InfoPostPoneMatch>>
+  nameWithType.vb: Task(Of List(Of InfoPostPoneMatch))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.PostPoneGame.InfoPostPoneMatch))
+  name.vb: Task(Of List(Of InfoPostPoneMatch))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_GetListPostPoneMatchTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  name: GetListPostPoneMatchTeamWithFilters
+  nameWithType: IMatchService.GetListPostPoneMatchTeamWithFilters
+  fullName: Application.Interfaces.Services.IMatchService.GetListPostPoneMatchTeamWithFilters
+- uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+  commentId: T:Application.DTOs.Filters.FilterPostPoneMatchDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  name: FilterPostPoneMatchDto
+  nameWithType: FilterPostPoneMatchDto
+  fullName: Application.DTOs.Filters.FilterPostPoneMatchDto
+- uid: Application.Interfaces.Services.IMatchService.CancelMatch*
+  commentId: Overload:Application.Interfaces.Services.IMatchService.CancelMatch
+  href: Application.Interfaces.Services.IMatchService.html#Application_Interfaces_Services_IMatchService_CancelMatch_System_Guid_System_Guid_System_String_
+  name: CancelMatch
+  nameWithType: IMatchService.CancelMatch
+  fullName: Application.Interfaces.Services.IMatchService.CancelMatch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

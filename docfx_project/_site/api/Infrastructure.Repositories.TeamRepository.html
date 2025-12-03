@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TeamRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TeamRepository | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio principal para a entidade [Team]. Esta classe gere todas as opera&#231;&#245;es de persist&#234;ncia e consultas relacionadas com equipas, incluindo o Leaderboard e as listas de pesquisa (Matchmaking e Mercado).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_TeamRepository.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.TeamRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.TeamRepository">
+
+
+
+  <h1 id="Infrastructure_Repositories_TeamRepository" data-uid="Infrastructure.Repositories.TeamRepository" class="text-break">
+Class TeamRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório principal para a entidade [Team].</p>
+<p>Esta classe gere todas as operações de persistência e consultas relacionadas com equipas,
+incluindo o Leaderboard e as listas de pesquisa (Matchmaking e Mercado).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TeamRepository : ITeamRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TeamRepository</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.ITeamRepository.html">ITeamRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_TeamRepository__ctor_" data-uid="Infrastructure.Repositories.TeamRepository.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.TeamRepository.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  TeamRepository(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [TeamRepository].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TeamRepository(AmateurFootballContext DbContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>DbContext</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados (Db Context) injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_AddAsync_" data-uid="Infrastructure.Repositories.TeamRepository.AddAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_AddAsync_Domain_Entities_Team_" data-uid="Infrastructure.Repositories.TeamRepository.AddAsync(Domain.Entities.Team)">
+  AddAsync(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona uma nova equipa à base de dados de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddAsync(Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd><p>A entidade [Team] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_DeleteTeam_" data-uid="Infrastructure.Repositories.TeamRepository.DeleteTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_DeleteTeam_Domain_Entities_Team_" data-uid="Infrastructure.Repositories.TeamRepository.DeleteTeam(Domain.Entities.Team)">
+  DeleteTeam(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca uma equipa para ser removida da base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteTeam(Team teamToRemove)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamToRemove</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd><p>A entidade [Team] a ser removida.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetAdminsIdsByTeamIdAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetAdminsIdsByTeamIdAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetAdminsIdsByTeamIdAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)">
+  GetAdminsIdsByTeamIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de IDs de todos os Administradores de uma equipa específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;string&gt;&gt; GetAdminsIdsByTeamIdAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de strings contendo os IDs dos membros administradores.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetAdminsIdsByTeamIdAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Carrega a entidade [Team] e projeta o resultado para obter apenas os IDs (Strings) dos membros que têm a flag [IsAdmin] verdadeira.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetAllTeamsAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetAllTeamsAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetAllTeamsAsync" data-uid="Infrastructure.Repositories.TeamRepository.GetAllTeamsAsync">
+  GetAllTeamsAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém todas as equipas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Team&gt;?&gt; GetAllTeamsAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de todas as entidades [Team].</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetByIdWithReceivedInvites_" data-uid="Infrastructure.Repositories.TeamRepository.GetByIdWithReceivedInvites*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetByIdWithReceivedInvites_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetByIdWithReceivedInvites(System.Guid)">
+  GetByIdWithReceivedInvites(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo ID, carregando apenas os Convites Recebidos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetByIdWithReceivedInvites(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com os convites recebidos carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetByIdWithReceivedInvitesAndCalendar_" data-uid="Infrastructure.Repositories.TeamRepository.GetByIdWithReceivedInvitesAndCalendar*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetByIdWithReceivedInvitesAndCalendar_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)">
+  GetByIdWithReceivedInvitesAndCalendar(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo ID, carregando Convites Recebidos e Calendário.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetByIdWithReceivedInvitesAndCalendar(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] completa ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeam_" data-uid="Infrastructure.Repositories.TeamRepository.GetListPlayersWithoutTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeam" data-uid="Infrastructure.Repositories.TeamRepository.GetListPlayersWithoutTeam">
+  GetListPlayersWithoutTeam()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L841"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de jogadores que não são administradores e não pertencem a nenhuma equipa (Agentes Livres).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;PlayerWithoutTeamInfoDto&gt;&gt; GetListPlayersWithoutTeam()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Player.PlayerWithoutTeamInfoDto.html">PlayerWithoutTeamInfoDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [PlayerWithoutTeamInfoDto] com os agentes livres.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeam_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Consulta a tabela [Player] filtrando por <code>IsAdmin == false</code> e <code>IdTeam == null</code>.
+O resultado é projetado no DTO [PlayerWithoutTeamInfoDto] com cálculo de idade.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeamtWithFilters_" data-uid="Infrastructure.Repositories.TeamRepository.GetListPlayersWithoutTeamtWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeamtWithFilters_Application_DTOs_Filters_FilterTeamDto_" data-uid="Infrastructure.Repositories.TeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)">
+  GetListPlayersWithoutTeamtWithFilters(FilterTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de jogadores Agentes Livres (sem equipa) aplicando filtros dinâmicos de pesquisa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;PlayerWithoutTeamInfoDto&gt;&gt; GetListPlayersWithoutTeamtWithFilters(FilterTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterTeamDto.html">FilterTeamDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Player.PlayerWithoutTeamInfoDto.html">PlayerWithoutTeamInfoDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [PlayerWithoutTeamInfoDto] filtrada.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListPlayersWithoutTeamtWithFilters_Application_DTOs_Filters_FilterTeamDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Aplica filtros por Nome, Cidade, Idade, Altura e Posição sobre jogadores não afiliados e não-administradores.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListTeams_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeams*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeams(FilterListTeamDto?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de equipas para pesquisa pública, aplicando filtros complexos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeams(FilterListTeamDto? filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem (opcional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoTeamsDto] filtrados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListTeams_Application_DTOs_Filters_FilterListTeamDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Esta consulta dinâmica aplica múltiplos filtros condicionais (Nome, Rank, Pontos, Localização, Idade Média e Contagem de Jogadores)
+sobre todas as equipas. Esta é a consulta principal para o Mercado/Pesquisa Global.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListTeamsByTeamsWithFilters_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsByTeamsWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListTeamsByTeamsWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeamsByTeamsWithFilters(Guid, FilterListTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de equipas para Matchmaking/Desafio, excluindo a equipa de origem e aplicando filtros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsByTeamsWithFilters(Guid idTeam, FilterListTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa que está a fazer a pesquisa (excluída dos resultados).</p>
+</dd>
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoTeamsDto] filtrados, excluindo a equipa de origem.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListTeamsByTeamsWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Esta consulta dinâmica aplica múltiplos filtros condicionais (Nome, Rank, Pontos, Localização e Estatísticas de Membros)
+antes de calcular as estatísticas agregadas e projetar para o DTO [InfoTeamsDto].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListTeamsForTeams_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsForTeams*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListTeamsForTeams_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsForTeams(System.Guid)">
+  GetListTeamsForTeams(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de equipas para Matchmaking/Desafio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsForTeams(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa que está a fazer a pesquisa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoTeamsDto] com estatísticas agregadas das equipas elegíveis.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListTeamsForTeams_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Esta consulta complexa utiliza LINQ para:</p>
+<ol>
+<li>Excluir a equipa de origem e filtrar por equipas com membros suficientes (&gt;= 11).</li>
+<li>Calcular a idade média dos membros ([AverageAge]) no servidor (durante a projeção).</li>
+<li>Projetar o resultado no DTO [InfoTeamsDto] com detalhes de Rank e Pitch.</li>
+</ol>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayer_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsPlayer*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayer" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsPlayer">
+  GetListTeamsPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de todas as equipas elegíveis para recrutar (membros &lt; MaxMembers) ou que podem ser desafiadas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsPlayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoTeamsDto] com estatísticas agregadas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayer_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Calcula a idade média dos membros na base de dados (o que pode ser dispendioso).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayersWithFilters_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsPlayersWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayersWithFilters_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Infrastructure.Repositories.TeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)">
+  GetListTeamsPlayersWithFilters(FilterListTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de equipas para Matchmaking/Desafio, excluindo a equipa de origem e aplicando filtros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoTeamsDto&gt;&gt; GetListTeamsPlayersWithFilters(FilterListTeamDto filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.InfoTeamsDto.html">InfoTeamsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoTeamsDto] filtrados, excluindo a equipa de origem.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetListTeamsPlayersWithFilters_Application_DTOs_Filters_FilterListTeamDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Carrega os dados necessários e projeta-os no DTO, aplicando filtros dinâmicos (Nome, Rank, Pontos, Idade Média, Localização e Contagem de Jogadores).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetMemberIdsByTeamIdAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetMemberIdsByTeamIdAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetMemberIdsByTeamIdAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)">
+  GetMemberIdsByTeamIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de IDs de membros de uma equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;string&gt;&gt; GetMemberIdsByTeamIdAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd><p>Uma tarefa que retorna uma lista de strings contendo os IDs dos membros.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetMemberIdsByTeamIdAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Carrega a entidade [Team] e projeta a coleção [Members] para obter apenas os IDs (Strings) dos jogadores.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetOpponentTeamById_" data-uid="Infrastructure.Repositories.TeamRepository.GetOpponentTeamById*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetOpponentTeamById_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetOpponentTeamById(System.Guid)">
+  GetOpponentTeamById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém os dados básicos de uma equipa (DTO) pelo seu ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TeamDto&gt; GetOpponentTeamById(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamDto.html">TeamDto</a>&gt;</dt>
+    <dd><p>A entidade [TeamDto] ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetOpponentTeamById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza Projeção (Select) para criar um objeto [TeamDto] leve, ideal para ser usado como Opponent ou em cabeçalhos.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamByIdAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByIdAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamByIdAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByIdAsync(System.Guid)">
+  GetTeamByIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo seu ID, carregando todas as coleções de convites e o calendário.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamByIdAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] completa ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetTeamByIdAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza Eager Loading para [Calendar], [SentInvites] e [ReceivedInvites].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamByIdWithPitchAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByIdWithPitchAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamByIdWithPitchAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByIdWithPitchAsync(System.Guid)">
+  GetTeamByIdWithPitchAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo seu ID, carregando o campo ([Pitch]) associado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamByIdWithPitchAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com o Pitch carregado, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamByNameAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByNameAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamByNameAsync_System_String_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByNameAsync(System.String)">
+  GetTeamByNameAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo seu nome.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamByNameAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O nome da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamByNameWithMembersAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByNameWithMembersAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamByNameWithMembersAsync_System_String_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamByNameWithMembersAsync(System.String)">
+  GetTeamByNameWithMembersAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo seu nome, carregando os membros associados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamByNameWithMembersAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O nome da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com a coleção de [Members] carregada, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamDetailsDtoAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamDetailsDtoAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamDetailsDtoAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamDetailsDtoAsync(System.Guid)">
+  GetTeamDetailsDtoAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém o perfil completo de uma equipa, projetando o resultado diretamente no DTO [TeamDetailsDto].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TeamDetailsDto?&gt; GetTeamDetailsDtoAsync(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa a ser consultada.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamDetailsDto.html">TeamDetailsDto</a>&gt;</dt>
+    <dd><p>O DTO [TeamDetailsDto] contendo todas as informações do perfil e a lista de jogadores, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetTeamDetailsDtoAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Esta consulta complexa é otimizada para ser executada numa única viagem à base de dados.
+Carrega os dados da Equipa, Rank, Pitch e todos os seus Membros, e calcula a Idade dos jogadores
+utilizando a função nativa do EF Core [EF.Functions.DateDiffDay].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamForDeletionAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForDeletionAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamForDeletionAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForDeletionAsync(System.Guid)">
+  GetTeamForDeletionAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa para o processo de deleção, carregando as dependências complexas (Membros, Calendário e Partidas).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamForDeletionAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] carregada com todas as dependências de deleção.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetTeamForDeletionAsync_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza [AsSplitQuery()] para otimizar o desempenho, quebrando a consulta em múltiplas queries SQL.
+Carrega: Team -&gt; Members; Team -&gt; Calendar -&gt; Matches.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamForMemberManagementAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForMemberManagementAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamForMemberManagementAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForMemberManagementAsync(System.Guid)">
+  GetTeamForMemberManagementAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo ID, carregando os membros para gestão.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamForMemberManagementAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com os [Members] carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamForMembershipRequestAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForMembershipRequestAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamForMembershipRequestAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForMembershipRequestAsync(System.Guid)">
+  GetTeamForMembershipRequestAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo ID, carregando pedidos de adesão e membros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamForMembershipRequestAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com [MembershipRequests] e [Members] carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamForUpdateAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForUpdateAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamForUpdateAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamForUpdateAsync(System.Guid)">
+  GetTeamForUpdateAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa para o formulário de atualização, carregando membros e pitch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamForUpdateAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com membros e pitch carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamPlayersDtoAsyncWithFilters_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamPlayersDtoAsyncWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamPlayersDtoAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)">
+  GetTeamPlayersDtoAsyncWithFilters(Guid, FilterTeamPlayers)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista filtrada de jogadores de uma equipa específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;PlayerDetailsDto&gt;&gt; GetTeamPlayersDtoAsyncWithFilters(Guid teamId, FilterTeamPlayers filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa cujos jogadores serão listados.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterTeamPlayers.html">FilterTeamPlayers</a></dt>
+    <dd><p>O DTO contendo os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.PlayerDTOs.PlayerDetailsDto.html">PlayerDetailsDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [PlayerDetailsDto] com os jogadores filtrados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamRepository_GetTeamPlayersDtoAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A consulta aplica filtros de gestão (Nome, Idade, Posição, Admin Status) sobre a coleção local de membros da equipa.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTeamWitchMemberRankAndPitchAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamWitchMemberRankAndPitchAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTeamWitchMemberRankAndPitchAsync_System_Guid_" data-uid="Infrastructure.Repositories.TeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)">
+  GetTeamWitchMemberRankAndPitchAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma equipa pelo seu ID, carregando Membros, Rank e Pitch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Team?&gt; GetTeamWitchMemberRankAndPitchAsync(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Team.html">Team</a>&gt;</dt>
+    <dd><p>A entidade [Team] com [Members], [Rank] e [Pitch] carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_GetTopTeamsAsync_" data-uid="Infrastructure.Repositories.TeamRepository.GetTopTeamsAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_GetTopTeamsAsync_System_Int32_" data-uid="Infrastructure.Repositories.TeamRepository.GetTopTeamsAsync(System.Int32)">
+  GetTopTeamsAsync(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a tabela de classificação das equipas por pontuação, limitada ao Top N.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;TeamLeaderboardDto&gt;&gt; GetTopTeamsAsync(int top)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>O número máximo de equipas a retornar (ex: 100).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Team.TeamLeaderboardDto.html">TeamLeaderboardDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [TeamLeaderboardDto] ordenada por pontos.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamRepository_UpdateTeam_" data-uid="Infrastructure.Repositories.TeamRepository.UpdateTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamRepository_UpdateTeam_Domain_Entities_Team_" data-uid="Infrastructure.Repositories.TeamRepository.UpdateTeam(Domain.Entities.Team)">
+  UpdateTeam(Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca uma entidade [Team] existente para ser atualizada na base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTeam(Team updatedTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updatedTeam</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd><p>A entidade [Team] com os novos valores.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamRepository.cs/#L22" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  id: UpdateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  children:
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone
+  langs:
+  - csharp
+  - vb
+  name: UpdateSuperAdminDTO
+  nameWithType: UpdateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  type: Class
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateSuperAdminDTO
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public class UpdateSuperAdminDTO
+    content.vb: Public Class UpdateSuperAdminDTO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+  commentId: P:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+  id: Name
+  parent: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UpdateSuperAdminDTO.Name
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Name
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name*
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+  commentId: P:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+  id: DateOfBirth
+  parent: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: DateOfBirth
+  nameWithType: UpdateSuperAdminDTO.DateOfBirth
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DateOfBirth
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public DateOnly DateOfBirth { get; set; }
+    parameters: []
+    return:
+      type: System.DateOnly
+    content.vb: Public Property DateOfBirth As DateOnly
+  overload: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth*
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+  commentId: P:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+  id: Address
+  parent: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: Address
+  nameWithType: UpdateSuperAdminDTO.Address
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Address
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public string Address { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Address As String
+  overload: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address*
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+  commentId: P:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+  id: Email
+  parent: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: UpdateSuperAdminDTO.Email
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Email
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Email As String
+  overload: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email*
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone
+  commentId: P:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone
+  id: Phone
+  parent: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: Phone
+  nameWithType: UpdateSuperAdminDTO.Phone
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Phone
+    path: ../Application/DTOs/SuperAdmin/UpdateSuperAdminDTO.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.DTOs.SuperAdmin
+  syntax:
+    content: public string Phone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Phone As String
+  overload: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone*
+references:
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  href: Application.html
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name*
+  commentId: Overload:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html#Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Name
+  name: Name
+  nameWithType: UpdateSuperAdminDTO.Name
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth*
+  commentId: Overload:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html#Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_DateOfBirth
+  name: DateOfBirth
+  nameWithType: UpdateSuperAdminDTO.DateOfBirth
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.DateOfBirth
+- uid: System.DateOnly
+  commentId: T:System.DateOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: System.DateOnly
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address*
+  commentId: Overload:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html#Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Address
+  name: Address
+  nameWithType: UpdateSuperAdminDTO.Address
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Address
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email*
+  commentId: Overload:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html#Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Email
+  name: Email
+  nameWithType: UpdateSuperAdminDTO.Email
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Email
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone*
+  commentId: Overload:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html#Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Phone
+  name: Phone
+  nameWithType: UpdateSuperAdminDTO.Phone
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.Phone

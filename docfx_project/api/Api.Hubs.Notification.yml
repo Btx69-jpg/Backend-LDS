@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Hubs.Notification
+  commentId: N:Api.Hubs.Notification
+  id: Api.Hubs.Notification
+  children:
+  - Api.Hubs.Notification.NotificationService
+  langs:
+  - csharp
+  - vb
+  name: Api.Hubs.Notification
+  nameWithType: Api.Hubs.Notification
+  fullName: Api.Hubs.Notification
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Api.Hubs.Notification.NotificationService
+  commentId: T:Api.Hubs.Notification.NotificationService
+  href: Api.Hubs.Notification.NotificationService.html
+  name: NotificationService
+  nameWithType: NotificationService
+  fullName: Api.Hubs.Notification.NotificationService

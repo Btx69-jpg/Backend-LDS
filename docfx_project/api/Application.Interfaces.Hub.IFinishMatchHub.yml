@@ -1,0 +1,252 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Hub.IFinishMatchHub
+  commentId: T:Application.Interfaces.Hub.IFinishMatchHub
+  id: IFinishMatchHub
+  parent: Application.Interfaces.Hub
+  children:
+  - Application.Interfaces.Hub.IFinishMatchHub.EditResult(Application.DTOs.Match.ResultMatchDto)
+  - Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)
+  - Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch
+  langs:
+  - csharp
+  - vb
+  name: IFinishMatchHub
+  nameWithType: IFinishMatchHub
+  fullName: Application.Interfaces.Hub.IFinishMatchHub
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IFinishMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IFinishMatchHub
+    path: ../Application/Interfaces/Hub/IFinishMatchHub.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: public interface IFinishMatchHub
+    content.vb: Public Interface IFinishMatchHub
+- uid: Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)
+  id: JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Hub.IFinishMatchHub
+  langs:
+  - csharp
+  - vb
+  name: JoinFinishMatch(ResultMatchDto)
+  nameWithType: IFinishMatchHub.JoinFinishMatch(ResultMatchDto)
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IFinishMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinFinishMatch
+    path: ../Application/Interfaces/Hub/IFinishMatchHub.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task JoinFinishMatch(ResultMatchDto finishMatch)
+    parameters:
+    - id: finishMatch
+      type: Application.DTOs.Match.ResultMatchDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinFinishMatch(finishMatch As ResultMatchDto) As Task
+  overload: Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch*
+- uid: Application.Interfaces.Hub.IFinishMatchHub.EditResult(Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Hub.IFinishMatchHub.EditResult(Application.DTOs.Match.ResultMatchDto)
+  id: EditResult(Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Hub.IFinishMatchHub
+  langs:
+  - csharp
+  - vb
+  name: EditResult(ResultMatchDto)
+  nameWithType: IFinishMatchHub.EditResult(ResultMatchDto)
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.EditResult(Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IFinishMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: EditResult
+    path: ../Application/Interfaces/Hub/IFinishMatchHub.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task EditResult(ResultMatchDto finishMatch)
+    parameters:
+    - id: finishMatch
+      type: Application.DTOs.Match.ResultMatchDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function EditResult(finishMatch As ResultMatchDto) As Task
+  overload: Application.Interfaces.Hub.IFinishMatchHub.EditResult*
+- uid: Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch
+  commentId: M:Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch
+  id: LeaveFinishMatch
+  parent: Application.Interfaces.Hub.IFinishMatchHub
+  langs:
+  - csharp
+  - vb
+  name: LeaveFinishMatch()
+  nameWithType: IFinishMatchHub.LeaveFinishMatch()
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IFinishMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveFinishMatch
+    path: ../Application/Interfaces/Hub/IFinishMatchHub.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task LeaveFinishMatch()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveFinishMatch() As Task
+  overload: Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch*
+references:
+- uid: Application.Interfaces.Hub
+  commentId: N:Application.Interfaces.Hub
+  href: Application.html
+  name: Application.Interfaces.Hub
+  nameWithType: Application.Interfaces.Hub
+  fullName: Application.Interfaces.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+- uid: Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch*
+  commentId: Overload:Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch
+  href: Application.Interfaces.Hub.IFinishMatchHub.html#Application_Interfaces_Hub_IFinishMatchHub_JoinFinishMatch_Application_DTOs_Match_ResultMatchDto_
+  name: JoinFinishMatch
+  nameWithType: IFinishMatchHub.JoinFinishMatch
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.JoinFinishMatch
+- uid: Application.DTOs.Match.ResultMatchDto
+  commentId: T:Application.DTOs.Match.ResultMatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.ResultMatchDto.html
+  name: ResultMatchDto
+  nameWithType: ResultMatchDto
+  fullName: Application.DTOs.Match.ResultMatchDto
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  href: Application.html
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Hub.IFinishMatchHub.EditResult*
+  commentId: Overload:Application.Interfaces.Hub.IFinishMatchHub.EditResult
+  href: Application.Interfaces.Hub.IFinishMatchHub.html#Application_Interfaces_Hub_IFinishMatchHub_EditResult_Application_DTOs_Match_ResultMatchDto_
+  name: EditResult
+  nameWithType: IFinishMatchHub.EditResult
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.EditResult
+- uid: Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch*
+  commentId: Overload:Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch
+  href: Application.Interfaces.Hub.IFinishMatchHub.html#Application_Interfaces_Hub_IFinishMatchHub_LeaveFinishMatch
+  name: LeaveFinishMatch
+  nameWithType: IFinishMatchHub.LeaveFinishMatch
+  fullName: Application.Interfaces.Hub.IFinishMatchHub.LeaveFinishMatch

@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerServiceTest | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerServiceTest | docfx_project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest.md&amp;value=---%0Auid%3A%20Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest">
+
+
+
+  <h1 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest" class="text-break">
+Class PlayerServiceTest  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Tests.html">Tests</a>.<a class="xref" href="Tests.Unit.html">Unit</a>.<a class="xref" href="Tests.Unit.ApplicationTests.html">ApplicationTests</a>.<a class="xref" href="Tests.Unit.ApplicationTests.ServicesTests.html">ServicesTests</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Tests.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestFixture]
+public class PlayerServiceTest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PlayerServiceTest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId">
+  CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: cria um jogador v&#225;lido e retorna o Id gerado&quot;)]
+public Task CreatePlayerAsync_WithValidDto_CreatesPlayerAndReturnsId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully">
+  DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: elimina um jogador existente com sucesso&quot;)]
+public Task DeletePlayerAsync_PlayerExists_DeletesPlayerSuccessfully()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerNotFound_ThrowsException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_DeletePlayerAsync_PlayerNotFound_ThrowsException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.DeletePlayerAsync_PlayerNotFound_ThrowsException">
+  DeletePlayerAsync_PlayerNotFound_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L268"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a NotFoundException quando o jogador n&#227;o &#233; encontrado&quot;)]
+public void DeletePlayerAsync_PlayerNotFound_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenNoTeamsExist_ReturnsEmptyList_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenNoTeamsExist_ReturnsEmptyList" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenNoTeamsExist_ReturnsEmptyList">
+  GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: retorna uma lista vazia se o reposit&#243;rio n&#227;o encontrar equipas&quot;)]
+public Task GetListTeams_WhenNoTeamsExist_ReturnsEmptyList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenTeamsExist_ReturnsListOfTeams_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetListTeams_WhenTeamsExist_ReturnsListOfTeams" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetListTeams_WhenTeamsExist_ReturnsListOfTeams">
+  GetListTeams_WhenTeamsExist_ReturnsListOfTeams()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: retorna a lista completa de equipas do reposit&#243;rio&quot;)]
+public Task GetListTeams_WhenTeamsExist_ReturnsListOfTeams()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto">
+  GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: encontra um jogador e retorna os seus detalhes (DTO)&quot;)]
+public Task GetPlayerByIdAsync_PlayerExists_ReturnsPlayerDetailsDto()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerNotFound_ThrowsException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetPlayerByIdAsync_PlayerNotFound_ThrowsException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetPlayerByIdAsync_PlayerNotFound_ThrowsException">
+  GetPlayerByIdAsync_PlayerNotFound_ThrowsException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a Exception quando o jogador n&#227;o &#233; encontrado&quot;)]
+public void GetPlayerByIdAsync_PlayerNotFound_ThrowsException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList">
+  GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L802"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: retorna uma lista filtrada quando um filtro complexo (v&#225;rios campos) &#233; usado&quot;)]
+public Task GetTeamListWithFilters_WithComplexValidFilters_ReturnsFilteredList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList">
+  GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: retorna a lista completa quando os filtros est&#227;o vazios&quot;)]
+public Task GetTeamListWithFilters_WithEmptyFilter_ReturnsFullList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException_System_String_System_String_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(System.String,System.String)">
+  GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a InvalidOperationException para intervalos de filtro inv&#225;lidos&quot;)]
+[TestCase(&quot;Points&quot;, &quot;O numero minimo de pontos de uma equipa, n&#227;o deve ser superior ao numero maximo&quot;)]
+[TestCase(&quot;Age&quot;, &quot;O numero minimo de idade minima tem de ser inferior &#224; idade media maxima&quot;)]
+[TestCase(&quot;Players&quot;, &quot;O n&#250;mero minimo de membros deve ser superior ao numero maximo de membros&quot;)]
+public void GetTeamListWithFilters_WithInvalidFilterRanges_ThrowsInvalidOperationException(string filterType, string expectedError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filterType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>expectedError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList">
+  GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: retorna uma lista filtrada quando os filtros s&#227;o v&#225;lidos&quot;)]
+public Task GetTeamListWithFilters_WithValidFilters_ReturnsFilteredList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully">
+  LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: Admin sai da equipa, mas existe outro admin&quot;)]
+public Task LeaveTeam_AdminLeaves_AnotherAdminExists_LeavesSuccessfully()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully">
+  LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: &#218;ltimo admin e &#250;nico membro sai, eliminando a equipa&quot;)]
+public Task LeaveTeam_LastAdminAndOnlyMember_DeletesTeamSuccessfully()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember">
+  LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: &#218;ltimo admin sai, promove o membro mais antigo&quot;)]
+public Task LeaveTeam_LastAdminLeaves_OtherMembersExist_PromotesOldestMember()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotFound_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotFound_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotFound_ThrowsValidationException">
+  LeaveTeam_PlayerNotFound_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o quando o jogador n&#227;o &#233; encontrado&quot;)]
+public void LeaveTeam_PlayerNotFound_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotInTeam_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_PlayerNotInTeam_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_PlayerNotInTeam_ThrowsValidationException">
+  LeaveTeam_PlayerNotInTeam_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o quando o jogador n&#227;o pertence a nenhuma equipa&quot;)]
+public void LeaveTeam_PlayerNotInTeam_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_RegularMember_LeavesSuccessfully_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_LeaveTeam_RegularMember_LeavesSuccessfully" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.LeaveTeam_RegularMember_LeavesSuccessfully">
+  LeaveTeam_RegularMember_LeavesSuccessfully()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: Membro regular sai da equipa&quot;)]
+public Task LeaveTeam_RegularMember_LeavesSuccessfully()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_SetUp_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_SetUp" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.SetUp">
+  SetUp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SetUp]
+public void SetUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException">
+  UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o quando o novo email j&#225; est&#225; em uso por outro jogador&quot;)]
+public void UpdatePlayerAsync_EmailAlreadyInUse_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException">
+  UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a ValidationException quando a morada tem formato inv&#225;lido no update&quot;)]
+public void UpdatePlayerAsync_InvalidAddressFormat_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException_System_String_System_String_System_Int32_System_String_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(System.String,System.String,System.Int32,System.String)">
+  UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string, string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o para v&#225;rios campos inv&#225;lidos&quot;)]
+[TestCase(new object?[] { &quot;invalid-email.com&quot;, &quot;912345678&quot;, 180, &quot;Email format is invalid&quot; })]
+[TestCase(new object?[] { &quot;valid@email.com&quot;, &quot;12345&quot;, 180, &quot;Phone number must have 9 digits&quot; })]
+[TestCase(new object?[] { &quot;valid@email.com&quot;, &quot;91234567A&quot;, 180, &quot;must only contain digits&quot; })]
+[TestCase(new object?[] { &quot;valid@email.com&quot;, &quot;012345678&quot;, 180, &quot;cannot start with &#39;0&#39;&quot; })]
+[TestCase(new object?[] { &quot;valid@email.com&quot;, &quot;912345678&quot;, 99, &quot;Height value is invalid&quot; })]
+[TestCase(new object?[] { &quot;valid@email.com&quot;, &quot;912345678&quot;, 251, &quot;Height value is invalid&quot; })]
+public Task UpdatePlayerAsync_InvalidDtoData_ThrowsValidationException(string email, string phone, int height, string expectedError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>email</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>phone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expectedError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_NoChangesMade_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_NoChangesMade_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_NoChangesMade_ThrowsValidationException">
+  UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o quando n&#227;o h&#225; nenhuma altera&#231;&#227;o nos dados&quot;)]
+public void UpdatePlayerAsync_NoChangesMade_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException">
+  UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Valida&#231;&#227;o: lan&#231;a exce&#231;&#227;o quando o jogador a atualizar n&#227;o existe&quot;)]
+public void UpdatePlayerAsync_PlayerNotFound_ThrowsValidationException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves">
+  UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: atualiza dados v&#225;lidos do jogador&quot;)]
+public Task UpdatePlayerAsync_WithValidChanges_UpdatesPlayerAndSaves()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves_" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves*"></a>
+
+  <h3 id="Tests_Unit_ApplicationTests_ServicesTests_PlayerServiceTest_UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves" data-uid="Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves">
+  UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test(Description = &quot;Caminho feliz: atualiza o email para um que est&#225; dispon&#237;vel&quot;)]
+public Task UpdatePlayerAsync_WithValidNewEmail_UpdatesPlayerAndSaves()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Tests/Unit/ApplicationTests/ServicesTests/PlayerServiceTest.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  id: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests
+  - Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests.html
+  name: StartMatchControllerIntegrationTests
+  nameWithType: StartMatchControllerIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.html
+  name: StartMatchHubIntegrationTests
+  nameWithType: StartMatchHubIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests

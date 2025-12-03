@@ -1,0 +1,718 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.IMembershipRequestService
+  commentId: T:Application.Interfaces.Services.IMembershipRequestService
+  id: IMembershipRequestService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(System.String,System.Guid)
+  - Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  - Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer(System.String)
+  - Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(System.String,Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  - Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam(System.Guid,System.String)
+  - Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMembershipRequestsTeam,System.String)
+  - Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer(System.String,System.Guid)
+  - Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  - Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer(System.String,System.Guid)
+  - Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam(System.Guid,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMembershipRequestService
+  nameWithType: IMembershipRequestService
+  fullName: Application.Interfaces.Services.IMembershipRequestService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IMembershipRequestService
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface IMembershipRequestService
+    content.vb: Public Interface IMembershipRequestService
+- uid: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam(System.Guid,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam(System.Guid,System.String,System.String)
+  id: SendMembershipRequestTeam(System.Guid,System.String,System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestTeam(Guid, string, string)
+  nameWithType: IMembershipRequestService.SendMembershipRequestTeam(Guid, string, string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestTeam
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<MemberShipRequestDto> SendMembershipRequestTeam(Guid teamId, string playerIdToInvite, string sender)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: playerIdToInvite
+      type: System.String
+    - id: sender
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+    content.vb: Function SendMembershipRequestTeam(teamId As Guid, playerIdToInvite As String, sender As String) As Task(Of MemberShipRequestDto)
+  overload: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam*
+  nameWithType.vb: IMembershipRequestService.SendMembershipRequestTeam(Guid, String, String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam(System.Guid, String, String)
+  name.vb: SendMembershipRequestTeam(Guid, String, String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  id: AcceptMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestTeam(Guid, Guid, string)
+  nameWithType: IMembershipRequestService.AcceptMembershipRequestTeam(Guid, Guid, string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestTeam
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task AcceptMembershipRequestTeam(Guid teamId, Guid requestId, string adminId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: requestId
+      type: System.Guid
+    - id: adminId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AcceptMembershipRequestTeam(teamId As Guid, requestId As Guid, adminId As String) As Task
+  overload: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam*
+  nameWithType.vb: IMembershipRequestService.AcceptMembershipRequestTeam(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam(System.Guid, System.Guid, String)
+  name.vb: AcceptMembershipRequestTeam(Guid, Guid, String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  id: RejectMembershipRequestTeam(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequestTeam(Guid, Guid, string)
+  nameWithType: IMembershipRequestService.RejectMembershipRequestTeam(Guid, Guid, string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequestTeam
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task RejectMembershipRequestTeam(Guid teamId, Guid requestId, string userId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: requestId
+      type: System.Guid
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RejectMembershipRequestTeam(teamId As Guid, requestId As Guid, userId As String) As Task
+  overload: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam*
+  nameWithType.vb: IMembershipRequestService.RejectMembershipRequestTeam(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam(System.Guid, System.Guid, String)
+  name.vb: RejectMembershipRequestTeam(Guid, Guid, String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam(System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam(System.Guid,System.String)
+  id: GetMembershipRequestsByTeam(System.Guid,System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsByTeam(Guid, string)
+  nameWithType: IMembershipRequestService.GetMembershipRequestsByTeam(Guid, string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam(System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsByTeam
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<MemberShipRequestDto>> GetMembershipRequestsByTeam(Guid teamId, string playerId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: playerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+    content.vb: Function GetMembershipRequestsByTeam(teamId As Guid, playerId As String) As Task(Of List(Of MemberShipRequestDto))
+  overload: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam*
+  nameWithType.vb: IMembershipRequestService.GetMembershipRequestsByTeam(Guid, String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam(System.Guid, String)
+  name.vb: GetMembershipRequestsByTeam(Guid, String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMembershipRequestsTeam,System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMembershipRequestsTeam,System.String)
+  id: GetMembershipRequestsByTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMembershipRequestsTeam,System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsByTeamWithFilters(Guid, FilterMembershipRequestsTeam, string)
+  nameWithType: IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(Guid, FilterMembershipRequestsTeam, string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterMembershipRequestsTeam, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsByTeamWithFilters
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<MemberShipRequestDto>> GetMembershipRequestsByTeamWithFilters(Guid teamId, FilterMembershipRequestsTeam filters, string playerId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: filters
+      type: Application.DTOs.Filters.FilterMembershipRequestsTeam
+    - id: playerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+    content.vb: Function GetMembershipRequestsByTeamWithFilters(teamId As Guid, filters As FilterMembershipRequestsTeam, playerId As String) As Task(Of List(Of MemberShipRequestDto))
+  overload: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters*
+  nameWithType.vb: IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(Guid, FilterMembershipRequestsTeam, String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterMembershipRequestsTeam, String)
+  name.vb: GetMembershipRequestsByTeamWithFilters(Guid, FilterMembershipRequestsTeam, String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer(System.String)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer(System.String)
+  id: GetMembershipRequestsAsyncPlayer(System.String)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsAsyncPlayer(string)
+  nameWithType: IMembershipRequestService.GetMembershipRequestsAsyncPlayer(string)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsAsyncPlayer
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<MemberShipRequestDto>> GetMembershipRequestsAsyncPlayer(string playerId)
+    parameters:
+    - id: playerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+    content.vb: Function GetMembershipRequestsAsyncPlayer(playerId As String) As Task(Of List(Of MemberShipRequestDto))
+  overload: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer*
+  nameWithType.vb: IMembershipRequestService.GetMembershipRequestsAsyncPlayer(String)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer(String)
+  name.vb: GetMembershipRequestsAsyncPlayer(String)
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(System.String,Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(System.String,Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  id: GetMembershipRequestsAsyncPlayerWithFilters(System.String,Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsAsyncPlayerWithFilters(string, FilterMembershipRequestsPlayer)
+  nameWithType: IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(string, FilterMembershipRequestsPlayer)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(string, Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsAsyncPlayerWithFilters
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 20
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<List<MemberShipRequestDto>> GetMembershipRequestsAsyncPlayerWithFilters(string playerId, FilterMembershipRequestsPlayer filters)
+    parameters:
+    - id: playerId
+      type: System.String
+    - id: filters
+      type: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+    content.vb: Function GetMembershipRequestsAsyncPlayerWithFilters(playerId As String, filters As FilterMembershipRequestsPlayer) As Task(Of List(Of MemberShipRequestDto))
+  overload: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters*
+  nameWithType.vb: IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(String, FilterMembershipRequestsPlayer)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters(String, Application.DTOs.Filters.FilterMembershipRequestsPlayer)
+  name.vb: GetMembershipRequestsAsyncPlayerWithFilters(String, FilterMembershipRequestsPlayer)
+- uid: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(System.String,System.Guid)
+  id: AcceptMembershipRequestAsyncPlayer(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestAsyncPlayer(string, Guid)
+  nameWithType: IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(string, Guid)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestAsyncPlayer
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 22
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<MemberShipRequestDto> AcceptMembershipRequestAsyncPlayer(string playerId, Guid requestId)
+    parameters:
+    - id: playerId
+      type: System.String
+    - id: requestId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+    content.vb: Function AcceptMembershipRequestAsyncPlayer(playerId As String, requestId As Guid) As Task(Of MemberShipRequestDto)
+  overload: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer*
+  nameWithType.vb: IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer(String, System.Guid)
+  name.vb: AcceptMembershipRequestAsyncPlayer(String, Guid)
+- uid: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer(System.String,System.Guid)
+  id: RejectMembershipRequestAsyncPlayer(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequestAsyncPlayer(string, Guid)
+  nameWithType: IMembershipRequestService.RejectMembershipRequestAsyncPlayer(string, Guid)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequestAsyncPlayer
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 24
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<MemberShipRequestDto> RejectMembershipRequestAsyncPlayer(string playerId, Guid requestId)
+    parameters:
+    - id: playerId
+      type: System.String
+    - id: requestId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+    content.vb: Function RejectMembershipRequestAsyncPlayer(playerId As String, requestId As Guid) As Task(Of MemberShipRequestDto)
+  overload: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer*
+  nameWithType.vb: IMembershipRequestService.RejectMembershipRequestAsyncPlayer(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer(String, System.Guid)
+  name.vb: RejectMembershipRequestAsyncPlayer(String, Guid)
+- uid: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer(System.String,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer(System.String,System.Guid)
+  id: SendMembershipRequestAsyncPlayer(System.String,System.Guid)
+  parent: Application.Interfaces.Services.IMembershipRequestService
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestAsyncPlayer(string, Guid)
+  nameWithType: IMembershipRequestService.SendMembershipRequestAsyncPlayer(string, Guid)
+  fullName: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer(string, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IMembershipRequestService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestAsyncPlayer
+    path: ../Application/Interfaces/Services/IMembershipRequestService.cs
+    startLine: 26
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<MemberShipRequestDto> SendMembershipRequestAsyncPlayer(string playerId, Guid teamId)
+    parameters:
+    - id: playerId
+      type: System.String
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+    content.vb: Function SendMembershipRequestAsyncPlayer(playerId As String, teamId As Guid) As Task(Of MemberShipRequestDto)
+  overload: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer*
+  nameWithType.vb: IMembershipRequestService.SendMembershipRequestAsyncPlayer(String, Guid)
+  fullName.vb: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer(String, System.Guid)
+  name.vb: SendMembershipRequestAsyncPlayer(String, Guid)
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_SendMembershipRequestTeam_System_Guid_System_String_System_String_
+  name: SendMembershipRequestTeam
+  nameWithType: IMembershipRequestService.SendMembershipRequestTeam
+  fullName: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestTeam
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.MemberShip.MemberShipRequestDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MemberShipRequestDto>
+  nameWithType: Task<MemberShipRequestDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.MemberShip.MemberShipRequestDto>
+  nameWithType.vb: Task(Of MemberShipRequestDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.MemberShip.MemberShipRequestDto)
+  name.vb: Task(Of MemberShipRequestDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.MemberShip.MemberShipRequestDto
+    name: MemberShipRequestDto
+    href: Application.DTOs.MemberShip.MemberShipRequestDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.MemberShip.MemberShipRequestDto
+    name: MemberShipRequestDto
+    href: Application.DTOs.MemberShip.MemberShipRequestDto.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_AcceptMembershipRequestTeam_System_Guid_System_Guid_System_String_
+  name: AcceptMembershipRequestTeam
+  nameWithType: IMembershipRequestService.AcceptMembershipRequestTeam
+  fullName: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestTeam
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_RejectMembershipRequestTeam_System_Guid_System_Guid_System_String_
+  name: RejectMembershipRequestTeam
+  nameWithType: IMembershipRequestService.RejectMembershipRequestTeam
+  fullName: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestTeam
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_GetMembershipRequestsByTeam_System_Guid_System_String_
+  name: GetMembershipRequestsByTeam
+  nameWithType: IMembershipRequestService.GetMembershipRequestsByTeam
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeam
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MemberShip.MemberShipRequestDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<MemberShipRequestDto>>
+  nameWithType: Task<List<MemberShipRequestDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.MemberShip.MemberShipRequestDto>>
+  nameWithType.vb: Task(Of List(Of MemberShipRequestDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.MemberShip.MemberShipRequestDto))
+  name.vb: Task(Of List(Of MemberShipRequestDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.MemberShip.MemberShipRequestDto
+    name: MemberShipRequestDto
+    href: Application.DTOs.MemberShip.MemberShipRequestDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.MemberShip.MemberShipRequestDto
+    name: MemberShipRequestDto
+    href: Application.DTOs.MemberShip.MemberShipRequestDto.html
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_GetMembershipRequestsByTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMembershipRequestsTeam_System_String_
+  name: GetMembershipRequestsByTeamWithFilters
+  nameWithType: IMembershipRequestService.GetMembershipRequestsByTeamWithFilters
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsByTeamWithFilters
+- uid: Application.DTOs.Filters.FilterMembershipRequestsTeam
+  commentId: T:Application.DTOs.Filters.FilterMembershipRequestsTeam
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMembershipRequestsTeam.html
+  name: FilterMembershipRequestsTeam
+  nameWithType: FilterMembershipRequestsTeam
+  fullName: Application.DTOs.Filters.FilterMembershipRequestsTeam
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_GetMembershipRequestsAsyncPlayer_System_String_
+  name: GetMembershipRequestsAsyncPlayer
+  nameWithType: IMembershipRequestService.GetMembershipRequestsAsyncPlayer
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayer
+- uid: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_GetMembershipRequestsAsyncPlayerWithFilters_System_String_Application_DTOs_Filters_FilterMembershipRequestsPlayer_
+  name: GetMembershipRequestsAsyncPlayerWithFilters
+  nameWithType: IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters
+  fullName: Application.Interfaces.Services.IMembershipRequestService.GetMembershipRequestsAsyncPlayerWithFilters
+- uid: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+  commentId: T:Application.DTOs.Filters.FilterMembershipRequestsPlayer
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMembershipRequestsPlayer.html
+  name: FilterMembershipRequestsPlayer
+  nameWithType: FilterMembershipRequestsPlayer
+  fullName: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+- uid: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_AcceptMembershipRequestAsyncPlayer_System_String_System_Guid_
+  name: AcceptMembershipRequestAsyncPlayer
+  nameWithType: IMembershipRequestService.AcceptMembershipRequestAsyncPlayer
+  fullName: Application.Interfaces.Services.IMembershipRequestService.AcceptMembershipRequestAsyncPlayer
+- uid: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_RejectMembershipRequestAsyncPlayer_System_String_System_Guid_
+  name: RejectMembershipRequestAsyncPlayer
+  nameWithType: IMembershipRequestService.RejectMembershipRequestAsyncPlayer
+  fullName: Application.Interfaces.Services.IMembershipRequestService.RejectMembershipRequestAsyncPlayer
+- uid: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer*
+  commentId: Overload:Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer
+  href: Application.Interfaces.Services.IMembershipRequestService.html#Application_Interfaces_Services_IMembershipRequestService_SendMembershipRequestAsyncPlayer_System_String_System_Guid_
+  name: SendMembershipRequestAsyncPlayer
+  nameWithType: IMembershipRequestService.SendMembershipRequestAsyncPlayer
+  fullName: Application.Interfaces.Services.IMembershipRequestService.SendMembershipRequestAsyncPlayer

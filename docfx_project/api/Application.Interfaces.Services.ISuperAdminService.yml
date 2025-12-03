@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.ISuperAdminService
+  commentId: T:Application.Interfaces.Services.ISuperAdminService
+  id: ISuperAdminService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync(Application.DTOs.SuperAdmin.CreateSuperAdminDTO)
+  - Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync(System.String)
+  - Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync(System.String)
+  - Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync(System.String,Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  langs:
+  - csharp
+  - vb
+  name: ISuperAdminService
+  nameWithType: ISuperAdminService
+  fullName: Application.Interfaces.Services.ISuperAdminService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/ISuperAdminService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ISuperAdminService
+    path: ../Application/Interfaces/Services/ISuperAdminService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface ISuperAdminService
+    content.vb: Public Interface ISuperAdminService
+- uid: Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync(Application.DTOs.SuperAdmin.CreateSuperAdminDTO)
+  commentId: M:Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync(Application.DTOs.SuperAdmin.CreateSuperAdminDTO)
+  id: CreateSuperAdminAsync(Application.DTOs.SuperAdmin.CreateSuperAdminDTO)
+  parent: Application.Interfaces.Services.ISuperAdminService
+  langs:
+  - csharp
+  - vb
+  name: CreateSuperAdminAsync(CreateSuperAdminDTO)
+  nameWithType: ISuperAdminService.CreateSuperAdminAsync(CreateSuperAdminDTO)
+  fullName: Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync(Application.DTOs.SuperAdmin.CreateSuperAdminDTO)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/ISuperAdminService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateSuperAdminAsync
+    path: ../Application/Interfaces/Services/ISuperAdminService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<string> CreateSuperAdminAsync(CreateSuperAdminDTO dto)
+    parameters:
+    - id: dto
+      type: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function CreateSuperAdminAsync(dto As CreateSuperAdminDTO) As Task(Of String)
+  overload: Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync*
+- uid: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync(System.String)
+  commentId: M:Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync(System.String)
+  id: GetSuperAdminByIdAsync(System.String)
+  parent: Application.Interfaces.Services.ISuperAdminService
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByIdAsync(string)
+  nameWithType: ISuperAdminService.GetSuperAdminByIdAsync(string)
+  fullName: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/ISuperAdminService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByIdAsync
+    path: ../Application/Interfaces/Services/ISuperAdminService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<SuperAdminDetailsDTO> GetSuperAdminByIdAsync(string superAdminId)
+    parameters:
+    - id: superAdminId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.SuperAdmin.SuperAdminDetailsDTO}
+    content.vb: Function GetSuperAdminByIdAsync(superAdminId As String) As Task(Of SuperAdminDetailsDTO)
+  overload: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync*
+  nameWithType.vb: ISuperAdminService.GetSuperAdminByIdAsync(String)
+  fullName.vb: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync(String)
+  name.vb: GetSuperAdminByIdAsync(String)
+- uid: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync(System.String,Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  commentId: M:Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync(System.String,Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  id: UpdateSuperAdminAsync(System.String,Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  parent: Application.Interfaces.Services.ISuperAdminService
+  langs:
+  - csharp
+  - vb
+  name: UpdateSuperAdminAsync(string, UpdateSuperAdminDTO)
+  nameWithType: ISuperAdminService.UpdateSuperAdminAsync(string, UpdateSuperAdminDTO)
+  fullName: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync(string, Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/ISuperAdminService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateSuperAdminAsync
+    path: ../Application/Interfaces/Services/ISuperAdminService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UpdateSuperAdminAsync(string superAdminId, UpdateSuperAdminDTO dto)
+    parameters:
+    - id: superAdminId
+      type: System.String
+    - id: dto
+      type: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateSuperAdminAsync(superAdminId As String, dto As UpdateSuperAdminDTO) As Task
+  overload: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync*
+  nameWithType.vb: ISuperAdminService.UpdateSuperAdminAsync(String, UpdateSuperAdminDTO)
+  fullName.vb: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync(String, Application.DTOs.SuperAdmin.UpdateSuperAdminDTO)
+  name.vb: UpdateSuperAdminAsync(String, UpdateSuperAdminDTO)
+- uid: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync(System.String)
+  commentId: M:Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync(System.String)
+  id: DeleteSuperAdminAsync(System.String)
+  parent: Application.Interfaces.Services.ISuperAdminService
+  langs:
+  - csharp
+  - vb
+  name: DeleteSuperAdminAsync(string)
+  nameWithType: ISuperAdminService.DeleteSuperAdminAsync(string)
+  fullName: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/ISuperAdminService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteSuperAdminAsync
+    path: ../Application/Interfaces/Services/ISuperAdminService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task DeleteSuperAdminAsync(string superAdminId)
+    parameters:
+    - id: superAdminId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteSuperAdminAsync(superAdminId As String) As Task
+  overload: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync*
+  nameWithType.vb: ISuperAdminService.DeleteSuperAdminAsync(String)
+  fullName.vb: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync(String)
+  name.vb: DeleteSuperAdminAsync(String)
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync*
+  commentId: Overload:Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync
+  href: Application.Interfaces.Services.ISuperAdminService.html#Application_Interfaces_Services_ISuperAdminService_CreateSuperAdminAsync_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_
+  name: CreateSuperAdminAsync
+  nameWithType: ISuperAdminService.CreateSuperAdminAsync
+  fullName: Application.Interfaces.Services.ISuperAdminService.CreateSuperAdminAsync
+- uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  name: CreateSuperAdminDTO
+  nameWithType: CreateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  href: Application.html
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync*
+  commentId: Overload:Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync
+  href: Application.Interfaces.Services.ISuperAdminService.html#Application_Interfaces_Services_ISuperAdminService_GetSuperAdminByIdAsync_System_String_
+  name: GetSuperAdminByIdAsync
+  nameWithType: ISuperAdminService.GetSuperAdminByIdAsync
+  fullName: Application.Interfaces.Services.ISuperAdminService.GetSuperAdminByIdAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Application.DTOs.SuperAdmin.SuperAdminDetailsDTO}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.SuperAdmin.SuperAdminDetailsDTO}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SuperAdminDetailsDTO>
+  nameWithType: Task<SuperAdminDetailsDTO>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.SuperAdmin.SuperAdminDetailsDTO>
+  nameWithType.vb: Task(Of SuperAdminDetailsDTO)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.SuperAdmin.SuperAdminDetailsDTO)
+  name.vb: Task(Of SuperAdminDetailsDTO)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+    name: SuperAdminDetailsDTO
+    href: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+    name: SuperAdminDetailsDTO
+    href: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync*
+  commentId: Overload:Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync
+  href: Application.Interfaces.Services.ISuperAdminService.html#Application_Interfaces_Services_ISuperAdminService_UpdateSuperAdminAsync_System_String_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_
+  name: UpdateSuperAdminAsync
+  nameWithType: ISuperAdminService.UpdateSuperAdminAsync
+  fullName: Application.Interfaces.Services.ISuperAdminService.UpdateSuperAdminAsync
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  name: UpdateSuperAdminDTO
+  nameWithType: UpdateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync*
+  commentId: Overload:Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync
+  href: Application.Interfaces.Services.ISuperAdminService.html#Application_Interfaces_Services_ISuperAdminService_DeleteSuperAdminAsync_System_String_
+  name: DeleteSuperAdminAsync
+  nameWithType: ISuperAdminService.DeleteSuperAdminAsync
+  fullName: Application.Interfaces.Services.ISuperAdminService.DeleteSuperAdminAsync

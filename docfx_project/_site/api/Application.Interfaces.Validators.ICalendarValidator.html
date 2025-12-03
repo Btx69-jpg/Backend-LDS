@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ICalendarValidator | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ICalendarValidator | docfx_project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Application_Interfaces_Validators_ICalendarValidator.md&amp;value=---%0Auid%3A%20Application.Interfaces.Validators.ICalendarValidator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Application.Interfaces.Validators.ICalendarValidator">
+
+
+
+  <h1 id="Application_Interfaces_Validators_ICalendarValidator" data-uid="Application.Interfaces.Validators.ICalendarValidator" class="text-break">
+Interface ICalendarValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Application.html">Application</a>.<a class="xref" href="Application.Interfaces.html">Interfaces</a>.<a class="xref" href="Application.Interfaces.Validators.html">Validators</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Application.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICalendarValidator</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ExistsMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ExistsMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ExistsMatch_Domain_Entities_Matches_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ExistsMatch(Domain.Entities.Matches)">
+  ExistsMatch(Matches)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExistsMatch(Matches match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ExistsTeamStatistics_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ExistsTeamStatistics_Domain_Entities_TeamStatistics_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ExistsTeamStatistics(Domain.Entities.TeamStatistics)">
+  ExistsTeamStatistics(TeamStatistics)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExistsTeamStatistics(TeamStatistics team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateAcceptPostPoneMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateAcceptPostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateAcceptPostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)">
+  ValidateAcceptPostPoneMatchDto(Guid, AcceptRefusePostPoneDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateAcceptPostPoneMatchDto(Guid idTeam, AcceptRefusePostPoneDto dto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>dto</code> <a class="xref" href="Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html">AcceptRefusePostPoneDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateCancelFinishMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateCancelFinishMatch_Domain_Entities_Matches_Domain_Entities_Team_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateCancelFinishMatch(Domain.Entities.Matches,Domain.Entities.Team)">
+  ValidateCancelFinishMatch(Matches, Team)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateCancelFinishMatch(Matches match, Team team)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateCancelMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateCancelMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateCancelMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)">
+  ValidateCancelMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateCancelMatch(Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponent, Guid idOpponent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>opponent</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idOpponent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateFilterCalendar_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateFilterCalendar_System_Guid_Application_DTOs_Filters_FilterCalendarDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFilterCalendar(System.Guid,Application.DTOs.Filters.FilterCalendarDto)">
+  ValidateFilterCalendar(Guid, FilterCalendarDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateFilterCalendar(Guid idTeam, FilterCalendarDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterCalendarDto.html">FilterCalendarDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateFilterPostPoneMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateFilterPostPoneMatch_Application_DTOs_Filters_FilterPostPoneMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFilterPostPoneMatch(Application.DTOs.Filters.FilterPostPoneMatchDto)">
+  ValidateFilterPostPoneMatch(FilterPostPoneMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateFilterPostPoneMatch(FilterPostPoneMatchDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterPostPoneMatchDto.html">FilterPostPoneMatchDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateFinishMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateFinishMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Application_DTOs_Match_ResultMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateFinishMatch(Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Application.DTOs.Match.ResultMatchDto)">
+  ValidateFinishMatch(Matches, TeamStatistics, Guid, TeamStatistics, Guid, ResultMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateFinishMatch(Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponent, Guid idOponnent, ResultMatchDto result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>opponent</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idOponnent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="Application.DTOs.Match.ResultMatchDto.html">ResultMatchDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidatePostPoneMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidatePostPoneMatchDto_System_Guid_Application_DTOs_PostPoneGame_PostPoneMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatePostPoneMatchDto(System.Guid,Application.DTOs.PostPoneGame.PostPoneMatchDto)">
+  ValidatePostPoneMatchDto(Guid, PostPoneMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidatePostPoneMatchDto(Guid idTeam, PostPoneMatchDto dto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>dto</code> <a class="xref" href="Application.DTOs.PostPoneGame.PostPoneMatchDto.html">PostPoneMatchDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateRejectPostPoneMatchDTO_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateRejectPostPoneMatchDTO_System_Guid_Application_DTOs_PostPoneGame_AcceptRefusePostPoneDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateRejectPostPoneMatchDTO(System.Guid,Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto)">
+  ValidateRejectPostPoneMatchDTO(Guid, AcceptRefusePostPoneDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateRejectPostPoneMatchDTO(Guid idTeam, AcceptRefusePostPoneDto dto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>dto</code> <a class="xref" href="Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html">AcceptRefusePostPoneDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateTeamCalendar_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateTeamCalendar_System_Guid_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateTeamCalendar(System.Guid)">
+  ValidateTeamCalendar(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateTeamCalendar(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidateVariabelCancelMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidateVariabelCancelMatch_System_Guid_System_Guid_System_String_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidateVariabelCancelMatch(System.Guid,System.Guid,System.String)">
+  ValidateVariabelCancelMatch(Guid, Guid, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateVariabelCancelMatch(Guid idTeam, Guid idMatch, string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidatorAcceptPostPoneMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidatorAcceptPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_Matches_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorAcceptPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.Matches)">
+  ValidatorAcceptPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid, Matches)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidatorAcceptPostPoneMatch(PostPoneMatch postPoneMatch, Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent, Matches matchFind)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postPoneMatch</code> <a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>opponetTeam</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idOpponnent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>matchFind</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidatorPostPoneMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidatorPostPoneMatch_Domain_Entities_Matches_System_DateTime_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorPostPoneMatch(Domain.Entities.Matches,System.DateTime,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)">
+  ValidatorPostPoneMatch(Matches, DateTime, TeamStatistics, Guid, TeamStatistics, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidatorPostPoneMatch(Matches match, DateTime newDate, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>newDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>opponetTeam</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idOpponnent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_ValidatorRejectPostPoneMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_ValidatorRejectPostPoneMatch_Domain_Entities_PostPoneMatch_Domain_Entities_Matches_Domain_Entities_TeamStatistics_System_Guid_Domain_Entities_TeamStatistics_System_Guid_" data-uid="Application.Interfaces.Validators.ICalendarValidator.ValidatorRejectPostPoneMatch(Domain.Entities.PostPoneMatch,Domain.Entities.Matches,Domain.Entities.TeamStatistics,System.Guid,Domain.Entities.TeamStatistics,System.Guid)">
+  ValidatorRejectPostPoneMatch(PostPoneMatch, Matches, TeamStatistics, Guid, TeamStatistics, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidatorRejectPostPoneMatch(PostPoneMatch postPoneMatch, Matches match, TeamStatistics team, Guid idTeam, TeamStatistics opponetTeam, Guid idOpponnent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postPoneMatch</code> <a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a></dt>
+    <dd></dd>
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>opponetTeam</code> <a class="xref" href="Domain.Entities.TeamStatistics.html">TeamStatistics</a></dt>
+    <dd></dd>
+    <dt><code>idOpponnent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_ICalendarValidator_validateResultMatch_" data-uid="Application.Interfaces.Validators.ICalendarValidator.validateResultMatch*"></a>
+
+  <h3 id="Application_Interfaces_Validators_ICalendarValidator_validateResultMatch_System_Guid_Application_DTOs_Match_ResultMatchDto_" data-uid="Application.Interfaces.Validators.ICalendarValidator.validateResultMatch(System.Guid,Application.DTOs.Match.ResultMatchDto)">
+  validateResultMatch(Guid, ResultMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void validateResultMatch(Guid idTeam, ResultMatchDto result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>result</code> <a class="xref" href="Application.DTOs.Match.ResultMatchDto.html">ResultMatchDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/ICalendarValidator.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

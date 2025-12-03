@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.MatchResult
+  commentId: T:Domain.Enums.MatchResult
+  id: MatchResult
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.MatchResult.DRAW
+  - Domain.Enums.MatchResult.LOSE
+  - Domain.Enums.MatchResult.UNPLAYED
+  - Domain.Enums.MatchResult.WIN
+  langs:
+  - csharp
+  - vb
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Domain.Enums.MatchResult
+  type: Enum
+  source:
+    remote:
+      path: Domain/Enums/MatchResult.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchResult
+    path: ../Domain/Enums/MatchResult.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: >-
+    Define os possíveis resultados de uma equipa numa partida.
+
+    Utilizado para registar o resultado final (Vitória, Derrota, Empate) nas estatísticas.
+  example: []
+  syntax:
+    content: public enum MatchResult
+    content.vb: Public Enum MatchResult
+- uid: Domain.Enums.MatchResult.WIN
+  commentId: F:Domain.Enums.MatchResult.WIN
+  id: WIN
+  parent: Domain.Enums.MatchResult
+  langs:
+  - csharp
+  - vb
+  name: WIN
+  nameWithType: MatchResult.WIN
+  fullName: Domain.Enums.MatchResult.WIN
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchResult.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: WIN
+    path: ../Domain/Enums/MatchResult.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A equipa venceu a partida (Resultado positivo).
+  example: []
+  syntax:
+    content: WIN = 0
+    return:
+      type: Domain.Enums.MatchResult
+- uid: Domain.Enums.MatchResult.LOSE
+  commentId: F:Domain.Enums.MatchResult.LOSE
+  id: LOSE
+  parent: Domain.Enums.MatchResult
+  langs:
+  - csharp
+  - vb
+  name: LOSE
+  nameWithType: MatchResult.LOSE
+  fullName: Domain.Enums.MatchResult.LOSE
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchResult.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LOSE
+    path: ../Domain/Enums/MatchResult.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A equipa perdeu a partida (Resultado negativo).
+  example: []
+  syntax:
+    content: LOSE = 1
+    return:
+      type: Domain.Enums.MatchResult
+- uid: Domain.Enums.MatchResult.DRAW
+  commentId: F:Domain.Enums.MatchResult.DRAW
+  id: DRAW
+  parent: Domain.Enums.MatchResult
+  langs:
+  - csharp
+  - vb
+  name: DRAW
+  nameWithType: MatchResult.DRAW
+  fullName: Domain.Enums.MatchResult.DRAW
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchResult.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DRAW
+    path: ../Domain/Enums/MatchResult.cs
+    startLine: 21
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: A partida terminou empatada (Resultado neutro).
+  example: []
+  syntax:
+    content: DRAW = 2
+    return:
+      type: Domain.Enums.MatchResult
+- uid: Domain.Enums.MatchResult.UNPLAYED
+  commentId: F:Domain.Enums.MatchResult.UNPLAYED
+  id: UNPLAYED
+  parent: Domain.Enums.MatchResult
+  langs:
+  - csharp
+  - vb
+  name: UNPLAYED
+  nameWithType: MatchResult.UNPLAYED
+  fullName: Domain.Enums.MatchResult.UNPLAYED
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/MatchResult.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UNPLAYED
+    path: ../Domain/Enums/MatchResult.cs
+    startLine: 27
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: >-
+    A partida ainda não foi jogada ou o resultado final ainda não foi reportado.
+
+    (Valor padrão para partidas agendadas).
+  example: []
+  syntax:
+    content: UNPLAYED = 3
+    return:
+      type: Domain.Enums.MatchResult
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Enums.MatchResult
+  commentId: T:Domain.Enums.MatchResult
+  parent: Domain.Enums
+  href: Domain.Enums.MatchResult.html
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Domain.Enums.MatchResult

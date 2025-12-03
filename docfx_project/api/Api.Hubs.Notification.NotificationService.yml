@@ -1,0 +1,913 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Hubs.Notification.NotificationService
+  commentId: T:Api.Hubs.Notification.NotificationService
+  id: NotificationService
+  parent: Api.Hubs.Notification
+  children:
+  - Api.Hubs.Notification.NotificationService.#ctor(Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub})
+  - Api.Hubs.Notification.NotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  - Api.Hubs.Notification.NotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  - Api.Hubs.Notification.NotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: NotificationService
+  nameWithType: NotificationService
+  fullName: Api.Hubs.Notification.NotificationService
+  type: Class
+  source:
+    remote:
+      path: Api/Hubs/Notification/NotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NotificationService
+    path: ../Api/Hubs/Notification/NotificationService.cs
+    startLine: 11
+  assemblies:
+  - Api
+  namespace: Api.Hubs.Notification
+  summary: >-
+    Implementação do serviço de envio de notificações em tempo real.
+
+
+    Esta classe utiliza o [IHubContext] para invocar métodos nos clientes ligados ao [NotificationHub]
+
+    a partir de qualquer ponto da aplicação (fora do contexto do Hub).
+  example: []
+  syntax:
+    content: 'public class NotificationService : INotificationService'
+    content.vb: Public Class NotificationService Implements INotificationService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.Hub.INotificationService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Api.Hubs.Notification.NotificationService.#ctor(Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub})
+  commentId: M:Api.Hubs.Notification.NotificationService.#ctor(Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub})
+  id: '#ctor(Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub})'
+  parent: Api.Hubs.Notification.NotificationService
+  langs:
+  - csharp
+  - vb
+  name: NotificationService(IHubContext<NotificationHub>)
+  nameWithType: NotificationService.NotificationService(IHubContext<NotificationHub>)
+  fullName: Api.Hubs.Notification.NotificationService.NotificationService(Microsoft.AspNetCore.SignalR.IHubContext<Api.Hubs.NotificationHub>)
+  type: Constructor
+  source:
+    remote:
+      path: Api/Hubs/Notification/NotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Api/Hubs/Notification/NotificationService.cs
+    startLine: 22
+  assemblies:
+  - Api
+  namespace: Api.Hubs.Notification
+  summary: Construtor do NotificationService.
+  example: []
+  syntax:
+    content: public NotificationService(IHubContext<NotificationHub> hubContext)
+    parameters:
+    - id: hubContext
+      type: Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub}
+      description: Contexto do [NotificationHub] injetado via Dependency Injection.
+    content.vb: Public Sub New(hubContext As IHubContext(Of NotificationHub))
+  overload: Api.Hubs.Notification.NotificationService.#ctor*
+  nameWithType.vb: NotificationService.New(IHubContext(Of NotificationHub))
+  fullName.vb: Api.Hubs.Notification.NotificationService.New(Microsoft.AspNetCore.SignalR.IHubContext(Of Api.Hubs.NotificationHub))
+  name.vb: New(IHubContext(Of NotificationHub))
+- uid: Api.Hubs.Notification.NotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Api.Hubs.Notification.NotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  id: SendUserAsync(System.String,System.String,System.String,System.Object)
+  parent: Api.Hubs.Notification.NotificationService
+  langs:
+  - csharp
+  - vb
+  name: SendUserAsync(string, string, string, object?)
+  nameWithType: NotificationService.SendUserAsync(string, string, string, object?)
+  fullName: Api.Hubs.Notification.NotificationService.SendUserAsync(string, string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Api/Hubs/Notification/NotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendUserAsync
+    path: ../Api/Hubs/Notification/NotificationService.cs
+    startLine: 38
+  assemblies:
+  - Api
+  namespace: Api.Hubs.Notification
+  summary: Envia uma notificação direcionada a um utilizador específico.
+  remarks: >-
+    O [userId] deve corresponder ao identificador do utilizador autenticado (ClaimTypes.NameIdentifier)
+
+    mapeado pelo SignalR.
+  example: []
+  syntax:
+    content: public Task SendUserAsync(string userId, string title, string body, object? data = null)
+    parameters:
+    - id: userId
+      type: System.String
+      description: O ID do utilizador de destino.
+    - id: title
+      type: System.String
+      description: O título da notificação.
+    - id: body
+      type: System.String
+      description: O corpo da mensagem.
+    - id: data
+      type: System.Object
+      description: Objeto opcional com dados extra (payload) para ser processado pelo cliente.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendUserAsync(userId As String, title As String, body As String, data As Object = Nothing) As Task
+  overload: Api.Hubs.Notification.NotificationService.SendUserAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  nameWithType.vb: NotificationService.SendUserAsync(String, String, String, Object)
+  fullName.vb: Api.Hubs.Notification.NotificationService.SendUserAsync(String, String, String, Object)
+  name.vb: SendUserAsync(String, String, String, Object)
+- uid: Api.Hubs.Notification.NotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Api.Hubs.Notification.NotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  id: SendTeamAsync(System.String,System.String,System.String,System.Object)
+  parent: Api.Hubs.Notification.NotificationService
+  langs:
+  - csharp
+  - vb
+  name: SendTeamAsync(string, string, string, object?)
+  nameWithType: NotificationService.SendTeamAsync(string, string, string, object?)
+  fullName: Api.Hubs.Notification.NotificationService.SendTeamAsync(string, string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Api/Hubs/Notification/NotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendTeamAsync
+    path: ../Api/Hubs/Notification/NotificationService.cs
+    startLine: 52
+  assemblies:
+  - Api
+  namespace: Api.Hubs.Notification
+  summary: Envia uma notificação para um grupo de utilizadores (uma Equipa).
+  remarks: >-
+    Utiliza o [teamId] como nome do grupo SignalR.
+
+    **Nota:** Certifique-se de que o nome do grupo aqui corresponde à lógica de `Join` no Hub (ex: prefixos).
+  example: []
+  syntax:
+    content: public Task SendTeamAsync(string teamId, string title, string body, object? data = null)
+    parameters:
+    - id: teamId
+      type: System.String
+      description: O ID da equipa (nome do grupo) para onde enviar a mensagem.
+    - id: title
+      type: System.String
+      description: O título da notificação.
+    - id: body
+      type: System.String
+      description: O corpo da mensagem.
+    - id: data
+      type: System.Object
+      description: Objeto opcional com dados extra.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendTeamAsync(teamId As String, title As String, body As String, data As Object = Nothing) As Task
+  overload: Api.Hubs.Notification.NotificationService.SendTeamAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  nameWithType.vb: NotificationService.SendTeamAsync(String, String, String, Object)
+  fullName.vb: Api.Hubs.Notification.NotificationService.SendTeamAsync(String, String, String, Object)
+  name.vb: SendTeamAsync(String, String, String, Object)
+- uid: Api.Hubs.Notification.NotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  commentId: M:Api.Hubs.Notification.NotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  id: BroadcastAsync(System.String,System.String,System.Object)
+  parent: Api.Hubs.Notification.NotificationService
+  langs:
+  - csharp
+  - vb
+  name: BroadcastAsync(string, string, object?)
+  nameWithType: NotificationService.BroadcastAsync(string, string, object?)
+  fullName: Api.Hubs.Notification.NotificationService.BroadcastAsync(string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Api/Hubs/Notification/NotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: BroadcastAsync
+    path: ../Api/Hubs/Notification/NotificationService.cs
+    startLine: 61
+  assemblies:
+  - Api
+  namespace: Api.Hubs.Notification
+  summary: Envia uma notificação global para TODOS os clientes conectados (Broadcast).
+  example: []
+  syntax:
+    content: public Task BroadcastAsync(string title, string body, object? data = null)
+    parameters:
+    - id: title
+      type: System.String
+      description: O título da notificação.
+    - id: body
+      type: System.String
+      description: O corpo da mensagem.
+    - id: data
+      type: System.Object
+      description: Objeto opcional com dados extra.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function BroadcastAsync(title As String, body As String, data As Object = Nothing) As Task
+  overload: Api.Hubs.Notification.NotificationService.BroadcastAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  nameWithType.vb: NotificationService.BroadcastAsync(String, String, Object)
+  fullName.vb: Api.Hubs.Notification.NotificationService.BroadcastAsync(String, String, Object)
+  name.vb: BroadcastAsync(String, String, Object)
+references:
+- uid: Api.Hubs.Notification
+  commentId: N:Api.Hubs.Notification
+  href: Api.html
+  name: Api.Hubs.Notification
+  nameWithType: Api.Hubs.Notification
+  fullName: Api.Hubs.Notification
+  spec.csharp:
+  - uid: Api
+    name: Api
+    href: Api.html
+  - name: .
+  - uid: Api.Hubs
+    name: Hubs
+    href: Api.Hubs.html
+  - name: .
+  - uid: Api.Hubs.Notification
+    name: Notification
+    href: Api.Hubs.Notification.html
+  spec.vb:
+  - uid: Api
+    name: Api
+    href: Api.html
+  - name: .
+  - uid: Api.Hubs
+    name: Hubs
+    href: Api.Hubs.html
+  - name: .
+  - uid: Api.Hubs.Notification
+    name: Notification
+    href: Api.Hubs.Notification.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.Hub.INotificationService
+  commentId: T:Application.Interfaces.Services.Hub.INotificationService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.INotificationService.html
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: Application.Interfaces.Services.Hub.INotificationService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Api.Hubs.Notification.NotificationService.#ctor*
+  commentId: Overload:Api.Hubs.Notification.NotificationService.#ctor
+  href: Api.Hubs.Notification.NotificationService.html#Api_Hubs_Notification_NotificationService__ctor_Microsoft_AspNetCore_SignalR_IHubContext_Api_Hubs_NotificationHub__
+  name: NotificationService
+  nameWithType: NotificationService.NotificationService
+  fullName: Api.Hubs.Notification.NotificationService.NotificationService
+  nameWithType.vb: NotificationService.New
+  fullName.vb: Api.Hubs.Notification.NotificationService.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub}
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.NotificationHub}
+  parent: Microsoft.AspNetCore.SignalR
+  definition: Microsoft.AspNetCore.SignalR.IHubContext`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  name: IHubContext<NotificationHub>
+  nameWithType: IHubContext<NotificationHub>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<Api.Hubs.NotificationHub>
+  nameWithType.vb: IHubContext(Of NotificationHub)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of Api.Hubs.NotificationHub)
+  name.vb: IHubContext(Of NotificationHub)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  - name: <
+  - uid: Api.Hubs.NotificationHub
+    name: NotificationHub
+    href: Api.Hubs.NotificationHub.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Api.Hubs.NotificationHub
+    name: NotificationHub
+    href: Api.Hubs.NotificationHub.html
+  - name: )
+- uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  name: IHubContext<THub>
+  nameWithType: IHubContext<THub>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<THub>
+  nameWithType.vb: IHubContext(Of THub)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of THub)
+  name.vb: IHubContext(Of THub)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  - name: <
+  - name: THub
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: THub
+  - name: )
+- uid: Microsoft.AspNetCore.SignalR
+  commentId: N:Microsoft.AspNetCore.SignalR
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.SignalR
+  nameWithType: Microsoft.AspNetCore.SignalR
+  fullName: Microsoft.AspNetCore.SignalR
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.SignalR
+    name: SignalR
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.SignalR
+    name: SignalR
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr
+- uid: Api.Hubs.Notification.NotificationService.SendUserAsync*
+  commentId: Overload:Api.Hubs.Notification.NotificationService.SendUserAsync
+  href: Api.Hubs.Notification.NotificationService.html#Api_Hubs_Notification_NotificationService_SendUserAsync_System_String_System_String_System_String_System_Object_
+  name: SendUserAsync
+  nameWithType: NotificationService.SendUserAsync
+  fullName: Api.Hubs.Notification.NotificationService.SendUserAsync
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SendUserAsync(string, string, string, object)
+  nameWithType: INotificationService.SendUserAsync(string, string, string, object)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(string, string, string, object)
+  nameWithType.vb: INotificationService.SendUserAsync(String, String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(String, String, String, Object)
+  name.vb: SendUserAsync(String, String, String, Object)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+    name: SendUserAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+    name: SendUserAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Api.Hubs.Notification.NotificationService.SendTeamAsync*
+  commentId: Overload:Api.Hubs.Notification.NotificationService.SendTeamAsync
+  href: Api.Hubs.Notification.NotificationService.html#Api_Hubs_Notification_NotificationService_SendTeamAsync_System_String_System_String_System_String_System_Object_
+  name: SendTeamAsync
+  nameWithType: NotificationService.SendTeamAsync
+  fullName: Api.Hubs.Notification.NotificationService.SendTeamAsync
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SendTeamAsync(string, string, string, object)
+  nameWithType: INotificationService.SendTeamAsync(string, string, string, object)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(string, string, string, object)
+  nameWithType.vb: INotificationService.SendTeamAsync(String, String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(String, String, String, Object)
+  name.vb: SendTeamAsync(String, String, String, Object)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+    name: SendTeamAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+    name: SendTeamAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Api.Hubs.Notification.NotificationService.BroadcastAsync*
+  commentId: Overload:Api.Hubs.Notification.NotificationService.BroadcastAsync
+  href: Api.Hubs.Notification.NotificationService.html#Api_Hubs_Notification_NotificationService_BroadcastAsync_System_String_System_String_System_Object_
+  name: BroadcastAsync
+  nameWithType: NotificationService.BroadcastAsync
+  fullName: Api.Hubs.Notification.NotificationService.BroadcastAsync
+- uid: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: BroadcastAsync(string, string, object)
+  nameWithType: INotificationService.BroadcastAsync(string, string, object)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(string, string, object)
+  nameWithType.vb: INotificationService.BroadcastAsync(String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(String, String, Object)
+  name.vb: BroadcastAsync(String, String, Object)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+    name: BroadcastAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+    name: BroadcastAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )

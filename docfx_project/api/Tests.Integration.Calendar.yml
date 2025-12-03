@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.Calendar
+  commentId: N:Tests.Integration.Calendar
+  id: Tests.Integration.Calendar
+  children:
+  - Tests.Integration.Calendar.CalendarIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.Calendar
+  nameWithType: Tests.Integration.Calendar
+  fullName: Tests.Integration.Calendar
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.Calendar.CalendarIntegrationTests
+  commentId: T:Tests.Integration.Calendar.CalendarIntegrationTests
+  href: Tests.Integration.Calendar.CalendarIntegrationTests.html
+  name: CalendarIntegrationTests
+  nameWithType: CalendarIntegrationTests
+  fullName: Tests.Integration.Calendar.CalendarIntegrationTests

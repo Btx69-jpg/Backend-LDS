@@ -1,0 +1,694 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService
+  commentId: T:Application.Services.Hub.ClientService.StartMatchHubClientService
+  id: StartMatchHubClientService
+  parent: Application.Services.Hub.ClientService
+  children:
+  - Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor
+  - Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync
+  - Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync
+  - Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  - Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync
+  langs:
+  - csharp
+  - vb
+  name: StartMatchHubClientService
+  nameWithType: StartMatchHubClientService
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: StartMatchHubClientService
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  syntax:
+    content: 'public class StartMatchHubClientService : IStartMatchHubClientService'
+    content.vb: Public Class StartMatchHubClientService Implements IStartMatchHubClientService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor
+  commentId: M:Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor
+  id: '#ctor'
+  parent: Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: StartMatchHubClientService()
+  nameWithType: StartMatchHubClientService.StartMatchHubClientService()
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.StartMatchHubClientService()
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  syntax:
+    content: public StartMatchHubClientService()
+    content.vb: Public Sub New()
+  overload: Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor*
+  nameWithType.vb: StartMatchHubClientService.New()
+  fullName.vb: Application.Services.Hub.ClientService.StartMatchHubClientService.New()
+  name.vb: New()
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync
+  commentId: M:Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync
+  id: InitializeAsync
+  parent: Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: StartMatchHubClientService.InitializeAsync()
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: InitializeAsync
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  example: []
+  syntax:
+    content: public Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InitializeAsync() As Task
+  overload: Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync
+  commentId: M:Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync
+  id: ConnectAsync
+  parent: Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync()
+  nameWithType: StartMatchHubClientService.ConnectAsync()
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ConnectAsync
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 33
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  example: []
+  syntax:
+    content: public Task ConnectAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ConnectAsync() As Task
+  overload: Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync*
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  commentId: M:Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  id: JoinStartMatchAsync(System.Guid,System.Guid)
+  parent: Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: JoinStartMatchAsync(Guid, Guid)
+  nameWithType: StartMatchHubClientService.JoinStartMatchAsync(Guid, Guid)
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinStartMatchAsync
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 58
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  example: []
+  syntax:
+    content: public Task JoinStartMatchAsync(Guid idMatch, Guid idTeam)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function JoinStartMatchAsync(idMatch As Guid, idTeam As Guid) As Task
+  overload: Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync
+  commentId: M:Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync
+  id: LeaveStartMatchAsync
+  parent: Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: LeaveStartMatchAsync()
+  nameWithType: StartMatchHubClientService.LeaveStartMatchAsync()
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveStartMatchAsync
+    path: ../Application/Services/Hub/ClientService/StartMatchHubClientService.cs
+    startLine: 67
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub.ClientService
+  example: []
+  syntax:
+    content: public Task LeaveStartMatchAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LeaveStartMatchAsync() As Task
+  overload: Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+references:
+- uid: Application.Services.Hub.ClientService
+  commentId: N:Application.Services.Hub.ClientService
+  href: Application.html
+  name: Application.Services.Hub.ClientService
+  nameWithType: Application.Services.Hub.ClientService
+  fullName: Application.Services.Hub.ClientService
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.Hub
+    name: Hub
+    href: Application.Services.Hub.html
+  - name: .
+  - uid: Application.Services.Hub.ClientService
+    name: ClientService
+    href: Application.Services.Hub.ClientService.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.Hub
+    name: Hub
+    href: Application.Services.Hub.html
+  - name: .
+  - uid: Application.Services.Hub.ClientService
+    name: ClientService
+    href: Application.Services.Hub.ClientService.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  commentId: T:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  parent: Application.Interfaces.Services.Hub.ClienteService
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html
+  name: IStartMatchHubClientService
+  nameWithType: IStartMatchHubClientService
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services.Hub.ClienteService
+  commentId: N:Application.Interfaces.Services.Hub.ClienteService
+  href: Application.html
+  name: Application.Interfaces.Services.Hub.ClienteService
+  nameWithType: Application.Interfaces.Services.Hub.ClienteService
+  fullName: Application.Interfaces.Services.Hub.ClienteService
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor*
+  commentId: Overload:Application.Services.Hub.ClientService.StartMatchHubClientService.#ctor
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html#Application_Services_Hub_ClientService_StartMatchHubClientService__ctor
+  name: StartMatchHubClientService
+  nameWithType: StartMatchHubClientService.StartMatchHubClientService
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.StartMatchHubClientService
+  nameWithType.vb: StartMatchHubClientService.New
+  fullName.vb: Application.Services.Hub.ClientService.StartMatchHubClientService.New
+  name.vb: New
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync*
+  commentId: Overload:Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html#Application_Services_Hub_ClientService_StartMatchHubClientService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: StartMatchHubClientService.InitializeAsync
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.InitializeAsync
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IStartMatchHubClientService.InitializeAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync()
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+    name: InitializeAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+    name: InitializeAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync*
+  commentId: Overload:Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html#Application_Services_Hub_ClientService_StartMatchHubClientService_ConnectAsync
+  name: ConnectAsync
+  nameWithType: StartMatchHubClientService.ConnectAsync
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.ConnectAsync
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync*
+  commentId: Overload:Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html#Application_Services_Hub_ClientService_StartMatchHubClientService_JoinStartMatchAsync_System_Guid_System_Guid_
+  name: JoinStartMatchAsync
+  nameWithType: StartMatchHubClientService.JoinStartMatchAsync
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.JoinStartMatchAsync
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  isExternal: true
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_JoinStartMatchAsync_System_Guid_System_Guid_
+  name: JoinStartMatchAsync(Guid, Guid)
+  nameWithType: IStartMatchHubClientService.JoinStartMatchAsync(Guid, Guid)
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+    name: JoinStartMatchAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_JoinStartMatchAsync_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+    name: JoinStartMatchAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_JoinStartMatchAsync_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync*
+  commentId: Overload:Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html#Application_Services_Hub_ClientService_StartMatchHubClientService_LeaveStartMatchAsync
+  name: LeaveStartMatchAsync
+  nameWithType: StartMatchHubClientService.LeaveStartMatchAsync
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService.LeaveStartMatchAsync
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_LeaveStartMatchAsync
+  name: LeaveStartMatchAsync()
+  nameWithType: IStartMatchHubClientService.LeaveStartMatchAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync()
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+    name: LeaveStartMatchAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_LeaveStartMatchAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+    name: LeaveStartMatchAsync
+    href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_LeaveStartMatchAsync
+  - name: (
+  - name: )

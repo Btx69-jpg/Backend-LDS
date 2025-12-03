@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.IUserDataValidator
+  commentId: T:Application.Interfaces.Validators.IUserDataValidator
+  id: IUserDataValidator
+  parent: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  - Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  - Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  - Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUserDataValidator
+  nameWithType: IUserDataValidator
+  fullName: Application.Interfaces.Validators.IUserDataValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IUserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IUserDataValidator
+    path: ../Application/Interfaces/Validators/IUserDataValidator.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: public interface IUserDataValidator
+    content.vb: Public Interface IUserDataValidator
+- uid: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  id: EmailValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: EmailValidation(string)
+  nameWithType: IUserDataValidator.EmailValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IUserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: EmailValidation
+    path: ../Application/Interfaces/Validators/IUserDataValidator.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void EmailValidation(string email)
+    parameters:
+    - id: email
+      type: System.String
+    content.vb: Sub EmailValidation(email As String)
+  overload: Application.Interfaces.Validators.IUserDataValidator.EmailValidation*
+  nameWithType.vb: IUserDataValidator.EmailValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(String)
+  name.vb: EmailValidation(String)
+- uid: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  id: PhoneNumberValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberValidation(string)
+  nameWithType: IUserDataValidator.PhoneNumberValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IUserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PhoneNumberValidation
+    path: ../Application/Interfaces/Validators/IUserDataValidator.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void PhoneNumberValidation(string phoneNumber)
+    parameters:
+    - id: phoneNumber
+      type: System.String
+    content.vb: Sub PhoneNumberValidation(phoneNumber As String)
+  overload: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation*
+  nameWithType.vb: IUserDataValidator.PhoneNumberValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(String)
+  name.vb: PhoneNumberValidation(String)
+- uid: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  id: CreateUserValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: CreateUserValidation(string)
+  nameWithType: IUserDataValidator.CreateUserValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IUserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateUserValidation
+    path: ../Application/Interfaces/Validators/IUserDataValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void CreateUserValidation(string newUserId)
+    parameters:
+    - id: newUserId
+      type: System.String
+    content.vb: Sub CreateUserValidation(newUserId As String)
+  overload: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation*
+  nameWithType.vb: IUserDataValidator.CreateUserValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(String)
+  name.vb: CreateUserValidation(String)
+- uid: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  id: DeleteUserValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserValidation(string)
+  nameWithType: IUserDataValidator.DeleteUserValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IUserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteUserValidation
+    path: ../Application/Interfaces/Validators/IUserDataValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void DeleteUserValidation(string userIdToDelete)
+    parameters:
+    - id: userIdToDelete
+      type: System.String
+    content.vb: Sub DeleteUserValidation(userIdToDelete As String)
+  overload: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation*
+  nameWithType.vb: IUserDataValidator.DeleteUserValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(String)
+  name.vb: DeleteUserValidation(String)
+references:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Validators.IUserDataValidator.EmailValidation*
+  commentId: Overload:Application.Interfaces.Validators.IUserDataValidator.EmailValidation
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_EmailValidation_System_String_
+  name: EmailValidation
+  nameWithType: IUserDataValidator.EmailValidation
+  fullName: Application.Interfaces.Validators.IUserDataValidator.EmailValidation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation*
+  commentId: Overload:Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_PhoneNumberValidation_System_String_
+  name: PhoneNumberValidation
+  nameWithType: IUserDataValidator.PhoneNumberValidation
+  fullName: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation*
+  commentId: Overload:Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_CreateUserValidation_System_String_
+  name: CreateUserValidation
+  nameWithType: IUserDataValidator.CreateUserValidation
+  fullName: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation*
+  commentId: Overload:Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_DeleteUserValidation_System_String_
+  name: DeleteUserValidation
+  nameWithType: IUserDataValidator.DeleteUserValidation
+  fullName: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation

@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Hubs
+  commentId: N:Application.Hubs
+  id: Application.Hubs
+  children:
+  - Application.Hubs.EntryHubFinishMatch
+  - Application.Hubs.JoinFinishMatch
+  - Application.Hubs.JoinStartMatchResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Hubs
+  nameWithType: Application.Hubs
+  fullName: Application.Hubs
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Hubs.EntryHubFinishMatch
+  commentId: T:Application.Hubs.EntryHubFinishMatch
+  href: Application.Hubs.EntryHubFinishMatch.html
+  name: EntryHubFinishMatch
+  nameWithType: EntryHubFinishMatch
+  fullName: Application.Hubs.EntryHubFinishMatch
+- uid: Application.Hubs.JoinFinishMatch
+  commentId: T:Application.Hubs.JoinFinishMatch
+  parent: Application.Hubs
+  href: Application.Hubs.JoinFinishMatch.html
+  name: JoinFinishMatch
+  nameWithType: JoinFinishMatch
+  fullName: Application.Hubs.JoinFinishMatch
+- uid: Application.Hubs.JoinStartMatchResult
+  commentId: T:Application.Hubs.JoinStartMatchResult
+  href: Application.Hubs.JoinStartMatchResult.html
+  name: JoinStartMatchResult
+  nameWithType: JoinStartMatchResult
+  fullName: Application.Hubs.JoinStartMatchResult
+- uid: Application.Hubs
+  commentId: N:Application.Hubs
+  href: Application.html
+  name: Application.Hubs
+  nameWithType: Application.Hubs
+  fullName: Application.Hubs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Hubs
+    name: Hubs
+    href: Application.Hubs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Hubs
+    name: Hubs
+    href: Application.Hubs.html

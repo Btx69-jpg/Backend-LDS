@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.MatchInvites
+  commentId: N:Application.DTOs.MatchInvites
+  id: Application.DTOs.MatchInvites
+  children:
+  - Application.DTOs.MatchInvites.InfoMatchInviteDto
+  - Application.DTOs.MatchInvites.SendMatchInviteDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.MatchInvites
+  nameWithType: Application.DTOs.MatchInvites
+  fullName: Application.DTOs.MatchInvites
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+  commentId: T:Application.DTOs.MatchInvites.InfoMatchInviteDto
+  parent: Application.DTOs.MatchInvites
+  href: Application.DTOs.MatchInvites.InfoMatchInviteDto.html
+  name: InfoMatchInviteDto
+  nameWithType: InfoMatchInviteDto
+  fullName: Application.DTOs.MatchInvites.InfoMatchInviteDto
+- uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+  commentId: T:Application.DTOs.MatchInvites.SendMatchInviteDto
+  parent: Application.DTOs.MatchInvites
+  href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  name: SendMatchInviteDto
+  nameWithType: SendMatchInviteDto
+  fullName: Application.DTOs.MatchInvites.SendMatchInviteDto
+- uid: Application.DTOs.MatchInvites
+  commentId: N:Application.DTOs.MatchInvites
+  href: Application.html
+  name: Application.DTOs.MatchInvites
+  nameWithType: Application.DTOs.MatchInvites
+  fullName: Application.DTOs.MatchInvites
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html

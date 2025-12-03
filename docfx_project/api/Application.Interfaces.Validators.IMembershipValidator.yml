@@ -1,0 +1,386 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.IMembershipValidator
+  commentId: T:Application.Interfaces.Validators.IMembershipValidator
+  id: IMembershipValidator
+  parent: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer(Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam(Domain.Entities.Team,Domain.Entities.Player)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer(Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  - Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  langs:
+  - csharp
+  - vb
+  name: IMembershipValidator
+  nameWithType: IMembershipValidator
+  fullName: Application.Interfaces.Validators.IMembershipValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IMembershipValidator
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: public interface IMembershipValidator
+    content.vb: Public Interface IMembershipValidator
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  id: ValidateSendRequestByPlayer(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSendRequestByPlayer(Player, Team, MembershipRequest?)
+  nameWithType: IMembershipValidator.ValidateSendRequestByPlayer(Player, Team, MembershipRequest?)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer(Domain.Entities.Player, Domain.Entities.Team, Domain.Entities.MembershipRequest?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateSendRequestByPlayer
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateSendRequestByPlayer(Player player, Team team, MembershipRequest? existingRequest)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    - id: team
+      type: Domain.Entities.Team
+    - id: existingRequest
+      type: Domain.Entities.MembershipRequest
+    content.vb: Sub ValidateSendRequestByPlayer(player As Player, team As Team, existingRequest As MembershipRequest)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer*
+  nameWithType.vb: IMembershipValidator.ValidateSendRequestByPlayer(Player, Team, MembershipRequest)
+  fullName.vb: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer(Domain.Entities.Player, Domain.Entities.Team, Domain.Entities.MembershipRequest)
+  name.vb: ValidateSendRequestByPlayer(Player, Team, MembershipRequest)
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  id: ValidateSendRequestByTeam(Domain.Entities.Team,Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSendRequestByTeam(Team, Player, MembershipRequest?, Player)
+  nameWithType: IMembershipValidator.ValidateSendRequestByTeam(Team, Player, MembershipRequest?, Player)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.MembershipRequest?, Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateSendRequestByTeam
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateSendRequestByTeam(Team team, Player invitedPlayer, MembershipRequest? existingRequest, Player player)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: invitedPlayer
+      type: Domain.Entities.Player
+    - id: existingRequest
+      type: Domain.Entities.MembershipRequest
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub ValidateSendRequestByTeam(team As Team, invitedPlayer As Player, existingRequest As MembershipRequest, player As Player)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam*
+  nameWithType.vb: IMembershipValidator.ValidateSendRequestByTeam(Team, Player, MembershipRequest, Player)
+  fullName.vb: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam(Domain.Entities.Team, Domain.Entities.Player, Domain.Entities.MembershipRequest, Domain.Entities.Player)
+  name.vb: ValidateSendRequestByTeam(Team, Player, MembershipRequest, Player)
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  id: ValidateAcceptRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAcceptRequestByTeam(Team, MembershipRequest, Player)
+  nameWithType: IMembershipValidator.ValidateAcceptRequestByTeam(Team, MembershipRequest, Player)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam(Domain.Entities.Team, Domain.Entities.MembershipRequest, Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateAcceptRequestByTeam
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateAcceptRequestByTeam(Team team, MembershipRequest request, Player playerAccepting)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: request
+      type: Domain.Entities.MembershipRequest
+    - id: playerAccepting
+      type: Domain.Entities.Player
+    content.vb: Sub ValidateAcceptRequestByTeam(team As Team, request As MembershipRequest, playerAccepting As Player)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam*
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  id: ValidateRejectRequestByTeam(Domain.Entities.Team,Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateRejectRequestByTeam(Team, MembershipRequest, Player)
+  nameWithType: IMembershipValidator.ValidateRejectRequestByTeam(Team, MembershipRequest, Player)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam(Domain.Entities.Team, Domain.Entities.MembershipRequest, Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateRejectRequestByTeam
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateRejectRequestByTeam(Team team, MembershipRequest request, Player player)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: request
+      type: Domain.Entities.MembershipRequest
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub ValidateRejectRequestByTeam(team As Team, request As MembershipRequest, player As Player)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam*
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam(Domain.Entities.Team,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam(Domain.Entities.Team,Domain.Entities.Player)
+  id: ValidateGetRequestsByTeam(Domain.Entities.Team,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateGetRequestsByTeam(Team, Player)
+  nameWithType: IMembershipValidator.ValidateGetRequestsByTeam(Team, Player)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam(Domain.Entities.Team, Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateGetRequestsByTeam
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateGetRequestsByTeam(Team team, Player player)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub ValidateGetRequestsByTeam(team As Team, player As Player)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam*
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer(Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer(Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  id: ValidateAcceptRequestByPlayer(Domain.Entities.Player,Domain.Entities.MembershipRequest,Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAcceptRequestByPlayer(Player, MembershipRequest, Team)
+  nameWithType: IMembershipValidator.ValidateAcceptRequestByPlayer(Player, MembershipRequest, Team)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer(Domain.Entities.Player, Domain.Entities.MembershipRequest, Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateAcceptRequestByPlayer
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateAcceptRequestByPlayer(Player player, MembershipRequest request, Team team)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+    - id: request
+      type: Domain.Entities.MembershipRequest
+    - id: team
+      type: Domain.Entities.Team
+    content.vb: Sub ValidateAcceptRequestByPlayer(player As Player, request As MembershipRequest, team As Team)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer*
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer(Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer(Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  id: ValidateRejectRequestByPlayer(Domain.Entities.MembershipRequest,Domain.Entities.Player)
+  parent: Application.Interfaces.Validators.IMembershipValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateRejectRequestByPlayer(MembershipRequest, Player)
+  nameWithType: IMembershipValidator.ValidateRejectRequestByPlayer(MembershipRequest, Player)
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer(Domain.Entities.MembershipRequest, Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMembershipValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateRejectRequestByPlayer
+    path: ../Application/Interfaces/Validators/IMembershipValidator.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateRejectRequestByPlayer(MembershipRequest request, Player player)
+    parameters:
+    - id: request
+      type: Domain.Entities.MembershipRequest
+    - id: player
+      type: Domain.Entities.Player
+    content.vb: Sub ValidateRejectRequestByPlayer(request As MembershipRequest, player As Player)
+  overload: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer*
+references:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateSendRequestByPlayer_Domain_Entities_Player_Domain_Entities_Team_Domain_Entities_MembershipRequest_
+  name: ValidateSendRequestByPlayer
+  nameWithType: IMembershipValidator.ValidateSendRequestByPlayer
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByPlayer
+- uid: Domain.Entities.Player
+  commentId: T:Domain.Entities.Player
+  parent: Domain.Entities
+  href: Domain.Entities.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Domain.Entities.Player
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities.MembershipRequest
+  commentId: T:Domain.Entities.MembershipRequest
+  parent: Domain.Entities
+  href: Domain.Entities.MembershipRequest.html
+  name: MembershipRequest
+  nameWithType: MembershipRequest
+  fullName: Domain.Entities.MembershipRequest
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateSendRequestByTeam_Domain_Entities_Team_Domain_Entities_Player_Domain_Entities_MembershipRequest_Domain_Entities_Player_
+  name: ValidateSendRequestByTeam
+  nameWithType: IMembershipValidator.ValidateSendRequestByTeam
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateSendRequestByTeam
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateAcceptRequestByTeam_Domain_Entities_Team_Domain_Entities_MembershipRequest_Domain_Entities_Player_
+  name: ValidateAcceptRequestByTeam
+  nameWithType: IMembershipValidator.ValidateAcceptRequestByTeam
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByTeam
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateRejectRequestByTeam_Domain_Entities_Team_Domain_Entities_MembershipRequest_Domain_Entities_Player_
+  name: ValidateRejectRequestByTeam
+  nameWithType: IMembershipValidator.ValidateRejectRequestByTeam
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByTeam
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateGetRequestsByTeam_Domain_Entities_Team_Domain_Entities_Player_
+  name: ValidateGetRequestsByTeam
+  nameWithType: IMembershipValidator.ValidateGetRequestsByTeam
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateGetRequestsByTeam
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateAcceptRequestByPlayer_Domain_Entities_Player_Domain_Entities_MembershipRequest_Domain_Entities_Team_
+  name: ValidateAcceptRequestByPlayer
+  nameWithType: IMembershipValidator.ValidateAcceptRequestByPlayer
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateAcceptRequestByPlayer
+- uid: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer*
+  commentId: Overload:Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer
+  href: Application.Interfaces.Validators.IMembershipValidator.html#Application_Interfaces_Validators_IMembershipValidator_ValidateRejectRequestByPlayer_Domain_Entities_MembershipRequest_Domain_Entities_Player_
+  name: ValidateRejectRequestByPlayer
+  nameWithType: IMembershipValidator.ValidateRejectRequestByPlayer
+  fullName: Application.Interfaces.Validators.IMembershipValidator.ValidateRejectRequestByPlayer

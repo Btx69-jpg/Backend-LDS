@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Constants.ModelConstants.TeamConst
+  commentId: T:Domain.Constants.ModelConstants.TeamConst
+  id: ModelConstants.TeamConst
+  parent: Domain.Constants
+  children:
+  - Domain.Constants.ModelConstants.TeamConst.MaxAdmins
+  - Domain.Constants.ModelConstants.TeamConst.MaxAverageAge
+  - Domain.Constants.ModelConstants.TeamConst.MaxDescriptionLength
+  - Domain.Constants.ModelConstants.TeamConst.MaxMembers
+  - Domain.Constants.ModelConstants.TeamConst.MaxNameLength
+  - Domain.Constants.ModelConstants.TeamConst.MaxNumberPoints
+  - Domain.Constants.ModelConstants.TeamConst.MinAdmins
+  - Domain.Constants.ModelConstants.TeamConst.MinAverageAge
+  - Domain.Constants.ModelConstants.TeamConst.MinMembers
+  - Domain.Constants.ModelConstants.TeamConst.MinNameLength
+  - Domain.Constants.ModelConstants.TeamConst.MinNumberPoints
+  langs:
+  - csharp
+  - vb
+  name: ModelConstants.TeamConst
+  nameWithType: ModelConstants.TeamConst
+  fullName: Domain.Constants.ModelConstants.TeamConst
+  type: Class
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamConst
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 32
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Constantes e limites de validação específicos para a entidade Equipa ([Team]).
+  example: []
+  syntax:
+    content: public static class ModelConstants.TeamConst
+    content.vb: Public Module ModelConstants.TeamConst
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxNameLength
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxNameLength
+  id: MaxNameLength
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxNameLength
+  nameWithType: ModelConstants.TeamConst.MaxNameLength
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxNameLength
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxNameLength
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 35
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Comprimento máximo para o nome da equipa.
+  example: []
+  syntax:
+    content: public const int MaxNameLength = 50
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxNameLength As Integer = 50
+- uid: Domain.Constants.ModelConstants.TeamConst.MinNameLength
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MinNameLength
+  id: MinNameLength
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MinNameLength
+  nameWithType: ModelConstants.TeamConst.MinNameLength
+  fullName: Domain.Constants.ModelConstants.TeamConst.MinNameLength
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinNameLength
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 37
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Comprimento mínimo para o nome da equipa.
+  example: []
+  syntax:
+    content: public const int MinNameLength = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const MinNameLength As Integer = 3
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxDescriptionLength
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxDescriptionLength
+  id: MaxDescriptionLength
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxDescriptionLength
+  nameWithType: ModelConstants.TeamConst.MaxDescriptionLength
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxDescriptionLength
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxDescriptionLength
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 39
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Comprimento máximo para a descrição da equipa.
+  example: []
+  syntax:
+    content: public const int MaxDescriptionLength = 250
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxDescriptionLength As Integer = 250
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxAdmins
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxAdmins
+  id: MaxAdmins
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxAdmins
+  nameWithType: ModelConstants.TeamConst.MaxAdmins
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxAdmins
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxAdmins
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 41
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Número máximo de administradores permitidos por equipa.
+  example: []
+  syntax:
+    content: public const int MaxAdmins = 4
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxAdmins As Integer = 4
+- uid: Domain.Constants.ModelConstants.TeamConst.MinAdmins
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MinAdmins
+  id: MinAdmins
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MinAdmins
+  nameWithType: ModelConstants.TeamConst.MinAdmins
+  fullName: Domain.Constants.ModelConstants.TeamConst.MinAdmins
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinAdmins
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 43
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Número mínimo de administradores exigidos por equipa.
+  example: []
+  syntax:
+    content: public const int MinAdmins = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const MinAdmins As Integer = 1
+- uid: Domain.Constants.ModelConstants.TeamConst.MinMembers
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MinMembers
+  id: MinMembers
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MinMembers
+  nameWithType: ModelConstants.TeamConst.MinMembers
+  fullName: Domain.Constants.ModelConstants.TeamConst.MinMembers
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinMembers
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 45
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Número mínimo de membros (jogadores/staff) em uma equipa.
+  example: []
+  syntax:
+    content: public const int MinMembers = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const MinMembers As Integer = 1
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxMembers
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxMembers
+  id: MaxMembers
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxMembers
+  nameWithType: ModelConstants.TeamConst.MaxMembers
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxMembers
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxMembers
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 47
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Número máximo de membros em uma equipa.
+  example: []
+  syntax:
+    content: public const int MaxMembers = 32
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxMembers As Integer = 32
+- uid: Domain.Constants.ModelConstants.TeamConst.MinNumberPoints
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MinNumberPoints
+  id: MinNumberPoints
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MinNumberPoints
+  nameWithType: ModelConstants.TeamConst.MinNumberPoints
+  fullName: Domain.Constants.ModelConstants.TeamConst.MinNumberPoints
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinNumberPoints
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 49
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Valor mínimo para os pontos de ranking.
+  example: []
+  syntax:
+    content: public const int MinNumberPoints = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const MinNumberPoints As Integer = 0
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxNumberPoints
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxNumberPoints
+  id: MaxNumberPoints
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxNumberPoints
+  nameWithType: ModelConstants.TeamConst.MaxNumberPoints
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxNumberPoints
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxNumberPoints
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 51
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Valor máximo para os pontos de ranking.
+  example: []
+  syntax:
+    content: public const int MaxNumberPoints = 2147483647
+    return:
+      type: System.Int32
+    content.vb: Public Const MaxNumberPoints As Integer = 2147483647
+- uid: Domain.Constants.ModelConstants.TeamConst.MinAverageAge
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MinAverageAge
+  id: MinAverageAge
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MinAverageAge
+  nameWithType: ModelConstants.TeamConst.MinAverageAge
+  fullName: Domain.Constants.ModelConstants.TeamConst.MinAverageAge
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinAverageAge
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 53
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Idade média mínima permitida para uma equipa (igual à idade mínima do utilizador).
+  example: []
+  syntax:
+    content: public const float MinAverageAge = 18
+    return:
+      type: System.Single
+    content.vb: Public Const MinAverageAge As Single = 18
+- uid: Domain.Constants.ModelConstants.TeamConst.MaxAverageAge
+  commentId: F:Domain.Constants.ModelConstants.TeamConst.MaxAverageAge
+  id: MaxAverageAge
+  parent: Domain.Constants.ModelConstants.TeamConst
+  langs:
+  - csharp
+  - vb
+  name: MaxAverageAge
+  nameWithType: ModelConstants.TeamConst.MaxAverageAge
+  fullName: Domain.Constants.ModelConstants.TeamConst.MaxAverageAge
+  type: Field
+  source:
+    remote:
+      path: Domain/Constants/ModelConstants.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxAverageAge
+    path: ../Domain/Constants/ModelConstants.cs
+    startLine: 55
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  summary: Idade média máxima permitida para uma equipa (igual à idade máxima do utilizador).
+  example: []
+  syntax:
+    content: public const float MaxAverageAge = 70
+    return:
+      type: System.Single
+    content.vb: Public Const MaxAverageAge As Single = 70
+references:
+- uid: Domain.Constants
+  commentId: N:Domain.Constants
+  href: Domain.html
+  name: Domain.Constants
+  nameWithType: Domain.Constants
+  fullName: Domain.Constants
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Constants
+    name: Constants
+    href: Domain.Constants.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Constants
+    name: Constants
+    href: Domain.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MatchRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MatchRepository | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio principal para a entidade [Matches]. Esta classe &#233; respons&#225;vel por todas as opera&#231;&#245;es de persist&#234;ncia, consulta e agrega&#231;&#227;o de dados de partidas, incluindo l&#243;gica complexa de carregamento de entidades relacionadas e filtragem.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_MatchRepository.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.MatchRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.MatchRepository">
+
+
+
+  <h1 id="Infrastructure_Repositories_MatchRepository" data-uid="Infrastructure.Repositories.MatchRepository" class="text-break">
+Class MatchRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório principal para a entidade [Matches].</p>
+<p>Esta classe é responsável por todas as operações de persistência, consulta e agregação de dados
+de partidas, incluindo lógica complexa de carregamento de entidades relacionadas e filtragem.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatchRepository : IMatchRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MatchRepository</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.IMatchRepository.html">IMatchRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MatchRepository__ctor_" data-uid="Infrastructure.Repositories.MatchRepository.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.MatchRepository.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  MatchRepository(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [MatchRepository].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatchRepository(AmateurFootballContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados (Db Context) injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_AddMatch_" data-uid="Infrastructure.Repositories.MatchRepository.AddMatch*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_AddMatch_Domain_Entities_Matches_" data-uid="Infrastructure.Repositories.MatchRepository.AddMatch(Domain.Entities.Matches)">
+  AddMatch(Matches)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona um novo registo de partida à base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddMatch(Matches match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="Domain.Entities.Matches.html">Matches</a></dt>
+    <dd><p>A entidade [Matches] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverById_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)">
+  GetAllMatchPostPoneReceiverById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de pedidos de adiamento recebidos por uma equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoPostPoneMatch&gt;&gt; GetAllMatchPostPoneReceiverById(Guid idReceiver)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que recebeu o pedido.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.PostPoneGame.InfoPostPoneMatch.html">InfoPostPoneMatch</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoPostPoneMatch] com os detalhes dos pedidos pendentes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza uma consulta LINQ to Entities para carregar os pedidos de adiamento associados a partidas
+onde a equipa é o recetor do pedido.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverByIdWithFilters_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverByIdWithFilters_System_Guid_Application_DTOs_Filters_FilterPostPoneMatchDto_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)">
+  GetAllMatchPostPoneReceiverByIdWithFilters(Guid, FilterPostPoneMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de pedidos de adiamento recebidos por uma equipa, aplicando filtros complexos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoPostPoneMatch&gt;&gt; GetAllMatchPostPoneReceiverByIdWithFilters(Guid idReceiver, FilterPostPoneMatchDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que recebeu o pedido.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterPostPoneMatchDto.html">FilterPostPoneMatchDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem (Nome, Datas de Jogo Original, Datas de Adiamento Proposta).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.PostPoneGame.InfoPostPoneMatch.html">InfoPostPoneMatch</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoPostPoneMatch] filtrada.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverByIdWithFilters_System_Guid_Application_DTOs_Filters_FilterPostPoneMatchDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Carrega os dados de [PostPoneMatch] com Eager Loading para [Match] e [Team].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeam_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeam_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam(System.Guid)">
+  GetAllMatchesTeam(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém o calendário de uma equipa, incluindo partidas agendadas e finalizadas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoMatchCalendar&gt;&gt; GetAllMatchesTeam(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa cujo calendário se pretende.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Match.InfoMatchCalendar.html">InfoMatchCalendar</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de objetos [InfoMatchCalendar] para o frontend.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeam_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza LINQ to Entities (sintaxe de consulta) para agregar dados de [Match], [Pitch] e [TeamStatistics]
+e projetar o resultado no DTO [InfoMatchCalendar].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeamWithFilters_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterCalendarDto_" data-uid="Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)">
+  GetAllMatchesTeamWithFilters(Guid, FilterCalendarDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém o calendário de uma equipa, aplicando filtros complexos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoMatchCalendar&gt;&gt; GetAllMatchesTeamWithFilters(Guid idTeam, FilterCalendarDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa cujo calendário se pretende.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterCalendarDto.html">FilterCalendarDto</a></dt>
+    <dd><p>O DTO contendo os critérios de filtragem (opcional).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Match.InfoMatchCalendar.html">InfoMatchCalendar</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de objetos [InfoMatchCalendar] filtrados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetAllMatchesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterCalendarDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Este método constrói a consulta dinamicamente, permitindo filtrar por:</p>
+<ul>
+<li>Status do jogo (Realizado, Agendado ou Ambos).</li>
+<li>Tipo de jogo (Competitivo vs Casual).</li>
+<li>Local (Casa/Fora).</li>
+<li>Intervalo de datas.</li>
+</ul>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchById_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchById(System.Guid)">
+  GetMatchById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida pelo seu ID, carregando as estatísticas e os dados básicos das equipas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchById(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] completa ou null se não for encontrada.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetMatchById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza Eager Loading com <code>.Include</code> e <code>.ThenInclude</code> para carregar: Match -&gt; TeamStatistics -&gt; Team.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchInProgressByIdAsync_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchInProgressByIdAsync_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync(System.Guid)">
+  GetMatchInProgressByIdAsync(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida apenas se o seu estado atual for [MatchStatus.IN_PROGRESS].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchInProgressByIdAsync(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] ou null se o estado não for &quot;IN_PROGRESS&quot;.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchProxim12HoursMatchs_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchProxim12HoursMatchs_System_Guid_System_DateTime_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)">
+  GetMatchProxim12HoursMatchs(Guid, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica se uma equipa tem alguma partida agendada (SCHEDULED ou POST_PONED) dentro de um intervalo de 12 horas da [gameDate] fornecida.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchProxim12HoursMatchs(Guid idTeam, DateTime gameDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa a verificar.</p>
+</dd>
+    <dt><code>gameDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A data e hora de referência para a comparação.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A partida [Matches] encontrada ou null se não houver conflito nas 12h.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetMatchProxim12HoursMatchs_System_Guid_System_DateTime__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza a função nativa do SQL Server [EF.Functions.DateDiffMinute] para calcular o intervalo de tempo na base de dados.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchToCancelById_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchToCancelById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchToCancelById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchToCancelById(System.Guid)">
+  GetMatchToCancelById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida que pode ser cancelada (estado SCHEDULED ou POST_PONED).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchToCancelById(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] ou null se o estado for DONE, IN_PROGRESS ou CANCELED.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetMatchToCancelById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Carrega as estatísticas e os dados básicos das equipas participantes.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchWitchPitchById_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchWitchPitchById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById(System.Guid)">
+  GetMatchWitchPitchById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida pelo seu ID, carregando as entidades [Pitch] e [Teams].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchWitchPitchById(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] com o local carregado.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchWithListPlayerById_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchWithListPlayerById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById(System.Guid)">
+  GetMatchWithListPlayerById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida pelo seu ID, carregando toda a hierarquia de dados, incluindo a lista de membros de cada equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetMatchWithListPlayerById(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] com todos os membros das equipas participantes carregados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchRepository_GetMatchWithListPlayerById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza carregamento profundo: Match -&gt; TeamStatistics -&gt; Team -&gt; Members (da Equipa).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetMatchesByDateAsync_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetMatchesByDateAsync_System_DateTime_" data-uid="Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(System.DateTime)">
+  GetMatchesByDateAsync(DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de partidas (jogos agendados/finalizados) que ocorrem numa data específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoMatchCalendar&gt;&gt; GetMatchesByDateAsync(DateTime date)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>date</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A data de referência.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Match.InfoMatchCalendar.html">InfoMatchCalendar</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de objetos [InfoMatchCalendar] para o frontend.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchRepository_GetScheduledMatchById_" data-uid="Infrastructure.Repositories.MatchRepository.GetScheduledMatchById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchRepository_GetScheduledMatchById_System_Guid_" data-uid="Infrastructure.Repositories.MatchRepository.GetScheduledMatchById(System.Guid)">
+  GetScheduledMatchById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma partida apenas se o seu estado atual for [MatchStatus.SCHEDULED].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Matches?&gt; GetScheduledMatchById(Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Matches.html">Matches</a>&gt;</dt>
+    <dd><p>A entidade [Matches] ou null se o estado não for &quot;SCHEDULED&quot;.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchRepository.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

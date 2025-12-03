@@ -1,0 +1,361 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  id: ITeamPostPoneGameRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  - Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch(System.Guid,System.Guid)
+  - Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch(System.Guid,System.Guid)
+  - Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  langs:
+  - csharp
+  - vb
+  name: ITeamPostPoneGameRepository
+  nameWithType: ITeamPostPoneGameRepository
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ITeamPostPoneGameRepository
+    path: ../Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface ITeamPostPoneGameRepository
+    content.vb: Public Interface ITeamPostPoneGameRepository
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  commentId: M:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  id: AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  parent: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  langs:
+  - csharp
+  - vb
+  name: AddTeamPostPoneMatch(PostPoneMatch)
+  nameWithType: ITeamPostPoneGameRepository.AddTeamPostPoneMatch(PostPoneMatch)
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddTeamPostPoneMatch
+    path: ../Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task AddTeamPostPoneMatch(PostPoneMatch postPoneMatch)
+    parameters:
+    - id: postPoneMatch
+      type: Domain.Entities.PostPoneMatch
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddTeamPostPoneMatch(postPoneMatch As PostPoneMatch) As Task
+  overload: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch*
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  commentId: M:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  id: RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  parent: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  langs:
+  - csharp
+  - vb
+  name: RemoveTeamPostPoneMatch(PostPoneMatch)
+  nameWithType: ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch(PostPoneMatch)
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RemoveTeamPostPoneMatch
+    path: ../Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: void RemoveTeamPostPoneMatch(PostPoneMatch postPoneMatch)
+    parameters:
+    - id: postPoneMatch
+      type: Domain.Entities.PostPoneMatch
+    content.vb: Sub RemoveTeamPostPoneMatch(postPoneMatch As PostPoneMatch)
+  overload: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch*
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch(System.Guid,System.Guid)
+  id: GetTeamPostPoneMatchWithPitch(System.Guid,System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamPostPoneMatchWithPitch(Guid, Guid)
+  nameWithType: ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch(Guid, Guid)
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamPostPoneMatchWithPitch
+    path: ../Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<PostPoneMatch?> GetTeamPostPoneMatchWithPitch(Guid idTeam, Guid idMatch)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatch
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.PostPoneMatch}
+    content.vb: Function GetTeamPostPoneMatchWithPitch(idTeam As Guid, idMatch As Guid) As Task(Of PostPoneMatch)
+  overload: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch*
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch(System.Guid,System.Guid)
+  id: GetTeamPostPoneMatch(System.Guid,System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamPostPoneMatch(Guid, Guid)
+  nameWithType: ITeamPostPoneGameRepository.GetTeamPostPoneMatch(Guid, Guid)
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamPostPoneMatch
+    path: ../Application/Interfaces/Repositories/ITeamPostPoneGameRepository.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<PostPoneMatch?> GetTeamPostPoneMatch(Guid idTeam, Guid idMatch)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatch
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.PostPoneMatch}
+    content.vb: Function GetTeamPostPoneMatch(idTeam As Guid, idMatch As Guid) As Task(Of PostPoneMatch)
+  overload: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch*
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html#Application_Interfaces_Repositories_ITeamPostPoneGameRepository_AddTeamPostPoneMatch_Domain_Entities_PostPoneMatch_
+  name: AddTeamPostPoneMatch
+  nameWithType: ITeamPostPoneGameRepository.AddTeamPostPoneMatch
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.AddTeamPostPoneMatch
+- uid: Domain.Entities.PostPoneMatch
+  commentId: T:Domain.Entities.PostPoneMatch
+  parent: Domain.Entities
+  href: Domain.Entities.PostPoneMatch.html
+  name: PostPoneMatch
+  nameWithType: PostPoneMatch
+  fullName: Domain.Entities.PostPoneMatch
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html#Application_Interfaces_Repositories_ITeamPostPoneGameRepository_RemoveTeamPostPoneMatch_Domain_Entities_PostPoneMatch_
+  name: RemoveTeamPostPoneMatch
+  nameWithType: ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.RemoveTeamPostPoneMatch
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html#Application_Interfaces_Repositories_ITeamPostPoneGameRepository_GetTeamPostPoneMatchWithPitch_System_Guid_System_Guid_
+  name: GetTeamPostPoneMatchWithPitch
+  nameWithType: ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatchWithPitch
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Domain.Entities.PostPoneMatch}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.PostPoneMatch}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PostPoneMatch>
+  nameWithType: Task<PostPoneMatch>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.PostPoneMatch>
+  nameWithType.vb: Task(Of PostPoneMatch)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.PostPoneMatch)
+  name.vb: Task(Of PostPoneMatch)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.PostPoneMatch
+    name: PostPoneMatch
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html#Application_Interfaces_Repositories_ITeamPostPoneGameRepository_GetTeamPostPoneMatch_System_Guid_System_Guid_
+  name: GetTeamPostPoneMatch
+  nameWithType: ITeamPostPoneGameRepository.GetTeamPostPoneMatch
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.GetTeamPostPoneMatch

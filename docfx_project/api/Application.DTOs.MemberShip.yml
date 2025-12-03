@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.MemberShip
+  commentId: N:Application.DTOs.MemberShip
+  id: Application.DTOs.MemberShip
+  children:
+  - Application.DTOs.MemberShip.MemberShipRequestDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.MemberShip
+  nameWithType: Application.DTOs.MemberShip
+  fullName: Application.DTOs.MemberShip
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.MemberShip.MemberShipRequestDto
+  commentId: T:Application.DTOs.MemberShip.MemberShipRequestDto
+  parent: Application.DTOs.MemberShip
+  href: Application.DTOs.MemberShip.MemberShipRequestDto.html
+  name: MemberShipRequestDto
+  nameWithType: MemberShipRequestDto
+  fullName: Application.DTOs.MemberShip.MemberShipRequestDto
+- uid: Application.DTOs.MemberShip
+  commentId: N:Application.DTOs.MemberShip
+  href: Application.html
+  name: Application.DTOs.MemberShip
+  nameWithType: Application.DTOs.MemberShip
+  fullName: Application.DTOs.MemberShip
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MemberShip
+    name: MemberShip
+    href: Application.DTOs.MemberShip.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MemberShip
+    name: MemberShip
+    href: Application.DTOs.MemberShip.html

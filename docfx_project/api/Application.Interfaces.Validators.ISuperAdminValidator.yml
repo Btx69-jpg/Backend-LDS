@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.ISuperAdminValidator
+  commentId: T:Application.Interfaces.Validators.ISuperAdminValidator
+  id: ISuperAdminValidator
+  parent: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  - Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  - Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  - Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  - Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  langs:
+  - csharp
+  - vb
+  name: ISuperAdminValidator
+  nameWithType: ISuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ISuperAdminValidator
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: public interface ISuperAdminValidator
+    content.vb: Public Interface ISuperAdminValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  id: SuperAdminExists(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminExists(SuperAdmin)
+  nameWithType: ISuperAdminValidator.SuperAdminExists(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SuperAdminExists
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void SuperAdminExists(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Sub SuperAdminExists(sadmin As SuperAdmin)
+  overload: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists*
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  id: CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  nameWithType: ISuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User[])
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateSuperAdminValidator
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void CreateSuperAdminValidator(CreateSuperAdminDTO dto, User[] sadmins)
+    parameters:
+    - id: dto
+      type: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    - id: sadmins
+      type: Domain.Entities.User[]
+    content.vb: Sub CreateSuperAdminValidator(dto As CreateSuperAdminDTO, sadmins As User())
+  overload: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator*
+  nameWithType.vb: ISuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+  fullName.vb: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User())
+  name.vb: CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  id: GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByIdValidator(SuperAdmin)
+  nameWithType: ISuperAdminValidator.GetSuperAdminByIdValidator(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByIdValidator
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void GetSuperAdminByIdValidator(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Sub GetSuperAdminByIdValidator(sadmin As SuperAdmin)
+  overload: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator*
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  id: DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: DeleteSuperAdminValidator(SuperAdmin)
+  nameWithType: ISuperAdminValidator.DeleteSuperAdminValidator(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteSuperAdminValidator
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void DeleteSuperAdminValidator(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Sub DeleteSuperAdminValidator(sadmin As SuperAdmin)
+  overload: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator*
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  id: UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  nameWithType: ISuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User[])
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/ISuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateSuperAdminValidator
+    path: ../Application/Interfaces/Validators/ISuperAdminValidator.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void UpdateSuperAdminValidator(UpdateSuperAdminDTO dto, SuperAdmin sadmin, User[] sadmins)
+    parameters:
+    - id: dto
+      type: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    - id: sadmins
+      type: Domain.Entities.User[]
+    content.vb: Sub UpdateSuperAdminValidator(dto As UpdateSuperAdminDTO, sadmin As SuperAdmin, sadmins As User())
+  overload: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator*
+  nameWithType.vb: ISuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+  fullName.vb: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User())
+  name.vb: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+references:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists*
+  commentId: Overload:Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_SuperAdminExists_Domain_Entities_SuperAdmin_
+  name: SuperAdminExists
+  nameWithType: ISuperAdminValidator.SuperAdminExists
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists
+- uid: Domain.Entities.SuperAdmin
+  commentId: T:Domain.Entities.SuperAdmin
+  parent: Domain.Entities
+  href: Domain.Entities.SuperAdmin.html
+  name: SuperAdmin
+  nameWithType: SuperAdmin
+  fullName: Domain.Entities.SuperAdmin
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator*
+  commentId: Overload:Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_CreateSuperAdminValidator_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_Domain_Entities_User___
+  name: CreateSuperAdminValidator
+  nameWithType: ISuperAdminValidator.CreateSuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator
+- uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  name: CreateSuperAdminDTO
+  nameWithType: CreateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+- uid: Domain.Entities.User[]
+  isExternal: true
+  name: User[]
+  nameWithType: User[]
+  fullName: Domain.Entities.User[]
+  nameWithType.vb: User()
+  fullName.vb: Domain.Entities.User()
+  name.vb: User()
+  spec.csharp:
+  - uid: Domain.Entities.User
+    name: User
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Domain.Entities.User
+    name: User
+  - name: (
+  - name: )
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  href: Application.html
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator*
+  commentId: Overload:Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_GetSuperAdminByIdValidator_Domain_Entities_SuperAdmin_
+  name: GetSuperAdminByIdValidator
+  nameWithType: ISuperAdminValidator.GetSuperAdminByIdValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator*
+  commentId: Overload:Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_DeleteSuperAdminValidator_Domain_Entities_SuperAdmin_
+  name: DeleteSuperAdminValidator
+  nameWithType: ISuperAdminValidator.DeleteSuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator*
+  commentId: Overload:Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_UpdateSuperAdminValidator_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Domain_Entities_SuperAdmin_Domain_Entities_User___
+  name: UpdateSuperAdminValidator
+  nameWithType: ISuperAdminValidator.UpdateSuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  name: UpdateSuperAdminDTO
+  nameWithType: UpdateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO

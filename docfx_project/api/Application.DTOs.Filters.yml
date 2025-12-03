@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  id: Application.DTOs.Filters
+  children:
+  - Application.DTOs.Filters.FilterCalendarDto
+  - Application.DTOs.Filters.FilterListTeamDto
+  - Application.DTOs.Filters.FilterMatchInvitesDto
+  - Application.DTOs.Filters.FilterMembershipRequestsPlayer
+  - Application.DTOs.Filters.FilterMembershipRequestsTeam
+  - Application.DTOs.Filters.FilterPostPoneMatchDto
+  - Application.DTOs.Filters.FilterTeamDto
+  - Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Filters.FilterCalendarDto
+  commentId: T:Application.DTOs.Filters.FilterCalendarDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterCalendarDto.html
+  name: FilterCalendarDto
+  nameWithType: FilterCalendarDto
+  fullName: Application.DTOs.Filters.FilterCalendarDto
+- uid: Application.DTOs.Filters.FilterListTeamDto
+  commentId: T:Application.DTOs.Filters.FilterListTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterListTeamDto.html
+  name: FilterListTeamDto
+  nameWithType: FilterListTeamDto
+  fullName: Application.DTOs.Filters.FilterListTeamDto
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto
+  commentId: T:Application.DTOs.Filters.FilterMatchInvitesDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html
+  name: FilterMatchInvitesDto
+  nameWithType: FilterMatchInvitesDto
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto
+- uid: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+  commentId: T:Application.DTOs.Filters.FilterMembershipRequestsPlayer
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMembershipRequestsPlayer.html
+  name: FilterMembershipRequestsPlayer
+  nameWithType: FilterMembershipRequestsPlayer
+  fullName: Application.DTOs.Filters.FilterMembershipRequestsPlayer
+- uid: Application.DTOs.Filters.FilterMembershipRequestsTeam
+  commentId: T:Application.DTOs.Filters.FilterMembershipRequestsTeam
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMembershipRequestsTeam.html
+  name: FilterMembershipRequestsTeam
+  nameWithType: FilterMembershipRequestsTeam
+  fullName: Application.DTOs.Filters.FilterMembershipRequestsTeam
+- uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+  commentId: T:Application.DTOs.Filters.FilterPostPoneMatchDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  name: FilterPostPoneMatchDto
+  nameWithType: FilterPostPoneMatchDto
+  fullName: Application.DTOs.Filters.FilterPostPoneMatchDto
+- uid: Application.DTOs.Filters.FilterTeamDto
+  commentId: T:Application.DTOs.Filters.FilterTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamDto.html
+  name: FilterTeamDto
+  nameWithType: FilterTeamDto
+  fullName: Application.DTOs.Filters.FilterTeamDto
+- uid: Application.DTOs.Filters.FilterTeamPlayers
+  commentId: T:Application.DTOs.Filters.FilterTeamPlayers
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamPlayers.html
+  name: FilterTeamPlayers
+  nameWithType: FilterTeamPlayers
+  fullName: Application.DTOs.Filters.FilterTeamPlayers
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html

@@ -1,0 +1,2194 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.TeamService
+  commentId: T:Application.Services.TeamService
+  id: TeamService
+  parent: Application.Services
+  children:
+  - Application.Services.TeamService.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.ITeamValidator,Application.Interfaces.Repositories.IRankRepository,Application.Interfaces.Repositories.IMembershipRequestRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Validators.IPlayerAuthorizationValidator,Application.Interfaces.Services.Hub.INotificationService)
+  - Application.Services.TeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  - Application.Services.TeamService.DeleteTeamAsync(System.Guid,System.String)
+  - Application.Services.TeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  - Application.Services.TeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Services.TeamService.GetPlayersWithoutTeam
+  - Application.Services.TeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  - Application.Services.TeamService.GetTeamByIdAsync(System.Guid)
+  - Application.Services.TeamService.GetTeamPlayersAsync(System.Guid)
+  - Application.Services.TeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  - Application.Services.TeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  - Application.Services.TeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  - Application.Services.TeamService.SearchTeamsAsync(System.Guid)
+  - Application.Services.TeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Services.TeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  - Application.Services.TeamService.getOpponent(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: TeamService
+  nameWithType: TeamService
+  fullName: Application.Services.TeamService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamService
+    path: ../Application/Services/TeamService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: 'public class TeamService : ITeamService'
+    content.vb: Public Class TeamService Implements ITeamService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.ITeamService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.TeamService.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.ITeamValidator,Application.Interfaces.Repositories.IRankRepository,Application.Interfaces.Repositories.IMembershipRequestRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Validators.IPlayerAuthorizationValidator,Application.Interfaces.Services.Hub.INotificationService)
+  commentId: M:Application.Services.TeamService.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.ITeamValidator,Application.Interfaces.Repositories.IRankRepository,Application.Interfaces.Repositories.IMembershipRequestRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Validators.IPlayerAuthorizationValidator,Application.Interfaces.Services.Hub.INotificationService)
+  id: '#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.ITeamValidator,Application.Interfaces.Repositories.IRankRepository,Application.Interfaces.Repositories.IMembershipRequestRepository,Application.Interfaces.Validators.IPlayerValidator,Application.Interfaces.Validators.IPlayerAuthorizationValidator,Application.Interfaces.Services.Hub.INotificationService)'
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: TeamService(ITeamRepository, IPlayerRepository, IUnityOfWork, ITeamValidator, IRankRepository, IMembershipRequestRepository, IPlayerValidator, IPlayerAuthorizationValidator, INotificationService)
+  nameWithType: TeamService.TeamService(ITeamRepository, IPlayerRepository, IUnityOfWork, ITeamValidator, IRankRepository, IMembershipRequestRepository, IPlayerValidator, IPlayerAuthorizationValidator, INotificationService)
+  fullName: Application.Services.TeamService.TeamService(Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Validators.ITeamValidator, Application.Interfaces.Repositories.IRankRepository, Application.Interfaces.Repositories.IMembershipRequestRepository, Application.Interfaces.Validators.IPlayerValidator, Application.Interfaces.Validators.IPlayerAuthorizationValidator, Application.Interfaces.Services.Hub.INotificationService)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/TeamService.cs
+    startLine: 25
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: public TeamService(ITeamRepository teamRepository, IPlayerRepository playerRepository, IUnityOfWork unityOfWork, ITeamValidator teamValidator, IRankRepository rankRepository, IMembershipRequestRepository membershipRequestRepository, IPlayerValidator playerValidator, IPlayerAuthorizationValidator authorizationValidator, INotificationService notificationService)
+    parameters:
+    - id: teamRepository
+      type: Application.Interfaces.Repositories.ITeamRepository
+    - id: playerRepository
+      type: Application.Interfaces.Repositories.IPlayerRepository
+    - id: unityOfWork
+      type: Application.Interfaces.Repositories.IUnityOfWork
+    - id: teamValidator
+      type: Application.Interfaces.Validators.ITeamValidator
+    - id: rankRepository
+      type: Application.Interfaces.Repositories.IRankRepository
+    - id: membershipRequestRepository
+      type: Application.Interfaces.Repositories.IMembershipRequestRepository
+    - id: playerValidator
+      type: Application.Interfaces.Validators.IPlayerValidator
+    - id: authorizationValidator
+      type: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+    - id: notificationService
+      type: Application.Interfaces.Services.Hub.INotificationService
+    content.vb: Public Sub New(teamRepository As ITeamRepository, playerRepository As IPlayerRepository, unityOfWork As IUnityOfWork, teamValidator As ITeamValidator, rankRepository As IRankRepository, membershipRequestRepository As IMembershipRequestRepository, playerValidator As IPlayerValidator, authorizationValidator As IPlayerAuthorizationValidator, notificationService As INotificationService)
+  overload: Application.Services.TeamService.#ctor*
+  nameWithType.vb: TeamService.New(ITeamRepository, IPlayerRepository, IUnityOfWork, ITeamValidator, IRankRepository, IMembershipRequestRepository, IPlayerValidator, IPlayerAuthorizationValidator, INotificationService)
+  fullName.vb: Application.Services.TeamService.New(Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Validators.ITeamValidator, Application.Interfaces.Repositories.IRankRepository, Application.Interfaces.Repositories.IMembershipRequestRepository, Application.Interfaces.Validators.IPlayerValidator, Application.Interfaces.Validators.IPlayerAuthorizationValidator, Application.Interfaces.Services.Hub.INotificationService)
+  name.vb: New(ITeamRepository, IPlayerRepository, IUnityOfWork, ITeamValidator, IRankRepository, IMembershipRequestRepository, IPlayerValidator, IPlayerAuthorizationValidator, INotificationService)
+- uid: Application.Services.TeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  commentId: M:Application.Services.TeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  id: CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: CreateTeamAsync(CreateTeamDto, string)
+  nameWithType: TeamService.CreateTeamAsync(CreateTeamDto, string)
+  fullName: Application.Services.TeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateTeamAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 47
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<Guid> CreateTeamAsync(CreateTeamDto teamDto, string playerId)
+    parameters:
+    - id: teamDto
+      type: Application.DTOs.Team.CreateTeamDto
+    - id: playerId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Guid}
+    content.vb: Public Function CreateTeamAsync(teamDto As CreateTeamDto, playerId As String) As Task(Of Guid)
+  overload: Application.Services.TeamService.CreateTeamAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  nameWithType.vb: TeamService.CreateTeamAsync(CreateTeamDto, String)
+  fullName.vb: Application.Services.TeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto, String)
+  name.vb: CreateTeamAsync(CreateTeamDto, String)
+- uid: Application.Services.TeamService.DeleteTeamAsync(System.Guid,System.String)
+  commentId: M:Application.Services.TeamService.DeleteTeamAsync(System.Guid,System.String)
+  id: DeleteTeamAsync(System.Guid,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: DeleteTeamAsync(Guid, string)
+  nameWithType: TeamService.DeleteTeamAsync(Guid, string)
+  fullName: Application.Services.TeamService.DeleteTeamAsync(System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteTeamAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 80
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task DeleteTeamAsync(Guid teamId, string currentUserId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: currentUserId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteTeamAsync(teamId As Guid, currentUserId As String) As Task
+  overload: Application.Services.TeamService.DeleteTeamAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid,System.String)
+  nameWithType.vb: TeamService.DeleteTeamAsync(Guid, String)
+  fullName.vb: Application.Services.TeamService.DeleteTeamAsync(System.Guid, String)
+  name.vb: DeleteTeamAsync(Guid, String)
+- uid: Application.Services.TeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  commentId: M:Application.Services.TeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  id: UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: UpdateTeamInfoAsync(Guid, CreateTeamDto, string)
+  nameWithType: TeamService.UpdateTeamInfoAsync(Guid, CreateTeamDto, string)
+  fullName: Application.Services.TeamService.UpdateTeamInfoAsync(System.Guid, Application.DTOs.Team.CreateTeamDto, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateTeamInfoAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 107
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task UpdateTeamInfoAsync(Guid teamId, CreateTeamDto dto, string currentUserId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.Team.CreateTeamDto
+    - id: currentUserId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateTeamInfoAsync(teamId As Guid, dto As CreateTeamDto, currentUserId As String) As Task
+  overload: Application.Services.TeamService.UpdateTeamInfoAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  nameWithType.vb: TeamService.UpdateTeamInfoAsync(Guid, CreateTeamDto, String)
+  fullName.vb: Application.Services.TeamService.UpdateTeamInfoAsync(System.Guid, Application.DTOs.Team.CreateTeamDto, String)
+  name.vb: UpdateTeamInfoAsync(Guid, CreateTeamDto, String)
+- uid: Application.Services.TeamService.GetTeamByIdAsync(System.Guid)
+  commentId: M:Application.Services.TeamService.GetTeamByIdAsync(System.Guid)
+  id: GetTeamByIdAsync(System.Guid)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByIdAsync(Guid)
+  nameWithType: TeamService.GetTeamByIdAsync(Guid)
+  fullName: Application.Services.TeamService.GetTeamByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByIdAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 133
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<TeamDetailsDto> GetTeamByIdAsync(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+    content.vb: Public Function GetTeamByIdAsync(teamId As Guid) As Task(Of TeamDetailsDto)
+  overload: Application.Services.TeamService.GetTeamByIdAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+- uid: Application.Services.TeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Services.TeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  id: GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetListTeams(FilterListTeamDto?)
+  nameWithType: TeamService.GetListTeams(FilterListTeamDto?)
+  fullName: Application.Services.TeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto?)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeams
+    path: ../Application/Services/TeamService.cs
+    startLine: 142
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<InfoTeamsDto>> GetListTeams(FilterListTeamDto? filters)
+    parameters:
+    - id: filters
+      type: Application.DTOs.Filters.FilterListTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Public Function GetListTeams(filters As FilterListTeamDto) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Services.TeamService.GetListTeams*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  nameWithType.vb: TeamService.GetListTeams(FilterListTeamDto)
+  fullName.vb: Application.Services.TeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  name.vb: GetListTeams(FilterListTeamDto)
+- uid: Application.Services.TeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Services.TeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  id: PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: PromotePlayerToAdminAsync(Guid, string, string)
+  nameWithType: TeamService.PromotePlayerToAdminAsync(Guid, string, string)
+  fullName: Application.Services.TeamService.PromotePlayerToAdminAsync(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PromotePlayerToAdminAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 157
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task PromotePlayerToAdminAsync(Guid teamId, string playerIdToPromoteId, string playerIdToPromotingId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: playerIdToPromoteId
+      type: System.String
+    - id: playerIdToPromotingId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PromotePlayerToAdminAsync(teamId As Guid, playerIdToPromoteId As String, playerIdToPromotingId As String) As Task
+  overload: Application.Services.TeamService.PromotePlayerToAdminAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  nameWithType.vb: TeamService.PromotePlayerToAdminAsync(Guid, String, String)
+  fullName.vb: Application.Services.TeamService.PromotePlayerToAdminAsync(System.Guid, String, String)
+  name.vb: PromotePlayerToAdminAsync(Guid, String, String)
+- uid: Application.Services.TeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Services.TeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  id: DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: DemoteAdminToPlayerAsync(Guid, string, string)
+  nameWithType: TeamService.DemoteAdminToPlayerAsync(Guid, string, string)
+  fullName: Application.Services.TeamService.DemoteAdminToPlayerAsync(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DemoteAdminToPlayerAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 176
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task DemoteAdminToPlayerAsync(Guid teamId, string adminIdToDemote, string adminDemotingId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: adminIdToDemote
+      type: System.String
+    - id: adminDemotingId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DemoteAdminToPlayerAsync(teamId As Guid, adminIdToDemote As String, adminDemotingId As String) As Task
+  overload: Application.Services.TeamService.DemoteAdminToPlayerAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  nameWithType.vb: TeamService.DemoteAdminToPlayerAsync(Guid, String, String)
+  fullName.vb: Application.Services.TeamService.DemoteAdminToPlayerAsync(System.Guid, String, String)
+  name.vb: DemoteAdminToPlayerAsync(Guid, String, String)
+- uid: Application.Services.TeamService.GetTeamPlayersAsync(System.Guid)
+  commentId: M:Application.Services.TeamService.GetTeamPlayersAsync(System.Guid)
+  id: GetTeamPlayersAsync(System.Guid)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetTeamPlayersAsync(Guid)
+  nameWithType: TeamService.GetTeamPlayersAsync(Guid)
+  fullName: Application.Services.TeamService.GetTeamPlayersAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamPlayersAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 194
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<PlayerDetailsDto>> GetTeamPlayersAsync(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+    content.vb: Public Function GetTeamPlayersAsync(teamId As Guid) As Task(Of List(Of PlayerDetailsDto))
+  overload: Application.Services.TeamService.GetTeamPlayersAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+- uid: Application.Services.TeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  commentId: M:Application.Services.TeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  id: GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetTeamPlayersAsyncWithFilters(Guid, FilterTeamPlayers)
+  nameWithType: TeamService.GetTeamPlayersAsyncWithFilters(Guid, FilterTeamPlayers)
+  fullName: Application.Services.TeamService.GetTeamPlayersAsyncWithFilters(System.Guid, Application.DTOs.Filters.FilterTeamPlayers)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamPlayersAsyncWithFilters
+    path: ../Application/Services/TeamService.cs
+    startLine: 223
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<PlayerDetailsDto>> GetTeamPlayersAsyncWithFilters(Guid teamId, FilterTeamPlayers filters)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: filters
+      type: Application.DTOs.Filters.FilterTeamPlayers
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+    content.vb: Public Function GetTeamPlayersAsyncWithFilters(teamId As Guid, filters As FilterTeamPlayers) As Task(Of List(Of PlayerDetailsDto))
+  overload: Application.Services.TeamService.GetTeamPlayersAsyncWithFilters*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+- uid: Application.Services.TeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Services.TeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  id: RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: RemovePlayerFromTeamAsync(Guid, string, string)
+  nameWithType: TeamService.RemovePlayerFromTeamAsync(Guid, string, string)
+  fullName: Application.Services.TeamService.RemovePlayerFromTeamAsync(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RemovePlayerFromTeamAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 232
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task RemovePlayerFromTeamAsync(Guid teamId, string playerIdToRemove, string playerRemovingId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: playerIdToRemove
+      type: System.String
+    - id: playerRemovingId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RemovePlayerFromTeamAsync(teamId As Guid, playerIdToRemove As String, playerRemovingId As String) As Task
+  overload: Application.Services.TeamService.RemovePlayerFromTeamAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  nameWithType.vb: TeamService.RemovePlayerFromTeamAsync(Guid, String, String)
+  fullName.vb: Application.Services.TeamService.RemovePlayerFromTeamAsync(System.Guid, String, String)
+  name.vb: RemovePlayerFromTeamAsync(Guid, String, String)
+- uid: Application.Services.TeamService.SearchTeamsAsync(System.Guid)
+  commentId: M:Application.Services.TeamService.SearchTeamsAsync(System.Guid)
+  id: SearchTeamsAsync(System.Guid)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: SearchTeamsAsync(Guid)
+  nameWithType: TeamService.SearchTeamsAsync(Guid)
+  fullName: Application.Services.TeamService.SearchTeamsAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SearchTeamsAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 259
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<InfoTeamsDto>> SearchTeamsAsync(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Public Function SearchTeamsAsync(idTeam As Guid) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Services.TeamService.SearchTeamsAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+- uid: Application.Services.TeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Services.TeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  id: SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: SearchTeamsWithFiltersAsync(Guid, FilterListTeamDto)
+  nameWithType: TeamService.SearchTeamsWithFiltersAsync(Guid, FilterListTeamDto)
+  fullName: Application.Services.TeamService.SearchTeamsWithFiltersAsync(System.Guid, Application.DTOs.Filters.FilterListTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SearchTeamsWithFiltersAsync
+    path: ../Application/Services/TeamService.cs
+    startLine: 269
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<InfoTeamsDto>> SearchTeamsWithFiltersAsync(Guid idTeam, FilterListTeamDto filters)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filters
+      type: Application.DTOs.Filters.FilterListTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Public Function SearchTeamsWithFiltersAsync(idTeam As Guid, filters As FilterListTeamDto) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Services.TeamService.SearchTeamsWithFiltersAsync*
+  implements:
+  - Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+- uid: Application.Services.TeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Services.TeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  id: GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersWithoutTeamWithFilters(FilterTeamDto)
+  nameWithType: TeamService.GetPlayersWithoutTeamWithFilters(FilterTeamDto)
+  fullName: Application.Services.TeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersWithoutTeamWithFilters
+    path: ../Application/Services/TeamService.cs
+    startLine: 279
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<PlayerWithoutTeamInfoDto>> GetPlayersWithoutTeamWithFilters(FilterTeamDto filter)
+    parameters:
+    - id: filter
+      type: Application.DTOs.Filters.FilterTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+    content.vb: Public Function GetPlayersWithoutTeamWithFilters(filter As FilterTeamDto) As Task(Of List(Of PlayerWithoutTeamInfoDto))
+  overload: Application.Services.TeamService.GetPlayersWithoutTeamWithFilters*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+- uid: Application.Services.TeamService.GetPlayersWithoutTeam
+  commentId: M:Application.Services.TeamService.GetPlayersWithoutTeam
+  id: GetPlayersWithoutTeam
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersWithoutTeam()
+  nameWithType: TeamService.GetPlayersWithoutTeam()
+  fullName: Application.Services.TeamService.GetPlayersWithoutTeam()
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersWithoutTeam
+    path: ../Application/Services/TeamService.cs
+    startLine: 286
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<PlayerWithoutTeamInfoDto>> GetPlayersWithoutTeam()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+    content.vb: Public Function GetPlayersWithoutTeam() As Task(Of List(Of PlayerWithoutTeamInfoDto))
+  overload: Application.Services.TeamService.GetPlayersWithoutTeam*
+  implements:
+  - Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam
+- uid: Application.Services.TeamService.getOpponent(System.Guid)
+  commentId: M:Application.Services.TeamService.getOpponent(System.Guid)
+  id: getOpponent(System.Guid)
+  parent: Application.Services.TeamService
+  langs:
+  - csharp
+  - vb
+  name: getOpponent(Guid)
+  nameWithType: TeamService.getOpponent(Guid)
+  fullName: Application.Services.TeamService.getOpponent(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/TeamService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: getOpponent
+    path: ../Application/Services/TeamService.cs
+    startLine: 293
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<TeamDto> getOpponent(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+    content.vb: Public Function getOpponent(teamId As Guid) As Task(Of TeamDto)
+  overload: Application.Services.TeamService.getOpponent*
+  implements:
+  - Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+references:
+- uid: Application.Services
+  commentId: N:Application.Services
+  href: Application.html
+  name: Application.Services
+  nameWithType: Application.Services
+  fullName: Application.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.ITeamService
+  commentId: T:Application.Interfaces.Services.ITeamService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.ITeamService.html
+  name: ITeamService
+  nameWithType: ITeamService
+  fullName: Application.Interfaces.Services.ITeamService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Services.TeamService.#ctor*
+  commentId: Overload:Application.Services.TeamService.#ctor
+  href: Application.Services.TeamService.html#Application_Services_TeamService__ctor_Application_Interfaces_Repositories_ITeamRepository_Application_Interfaces_Repositories_IPlayerRepository_Application_Interfaces_Repositories_IUnityOfWork_Application_Interfaces_Validators_ITeamValidator_Application_Interfaces_Repositories_IRankRepository_Application_Interfaces_Repositories_IMembershipRequestRepository_Application_Interfaces_Validators_IPlayerValidator_Application_Interfaces_Validators_IPlayerAuthorizationValidator_Application_Interfaces_Services_Hub_INotificationService_
+  name: TeamService
+  nameWithType: TeamService.TeamService
+  fullName: Application.Services.TeamService.TeamService
+  nameWithType.vb: TeamService.New
+  fullName.vb: Application.Services.TeamService.New
+  name.vb: New
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUnityOfWork.html
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+- uid: Application.Interfaces.Validators.ITeamValidator
+  commentId: T:Application.Interfaces.Validators.ITeamValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ITeamValidator.html
+  name: ITeamValidator
+  nameWithType: ITeamValidator
+  fullName: Application.Interfaces.Validators.ITeamValidator
+- uid: Application.Interfaces.Repositories.IRankRepository
+  commentId: T:Application.Interfaces.Repositories.IRankRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IRankRepository.html
+  name: IRankRepository
+  nameWithType: IRankRepository
+  fullName: Application.Interfaces.Repositories.IRankRepository
+- uid: Application.Interfaces.Repositories.IMembershipRequestRepository
+  commentId: T:Application.Interfaces.Repositories.IMembershipRequestRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMembershipRequestRepository.html
+  name: IMembershipRequestRepository
+  nameWithType: IMembershipRequestRepository
+  fullName: Application.Interfaces.Repositories.IMembershipRequestRepository
+- uid: Application.Interfaces.Validators.IPlayerValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IPlayerValidator.html
+  name: IPlayerValidator
+  nameWithType: IPlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator
+- uid: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerAuthorizationValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IPlayerAuthorizationValidator.html
+  name: IPlayerAuthorizationValidator
+  nameWithType: IPlayerAuthorizationValidator
+  fullName: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+- uid: Application.Interfaces.Services.Hub.INotificationService
+  commentId: T:Application.Interfaces.Services.Hub.INotificationService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.INotificationService.html
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: Application.Interfaces.Services.Hub.INotificationService
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Services.TeamService.CreateTeamAsync*
+  commentId: Overload:Application.Services.TeamService.CreateTeamAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_CreateTeamAsync_Application_DTOs_Team_CreateTeamDto_System_String_
+  name: CreateTeamAsync
+  nameWithType: TeamService.CreateTeamAsync
+  fullName: Application.Services.TeamService.CreateTeamAsync
+- uid: Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_CreateTeamAsync_Application_DTOs_Team_CreateTeamDto_System_String_
+  name: CreateTeamAsync(CreateTeamDto, string)
+  nameWithType: ITeamService.CreateTeamAsync(CreateTeamDto, string)
+  fullName: Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto, string)
+  nameWithType.vb: ITeamService.CreateTeamAsync(CreateTeamDto, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto, String)
+  name.vb: CreateTeamAsync(CreateTeamDto, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+    name: CreateTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_CreateTeamAsync_Application_DTOs_Team_CreateTeamDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.CreateTeamAsync(Application.DTOs.Team.CreateTeamDto,System.String)
+    name: CreateTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_CreateTeamAsync_Application_DTOs_Team_CreateTeamDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.DTOs.Team.CreateTeamDto
+  commentId: T:Application.DTOs.Team.CreateTeamDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.CreateTeamDto.html
+  name: CreateTeamDto
+  nameWithType: CreateTeamDto
+  fullName: Application.DTOs.Team.CreateTeamDto
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Guid}
+  commentId: T:System.Threading.Tasks.Task{System.Guid}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Guid>
+  nameWithType: Task<Guid>
+  fullName: System.Threading.Tasks.Task<System.Guid>
+  nameWithType.vb: Task(Of Guid)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Guid)
+  name.vb: Task(Of Guid)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.DTOs.Team
+  commentId: N:Application.DTOs.Team
+  href: Application.html
+  name: Application.DTOs.Team
+  nameWithType: Application.DTOs.Team
+  fullName: Application.DTOs.Team
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.TeamService.DeleteTeamAsync*
+  commentId: Overload:Application.Services.TeamService.DeleteTeamAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_DeleteTeamAsync_System_Guid_System_String_
+  name: DeleteTeamAsync
+  nameWithType: TeamService.DeleteTeamAsync
+  fullName: Application.Services.TeamService.DeleteTeamAsync
+- uid: Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DeleteTeamAsync_System_Guid_System_String_
+  name: DeleteTeamAsync(Guid, string)
+  nameWithType: ITeamService.DeleteTeamAsync(Guid, string)
+  fullName: Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid, string)
+  nameWithType.vb: ITeamService.DeleteTeamAsync(Guid, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid, String)
+  name.vb: DeleteTeamAsync(Guid, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid,System.String)
+    name: DeleteTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DeleteTeamAsync_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.DeleteTeamAsync(System.Guid,System.String)
+    name: DeleteTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DeleteTeamAsync_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Services.TeamService.UpdateTeamInfoAsync*
+  commentId: Overload:Application.Services.TeamService.UpdateTeamInfoAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_UpdateTeamInfoAsync_System_Guid_Application_DTOs_Team_CreateTeamDto_System_String_
+  name: UpdateTeamInfoAsync
+  nameWithType: TeamService.UpdateTeamInfoAsync
+  fullName: Application.Services.TeamService.UpdateTeamInfoAsync
+- uid: Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_UpdateTeamInfoAsync_System_Guid_Application_DTOs_Team_CreateTeamDto_System_String_
+  name: UpdateTeamInfoAsync(Guid, CreateTeamDto, string)
+  nameWithType: ITeamService.UpdateTeamInfoAsync(Guid, CreateTeamDto, string)
+  fullName: Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid, Application.DTOs.Team.CreateTeamDto, string)
+  nameWithType.vb: ITeamService.UpdateTeamInfoAsync(Guid, CreateTeamDto, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid, Application.DTOs.Team.CreateTeamDto, String)
+  name.vb: UpdateTeamInfoAsync(Guid, CreateTeamDto, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+    name: UpdateTeamInfoAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_UpdateTeamInfoAsync_System_Guid_Application_DTOs_Team_CreateTeamDto_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.UpdateTeamInfoAsync(System.Guid,Application.DTOs.Team.CreateTeamDto,System.String)
+    name: UpdateTeamInfoAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_UpdateTeamInfoAsync_System_Guid_Application_DTOs_Team_CreateTeamDto_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Team.CreateTeamDto
+    name: CreateTeamDto
+    href: Application.DTOs.Team.CreateTeamDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.TeamService.GetTeamByIdAsync*
+  commentId: Overload:Application.Services.TeamService.GetTeamByIdAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetTeamByIdAsync_System_Guid_
+  name: GetTeamByIdAsync
+  nameWithType: TeamService.GetTeamByIdAsync
+  fullName: Application.Services.TeamService.GetTeamByIdAsync
+- uid: Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamByIdAsync_System_Guid_
+  name: GetTeamByIdAsync(Guid)
+  nameWithType: ITeamService.GetTeamByIdAsync(Guid)
+  fullName: Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+    name: GetTeamByIdAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamByIdAsync(System.Guid)
+    name: GetTeamByIdAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TeamDetailsDto>
+  nameWithType: Task<TeamDetailsDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Team.TeamDetailsDto>
+  nameWithType.vb: Task(Of TeamDetailsDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Team.TeamDetailsDto)
+  name.vb: Task(Of TeamDetailsDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: )
+- uid: Application.Services.TeamService.GetListTeams*
+  commentId: Overload:Application.Services.TeamService.GetListTeams
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: GetListTeams
+  nameWithType: TeamService.GetListTeams
+  fullName: Application.Services.TeamService.GetListTeams
+- uid: Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Services.ITeamService
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: GetListTeams(FilterListTeamDto)
+  nameWithType: ITeamService.GetListTeams(FilterListTeamDto)
+  fullName: Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+    name: GetListTeams
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+    name: GetListTeams
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterListTeamDto
+  commentId: T:Application.DTOs.Filters.FilterListTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterListTeamDto.html
+  name: FilterListTeamDto
+  nameWithType: FilterListTeamDto
+  fullName: Application.DTOs.Filters.FilterListTeamDto
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoTeamsDto>>
+  nameWithType: Task<List<InfoTeamsDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Team.InfoTeamsDto>>
+  nameWithType.vb: Task(Of List(Of InfoTeamsDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Team.InfoTeamsDto))
+  name.vb: Task(Of List(Of InfoTeamsDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Team.InfoTeamsDto
+    name: InfoTeamsDto
+    href: Application.DTOs.Team.InfoTeamsDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.InfoTeamsDto
+    name: InfoTeamsDto
+    href: Application.DTOs.Team.InfoTeamsDto.html
+  - name: )
+  - name: )
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Services.TeamService.PromotePlayerToAdminAsync*
+  commentId: Overload:Application.Services.TeamService.PromotePlayerToAdminAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_PromotePlayerToAdminAsync_System_Guid_System_String_System_String_
+  name: PromotePlayerToAdminAsync
+  nameWithType: TeamService.PromotePlayerToAdminAsync
+  fullName: Application.Services.TeamService.PromotePlayerToAdminAsync
+- uid: Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_PromotePlayerToAdminAsync_System_Guid_System_String_System_String_
+  name: PromotePlayerToAdminAsync(Guid, string, string)
+  nameWithType: ITeamService.PromotePlayerToAdminAsync(Guid, string, string)
+  fullName: Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid, string, string)
+  nameWithType.vb: ITeamService.PromotePlayerToAdminAsync(Guid, String, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid, String, String)
+  name.vb: PromotePlayerToAdminAsync(Guid, String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+    name: PromotePlayerToAdminAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_PromotePlayerToAdminAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.PromotePlayerToAdminAsync(System.Guid,System.String,System.String)
+    name: PromotePlayerToAdminAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_PromotePlayerToAdminAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.TeamService.DemoteAdminToPlayerAsync*
+  commentId: Overload:Application.Services.TeamService.DemoteAdminToPlayerAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_DemoteAdminToPlayerAsync_System_Guid_System_String_System_String_
+  name: DemoteAdminToPlayerAsync
+  nameWithType: TeamService.DemoteAdminToPlayerAsync
+  fullName: Application.Services.TeamService.DemoteAdminToPlayerAsync
+- uid: Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DemoteAdminToPlayerAsync_System_Guid_System_String_System_String_
+  name: DemoteAdminToPlayerAsync(Guid, string, string)
+  nameWithType: ITeamService.DemoteAdminToPlayerAsync(Guid, string, string)
+  fullName: Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid, string, string)
+  nameWithType.vb: ITeamService.DemoteAdminToPlayerAsync(Guid, String, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid, String, String)
+  name.vb: DemoteAdminToPlayerAsync(Guid, String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+    name: DemoteAdminToPlayerAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DemoteAdminToPlayerAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.DemoteAdminToPlayerAsync(System.Guid,System.String,System.String)
+    name: DemoteAdminToPlayerAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_DemoteAdminToPlayerAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.TeamService.GetTeamPlayersAsync*
+  commentId: Overload:Application.Services.TeamService.GetTeamPlayersAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetTeamPlayersAsync_System_Guid_
+  name: GetTeamPlayersAsync
+  nameWithType: TeamService.GetTeamPlayersAsync
+  fullName: Application.Services.TeamService.GetTeamPlayersAsync
+- uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+  commentId: M:Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsync_System_Guid_
+  name: GetTeamPlayersAsync(Guid)
+  nameWithType: ITeamService.GetTeamPlayersAsync(Guid)
+  fullName: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+    name: GetTeamPlayersAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsync(System.Guid)
+    name: GetTeamPlayersAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlayerDetailsDto>>
+  nameWithType: Task<List<PlayerDetailsDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.PlayerDTOs.PlayerDetailsDto>>
+  nameWithType.vb: Task(Of List(Of PlayerDetailsDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.PlayerDTOs.PlayerDetailsDto))
+  name.vb: Task(Of List(Of PlayerDetailsDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+    name: PlayerDetailsDto
+    href: Application.DTOs.PlayerDTOs.PlayerDetailsDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+    name: PlayerDetailsDto
+    href: Application.DTOs.PlayerDTOs.PlayerDetailsDto.html
+  - name: )
+  - name: )
+- uid: Application.Services.TeamService.GetTeamPlayersAsyncWithFilters*
+  commentId: Overload:Application.Services.TeamService.GetTeamPlayersAsyncWithFilters
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetTeamPlayersAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_
+  name: GetTeamPlayersAsyncWithFilters
+  nameWithType: TeamService.GetTeamPlayersAsyncWithFilters
+  fullName: Application.Services.TeamService.GetTeamPlayersAsyncWithFilters
+- uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  commentId: M:Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_
+  name: GetTeamPlayersAsyncWithFilters(Guid, FilterTeamPlayers)
+  nameWithType: ITeamService.GetTeamPlayersAsyncWithFilters(Guid, FilterTeamPlayers)
+  fullName: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid, Application.DTOs.Filters.FilterTeamPlayers)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+    name: GetTeamPlayersAsyncWithFilters
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterTeamPlayers
+    name: FilterTeamPlayers
+    href: Application.DTOs.Filters.FilterTeamPlayers.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetTeamPlayersAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+    name: GetTeamPlayersAsyncWithFilters
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetTeamPlayersAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterTeamPlayers
+    name: FilterTeamPlayers
+    href: Application.DTOs.Filters.FilterTeamPlayers.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterTeamPlayers
+  commentId: T:Application.DTOs.Filters.FilterTeamPlayers
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamPlayers.html
+  name: FilterTeamPlayers
+  nameWithType: FilterTeamPlayers
+  fullName: Application.DTOs.Filters.FilterTeamPlayers
+- uid: Application.Services.TeamService.RemovePlayerFromTeamAsync*
+  commentId: Overload:Application.Services.TeamService.RemovePlayerFromTeamAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_RemovePlayerFromTeamAsync_System_Guid_System_String_System_String_
+  name: RemovePlayerFromTeamAsync
+  nameWithType: TeamService.RemovePlayerFromTeamAsync
+  fullName: Application.Services.TeamService.RemovePlayerFromTeamAsync
+- uid: Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_RemovePlayerFromTeamAsync_System_Guid_System_String_System_String_
+  name: RemovePlayerFromTeamAsync(Guid, string, string)
+  nameWithType: ITeamService.RemovePlayerFromTeamAsync(Guid, string, string)
+  fullName: Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid, string, string)
+  nameWithType.vb: ITeamService.RemovePlayerFromTeamAsync(Guid, String, String)
+  fullName.vb: Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid, String, String)
+  name.vb: RemovePlayerFromTeamAsync(Guid, String, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+    name: RemovePlayerFromTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_RemovePlayerFromTeamAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.RemovePlayerFromTeamAsync(System.Guid,System.String,System.String)
+    name: RemovePlayerFromTeamAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_RemovePlayerFromTeamAsync_System_Guid_System_String_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Services.TeamService.SearchTeamsAsync*
+  commentId: Overload:Application.Services.TeamService.SearchTeamsAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_SearchTeamsAsync_System_Guid_
+  name: SearchTeamsAsync
+  nameWithType: TeamService.SearchTeamsAsync
+  fullName: Application.Services.TeamService.SearchTeamsAsync
+- uid: Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+  commentId: M:Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsAsync_System_Guid_
+  name: SearchTeamsAsync(Guid)
+  nameWithType: ITeamService.SearchTeamsAsync(Guid)
+  fullName: Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+    name: SearchTeamsAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.SearchTeamsAsync(System.Guid)
+    name: SearchTeamsAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Services.TeamService.SearchTeamsWithFiltersAsync*
+  commentId: Overload:Application.Services.TeamService.SearchTeamsWithFiltersAsync
+  href: Application.Services.TeamService.html#Application_Services_TeamService_SearchTeamsWithFiltersAsync_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  name: SearchTeamsWithFiltersAsync
+  nameWithType: TeamService.SearchTeamsWithFiltersAsync
+  fullName: Application.Services.TeamService.SearchTeamsWithFiltersAsync
+- uid: Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsWithFiltersAsync_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  name: SearchTeamsWithFiltersAsync(Guid, FilterListTeamDto)
+  nameWithType: ITeamService.SearchTeamsWithFiltersAsync(Guid, FilterListTeamDto)
+  fullName: Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid, Application.DTOs.Filters.FilterListTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+    name: SearchTeamsWithFiltersAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsWithFiltersAsync_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.SearchTeamsWithFiltersAsync(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+    name: SearchTeamsWithFiltersAsync
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_SearchTeamsWithFiltersAsync_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterListTeamDto
+    name: FilterListTeamDto
+    href: Application.DTOs.Filters.FilterListTeamDto.html
+  - name: )
+- uid: Application.Services.TeamService.GetPlayersWithoutTeamWithFilters*
+  commentId: Overload:Application.Services.TeamService.GetPlayersWithoutTeamWithFilters
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetPlayersWithoutTeamWithFilters_Application_DTOs_Filters_FilterTeamDto_
+  name: GetPlayersWithoutTeamWithFilters
+  nameWithType: TeamService.GetPlayersWithoutTeamWithFilters
+  fullName: Application.Services.TeamService.GetPlayersWithoutTeamWithFilters
+- uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Interfaces.Services.ITeamService
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeamWithFilters_Application_DTOs_Filters_FilterTeamDto_
+  name: GetPlayersWithoutTeamWithFilters(FilterTeamDto)
+  nameWithType: ITeamService.GetPlayersWithoutTeamWithFilters(FilterTeamDto)
+  fullName: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+    name: GetPlayersWithoutTeamWithFilters
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeamWithFilters_Application_DTOs_Filters_FilterTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+    href: Application.DTOs.Filters.FilterTeamDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeamWithFilters(Application.DTOs.Filters.FilterTeamDto)
+    name: GetPlayersWithoutTeamWithFilters
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeamWithFilters_Application_DTOs_Filters_FilterTeamDto_
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+    href: Application.DTOs.Filters.FilterTeamDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterTeamDto
+  commentId: T:Application.DTOs.Filters.FilterTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamDto.html
+  name: FilterTeamDto
+  nameWithType: FilterTeamDto
+  fullName: Application.DTOs.Filters.FilterTeamDto
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlayerWithoutTeamInfoDto>>
+  nameWithType: Task<List<PlayerWithoutTeamInfoDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Player.PlayerWithoutTeamInfoDto>>
+  nameWithType.vb: Task(Of List(Of PlayerWithoutTeamInfoDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Player.PlayerWithoutTeamInfoDto))
+  name.vb: Task(Of List(Of PlayerWithoutTeamInfoDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+    name: PlayerWithoutTeamInfoDto
+    href: Application.DTOs.Player.PlayerWithoutTeamInfoDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+    name: PlayerWithoutTeamInfoDto
+    href: Application.DTOs.Player.PlayerWithoutTeamInfoDto.html
+  - name: )
+  - name: )
+- uid: Application.Services.TeamService.GetPlayersWithoutTeam*
+  commentId: Overload:Application.Services.TeamService.GetPlayersWithoutTeam
+  href: Application.Services.TeamService.html#Application_Services_TeamService_GetPlayersWithoutTeam
+  name: GetPlayersWithoutTeam
+  nameWithType: TeamService.GetPlayersWithoutTeam
+  fullName: Application.Services.TeamService.GetPlayersWithoutTeam
+- uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam
+  commentId: M:Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam
+  parent: Application.Interfaces.Services.ITeamService
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeam
+  name: GetPlayersWithoutTeam()
+  nameWithType: ITeamService.GetPlayersWithoutTeam()
+  fullName: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam()
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam
+    name: GetPlayersWithoutTeam
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeam
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.GetPlayersWithoutTeam
+    name: GetPlayersWithoutTeam
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_GetPlayersWithoutTeam
+  - name: (
+  - name: )
+- uid: Application.Services.TeamService.getOpponent*
+  commentId: Overload:Application.Services.TeamService.getOpponent
+  href: Application.Services.TeamService.html#Application_Services_TeamService_getOpponent_System_Guid_
+  name: getOpponent
+  nameWithType: TeamService.getOpponent
+  fullName: Application.Services.TeamService.getOpponent
+- uid: Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+  commentId: M:Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+  parent: Application.Interfaces.Services.ITeamService
+  isExternal: true
+  href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_getOpponent_System_Guid_
+  name: getOpponent(Guid)
+  nameWithType: ITeamService.getOpponent(Guid)
+  fullName: Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+    name: getOpponent
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_getOpponent_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.ITeamService.getOpponent(System.Guid)
+    name: getOpponent
+    href: Application.Interfaces.Services.ITeamService.html#Application_Interfaces_Services_ITeamService_getOpponent_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TeamDto>
+  nameWithType: Task<TeamDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Team.TeamDto>
+  nameWithType.vb: Task(Of TeamDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Team.TeamDto)
+  name.vb: Task(Of TeamDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamDto
+    name: TeamDto
+    href: Application.DTOs.Team.TeamDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamDto
+    name: TeamDto
+    href: Application.DTOs.Team.TeamDto.html
+  - name: )

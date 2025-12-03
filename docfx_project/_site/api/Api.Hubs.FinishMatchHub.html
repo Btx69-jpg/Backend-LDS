@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FinishMatchHub | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FinishMatchHub | docfx_project ">
+      
+      <meta name="description" content="Hub SignalR respons&#225;vel pela coordena&#231;&#227;o da finaliza&#231;&#227;o de uma partida (Finish Match). Este hub gere o processo de submiss&#227;o de resultados finais por parte dos administradores das equipas. O objetivo &#233; garantir que ambas as equipas concordam com o resultado (n&#250;mero de golos) antes de oficializar o fim do jogo.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Api_Hubs_FinishMatchHub.md&amp;value=---%0Auid%3A%20Api.Hubs.FinishMatchHub%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Api.Hubs.FinishMatchHub">
+
+
+
+  <h1 id="Api_Hubs_FinishMatchHub" data-uid="Api.Hubs.FinishMatchHub" class="text-break">
+Class FinishMatchHub  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Api.html">Api</a>.<a class="xref" href="Api.Hubs.html">Hubs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Api.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Hub SignalR responsável pela coordenação da finalização de uma partida (Finish Match).</p>
+<p>Este hub gere o processo de submissão de resultados finais por parte dos administradores das equipas.
+O objetivo é garantir que ambas as equipas concordam com o resultado (número de golos) antes de oficializar o fim do jogo.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FinishMatchHub : Hub&lt;IFinishMatchHub&gt;, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub">Hub</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub-1">Hub</a>&lt;<a class="xref" href="Application.Interfaces.Hub.IFinishMatchHub.html">IFinishMatchHub</a>&gt;</div>
+      <div><span class="xref">FinishMatchHub</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub-1.clients">Hub&lt;IFinishMatchHub&gt;.Clients</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub.onconnectedasync">Hub.OnConnectedAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub.dispose#microsoft-aspnetcore-signalr-hub-dispose(system-boolean)">Hub.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub.dispose#microsoft-aspnetcore-signalr-hub-dispose">Hub.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub.context">Hub.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hub.groups">Hub.Groups</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Api_Hubs_FinishMatchHub__ctor_" data-uid="Api.Hubs.FinishMatchHub.#ctor*"></a>
+
+  <h3 id="Api_Hubs_FinishMatchHub__ctor_Application_Interfaces_Services_Hub_IManagerFinishMatchService_Application_Interfaces_Validators_Hub_IHubFinshMatchValidator_Application_Interfaces_Validators_Hub_IGeralHubValidator_" data-uid="Api.Hubs.FinishMatchHub.#ctor(Application.Interfaces.Services.Hub.IManagerFinishMatchService,Application.Interfaces.Validators.Hub.IHubFinshMatchValidator,Application.Interfaces.Validators.Hub.IGeralHubValidator)">
+  FinishMatchHub(IManagerFinishMatchService, IHubFinshMatchValidator, IGeralHubValidator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor do FinishMatchHub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FinishMatchHub(IManagerFinishMatchService managerFinishMatchService, IHubFinshMatchValidator validator, IGeralHubValidator geralValidator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>managerFinishMatchService</code> <a class="xref" href="Application.Interfaces.Services.Hub.IManagerFinishMatchService.html">IManagerFinishMatchService</a></dt>
+    <dd><p>Serviço que gere o estado dos resultados submetidos.</p>
+</dd>
+    <dt><code>validator</code> <a class="xref" href="Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.html">IHubFinshMatchValidator</a></dt>
+    <dd><p>Validador específico para regras de finalização de jogo.</p>
+</dd>
+    <dt><code>geralValidator</code> <a class="xref" href="Application.Interfaces.Validators.Hub.IGeralHubValidator.html">IGeralHubValidator</a></dt>
+    <dd><p>Validador para regras gerais de Hub.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Api_Hubs_FinishMatchHub_EditResult_" data-uid="Api.Hubs.FinishMatchHub.EditResult*"></a>
+
+  <h3 id="Api_Hubs_FinishMatchHub_EditResult_Application_DTOs_Match_ResultMatchDto_" data-uid="Api.Hubs.FinishMatchHub.EditResult(Application.DTOs.Match.ResultMatchDto)">
+  EditResult(ResultMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Método invocado por um cliente para editar um resultado previamente submetido (correção de erro).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task EditResult(ResultMatchDto finishMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>finishMatch</code> <a class="xref" href="Application.DTOs.Match.ResultMatchDto.html">ResultMatchDto</a></dt>
+    <dd><p>O novo DTO de resultado corrigido.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hubexception">HubException</a></dt>
+    <dd><p>Se a edição não for permitida (ex: jogo já fechado).</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Api_Hubs_FinishMatchHub_JoinFinishMatch_" data-uid="Api.Hubs.FinishMatchHub.JoinFinishMatch*"></a>
+
+  <h3 id="Api_Hubs_FinishMatchHub_JoinFinishMatch_Application_DTOs_Match_ResultMatchDto_" data-uid="Api.Hubs.FinishMatchHub.JoinFinishMatch(Application.DTOs.Match.ResultMatchDto)">
+  JoinFinishMatch(ResultMatchDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Método invocado por um cliente (Admin) para submeter o resultado final do jogo.</p>
+<p>Fluxo:</p>
+<ol>
+<li>O admin envia o resultado ([ResultMatchDto]).</li>
+<li>O serviço armazena o resultado e verifica se a outra equipa já submeteu.</li>
+<li>Se ambos submeteram e os resultados coincidem ([result.IsCoincides]), o jogo é finalizado e o grupo é limpo.</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task JoinFinishMatch(ResultMatchDto finishMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>finishMatch</code> <a class="xref" href="Application.DTOs.Match.ResultMatchDto.html">ResultMatchDto</a></dt>
+    <dd><p>DTO contendo os golos e IDs da partida/equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hubexception">HubException</a></dt>
+    <dd><p>Se os dados forem inválidos ou o estado do jogo não permitir finalização.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Api_Hubs_FinishMatchHub_LeaveFinishMatch_" data-uid="Api.Hubs.FinishMatchHub.LeaveFinishMatch*"></a>
+
+  <h3 id="Api_Hubs_FinishMatchHub_LeaveFinishMatch" data-uid="Api.Hubs.FinishMatchHub.LeaveFinishMatch">
+  LeaveFinishMatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Método invocado explicitamente pelo cliente para sair do ecrã de finalização sem concluir.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LeaveFinishMatch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.hubexception">HubException</a></dt>
+    <dd><p>Se ocorrer erro ao processar a saída.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Api_Hubs_FinishMatchHub_OnDisconnectedAsync_" data-uid="Api.Hubs.FinishMatchHub.OnDisconnectedAsync*"></a>
+
+  <h3 id="Api_Hubs_FinishMatchHub_OnDisconnectedAsync_System_Exception_" data-uid="Api.Hubs.FinishMatchHub.OnDisconnectedAsync(System.Exception)">
+  OnDisconnectedAsync(Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chamado automaticamente quando a conexão cai ou o cliente fecha a app.
+Garante que os dados temporários de finalização são limpos ou marcados como pendentes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task OnDisconnectedAsync(Exception exception)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>exception</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>A exceção que causou a desconexão, se houver.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Api/Hubs/FinishMatchHub.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

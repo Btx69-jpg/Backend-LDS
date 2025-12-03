@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  id: Domain.Enums
+  children:
+  - Domain.Enums.MatchResult
+  - Domain.Enums.MatchStatus
+  - Domain.Enums.Position
+  - Domain.Enums.StatusPostPone
+  langs:
+  - csharp
+  - vb
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Enums.MatchResult
+  commentId: T:Domain.Enums.MatchResult
+  parent: Domain.Enums
+  href: Domain.Enums.MatchResult.html
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Domain.Enums.MatchResult
+- uid: Domain.Enums.MatchStatus
+  commentId: T:Domain.Enums.MatchStatus
+  parent: Domain.Enums
+  href: Domain.Enums.MatchStatus.html
+  name: MatchStatus
+  nameWithType: MatchStatus
+  fullName: Domain.Enums.MatchStatus
+- uid: Domain.Enums.Position
+  commentId: T:Domain.Enums.Position
+  parent: Domain.Enums
+  href: Domain.Enums.Position.html
+  name: Position
+  nameWithType: Position
+  fullName: Domain.Enums.Position
+- uid: Domain.Enums.StatusPostPone
+  commentId: T:Domain.Enums.StatusPostPone
+  parent: Domain.Enums
+  href: Domain.Enums.StatusPostPone.html
+  name: StatusPostPone
+  nameWithType: StatusPostPone
+  fullName: Domain.Enums.StatusPostPone
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html

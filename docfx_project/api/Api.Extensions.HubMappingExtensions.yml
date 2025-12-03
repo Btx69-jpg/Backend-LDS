@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Extensions.HubMappingExtensions
+  commentId: T:Api.Extensions.HubMappingExtensions
+  id: HubMappingExtensions
+  parent: Api.Extensions
+  children:
+  - Api.Extensions.HubMappingExtensions.MapHubs(Microsoft.AspNetCore.Builder.WebApplication)
+  langs:
+  - csharp
+  - vb
+  name: HubMappingExtensions
+  nameWithType: HubMappingExtensions
+  fullName: Api.Extensions.HubMappingExtensions
+  type: Class
+  source:
+    remote:
+      path: Api/Extensions/HubMappingExtensions.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HubMappingExtensions
+    path: ../Api/Extensions/HubMappingExtensions.cs
+    startLine: 10
+  assemblies:
+  - Api
+  namespace: Api.Extensions
+  summary: >-
+    Classe de extensão responsável pelo mapeamento e configuração das rotas (Endpoints) dos Hubs SignalR.
+
+
+    Esta classe centraliza a definição dos caminhos de URL para todos os serviços de tempo real,
+
+    mantendo o ficheiro <code>Program.cs</code> limpo e organizado.
+  example: []
+  syntax:
+    content: public static class HubMappingExtensions
+    content.vb: Public Module HubMappingExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Api.Extensions.HubMappingExtensions.MapHubs(Microsoft.AspNetCore.Builder.WebApplication)
+  commentId: M:Api.Extensions.HubMappingExtensions.MapHubs(Microsoft.AspNetCore.Builder.WebApplication)
+  id: MapHubs(Microsoft.AspNetCore.Builder.WebApplication)
+  isExtensionMethod: true
+  parent: Api.Extensions.HubMappingExtensions
+  langs:
+  - csharp
+  - vb
+  name: MapHubs(WebApplication)
+  nameWithType: HubMappingExtensions.MapHubs(WebApplication)
+  fullName: Api.Extensions.HubMappingExtensions.MapHubs(Microsoft.AspNetCore.Builder.WebApplication)
+  type: Method
+  source:
+    remote:
+      path: Api/Extensions/HubMappingExtensions.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MapHubs
+    path: ../Api/Extensions/HubMappingExtensions.cs
+    startLine: 45
+  assemblies:
+  - Api
+  namespace: Api.Extensions
+  summary: >-
+    Mapeia os Hubs SignalR da aplicação para os seus respetivos endpoints HTTP.
+
+
+    Este método deve ser chamado no pipeline de configuração da aplicação (<code>app</code>) 
+
+    após a construção do host.
+  remarks: >-
+    <b>Tabela de Endpoints Configurados:</b>
+
+    <table><thead><tr><th class="term">Rota (URL)</th><th class="description">Hub Associado</th></tr></thead><tbody><tr><td class="term"><code>/StartMatch</code></td><td class="description">Gere o handshake inicial e o começo do jogo em tempo real.</td></tr><tr><td class="term"><code>/FinishMatch</code></td><td class="description">Coordena a submissão e validação de resultados finais entre as equipas.</td></tr><tr><td class="term"><code>/MatchMaker</code></td><td class="description">Lobby para procura automática de adversários (Ranked).</td></tr><tr><td class="term"><code>/Notification</code></td><td class="description">Canal genérico para notificações push (ex: Alertas de Jogo).</td></tr></tbody></table>
+  example: []
+  syntax:
+    content: public static WebApplication MapHubs(this WebApplication app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.WebApplication
+      description: A instância da aplicação web (<xref href="Microsoft.AspNetCore.Builder.WebApplication" data-throw-if-not-resolved="false"></xref>) onde os hubs serão registados.
+    return:
+      type: Microsoft.AspNetCore.Builder.WebApplication
+      description: A instância da aplicação atualizada, permitindo o encadeamento de chamadas (Fluent API).
+    content.vb: Public Shared Function MapHubs(app As WebApplication) As WebApplication
+  overload: Api.Extensions.HubMappingExtensions.MapHubs*
+references:
+- uid: Api.Extensions
+  commentId: N:Api.Extensions
+  href: Api.html
+  name: Api.Extensions
+  nameWithType: Api.Extensions
+  fullName: Api.Extensions
+  spec.csharp:
+  - uid: Api
+    name: Api
+    href: Api.html
+  - name: .
+  - uid: Api.Extensions
+    name: Extensions
+    href: Api.Extensions.html
+  spec.vb:
+  - uid: Api
+    name: Api
+    href: Api.html
+  - name: .
+  - uid: Api.Extensions
+    name: Extensions
+    href: Api.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Builder.WebApplication
+  commentId: T:Microsoft.AspNetCore.Builder.WebApplication
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.webapplication
+  name: WebApplication
+  nameWithType: WebApplication
+  fullName: Microsoft.AspNetCore.Builder.WebApplication
+- uid: Api.Extensions.HubMappingExtensions.MapHubs*
+  commentId: Overload:Api.Extensions.HubMappingExtensions.MapHubs
+  href: Api.Extensions.HubMappingExtensions.html#Api_Extensions_HubMappingExtensions_MapHubs_Microsoft_AspNetCore_Builder_WebApplication_
+  name: MapHubs
+  nameWithType: HubMappingExtensions.MapHubs
+  fullName: Api.Extensions.HubMappingExtensions.MapHubs
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder

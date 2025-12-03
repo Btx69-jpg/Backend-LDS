@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application
+  commentId: N:Application
+  id: Application
+  children:
+  - Application.DependecyInjection
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: Application
+  fullName: Application
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DependecyInjection
+  commentId: T:Application.DependecyInjection
+  href: Application.DependecyInjection.html
+  name: DependecyInjection
+  nameWithType: DependecyInjection
+  fullName: Application.DependecyInjection
