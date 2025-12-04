@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.INotificationService
+  commentId: T:Application.Interfaces.Services.Hub.INotificationService
+  id: INotificationService
+  parent: Application.Interfaces.Services.Hub
+  children:
+  - Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  - Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  - Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: Application.Interfaces.Services.Hub.INotificationService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/INotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: INotificationService
+    path: ../Application/Interfaces/Services/Hub/INotificationService.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: public interface INotificationService
+    content.vb: Public Interface INotificationService
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(System.String,System.String,System.String,System.Object)
+  id: SendUserAsync(System.String,System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  langs:
+  - csharp
+  - vb
+  name: SendUserAsync(string, string, string, object?)
+  nameWithType: INotificationService.SendUserAsync(string, string, string, object?)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(string, string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/INotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendUserAsync
+    path: ../Application/Interfaces/Services/Hub/INotificationService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task SendUserAsync(string userId, string title, string body, object? data = null)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: title
+      type: System.String
+    - id: body
+      type: System.String
+    - id: data
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SendUserAsync(userId As String, title As String, body As String, data As Object = Nothing) As Task
+  overload: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync*
+  nameWithType.vb: INotificationService.SendUserAsync(String, String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync(String, String, String, Object)
+  name.vb: SendUserAsync(String, String, String, Object)
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(System.String,System.String,System.String,System.Object)
+  id: SendTeamAsync(System.String,System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  langs:
+  - csharp
+  - vb
+  name: SendTeamAsync(string, string, string, object?)
+  nameWithType: INotificationService.SendTeamAsync(string, string, string, object?)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(string, string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/INotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendTeamAsync
+    path: ../Application/Interfaces/Services/Hub/INotificationService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task SendTeamAsync(string teamId, string title, string body, object? data = null)
+    parameters:
+    - id: teamId
+      type: System.String
+    - id: title
+      type: System.String
+    - id: body
+      type: System.String
+    - id: data
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SendTeamAsync(teamId As String, title As String, body As String, data As Object = Nothing) As Task
+  overload: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync*
+  nameWithType.vb: INotificationService.SendTeamAsync(String, String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync(String, String, String, Object)
+  name.vb: SendTeamAsync(String, String, String, Object)
+- uid: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  commentId: M:Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(System.String,System.String,System.Object)
+  id: BroadcastAsync(System.String,System.String,System.Object)
+  parent: Application.Interfaces.Services.Hub.INotificationService
+  langs:
+  - csharp
+  - vb
+  name: BroadcastAsync(string, string, object?)
+  nameWithType: INotificationService.BroadcastAsync(string, string, object?)
+  fullName: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(string, string, object?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/INotificationService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: BroadcastAsync
+    path: ../Application/Interfaces/Services/Hub/INotificationService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub
+  syntax:
+    content: Task BroadcastAsync(string title, string body, object? data = null)
+    parameters:
+    - id: title
+      type: System.String
+    - id: body
+      type: System.String
+    - id: data
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function BroadcastAsync(title As String, body As String, data As Object = Nothing) As Task
+  overload: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync*
+  nameWithType.vb: INotificationService.BroadcastAsync(String, String, Object)
+  fullName.vb: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync(String, String, Object)
+  name.vb: BroadcastAsync(String, String, Object)
+references:
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.INotificationService.SendUserAsync
+  href: Application.Interfaces.Services.Hub.INotificationService.html#Application_Interfaces_Services_Hub_INotificationService_SendUserAsync_System_String_System_String_System_String_System_Object_
+  name: SendUserAsync
+  nameWithType: INotificationService.SendUserAsync
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendUserAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync
+  href: Application.Interfaces.Services.Hub.INotificationService.html#Application_Interfaces_Services_Hub_INotificationService_SendTeamAsync_System_String_System_String_System_String_System_Object_
+  name: SendTeamAsync
+  nameWithType: INotificationService.SendTeamAsync
+  fullName: Application.Interfaces.Services.Hub.INotificationService.SendTeamAsync
+- uid: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync
+  href: Application.Interfaces.Services.Hub.INotificationService.html#Application_Interfaces_Services_Hub_INotificationService_BroadcastAsync_System_String_System_String_System_Object_
+  name: BroadcastAsync
+  nameWithType: INotificationService.BroadcastAsync
+  fullName: Application.Interfaces.Services.Hub.INotificationService.BroadcastAsync

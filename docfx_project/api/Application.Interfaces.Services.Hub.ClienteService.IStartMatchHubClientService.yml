@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  commentId: T:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  id: IStartMatchHubClientService
+  parent: Application.Interfaces.Services.Hub.ClienteService
+  children:
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  - Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  langs:
+  - csharp
+  - vb
+  name: IStartMatchHubClientService
+  nameWithType: IStartMatchHubClientService
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IStartMatchHubClientService
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: public interface IStartMatchHubClientService
+    content.vb: Public Interface IStartMatchHubClientService
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  id: InitializeAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: IStartMatchHubClientService.InitializeAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: InitializeAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InitializeAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid,System.Guid)
+  id: JoinStartMatchAsync(System.Guid,System.Guid)
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: JoinStartMatchAsync(Guid, Guid)
+  nameWithType: IStartMatchHubClientService.JoinStartMatchAsync(Guid, Guid)
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinStartMatchAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task JoinStartMatchAsync(Guid idMatch, Guid idTeam)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinStartMatchAsync(idMatch As Guid, idTeam As Guid) As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  id: LeaveStartMatchAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: LeaveStartMatchAsync()
+  nameWithType: IStartMatchHubClientService.LeaveStartMatchAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveStartMatchAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IStartMatchHubClientService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task LeaveStartMatchAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveStartMatchAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync*
+references:
+- uid: Application.Interfaces.Services.Hub.ClienteService
+  commentId: N:Application.Interfaces.Services.Hub.ClienteService
+  href: Application.html
+  name: Application.Interfaces.Services.Hub.ClienteService
+  nameWithType: Application.Interfaces.Services.Hub.ClienteService
+  fullName: Application.Interfaces.Services.Hub.ClienteService
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: IStartMatchHubClientService.InitializeAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_JoinStartMatchAsync_System_Guid_System_Guid_
+  name: JoinStartMatchAsync
+  nameWithType: IStartMatchHubClientService.JoinStartMatchAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.JoinStartMatchAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IStartMatchHubClientService_LeaveStartMatchAsync
+  name: LeaveStartMatchAsync
+  nameWithType: IStartMatchHubClientService.LeaveStartMatchAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.LeaveStartMatchAsync

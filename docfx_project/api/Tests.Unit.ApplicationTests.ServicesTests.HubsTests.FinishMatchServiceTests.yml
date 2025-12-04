@@ -1,0 +1,1572 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  id: FinishMatchServiceTests
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  children:
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  langs:
+  - csharp
+  - vb
+  name: FinishMatchServiceTests
+  nameWithType: FinishMatchServiceTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FinishMatchServiceTests
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 15
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class FinishMatchServiceTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class FinishMatchServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup
+  id: Setup
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: FinishMatchServiceTests.Setup()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Setup
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 39
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown
+  id: TearDown
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: FinishMatchServiceTests.TearDown()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TearDown
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 139
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [TearDown]
+
+      public void TearDown()
+    content.vb: >-
+      <TearDown>
+
+      Public Sub TearDown()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown*
+  attributes:
+  - type: NUnit.Framework.TearDownAttribute
+    ctor: NUnit.Framework.TearDownAttribute.#ctor
+    arguments: []
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  id: JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 157
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o primeiro admin a entrar no hub é marcado como 'IsFirstAdmin' e é adicionado à cache.")]
+
+      public Task JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se o primeiro admin a entrar no hub é marcado como 'IsFirstAdmin' e é adicionado à cache.")>
+
+      Public Function JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o primeiro admin a entrar no hub é marcado como 'IsFirstAdmin' e é adicionado à cache.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  id: JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 185
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o segundo admin a entrar com um resultado diferente não finaliza a partida e não limpa a cache.")]
+
+      public Task JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se o segundo admin a entrar com um resultado diferente não finaliza a partida e não limpa a cache.")>
+
+      Public Function JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o segundo admin a entrar com um resultado diferente não finaliza a partida e não limpa a cache.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  id: JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 216
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa o 'happy path' onde o segundo admin entra com um resultado coincidente, a partida é finalizada, a BD é atualizada e a cache é limpa.")]
+
+      public Task JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa o 'happy path' onde o segundo admin entra com um resultado coincidente, a partida é finalizada, a BD é atualizada e a cache é limpa.")>
+
+      Public Function JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa o 'happy path' onde o segundo admin entra com um resultado coincidente, a partida é finalizada, a BD é atualizada e a cache é limpa.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  id: JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_InvalidInputVariables_ThrowsArgumentException()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 256
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o método falha (lança ArgumentException) quando os parâmetros de entrada básicos são inválidos.")]
+
+      public void JoinHubAsync_InvalidInputVariables_ThrowsArgumentException()
+    content.vb: >-
+      <Test(Description:="Testa se o método falha (lança ArgumentException) quando os parâmetros de entrada básicos são inválidos.")>
+
+      Public Sub JoinHubAsync_InvalidInputVariables_ThrowsArgumentException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o método falha (lança ArgumentException) quando os parâmetros de entrada básicos são inválidos.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  id: JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_MatchNotFound_ThrowsArgumentException()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_MatchNotFound_ThrowsArgumentException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 272
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o método falha (lança ArgumentException) se a partida (matchId) não for encontrada no repositório.")]
+
+      public void JoinHubAsync_MatchNotFound_ThrowsArgumentException()
+    content.vb: >-
+      <Test(Description:="Testa se o método falha (lança ArgumentException) se a partida (matchId) não for encontrada no repositório.")>
+
+      Public Sub JoinHubAsync_MatchNotFound_ThrowsArgumentException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o método falha (lança ArgumentException) se a partida (matchId) não for encontrada no repositório.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  id: JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 289
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o método falha (lança ArgumentException) quando o utilizador que tenta entrar no hub não é admin de nenhuma equipa na partida.")]
+
+      public void JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException()
+    content.vb: >-
+      <Test(Description:="Testa se o método falha (lança ArgumentException) quando o utilizador que tenta entrar no hub não é admin de nenhuma equipa na partida.")>
+
+      Public Sub JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o método falha (lança ArgumentException) quando o utilizador que tenta entrar no hub não é admin de nenhuma equipa na partida.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  id: JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 300
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o método falha (lança InvalidOperationException) se um admin da mesma equipa já estiver no hub.")]
+
+      public void JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException()
+    content.vb: >-
+      <Test(Description:="Testa se o método falha (lança InvalidOperationException) se um admin da mesma equipa já estiver no hub.")>
+
+      Public Sub JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o método falha (lança InvalidOperationException) se um admin da mesma equipa já estiver no hub.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  id: JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException()
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 319
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se o método falha (lança InvalidOperationException) se a partida começou há menos de 90 minutos.")]
+
+      public void JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException()
+    content.vb: >-
+      <Test(Description:="Testa se o método falha (lança InvalidOperationException) se a partida começou há menos de 90 minutos.")>
+
+      Public Sub JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se o método falha (lança InvalidOperationException) se a partida começou há menos de 90 minutos.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  id: UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache()
+  nameWithType: FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 349
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa o 'happy path' onde um admin atualiza o seu resultado, este agora coincide, e a partida é finalizada.")]
+
+      public Task UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa o 'happy path' onde um admin atualiza o seu resultado, este agora coincide, e a partida é finalizada.")>
+
+      Public Function UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa o 'happy path' onde um admin atualiza o seu resultado, este agora coincide, e a partida é finalizada.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  id: UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize()
+  nameWithType: FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 375
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa quando um admin atualiza o seu resultado, mas este ainda não coincide com o do outro admin.")]
+
+      public Task UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa quando um admin atualiza o seu resultado, mas este ainda não coincide com o do outro admin.")>
+
+      Public Function UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa quando um admin atualiza o seu resultado, mas este ainda não coincide com o do outro admin.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+  id: UpdateResult_AdminNotInHub_ThrowsException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult_AdminNotInHub_ThrowsException()
+  nameWithType: FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult_AdminNotInHub_ThrowsException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 403
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se UpdateResult falha se o admin que tenta atualizar não estiver no hub.")]
+
+      public void UpdateResult_AdminNotInHub_ThrowsException()
+    content.vb: >-
+      <Test(Description:="Testa se UpdateResult falha se o admin que tenta atualizar não estiver no hub.")>
+
+      Public Sub UpdateResult_AdminNotInHub_ThrowsException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se UpdateResult falha se o admin que tenta atualizar não estiver no hub.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+  id: UpdateResult_HubIsEmpty_ThrowsException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult_HubIsEmpty_ThrowsException()
+  nameWithType: FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult_HubIsEmpty_ThrowsException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 424
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se UpdateResult falha se o hub estiver vazio (ninguém entrou).")]
+
+      public void UpdateResult_HubIsEmpty_ThrowsException()
+    content.vb: >-
+      <Test(Description:="Testa se UpdateResult falha se o hub estiver vazio (ninguém entrou).")>
+
+      Public Sub UpdateResult_HubIsEmpty_ThrowsException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se UpdateResult falha se o hub estiver vazio (ninguém entrou).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  id: UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException()
+  nameWithType: FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 437
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se UpdateResult falha se o utilizador não for um admin (NullReference).")]
+
+      public void UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException()
+    content.vb: >-
+      <Test(Description:="Testa se UpdateResult falha se o utilizador não for um admin (NullReference).")>
+
+      Public Sub UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se UpdateResult falha se o utilizador não for um admin (NullReference).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+  id: LeaveHubAsync_InvalidIds_ThrowsException
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync_InvalidIds_ThrowsException()
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync_InvalidIds_ThrowsException
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 453
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se LeaveHubAsync falha (lança Exceção) se os IDs forem inválidos.")]
+
+      public void LeaveHubAsync_InvalidIds_ThrowsException()
+    content.vb: >-
+      <Test(Description:="Testa se LeaveHubAsync falha (lança Exceção) se os IDs forem inválidos.")>
+
+      Public Sub LeaveHubAsync_InvalidIds_ThrowsException()
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se LeaveHubAsync falha (lança Exceção) se os IDs forem inválidos.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  id: LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync_HubNotFoundInCache_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 469
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se LeaveHubAsync retorna false se o hub (matchId) não for encontrado na cache.")]
+
+      public Task LeaveHubAsync_HubNotFoundInCache_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se LeaveHubAsync retorna false se o hub (matchId) não for encontrado na cache.")>
+
+      Public Function LeaveHubAsync_HubNotFoundInCache_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se LeaveHubAsync retorna false se o hub (matchId) não for encontrado na cache.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  id: LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync_TeamNotInHub_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync_TeamNotInHub_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 479
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se LeaveHubAsync retorna false se o hub for encontrado, mas a equipa (teamId) não estiver no hub.")]
+
+      public Task LeaveHubAsync_TeamNotInHub_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se LeaveHubAsync retorna false se o hub for encontrado, mas a equipa (teamId) não estiver no hub.")>
+
+      Public Function LeaveHubAsync_TeamNotInHub_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se LeaveHubAsync retorna false se o hub for encontrado, mas a equipa (teamId) não estiver no hub.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  id: LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue()
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 496
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, quando o último admin sai, o hub é completamente removido da cache.")]
+
+      public Task LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se, quando o último admin sai, o hub é completamente removido da cache.")>
+
+      Public Function LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, quando o último admin sai, o hub é completamente removido da cache.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  id: LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue()
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 511
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, quando um admin sai mas outro permanece, a cache é atualizada (não removida).")]
+
+      public Task LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se, quando um admin sai mas outro permanece, a cache é atualizada (não removida).")>
+
+      Public Function LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, quando um admin sai mas outro permanece, a cache é atualizada (não removida).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  id: HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync_NullMatchId_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync_NullMatchId_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 533
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se HandleDisconnectAsync retorna false se o matchId for nulo.")]
+
+      public Task HandleDisconnectAsync_NullMatchId_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se HandleDisconnectAsync retorna false se o matchId for nulo.")>
+
+      Public Function HandleDisconnectAsync_NullMatchId_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se HandleDisconnectAsync retorna false se o matchId for nulo.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  id: HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync_NullTeamId_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync_NullTeamId_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 544
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se HandleDisconnectAsync retorna false se o teamId for nulo.")]
+
+      public Task HandleDisconnectAsync_NullTeamId_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se HandleDisconnectAsync retorna false se o teamId for nulo.")>
+
+      Public Function HandleDisconnectAsync_NullTeamId_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se HandleDisconnectAsync retorna false se o teamId for nulo.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  id: HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync_BothIdsNull_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 555
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se HandleDisconnectAsync retorna false se ambos os IDs forem nulos.")]
+
+      public Task HandleDisconnectAsync_BothIdsNull_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se HandleDisconnectAsync retorna false se ambos os IDs forem nulos.")>
+
+      Public Function HandleDisconnectAsync_BothIdsNull_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se HandleDisconnectAsync retorna false se ambos os IDs forem nulos.
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  id: HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue()
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 566
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna true (se o 'leave' for bem-sucedido).")]
+
+      public Task HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna true (se o 'leave' for bem-sucedido).")>
+
+      Public Function HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna true (se o 'leave' for bem-sucedido).
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  commentId: M:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  id: HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  parent: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse()
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse()
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/HubsTests/FinishMatchServiceTests.cs
+    startLine: 583
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  syntax:
+    content: >-
+      [Test(Description = "Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna false (se o 'leave' falhar).")]
+
+      public Task HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna false (se o 'leave' falhar).")>
+
+      Public Function HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse() As Task
+  overload: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: Testa se, com IDs válidos, HandleDisconnectAsync chama LeaveHubAsync e retorna false (se o 'leave' falhar).
+references:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  commentId: N:Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  href: Tests.html
+  name: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  nameWithType: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+    name: HubsTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+    name: HubsTests
+    href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_Setup
+  name: Setup
+  nameWithType: FinishMatchServiceTests.Setup
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.Setup
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_TearDown
+  name: TearDown
+  nameWithType: FinishMatchServiceTests.TearDown
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.TearDown
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  name: JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_FirstAdminJoins_ReturnsIsFirstAdminTrueAndAddsToCache
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  name: JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMismatch_DoesNotFinalizeMatch
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  name: JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_SecondAdminJoins_ResultsMatch_FinalizesMatchUpdatesAndClearsCache
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  name: JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_InvalidInputVariables_ThrowsArgumentException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  name: JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotFound_ThrowsArgumentException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  name: JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_UserIsNotAdmin_ThrowsArgumentException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  name: JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_AdminAlreadyInHub_ThrowsInvalidOperationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  name: JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  nameWithType: FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.JoinHubAsync_MatchNotYet90Minutes_ThrowsInvalidOperationException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  name: UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  nameWithType: FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultNowMatches_FinalizesMatchUpdatesAndClearsCache
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  name: UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  nameWithType: FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_ResultStillMismatches_UpdatesCacheButDoesNotFinalize
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_UpdateResult_AdminNotInHub_ThrowsException
+  name: UpdateResult_AdminNotInHub_ThrowsException
+  nameWithType: FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_AdminNotInHub_ThrowsException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_UpdateResult_HubIsEmpty_ThrowsException
+  name: UpdateResult_HubIsEmpty_ThrowsException
+  nameWithType: FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_HubIsEmpty_ThrowsException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  name: UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  nameWithType: FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.UpdateResult_UserIsNotAdmin_ThrowsNullReferenceException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_LeaveHubAsync_InvalidIds_ThrowsException
+  name: LeaveHubAsync_InvalidIds_ThrowsException
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_InvalidIds_ThrowsException
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  name: LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_HubNotFoundInCache_ReturnsFalse
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  name: LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_TeamNotInHub_ReturnsFalse
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  name: LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_LastAdminLeaves_RemovesHubFromCacheAndReturnsTrue
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  name: LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  nameWithType: FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.LeaveHubAsync_OneAdminLeaves_UpdatesCacheWithRemainingAdminAndReturnsTrue
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  name: HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullMatchId_ReturnsFalse
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  name: HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_NullTeamId_ReturnsFalse
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  name: HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_BothIdsNull_ReturnsFalse
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  name: HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveSucceeds_ReturnsTrue
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse*
+  commentId: Overload:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html#Tests_Unit_ApplicationTests_ServicesTests_HubsTests_FinishMatchServiceTests_HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  name: HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  nameWithType: FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.HandleDisconnectAsync_ValidIds_AndLeaveFails_ReturnsFalse

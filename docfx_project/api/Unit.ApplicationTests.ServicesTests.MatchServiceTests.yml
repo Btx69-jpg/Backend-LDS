@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  id: MatchServiceTests
+  parent: Unit.ApplicationTests.ServicesTests
+  children:
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp
+  langs:
+  - csharp
+  - vb
+  name: MatchServiceTests
+  nameWithType: MatchServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchServiceTests
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 18
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class MatchServiceTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class MatchServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp
+  id: SetUp
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: MatchServiceTests.SetUp()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SetUp
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 32
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void SetUp()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub SetUp()
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  id: PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 56
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GP5 - Player Admin de equipa adia partida SCHEDULED para data futura (12h depois).")]
+
+      public Task PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GP5 - Player Admin de equipa adia partida SCHEDULED para data futura (12h depois).")>
+
+      Public Function PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GP5 - Player Admin de equipa adia partida SCHEDULED para data futura (12h depois).
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+  id: PostPoneMatch_Should_Throw_When_ValidatorFails
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_ValidatorFails()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_ValidatorFails
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 106
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T2GP5 - Player não admin tenta adiar partida.")]
+
+      public Task PostPoneMatch_Should_Throw_When_ValidatorFails()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T2GP5 - Player não admin tenta adiar partida.")>
+
+      Public Function PostPoneMatch_Should_Throw_When_ValidatorFails() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T2GP5 - Player não admin tenta adiar partida.
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  id: PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 142
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção se a equipa não pertencer à partida")]
+
+      public Task PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção se a equipa não pertencer à partida")>
+
+      Public Function PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção se a equipa não pertencer à partida'
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  id: PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 184
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T4GP5 - Tenta adiar partida com estado CANCELLED, DONE ou IN_PROGRESS.")]
+
+      public Task PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T4GP5 - Tenta adiar partida com estado CANCELLED, DONE ou IN_PROGRESS.")>
+
+      Public Function PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T4GP5 - Tenta adiar partida com estado CANCELLED, DONE ou IN_PROGRESS.
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+  id: PostPoneMatch_Should_Throw_When_NewDateIsSame
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_NewDateIsSame()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_NewDateIsSame
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 221
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T5GP5 - Tentar adiar partida para a mesma data definida.")]
+
+      public Task PostPoneMatch_Should_Throw_When_NewDateIsSame()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T5GP5 - Tentar adiar partida para a mesma data definida.")>
+
+      Public Function PostPoneMatch_Should_Throw_When_NewDateIsSame() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T5GP5 - Tentar adiar partida para a mesma data definida.
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  id: PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_MatchDoesNotExist()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 259
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T6GP5 - Tentar adiar partida inexistente.")]
+
+      public Task PostPoneMatch_Should_Throw_When_MatchDoesNotExist()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T6GP5 - Tentar adiar partida inexistente.")>
+
+      Public Function PostPoneMatch_Should_Throw_When_MatchDoesNotExist() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T6GP5 - Tentar adiar partida inexistente.
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  id: PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent()
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 275
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T7GP5 - Tentar adiar partida para a mesma data ou uma data anterior à data que estava marcada.")]
+
+      public Task PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T7GP5 - Tentar adiar partida para a mesma data ou uma data anterior à data que estava marcada.")>
+
+      Public Function PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T7GP5 - Tentar adiar partida para a mesma data ou uma data anterior à data que estava marcada.
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+  id: GetCalendar_Should_Return_All_Matches_For_Team
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetCalendar_Should_Return_All_Matches_For_Team()
+  nameWithType: MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendar_Should_Return_All_Matches_For_Team
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 452
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "GetCalendar deve devolver todas as partidas para uma equipa")]
+
+      public Task GetCalendar_Should_Return_All_Matches_For_Team()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="GetCalendar deve devolver todas as partidas para uma equipa")>
+
+      Public Function GetCalendar_Should_Return_All_Matches_For_Team() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: GetCalendar deve devolver todas as partidas para uma equipa
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  id: GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches()
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 515
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "GetCalendarWithFilters deve devolver resultados quando o filtro é válido")]
+
+      public Task GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="GetCalendarWithFilters deve devolver resultados quando o filtro é válido")>
+
+      Public Function GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: GetCalendarWithFilters deve devolver resultados quando o filtro é válido
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  id: GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate()
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 564
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "GetCalendarWithFilters deve lançar exceção quando a data mínima for maior ou igual à data máxima")]
+
+      public Task GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="GetCalendarWithFilters deve lançar exceção quando a data mínima for maior ou igual à data máxima")>
+
+      Public Function GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: GetCalendarWithFilters deve lançar exceção quando a data mínima for maior ou igual à data máxima
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  id: GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  parent: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty()
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchServiceTests.cs
+    startLine: 588
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "GetCalendarWithFilters deve lançar exceção quando o id da equipa for nulo")]
+
+      public Task GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="GetCalendarWithFilters deve lançar exceção quando o id da equipa for nulo")>
+
+      Public Function GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: GetCalendarWithFilters deve lançar exceção quando o id da equipa for nulo
+references:
+- uid: Unit.ApplicationTests.ServicesTests
+  commentId: N:Unit.ApplicationTests.ServicesTests
+  href: Unit.html
+  name: Unit.ApplicationTests.ServicesTests
+  nameWithType: Unit.ApplicationTests.ServicesTests
+  fullName: Unit.ApplicationTests.ServicesTests
+  spec.csharp:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+  spec.vb:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_SetUp
+  name: SetUp
+  nameWithType: MatchServiceTests.SetUp
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.SetUp
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  name: PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_ReturnInfoPostPoneMatch_When_AdminPostponesSuccessfully
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_ValidatorFails
+  name: PostPoneMatch_Should_Throw_When_ValidatorFails
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_ValidatorFails
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  name: PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_TeamDoesNotBelongToMatch
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  name: PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchHasInvalidStatus
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_NewDateIsSame
+  name: PostPoneMatch_Should_Throw_When_NewDateIsSame
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsSame
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  name: PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_MatchDoesNotExist
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  name: PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  nameWithType: MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.PostPoneMatch_Should_Throw_When_NewDateIsBeforeCurrent
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_GetCalendar_Should_Return_All_Matches_For_Team
+  name: GetCalendar_Should_Return_All_Matches_For_Team
+  nameWithType: MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendar_Should_Return_All_Matches_For_Team
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  name: GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_ValidateAnd_ReturnFilteredMatches
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  name: GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_MinDate_Is_Greater_Than_MaxDate
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchServiceTests_GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  name: GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  nameWithType: MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests.GetCalendarWithFilters_Should_Throw_Exception_When_Team_Id_Is_Empty

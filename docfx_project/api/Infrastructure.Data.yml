@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  id: Infrastructure.Data
+  children:
+  - Infrastructure.Data.AmateurFootballContext
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html

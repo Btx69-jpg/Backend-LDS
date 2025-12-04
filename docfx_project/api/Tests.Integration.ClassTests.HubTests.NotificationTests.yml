@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.NotificationTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.NotificationTests
+  id: Tests.Integration.ClassTests.HubTests.NotificationTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.ClassTests.HubTests.NotificationTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.NotificationTests
+  fullName: Tests.Integration.ClassTests.HubTests.NotificationTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests.html
+  name: NotificationHubIntegrationTests
+  nameWithType: NotificationHubIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests

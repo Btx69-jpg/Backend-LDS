@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+  commentId: T:Application.DTOs.Chat.CreateChatRoomRequestDto
+  id: CreateChatRoomRequestDto
+  parent: Application.DTOs.Chat
+  children:
+  - Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+  - Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+  langs:
+  - csharp
+  - vb
+  name: CreateChatRoomRequestDto
+  nameWithType: CreateChatRoomRequestDto
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto
+  type: Class
+  source:
+    remote:
+      path: Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateChatRoomRequestDto
+    path: ../Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Chat
+  syntax:
+    content: public class CreateChatRoomRequestDto
+    content.vb: Public Class CreateChatRoomRequestDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+  commentId: P:Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+  id: RoomName
+  parent: Application.DTOs.Chat.CreateChatRoomRequestDto
+  langs:
+  - csharp
+  - vb
+  name: RoomName
+  nameWithType: CreateChatRoomRequestDto.RoomName
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RoomName
+    path: ../Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Chat
+  syntax:
+    content: public string RoomName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RoomName As String
+  overload: Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName*
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+  commentId: P:Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+  id: TeamIds
+  parent: Application.DTOs.Chat.CreateChatRoomRequestDto
+  langs:
+  - csharp
+  - vb
+  name: TeamIds
+  nameWithType: CreateChatRoomRequestDto.TeamIds
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamIds
+    path: ../Application/DTOs/Chat/CreateChatRoomRequestDto.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Chat
+  syntax:
+    content: public List<Guid> TeamIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Guid}
+    content.vb: Public Property TeamIds As List(Of Guid)
+  overload: Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds*
+references:
+- uid: Application.DTOs.Chat
+  commentId: N:Application.DTOs.Chat
+  href: Application.html
+  name: Application.DTOs.Chat
+  nameWithType: Application.DTOs.Chat
+  fullName: Application.DTOs.Chat
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName*
+  commentId: Overload:Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+  href: Application.DTOs.Chat.CreateChatRoomRequestDto.html#Application_DTOs_Chat_CreateChatRoomRequestDto_RoomName
+  name: RoomName
+  nameWithType: CreateChatRoomRequestDto.RoomName
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto.RoomName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds*
+  commentId: Overload:Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+  href: Application.DTOs.Chat.CreateChatRoomRequestDto.html#Application_DTOs_Chat_CreateChatRoomRequestDto_TeamIds
+  name: TeamIds
+  nameWithType: CreateChatRoomRequestDto.TeamIds
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto.TeamIds
+- uid: System.Collections.Generic.List{System.Guid}
+  commentId: T:System.Collections.Generic.List{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Guid>
+  nameWithType: List<Guid>
+  fullName: System.Collections.Generic.List<System.Guid>
+  nameWithType.vb: List(Of Guid)
+  fullName.vb: System.Collections.Generic.List(Of System.Guid)
+  name.vb: List(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

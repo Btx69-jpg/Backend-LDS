@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Constants
+  commentId: N:Domain.Constants
+  id: Domain.Constants
+  children:
+  - Domain.Constants.ModelConstants
+  - Domain.Constants.ModelConstants.CancelledMatchConst
+  - Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+  - Domain.Constants.ModelConstants.FinishMatchHubConst
+  - Domain.Constants.ModelConstants.GeneralConst
+  - Domain.Constants.ModelConstants.GeralTimeInHubConst
+  - Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+  - Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+  - Domain.Constants.ModelConstants.MessageConst
+  - Domain.Constants.ModelConstants.NotificationHubConst
+  - Domain.Constants.ModelConstants.PitchConst
+  - Domain.Constants.ModelConstants.PlayerConst
+  - Domain.Constants.ModelConstants.RankConts
+  - Domain.Constants.ModelConstants.RankMatchMakerHubConst
+  - Domain.Constants.ModelConstants.RouteHubConst
+  - Domain.Constants.ModelConstants.StartMatchHubConst
+  - Domain.Constants.ModelConstants.TeamConst
+  - Domain.Constants.ModelConstants.TeamLeaderBoardConst
+  - Domain.Constants.ModelConstants.UserConst
+  langs:
+  - csharp
+  - vb
+  name: Domain.Constants
+  nameWithType: Domain.Constants
+  fullName: Domain.Constants
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Constants.ModelConstants
+  commentId: T:Domain.Constants.ModelConstants
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants
+  nameWithType: ModelConstants
+  fullName: Domain.Constants.ModelConstants
+- uid: Domain.Constants.ModelConstants.GeneralConst
+  commentId: T:Domain.Constants.ModelConstants.GeneralConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.GeneralConst
+  nameWithType: ModelConstants.GeneralConst
+  fullName: Domain.Constants.ModelConstants.GeneralConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.GeneralConst
+    name: GeneralConst
+    href: Domain.Constants.ModelConstants.GeneralConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.GeneralConst
+    name: GeneralConst
+    href: Domain.Constants.ModelConstants.GeneralConst.html
+- uid: Domain.Constants.ModelConstants.TeamConst
+  commentId: T:Domain.Constants.ModelConstants.TeamConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.TeamConst
+  nameWithType: ModelConstants.TeamConst
+  fullName: Domain.Constants.ModelConstants.TeamConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.TeamConst
+    name: TeamConst
+    href: Domain.Constants.ModelConstants.TeamConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.TeamConst
+    name: TeamConst
+    href: Domain.Constants.ModelConstants.TeamConst.html
+- uid: Domain.Constants.ModelConstants.UserConst
+  commentId: T:Domain.Constants.ModelConstants.UserConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.UserConst
+  nameWithType: ModelConstants.UserConst
+  fullName: Domain.Constants.ModelConstants.UserConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.UserConst
+    name: UserConst
+    href: Domain.Constants.ModelConstants.UserConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.UserConst
+    name: UserConst
+    href: Domain.Constants.ModelConstants.UserConst.html
+- uid: Domain.Constants.ModelConstants.PlayerConst
+  commentId: T:Domain.Constants.ModelConstants.PlayerConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.PlayerConst
+  nameWithType: ModelConstants.PlayerConst
+  fullName: Domain.Constants.ModelConstants.PlayerConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.PlayerConst
+    name: PlayerConst
+    href: Domain.Constants.ModelConstants.PlayerConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.PlayerConst
+    name: PlayerConst
+    href: Domain.Constants.ModelConstants.PlayerConst.html
+- uid: Domain.Constants.ModelConstants.PitchConst
+  commentId: T:Domain.Constants.ModelConstants.PitchConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.PitchConst
+  nameWithType: ModelConstants.PitchConst
+  fullName: Domain.Constants.ModelConstants.PitchConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.PitchConst
+    name: PitchConst
+    href: Domain.Constants.ModelConstants.PitchConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.PitchConst
+    name: PitchConst
+    href: Domain.Constants.ModelConstants.PitchConst.html
+- uid: Domain.Constants.ModelConstants.RankConts
+  commentId: T:Domain.Constants.ModelConstants.RankConts
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.RankConts
+  nameWithType: ModelConstants.RankConts
+  fullName: Domain.Constants.ModelConstants.RankConts
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RankConts
+    name: RankConts
+    href: Domain.Constants.ModelConstants.RankConts.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RankConts
+    name: RankConts
+    href: Domain.Constants.ModelConstants.RankConts.html
+- uid: Domain.Constants.ModelConstants.MessageConst
+  commentId: T:Domain.Constants.ModelConstants.MessageConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.MessageConst
+  nameWithType: ModelConstants.MessageConst
+  fullName: Domain.Constants.ModelConstants.MessageConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.MessageConst
+    name: MessageConst
+    href: Domain.Constants.ModelConstants.MessageConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.MessageConst
+    name: MessageConst
+    href: Domain.Constants.ModelConstants.MessageConst.html
+- uid: Domain.Constants.ModelConstants.CancelledMatchConst
+  commentId: T:Domain.Constants.ModelConstants.CancelledMatchConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.CancelledMatchConst
+  nameWithType: ModelConstants.CancelledMatchConst
+  fullName: Domain.Constants.ModelConstants.CancelledMatchConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.CancelledMatchConst
+    name: CancelledMatchConst
+    href: Domain.Constants.ModelConstants.CancelledMatchConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.CancelledMatchConst
+    name: CancelledMatchConst
+    href: Domain.Constants.ModelConstants.CancelledMatchConst.html
+- uid: Domain.Constants.ModelConstants.StartMatchHubConst
+  commentId: T:Domain.Constants.ModelConstants.StartMatchHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.StartMatchHubConst
+  nameWithType: ModelConstants.StartMatchHubConst
+  fullName: Domain.Constants.ModelConstants.StartMatchHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.StartMatchHubConst
+    name: StartMatchHubConst
+    href: Domain.Constants.ModelConstants.StartMatchHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.StartMatchHubConst
+    name: StartMatchHubConst
+    href: Domain.Constants.ModelConstants.StartMatchHubConst.html
+- uid: Domain.Constants.ModelConstants.FinishMatchHubConst
+  commentId: T:Domain.Constants.ModelConstants.FinishMatchHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.FinishMatchHubConst
+  nameWithType: ModelConstants.FinishMatchHubConst
+  fullName: Domain.Constants.ModelConstants.FinishMatchHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.FinishMatchHubConst
+    name: FinishMatchHubConst
+    href: Domain.Constants.ModelConstants.FinishMatchHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.FinishMatchHubConst
+    name: FinishMatchHubConst
+    href: Domain.Constants.ModelConstants.FinishMatchHubConst.html
+- uid: Domain.Constants.ModelConstants.RankMatchMakerHubConst
+  commentId: T:Domain.Constants.ModelConstants.RankMatchMakerHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.RankMatchMakerHubConst
+  nameWithType: ModelConstants.RankMatchMakerHubConst
+  fullName: Domain.Constants.ModelConstants.RankMatchMakerHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RankMatchMakerHubConst
+    name: RankMatchMakerHubConst
+    href: Domain.Constants.ModelConstants.RankMatchMakerHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RankMatchMakerHubConst
+    name: RankMatchMakerHubConst
+    href: Domain.Constants.ModelConstants.RankMatchMakerHubConst.html
+- uid: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+  commentId: T:Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.ManagerRankMatchMakerServiceConst
+  nameWithType: ModelConstants.ManagerRankMatchMakerServiceConst
+  fullName: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+    name: ManagerRankMatchMakerServiceConst
+    href: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst
+    name: ManagerRankMatchMakerServiceConst
+    href: Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst.html
+- uid: Domain.Constants.ModelConstants.NotificationHubConst
+  commentId: T:Domain.Constants.ModelConstants.NotificationHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.NotificationHubConst
+  nameWithType: ModelConstants.NotificationHubConst
+  fullName: Domain.Constants.ModelConstants.NotificationHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.NotificationHubConst
+    name: NotificationHubConst
+    href: Domain.Constants.ModelConstants.NotificationHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.NotificationHubConst
+    name: NotificationHubConst
+    href: Domain.Constants.ModelConstants.NotificationHubConst.html
+- uid: Domain.Constants.ModelConstants.GeralTimeInHubConst
+  commentId: T:Domain.Constants.ModelConstants.GeralTimeInHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.GeralTimeInHubConst
+  nameWithType: ModelConstants.GeralTimeInHubConst
+  fullName: Domain.Constants.ModelConstants.GeralTimeInHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.GeralTimeInHubConst
+    name: GeralTimeInHubConst
+    href: Domain.Constants.ModelConstants.GeralTimeInHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.GeralTimeInHubConst
+    name: GeralTimeInHubConst
+    href: Domain.Constants.ModelConstants.GeralTimeInHubConst.html
+- uid: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+  commentId: T:Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.DeafultCriteriaMatchMaker
+  nameWithType: ModelConstants.DeafultCriteriaMatchMaker
+  fullName: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+    name: DeafultCriteriaMatchMaker
+    href: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker
+    name: DeafultCriteriaMatchMaker
+    href: Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker.html
+- uid: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+  commentId: T:Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.HoursValidToCompetitiveMatch
+  nameWithType: ModelConstants.HoursValidToCompetitiveMatch
+  fullName: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+    name: HoursValidToCompetitiveMatch
+    href: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch
+    name: HoursValidToCompetitiveMatch
+    href: Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch.html
+- uid: Domain.Constants.ModelConstants.TeamLeaderBoardConst
+  commentId: T:Domain.Constants.ModelConstants.TeamLeaderBoardConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.TeamLeaderBoardConst
+  nameWithType: ModelConstants.TeamLeaderBoardConst
+  fullName: Domain.Constants.ModelConstants.TeamLeaderBoardConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.TeamLeaderBoardConst
+    name: TeamLeaderBoardConst
+    href: Domain.Constants.ModelConstants.TeamLeaderBoardConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.TeamLeaderBoardConst
+    name: TeamLeaderBoardConst
+    href: Domain.Constants.ModelConstants.TeamLeaderBoardConst.html
+- uid: Domain.Constants.ModelConstants.RouteHubConst
+  commentId: T:Domain.Constants.ModelConstants.RouteHubConst
+  href: Domain.Constants.ModelConstants.html
+  name: ModelConstants.RouteHubConst
+  nameWithType: ModelConstants.RouteHubConst
+  fullName: Domain.Constants.ModelConstants.RouteHubConst
+  spec.csharp:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RouteHubConst
+    name: RouteHubConst
+    href: Domain.Constants.ModelConstants.RouteHubConst.html
+  spec.vb:
+  - uid: Domain.Constants.ModelConstants
+    name: ModelConstants
+    href: Domain.Constants.ModelConstants.html
+  - name: .
+  - uid: Domain.Constants.ModelConstants.RouteHubConst
+    name: RouteHubConst
+    href: Domain.Constants.ModelConstants.RouteHubConst.html

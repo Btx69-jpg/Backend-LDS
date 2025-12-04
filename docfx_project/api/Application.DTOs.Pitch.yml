@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Pitch
+  commentId: N:Application.DTOs.Pitch
+  id: Application.DTOs.Pitch
+  children:
+  - Application.DTOs.Pitch.PitchDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Pitch
+  nameWithType: Application.DTOs.Pitch
+  fullName: Application.DTOs.Pitch
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Pitch.PitchDto
+  commentId: T:Application.DTOs.Pitch.PitchDto
+  parent: Application.DTOs.Pitch
+  href: Application.DTOs.Pitch.PitchDto.html
+  name: PitchDto
+  nameWithType: PitchDto
+  fullName: Application.DTOs.Pitch.PitchDto
+- uid: Application.DTOs.Pitch
+  commentId: N:Application.DTOs.Pitch
+  href: Application.html
+  name: Application.DTOs.Pitch
+  nameWithType: Application.DTOs.Pitch
+  fullName: Application.DTOs.Pitch
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Pitch
+    name: Pitch
+    href: Application.DTOs.Pitch.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Pitch
+    name: Pitch
+    href: Application.DTOs.Pitch.html

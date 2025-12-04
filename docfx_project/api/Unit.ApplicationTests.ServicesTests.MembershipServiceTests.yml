@@ -1,0 +1,1813 @@
+### YamlMime:ManagedReference
+items:
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  id: MembershipServiceTests
+  parent: Unit.ApplicationTests.ServicesTests
+  children:
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp
+  langs:
+  - csharp
+  - vb
+  name: MembershipServiceTests
+  nameWithType: MembershipServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MembershipServiceTests
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 19
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class MembershipServiceTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class MembershipServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp
+  id: SetUp
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: MembershipServiceTests.SetUp()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SetUp
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 37
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void SetUp()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub SetUp()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  id: AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 180
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GEPA2- AcceptMembershipRequestAsync deve aceitar o pedido de adesão com sucesso quando o utilizador é admin")]
+
+      public Task AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GEPA2- AcceptMembershipRequestAsync deve aceitar o pedido de adesão com sucesso quando o utilizador é admin")>
+
+      Public Function AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GEPA2- AcceptMembershipRequestAsync deve aceitar o pedido de adesão com sucesso quando o utilizador é admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  id: AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 209
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção quando um não-admin tenta aceitar")]
+
+      public Task AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção quando um não-admin tenta aceitar")>
+
+      Public Function AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção quando um não-admin tenta aceitar'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  id: AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 243
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção quando a equipa está cheia")]
+
+      public Task AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção quando a equipa está cheia")>
+
+      Public Function AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção quando a equipa está cheia'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  id: AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 284
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção quando o pedido não é encontrado")]
+
+      public Task AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção quando o pedido não é encontrado")>
+
+      Public Function AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção quando o pedido não é encontrado'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  id: RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects()
+  nameWithType: MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 319
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GEPA3- RejectMembershipRequestAsync deve rejeitar o pedido de adesão com sucesso quando o utilizador é admin")]
+
+      public Task RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GEPA3- RejectMembershipRequestAsync deve rejeitar o pedido de adesão com sucesso quando o utilizador é admin")>
+
+      Public Function RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GEPA3- RejectMembershipRequestAsync deve rejeitar o pedido de adesão com sucesso quando o utilizador é admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  id: RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequestAsync_Should_Throw_When_Not_Admin()
+  nameWithType: MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 345
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção quando um não-admin tenta rejeitar")]
+
+      public Task RejectMembershipRequestAsync_Should_Throw_When_Not_Admin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção quando um não-admin tenta rejeitar")>
+
+      Public Function RejectMembershipRequestAsync_Should_Throw_When_Not_Admin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção quando um não-admin tenta rejeitar'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  id: GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsAsync_Should_Return_Requests_When_Admin()
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 391
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GEPA1- GetMembershipRequestsAsync deve devolver os pedidos de adesão quando o utilizador é admin")]
+
+      public Task GetMembershipRequestsAsync_Should_Return_Requests_When_Admin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GEPA1- GetMembershipRequestsAsync deve devolver os pedidos de adesão quando o utilizador é admin")>
+
+      Public Function GetMembershipRequestsAsync_Should_Return_Requests_When_Admin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GEPA1- GetMembershipRequestsAsync deve devolver os pedidos de adesão quando o utilizador é admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  id: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin()
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 440
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin")]
+
+      public Task GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin")>
+
+      Public Function GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  id: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team()
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 476
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team")]
+
+      public Task GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team")>
+
+      Public Function GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+  id: SendMembershipRequest_Should_Return_Request_When_Valid
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Return_Request_When_Valid()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Return_Request_When_Valid
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 515
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GEPA4- Enviar um pedido de adesão sendo administrador da equipa, a equipa não está cheia e o jogador convidado está sem clube")]
+
+      public Task SendMembershipRequest_Should_Return_Request_When_Valid()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GEPA4- Enviar um pedido de adesão sendo administrador da equipa, a equipa não está cheia e o jogador convidado está sem clube")>
+
+      Public Function SendMembershipRequest_Should_Return_Request_When_Valid() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GEPA4- Enviar um pedido de adesão sendo administrador da equipa, a equipa não está cheia e o jogador convidado está sem clube
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  id: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 556
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin")]
+
+      public Task SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin")>
+
+      Public Function SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  id: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 585
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full")]
+
+      public Task SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full")>
+
+      Public Function SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  id: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 622
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team")]
+
+      public Task SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team")>
+
+      Public Function SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  id: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 652
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest")]
+
+      public Task SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest")>
+
+      Public Function SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  id: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team()
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 682
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team")]
+
+      public Task SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team")>
+
+      Public Function SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work
+  id: GetMembershipRequests_Should_Work
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequests_Should_Work()
+  nameWithType: MembershipServiceTests.GetMembershipRequests_Should_Work()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequests_Should_Work
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 719
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: Get player membership requests should work")]
+
+      public Task GetMembershipRequests_Should_Work()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: Get player membership requests should work")>
+
+      Public Function GetMembershipRequests_Should_Work() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: Get player membership requests should work'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  id: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam()
+  nameWithType: MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 737
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam")]
+
+      public void GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam()
+    content.vb: >-
+      <Test(Description:="Validação: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam")>
+
+      Public Sub GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  id: GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: GetMembershipRequests_ShouldThrow_When_PlayerNotFound()
+  nameWithType: MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 763
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: Lança exceção se o jogador pedido não existir")]
+
+      public void GetMembershipRequests_ShouldThrow_When_PlayerNotFound()
+    content.vb: >-
+      <Test(Description:="Validação: Lança exceção se o jogador pedido não existir")>
+
+      Public Sub GetMembershipRequests_ShouldThrow_When_PlayerNotFound()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: Lança exceção se o jogador pedido não existir'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+  id: SendMembershipRequestAsync_ShouldWork
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestAsync_ShouldWork()
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldWork()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestAsync_ShouldWork
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 787
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: SendMembershipRequestAsync_ShouldWork")]
+
+      public Task SendMembershipRequestAsync_ShouldWork()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: SendMembershipRequestAsync_ShouldWork")>
+
+      Public Function SendMembershipRequestAsync_ShouldWork() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: SendMembershipRequestAsync_ShouldWork'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  id: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam()
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 816
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam")]
+
+      public Task SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam")>
+
+      Public Function SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  id: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull()
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 845
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull")]
+
+      public void SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull()
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull")>
+
+      Public Sub SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  id: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam()
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 866
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam")]
+
+      public void SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam()
+    content.vb: >-
+      <Test(Description:="Validação: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam")>
+
+      Public Sub SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  id: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 894
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam")]
+
+      public Task RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam")>
+
+      Public Function RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  id: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam()
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 954
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam")]
+
+      public void RejectMembershipRequest_Should_Throw_When_PlayerHasTeam()
+    content.vb: >-
+      <Test(Description:="Validação: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam")>
+
+      Public Sub RejectMembershipRequest_Should_Throw_When_PlayerHasTeam()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+  id: RejectMembershipRequest_Should_RemoveRequestFromList
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Should_RemoveRequestFromList()
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Should_RemoveRequestFromList
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 992
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: RejectMembershipRequest_Should_RemoveRequestFromList")]
+
+      public Task RejectMembershipRequest_Should_RemoveRequestFromList()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: RejectMembershipRequest_Should_RemoveRequestFromList")>
+
+      Public Function RejectMembershipRequest_Should_RemoveRequestFromList() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: RejectMembershipRequest_Should_RemoveRequestFromList'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  id: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 1050
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam")]
+
+      public Task AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam")>
+
+      Public Function AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  id: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 1122
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Validação: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam")]
+
+      public void AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam()
+    content.vb: >-
+      <Test(Description:="Validação: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam")>
+
+      Public Sub AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam()
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Validação: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+  id: AcceptMembershipRequest_Should_RemoveRequestFromLists
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Should_RemoveRequestFromLists()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Should_RemoveRequestFromLists
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 1174
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "Caminho feliz: AcceptMembershipRequest_Should_RemoveRequestFromLists")]
+
+      public Task AcceptMembershipRequest_Should_RemoveRequestFromLists()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="Caminho feliz: AcceptMembershipRequest_Should_RemoveRequestFromLists")>
+
+      Public Function AcceptMembershipRequest_Should_RemoveRequestFromLists() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'Caminho feliz: AcceptMembershipRequest_Should_RemoveRequestFromLists'
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  id: AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  parent: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam()
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MembershipServiceTests.cs
+    startLine: 1240
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "BUG: Este teste deve falhar. O serviço não limpa os outros pedidos.")]
+
+      public Task AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="BUG: Este teste deve falhar. O serviço não limpa os outros pedidos.")>
+
+      Public Function AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'BUG: Este teste deve falhar. O serviço não limpa os outros pedidos.'
+references:
+- uid: Unit.ApplicationTests.ServicesTests
+  commentId: N:Unit.ApplicationTests.ServicesTests
+  href: Unit.html
+  name: Unit.ApplicationTests.ServicesTests
+  nameWithType: Unit.ApplicationTests.ServicesTests
+  fullName: Unit.ApplicationTests.ServicesTests
+  spec.csharp:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+  spec.vb:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SetUp
+  name: SetUp
+  nameWithType: MembershipServiceTests.SetUp
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SetUp
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  name: AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Add_Player_To_Team_When_Admin_Accepts
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  name: AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_NonAdmin_Tries_To_Accept
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  name: AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Team_Is_Full
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  name: AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  nameWithType: MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequestAsync_Should_Throw_When_Request_Not_Found
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  name: RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  nameWithType: MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Remove_Request_When_Admin_Rejects
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  name: RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  nameWithType: MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequestAsync_Should_Throw_When_Not_Admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  name: GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Return_Requests_When_Admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  name: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Not_Admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  name: GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  nameWithType: MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequestsAsync_Should_Throw_ValidationException_When_Player_Does_Not_Belong_To_Team
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Return_Request_When_Valid
+  name: SendMembershipRequest_Should_Return_Request_When_Valid
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Return_Request_When_Valid
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Not_Admin
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Team_Is_Full
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_Another_Team
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_ExistingRequest
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  name: SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  nameWithType: MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequest_Should_Throw_ValidationException_When_Player_Belongs_To_Team
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequests_Should_Work
+  name: GetMembershipRequests_Should_Work
+  nameWithType: MembershipServiceTests.GetMembershipRequests_Should_Work
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_Should_Work
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  name: GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  nameWithType: MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_WhilePlayerHasTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  name: GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  nameWithType: MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.GetMembershipRequests_ShouldThrow_When_PlayerNotFound
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequestAsync_ShouldWork
+  name: SendMembershipRequestAsync_ShouldWork
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldWork
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  name: SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhilePlayerHasTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  name: SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileTeamIsFull
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  name: SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  nameWithType: MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.SendMembershipRequestAsync_ShouldThrow_WhileAlreadySentRequestToSameTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  name: RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Work_When_PlayerWithoutTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  name: RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_Throw_When_PlayerHasTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_RejectMembershipRequest_Should_RemoveRequestFromList
+  name: RejectMembershipRequest_Should_RemoveRequestFromList
+  nameWithType: MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.RejectMembershipRequest_Should_RemoveRequestFromList
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  name: AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Work_When_PlayerWithoutTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  name: AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_Throw_When_PlayerAlreadyHasTeam
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequest_Should_RemoveRequestFromLists
+  name: AcceptMembershipRequest_Should_RemoveRequestFromLists
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveRequestFromLists
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html#Unit_ApplicationTests_ServicesTests_MembershipServiceTests_AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  name: AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  nameWithType: MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.AcceptMembershipRequest_Should_RemoveOtherRequests_When_JoiningTeam

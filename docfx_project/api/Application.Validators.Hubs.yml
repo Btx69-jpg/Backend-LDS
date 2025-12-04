@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.Hubs
+  commentId: N:Application.Validators.Hubs
+  id: Application.Validators.Hubs
+  children:
+  - Application.Validators.Hubs.FinishMatchValidator
+  - Application.Validators.Hubs.GeralHubValidator
+  - Application.Validators.Hubs.HubFinshMatchValidator
+  - Application.Validators.Hubs.NotificationValidator
+  - Application.Validators.Hubs.RankMatchMakerValidator
+  - Application.Validators.Hubs.StartMatchHubValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Validators.Hubs
+  nameWithType: Application.Validators.Hubs
+  fullName: Application.Validators.Hubs
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Validators.Hubs.FinishMatchValidator
+  commentId: T:Application.Validators.Hubs.FinishMatchValidator
+  href: Application.Validators.Hubs.FinishMatchValidator.html
+  name: FinishMatchValidator
+  nameWithType: FinishMatchValidator
+  fullName: Application.Validators.Hubs.FinishMatchValidator
+- uid: Application.Validators.Hubs.GeralHubValidator
+  commentId: T:Application.Validators.Hubs.GeralHubValidator
+  href: Application.Validators.Hubs.GeralHubValidator.html
+  name: GeralHubValidator
+  nameWithType: GeralHubValidator
+  fullName: Application.Validators.Hubs.GeralHubValidator
+- uid: Application.Validators.Hubs.HubFinshMatchValidator
+  commentId: T:Application.Validators.Hubs.HubFinshMatchValidator
+  href: Application.Validators.Hubs.HubFinshMatchValidator.html
+  name: HubFinshMatchValidator
+  nameWithType: HubFinshMatchValidator
+  fullName: Application.Validators.Hubs.HubFinshMatchValidator
+- uid: Application.Validators.Hubs.NotificationValidator
+  commentId: T:Application.Validators.Hubs.NotificationValidator
+  href: Application.Validators.Hubs.NotificationValidator.html
+  name: NotificationValidator
+  nameWithType: NotificationValidator
+  fullName: Application.Validators.Hubs.NotificationValidator
+- uid: Application.Validators.Hubs.RankMatchMakerValidator
+  commentId: T:Application.Validators.Hubs.RankMatchMakerValidator
+  href: Application.Validators.Hubs.RankMatchMakerValidator.html
+  name: RankMatchMakerValidator
+  nameWithType: RankMatchMakerValidator
+  fullName: Application.Validators.Hubs.RankMatchMakerValidator
+- uid: Application.Validators.Hubs.StartMatchHubValidator
+  commentId: T:Application.Validators.Hubs.StartMatchHubValidator
+  href: Application.Validators.Hubs.StartMatchHubValidator.html
+  name: StartMatchHubValidator
+  nameWithType: StartMatchHubValidator
+  fullName: Application.Validators.Hubs.StartMatchHubValidator

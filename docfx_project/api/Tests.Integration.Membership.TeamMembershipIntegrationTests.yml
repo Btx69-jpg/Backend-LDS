@@ -1,0 +1,807 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  commentId: T:Tests.Integration.Membership.TeamMembershipIntegrationTests
+  id: TeamMembershipIntegrationTests
+  parent: Tests.Integration.Membership
+  children:
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup
+  - Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown
+  langs:
+  - csharp
+  - vb
+  name: TeamMembershipIntegrationTests
+  nameWithType: TeamMembershipIntegrationTests
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamMembershipIntegrationTests
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 21
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class TeamMembershipIntegrationTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class TeamMembershipIntegrationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup
+  id: Setup
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: TeamMembershipIntegrationTests.Setup()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Setup
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 27
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown
+  id: TearDown
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: TeamMembershipIntegrationTests.TearDown()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TearDown
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 37
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [TearDown]
+
+      public void TearDown()
+    content.vb: >-
+      <TearDown>
+
+      Public Sub TearDown()
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown*
+  attributes:
+  - type: NUnit.Framework.TearDownAttribute
+    ctor: NUnit.Framework.TearDownAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  id: GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers()
+  nameWithType: TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 44
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  id: GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers()
+  nameWithType: TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 90
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+  id: AcceptMembershipRequest_Returns_Ok
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Returns_Ok()
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Returns_Ok
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 145
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task AcceptMembershipRequest_Returns_Ok()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function AcceptMembershipRequest_Returns_Ok() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  id: AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 183
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+  id: RejectMembershipRequest_Returns_Ok
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Returns_Ok()
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Returns_Ok
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 209
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task RejectMembershipRequest_Returns_Ok()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function RejectMembershipRequest_Returns_Ok() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  id: RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 244
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  id: AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 270
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  commentId: M:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  id: RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  parent: Tests.Integration.Membership.TeamMembershipIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+    path: ../Tests/Integration/ClassTests/MembershipTests/TeamMembershipIntegrationTests.cs
+    startLine: 301
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.Membership
+  syntax:
+    content: >-
+      [Test]
+
+      public Task RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin() As Task
+  overload: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: Tests.Integration.Membership
+  commentId: N:Tests.Integration.Membership
+  href: Tests.html
+  name: Tests.Integration.Membership
+  nameWithType: Tests.Integration.Membership
+  fullName: Tests.Integration.Membership
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.Membership
+    name: Membership
+    href: Tests.Integration.Membership.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.Membership
+    name: Membership
+    href: Tests.Integration.Membership.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_Setup
+  name: Setup
+  nameWithType: TeamMembershipIntegrationTests.Setup
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.Setup
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_TearDown
+  name: TearDown
+  nameWithType: TeamMembershipIntegrationTests.TearDown
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.TearDown
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  name: GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  nameWithType: TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_Returns_Ok_With_ListOfPlayers
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  name: GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  nameWithType: TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.GetPlayersWithoutTeam_WithFilters_Returns_Ok_With_ListOfPlayers
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_AcceptMembershipRequest_Returns_Ok
+  name: AcceptMembershipRequest_Returns_Ok
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Ok
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  name: AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_RejectMembershipRequest_Returns_Ok
+  name: RejectMembershipRequest_Returns_Ok
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Ok
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  name: RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Unauthorized_When_NotAuthenticated
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  name: AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  nameWithType: TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.AcceptMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+- uid: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin*
+  commentId: Overload:Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  href: Tests.Integration.Membership.TeamMembershipIntegrationTests.html#Tests_Integration_Membership_TeamMembershipIntegrationTests_RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  name: RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  nameWithType: TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin
+  fullName: Tests.Integration.Membership.TeamMembershipIntegrationTests.RejectMembershipRequest_Returns_Forbidden_When_UserNotAdmin

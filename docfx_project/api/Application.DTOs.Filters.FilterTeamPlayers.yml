@@ -1,0 +1,635 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Filters.FilterTeamPlayers
+  commentId: T:Application.DTOs.Filters.FilterTeamPlayers
+  id: FilterTeamPlayers
+  parent: Application.DTOs.Filters
+  children:
+  - Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+  - Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+  - Application.DTOs.Filters.FilterTeamPlayers.MinAge
+  - Application.DTOs.Filters.FilterTeamPlayers.Name
+  - Application.DTOs.Filters.FilterTeamPlayers.Position
+  langs:
+  - csharp
+  - vb
+  name: FilterTeamPlayers
+  nameWithType: FilterTeamPlayers
+  fullName: Application.DTOs.Filters.FilterTeamPlayers
+  type: Class
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FilterTeamPlayers
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public class FilterTeamPlayers
+    content.vb: Public Class FilterTeamPlayers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+  commentId: P:Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+  id: IsAdmin
+  parent: Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: IsAdmin
+  nameWithType: FilterTeamPlayers.IsAdmin
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IsAdmin
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public bool? IsAdmin { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsAdmin As Boolean?
+  overload: Application.DTOs.Filters.FilterTeamPlayers.IsAdmin*
+- uid: Application.DTOs.Filters.FilterTeamPlayers.Name
+  commentId: P:Application.DTOs.Filters.FilterTeamPlayers.Name
+  id: Name
+  parent: Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FilterTeamPlayers.Name
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.Name
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Name
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: >-
+      [MinLength(3)]
+
+      [MaxLength(100)]
+
+      public string? Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <MinLength(3)>
+
+      <MaxLength(100)>
+
+      Public Property Name As String
+  overload: Application.DTOs.Filters.FilterTeamPlayers.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.MinLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MinLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 100
+- uid: Application.DTOs.Filters.FilterTeamPlayers.MinAge
+  commentId: P:Application.DTOs.Filters.FilterTeamPlayers.MinAge
+  id: MinAge
+  parent: Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: MinAge
+  nameWithType: FilterTeamPlayers.MinAge
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.MinAge
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinAge
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: >-
+      [Range(18, 70)]
+
+      public int? MinAge { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <Range(18, 70)>
+
+      Public Property MinAge As Integer?
+  overload: Application.DTOs.Filters.FilterTeamPlayers.MinAge*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 18
+    - type: System.Int32
+      value: 70
+- uid: Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+  commentId: P:Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+  id: MaxAge
+  parent: Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: MaxAge
+  nameWithType: FilterTeamPlayers.MaxAge
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxAge
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: >-
+      [Range(18, 70)]
+
+      public int? MaxAge { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <Range(18, 70)>
+
+      Public Property MaxAge As Integer?
+  overload: Application.DTOs.Filters.FilterTeamPlayers.MaxAge*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 18
+    - type: System.Int32
+      value: 70
+- uid: Application.DTOs.Filters.FilterTeamPlayers.Position
+  commentId: P:Application.DTOs.Filters.FilterTeamPlayers.Position
+  id: Position
+  parent: Application.DTOs.Filters.FilterTeamPlayers
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: FilterTeamPlayers.Position
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.Position
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterTeamPlayers.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Position
+    path: ../Application/DTOs/Filters/FilterTeamPlayers.cs
+    startLine: 19
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public Position? Position { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Domain.Enums.Position}
+    content.vb: Public Property Position As Position?
+  overload: Application.DTOs.Filters.FilterTeamPlayers.Position*
+references:
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.Filters.FilterTeamPlayers.IsAdmin*
+  commentId: Overload:Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+  href: Application.DTOs.Filters.FilterTeamPlayers.html#Application_DTOs_Filters_FilterTeamPlayers_IsAdmin
+  name: IsAdmin
+  nameWithType: FilterTeamPlayers.IsAdmin
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.IsAdmin
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.DTOs.Filters.FilterTeamPlayers.Name*
+  commentId: Overload:Application.DTOs.Filters.FilterTeamPlayers.Name
+  href: Application.DTOs.Filters.FilterTeamPlayers.html#Application_DTOs_Filters_FilterTeamPlayers_Name
+  name: Name
+  nameWithType: FilterTeamPlayers.Name
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.DTOs.Filters.FilterTeamPlayers.MinAge*
+  commentId: Overload:Application.DTOs.Filters.FilterTeamPlayers.MinAge
+  href: Application.DTOs.Filters.FilterTeamPlayers.html#Application_DTOs_Filters_FilterTeamPlayers_MinAge
+  name: MinAge
+  nameWithType: FilterTeamPlayers.MinAge
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.MinAge
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: Application.DTOs.Filters.FilterTeamPlayers.MaxAge*
+  commentId: Overload:Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+  href: Application.DTOs.Filters.FilterTeamPlayers.html#Application_DTOs_Filters_FilterTeamPlayers_MaxAge
+  name: MaxAge
+  nameWithType: FilterTeamPlayers.MaxAge
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.MaxAge
+- uid: Application.DTOs.Filters.FilterTeamPlayers.Position*
+  commentId: Overload:Application.DTOs.Filters.FilterTeamPlayers.Position
+  href: Application.DTOs.Filters.FilterTeamPlayers.html#Application_DTOs_Filters_FilterTeamPlayers_Position
+  name: Position
+  nameWithType: FilterTeamPlayers.Position
+  fullName: Application.DTOs.Filters.FilterTeamPlayers.Position
+- uid: System.Nullable{Domain.Enums.Position}
+  commentId: T:System.Nullable{Domain.Enums.Position}
+  parent: System
+  definition: System.Nullable`1
+  name: Position?
+  nameWithType: Position?
+  fullName: Domain.Enums.Position?
+  spec.csharp:
+  - uid: Domain.Enums.Position
+    name: Position
+  - name: '?'
+  spec.vb:
+  - uid: Domain.Enums.Position
+    name: Position
+  - name: '?'

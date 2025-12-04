@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Repositories.UnityOfWork
+  commentId: T:Infrastructure.Repositories.UnityOfWork
+  id: UnityOfWork
+  parent: Infrastructure.Repositories
+  children:
+  - Infrastructure.Repositories.UnityOfWork.#ctor(Infrastructure.Data.AmateurFootballContext)
+  - Infrastructure.Repositories.UnityOfWork.SaveChangesAsync
+  langs:
+  - csharp
+  - vb
+  name: UnityOfWork
+  nameWithType: UnityOfWork
+  fullName: Infrastructure.Repositories.UnityOfWork
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/Repositories/UnityOfWork.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UnityOfWork
+    path: ../Infrastructure/Repositories/UnityOfWork.cs
+    startLine: 12
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Classe que implementa o padrão Unit of Work (Unidade de Trabalho).
+
+
+    É responsável por encapsular o contexto da base de dados ([AmateurFootballContext])
+
+    e garantir que uma série de operações (adições, atualizações, remoções) são tratadas
+
+    como uma única transação atómica através do método [SaveChangesAsync].
+  example: []
+  syntax:
+    content: 'public class UnityOfWork : IUnityOfWork'
+    content.vb: Public Class UnityOfWork Implements IUnityOfWork
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Repositories.IUnityOfWork
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Infrastructure.Repositories.UnityOfWork.#ctor(Infrastructure.Data.AmateurFootballContext)
+  commentId: M:Infrastructure.Repositories.UnityOfWork.#ctor(Infrastructure.Data.AmateurFootballContext)
+  id: '#ctor(Infrastructure.Data.AmateurFootballContext)'
+  parent: Infrastructure.Repositories.UnityOfWork
+  langs:
+  - csharp
+  - vb
+  name: UnityOfWork(AmateurFootballContext)
+  nameWithType: UnityOfWork.UnityOfWork(AmateurFootballContext)
+  fullName: Infrastructure.Repositories.UnityOfWork.UnityOfWork(Infrastructure.Data.AmateurFootballContext)
+  type: Constructor
+  source:
+    remote:
+      path: Infrastructure/Repositories/UnityOfWork.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Infrastructure/Repositories/UnityOfWork.cs
+    startLine: 24
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Construtor da classe [UnityOfWork].
+  example: []
+  syntax:
+    content: public UnityOfWork(AmateurFootballContext context)
+    parameters:
+    - id: context
+      type: Infrastructure.Data.AmateurFootballContext
+      description: O contexto da base de dados (Db Context) injetado via Dependency Injection.
+    content.vb: Public Sub New(context As AmateurFootballContext)
+  overload: Infrastructure.Repositories.UnityOfWork.#ctor*
+  nameWithType.vb: UnityOfWork.New(AmateurFootballContext)
+  fullName.vb: Infrastructure.Repositories.UnityOfWork.New(Infrastructure.Data.AmateurFootballContext)
+  name.vb: New(AmateurFootballContext)
+- uid: Infrastructure.Repositories.UnityOfWork.SaveChangesAsync
+  commentId: M:Infrastructure.Repositories.UnityOfWork.SaveChangesAsync
+  id: SaveChangesAsync
+  parent: Infrastructure.Repositories.UnityOfWork
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync()
+  nameWithType: UnityOfWork.SaveChangesAsync()
+  fullName: Infrastructure.Repositories.UnityOfWork.SaveChangesAsync()
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UnityOfWork.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SaveChangesAsync
+    path: ../Infrastructure/Repositories/UnityOfWork.cs
+    startLine: 35
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Persiste todas as alterações pendentes (adições, atualizações, remoções) no contexto da base de dados de forma assíncrona.
+
+
+    Este método é o ponto de chamada que inicia a transação no SQL Server.
+  example: []
+  syntax:
+    content: public Task<int> SaveChangesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: O número de estados de entidade (registos) que foram guardados na base de dados.
+    content.vb: Public Function SaveChangesAsync() As Task(Of Integer)
+  overload: Infrastructure.Repositories.UnityOfWork.SaveChangesAsync*
+  implements:
+  - Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+references:
+- uid: Infrastructure.Repositories
+  commentId: N:Infrastructure.Repositories
+  href: Infrastructure.html
+  name: Infrastructure.Repositories
+  nameWithType: Infrastructure.Repositories
+  fullName: Infrastructure.Repositories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUnityOfWork.html
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Infrastructure.Repositories.UnityOfWork.#ctor*
+  commentId: Overload:Infrastructure.Repositories.UnityOfWork.#ctor
+  href: Infrastructure.Repositories.UnityOfWork.html#Infrastructure_Repositories_UnityOfWork__ctor_Infrastructure_Data_AmateurFootballContext_
+  name: UnityOfWork
+  nameWithType: UnityOfWork.UnityOfWork
+  fullName: Infrastructure.Repositories.UnityOfWork.UnityOfWork
+  nameWithType.vb: UnityOfWork.New
+  fullName.vb: Infrastructure.Repositories.UnityOfWork.New
+  name.vb: New
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+- uid: Infrastructure.Repositories.UnityOfWork.SaveChangesAsync*
+  commentId: Overload:Infrastructure.Repositories.UnityOfWork.SaveChangesAsync
+  href: Infrastructure.Repositories.UnityOfWork.html#Infrastructure_Repositories_UnityOfWork_SaveChangesAsync
+  name: SaveChangesAsync
+  nameWithType: UnityOfWork.SaveChangesAsync
+  fullName: Infrastructure.Repositories.UnityOfWork.SaveChangesAsync
+- uid: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  commentId: M:Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  parent: Application.Interfaces.Repositories.IUnityOfWork
+  name: SaveChangesAsync()
+  nameWithType: IUnityOfWork.SaveChangesAsync()
+  fullName: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync()
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+    name: SaveChangesAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+    name: SaveChangesAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

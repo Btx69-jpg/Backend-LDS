@@ -1,0 +1,1685 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Repositories.MatchRepository
+  commentId: T:Infrastructure.Repositories.MatchRepository
+  id: MatchRepository
+  parent: Infrastructure.Repositories
+  children:
+  - Infrastructure.Repositories.MatchRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  - Infrastructure.Repositories.MatchRepository.AddMatch(Domain.Entities.Matches)
+  - Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  - Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  - Infrastructure.Repositories.MatchRepository.GetMatchById(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  - Infrastructure.Repositories.MatchRepository.GetMatchToCancelById(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById(System.Guid)
+  - Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(System.DateTime)
+  - Infrastructure.Repositories.MatchRepository.GetScheduledMatchById(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: MatchRepository
+  nameWithType: MatchRepository
+  fullName: Infrastructure.Repositories.MatchRepository
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchRepository
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 19
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Repositório principal para a entidade [Matches].
+
+
+    Esta classe é responsável por todas as operações de persistência, consulta e agregação de dados
+
+    de partidas, incluindo lógica complexa de carregamento de entidades relacionadas e filtragem.
+  example: []
+  syntax:
+    content: 'public class MatchRepository : IMatchRepository'
+    content.vb: Public Class MatchRepository Implements IMatchRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Infrastructure.Repositories.MatchRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  commentId: M:Infrastructure.Repositories.MatchRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  id: '#ctor(Infrastructure.Data.AmateurFootballContext)'
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: MatchRepository(AmateurFootballContext)
+  nameWithType: MatchRepository.MatchRepository(AmateurFootballContext)
+  fullName: Infrastructure.Repositories.MatchRepository.MatchRepository(Infrastructure.Data.AmateurFootballContext)
+  type: Constructor
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 31
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Construtor da classe [MatchRepository].
+  example: []
+  syntax:
+    content: public MatchRepository(AmateurFootballContext context)
+    parameters:
+    - id: context
+      type: Infrastructure.Data.AmateurFootballContext
+      description: O contexto da base de dados (Db Context) injetado via Dependency Injection.
+    content.vb: Public Sub New(context As AmateurFootballContext)
+  overload: Infrastructure.Repositories.MatchRepository.#ctor*
+  nameWithType.vb: MatchRepository.New(AmateurFootballContext)
+  fullName.vb: Infrastructure.Repositories.MatchRepository.New(Infrastructure.Data.AmateurFootballContext)
+  name.vb: New(AmateurFootballContext)
+- uid: Infrastructure.Repositories.MatchRepository.AddMatch(Domain.Entities.Matches)
+  commentId: M:Infrastructure.Repositories.MatchRepository.AddMatch(Domain.Entities.Matches)
+  id: AddMatch(Domain.Entities.Matches)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: AddMatch(Matches)
+  nameWithType: MatchRepository.AddMatch(Matches)
+  fullName: Infrastructure.Repositories.MatchRepository.AddMatch(Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddMatch
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 41
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Adiciona um novo registo de partida à base de dados.
+  example: []
+  syntax:
+    content: public Task AddMatch(Matches match)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+      description: A entidade [Matches] a ser persistida.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Uma tarefa assíncrona (<xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>) que representa a operação de adição.
+    content.vb: Public Function AddMatch(match As Matches) As Task
+  overload: Infrastructure.Repositories.MatchRepository.AddMatch*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchById(System.Guid)
+  id: GetMatchById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchById(Guid)
+  nameWithType: MatchRepository.GetMatchById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 54
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida pelo seu ID, carregando as estatísticas e os dados básicos das equipas.
+  remarks: 'Utiliza Eager Loading com `.Include` e `.ThenInclude` para carregar: Match -&gt; TeamStatistics -&gt; Team.'
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchById(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID (GUID) da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] completa ou null se não for encontrada.
+    content.vb: Public Function GetMatchById(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById(System.Guid)
+  id: GetMatchWithListPlayerById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchWithListPlayerById(Guid)
+  nameWithType: MatchRepository.GetMatchWithListPlayerById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchWithListPlayerById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 70
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida pelo seu ID, carregando toda a hierarquia de dados, incluindo a lista de membros de cada equipa.
+  remarks: 'Utiliza carregamento profundo: Match -&gt; TeamStatistics -&gt; Team -&gt; Members (da Equipa).'
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchWithListPlayerById(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID (GUID) da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] com todos os membros das equipas participantes carregados.
+    content.vb: Public Function GetMatchWithListPlayerById(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetScheduledMatchById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetScheduledMatchById(System.Guid)
+  id: GetScheduledMatchById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetScheduledMatchById(Guid)
+  nameWithType: MatchRepository.GetScheduledMatchById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetScheduledMatchById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetScheduledMatchById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 82
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida apenas se o seu estado atual for [MatchStatus.SCHEDULED].
+  example: []
+  syntax:
+    content: public Task<Matches?> GetScheduledMatchById(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] ou null se o estado não for "SCHEDULED".
+    content.vb: Public Function GetScheduledMatchById(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetScheduledMatchById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  id: GetMatchInProgressByIdAsync(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchInProgressByIdAsync(Guid)
+  nameWithType: MatchRepository.GetMatchInProgressByIdAsync(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchInProgressByIdAsync
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 95
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida apenas se o seu estado atual for [MatchStatus.IN_PROGRESS].
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchInProgressByIdAsync(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] ou null se o estado não for "IN_PROGRESS".
+    content.vb: Public Function GetMatchInProgressByIdAsync(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchToCancelById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchToCancelById(System.Guid)
+  id: GetMatchToCancelById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchToCancelById(Guid)
+  nameWithType: MatchRepository.GetMatchToCancelById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchToCancelById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchToCancelById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 111
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida que pode ser cancelada (estado SCHEDULED ou POST_PONED).
+  remarks: Carrega as estatísticas e os dados básicos das equipas participantes.
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchToCancelById(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] ou null se o estado for DONE, IN_PROGRESS ou CANCELED.
+    content.vb: Public Function GetMatchToCancelById(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchToCancelById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById(System.Guid)
+  id: GetMatchWitchPitchById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchWitchPitchById(Guid)
+  nameWithType: MatchRepository.GetMatchWitchPitchById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchWitchPitchById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 124
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma partida pelo seu ID, carregando as entidades [Pitch] e [Teams].
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchWitchPitchById(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+      description: O ID da partida.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A entidade [Matches] com o local carregado.
+    content.vb: Public Function GetMatchWitchPitchById(idMatch As Guid) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  id: GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchProxim12HoursMatchs(Guid, DateTime)
+  nameWithType: MatchRepository.GetMatchProxim12HoursMatchs(Guid, DateTime)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchProxim12HoursMatchs
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 141
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Verifica se uma equipa tem alguma partida agendada (SCHEDULED ou POST_PONED) dentro de um intervalo de 12 horas da [gameDate] fornecida.
+  remarks: Utiliza a função nativa do SQL Server [EF.Functions.DateDiffMinute] para calcular o intervalo de tempo na base de dados.
+  example: []
+  syntax:
+    content: public Task<Matches?> GetMatchProxim12HoursMatchs(Guid idTeam, DateTime gameDate)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+      description: O ID da equipa a verificar.
+    - id: gameDate
+      type: System.DateTime
+      description: A data e hora de referência para a comparação.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Matches}
+      description: A partida [Matches] encontrada ou null se não houver conflito nas 12h.
+    content.vb: Public Function GetMatchProxim12HoursMatchs(idTeam As Guid, gameDate As Date) As Task(Of Matches)
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  nameWithType.vb: MatchRepository.GetMatchProxim12HoursMatchs(Guid, Date)
+  fullName.vb: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs(System.Guid, Date)
+  name.vb: GetMatchProxim12HoursMatchs(Guid, Date)
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam(System.Guid)
+  id: GetAllMatchesTeam(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchesTeam(Guid)
+  nameWithType: MatchRepository.GetAllMatchesTeam(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchesTeam
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 166
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém o calendário de uma equipa, incluindo partidas agendadas e finalizadas.
+  remarks: >-
+    Utiliza LINQ to Entities (sintaxe de consulta) para agregar dados de [Match], [Pitch] e [TeamStatistics]
+
+    e projetar o resultado no DTO [InfoMatchCalendar].
+  example: []
+  syntax:
+    content: public Task<List<InfoMatchCalendar>> GetAllMatchesTeam(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+      description: O ID da equipa cujo calendário se pretende.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+      description: Uma lista de objetos [InfoMatchCalendar] para o frontend.
+    content.vb: Public Function GetAllMatchesTeam(idTeam As Guid) As Task(Of List(Of InfoMatchCalendar))
+  overload: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  id: GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchesTeamWithFilters(Guid, FilterCalendarDto)
+  nameWithType: MatchRepository.GetAllMatchesTeamWithFilters(Guid, FilterCalendarDto)
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterCalendarDto)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchesTeamWithFilters
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 223
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém o calendário de uma equipa, aplicando filtros complexos.
+  remarks: >-
+    Este método constrói a consulta dinamicamente, permitindo filtrar por:
+
+    - Status do jogo (Realizado, Agendado ou Ambos).
+
+    - Tipo de jogo (Competitivo vs Casual).
+
+    - Local (Casa/Fora).
+
+    - Intervalo de datas.
+  example: []
+  syntax:
+    content: public Task<List<InfoMatchCalendar>> GetAllMatchesTeamWithFilters(Guid idTeam, FilterCalendarDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+      description: O ID da equipa cujo calendário se pretende.
+    - id: filter
+      type: Application.DTOs.Filters.FilterCalendarDto
+      description: O DTO contendo os critérios de filtragem (opcional).
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+      description: Uma lista de objetos [InfoMatchCalendar] filtrados.
+    content.vb: Public Function GetAllMatchesTeamWithFilters(idTeam As Guid, filter As FilterCalendarDto) As Task(Of List(Of InfoMatchCalendar))
+  overload: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  id: GetAllMatchPostPoneReceiverById(System.Guid)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchPostPoneReceiverById(Guid)
+  nameWithType: MatchRepository.GetAllMatchPostPoneReceiverById(Guid)
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchPostPoneReceiverById
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 340
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém a lista de pedidos de adiamento recebidos por uma equipa.
+  remarks: >-
+    Utiliza uma consulta LINQ to Entities para carregar os pedidos de adiamento associados a partidas
+
+    onde a equipa é o recetor do pedido.
+  example: []
+  syntax:
+    content: public Task<List<InfoPostPoneMatch>> GetAllMatchPostPoneReceiverById(Guid idReceiver)
+    parameters:
+    - id: idReceiver
+      type: System.Guid
+      description: O ID da equipa que recebeu o pedido.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+      description: Uma lista de [InfoPostPoneMatch] com os detalhes dos pedidos pendentes.
+    content.vb: Public Function GetAllMatchPostPoneReceiverById(idReceiver As Guid) As Task(Of List(Of InfoPostPoneMatch))
+  overload: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  id: GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchPostPoneReceiverByIdWithFilters(Guid, FilterPostPoneMatchDto)
+  nameWithType: MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(Guid, FilterPostPoneMatchDto)
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid, Application.DTOs.Filters.FilterPostPoneMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchPostPoneReceiverByIdWithFilters
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 382
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém a lista de pedidos de adiamento recebidos por uma equipa, aplicando filtros complexos.
+  remarks: Carrega os dados de [PostPoneMatch] com Eager Loading para [Match] e [Team].
+  example: []
+  syntax:
+    content: public Task<List<InfoPostPoneMatch>> GetAllMatchPostPoneReceiverByIdWithFilters(Guid idReceiver, FilterPostPoneMatchDto filter)
+    parameters:
+    - id: idReceiver
+      type: System.Guid
+      description: O ID da equipa que recebeu o pedido.
+    - id: filter
+      type: Application.DTOs.Filters.FilterPostPoneMatchDto
+      description: O DTO com os critérios de filtragem (Nome, Datas de Jogo Original, Datas de Adiamento Proposta).
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+      description: Uma lista de [InfoPostPoneMatch] filtrada.
+    content.vb: Public Function GetAllMatchPostPoneReceiverByIdWithFilters(idReceiver As Guid, filter As FilterPostPoneMatchDto) As Task(Of List(Of InfoPostPoneMatch))
+  overload: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(System.DateTime)
+  commentId: M:Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(System.DateTime)
+  id: GetMatchesByDateAsync(System.DateTime)
+  parent: Infrastructure.Repositories.MatchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMatchesByDateAsync(DateTime)
+  nameWithType: MatchRepository.GetMatchesByDateAsync(DateTime)
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/MatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMatchesByDateAsync
+    path: ../Infrastructure/Repositories/MatchRepository.cs
+    startLine: 467
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém a lista de partidas (jogos agendados/finalizados) que ocorrem numa data específica.
+  example: []
+  syntax:
+    content: public Task<List<InfoMatchCalendar>> GetMatchesByDateAsync(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: A data de referência.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+      description: Uma lista de objetos [InfoMatchCalendar] para o frontend.
+    content.vb: Public Function GetMatchesByDateAsync([date] As Date) As Task(Of List(Of InfoMatchCalendar))
+  overload: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync*
+  implements:
+  - Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+  nameWithType.vb: MatchRepository.GetMatchesByDateAsync(Date)
+  fullName.vb: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync(Date)
+  name.vb: GetMatchesByDateAsync(Date)
+references:
+- uid: Infrastructure.Repositories
+  commentId: N:Infrastructure.Repositories
+  href: Infrastructure.html
+  name: Infrastructure.Repositories
+  nameWithType: Infrastructure.Repositories
+  fullName: Infrastructure.Repositories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Repositories.IMatchRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchRepository.html
+  name: IMatchRepository
+  nameWithType: IMatchRepository
+  fullName: Application.Interfaces.Repositories.IMatchRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Infrastructure.Repositories.MatchRepository.#ctor*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.#ctor
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository__ctor_Infrastructure_Data_AmateurFootballContext_
+  name: MatchRepository
+  nameWithType: MatchRepository.MatchRepository
+  fullName: Infrastructure.Repositories.MatchRepository.MatchRepository
+  nameWithType.vb: MatchRepository.New
+  fullName.vb: Infrastructure.Repositories.MatchRepository.New
+  name.vb: New
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Infrastructure.Repositories.MatchRepository.AddMatch*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.AddMatch
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_AddMatch_Domain_Entities_Matches_
+  name: AddMatch
+  nameWithType: MatchRepository.AddMatch
+  fullName: Infrastructure.Repositories.MatchRepository.AddMatch
+- uid: Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  name: AddMatch(Matches)
+  nameWithType: IMatchRepository.AddMatch(Matches)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+    name: AddMatch
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.AddMatch(Domain.Entities.Matches)
+    name: AddMatch
+  - name: (
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchById_System_Guid_
+  name: GetMatchById
+  nameWithType: MatchRepository.GetMatchById
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchById(Guid)
+  nameWithType: IMatchRepository.GetMatchById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+    name: GetMatchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchById(System.Guid)
+    name: GetMatchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Domain.Entities.Matches}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.Matches}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Matches>
+  nameWithType: Task<Matches>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.Matches>
+  nameWithType.vb: Task(Of Matches)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.Matches)
+  name.vb: Task(Of Matches)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Matches
+    name: Matches
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchWithListPlayerById_System_Guid_
+  name: GetMatchWithListPlayerById
+  nameWithType: MatchRepository.GetMatchWithListPlayerById
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchWithListPlayerById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchWithListPlayerById(Guid)
+  nameWithType: IMatchRepository.GetMatchWithListPlayerById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+    name: GetMatchWithListPlayerById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWithListPlayerById(System.Guid)
+    name: GetMatchWithListPlayerById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetScheduledMatchById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetScheduledMatchById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetScheduledMatchById_System_Guid_
+  name: GetScheduledMatchById
+  nameWithType: MatchRepository.GetScheduledMatchById
+  fullName: Infrastructure.Repositories.MatchRepository.GetScheduledMatchById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetScheduledMatchById(Guid)
+  nameWithType: IMatchRepository.GetScheduledMatchById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+    name: GetScheduledMatchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetScheduledMatchById(System.Guid)
+    name: GetScheduledMatchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchInProgressByIdAsync_System_Guid_
+  name: GetMatchInProgressByIdAsync
+  nameWithType: MatchRepository.GetMatchInProgressByIdAsync
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchInProgressByIdAsync
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchInProgressByIdAsync(Guid)
+  nameWithType: IMatchRepository.GetMatchInProgressByIdAsync(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+    name: GetMatchInProgressByIdAsync
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchInProgressByIdAsync(System.Guid)
+    name: GetMatchInProgressByIdAsync
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchToCancelById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchToCancelById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchToCancelById_System_Guid_
+  name: GetMatchToCancelById
+  nameWithType: MatchRepository.GetMatchToCancelById
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchToCancelById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchToCancelById(Guid)
+  nameWithType: IMatchRepository.GetMatchToCancelById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+    name: GetMatchToCancelById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchToCancelById(System.Guid)
+    name: GetMatchToCancelById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchWitchPitchById_System_Guid_
+  name: GetMatchWitchPitchById
+  nameWithType: MatchRepository.GetMatchWitchPitchById
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchWitchPitchById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchWitchPitchById(Guid)
+  nameWithType: IMatchRepository.GetMatchWitchPitchById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+    name: GetMatchWitchPitchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchWitchPitchById(System.Guid)
+    name: GetMatchWitchPitchById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchProxim12HoursMatchs_System_Guid_System_DateTime_
+  name: GetMatchProxim12HoursMatchs
+  nameWithType: MatchRepository.GetMatchProxim12HoursMatchs
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchProxim12HoursMatchs
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetMatchProxim12HoursMatchs(Guid, DateTime)
+  nameWithType: IMatchRepository.GetMatchProxim12HoursMatchs(Guid, DateTime)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid, System.DateTime)
+  nameWithType.vb: IMatchRepository.GetMatchProxim12HoursMatchs(Guid, Date)
+  fullName.vb: Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid, Date)
+  name.vb: GetMatchProxim12HoursMatchs(Guid, Date)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+    name: GetMatchProxim12HoursMatchs
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchProxim12HoursMatchs(System.Guid,System.DateTime)
+    name: GetMatchProxim12HoursMatchs
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetAllMatchesTeam_System_Guid_
+  name: GetAllMatchesTeam
+  nameWithType: MatchRepository.GetAllMatchesTeam
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeam
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetAllMatchesTeam(Guid)
+  nameWithType: IMatchRepository.GetAllMatchesTeam(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+    name: GetAllMatchesTeam
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeam(System.Guid)
+    name: GetAllMatchesTeam
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Match.InfoMatchCalendar}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoMatchCalendar>>
+  nameWithType: Task<List<InfoMatchCalendar>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Match.InfoMatchCalendar>>
+  nameWithType.vb: Task(Of List(Of InfoMatchCalendar))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Match.InfoMatchCalendar))
+  name.vb: Task(Of List(Of InfoMatchCalendar))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Match.InfoMatchCalendar
+    name: InfoMatchCalendar
+    href: Application.DTOs.Match.InfoMatchCalendar.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Match.InfoMatchCalendar
+    name: InfoMatchCalendar
+    href: Application.DTOs.Match.InfoMatchCalendar.html
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetAllMatchesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterCalendarDto_
+  name: GetAllMatchesTeamWithFilters
+  nameWithType: MatchRepository.GetAllMatchesTeamWithFilters
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchesTeamWithFilters
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetAllMatchesTeamWithFilters(Guid, FilterCalendarDto)
+  nameWithType: IMatchRepository.GetAllMatchesTeamWithFilters(Guid, FilterCalendarDto)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterCalendarDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+    name: GetAllMatchesTeamWithFilters
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterCalendarDto
+    name: FilterCalendarDto
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterCalendarDto)
+    name: GetAllMatchesTeamWithFilters
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterCalendarDto
+    name: FilterCalendarDto
+  - name: )
+- uid: Application.DTOs.Filters.FilterCalendarDto
+  commentId: T:Application.DTOs.Filters.FilterCalendarDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterCalendarDto.html
+  name: FilterCalendarDto
+  nameWithType: FilterCalendarDto
+  fullName: Application.DTOs.Filters.FilterCalendarDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverById_System_Guid_
+  name: GetAllMatchPostPoneReceiverById
+  nameWithType: MatchRepository.GetAllMatchPostPoneReceiverById
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverById
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetAllMatchPostPoneReceiverById(Guid)
+  nameWithType: IMatchRepository.GetAllMatchPostPoneReceiverById(Guid)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+    name: GetAllMatchPostPoneReceiverById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverById(System.Guid)
+    name: GetAllMatchPostPoneReceiverById
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PostPoneGame.InfoPostPoneMatch}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoPostPoneMatch>>
+  nameWithType: Task<List<InfoPostPoneMatch>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.PostPoneGame.InfoPostPoneMatch>>
+  nameWithType.vb: Task(Of List(Of InfoPostPoneMatch))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.PostPoneGame.InfoPostPoneMatch))
+  name.vb: Task(Of List(Of InfoPostPoneMatch))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+    name: InfoPostPoneMatch
+    href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetAllMatchPostPoneReceiverByIdWithFilters_System_Guid_Application_DTOs_Filters_FilterPostPoneMatchDto_
+  name: GetAllMatchPostPoneReceiverByIdWithFilters
+  nameWithType: MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters
+  fullName: Infrastructure.Repositories.MatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetAllMatchPostPoneReceiverByIdWithFilters(Guid, FilterPostPoneMatchDto)
+  nameWithType: IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(Guid, FilterPostPoneMatchDto)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid, Application.DTOs.Filters.FilterPostPoneMatchDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+    name: GetAllMatchPostPoneReceiverByIdWithFilters
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+    name: FilterPostPoneMatchDto
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetAllMatchPostPoneReceiverByIdWithFilters(System.Guid,Application.DTOs.Filters.FilterPostPoneMatchDto)
+    name: GetAllMatchPostPoneReceiverByIdWithFilters
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+    name: FilterPostPoneMatchDto
+  - name: )
+- uid: Application.DTOs.Filters.FilterPostPoneMatchDto
+  commentId: T:Application.DTOs.Filters.FilterPostPoneMatchDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterPostPoneMatchDto.html
+  name: FilterPostPoneMatchDto
+  nameWithType: FilterPostPoneMatchDto
+  fullName: Application.DTOs.Filters.FilterPostPoneMatchDto
+- uid: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync*
+  commentId: Overload:Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync
+  href: Infrastructure.Repositories.MatchRepository.html#Infrastructure_Repositories_MatchRepository_GetMatchesByDateAsync_System_DateTime_
+  name: GetMatchesByDateAsync
+  nameWithType: MatchRepository.GetMatchesByDateAsync
+  fullName: Infrastructure.Repositories.MatchRepository.GetMatchesByDateAsync
+- uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+  commentId: M:Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+  parent: Application.Interfaces.Repositories.IMatchRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: GetMatchesByDateAsync(DateTime)
+  nameWithType: IMatchRepository.GetMatchesByDateAsync(DateTime)
+  fullName: Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+  nameWithType.vb: IMatchRepository.GetMatchesByDateAsync(Date)
+  fullName.vb: Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(Date)
+  name.vb: GetMatchesByDateAsync(Date)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+    name: GetMatchesByDateAsync
+  - name: (
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IMatchRepository.GetMatchesByDateAsync(System.DateTime)
+    name: GetMatchesByDateAsync
+  - name: (
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )

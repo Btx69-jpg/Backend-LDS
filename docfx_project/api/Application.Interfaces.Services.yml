@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  id: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.IAuthService
+  - Application.Interfaces.Services.IChatRoomService
+  - Application.Interfaces.Services.ILeaderboardService
+  - Application.Interfaces.Services.IMatchInviteService
+  - Application.Interfaces.Services.IMatchMakerService
+  - Application.Interfaces.Services.IMatchService
+  - Application.Interfaces.Services.IMembershipRequestService
+  - Application.Interfaces.Services.IPlayerAuthorizationService
+  - Application.Interfaces.Services.IPlayerService
+  - Application.Interfaces.Services.ISuperAdminService
+  - Application.Interfaces.Services.ITeamService
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Services.IAuthService
+  commentId: T:Application.Interfaces.Services.IAuthService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IAuthService.html
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: Application.Interfaces.Services.IAuthService
+- uid: Application.Interfaces.Services.IChatRoomService
+  commentId: T:Application.Interfaces.Services.IChatRoomService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IChatRoomService.html
+  name: IChatRoomService
+  nameWithType: IChatRoomService
+  fullName: Application.Interfaces.Services.IChatRoomService
+- uid: Application.Interfaces.Services.ILeaderboardService
+  commentId: T:Application.Interfaces.Services.ILeaderboardService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.ILeaderboardService.html
+  name: ILeaderboardService
+  nameWithType: ILeaderboardService
+  fullName: Application.Interfaces.Services.ILeaderboardService
+- uid: Application.Interfaces.Services.IMatchInviteService
+  commentId: T:Application.Interfaces.Services.IMatchInviteService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IMatchInviteService.html
+  name: IMatchInviteService
+  nameWithType: IMatchInviteService
+  fullName: Application.Interfaces.Services.IMatchInviteService
+- uid: Application.Interfaces.Services.IMatchMakerService
+  commentId: T:Application.Interfaces.Services.IMatchMakerService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IMatchMakerService.html
+  name: IMatchMakerService
+  nameWithType: IMatchMakerService
+  fullName: Application.Interfaces.Services.IMatchMakerService
+- uid: Application.Interfaces.Services.IMatchService
+  commentId: T:Application.Interfaces.Services.IMatchService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IMatchService.html
+  name: IMatchService
+  nameWithType: IMatchService
+  fullName: Application.Interfaces.Services.IMatchService
+- uid: Application.Interfaces.Services.IMembershipRequestService
+  commentId: T:Application.Interfaces.Services.IMembershipRequestService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IMembershipRequestService.html
+  name: IMembershipRequestService
+  nameWithType: IMembershipRequestService
+  fullName: Application.Interfaces.Services.IMembershipRequestService
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService
+  commentId: T:Application.Interfaces.Services.IPlayerAuthorizationService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html
+  name: IPlayerAuthorizationService
+  nameWithType: IPlayerAuthorizationService
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService
+- uid: Application.Interfaces.Services.IPlayerService
+  commentId: T:Application.Interfaces.Services.IPlayerService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IPlayerService.html
+  name: IPlayerService
+  nameWithType: IPlayerService
+  fullName: Application.Interfaces.Services.IPlayerService
+- uid: Application.Interfaces.Services.ISuperAdminService
+  commentId: T:Application.Interfaces.Services.ISuperAdminService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.ISuperAdminService.html
+  name: ISuperAdminService
+  nameWithType: ISuperAdminService
+  fullName: Application.Interfaces.Services.ISuperAdminService
+- uid: Application.Interfaces.Services.ITeamService
+  commentId: T:Application.Interfaces.Services.ITeamService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.ITeamService.html
+  name: ITeamService
+  nameWithType: ITeamService
+  fullName: Application.Interfaces.Services.ITeamService
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html

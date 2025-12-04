@@ -1,0 +1,515 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.IAuthService
+  commentId: T:Application.Interfaces.Services.IAuthService
+  id: IAuthService
+  parent: Application.Interfaces.Services
+  children:
+  - Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  - Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  - Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  - Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  - Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  - Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  - Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAuthService
+  nameWithType: IAuthService
+  fullName: Application.Interfaces.Services.IAuthService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IAuthService
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: public interface IAuthService
+    content.vb: Public Interface IAuthService
+- uid: Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.LoginAsync(System.String,System.String)
+  id: LoginAsync(System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: LoginAsync(string, string)
+  nameWithType: IAuthService.LoginAsync(string, string)
+  fullName: Application.Interfaces.Services.IAuthService.LoginAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LoginAsync
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<LoginResponseDto> LoginAsync(string email, string password)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+    content.vb: Function LoginAsync(email As String, password As String) As Task(Of LoginResponseDto)
+  overload: Application.Interfaces.Services.IAuthService.LoginAsync*
+  nameWithType.vb: IAuthService.LoginAsync(String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.LoginAsync(String, String)
+  name.vb: LoginAsync(String, String)
+- uid: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.ChangePasswordAsync(System.String,System.String,System.String)
+  id: ChangePasswordAsync(System.String,System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: ChangePasswordAsync(string, string, string)
+  nameWithType: IAuthService.ChangePasswordAsync(string, string, string)
+  fullName: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ChangePasswordAsync
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task ChangePasswordAsync(string userId, string currentPassword, string newPassword)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: currentPassword
+      type: System.String
+    - id: newPassword
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ChangePasswordAsync(userId As String, currentPassword As String, newPassword As String) As Task
+  overload: Application.Interfaces.Services.IAuthService.ChangePasswordAsync*
+  nameWithType.vb: IAuthService.ChangePasswordAsync(String, String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.ChangePasswordAsync(String, String, String)
+  name.vb: ChangePasswordAsync(String, String, String)
+- uid: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.UpdateEmailAsync(System.String,System.String)
+  id: UpdateEmailAsync(System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: UpdateEmailAsync(string, string)
+  nameWithType: IAuthService.UpdateEmailAsync(string, string)
+  fullName: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateEmailAsync
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task UpdateEmailAsync(string userId, string newEmail)
+    parameters:
+    - id: userId
+      type: System.String
+    - id: newEmail
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateEmailAsync(userId As String, newEmail As String) As Task
+  overload: Application.Interfaces.Services.IAuthService.UpdateEmailAsync*
+  nameWithType.vb: IAuthService.UpdateEmailAsync(String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.UpdateEmailAsync(String, String)
+  name.vb: UpdateEmailAsync(String, String)
+- uid: Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.LogoutAsync(System.String)
+  id: LogoutAsync(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: LogoutAsync(string)
+  nameWithType: IAuthService.LogoutAsync(string)
+  fullName: Application.Interfaces.Services.IAuthService.LogoutAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LogoutAsync
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task LogoutAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LogoutAsync(userId As String) As Task
+  overload: Application.Interfaces.Services.IAuthService.LogoutAsync*
+  nameWithType.vb: IAuthService.LogoutAsync(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.LogoutAsync(String)
+  name.vb: LogoutAsync(String)
+- uid: Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.DeleteUserAsync(System.String)
+  id: DeleteUserAsync(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserAsync(string)
+  nameWithType: IAuthService.DeleteUserAsync(string)
+  fullName: Application.Interfaces.Services.IAuthService.DeleteUserAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteUserAsync
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: void DeleteUserAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    content.vb: Sub DeleteUserAsync(userId As String)
+  overload: Application.Interfaces.Services.IAuthService.DeleteUserAsync*
+  nameWithType.vb: IAuthService.DeleteUserAsync(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.DeleteUserAsync(String)
+  name.vb: DeleteUserAsync(String)
+- uid: Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.RegisterUser(System.String,System.String,System.String)
+  id: RegisterUser(System.String,System.String,System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: RegisterUser(string, string, string)
+  nameWithType: IAuthService.RegisterUser(string, string, string)
+  fullName: Application.Interfaces.Services.IAuthService.RegisterUser(string, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RegisterUser
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<string> RegisterUser(string email, string password, string phoneNumber)
+    parameters:
+    - id: email
+      type: System.String
+    - id: password
+      type: System.String
+    - id: phoneNumber
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function RegisterUser(email As String, password As String, phoneNumber As String) As Task(Of String)
+  overload: Application.Interfaces.Services.IAuthService.RegisterUser*
+  nameWithType.vb: IAuthService.RegisterUser(String, String, String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.RegisterUser(String, String, String)
+  name.vb: RegisterUser(String, String, String)
+- uid: Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  commentId: M:Application.Interfaces.Services.IAuthService.GetFullUserData(System.String)
+  id: GetFullUserData(System.String)
+  parent: Application.Interfaces.Services.IAuthService
+  langs:
+  - csharp
+  - vb
+  name: GetFullUserData(string)
+  nameWithType: IAuthService.GetFullUserData(string)
+  fullName: Application.Interfaces.Services.IAuthService.GetFullUserData(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/IAuthService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetFullUserData
+    path: ../Application/Interfaces/Services/IAuthService.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services
+  syntax:
+    content: Task<LoginResponseDto> GetFullUserData(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+    content.vb: Function GetFullUserData(userId As String) As Task(Of LoginResponseDto)
+  overload: Application.Interfaces.Services.IAuthService.GetFullUserData*
+  nameWithType.vb: IAuthService.GetFullUserData(String)
+  fullName.vb: Application.Interfaces.Services.IAuthService.GetFullUserData(String)
+  name.vb: GetFullUserData(String)
+references:
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Interfaces.Services.IAuthService.LoginAsync*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.LoginAsync
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LoginAsync_System_String_System_String_
+  name: LoginAsync
+  nameWithType: IAuthService.LoginAsync
+  fullName: Application.Interfaces.Services.IAuthService.LoginAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.LoginResponseDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<LoginResponseDto>
+  nameWithType: Task<LoginResponseDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.LoginResponseDto>
+  nameWithType.vb: Task(Of LoginResponseDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.LoginResponseDto)
+  name.vb: Task(Of LoginResponseDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.LoginResponseDto
+    name: LoginResponseDto
+    href: Application.DTOs.LoginResponseDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.LoginResponseDto
+    name: LoginResponseDto
+    href: Application.DTOs.LoginResponseDto.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.IAuthService.ChangePasswordAsync*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.ChangePasswordAsync
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_ChangePasswordAsync_System_String_System_String_System_String_
+  name: ChangePasswordAsync
+  nameWithType: IAuthService.ChangePasswordAsync
+  fullName: Application.Interfaces.Services.IAuthService.ChangePasswordAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Services.IAuthService.UpdateEmailAsync*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.UpdateEmailAsync
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_UpdateEmailAsync_System_String_System_String_
+  name: UpdateEmailAsync
+  nameWithType: IAuthService.UpdateEmailAsync
+  fullName: Application.Interfaces.Services.IAuthService.UpdateEmailAsync
+- uid: Application.Interfaces.Services.IAuthService.LogoutAsync*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.LogoutAsync
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_LogoutAsync_System_String_
+  name: LogoutAsync
+  nameWithType: IAuthService.LogoutAsync
+  fullName: Application.Interfaces.Services.IAuthService.LogoutAsync
+- uid: Application.Interfaces.Services.IAuthService.DeleteUserAsync*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.DeleteUserAsync
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_DeleteUserAsync_System_String_
+  name: DeleteUserAsync
+  nameWithType: IAuthService.DeleteUserAsync
+  fullName: Application.Interfaces.Services.IAuthService.DeleteUserAsync
+- uid: Application.Interfaces.Services.IAuthService.RegisterUser*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.RegisterUser
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_RegisterUser_System_String_System_String_System_String_
+  name: RegisterUser
+  nameWithType: IAuthService.RegisterUser
+  fullName: Application.Interfaces.Services.IAuthService.RegisterUser
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Interfaces.Services.IAuthService.GetFullUserData*
+  commentId: Overload:Application.Interfaces.Services.IAuthService.GetFullUserData
+  href: Application.Interfaces.Services.IAuthService.html#Application_Interfaces_Services_IAuthService_GetFullUserData_System_String_
+  name: GetFullUserData
+  nameWithType: IAuthService.GetFullUserData
+  fullName: Application.Interfaces.Services.IAuthService.GetFullUserData

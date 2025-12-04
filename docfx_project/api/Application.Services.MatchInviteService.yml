@@ -1,0 +1,1320 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.MatchInviteService
+  commentId: T:Application.Services.MatchInviteService
+  id: MatchInviteService
+  parent: Application.Services
+  children:
+  - Application.Services.MatchInviteService.#ctor(Application.Interfaces.Repositories.IMatchInviteRepository,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.ITeamStatisticsRepository,Application.Interfaces.Repositories.IPitchRepository,Application.Interfaces.Validators.IMatchInviteValidator,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Repositories.ITeamPostPoneGameRepository,Application.Interfaces.Services.IPlayerAuthorizationService,Application.Interfaces.Services.Hub.INotificationService,Application.Interfaces.Services.IChatRoomService)
+  - Application.Services.MatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+  - Application.Services.MatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  - Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  - Application.Services.MatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  - Application.Services.MatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+  - Application.Services.MatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  langs:
+  - csharp
+  - vb
+  name: MatchInviteService
+  nameWithType: MatchInviteService
+  fullName: Application.Services.MatchInviteService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchInviteService
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: 'public class MatchInviteService : IMatchInviteService'
+    content.vb: Public Class MatchInviteService Implements IMatchInviteService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.MatchInviteService.#ctor(Application.Interfaces.Repositories.IMatchInviteRepository,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.ITeamStatisticsRepository,Application.Interfaces.Repositories.IPitchRepository,Application.Interfaces.Validators.IMatchInviteValidator,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Repositories.ITeamPostPoneGameRepository,Application.Interfaces.Services.IPlayerAuthorizationService,Application.Interfaces.Services.Hub.INotificationService,Application.Interfaces.Services.IChatRoomService)
+  commentId: M:Application.Services.MatchInviteService.#ctor(Application.Interfaces.Repositories.IMatchInviteRepository,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.ITeamStatisticsRepository,Application.Interfaces.Repositories.IPitchRepository,Application.Interfaces.Validators.IMatchInviteValidator,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Repositories.ITeamPostPoneGameRepository,Application.Interfaces.Services.IPlayerAuthorizationService,Application.Interfaces.Services.Hub.INotificationService,Application.Interfaces.Services.IChatRoomService)
+  id: '#ctor(Application.Interfaces.Repositories.IMatchInviteRepository,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.ITeamStatisticsRepository,Application.Interfaces.Repositories.IPitchRepository,Application.Interfaces.Validators.IMatchInviteValidator,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Repositories.ITeamPostPoneGameRepository,Application.Interfaces.Services.IPlayerAuthorizationService,Application.Interfaces.Services.Hub.INotificationService,Application.Interfaces.Services.IChatRoomService)'
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: MatchInviteService(IMatchInviteRepository, ITeamRepository, IMatchRepository, ITeamStatisticsRepository, IPitchRepository, IMatchInviteValidator, IUnityOfWork, ITeamPostPoneGameRepository, IPlayerAuthorizationService, INotificationService, IChatRoomService)
+  nameWithType: MatchInviteService.MatchInviteService(IMatchInviteRepository, ITeamRepository, IMatchRepository, ITeamStatisticsRepository, IPitchRepository, IMatchInviteValidator, IUnityOfWork, ITeamPostPoneGameRepository, IPlayerAuthorizationService, INotificationService, IChatRoomService)
+  fullName: Application.Services.MatchInviteService.MatchInviteService(Application.Interfaces.Repositories.IMatchInviteRepository, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IMatchRepository, Application.Interfaces.Repositories.ITeamStatisticsRepository, Application.Interfaces.Repositories.IPitchRepository, Application.Interfaces.Validators.IMatchInviteValidator, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Repositories.ITeamPostPoneGameRepository, Application.Interfaces.Services.IPlayerAuthorizationService, Application.Interfaces.Services.Hub.INotificationService, Application.Interfaces.Services.IChatRoomService)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 28
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: public MatchInviteService(IMatchInviteRepository matchInviteRepository, ITeamRepository teamRepository, IMatchRepository matchRepository, ITeamStatisticsRepository teamStatisticsRepository, IPitchRepository pitchRepository, IMatchInviteValidator matchInviteValidator, IUnityOfWork unityOfWork, ITeamPostPoneGameRepository teamPostPoneRepository, IPlayerAuthorizationService authorizationService, INotificationService notificationService, IChatRoomService chatRoomService)
+    parameters:
+    - id: matchInviteRepository
+      type: Application.Interfaces.Repositories.IMatchInviteRepository
+    - id: teamRepository
+      type: Application.Interfaces.Repositories.ITeamRepository
+    - id: matchRepository
+      type: Application.Interfaces.Repositories.IMatchRepository
+    - id: teamStatisticsRepository
+      type: Application.Interfaces.Repositories.ITeamStatisticsRepository
+    - id: pitchRepository
+      type: Application.Interfaces.Repositories.IPitchRepository
+    - id: matchInviteValidator
+      type: Application.Interfaces.Validators.IMatchInviteValidator
+    - id: unityOfWork
+      type: Application.Interfaces.Repositories.IUnityOfWork
+    - id: teamPostPoneRepository
+      type: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+    - id: authorizationService
+      type: Application.Interfaces.Services.IPlayerAuthorizationService
+    - id: notificationService
+      type: Application.Interfaces.Services.Hub.INotificationService
+    - id: chatRoomService
+      type: Application.Interfaces.Services.IChatRoomService
+    content.vb: Public Sub New(matchInviteRepository As IMatchInviteRepository, teamRepository As ITeamRepository, matchRepository As IMatchRepository, teamStatisticsRepository As ITeamStatisticsRepository, pitchRepository As IPitchRepository, matchInviteValidator As IMatchInviteValidator, unityOfWork As IUnityOfWork, teamPostPoneRepository As ITeamPostPoneGameRepository, authorizationService As IPlayerAuthorizationService, notificationService As INotificationService, chatRoomService As IChatRoomService)
+  overload: Application.Services.MatchInviteService.#ctor*
+  nameWithType.vb: MatchInviteService.New(IMatchInviteRepository, ITeamRepository, IMatchRepository, ITeamStatisticsRepository, IPitchRepository, IMatchInviteValidator, IUnityOfWork, ITeamPostPoneGameRepository, IPlayerAuthorizationService, INotificationService, IChatRoomService)
+  fullName.vb: Application.Services.MatchInviteService.New(Application.Interfaces.Repositories.IMatchInviteRepository, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IMatchRepository, Application.Interfaces.Repositories.ITeamStatisticsRepository, Application.Interfaces.Repositories.IPitchRepository, Application.Interfaces.Validators.IMatchInviteValidator, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Repositories.ITeamPostPoneGameRepository, Application.Interfaces.Services.IPlayerAuthorizationService, Application.Interfaces.Services.Hub.INotificationService, Application.Interfaces.Services.IChatRoomService)
+  name.vb: New(IMatchInviteRepository, ITeamRepository, IMatchRepository, ITeamStatisticsRepository, IPitchRepository, IMatchInviteValidator, IUnityOfWork, ITeamPostPoneGameRepository, IPlayerAuthorizationService, INotificationService, IChatRoomService)
+- uid: Application.Services.MatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  commentId: M:Application.Services.MatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  id: SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite(Guid, SendMatchInviteDto)
+  nameWithType: MatchInviteService.SendMatchInvite(Guid, SendMatchInviteDto)
+  fullName: Application.Services.MatchInviteService.SendMatchInvite(System.Guid, Application.DTOs.MatchInvites.SendMatchInviteDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 57
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<InfoMatchInviteDto> SendMatchInvite(Guid idSender, SendMatchInviteDto dto)
+    parameters:
+    - id: idSender
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.MatchInvites.SendMatchInviteDto
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MatchInvites.InfoMatchInviteDto}
+    content.vb: Public Function SendMatchInvite(idSender As Guid, dto As SendMatchInviteDto) As Task(Of InfoMatchInviteDto)
+  overload: Application.Services.MatchInviteService.SendMatchInvite*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+- uid: Application.Services.MatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+  commentId: M:Application.Services.MatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+  id: AcceptMatchInvite(System.Guid,System.Guid)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: AcceptMatchInvite(Guid, Guid)
+  nameWithType: MatchInviteService.AcceptMatchInvite(Guid, Guid)
+  fullName: Application.Services.MatchInviteService.AcceptMatchInvite(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMatchInvite
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 109
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<MatchDto> AcceptMatchInvite(Guid idTeam, Guid idMatchInvite)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatchInvite
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+    content.vb: Public Function AcceptMatchInvite(idTeam As Guid, idMatchInvite As Guid) As Task(Of MatchDto)
+  overload: Application.Services.MatchInviteService.AcceptMatchInvite*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+- uid: Application.Services.MatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+  commentId: M:Application.Services.MatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+  id: RefuseMatchInvites(System.Guid,System.Guid)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: RefuseMatchInvites(Guid, Guid)
+  nameWithType: MatchInviteService.RefuseMatchInvites(Guid, Guid)
+  fullName: Application.Services.MatchInviteService.RefuseMatchInvites(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RefuseMatchInvites
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 156
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task RefuseMatchInvites(Guid idTeam, Guid idMatchInvite)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: idMatchInvite
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RefuseMatchInvites(idTeam As Guid, idMatchInvite As Guid) As Task
+  overload: Application.Services.MatchInviteService.RefuseMatchInvites*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+- uid: Application.Services.MatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  commentId: M:Application.Services.MatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  id: NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: NegociateMatchInvite(Guid, SendMatchInviteDto)
+  nameWithType: MatchInviteService.NegociateMatchInvite(Guid, SendMatchInviteDto)
+  fullName: Application.Services.MatchInviteService.NegociateMatchInvite(System.Guid, Application.DTOs.MatchInvites.SendMatchInviteDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NegociateMatchInvite
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 177
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<InfoMatchInviteDto> NegociateMatchInvite(Guid idSender, SendMatchInviteDto dto)
+    parameters:
+    - id: idSender
+      type: System.Guid
+    - id: dto
+      type: Application.DTOs.MatchInvites.SendMatchInviteDto
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.MatchInvites.InfoMatchInviteDto}
+    content.vb: Public Function NegociateMatchInvite(idSender As Guid, dto As SendMatchInviteDto) As Task(Of InfoMatchInviteDto)
+  overload: Application.Services.MatchInviteService.NegociateMatchInvite*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+- uid: Application.Services.MatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  commentId: M:Application.Services.MatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  id: GetAllMatchInvitesTeam(System.Guid)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchInvitesTeam(Guid)
+  nameWithType: MatchInviteService.GetAllMatchInvitesTeam(Guid)
+  fullName: Application.Services.MatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchInvitesTeam
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 220
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<InfoMatchInviteDto>> GetAllMatchInvitesTeam(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MatchInvites.InfoMatchInviteDto}}
+    content.vb: Public Function GetAllMatchInvitesTeam(idTeam As Guid) As Task(Of List(Of InfoMatchInviteDto))
+  overload: Application.Services.MatchInviteService.GetAllMatchInvitesTeam*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+- uid: Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  commentId: M:Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  id: GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  parent: Application.Services.MatchInviteService
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchInvitesTeamWithFilters(Guid, FilterMatchInvitesDto)
+  nameWithType: MatchInviteService.GetAllMatchInvitesTeamWithFilters(Guid, FilterMatchInvitesDto)
+  fullName: Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterMatchInvitesDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/MatchInviteService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchInvitesTeamWithFilters
+    path: ../Application/Services/MatchInviteService.cs
+    startLine: 229
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<InfoMatchInviteDto>> GetAllMatchInvitesTeamWithFilters(Guid idTeam, FilterMatchInvitesDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterMatchInvitesDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MatchInvites.InfoMatchInviteDto}}
+    content.vb: Public Function GetAllMatchInvitesTeamWithFilters(idTeam As Guid, filter As FilterMatchInvitesDto) As Task(Of List(Of InfoMatchInviteDto))
+  overload: Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters*
+  implements:
+  - Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+references:
+- uid: Application.Services
+  commentId: N:Application.Services
+  href: Application.html
+  name: Application.Services
+  nameWithType: Application.Services
+  fullName: Application.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.IMatchInviteService
+  commentId: T:Application.Interfaces.Services.IMatchInviteService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IMatchInviteService.html
+  name: IMatchInviteService
+  nameWithType: IMatchInviteService
+  fullName: Application.Interfaces.Services.IMatchInviteService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Services.MatchInviteService.#ctor*
+  commentId: Overload:Application.Services.MatchInviteService.#ctor
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService__ctor_Application_Interfaces_Repositories_IMatchInviteRepository_Application_Interfaces_Repositories_ITeamRepository_Application_Interfaces_Repositories_IMatchRepository_Application_Interfaces_Repositories_ITeamStatisticsRepository_Application_Interfaces_Repositories_IPitchRepository_Application_Interfaces_Validators_IMatchInviteValidator_Application_Interfaces_Repositories_IUnityOfWork_Application_Interfaces_Repositories_ITeamPostPoneGameRepository_Application_Interfaces_Services_IPlayerAuthorizationService_Application_Interfaces_Services_Hub_INotificationService_Application_Interfaces_Services_IChatRoomService_
+  name: MatchInviteService
+  nameWithType: MatchInviteService.MatchInviteService
+  fullName: Application.Services.MatchInviteService.MatchInviteService
+  nameWithType.vb: MatchInviteService.New
+  fullName.vb: Application.Services.MatchInviteService.New
+  name.vb: New
+- uid: Application.Interfaces.Repositories.IMatchInviteRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchInviteRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchInviteRepository.html
+  name: IMatchInviteRepository
+  nameWithType: IMatchInviteRepository
+  fullName: Application.Interfaces.Repositories.IMatchInviteRepository
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.IMatchRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchRepository.html
+  name: IMatchRepository
+  nameWithType: IMatchRepository
+  fullName: Application.Interfaces.Repositories.IMatchRepository
+- uid: Application.Interfaces.Repositories.ITeamStatisticsRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamStatisticsRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamStatisticsRepository.html
+  name: ITeamStatisticsRepository
+  nameWithType: ITeamStatisticsRepository
+  fullName: Application.Interfaces.Repositories.ITeamStatisticsRepository
+- uid: Application.Interfaces.Repositories.IPitchRepository
+  commentId: T:Application.Interfaces.Repositories.IPitchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPitchRepository.html
+  name: IPitchRepository
+  nameWithType: IPitchRepository
+  fullName: Application.Interfaces.Repositories.IPitchRepository
+- uid: Application.Interfaces.Validators.IMatchInviteValidator
+  commentId: T:Application.Interfaces.Validators.IMatchInviteValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html
+  name: IMatchInviteValidator
+  nameWithType: IMatchInviteValidator
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUnityOfWork.html
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html
+  name: ITeamPostPoneGameRepository
+  nameWithType: ITeamPostPoneGameRepository
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+- uid: Application.Interfaces.Services.IPlayerAuthorizationService
+  commentId: T:Application.Interfaces.Services.IPlayerAuthorizationService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IPlayerAuthorizationService.html
+  name: IPlayerAuthorizationService
+  nameWithType: IPlayerAuthorizationService
+  fullName: Application.Interfaces.Services.IPlayerAuthorizationService
+- uid: Application.Interfaces.Services.Hub.INotificationService
+  commentId: T:Application.Interfaces.Services.Hub.INotificationService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.INotificationService.html
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: Application.Interfaces.Services.Hub.INotificationService
+- uid: Application.Interfaces.Services.IChatRoomService
+  commentId: T:Application.Interfaces.Services.IChatRoomService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IChatRoomService.html
+  name: IChatRoomService
+  nameWithType: IChatRoomService
+  fullName: Application.Interfaces.Services.IChatRoomService
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Services.MatchInviteService.SendMatchInvite*
+  commentId: Overload:Application.Services.MatchInviteService.SendMatchInvite
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_SendMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  name: SendMatchInvite
+  nameWithType: MatchInviteService.SendMatchInvite
+  fullName: Application.Services.MatchInviteService.SendMatchInvite
+- uid: Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_SendMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  name: SendMatchInvite(Guid, SendMatchInviteDto)
+  nameWithType: IMatchInviteService.SendMatchInvite(Guid, SendMatchInviteDto)
+  fullName: Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid, Application.DTOs.MatchInvites.SendMatchInviteDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+    name: SendMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_SendMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+    name: SendMatchInviteDto
+    href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.SendMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+    name: SendMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_SendMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+    name: SendMatchInviteDto
+    href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+  commentId: T:Application.DTOs.MatchInvites.SendMatchInviteDto
+  parent: Application.DTOs.MatchInvites
+  href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  name: SendMatchInviteDto
+  nameWithType: SendMatchInviteDto
+  fullName: Application.DTOs.MatchInvites.SendMatchInviteDto
+- uid: System.Threading.Tasks.Task{Application.DTOs.MatchInvites.InfoMatchInviteDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.MatchInvites.InfoMatchInviteDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<InfoMatchInviteDto>
+  nameWithType: Task<InfoMatchInviteDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.MatchInvites.InfoMatchInviteDto>
+  nameWithType.vb: Task(Of InfoMatchInviteDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.MatchInvites.InfoMatchInviteDto)
+  name.vb: Task(Of InfoMatchInviteDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+    name: InfoMatchInviteDto
+    href: Application.DTOs.MatchInvites.InfoMatchInviteDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+    name: InfoMatchInviteDto
+    href: Application.DTOs.MatchInvites.InfoMatchInviteDto.html
+  - name: )
+- uid: Application.DTOs.MatchInvites
+  commentId: N:Application.DTOs.MatchInvites
+  href: Application.html
+  name: Application.DTOs.MatchInvites
+  nameWithType: Application.DTOs.MatchInvites
+  fullName: Application.DTOs.MatchInvites
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.MatchInviteService.AcceptMatchInvite*
+  commentId: Overload:Application.Services.MatchInviteService.AcceptMatchInvite
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_AcceptMatchInvite_System_Guid_System_Guid_
+  name: AcceptMatchInvite
+  nameWithType: MatchInviteService.AcceptMatchInvite
+  fullName: Application.Services.MatchInviteService.AcceptMatchInvite
+- uid: Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_AcceptMatchInvite_System_Guid_System_Guid_
+  name: AcceptMatchInvite(Guid, Guid)
+  nameWithType: IMatchInviteService.AcceptMatchInvite(Guid, Guid)
+  fullName: Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+    name: AcceptMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_AcceptMatchInvite_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.AcceptMatchInvite(System.Guid,System.Guid)
+    name: AcceptMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_AcceptMatchInvite_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Match.MatchDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MatchDto>
+  nameWithType: Task<MatchDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Match.MatchDto>
+  nameWithType.vb: Task(Of MatchDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Match.MatchDto)
+  name.vb: Task(Of MatchDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Match.MatchDto
+    name: MatchDto
+    href: Application.DTOs.Match.MatchDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Match.MatchDto
+    name: MatchDto
+    href: Application.DTOs.Match.MatchDto.html
+  - name: )
+- uid: Application.Services.MatchInviteService.RefuseMatchInvites*
+  commentId: Overload:Application.Services.MatchInviteService.RefuseMatchInvites
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_RefuseMatchInvites_System_Guid_System_Guid_
+  name: RefuseMatchInvites
+  nameWithType: MatchInviteService.RefuseMatchInvites
+  fullName: Application.Services.MatchInviteService.RefuseMatchInvites
+- uid: Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_RefuseMatchInvites_System_Guid_System_Guid_
+  name: RefuseMatchInvites(Guid, Guid)
+  nameWithType: IMatchInviteService.RefuseMatchInvites(Guid, Guid)
+  fullName: Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+    name: RefuseMatchInvites
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_RefuseMatchInvites_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.RefuseMatchInvites(System.Guid,System.Guid)
+    name: RefuseMatchInvites
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_RefuseMatchInvites_System_Guid_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Services.MatchInviteService.NegociateMatchInvite*
+  commentId: Overload:Application.Services.MatchInviteService.NegociateMatchInvite
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_NegociateMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  name: NegociateMatchInvite
+  nameWithType: MatchInviteService.NegociateMatchInvite
+  fullName: Application.Services.MatchInviteService.NegociateMatchInvite
+- uid: Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_NegociateMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  name: NegociateMatchInvite(Guid, SendMatchInviteDto)
+  nameWithType: IMatchInviteService.NegociateMatchInvite(Guid, SendMatchInviteDto)
+  fullName: Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid, Application.DTOs.MatchInvites.SendMatchInviteDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+    name: NegociateMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_NegociateMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+    name: SendMatchInviteDto
+    href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.NegociateMatchInvite(System.Guid,Application.DTOs.MatchInvites.SendMatchInviteDto)
+    name: NegociateMatchInvite
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_NegociateMatchInvite_System_Guid_Application_DTOs_MatchInvites_SendMatchInviteDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+    name: SendMatchInviteDto
+    href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  - name: )
+- uid: Application.Services.MatchInviteService.GetAllMatchInvitesTeam*
+  commentId: Overload:Application.Services.MatchInviteService.GetAllMatchInvitesTeam
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_GetAllMatchInvitesTeam_System_Guid_
+  name: GetAllMatchInvitesTeam
+  nameWithType: MatchInviteService.GetAllMatchInvitesTeam
+  fullName: Application.Services.MatchInviteService.GetAllMatchInvitesTeam
+- uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeam_System_Guid_
+  name: GetAllMatchInvitesTeam(Guid)
+  nameWithType: IMatchInviteService.GetAllMatchInvitesTeam(Guid)
+  fullName: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+    name: GetAllMatchInvitesTeam
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeam_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeam(System.Guid)
+    name: GetAllMatchInvitesTeam
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeam_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MatchInvites.InfoMatchInviteDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.MatchInvites.InfoMatchInviteDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoMatchInviteDto>>
+  nameWithType: Task<List<InfoMatchInviteDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.MatchInvites.InfoMatchInviteDto>>
+  nameWithType.vb: Task(Of List(Of InfoMatchInviteDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.MatchInvites.InfoMatchInviteDto))
+  name.vb: Task(Of List(Of InfoMatchInviteDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+    name: InfoMatchInviteDto
+    href: Application.DTOs.MatchInvites.InfoMatchInviteDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.MatchInvites.InfoMatchInviteDto
+    name: InfoMatchInviteDto
+    href: Application.DTOs.MatchInvites.InfoMatchInviteDto.html
+  - name: )
+  - name: )
+- uid: Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters*
+  commentId: Overload:Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters
+  href: Application.Services.MatchInviteService.html#Application_Services_MatchInviteService_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_
+  name: GetAllMatchInvitesTeamWithFilters
+  nameWithType: MatchInviteService.GetAllMatchInvitesTeamWithFilters
+  fullName: Application.Services.MatchInviteService.GetAllMatchInvitesTeamWithFilters
+- uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  commentId: M:Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  parent: Application.Interfaces.Services.IMatchInviteService
+  isExternal: true
+  href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_
+  name: GetAllMatchInvitesTeamWithFilters(Guid, FilterMatchInvitesDto)
+  nameWithType: IMatchInviteService.GetAllMatchInvitesTeamWithFilters(Guid, FilterMatchInvitesDto)
+  fullName: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid, Application.DTOs.Filters.FilterMatchInvitesDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+    name: GetAllMatchInvitesTeamWithFilters
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterMatchInvitesDto
+    name: FilterMatchInvitesDto
+    href: Application.DTOs.Filters.FilterMatchInvitesDto.html
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IMatchInviteService.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+    name: GetAllMatchInvitesTeamWithFilters
+    href: Application.Interfaces.Services.IMatchInviteService.html#Application_Interfaces_Services_IMatchInviteService_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Application.DTOs.Filters.FilterMatchInvitesDto
+    name: FilterMatchInvitesDto
+    href: Application.DTOs.Filters.FilterMatchInvitesDto.html
+  - name: )
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto
+  commentId: T:Application.DTOs.Filters.FilterMatchInvitesDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html
+  name: FilterMatchInvitesDto
+  nameWithType: FilterMatchInvitesDto
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html

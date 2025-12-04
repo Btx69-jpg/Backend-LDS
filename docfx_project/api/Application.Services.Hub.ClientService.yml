@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.Hub.ClientService
+  commentId: N:Application.Services.Hub.ClientService
+  id: Application.Services.Hub.ClientService
+  children:
+  - Application.Services.Hub.ClientService.FinishMatchHubClientService
+  - Application.Services.Hub.ClientService.RankMatchMakerHubClientService
+  - Application.Services.Hub.ClientService.StartMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: Application.Services.Hub.ClientService
+  nameWithType: Application.Services.Hub.ClientService
+  fullName: Application.Services.Hub.ClientService
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Services.Hub.ClientService.FinishMatchHubClientService
+  commentId: T:Application.Services.Hub.ClientService.FinishMatchHubClientService
+  href: Application.Services.Hub.ClientService.FinishMatchHubClientService.html
+  name: FinishMatchHubClientService
+  nameWithType: FinishMatchHubClientService
+  fullName: Application.Services.Hub.ClientService.FinishMatchHubClientService
+- uid: Application.Services.Hub.ClientService.RankMatchMakerHubClientService
+  commentId: T:Application.Services.Hub.ClientService.RankMatchMakerHubClientService
+  href: Application.Services.Hub.ClientService.RankMatchMakerHubClientService.html
+  name: RankMatchMakerHubClientService
+  nameWithType: RankMatchMakerHubClientService
+  fullName: Application.Services.Hub.ClientService.RankMatchMakerHubClientService
+- uid: Application.Services.Hub.ClientService.StartMatchHubClientService
+  commentId: T:Application.Services.Hub.ClientService.StartMatchHubClientService
+  href: Application.Services.Hub.ClientService.StartMatchHubClientService.html
+  name: StartMatchHubClientService
+  nameWithType: StartMatchHubClientService
+  fullName: Application.Services.Hub.ClientService.StartMatchHubClientService

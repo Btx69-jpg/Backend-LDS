@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  id: Application.DTOs.Match
+  children:
+  - Application.DTOs.Match.InfoMatch
+  - Application.DTOs.Match.InfoMatchCalendar
+  - Application.DTOs.Match.MatchDto
+  - Application.DTOs.Match.ResultMatchDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Match.InfoMatch
+  commentId: T:Application.DTOs.Match.InfoMatch
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.InfoMatch.html
+  name: InfoMatch
+  nameWithType: InfoMatch
+  fullName: Application.DTOs.Match.InfoMatch
+- uid: Application.DTOs.Match.InfoMatchCalendar
+  commentId: T:Application.DTOs.Match.InfoMatchCalendar
+  href: Application.DTOs.Match.InfoMatchCalendar.html
+  name: InfoMatchCalendar
+  nameWithType: InfoMatchCalendar
+  fullName: Application.DTOs.Match.InfoMatchCalendar
+- uid: Application.DTOs.Match.MatchDto
+  commentId: T:Application.DTOs.Match.MatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.MatchDto.html
+  name: MatchDto
+  nameWithType: MatchDto
+  fullName: Application.DTOs.Match.MatchDto
+- uid: Application.DTOs.Match.ResultMatchDto
+  commentId: T:Application.DTOs.Match.ResultMatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.ResultMatchDto.html
+  name: ResultMatchDto
+  nameWithType: ResultMatchDto
+  fullName: Application.DTOs.Match.ResultMatchDto
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  href: Application.html
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html

@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.RankMatchMaker
+  commentId: N:Application.DTOs.RankMatchMaker
+  id: Application.DTOs.RankMatchMaker
+  children:
+  - Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+  - Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+  - Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto
+  - Application.DTOs.RankMatchMaker.StartSearchDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.RankMatchMaker
+  nameWithType: Application.DTOs.RankMatchMaker
+  fullName: Application.DTOs.RankMatchMaker
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+  commentId: T:Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+  parent: Application.DTOs.RankMatchMaker
+  href: Application.DTOs.RankMatchMaker.CriteriaMatchMaker.html
+  name: CriteriaMatchMaker
+  nameWithType: CriteriaMatchMaker
+  fullName: Application.DTOs.RankMatchMaker.CriteriaMatchMaker
+- uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+  commentId: T:Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+  href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  name: EntryRankMatchMakerHub
+  nameWithType: EntryRankMatchMakerHub
+  fullName: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+- uid: Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto
+  commentId: T:Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto
+  parent: Application.DTOs.RankMatchMaker
+  href: Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto.html
+  name: InfoTeamRankMatchMakerDto
+  nameWithType: InfoTeamRankMatchMakerDto
+  fullName: Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto
+- uid: Application.DTOs.RankMatchMaker.StartSearchDto
+  commentId: T:Application.DTOs.RankMatchMaker.StartSearchDto
+  parent: Application.DTOs.RankMatchMaker
+  href: Application.DTOs.RankMatchMaker.StartSearchDto.html
+  name: StartSearchDto
+  nameWithType: StartSearchDto
+  fullName: Application.DTOs.RankMatchMaker.StartSearchDto
+- uid: Application.DTOs.RankMatchMaker
+  commentId: N:Application.DTOs.RankMatchMaker
+  href: Application.html
+  name: Application.DTOs.RankMatchMaker
+  nameWithType: Application.DTOs.RankMatchMaker
+  fullName: Application.DTOs.RankMatchMaker
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.MatchInvite
+  commentId: N:Tests.Integration.MatchInvite
+  id: Tests.Integration.MatchInvite
+  children:
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.MatchInvite
+  nameWithType: Tests.Integration.MatchInvite
+  fullName: Tests.Integration.MatchInvite
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  commentId: T:Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html
+  name: MatchInviteIntegrationTests
+  nameWithType: MatchInviteIntegrationTests
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests

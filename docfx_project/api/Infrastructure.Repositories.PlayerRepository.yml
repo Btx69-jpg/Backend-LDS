@@ -1,0 +1,1474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Repositories.PlayerRepository
+  commentId: T:Infrastructure.Repositories.PlayerRepository
+  id: PlayerRepository
+  parent: Infrastructure.Repositories
+  children:
+  - Infrastructure.Repositories.PlayerRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  - Infrastructure.Repositories.PlayerRepository.AddAsync(Domain.Entities.Player)
+  - Infrastructure.Repositories.PlayerRepository.DeletePlayer(Domain.Entities.Player)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(System.String)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(System.String)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  - Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  - Infrastructure.Repositories.PlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  langs:
+  - csharp
+  - vb
+  name: PlayerRepository
+  nameWithType: PlayerRepository
+  fullName: Infrastructure.Repositories.PlayerRepository
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PlayerRepository
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 15
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Repositório específico para operações de persistência de dados e consulta da entidade [Player].
+
+
+    Implementa o contrato [IPlayerRepository] e é a fonte de verdade para perfis de jogadores.
+  example: []
+  syntax:
+    content: 'public class PlayerRepository : IPlayerRepository'
+    content.vb: Public Class PlayerRepository Implements IPlayerRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Infrastructure.Repositories.PlayerRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  id: '#ctor(Infrastructure.Data.AmateurFootballContext)'
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: PlayerRepository(AmateurFootballContext)
+  nameWithType: PlayerRepository.PlayerRepository(AmateurFootballContext)
+  fullName: Infrastructure.Repositories.PlayerRepository.PlayerRepository(Infrastructure.Data.AmateurFootballContext)
+  type: Constructor
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 27
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Construtor da classe [PlayerRepository].
+  example: []
+  syntax:
+    content: public PlayerRepository(AmateurFootballContext context)
+    parameters:
+    - id: context
+      type: Infrastructure.Data.AmateurFootballContext
+      description: O contexto da base de dados (Db Context) injetado via Dependency Injection.
+    content.vb: Public Sub New(context As AmateurFootballContext)
+  overload: Infrastructure.Repositories.PlayerRepository.#ctor*
+  nameWithType.vb: PlayerRepository.New(AmateurFootballContext)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.New(Infrastructure.Data.AmateurFootballContext)
+  name.vb: New(AmateurFootballContext)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  id: GetPlayerByPhoneNumberAsync(System.String)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByPhoneNumberAsync(string)
+  nameWithType: PlayerRepository.GetPlayerByPhoneNumberAsync(string)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByPhoneNumberAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 37
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um jogador pelo seu número de telefone de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<Player?> GetPlayerByPhoneNumberAsync(string phoneNumber)
+    parameters:
+    - id: phoneNumber
+      type: System.String
+      description: O número de telefone completo do jogador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Player}
+      description: A entidade [Player] ou null.
+    content.vb: Public Function GetPlayerByPhoneNumberAsync(phoneNumber As String) As Task(Of Player)
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  nameWithType.vb: PlayerRepository.GetPlayerByPhoneNumberAsync(String)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(String)
+  name.vb: GetPlayerByPhoneNumberAsync(String)
+- uid: Infrastructure.Repositories.PlayerRepository.AddAsync(Domain.Entities.Player)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.AddAsync(Domain.Entities.Player)
+  id: AddAsync(Domain.Entities.Player)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Player)
+  nameWithType: PlayerRepository.AddAsync(Player)
+  fullName: Infrastructure.Repositories.PlayerRepository.AddAsync(Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 46
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Adiciona um novo jogador à base de dados de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task AddAsync(Player player)
+    parameters:
+    - id: player
+      type: Domain.Entities.Player
+      description: A entidade [Player] a ser persistida.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Uma tarefa assíncrona (<xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>) que representa a operação de adição.
+    content.vb: Public Function AddAsync(player As Player) As Task
+  overload: Infrastructure.Repositories.PlayerRepository.AddAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+- uid: Infrastructure.Repositories.PlayerRepository.DeletePlayer(Domain.Entities.Player)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.DeletePlayer(Domain.Entities.Player)
+  id: DeletePlayer(Domain.Entities.Player)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: DeletePlayer(Player)
+  nameWithType: PlayerRepository.DeletePlayer(Player)
+  fullName: Infrastructure.Repositories.PlayerRepository.DeletePlayer(Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeletePlayer
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 55
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Marca um jogador existente para ser removido da base de dados (deleção).
+  example: []
+  syntax:
+    content: public void DeletePlayer(Player playerToRemove)
+    parameters:
+    - id: playerToRemove
+      type: Domain.Entities.Player
+      description: A entidade [Player] a ser removida.
+    content.vb: Public Sub DeletePlayer(playerToRemove As Player)
+  overload: Infrastructure.Repositories.PlayerRepository.DeletePlayer*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(System.String)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(System.String)
+  id: GetPlayerByEmailAsync(System.String)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByEmailAsync(string)
+  nameWithType: PlayerRepository.GetPlayerByEmailAsync(string)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByEmailAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 65
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um jogador pelo seu endereço de e-mail de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<Player?> GetPlayerByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: O endereço de e-mail do jogador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Player}
+      description: A entidade [Player] ou null.
+    content.vb: Public Function GetPlayerByEmailAsync(email As String) As Task(Of Player)
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(System.String)
+  nameWithType.vb: PlayerRepository.GetPlayerByEmailAsync(String)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(String)
+  name.vb: GetPlayerByEmailAsync(String)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(System.String)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(System.String)
+  id: GetPlayerByIdAsync(System.String)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByIdAsync(string)
+  nameWithType: PlayerRepository.GetPlayerByIdAsync(string)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByIdAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 78
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um jogador pelo seu identificador único (ID), carregando a afiliação à equipa.
+  remarks: Utiliza `.Include(p => p.Team)` para carregar os dados da equipa associada (Eager Loading).
+  example: []
+  syntax:
+    content: public Task<Player?> GetPlayerByIdAsync(string id)
+    parameters:
+    - id: id
+      type: System.String
+      description: O ID (UID) do jogador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Player}
+      description: A entidade [Player] com os dados da equipa carregados, ou null.
+    content.vb: Public Function GetPlayerByIdAsync(id As String) As Task(Of Player)
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(System.String)
+  nameWithType.vb: PlayerRepository.GetPlayerByIdAsync(String)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(String)
+  name.vb: GetPlayerByIdAsync(String)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  id: GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersListByIdListAsync(List<string>)
+  nameWithType: PlayerRepository.GetPlayersListByIdListAsync(List<string>)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersListByIdListAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 90
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma lista de jogadores com base numa lista de IDs fornecida.
+  example: []
+  syntax:
+    content: public Task<List<Player>> GetPlayersListByIdListAsync(List<string> playerIdList)
+    parameters:
+    - id: playerIdList
+      type: System.Collections.Generic.List{System.String}
+      description: A lista de IDs (Strings) a procurar.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Player}}
+      description: Uma lista de entidades [Player].
+    content.vb: Public Function GetPlayersListByIdListAsync(playerIdList As List(Of String)) As Task(Of List(Of Player))
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  nameWithType.vb: PlayerRepository.GetPlayersListByIdListAsync(List(Of String))
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List(Of String))
+  name.vb: GetPlayersListByIdListAsync(List(Of String))
+- uid: Infrastructure.Repositories.PlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  id: UpdatePlayer(Domain.Entities.Player)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayer(Player)
+  nameWithType: PlayerRepository.UpdatePlayer(Player)
+  fullName: Infrastructure.Repositories.PlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayer
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 101
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Marca uma entidade [Player] para ser atualizada na base de dados.
+  example: []
+  syntax:
+    content: public void UpdatePlayer(Player updatedPlayer)
+    parameters:
+    - id: updatedPlayer
+      type: Domain.Entities.Player
+      description: A entidade [Player] com os novos valores.
+    content.vb: Public Sub UpdatePlayer(updatedPlayer As Player)
+  overload: Infrastructure.Repositories.PlayerRepository.UpdatePlayer*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  id: GetPlayerByIdWithRequestsAsync(System.String)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerByIdWithRequestsAsync(string)
+  nameWithType: PlayerRepository.GetPlayerByIdWithRequestsAsync(string)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayerByIdWithRequestsAsync
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 114
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um pedido de adesão específico associado a um jogador, carregando as relações necessárias.
+  remarks: Consulta a tabela [MembershipRequests] mas carrega o jogador e a equipa associada através de [ThenInclude].
+  example: []
+  syntax:
+    content: public Task<MembershipRequest?> GetPlayerByIdWithRequestsAsync(string playerId)
+    parameters:
+    - id: playerId
+      type: System.String
+      description: O ID do jogador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.MembershipRequest}
+      description: A entidade [MembershipRequest] correspondente, ou null.
+    content.vb: Public Function GetPlayerByIdWithRequestsAsync(playerId As String) As Task(Of MembershipRequest)
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  nameWithType.vb: PlayerRepository.GetPlayerByIdWithRequestsAsync(String)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(String)
+  name.vb: GetPlayerByIdWithRequestsAsync(String)
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  id: GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  parent: Infrastructure.Repositories.PlayerRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPlayersList(FilterTeamDto?)
+  nameWithType: PlayerRepository.GetPlayersList(FilterTeamDto?)
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto?)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/PlayerRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPlayersList
+    path: ../Infrastructure/Repositories/PlayerRepository.cs
+    startLine: 131
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma lista de jogadores para pesquisa de mercado, aplicando filtros dinâmicos.
+  remarks: >-
+    Esta consulta complexa calcula a idade do jogador usando [EF.Functions.DateDiffDay] e projeta o resultado
+
+    no DTO [InfoPlayerDto]. Também implementa filtragem por nome, cidade e atributos físicos.
+  example: []
+  syntax:
+    content: public Task<List<InfoPlayerDto?>> GetPlayersList(FilterTeamDto? filters)
+    parameters:
+    - id: filters
+      type: Application.DTOs.Filters.FilterTeamDto
+      description: O DTO com os critérios de filtragem (Nome, Idade, Altura, Posição).
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.InfoPlayerDto}}
+      description: Uma lista de objetos [InfoPlayerDto] para o frontend.
+    content.vb: Public Function GetPlayersList(filters As FilterTeamDto) As Task(Of List(Of InfoPlayerDto))
+  overload: Infrastructure.Repositories.PlayerRepository.GetPlayersList*
+  implements:
+  - Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  nameWithType.vb: PlayerRepository.GetPlayersList(FilterTeamDto)
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  name.vb: GetPlayersList(FilterTeamDto)
+references:
+- uid: Infrastructure.Repositories
+  commentId: N:Infrastructure.Repositories
+  href: Infrastructure.html
+  name: Infrastructure.Repositories
+  nameWithType: Infrastructure.Repositories
+  fullName: Infrastructure.Repositories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Infrastructure.Repositories.PlayerRepository.#ctor*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.#ctor
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository__ctor_Infrastructure_Data_AmateurFootballContext_
+  name: PlayerRepository
+  nameWithType: PlayerRepository.PlayerRepository
+  fullName: Infrastructure.Repositories.PlayerRepository.PlayerRepository
+  nameWithType.vb: PlayerRepository.New
+  fullName.vb: Infrastructure.Repositories.PlayerRepository.New
+  name.vb: New
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayerByPhoneNumberAsync_System_String_
+  name: GetPlayerByPhoneNumberAsync
+  nameWithType: PlayerRepository.GetPlayerByPhoneNumberAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetPlayerByPhoneNumberAsync(string)
+  nameWithType: IPlayerRepository.GetPlayerByPhoneNumberAsync(string)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(string)
+  nameWithType.vb: IPlayerRepository.GetPlayerByPhoneNumberAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(String)
+  name.vb: GetPlayerByPhoneNumberAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+    name: GetPlayerByPhoneNumberAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByPhoneNumberAsync(System.String)
+    name: GetPlayerByPhoneNumberAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Domain.Entities.Player}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.Player}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Player>
+  nameWithType: Task<Player>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.Player>
+  nameWithType.vb: Task(Of Player)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.Player)
+  name.vb: Task(Of Player)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Infrastructure.Repositories.PlayerRepository.AddAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.AddAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_AddAsync_Domain_Entities_Player_
+  name: AddAsync
+  nameWithType: PlayerRepository.AddAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.AddAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  name: AddAsync(Player)
+  nameWithType: IPlayerRepository.AddAsync(Player)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+    name: AddAsync
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.AddAsync(Domain.Entities.Player)
+    name: AddAsync
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Domain.Entities.Player
+  commentId: T:Domain.Entities.Player
+  parent: Domain.Entities
+  href: Domain.Entities.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Domain.Entities.Player
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Infrastructure.Repositories.PlayerRepository.DeletePlayer*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.DeletePlayer
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_DeletePlayer_Domain_Entities_Player_
+  name: DeletePlayer
+  nameWithType: PlayerRepository.DeletePlayer
+  fullName: Infrastructure.Repositories.PlayerRepository.DeletePlayer
+- uid: Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  name: DeletePlayer(Player)
+  nameWithType: IPlayerRepository.DeletePlayer(Player)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+    name: DeletePlayer
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.DeletePlayer(Domain.Entities.Player)
+    name: DeletePlayer
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayerByEmailAsync_System_String_
+  name: GetPlayerByEmailAsync
+  nameWithType: PlayerRepository.GetPlayerByEmailAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(System.String)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetPlayerByEmailAsync(string)
+  nameWithType: IPlayerRepository.GetPlayerByEmailAsync(string)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(string)
+  nameWithType.vb: IPlayerRepository.GetPlayerByEmailAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(String)
+  name.vb: GetPlayerByEmailAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(System.String)
+    name: GetPlayerByEmailAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByEmailAsync(System.String)
+    name: GetPlayerByEmailAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayerByIdAsync_System_String_
+  name: GetPlayerByIdAsync
+  nameWithType: PlayerRepository.GetPlayerByIdAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(System.String)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetPlayerByIdAsync(string)
+  nameWithType: IPlayerRepository.GetPlayerByIdAsync(string)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(string)
+  nameWithType.vb: IPlayerRepository.GetPlayerByIdAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(String)
+  name.vb: GetPlayerByIdAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(System.String)
+    name: GetPlayerByIdAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdAsync(System.String)
+    name: GetPlayerByIdAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayersListByIdListAsync_System_Collections_Generic_List_System_String__
+  name: GetPlayersListByIdListAsync
+  nameWithType: PlayerRepository.GetPlayersListByIdListAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: GetPlayersListByIdListAsync(List<string>)
+  nameWithType: IPlayerRepository.GetPlayersListByIdListAsync(List<string>)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List<string>)
+  nameWithType.vb: IPlayerRepository.GetPlayersListByIdListAsync(List(Of String))
+  fullName.vb: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List(Of String))
+  name.vb: GetPlayersListByIdListAsync(List(Of String))
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+    name: GetPlayersListByIdListAsync
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})
+    name: GetPlayersListByIdListAsync
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Player}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Player}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Player>>
+  nameWithType: Task<List<Player>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.Player>>
+  nameWithType.vb: Task(Of List(Of Player))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.Player))
+  name.vb: Task(Of List(Of Player))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Infrastructure.Repositories.PlayerRepository.UpdatePlayer*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.UpdatePlayer
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_UpdatePlayer_Domain_Entities_Player_
+  name: UpdatePlayer
+  nameWithType: PlayerRepository.UpdatePlayer
+  fullName: Infrastructure.Repositories.PlayerRepository.UpdatePlayer
+- uid: Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  name: UpdatePlayer(Player)
+  nameWithType: IPlayerRepository.UpdatePlayer(Player)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+    name: UpdatePlayer
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.UpdatePlayer(Domain.Entities.Player)
+    name: UpdatePlayer
+  - name: (
+  - uid: Domain.Entities.Player
+    name: Player
+  - name: )
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayerByIdWithRequestsAsync_System_String_
+  name: GetPlayerByIdWithRequestsAsync
+  nameWithType: PlayerRepository.GetPlayerByIdWithRequestsAsync
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetPlayerByIdWithRequestsAsync(string)
+  nameWithType: IPlayerRepository.GetPlayerByIdWithRequestsAsync(string)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(string)
+  nameWithType.vb: IPlayerRepository.GetPlayerByIdWithRequestsAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(String)
+  name.vb: GetPlayerByIdWithRequestsAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+    name: GetPlayerByIdWithRequestsAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)
+    name: GetPlayerByIdWithRequestsAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{Domain.Entities.MembershipRequest}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.MembershipRequest}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MembershipRequest>
+  nameWithType: Task<MembershipRequest>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.MembershipRequest>
+  nameWithType.vb: Task(Of MembershipRequest)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.MembershipRequest)
+  name.vb: Task(Of MembershipRequest)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.MembershipRequest
+    name: MembershipRequest
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.MembershipRequest
+    name: MembershipRequest
+  - name: )
+- uid: Infrastructure.Repositories.PlayerRepository.GetPlayersList*
+  commentId: Overload:Infrastructure.Repositories.PlayerRepository.GetPlayersList
+  href: Infrastructure.Repositories.PlayerRepository.html#Infrastructure_Repositories_PlayerRepository_GetPlayersList_Application_DTOs_Filters_FilterTeamDto_
+  name: GetPlayersList
+  nameWithType: PlayerRepository.GetPlayersList
+  fullName: Infrastructure.Repositories.PlayerRepository.GetPlayersList
+- uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Interfaces.Repositories.IPlayerRepository
+  name: GetPlayersList(FilterTeamDto)
+  nameWithType: IPlayerRepository.GetPlayersList(FilterTeamDto)
+  fullName: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+    name: GetPlayersList
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IPlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)
+    name: GetPlayersList
+  - name: (
+  - uid: Application.DTOs.Filters.FilterTeamDto
+    name: FilterTeamDto
+  - name: )
+- uid: Application.DTOs.Filters.FilterTeamDto
+  commentId: T:Application.DTOs.Filters.FilterTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamDto.html
+  name: FilterTeamDto
+  nameWithType: FilterTeamDto
+  fullName: Application.DTOs.Filters.FilterTeamDto
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.InfoPlayerDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.InfoPlayerDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoPlayerDto>>
+  nameWithType: Task<List<InfoPlayerDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Player.InfoPlayerDto>>
+  nameWithType.vb: Task(Of List(Of InfoPlayerDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Player.InfoPlayerDto))
+  name.vb: Task(Of List(Of InfoPlayerDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Player.InfoPlayerDto
+    name: InfoPlayerDto
+    href: Application.DTOs.Player.InfoPlayerDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Player.InfoPlayerDto
+    name: InfoPlayerDto
+    href: Application.DTOs.Player.InfoPlayerDto.html
+  - name: )
+  - name: )
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html

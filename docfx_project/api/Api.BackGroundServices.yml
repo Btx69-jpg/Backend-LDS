@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.BackGroundServices
+  commentId: N:Api.BackGroundServices
+  id: Api.BackGroundServices
+  children:
+  - Api.BackGroundServices.NotificationBackGroundService
+  langs:
+  - csharp
+  - vb
+  name: Api.BackGroundServices
+  nameWithType: Api.BackGroundServices
+  fullName: Api.BackGroundServices
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Api.BackGroundServices.NotificationBackGroundService
+  commentId: T:Api.BackGroundServices.NotificationBackGroundService
+  href: Api.BackGroundServices.NotificationBackGroundService.html
+  name: NotificationBackGroundService
+  nameWithType: NotificationBackGroundService
+  fullName: Api.BackGroundServices.NotificationBackGroundService

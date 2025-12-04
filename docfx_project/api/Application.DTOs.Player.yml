@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Player
+  commentId: N:Application.DTOs.Player
+  id: Application.DTOs.Player
+  children:
+  - Application.DTOs.Player.InfoPlayerDto
+  - Application.DTOs.Player.PlayerDataCompleteDto
+  - Application.DTOs.Player.PlayerWithoutTeamInfoDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Player
+  nameWithType: Application.DTOs.Player
+  fullName: Application.DTOs.Player
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Player.InfoPlayerDto
+  commentId: T:Application.DTOs.Player.InfoPlayerDto
+  parent: Application.DTOs.Player
+  href: Application.DTOs.Player.InfoPlayerDto.html
+  name: InfoPlayerDto
+  nameWithType: InfoPlayerDto
+  fullName: Application.DTOs.Player.InfoPlayerDto
+- uid: Application.DTOs.Player.PlayerDataCompleteDto
+  commentId: T:Application.DTOs.Player.PlayerDataCompleteDto
+  href: Application.DTOs.Player.PlayerDataCompleteDto.html
+  name: PlayerDataCompleteDto
+  nameWithType: PlayerDataCompleteDto
+  fullName: Application.DTOs.Player.PlayerDataCompleteDto
+- uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+  commentId: T:Application.DTOs.Player.PlayerWithoutTeamInfoDto
+  href: Application.DTOs.Player.PlayerWithoutTeamInfoDto.html
+  name: PlayerWithoutTeamInfoDto
+  nameWithType: PlayerWithoutTeamInfoDto
+  fullName: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+- uid: Application.DTOs.Player
+  commentId: N:Application.DTOs.Player
+  href: Application.html
+  name: Application.DTOs.Player
+  nameWithType: Application.DTOs.Player
+  fullName: Application.DTOs.Player
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Player
+    name: Player
+    href: Application.DTOs.Player.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Player
+    name: Player
+    href: Application.DTOs.Player.html

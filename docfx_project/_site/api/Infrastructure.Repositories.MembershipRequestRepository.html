@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MembershipRequestRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MembershipRequestRepository | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio espec&#237;fico para opera&#231;&#245;es de persist&#234;ncia e consulta da entidade [MembershipRequest]. Gere o ciclo de vida dos pedidos de ades&#227;o (Jogador -&amp;gt; Equipa) e convites de recrutamento (Equipa -&amp;gt; Jogador).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_MembershipRequestRepository.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.MembershipRequestRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.MembershipRequestRepository">
+
+
+
+  <h1 id="Infrastructure_Repositories_MembershipRequestRepository" data-uid="Infrastructure.Repositories.MembershipRequestRepository" class="text-break">
+Class MembershipRequestRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório específico para operações de persistência e consulta da entidade [MembershipRequest].</p>
+<p>Gere o ciclo de vida dos pedidos de adesão (Jogador -&gt; Equipa) e convites de recrutamento (Equipa -&gt; Jogador).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MembershipRequestRepository : IMembershipRequestRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MembershipRequestRepository</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.IMembershipRequestRepository.html">IMembershipRequestRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository__ctor_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  MembershipRequestRepository(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [MembershipRequestRepository].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MembershipRequestRepository(AmateurFootballContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados (Db Context) injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_AddMembershipRequest_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.AddMembershipRequest*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_AddMembershipRequest_Domain_Entities_MembershipRequest_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.AddMembershipRequest(Domain.Entities.MembershipRequest)">
+  AddMembershipRequest(MembershipRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona um novo pedido de adesão/convite à base de dados de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddMembershipRequest(MembershipRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a></dt>
+    <dd><p>A entidade [MembershipRequest] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_ExistsRequestBetweenPlayerAndTeam_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.ExistsRequestBetweenPlayerAndTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_ExistsRequestBetweenPlayerAndTeam_System_String_System_Guid_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.ExistsRequestBetweenPlayerAndTeam(System.String,System.Guid)">
+  ExistsRequestBetweenPlayerAndTeam(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifica se já existe um pedido de adesão ou convite pendente entre um par de Jogador/Equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ExistsRequestBetweenPlayerAndTeam(string playerId, Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador.</p>
+</dd>
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>true</code> se o pedido existir, <code>false</code> caso contrário.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestById_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestById_System_Guid_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestById(System.Guid)">
+  GetMembershipRequestById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um pedido de adesão/convite pelo seu identificador único (ID), carregando as entidades relacionadas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MembershipRequest?&gt; GetMembershipRequestById(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) do pedido.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a>&gt;</dt>
+    <dd><p>A entidade [MembershipRequest] completa ou null se não for encontrada.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza <code>.Include()</code> para carregar as entidades [Player] e [Team] numa única consulta.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestByPlayerAndTeam_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestByPlayerAndTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestByPlayerAndTeam_System_String_System_Guid_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestByPlayerAndTeam(System.String,System.Guid)">
+  GetMembershipRequestByPlayerAndTeam(string, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um pedido de adesão/convite pendente com base nos IDs do Jogador e da Equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MembershipRequest?&gt; GetMembershipRequestByPlayerAndTeam(string playerId, Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador.</p>
+</dd>
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a>&gt;</dt>
+    <dd><p>A entidade [MembershipRequest] correspondente ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestByPlayerAndTeam_System_String_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utilizado para verificar a existência de pedidos duplicados entre o mesmo par de entidades.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayer_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByPlayer*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayer_System_String_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByPlayer(System.String)">
+  GetMembershipRequestsByPlayer(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de convites de recrutamento <strong>recebidos por um Jogador</strong> de várias Equipas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MemberShipRequestDto&gt;&gt; GetMembershipRequestsByPlayer(string playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador que recebeu os convites.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MemberShip.MemberShipRequestDto.html">MemberShipRequestDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [MemberShipRequestDto] com os convites de recrutamento.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayer_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filtra por <code>IdPlayer</code> e <code>IsPlayerSender == false</code>.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayerWithFilters_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByPlayerWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayerWithFilters_System_String_Application_DTOs_Filters_FilterMembershipRequestsPlayer_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByPlayerWithFilters(System.String,Application.DTOs.Filters.FilterMembershipRequestsPlayer)">
+  GetMembershipRequestsByPlayerWithFilters(string, FilterMembershipRequestsPlayer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de convites de recrutamento <strong>recebidos por um Jogador</strong> com filtros aplicados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MemberShipRequestDto&gt;&gt; GetMembershipRequestsByPlayerWithFilters(string playerId, FilterMembershipRequestsPlayer filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador recetor.</p>
+</dd>
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterMembershipRequestsPlayer.html">FilterMembershipRequestsPlayer</a></dt>
+    <dd><p>O DTO contendo os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MemberShip.MemberShipRequestDto.html">MemberShipRequestDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista filtrada de [MemberShipRequestDto].</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByPlayerWithFilters_System_String_Application_DTOs_Filters_FilterMembershipRequestsPlayer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filtra por <code>IdPlayer</code>, <code>IsPlayerSender == false</code>, e aplica filtros condicionais (Nome da Equipa Remetente, Datas).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeam_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeam_System_Guid_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByTeam(System.Guid)">
+  GetMembershipRequestsByTeam(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de pedidos de adesão <strong>enviados por Jogadores</strong> (Join Requests) para uma Equipa específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MemberShipRequestDto&gt;&gt; GetMembershipRequestsByTeam(Guid teamId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que recebeu os pedidos.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MemberShip.MemberShipRequestDto.html">MemberShipRequestDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [MemberShipRequestDto] com os pedidos recebidos.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeam_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filtra por <code>IdTeam</code> e <code>IsPlayerSender == true</code>. Projeta o resultado no DTO resumido.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeamWithFilters_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByTeamWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMembershipRequestsTeam_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.GetMembershipRequestsByTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMembershipRequestsTeam)">
+  GetMembershipRequestsByTeamWithFilters(Guid, FilterMembershipRequestsTeam)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém a lista de pedidos de adesão <strong>enviados por Equipas</strong> (Recruitment Invites) para uma Equipa específica, aplicando filtros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MemberShipRequestDto&gt;&gt; GetMembershipRequestsByTeamWithFilters(Guid teamId, FilterMembershipRequestsTeam filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>teamId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que recebeu os pedidos.</p>
+</dd>
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterMembershipRequestsTeam.html">FilterMembershipRequestsTeam</a></dt>
+    <dd><p>O DTO contendo os critérios de filtragem (Nome do Remetente, Intervalo de Datas).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MemberShip.MemberShipRequestDto.html">MemberShipRequestDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista filtrada de [MemberShipRequestDto].</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_GetMembershipRequestsByTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMembershipRequestsTeam__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filtra por <code>IdTeam</code> e <code>IsPlayerSender == true</code> para obter apenas os Join Requests, e aplica filtros condicionais de data/nome.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfPlayer_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveAllMemberShipRequestsOfPlayer*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfPlayer_System_String_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveAllMemberShipRequestsOfPlayer(System.String)">
+  RemoveAllMemberShipRequestsOfPlayer(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove todos os pedidos de adesão ou convites associados a um jogador específico.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveAllMemberShipRequestsOfPlayer(string playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador alvo.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a remoção.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfPlayer_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utilizado no cenário de eliminação de conta ou no processo de gestão de conflitos.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfTeam_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveAllMemberShipRequestsOfTeam*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfTeam_System_Guid_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveAllMemberShipRequestsOfTeam(System.Guid)">
+  RemoveAllMemberShipRequestsOfTeam(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove todos os pedidos de adesão ou convites associados a uma equipa específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveAllMemberShipRequestsOfTeam(Guid idTeam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa alvo.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a remoção.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MembershipRequestRepository_RemoveAllMemberShipRequestsOfTeam_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utilizado no cenário de eliminação de equipa.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MembershipRequestRepository_RemoveMembershipRequest_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveMembershipRequest*"></a>
+
+  <h3 id="Infrastructure_Repositories_MembershipRequestRepository_RemoveMembershipRequest_Domain_Entities_MembershipRequest_" data-uid="Infrastructure.Repositories.MembershipRequestRepository.RemoveMembershipRequest(Domain.Entities.MembershipRequest)">
+  RemoveMembershipRequest(MembershipRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca um pedido de adesão/convite existente para ser removido da base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveMembershipRequest(MembershipRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>request</code> <a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a></dt>
+    <dd><p>A entidade [MembershipRequest] a ser removida (ex: após aceitação ou rejeição).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MembershipRequestRepository.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

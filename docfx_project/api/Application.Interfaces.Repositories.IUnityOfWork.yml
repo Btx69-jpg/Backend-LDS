@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  id: IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  langs:
+  - csharp
+  - vb
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUnityOfWork.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IUnityOfWork
+    path: ../Application/Interfaces/Repositories/IUnityOfWork.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface IUnityOfWork
+    content.vb: Public Interface IUnityOfWork
+- uid: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  commentId: M:Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  id: SaveChangesAsync
+  parent: Application.Interfaces.Repositories.IUnityOfWork
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync()
+  nameWithType: IUnityOfWork.SaveChangesAsync()
+  fullName: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IUnityOfWork.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SaveChangesAsync
+    path: ../Application/Interfaces/Repositories/IUnityOfWork.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<int> SaveChangesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function SaveChangesAsync() As Task(Of Integer)
+  overload: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync*
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+  href: Application.Interfaces.Repositories.IUnityOfWork.html#Application_Interfaces_Repositories_IUnityOfWork_SaveChangesAsync
+  name: SaveChangesAsync
+  nameWithType: IUnityOfWork.SaveChangesAsync
+  fullName: Application.Interfaces.Repositories.IUnityOfWork.SaveChangesAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

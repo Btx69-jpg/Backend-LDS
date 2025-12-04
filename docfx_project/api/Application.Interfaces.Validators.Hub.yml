@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  id: Application.Interfaces.Validators.Hub
+  children:
+  - Application.Interfaces.Validators.Hub.IFinishMatchValidator
+  - Application.Interfaces.Validators.Hub.IGeralHubValidator
+  - Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  - Application.Interfaces.Validators.Hub.INotificationValidator
+  - Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  - Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Validators.Hub.IFinishMatchValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IFinishMatchValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IFinishMatchValidator.html
+  name: IFinishMatchValidator
+  nameWithType: IFinishMatchValidator
+  fullName: Application.Interfaces.Validators.Hub.IFinishMatchValidator
+- uid: Application.Interfaces.Validators.Hub.IGeralHubValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IGeralHubValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IGeralHubValidator.html
+  name: IGeralHubValidator
+  nameWithType: IGeralHubValidator
+  fullName: Application.Interfaces.Validators.Hub.IGeralHubValidator
+- uid: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.html
+  name: IHubFinshMatchValidator
+  nameWithType: IHubFinshMatchValidator
+  fullName: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator
+  commentId: T:Application.Interfaces.Validators.Hub.INotificationValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.INotificationValidator.html
+  name: INotificationValidator
+  nameWithType: INotificationValidator
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator
+- uid: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html
+  name: IRankMatchMakerValidator
+  nameWithType: IRankMatchMakerValidator
+  fullName: Application.Interfaces.Validators.Hub.IRankMatchMakerValidator
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html
+  name: IStartMatchHubValidator
+  nameWithType: IStartMatchHubValidator
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html

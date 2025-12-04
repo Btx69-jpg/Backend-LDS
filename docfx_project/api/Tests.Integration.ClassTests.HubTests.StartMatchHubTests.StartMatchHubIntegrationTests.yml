@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  id: StartMatchHubIntegrationTests
+  parent: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  - Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup
+  - Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown
+  langs:
+  - csharp
+  - vb
+  name: StartMatchHubIntegrationTests
+  nameWithType: StartMatchHubIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: StartMatchHubIntegrationTests
+    path: ../Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+    startLine: 10
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  syntax:
+    content: public class StartMatchHubIntegrationTests
+    content.vb: Public Class StartMatchHubIntegrationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup
+  commentId: M:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup
+  id: Setup
+  parent: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: StartMatchHubIntegrationTests.Setup()
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Setup
+    path: ../Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+    startLine: 16
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown
+  commentId: M:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown
+  id: TearDown
+  parent: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: StartMatchHubIntegrationTests.TearDown()
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TearDown
+    path: ../Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+    startLine: 23
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  syntax:
+    content: >-
+      [TearDown]
+
+      public void TearDown()
+    content.vb: >-
+      <TearDown>
+
+      Public Sub TearDown()
+  overload: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown*
+  attributes:
+  - type: NUnit.Framework.TearDownAttribute
+    ctor: NUnit.Framework.TearDownAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  commentId: M:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  id: Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  parent: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup()
+  nameWithType: StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup()
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+    path: ../Tests/Integration/ClassTests/HubTests/StartMatchHubTests/StartMatchHubIntegrationTests.cs
+    startLine: 30
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  syntax:
+    content: >-
+      [Test]
+
+      public Task Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup() As Task
+  overload: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  href: Tests.html
+  name: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.ClassTests
+    name: ClassTests
+    href: Tests.Integration.ClassTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests
+    name: HubTests
+    href: Tests.Integration.ClassTests.HubTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+    name: StartMatchHubTests
+    href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.ClassTests
+    name: ClassTests
+    href: Tests.Integration.ClassTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests
+    name: HubTests
+    href: Tests.Integration.ClassTests.HubTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests
+    name: StartMatchHubTests
+    href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup*
+  commentId: Overload:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup
+  href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.html#Tests_Integration_ClassTests_HubTests_StartMatchHubTests_StartMatchHubIntegrationTests_Setup
+  name: Setup
+  nameWithType: StartMatchHubIntegrationTests.Setup
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Setup
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown*
+  commentId: Overload:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown
+  href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.html#Tests_Integration_ClassTests_HubTests_StartMatchHubTests_StartMatchHubIntegrationTests_TearDown
+  name: TearDown
+  nameWithType: StartMatchHubIntegrationTests.TearDown
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.TearDown
+- uid: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup*
+  commentId: Overload:Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  href: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.html#Tests_Integration_ClassTests_HubTests_StartMatchHubTests_StartMatchHubIntegrationTests_Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  name: Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  nameWithType: StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+  fullName: Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.Hub_TwoAdmins_SecondTriggersReceiveStartMessageToGroup
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

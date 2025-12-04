@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  id: RankMatchMakerBackGroundServicesTests
+  parent: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+  langs:
+  - csharp
+  - vb
+  name: RankMatchMakerBackGroundServicesTests
+  nameWithType: RankMatchMakerBackGroundServicesTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/RankMatchMakerHubTests/RankMatchMakerBackGroundServicesTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RankMatchMakerBackGroundServicesTests
+    path: ../Tests/Integration/ClassTests/HubTests/RankMatchMakerHubTests/RankMatchMakerBackGroundServicesTests.cs
+    startLine: 13
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  syntax:
+    content: public class RankMatchMakerBackGroundServicesTests
+    content.vb: Public Class RankMatchMakerBackGroundServicesTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+  commentId: M:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+  id: OneShot_Background_RunsAndCallsHubContext
+  parent: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  langs:
+  - csharp
+  - vb
+  name: OneShot_Background_RunsAndCallsHubContext()
+  nameWithType: RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext()
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/HubTests/RankMatchMakerHubTests/RankMatchMakerBackGroundServicesTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: OneShot_Background_RunsAndCallsHubContext
+    path: ../Tests/Integration/ClassTests/HubTests/RankMatchMakerHubTests/RankMatchMakerBackGroundServicesTests.cs
+    startLine: 15
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  syntax:
+    content: >-
+      [Test(Description = "One-shot integration: quando manager.MatchMaker devolve matches, o hubContext é chamado para fechar grupos.")]
+
+      public Task OneShot_Background_RunsAndCallsHubContext()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="One-shot integration: quando manager.MatchMaker devolve matches, o hubContext é chamado para fechar grupos.")>
+
+      Public Function OneShot_Background_RunsAndCallsHubContext() As Task
+  overload: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: 'One-shot integration: quando manager.MatchMaker devolve matches, o hubContext é chamado para fechar grupos.'
+references:
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  href: Tests.html
+  name: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.ClassTests
+    name: ClassTests
+    href: Tests.Integration.ClassTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests
+    name: HubTests
+    href: Tests.Integration.ClassTests.HubTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+    name: RankMatchMakerHubTests
+    href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.ClassTests
+    name: ClassTests
+    href: Tests.Integration.ClassTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests
+    name: HubTests
+    href: Tests.Integration.ClassTests.HubTests.html
+  - name: .
+  - uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+    name: RankMatchMakerHubTests
+    href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext*
+  commentId: Overload:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+  href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.html#Tests_Integration_ClassTests_HubTests_RankMatchMakerHubTests_RankMatchMakerBackGroundServicesTests_OneShot_Background_RunsAndCallsHubContext
+  name: OneShot_Background_RunsAndCallsHubContext
+  nameWithType: RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.OneShot_Background_RunsAndCallsHubContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

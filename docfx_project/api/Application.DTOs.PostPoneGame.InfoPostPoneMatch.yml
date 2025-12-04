@@ -1,0 +1,604 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  commentId: T:Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  id: InfoPostPoneMatch
+  parent: Application.DTOs.PostPoneGame
+  children:
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+  langs:
+  - csharp
+  - vb
+  name: InfoPostPoneMatch
+  nameWithType: InfoPostPoneMatch
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  type: Class
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: InfoPostPoneMatch
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: public class InfoPostPoneMatch
+    content.vb: Public Class InfoPostPoneMatch
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+  commentId: P:Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+  id: IdMatch
+  parent: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  langs:
+  - csharp
+  - vb
+  name: IdMatch
+  nameWithType: InfoPostPoneMatch.IdMatch
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IdMatch
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "O id da partida tem de estar preenchido")]
+
+      public Guid IdMatch { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required(ErrorMessage:="O id da partida tem de estar preenchido")>
+
+      Public Property IdMatch As Guid
+  overload: Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: O id da partida tem de estar preenchido
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+  commentId: P:Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+  id: GameDate
+  parent: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  langs:
+  - csharp
+  - vb
+  name: GameDate
+  nameWithType: InfoPostPoneMatch.GameDate
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GameDate
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "A data de adiamento não pode ser nula")]
+
+      public DateTime GameDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <Required(ErrorMessage:="A data de adiamento não pode ser nula")>
+
+      Public Property GameDate As Date
+  overload: Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: A data de adiamento não pode ser nula
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+  commentId: P:Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+  id: PostPoneDate
+  parent: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  langs:
+  - csharp
+  - vb
+  name: PostPoneDate
+  nameWithType: InfoPostPoneMatch.PostPoneDate
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PostPoneDate
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "A data de adiamento não pode ser nula")]
+
+      public DateTime PostPoneDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <Required(ErrorMessage:="A data de adiamento não pode ser nula")>
+
+      Public Property PostPoneDate As Date
+  overload: Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: A data de adiamento não pode ser nula
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+  commentId: P:Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+  id: Team
+  parent: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  langs:
+  - csharp
+  - vb
+  name: Team
+  nameWithType: InfoPostPoneMatch.Team
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Team
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: >-
+      [Required]
+
+      public TeamDto Team { get; set; }
+    parameters: []
+    return:
+      type: Application.DTOs.Team.TeamDto
+    content.vb: >-
+      <Required>
+
+      Public Property Team As TeamDto
+  overload: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent
+  commentId: P:Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent
+  id: Opponent
+  parent: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  langs:
+  - csharp
+  - vb
+  name: Opponent
+  nameWithType: InfoPostPoneMatch.Opponent
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Opponent
+    path: ../Application/DTOs/PostPoneGame/InfoPostPoneMatch.cs
+    startLine: 20
+  assemblies:
+  - Application
+  namespace: Application.DTOs.PostPoneGame
+  syntax:
+    content: >-
+      [Required]
+
+      public TeamDto Opponent { get; set; }
+    parameters: []
+    return:
+      type: Application.DTOs.Team.TeamDto
+    content.vb: >-
+      <Required>
+
+      Public Property Opponent As TeamDto
+  overload: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+references:
+- uid: Application.DTOs.PostPoneGame
+  commentId: N:Application.DTOs.PostPoneGame
+  href: Application.html
+  name: Application.DTOs.PostPoneGame
+  nameWithType: Application.DTOs.PostPoneGame
+  fullName: Application.DTOs.PostPoneGame
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch*
+  commentId: Overload:Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html#Application_DTOs_PostPoneGame_InfoPostPoneMatch_IdMatch
+  name: IdMatch
+  nameWithType: InfoPostPoneMatch.IdMatch
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.IdMatch
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate*
+  commentId: Overload:Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html#Application_DTOs_PostPoneGame_InfoPostPoneMatch_GameDate
+  name: GameDate
+  nameWithType: InfoPostPoneMatch.GameDate
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.GameDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate*
+  commentId: Overload:Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html#Application_DTOs_PostPoneGame_InfoPostPoneMatch_PostPoneDate
+  name: PostPoneDate
+  nameWithType: InfoPostPoneMatch.PostPoneDate
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.PostPoneDate
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team*
+  commentId: Overload:Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html#Application_DTOs_PostPoneGame_InfoPostPoneMatch_Team
+  name: Team
+  nameWithType: InfoPostPoneMatch.Team
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Team
+- uid: Application.DTOs.Team.TeamDto
+  commentId: T:Application.DTOs.Team.TeamDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.TeamDto.html
+  name: TeamDto
+  nameWithType: TeamDto
+  fullName: Application.DTOs.Team.TeamDto
+- uid: Application.DTOs.Team
+  commentId: N:Application.DTOs.Team
+  href: Application.html
+  name: Application.DTOs.Team
+  nameWithType: Application.DTOs.Team
+  fullName: Application.DTOs.Team
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent*
+  commentId: Overload:Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html#Application_DTOs_PostPoneGame_InfoPostPoneMatch_Opponent
+  name: Opponent
+  nameWithType: InfoPostPoneMatch.Opponent
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch.Opponent

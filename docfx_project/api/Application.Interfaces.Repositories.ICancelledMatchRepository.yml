@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.ICancelledMatchRepository
+  commentId: T:Application.Interfaces.Repositories.ICancelledMatchRepository
+  id: ICancelledMatchRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch(Domain.Entities.CancelledMatch)
+  langs:
+  - csharp
+  - vb
+  name: ICancelledMatchRepository
+  nameWithType: ICancelledMatchRepository
+  fullName: Application.Interfaces.Repositories.ICancelledMatchRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ICancelledMatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ICancelledMatchRepository
+    path: ../Application/Interfaces/Repositories/ICancelledMatchRepository.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface ICancelledMatchRepository
+    content.vb: Public Interface ICancelledMatchRepository
+- uid: Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch(Domain.Entities.CancelledMatch)
+  commentId: M:Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch(Domain.Entities.CancelledMatch)
+  id: AddCancelledMatch(Domain.Entities.CancelledMatch)
+  parent: Application.Interfaces.Repositories.ICancelledMatchRepository
+  langs:
+  - csharp
+  - vb
+  name: AddCancelledMatch(CancelledMatch)
+  nameWithType: ICancelledMatchRepository.AddCancelledMatch(CancelledMatch)
+  fullName: Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch(Domain.Entities.CancelledMatch)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ICancelledMatchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddCancelledMatch
+    path: ../Application/Interfaces/Repositories/ICancelledMatchRepository.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task AddCancelledMatch(CancelledMatch cancelledMatch)
+    parameters:
+    - id: cancelledMatch
+      type: Domain.Entities.CancelledMatch
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddCancelledMatch(cancelledMatch As CancelledMatch) As Task
+  overload: Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch*
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch*
+  commentId: Overload:Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch
+  href: Application.Interfaces.Repositories.ICancelledMatchRepository.html#Application_Interfaces_Repositories_ICancelledMatchRepository_AddCancelledMatch_Domain_Entities_CancelledMatch_
+  name: AddCancelledMatch
+  nameWithType: ICancelledMatchRepository.AddCancelledMatch
+  fullName: Application.Interfaces.Repositories.ICancelledMatchRepository.AddCancelledMatch
+- uid: Domain.Entities.CancelledMatch
+  commentId: T:Domain.Entities.CancelledMatch
+  parent: Domain.Entities
+  href: Domain.Entities.CancelledMatch.html
+  name: CancelledMatch
+  nameWithType: CancelledMatch
+  fullName: Domain.Entities.CancelledMatch
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

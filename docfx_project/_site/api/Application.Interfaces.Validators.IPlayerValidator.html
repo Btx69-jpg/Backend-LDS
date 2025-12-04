@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IPlayerValidator | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IPlayerValidator | docfx_project ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Application_Interfaces_Validators_IPlayerValidator.md&amp;value=---%0Auid%3A%20Application.Interfaces.Validators.IPlayerValidator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Application.Interfaces.Validators.IPlayerValidator">
+
+
+
+  <h1 id="Application_Interfaces_Validators_IPlayerValidator" data-uid="Application.Interfaces.Validators.IPlayerValidator" class="text-break">
+Interface IPlayerValidator  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Application.html">Application</a>.<a class="xref" href="Application.Interfaces.html">Interfaces</a>.<a class="xref" href="Application.Interfaces.Validators.html">Validators</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Application.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPlayerValidator</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_CreatePlayerValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_CreatePlayerValidator_Application_DTOs_PlayerDTOs_CreatePlayerDto_Domain_Entities_User_Domain_Entities_User_" data-uid="Application.Interfaces.Validators.IPlayerValidator.CreatePlayerValidator(Application.DTOs.PlayerDTOs.CreatePlayerDto,Domain.Entities.User,Domain.Entities.User)">
+  CreatePlayerValidator(CreatePlayerDto, User?, User?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreatePlayerValidator(CreatePlayerDto CreatePlayerDto, User? phoneUser, User? emailUser)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>CreatePlayerDto</code> <a class="xref" href="Application.DTOs.PlayerDTOs.CreatePlayerDto.html">CreatePlayerDto</a></dt>
+    <dd></dd>
+    <dt><code>phoneUser</code> <a class="xref" href="Domain.Entities.User.html">User</a></dt>
+    <dd></dd>
+    <dt><code>emailUser</code> <a class="xref" href="Domain.Entities.User.html">User</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_DeletePlayerValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_DeletePlayerValidator_Domain_Entities_Player_" data-uid="Application.Interfaces.Validators.IPlayerValidator.DeletePlayerValidator(Domain.Entities.Player)">
+  DeletePlayerValidator(Player?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeletePlayerValidator(Player? player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_GetPlayerByIdValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_GetPlayerByIdValidator_Domain_Entities_Player_" data-uid="Application.Interfaces.Validators.IPlayerValidator.GetPlayerByIdValidator(Domain.Entities.Player)">
+  GetPlayerByIdValidator(Player?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetPlayerByIdValidator(Player? player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_LeaveTeamValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_LeaveTeamValidator_Domain_Entities_Player_" data-uid="Application.Interfaces.Validators.IPlayerValidator.LeaveTeamValidator(Domain.Entities.Player)">
+  LeaveTeamValidator(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LeaveTeamValidator(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_PlayerExists_" data-uid="Application.Interfaces.Validators.IPlayerValidator.PlayerExists*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_PlayerExists_Domain_Entities_Player_" data-uid="Application.Interfaces.Validators.IPlayerValidator.PlayerExists(Domain.Entities.Player)">
+  PlayerExists(Player?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PlayerExists(Player? player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_SendMembershipRequestValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_SendMembershipRequestValidator_Domain_Entities_Player_Domain_Entities_Team_Domain_Entities_MembershipRequest_" data-uid="Application.Interfaces.Validators.IPlayerValidator.SendMembershipRequestValidator(Domain.Entities.Player,Domain.Entities.Team,Domain.Entities.MembershipRequest)">
+  SendMembershipRequestValidator(Player, Team, MembershipRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SendMembershipRequestValidator(Player player, Team team, MembershipRequest request)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+    <dt><code>team</code> <a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+    <dt><code>request</code> <a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_UpdatePlayerValidator_" data-uid="Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_UpdatePlayerValidator_Application_DTOs_PlayerDTOs_UpdatePlayerDto_Domain_Entities_Player_Domain_Entities_User___" data-uid="Application.Interfaces.Validators.IPlayerValidator.UpdatePlayerValidator(Application.DTOs.PlayerDTOs.UpdatePlayerDto,Domain.Entities.Player,Domain.Entities.User[])">
+  UpdatePlayerValidator(UpdatePlayerDto, Player, User[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdatePlayerValidator(UpdatePlayerDto UpdatePlayerDto, Player player, User[] existingPlayers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>UpdatePlayerDto</code> <a class="xref" href="Application.DTOs.PlayerDTOs.UpdatePlayerDto.html">UpdatePlayerDto</a></dt>
+    <dd></dd>
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd></dd>
+    <dt><code>existingPlayers</code> <a class="xref" href="Domain.Entities.User.html">User</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_ValidateFiltersListTeams_" data-uid="Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_ValidateFiltersListTeams_Application_DTOs_Filters_FilterListTeamDto_" data-uid="Application.Interfaces.Validators.IPlayerValidator.ValidateFiltersListTeams(Application.DTOs.Filters.FilterListTeamDto)">
+  ValidateFiltersListTeams(FilterListTeamDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateFiltersListTeams(FilterListTeamDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterListTeamDto.html">FilterListTeamDto</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Application_Interfaces_Validators_IPlayerValidator_ValidateHasChangeDataPlayer_" data-uid="Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer*"></a>
+
+  <h3 id="Application_Interfaces_Validators_IPlayerValidator_ValidateHasChangeDataPlayer_System_Boolean_" data-uid="Application.Interfaces.Validators.IPlayerValidator.ValidateHasChangeDataPlayer(System.Boolean)">
+  ValidateHasChangeDataPlayer(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateHasChangeDataPlayer(bool hasChange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hasChange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Application/Interfaces/Validators/IPlayerValidator.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

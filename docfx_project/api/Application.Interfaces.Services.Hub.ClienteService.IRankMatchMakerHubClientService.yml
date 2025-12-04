@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  commentId: T:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  id: IRankMatchMakerHubClientService
+  parent: Application.Interfaces.Services.Hub.ClienteService
+  children:
+  - Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync
+  - Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync(Application.DTOs.RankMatchMaker.StartSearchDto)
+  - Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync
+  langs:
+  - csharp
+  - vb
+  name: IRankMatchMakerHubClientService
+  nameWithType: IRankMatchMakerHubClientService
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IRankMatchMakerHubClientService
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: public interface IRankMatchMakerHubClientService
+    content.vb: Public Interface IRankMatchMakerHubClientService
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync
+  id: InitializeAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: IRankMatchMakerHubClientService.InitializeAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: InitializeAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InitializeAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync(Application.DTOs.RankMatchMaker.StartSearchDto)
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync(Application.DTOs.RankMatchMaker.StartSearchDto)
+  id: JoinRankMatchMakerAsync(Application.DTOs.RankMatchMaker.StartSearchDto)
+  parent: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  langs:
+  - csharp
+  - vb
+  name: JoinRankMatchMakerAsync(StartSearchDto)
+  nameWithType: IRankMatchMakerHubClientService.JoinRankMatchMakerAsync(StartSearchDto)
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync(Application.DTOs.RankMatchMaker.StartSearchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinRankMatchMakerAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task JoinRankMatchMakerAsync(StartSearchDto startSearch)
+    parameters:
+    - id: startSearch
+      type: Application.DTOs.RankMatchMaker.StartSearchDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinRankMatchMakerAsync(startSearch As StartSearchDto) As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync
+  id: LeaveRankMatchMakerAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService
+  langs:
+  - csharp
+  - vb
+  name: LeaveRankMatchMakerAsync()
+  nameWithType: IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveRankMatchMakerAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IRankMatchMakerHubClientService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task LeaveRankMatchMakerAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveRankMatchMakerAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync*
+references:
+- uid: Application.Interfaces.Services.Hub.ClienteService
+  commentId: N:Application.Interfaces.Services.Hub.ClienteService
+  href: Application.html
+  name: Application.Interfaces.Services.Hub.ClienteService
+  nameWithType: Application.Interfaces.Services.Hub.ClienteService
+  fullName: Application.Interfaces.Services.Hub.ClienteService
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IRankMatchMakerHubClientService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: IRankMatchMakerHubClientService.InitializeAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IRankMatchMakerHubClientService_JoinRankMatchMakerAsync_Application_DTOs_RankMatchMaker_StartSearchDto_
+  name: JoinRankMatchMakerAsync
+  nameWithType: IRankMatchMakerHubClientService.JoinRankMatchMakerAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.JoinRankMatchMakerAsync
+- uid: Application.DTOs.RankMatchMaker.StartSearchDto
+  commentId: T:Application.DTOs.RankMatchMaker.StartSearchDto
+  parent: Application.DTOs.RankMatchMaker
+  href: Application.DTOs.RankMatchMaker.StartSearchDto.html
+  name: StartSearchDto
+  nameWithType: StartSearchDto
+  fullName: Application.DTOs.RankMatchMaker.StartSearchDto
+- uid: Application.DTOs.RankMatchMaker
+  commentId: N:Application.DTOs.RankMatchMaker
+  href: Application.html
+  name: Application.DTOs.RankMatchMaker
+  nameWithType: Application.DTOs.RankMatchMaker
+  fullName: Application.DTOs.RankMatchMaker
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.RankMatchMaker
+    name: RankMatchMaker
+    href: Application.DTOs.RankMatchMaker.html
+- uid: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IRankMatchMakerHubClientService_LeaveRankMatchMakerAsync
+  name: LeaveRankMatchMakerAsync
+  nameWithType: IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.LeaveRankMatchMakerAsync

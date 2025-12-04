@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  id: NotificationBackGroundServiceTests
+  parent: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  children:
+  - Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+  langs:
+  - csharp
+  - vb
+  name: NotificationBackGroundServiceTests
+  nameWithType: NotificationBackGroundServiceTests
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/BackGroundServiceTests/NotificationBackGroundServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NotificationBackGroundServiceTests
+    path: ../Tests/Unit/ApplicationTests/BackGroundServiceTests/NotificationBackGroundServiceTests.cs
+    startLine: 15
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  syntax:
+    content: public class NotificationBackGroundServiceTests
+    content.vb: Public Class NotificationBackGroundServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+  commentId: M:Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+  id: CheckAndNotifyMatchesAsync_CallsNotificationService
+  parent: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  langs:
+  - csharp
+  - vb
+  name: CheckAndNotifyMatchesAsync_CallsNotificationService()
+  nameWithType: NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService()
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/BackGroundServiceTests/NotificationBackGroundServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CheckAndNotifyMatchesAsync_CallsNotificationService
+    path: ../Tests/Unit/ApplicationTests/BackGroundServiceTests/NotificationBackGroundServiceTests.cs
+    startLine: 17
+  assemblies:
+  - Tests
+  namespace: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  syntax:
+    content: >-
+      [Test(Description = "CheckAndNotifyMatchesAsync deve chamar SendTeamAsync para cada equipa de cada match.")]
+
+      public Task CheckAndNotifyMatchesAsync_CallsNotificationService()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="CheckAndNotifyMatchesAsync deve chamar SendTeamAsync para cada equipa de cada match.")>
+
+      Public Function CheckAndNotifyMatchesAsync_CallsNotificationService() As Task
+  overload: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: CheckAndNotifyMatchesAsync deve chamar SendTeamAsync para cada equipa de cada match.
+references:
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  commentId: N:Tests.Unit.ApplicationTests.BackGroundServiceTests
+  href: Tests.html
+  name: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  nameWithType: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.BackGroundServiceTests
+    name: BackGroundServiceTests
+    href: Tests.Unit.ApplicationTests.BackGroundServiceTests.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Unit
+    name: Unit
+    href: Tests.Unit.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests
+    name: ApplicationTests
+    href: Tests.Unit.ApplicationTests.html
+  - name: .
+  - uid: Tests.Unit.ApplicationTests.BackGroundServiceTests
+    name: BackGroundServiceTests
+    href: Tests.Unit.ApplicationTests.BackGroundServiceTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService*
+  commentId: Overload:Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+  href: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.html#Tests_Unit_ApplicationTests_BackGroundServiceTests_NotificationBackGroundServiceTests_CheckAndNotifyMatchesAsync_CallsNotificationService
+  name: CheckAndNotifyMatchesAsync_CallsNotificationService
+  nameWithType: NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.CheckAndNotifyMatchesAsync_CallsNotificationService
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

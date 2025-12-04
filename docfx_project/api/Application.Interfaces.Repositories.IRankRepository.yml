@@ -1,0 +1,638 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.IRankRepository
+  commentId: T:Application.Interfaces.Repositories.IRankRepository
+  id: IRankRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.IRankRepository.AddRankAsync(Domain.Entities.Rank)
+  - Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync(Domain.Entities.Rank,Domain.Entities.Rank)
+  - Application.Interfaces.Repositories.IRankRepository.DeleteRank(Domain.Entities.Rank)
+  - Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync
+  - Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync
+  - Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync(Domain.Entities.Rank)
+  - Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync(Domain.Entities.Rank)
+  - Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync(System.Guid)
+  - Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync(System.String)
+  - Application.Interfaces.Repositories.IRankRepository.UpdateRank(Domain.Entities.Rank)
+  langs:
+  - csharp
+  - vb
+  name: IRankRepository
+  nameWithType: IRankRepository
+  fullName: Application.Interfaces.Repositories.IRankRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IRankRepository
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface IRankRepository
+    content.vb: Public Interface IRankRepository
+- uid: Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync
+  id: GetDefaultRankAsync
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultRankAsync()
+  nameWithType: IRankRepository.GetDefaultRankAsync()
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetDefaultRankAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Rank> GetDefaultRankAsync()
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Rank}
+    content.vb: Function GetDefaultRankAsync() As Task(Of Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync
+  id: GetAllRanksAsync
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllRanksAsync()
+  nameWithType: IRankRepository.GetAllRanksAsync()
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllRanksAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<Rank>> GetAllRanksAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Rank}}
+    content.vb: Function GetAllRanksAsync() As Task(Of List(Of Rank))
+  overload: Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync(System.Guid)
+  id: GetRankByIdAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetRankByIdAsync(Guid)
+  nameWithType: IRankRepository.GetRankByIdAsync(Guid)
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetRankByIdAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Rank> GetRankByIdAsync(Guid rankId)
+    parameters:
+    - id: rankId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Rank}
+    content.vb: Function GetRankByIdAsync(rankId As Guid) As Task(Of Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync(System.String)
+  id: GetRankByNameAsync(System.String)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetRankByNameAsync(string)
+  nameWithType: IRankRepository.GetRankByNameAsync(string)
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetRankByNameAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Rank> GetRankByNameAsync(string rankName)
+    parameters:
+    - id: rankName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Rank}
+    content.vb: Function GetRankByNameAsync(rankName As String) As Task(Of Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync*
+  nameWithType.vb: IRankRepository.GetRankByNameAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync(String)
+  name.vb: GetRankByNameAsync(String)
+- uid: Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync(Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync(Domain.Entities.Rank)
+  id: GetNextRankAsync(Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetNextRankAsync(Rank)
+  nameWithType: IRankRepository.GetNextRankAsync(Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync(Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetNextRankAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Rank> GetNextRankAsync(Rank currentRank)
+    parameters:
+    - id: currentRank
+      type: Domain.Entities.Rank
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Rank}
+    content.vb: Function GetNextRankAsync(currentRank As Rank) As Task(Of Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync(Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync(Domain.Entities.Rank)
+  id: GetPreviousRankAsync(Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPreviousRankAsync(Rank)
+  nameWithType: IRankRepository.GetPreviousRankAsync(Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync(Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPreviousRankAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Rank> GetPreviousRankAsync(Rank currentRank)
+    parameters:
+    - id: currentRank
+      type: Domain.Entities.Rank
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Rank}
+    content.vb: Function GetPreviousRankAsync(currentRank As Rank) As Task(Of Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.DeleteRank(Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.DeleteRank(Domain.Entities.Rank)
+  id: DeleteRank(Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteRank(Rank)
+  nameWithType: IRankRepository.DeleteRank(Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.DeleteRank(Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteRank
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: void DeleteRank(Rank rank)
+    parameters:
+    - id: rank
+      type: Domain.Entities.Rank
+    content.vb: Sub DeleteRank(rank As Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.DeleteRank*
+- uid: Application.Interfaces.Repositories.IRankRepository.UpdateRank(Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.UpdateRank(Domain.Entities.Rank)
+  id: UpdateRank(Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateRank(Rank)
+  nameWithType: IRankRepository.UpdateRank(Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.UpdateRank(Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateRank
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 20
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: void UpdateRank(Rank newRank)
+    parameters:
+    - id: newRank
+      type: Domain.Entities.Rank
+    content.vb: Sub UpdateRank(newRank As Rank)
+  overload: Application.Interfaces.Repositories.IRankRepository.UpdateRank*
+- uid: Application.Interfaces.Repositories.IRankRepository.AddRankAsync(Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.AddRankAsync(Domain.Entities.Rank)
+  id: AddRankAsync(Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: AddRankAsync(Rank)
+  nameWithType: IRankRepository.AddRankAsync(Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.AddRankAsync(Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddRankAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 22
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task AddRankAsync(Rank rank)
+    parameters:
+    - id: rank
+      type: Domain.Entities.Rank
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddRankAsync(rank As Rank) As Task
+  overload: Application.Interfaces.Repositories.IRankRepository.AddRankAsync*
+- uid: Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync(Domain.Entities.Rank,Domain.Entities.Rank)
+  commentId: M:Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync(Domain.Entities.Rank,Domain.Entities.Rank)
+  id: AddRankInOtherRankPlaceAsync(Domain.Entities.Rank,Domain.Entities.Rank)
+  parent: Application.Interfaces.Repositories.IRankRepository
+  langs:
+  - csharp
+  - vb
+  name: AddRankInOtherRankPlaceAsync(Rank, Rank)
+  nameWithType: IRankRepository.AddRankInOtherRankPlaceAsync(Rank, Rank)
+  fullName: Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync(Domain.Entities.Rank, Domain.Entities.Rank)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IRankRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddRankInOtherRankPlaceAsync
+    path: ../Application/Interfaces/Repositories/IRankRepository.cs
+    startLine: 24
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task AddRankInOtherRankPlaceAsync(Rank rank, Rank nextRank)
+    parameters:
+    - id: rank
+      type: Domain.Entities.Rank
+    - id: nextRank
+      type: Domain.Entities.Rank
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddRankInOtherRankPlaceAsync(rank As Rank, nextRank As Rank) As Task
+  overload: Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync*
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetDefaultRankAsync
+  name: GetDefaultRankAsync
+  nameWithType: IRankRepository.GetDefaultRankAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetDefaultRankAsync
+- uid: System.Threading.Tasks.Task{Domain.Entities.Rank}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.Rank}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Rank>
+  nameWithType: Task<Rank>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.Rank>
+  nameWithType.vb: Task(Of Rank)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.Rank)
+  name.vb: Task(Of Rank)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetAllRanksAsync
+  name: GetAllRanksAsync
+  nameWithType: IRankRepository.GetAllRanksAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetAllRanksAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Rank}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Rank}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Rank>>
+  nameWithType: Task<List<Rank>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.Rank>>
+  nameWithType.vb: Task(Of List(Of Rank))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.Rank))
+  name.vb: Task(Of List(Of Rank))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Rank
+    name: Rank
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetRankByIdAsync_System_Guid_
+  name: GetRankByIdAsync
+  nameWithType: IRankRepository.GetRankByIdAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetRankByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetRankByNameAsync_System_String_
+  name: GetRankByNameAsync
+  nameWithType: IRankRepository.GetRankByNameAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetRankByNameAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetNextRankAsync_Domain_Entities_Rank_
+  name: GetNextRankAsync
+  nameWithType: IRankRepository.GetNextRankAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetNextRankAsync
+- uid: Domain.Entities.Rank
+  commentId: T:Domain.Entities.Rank
+  parent: Domain.Entities
+  href: Domain.Entities.Rank.html
+  name: Rank
+  nameWithType: Rank
+  fullName: Domain.Entities.Rank
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_GetPreviousRankAsync_Domain_Entities_Rank_
+  name: GetPreviousRankAsync
+  nameWithType: IRankRepository.GetPreviousRankAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.GetPreviousRankAsync
+- uid: Application.Interfaces.Repositories.IRankRepository.DeleteRank*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.DeleteRank
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_DeleteRank_Domain_Entities_Rank_
+  name: DeleteRank
+  nameWithType: IRankRepository.DeleteRank
+  fullName: Application.Interfaces.Repositories.IRankRepository.DeleteRank
+- uid: Application.Interfaces.Repositories.IRankRepository.UpdateRank*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.UpdateRank
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_UpdateRank_Domain_Entities_Rank_
+  name: UpdateRank
+  nameWithType: IRankRepository.UpdateRank
+  fullName: Application.Interfaces.Repositories.IRankRepository.UpdateRank
+- uid: Application.Interfaces.Repositories.IRankRepository.AddRankAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.AddRankAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_AddRankAsync_Domain_Entities_Rank_
+  name: AddRankAsync
+  nameWithType: IRankRepository.AddRankAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.AddRankAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync*
+  commentId: Overload:Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync
+  href: Application.Interfaces.Repositories.IRankRepository.html#Application_Interfaces_Repositories_IRankRepository_AddRankInOtherRankPlaceAsync_Domain_Entities_Rank_Domain_Entities_Rank_
+  name: AddRankInOtherRankPlaceAsync
+  nameWithType: IRankRepository.AddRankInOtherRankPlaceAsync
+  fullName: Application.Interfaces.Repositories.IRankRepository.AddRankInOtherRankPlaceAsync

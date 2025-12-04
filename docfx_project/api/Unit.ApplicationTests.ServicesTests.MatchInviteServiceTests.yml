@@ -1,0 +1,1050 @@
+### YamlMime:ManagedReference
+items:
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  id: MatchInviteServiceTests
+  parent: Unit.ApplicationTests.ServicesTests
+  children:
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp
+  langs:
+  - csharp
+  - vb
+  name: MatchInviteServiceTests
+  nameWithType: MatchInviteServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchInviteServiceTests
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 15
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class MatchInviteServiceTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class MatchInviteServiceTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp
+  id: SetUp
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: MatchInviteServiceTests.SetUp()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SetUp
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 35
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void SetUp()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub SetUp()
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  id: SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite_Should_CreateInvite_When_AdminPlayer()
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 72
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GP1 - Player Admin de Equipa envia um convite de partida casual para outra Equipa.")]
+
+      [Ignore("Corrigir")]
+
+      public Task SendMatchInvite_Should_CreateInvite_When_AdminPlayer()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GP1 - Player Admin de Equipa envia um convite de partida casual para outra Equipa.")>
+
+      <Ignore("Corrigir")>
+
+      Public Function SendMatchInvite_Should_CreateInvite_When_AdminPlayer() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GP1 - Player Admin de Equipa envia um convite de partida casual para outra Equipa.
+  - type: NUnit.Framework.IgnoreAttribute
+    ctor: NUnit.Framework.IgnoreAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Corrigir
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  id: SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin()
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 139
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T2GP1 - Player não Admin tenta enviar convite de partida casual para outra equipa.")]
+
+      public Task SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T2GP1 - Player não Admin tenta enviar convite de partida casual para outra equipa.")>
+
+      Public Function SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T2GP1 - Player não Admin tenta enviar convite de partida casual para outra equipa.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  id: SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam()
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 166
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T3GP1 - Player não pertencente à equipa A tenta enviar convite de partida casual para a equipa B.")]
+
+      public Task SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T3GP1 - Player não pertencente à equipa A tenta enviar convite de partida casual para a equipa B.")>
+
+      Public Function SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T3GP1 - Player não pertencente à equipa A tenta enviar convite de partida casual para a equipa B.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  id: SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist()
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 192
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T4GP1 - Envio de convite para equipa que não existe.")]
+
+      public Task SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T4GP1 - Envio de convite para equipa que não existe.")>
+
+      Public Function SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T4GP1 - Envio de convite para equipa que não existe.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  id: AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts()
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 227
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GP2 - Player Admin aceita convite de partida casual enviado de outra equipa.")]
+
+      public Task AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GP2 - Player Admin aceita convite de partida casual enviado de outra equipa.")>
+
+      Public Function AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GP2 - Player Admin aceita convite de partida casual enviado de outra equipa.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  id: AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin()
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 282
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T2GP2 - Player não Admin de equipa tenta aceitar convite de partida.")]
+
+      public Task AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T2GP2 - Player não Admin de equipa tenta aceitar convite de partida.")>
+
+      Public Function AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T2GP2 - Player não Admin de equipa tenta aceitar convite de partida.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  id: AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 303
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T3GP2 - Player não pertencente à equipa A tenta aceitar convite de partida que a equipa B mandou.")]
+
+      public Task AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T3GP2 - Player não pertencente à equipa A tenta aceitar convite de partida que a equipa B mandou.")>
+
+      Public Function AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T3GP2 - Player não pertencente à equipa A tenta aceitar convite de partida que a equipa B mandou.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  id: RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects()
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 336
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GP3 - Player Admin rejeita convite de partida casual.")]
+
+      public Task RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GP3 - Player Admin rejeita convite de partida casual.")>
+
+      Public Function RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GP3 - Player Admin rejeita convite de partida casual.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  id: RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin()
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 371
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T2GP3 - Player não Admin tenta rejeitar convite.")]
+
+      public Task RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T2GP3 - Player não Admin tenta rejeitar convite.")>
+
+      Public Function RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T2GP3 - Player não Admin tenta rejeitar convite.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  id: RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite()
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 393
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T3GP3 - Player não pertencente à equipa A tenta rejeitar convite que a equipa B mandou.")]
+
+      public Task RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T3GP3 - Player não pertencente à equipa A tenta rejeitar convite que a equipa B mandou.")>
+
+      Public Function RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T3GP3 - Player não pertencente à equipa A tenta rejeitar convite que a equipa B mandou.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  id: NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates()
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 426
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T1GP4 - Player Admin de equipa envia proposta de negociação de convite.")]
+
+      public Task NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T1GP4 - Player Admin de equipa envia proposta de negociação de convite.")>
+
+      Public Function NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T1GP4 - Player Admin de equipa envia proposta de negociação de convite.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  id: NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin()
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 480
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T2GP4 - Player não admin da equipa tenta negociar convite.")]
+
+      public Task NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T2GP4 - Player não admin da equipa tenta negociar convite.")>
+
+      Public Function NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T2GP4 - Player não admin da equipa tenta negociar convite.
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  commentId: M:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  id: NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  parent: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  langs:
+  - csharp
+  - vb
+  name: NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+  type: Method
+  source:
+    remote:
+      path: Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+    path: ../Tests/Unit/ApplicationTests/ServicesTests/MatchInviteServiceTests.cs
+    startLine: 510
+  assemblies:
+  - Tests
+  namespace: Unit.ApplicationTests.ServicesTests
+  syntax:
+    content: >-
+      [Test(Description = "T3GP4 - Player não pertencente à equipa A tenta negociar convite que a equipa B mandou.")]
+
+      public Task NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test(Description:="T3GP4 - Player não pertencente à equipa A tenta negociar convite que a equipa B mandou.")>
+
+      Public Function NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite() As Task
+  overload: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Description
+      type: System.String
+      value: T3GP4 - Player não pertencente à equipa A tenta negociar convite que a equipa B mandou.
+references:
+- uid: Unit.ApplicationTests.ServicesTests
+  commentId: N:Unit.ApplicationTests.ServicesTests
+  href: Unit.html
+  name: Unit.ApplicationTests.ServicesTests
+  nameWithType: Unit.ApplicationTests.ServicesTests
+  fullName: Unit.ApplicationTests.ServicesTests
+  spec.csharp:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+  spec.vb:
+  - uid: Unit
+    name: Unit
+    href: Unit.html
+  - name: .
+  - uid: Unit.ApplicationTests
+    name: ApplicationTests
+    href: Unit.ApplicationTests.html
+  - name: .
+  - uid: Unit.ApplicationTests.ServicesTests
+    name: ServicesTests
+    href: Unit.ApplicationTests.ServicesTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_SetUp
+  name: SetUp
+  nameWithType: MatchInviteServiceTests.SetUp
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SetUp
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  name: SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_CreateInvite_When_AdminPlayer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  name: SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerIsNotAdmin
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  name: SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_PlayerDoesNotBelongToTeam
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  name: SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  nameWithType: MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.SendMatchInvite_Should_Throw_When_ReceiverTeamDoesNotExist
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  name: AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_CreateMatch_When_AdminTeamAccepts
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  name: AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamIsInvalidOrNotAdmin
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  name: AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  nameWithType: MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.AcceptMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  name: RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_RemoveInvite_When_AdminTeamRejects
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  name: RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamIsNotAdmin
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  name: RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  nameWithType: MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.RefuseMatchInvites_Should_Throw_When_TeamDoesNotBelongToInvite
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  name: NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_ReturnDto_When_AdminTeamNegotiates
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  name: NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamIsNotAdmin
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite*
+  commentId: Overload:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html#Unit_ApplicationTests_ServicesTests_MatchInviteServiceTests_NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  name: NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  nameWithType: MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.NegociateMatchInvite_Should_Throw_When_TeamDoesNotBelongToInvite

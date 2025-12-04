@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  id: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.ICancelledMatchRepository
+  - Application.Interfaces.Repositories.IMatchInviteRepository
+  - Application.Interfaces.Repositories.IMatchRepository
+  - Application.Interfaces.Repositories.IMembershipRequestRepository
+  - Application.Interfaces.Repositories.IPitchRepository
+  - Application.Interfaces.Repositories.IPlayerRepository
+  - Application.Interfaces.Repositories.IRankRepository
+  - Application.Interfaces.Repositories.ISuperAdminRepository
+  - Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  - Application.Interfaces.Repositories.ITeamRepository
+  - Application.Interfaces.Repositories.ITeamStatisticsRepository
+  - Application.Interfaces.Repositories.IUnityOfWork
+  - Application.Interfaces.Repositories.IUserRepository
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Repositories.ICancelledMatchRepository
+  commentId: T:Application.Interfaces.Repositories.ICancelledMatchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ICancelledMatchRepository.html
+  name: ICancelledMatchRepository
+  nameWithType: ICancelledMatchRepository
+  fullName: Application.Interfaces.Repositories.ICancelledMatchRepository
+- uid: Application.Interfaces.Repositories.IMatchInviteRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchInviteRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchInviteRepository.html
+  name: IMatchInviteRepository
+  nameWithType: IMatchInviteRepository
+  fullName: Application.Interfaces.Repositories.IMatchInviteRepository
+- uid: Application.Interfaces.Repositories.IMatchRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchRepository.html
+  name: IMatchRepository
+  nameWithType: IMatchRepository
+  fullName: Application.Interfaces.Repositories.IMatchRepository
+- uid: Application.Interfaces.Repositories.IMembershipRequestRepository
+  commentId: T:Application.Interfaces.Repositories.IMembershipRequestRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMembershipRequestRepository.html
+  name: IMembershipRequestRepository
+  nameWithType: IMembershipRequestRepository
+  fullName: Application.Interfaces.Repositories.IMembershipRequestRepository
+- uid: Application.Interfaces.Repositories.IPitchRepository
+  commentId: T:Application.Interfaces.Repositories.IPitchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPitchRepository.html
+  name: IPitchRepository
+  nameWithType: IPitchRepository
+  fullName: Application.Interfaces.Repositories.IPitchRepository
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: Application.Interfaces.Repositories.IRankRepository
+  commentId: T:Application.Interfaces.Repositories.IRankRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IRankRepository.html
+  name: IRankRepository
+  nameWithType: IRankRepository
+  fullName: Application.Interfaces.Repositories.IRankRepository
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository
+  commentId: T:Application.Interfaces.Repositories.ISuperAdminRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ISuperAdminRepository.html
+  name: ISuperAdminRepository
+  nameWithType: ISuperAdminRepository
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository
+- uid: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html
+  name: ITeamPostPoneGameRepository
+  nameWithType: ITeamPostPoneGameRepository
+  fullName: Application.Interfaces.Repositories.ITeamPostPoneGameRepository
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.ITeamStatisticsRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamStatisticsRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamStatisticsRepository.html
+  name: ITeamStatisticsRepository
+  nameWithType: ITeamStatisticsRepository
+  fullName: Application.Interfaces.Repositories.ITeamStatisticsRepository
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUnityOfWork.html
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+- uid: Application.Interfaces.Repositories.IUserRepository
+  commentId: T:Application.Interfaces.Repositories.IUserRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Application.Interfaces.Repositories.IUserRepository
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html

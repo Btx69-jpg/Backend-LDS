@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  id: Application.Validators
+  children:
+  - Application.Validators.CalendarValidator
+  - Application.Validators.MatchInviteValidator
+  - Application.Validators.MembershipValidator
+  - Application.Validators.PlayerAuthorizationValidator
+  - Application.Validators.PlayerValidator
+  - Application.Validators.SuperAdminValidator
+  - Application.Validators.TeamValidator
+  - Application.Validators.UserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Validators.CalendarValidator
+  commentId: T:Application.Validators.CalendarValidator
+  href: Application.Validators.CalendarValidator.html
+  name: CalendarValidator
+  nameWithType: CalendarValidator
+  fullName: Application.Validators.CalendarValidator
+- uid: Application.Validators.MatchInviteValidator
+  commentId: T:Application.Validators.MatchInviteValidator
+  href: Application.Validators.MatchInviteValidator.html
+  name: MatchInviteValidator
+  nameWithType: MatchInviteValidator
+  fullName: Application.Validators.MatchInviteValidator
+- uid: Application.Validators.MembershipValidator
+  commentId: T:Application.Validators.MembershipValidator
+  href: Application.Validators.MembershipValidator.html
+  name: MembershipValidator
+  nameWithType: MembershipValidator
+  fullName: Application.Validators.MembershipValidator
+- uid: Application.Validators.PlayerAuthorizationValidator
+  commentId: T:Application.Validators.PlayerAuthorizationValidator
+  href: Application.Validators.PlayerAuthorizationValidator.html
+  name: PlayerAuthorizationValidator
+  nameWithType: PlayerAuthorizationValidator
+  fullName: Application.Validators.PlayerAuthorizationValidator
+- uid: Application.Validators.PlayerValidator
+  commentId: T:Application.Validators.PlayerValidator
+  href: Application.Validators.PlayerValidator.html
+  name: PlayerValidator
+  nameWithType: PlayerValidator
+  fullName: Application.Validators.PlayerValidator
+- uid: Application.Validators.SuperAdminValidator
+  commentId: T:Application.Validators.SuperAdminValidator
+  href: Application.Validators.SuperAdminValidator.html
+  name: SuperAdminValidator
+  nameWithType: SuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator
+- uid: Application.Validators.TeamValidator
+  commentId: T:Application.Validators.TeamValidator
+  href: Application.Validators.TeamValidator.html
+  name: TeamValidator
+  nameWithType: TeamValidator
+  fullName: Application.Validators.TeamValidator
+- uid: Application.Validators.UserDataValidator
+  commentId: T:Application.Validators.UserDataValidator
+  href: Application.Validators.UserDataValidator.html
+  name: UserDataValidator
+  nameWithType: UserDataValidator
+  fullName: Application.Validators.UserDataValidator

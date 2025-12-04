@@ -1,0 +1,1077 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Repositories.SuperAdminRepository
+  commentId: T:Infrastructure.Repositories.SuperAdminRepository
+  id: SuperAdminRepository
+  parent: Infrastructure.Repositories
+  children:
+  - Infrastructure.Repositories.SuperAdminRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  - Infrastructure.Repositories.SuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  - Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  - Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync
+  - Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  - Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  - Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  - Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminRepository
+  nameWithType: SuperAdminRepository
+  fullName: Infrastructure.Repositories.SuperAdminRepository
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SuperAdminRepository
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 12
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Repositório específico para operações de persistência de dados e consulta da entidade [SuperAdmin].
+
+
+    Esta classe é responsável por gerir o ciclo de vida dos utilizadores com privilégios de Super Administrador.
+  example: []
+  syntax:
+    content: 'public class SuperAdminRepository : ISuperAdminRepository'
+    content.vb: Public Class SuperAdminRepository Implements ISuperAdminRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Infrastructure.Repositories.SuperAdminRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  id: '#ctor(Infrastructure.Data.AmateurFootballContext)'
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminRepository(AmateurFootballContext)
+  nameWithType: SuperAdminRepository.SuperAdminRepository(AmateurFootballContext)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.SuperAdminRepository(Infrastructure.Data.AmateurFootballContext)
+  type: Constructor
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 24
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Construtor da classe [SuperAdminRepository].
+  example: []
+  syntax:
+    content: public SuperAdminRepository(AmateurFootballContext context)
+    parameters:
+    - id: context
+      type: Infrastructure.Data.AmateurFootballContext
+      description: O contexto da base de dados (Db Context) injetado via Dependency Injection.
+    content.vb: Public Sub New(context As AmateurFootballContext)
+  overload: Infrastructure.Repositories.SuperAdminRepository.#ctor*
+  nameWithType.vb: SuperAdminRepository.New(AmateurFootballContext)
+  fullName.vb: Infrastructure.Repositories.SuperAdminRepository.New(Infrastructure.Data.AmateurFootballContext)
+  name.vb: New(AmateurFootballContext)
+- uid: Infrastructure.Repositories.SuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  id: AddAsync(Domain.Entities.SuperAdmin)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(SuperAdmin)
+  nameWithType: SuperAdminRepository.AddAsync(SuperAdmin)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddAsync
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 34
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Adiciona um novo registo de Super Administrador à base de dados de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task AddAsync(SuperAdmin superAdmin)
+    parameters:
+    - id: superAdmin
+      type: Domain.Entities.SuperAdmin
+      description: A entidade [SuperAdmin] a ser persistida.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Uma tarefa assíncrona (<xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>) que representa a operação de adição.
+    content.vb: Public Function AddAsync(superAdmin As SuperAdmin) As Task
+  overload: Infrastructure.Repositories.SuperAdminRepository.AddAsync*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+- uid: Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  id: DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteSuperAdmin(SuperAdmin)
+  nameWithType: SuperAdminRepository.DeleteSuperAdmin(SuperAdmin)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteSuperAdmin
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 43
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Marca um Super Administrador existente para ser removido da base de dados.
+  example: []
+  syntax:
+    content: public void DeleteSuperAdmin(SuperAdmin sadminToRemove)
+    parameters:
+    - id: sadminToRemove
+      type: Domain.Entities.SuperAdmin
+      description: A entidade [SuperAdmin] a ser removida.
+    content.vb: Public Sub DeleteSuperAdmin(sadminToRemove As SuperAdmin)
+  overload: Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync
+  id: GetAllSuperAdminsAsync
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllSuperAdminsAsync()
+  nameWithType: SuperAdminRepository.GetAllSuperAdminsAsync()
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync()
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllSuperAdminsAsync
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 52
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém todos os registos de Super Administradores.
+  example: []
+  syntax:
+    content: public Task<List<SuperAdmin>> GetAllSuperAdminsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.SuperAdmin}}
+      description: Uma lista de todas as entidades [SuperAdmin].
+    content.vb: Public Function GetAllSuperAdminsAsync() As Task(Of List(Of SuperAdmin))
+  overload: Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  id: GetSuperAdminByEmailAsync(System.String)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByEmailAsync(string)
+  nameWithType: SuperAdminRepository.GetSuperAdminByEmailAsync(string)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByEmailAsync
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 62
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um Super Administrador pelo seu endereço de e-mail de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<SuperAdmin?> GetSuperAdminByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: O endereço de e-mail do administrador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.SuperAdmin}
+      description: A entidade [SuperAdmin] ou null.
+    content.vb: Public Function GetSuperAdminByEmailAsync(email As String) As Task(Of SuperAdmin)
+  overload: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  nameWithType.vb: SuperAdminRepository.GetSuperAdminByEmailAsync(String)
+  fullName.vb: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync(String)
+  name.vb: GetSuperAdminByEmailAsync(String)
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  id: GetSuperAdminByIdAsync(System.String)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByIdAsync(string)
+  nameWithType: SuperAdminRepository.GetSuperAdminByIdAsync(string)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByIdAsync
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 75
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um Super Administrador pelo seu identificador único (ID) de forma assíncrona.
+  remarks: Utiliza o método de pesquisa Find do EF Core, que primeiro verifica o cache de rastreamento.
+  example: []
+  syntax:
+    content: public Task<SuperAdmin?> GetSuperAdminByIdAsync(string sadminId)
+    parameters:
+    - id: sadminId
+      type: System.String
+      description: O ID do Super Administrador (geralmente o UID do Firebase).
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.SuperAdmin}
+      description: A entidade [SuperAdmin] ou null.
+    content.vb: Public Function GetSuperAdminByIdAsync(sadminId As String) As Task(Of SuperAdmin)
+  overload: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  nameWithType.vb: SuperAdminRepository.GetSuperAdminByIdAsync(String)
+  fullName.vb: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync(String)
+  name.vb: GetSuperAdminByIdAsync(String)
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  id: GetSuperAdminByPhoneAsync(System.String)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByPhoneAsync(string)
+  nameWithType: SuperAdminRepository.GetSuperAdminByPhoneAsync(string)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByPhoneAsync
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 85
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um Super Administrador pelo seu número de telefone de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<SuperAdmin?> GetSuperAdminByPhoneAsync(string phone)
+    parameters:
+    - id: phone
+      type: System.String
+      description: O número de telefone completo do administrador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.SuperAdmin}
+      description: A entidade [SuperAdmin] ou null.
+    content.vb: Public Function GetSuperAdminByPhoneAsync(phone As String) As Task(Of SuperAdmin)
+  overload: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  nameWithType.vb: SuperAdminRepository.GetSuperAdminByPhoneAsync(String)
+  fullName.vb: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync(String)
+  name.vb: GetSuperAdminByPhoneAsync(String)
+- uid: Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  commentId: M:Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  id: UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  parent: Infrastructure.Repositories.SuperAdminRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateSuperAdmin(SuperAdmin)
+  nameWithType: SuperAdminRepository.UpdateSuperAdmin(SuperAdmin)
+  fullName: Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/SuperAdminRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateSuperAdmin
+    path: ../Infrastructure/Repositories/SuperAdminRepository.cs
+    startLine: 96
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Marca uma entidade [SuperAdmin] existente para ser atualizada na base de dados.
+  example: []
+  syntax:
+    content: public void UpdateSuperAdmin(SuperAdmin updatedSadmin)
+    parameters:
+    - id: updatedSadmin
+      type: Domain.Entities.SuperAdmin
+      description: A entidade [SuperAdmin] com os novos valores.
+    content.vb: Public Sub UpdateSuperAdmin(updatedSadmin As SuperAdmin)
+  overload: Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin*
+  implements:
+  - Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+references:
+- uid: Infrastructure.Repositories
+  commentId: N:Infrastructure.Repositories
+  href: Infrastructure.html
+  name: Infrastructure.Repositories
+  nameWithType: Infrastructure.Repositories
+  fullName: Infrastructure.Repositories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository
+  commentId: T:Application.Interfaces.Repositories.ISuperAdminRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ISuperAdminRepository.html
+  name: ISuperAdminRepository
+  nameWithType: ISuperAdminRepository
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Infrastructure.Repositories.SuperAdminRepository.#ctor*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.#ctor
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository__ctor_Infrastructure_Data_AmateurFootballContext_
+  name: SuperAdminRepository
+  nameWithType: SuperAdminRepository.SuperAdminRepository
+  fullName: Infrastructure.Repositories.SuperAdminRepository.SuperAdminRepository
+  nameWithType.vb: SuperAdminRepository.New
+  fullName.vb: Infrastructure.Repositories.SuperAdminRepository.New
+  name.vb: New
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Infrastructure.Repositories.SuperAdminRepository.AddAsync*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.AddAsync
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_AddAsync_Domain_Entities_SuperAdmin_
+  name: AddAsync
+  nameWithType: SuperAdminRepository.AddAsync
+  fullName: Infrastructure.Repositories.SuperAdminRepository.AddAsync
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  name: AddAsync(SuperAdmin)
+  nameWithType: ISuperAdminRepository.AddAsync(SuperAdmin)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+    name: AddAsync
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.AddAsync(Domain.Entities.SuperAdmin)
+    name: AddAsync
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+- uid: Domain.Entities.SuperAdmin
+  commentId: T:Domain.Entities.SuperAdmin
+  parent: Domain.Entities
+  href: Domain.Entities.SuperAdmin.html
+  name: SuperAdmin
+  nameWithType: SuperAdmin
+  fullName: Domain.Entities.SuperAdmin
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_DeleteSuperAdmin_Domain_Entities_SuperAdmin_
+  name: DeleteSuperAdmin
+  nameWithType: SuperAdminRepository.DeleteSuperAdmin
+  fullName: Infrastructure.Repositories.SuperAdminRepository.DeleteSuperAdmin
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  name: DeleteSuperAdmin(SuperAdmin)
+  nameWithType: ISuperAdminRepository.DeleteSuperAdmin(SuperAdmin)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+    name: DeleteSuperAdmin
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.DeleteSuperAdmin(Domain.Entities.SuperAdmin)
+    name: DeleteSuperAdmin
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_GetAllSuperAdminsAsync
+  name: GetAllSuperAdminsAsync
+  nameWithType: SuperAdminRepository.GetAllSuperAdminsAsync
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetAllSuperAdminsAsync
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  name: GetAllSuperAdminsAsync()
+  nameWithType: ISuperAdminRepository.GetAllSuperAdminsAsync()
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync()
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync
+    name: GetAllSuperAdminsAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetAllSuperAdminsAsync
+    name: GetAllSuperAdminsAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.SuperAdmin}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.SuperAdmin}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<SuperAdmin>>
+  nameWithType: Task<List<SuperAdmin>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.SuperAdmin>>
+  nameWithType.vb: Task(Of List(Of SuperAdmin))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.SuperAdmin))
+  name.vb: Task(Of List(Of SuperAdmin))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_GetSuperAdminByEmailAsync_System_String_
+  name: GetSuperAdminByEmailAsync
+  nameWithType: SuperAdminRepository.GetSuperAdminByEmailAsync
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByEmailAsync
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetSuperAdminByEmailAsync(string)
+  nameWithType: ISuperAdminRepository.GetSuperAdminByEmailAsync(string)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(string)
+  nameWithType.vb: ISuperAdminRepository.GetSuperAdminByEmailAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(String)
+  name.vb: GetSuperAdminByEmailAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+    name: GetSuperAdminByEmailAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByEmailAsync(System.String)
+    name: GetSuperAdminByEmailAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Domain.Entities.SuperAdmin}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.SuperAdmin}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SuperAdmin>
+  nameWithType: Task<SuperAdmin>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.SuperAdmin>
+  nameWithType.vb: Task(Of SuperAdmin)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.SuperAdmin)
+  name.vb: Task(Of SuperAdmin)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_GetSuperAdminByIdAsync_System_String_
+  name: GetSuperAdminByIdAsync
+  nameWithType: SuperAdminRepository.GetSuperAdminByIdAsync
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByIdAsync
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetSuperAdminByIdAsync(string)
+  nameWithType: ISuperAdminRepository.GetSuperAdminByIdAsync(string)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(string)
+  nameWithType.vb: ISuperAdminRepository.GetSuperAdminByIdAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(String)
+  name.vb: GetSuperAdminByIdAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+    name: GetSuperAdminByIdAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByIdAsync(System.String)
+    name: GetSuperAdminByIdAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_GetSuperAdminByPhoneAsync_System_String_
+  name: GetSuperAdminByPhoneAsync
+  nameWithType: SuperAdminRepository.GetSuperAdminByPhoneAsync
+  fullName: Infrastructure.Repositories.SuperAdminRepository.GetSuperAdminByPhoneAsync
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetSuperAdminByPhoneAsync(string)
+  nameWithType: ISuperAdminRepository.GetSuperAdminByPhoneAsync(string)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(string)
+  nameWithType.vb: ISuperAdminRepository.GetSuperAdminByPhoneAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(String)
+  name.vb: GetSuperAdminByPhoneAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+    name: GetSuperAdminByPhoneAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.GetSuperAdminByPhoneAsync(System.String)
+    name: GetSuperAdminByPhoneAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin*
+  commentId: Overload:Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin
+  href: Infrastructure.Repositories.SuperAdminRepository.html#Infrastructure_Repositories_SuperAdminRepository_UpdateSuperAdmin_Domain_Entities_SuperAdmin_
+  name: UpdateSuperAdmin
+  nameWithType: SuperAdminRepository.UpdateSuperAdmin
+  fullName: Infrastructure.Repositories.SuperAdminRepository.UpdateSuperAdmin
+- uid: Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Repositories.ISuperAdminRepository
+  name: UpdateSuperAdmin(SuperAdmin)
+  nameWithType: ISuperAdminRepository.UpdateSuperAdmin(SuperAdmin)
+  fullName: Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+    name: UpdateSuperAdmin
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.ISuperAdminRepository.UpdateSuperAdmin(Domain.Entities.SuperAdmin)
+    name: UpdateSuperAdmin
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )

@@ -1,0 +1,841 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.SuperAdminValidator
+  commentId: T:Application.Validators.SuperAdminValidator
+  id: SuperAdminValidator
+  parent: Application.Validators
+  children:
+  - Application.Validators.SuperAdminValidator.#ctor(Application.Interfaces.Validators.IUserDataValidator)
+  - Application.Validators.SuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  - Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  - Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  - Application.Validators.SuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  - Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminValidator
+  nameWithType: SuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SuperAdminValidator
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: 'public class SuperAdminValidator : ISuperAdminValidator'
+    content.vb: Public Class SuperAdminValidator Implements ISuperAdminValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.SuperAdminValidator.#ctor(Application.Interfaces.Validators.IUserDataValidator)
+  commentId: M:Application.Validators.SuperAdminValidator.#ctor(Application.Interfaces.Validators.IUserDataValidator)
+  id: '#ctor(Application.Interfaces.Validators.IUserDataValidator)'
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminValidator(IUserDataValidator)
+  nameWithType: SuperAdminValidator.SuperAdminValidator(IUserDataValidator)
+  fullName: Application.Validators.SuperAdminValidator.SuperAdminValidator(Application.Interfaces.Validators.IUserDataValidator)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: public SuperAdminValidator(IUserDataValidator emailValidator)
+    parameters:
+    - id: emailValidator
+      type: Application.Interfaces.Validators.IUserDataValidator
+    content.vb: Public Sub New(emailValidator As IUserDataValidator)
+  overload: Application.Validators.SuperAdminValidator.#ctor*
+  nameWithType.vb: SuperAdminValidator.New(IUserDataValidator)
+  fullName.vb: Application.Validators.SuperAdminValidator.New(Application.Interfaces.Validators.IUserDataValidator)
+  name.vb: New(IUserDataValidator)
+- uid: Application.Validators.SuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Validators.SuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  id: SuperAdminExists(Domain.Entities.SuperAdmin)
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: SuperAdminExists(SuperAdmin)
+  nameWithType: SuperAdminValidator.SuperAdminExists(SuperAdmin)
+  fullName: Application.Validators.SuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SuperAdminExists
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void SuperAdminExists(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Public Sub SuperAdminExists(sadmin As SuperAdmin)
+  overload: Application.Validators.SuperAdminValidator.SuperAdminExists*
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+- uid: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  commentId: M:Application.Validators.SuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  id: CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  nameWithType: SuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  fullName: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User[])
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateSuperAdminValidator
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 24
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void CreateSuperAdminValidator(CreateSuperAdminDTO dto, User[] sadmins)
+    parameters:
+    - id: dto
+      type: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    - id: sadmins
+      type: Domain.Entities.User[]
+    content.vb: Public Sub CreateSuperAdminValidator(dto As CreateSuperAdminDTO, sadmins As User())
+  overload: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator*
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  nameWithType.vb: SuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+  fullName.vb: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User())
+  name.vb: CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+- uid: Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  id: DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: DeleteSuperAdminValidator(SuperAdmin)
+  nameWithType: SuperAdminValidator.DeleteSuperAdminValidator(SuperAdmin)
+  fullName: Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteSuperAdminValidator
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 45
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void DeleteSuperAdminValidator(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Public Sub DeleteSuperAdminValidator(sadmin As SuperAdmin)
+  overload: Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator*
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+- uid: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  commentId: M:Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  id: UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  nameWithType: SuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  fullName: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User[])
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateSuperAdminValidator
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 51
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void UpdateSuperAdminValidator(UpdateSuperAdminDTO dto, SuperAdmin sadmin, User[] sadmins)
+    parameters:
+    - id: dto
+      type: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    - id: sadmins
+      type: Domain.Entities.User[]
+    content.vb: Public Sub UpdateSuperAdminValidator(dto As UpdateSuperAdminDTO, sadmin As SuperAdmin, sadmins As User())
+  overload: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator*
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  nameWithType.vb: SuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+  fullName.vb: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User())
+  name.vb: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+- uid: Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  id: GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Validators.SuperAdminValidator
+  langs:
+  - csharp
+  - vb
+  name: GetSuperAdminByIdValidator(SuperAdmin)
+  nameWithType: SuperAdminValidator.GetSuperAdminByIdValidator(SuperAdmin)
+  fullName: Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/SuperAdminValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetSuperAdminByIdValidator
+    path: ../Application/Validators/SuperAdminValidator.cs
+    startLine: 90
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void GetSuperAdminByIdValidator(SuperAdmin sadmin)
+    parameters:
+    - id: sadmin
+      type: Domain.Entities.SuperAdmin
+    content.vb: Public Sub GetSuperAdminByIdValidator(sadmin As SuperAdmin)
+  overload: Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator*
+  implements:
+  - Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+references:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  href: Application.html
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.ISuperAdminValidator
+  commentId: T:Application.Interfaces.Validators.ISuperAdminValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html
+  name: ISuperAdminValidator
+  nameWithType: ISuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Validators.SuperAdminValidator.#ctor*
+  commentId: Overload:Application.Validators.SuperAdminValidator.#ctor
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator__ctor_Application_Interfaces_Validators_IUserDataValidator_
+  name: SuperAdminValidator
+  nameWithType: SuperAdminValidator.SuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator.SuperAdminValidator
+  nameWithType.vb: SuperAdminValidator.New
+  fullName.vb: Application.Validators.SuperAdminValidator.New
+  name.vb: New
+- uid: Application.Interfaces.Validators.IUserDataValidator
+  commentId: T:Application.Interfaces.Validators.IUserDataValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IUserDataValidator.html
+  name: IUserDataValidator
+  nameWithType: IUserDataValidator
+  fullName: Application.Interfaces.Validators.IUserDataValidator
+- uid: Application.Validators.SuperAdminValidator.SuperAdminExists*
+  commentId: Overload:Application.Validators.SuperAdminValidator.SuperAdminExists
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator_SuperAdminExists_Domain_Entities_SuperAdmin_
+  name: SuperAdminExists
+  nameWithType: SuperAdminValidator.SuperAdminExists
+  fullName: Application.Validators.SuperAdminValidator.SuperAdminExists
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_SuperAdminExists_Domain_Entities_SuperAdmin_
+  name: SuperAdminExists(SuperAdmin)
+  nameWithType: ISuperAdminValidator.SuperAdminExists(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+    name: SuperAdminExists
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_SuperAdminExists_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.SuperAdminExists(Domain.Entities.SuperAdmin)
+    name: SuperAdminExists
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_SuperAdminExists_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+- uid: Domain.Entities.SuperAdmin
+  commentId: T:Domain.Entities.SuperAdmin
+  parent: Domain.Entities
+  href: Domain.Entities.SuperAdmin.html
+  name: SuperAdmin
+  nameWithType: SuperAdmin
+  fullName: Domain.Entities.SuperAdmin
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator*
+  commentId: Overload:Application.Validators.SuperAdminValidator.CreateSuperAdminValidator
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator_CreateSuperAdminValidator_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_Domain_Entities_User___
+  name: CreateSuperAdminValidator
+  nameWithType: SuperAdminValidator.CreateSuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator.CreateSuperAdminValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_CreateSuperAdminValidator_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_Domain_Entities_User___
+  name: CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  nameWithType: ISuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User[])
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User[])
+  nameWithType.vb: ISuperAdminValidator.CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+  fullName.vb: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO, Domain.Entities.User())
+  name.vb: CreateSuperAdminValidator(CreateSuperAdminDTO, User())
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+    name: CreateSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_CreateSuperAdminValidator_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_Domain_Entities_User___
+  - name: (
+  - uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    name: CreateSuperAdminDTO
+    href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.CreateSuperAdminValidator(Application.DTOs.SuperAdmin.CreateSuperAdminDTO,Domain.Entities.User[])
+    name: CreateSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_CreateSuperAdminValidator_Application_DTOs_SuperAdmin_CreateSuperAdminDTO_Domain_Entities_User___
+  - name: (
+  - uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+    name: CreateSuperAdminDTO
+    href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: (
+  - name: )
+  - name: )
+- uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  name: CreateSuperAdminDTO
+  nameWithType: CreateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+- uid: Domain.Entities.User[]
+  isExternal: true
+  name: User[]
+  nameWithType: User[]
+  fullName: Domain.Entities.User[]
+  nameWithType.vb: User()
+  fullName.vb: Domain.Entities.User()
+  name.vb: User()
+  spec.csharp:
+  - uid: Domain.Entities.User
+    name: User
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Domain.Entities.User
+    name: User
+  - name: (
+  - name: )
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  href: Application.html
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+- uid: Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator*
+  commentId: Overload:Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator_DeleteSuperAdminValidator_Domain_Entities_SuperAdmin_
+  name: DeleteSuperAdminValidator
+  nameWithType: SuperAdminValidator.DeleteSuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator.DeleteSuperAdminValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_DeleteSuperAdminValidator_Domain_Entities_SuperAdmin_
+  name: DeleteSuperAdminValidator(SuperAdmin)
+  nameWithType: ISuperAdminValidator.DeleteSuperAdminValidator(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+    name: DeleteSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_DeleteSuperAdminValidator_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.DeleteSuperAdminValidator(Domain.Entities.SuperAdmin)
+    name: DeleteSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_DeleteSuperAdminValidator_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+- uid: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator*
+  commentId: Overload:Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator_UpdateSuperAdminValidator_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Domain_Entities_SuperAdmin_Domain_Entities_User___
+  name: UpdateSuperAdminValidator
+  nameWithType: SuperAdminValidator.UpdateSuperAdminValidator
+  fullName: Application.Validators.SuperAdminValidator.UpdateSuperAdminValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_UpdateSuperAdminValidator_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Domain_Entities_SuperAdmin_Domain_Entities_User___
+  name: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  nameWithType: ISuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User[])
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User[])
+  nameWithType.vb: ISuperAdminValidator.UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+  fullName.vb: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO, Domain.Entities.SuperAdmin, Domain.Entities.User())
+  name.vb: UpdateSuperAdminValidator(UpdateSuperAdminDTO, SuperAdmin, User())
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+    name: UpdateSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_UpdateSuperAdminValidator_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Domain_Entities_SuperAdmin_Domain_Entities_User___
+  - name: (
+  - uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    name: UpdateSuperAdminDTO
+    href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.UpdateSuperAdminValidator(Application.DTOs.SuperAdmin.UpdateSuperAdminDTO,Domain.Entities.SuperAdmin,Domain.Entities.User[])
+    name: UpdateSuperAdminValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_UpdateSuperAdminValidator_Application_DTOs_SuperAdmin_UpdateSuperAdminDTO_Domain_Entities_SuperAdmin_Domain_Entities_User___
+  - name: (
+  - uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+    name: UpdateSuperAdminDTO
+    href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: ','
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: (
+  - name: )
+  - name: )
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  name: UpdateSuperAdminDTO
+  nameWithType: UpdateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+- uid: Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator*
+  commentId: Overload:Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator
+  href: Application.Validators.SuperAdminValidator.html#Application_Validators_SuperAdminValidator_GetSuperAdminByIdValidator_Domain_Entities_SuperAdmin_
+  name: GetSuperAdminByIdValidator
+  nameWithType: SuperAdminValidator.GetSuperAdminByIdValidator
+  fullName: Application.Validators.SuperAdminValidator.GetSuperAdminByIdValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  commentId: M:Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  parent: Application.Interfaces.Validators.ISuperAdminValidator
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_GetSuperAdminByIdValidator_Domain_Entities_SuperAdmin_
+  name: GetSuperAdminByIdValidator(SuperAdmin)
+  nameWithType: ISuperAdminValidator.GetSuperAdminByIdValidator(SuperAdmin)
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+    name: GetSuperAdminByIdValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_GetSuperAdminByIdValidator_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.ISuperAdminValidator.GetSuperAdminByIdValidator(Domain.Entities.SuperAdmin)
+    name: GetSuperAdminByIdValidator
+    href: Application.Interfaces.Validators.ISuperAdminValidator.html#Application_Interfaces_Validators_ISuperAdminValidator_GetSuperAdminByIdValidator_Domain_Entities_SuperAdmin_
+  - name: (
+  - uid: Domain.Entities.SuperAdmin
+    name: SuperAdmin
+  - name: )

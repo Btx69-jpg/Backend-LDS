@@ -1,0 +1,1081 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.Hub.ManagerStartMatchService
+  commentId: T:Application.Services.Hub.ManagerStartMatchService
+  id: ManagerStartMatchService
+  parent: Application.Services.Hub
+  children:
+  - Application.Services.Hub.ManagerStartMatchService.#ctor(Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.Hub.IStartMatchHubValidator,Application.Interfaces.Validators.Hub.IGeralHubValidator,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  - Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  - Application.Services.Hub.ManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  - Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ManagerStartMatchService
+  nameWithType: ManagerStartMatchService
+  fullName: Application.Services.Hub.ManagerStartMatchService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/Hub/ManagerStartMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ManagerStartMatchService
+    path: ../Application/Services/Hub/ManagerStartMatchService.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub
+  syntax:
+    content: 'public class ManagerStartMatchService : IManagerStartMatchService'
+    content.vb: Public Class ManagerStartMatchService Implements IManagerStartMatchService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.Hub.IManagerStartMatchService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.Hub.ManagerStartMatchService.#ctor(Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.Hub.IStartMatchHubValidator,Application.Interfaces.Validators.Hub.IGeralHubValidator,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  commentId: M:Application.Services.Hub.ManagerStartMatchService.#ctor(Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.Hub.IStartMatchHubValidator,Application.Interfaces.Validators.Hub.IGeralHubValidator,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  id: '#ctor(Application.Interfaces.Repositories.IMatchRepository,Application.Interfaces.Repositories.IUnityOfWork,Application.Interfaces.Validators.Hub.IStartMatchHubValidator,Application.Interfaces.Validators.Hub.IGeralHubValidator,Microsoft.Extensions.Caching.Memory.IMemoryCache)'
+  parent: Application.Services.Hub.ManagerStartMatchService
+  langs:
+  - csharp
+  - vb
+  name: ManagerStartMatchService(IMatchRepository, IUnityOfWork, IStartMatchHubValidator, IGeralHubValidator, IMemoryCache)
+  nameWithType: ManagerStartMatchService.ManagerStartMatchService(IMatchRepository, IUnityOfWork, IStartMatchHubValidator, IGeralHubValidator, IMemoryCache)
+  fullName: Application.Services.Hub.ManagerStartMatchService.ManagerStartMatchService(Application.Interfaces.Repositories.IMatchRepository, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Validators.Hub.IStartMatchHubValidator, Application.Interfaces.Validators.Hub.IGeralHubValidator, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/Hub/ManagerStartMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/Hub/ManagerStartMatchService.cs
+    startLine: 19
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub
+  syntax:
+    content: public ManagerStartMatchService(IMatchRepository matchRepository, IUnityOfWork unityOfWork, IStartMatchHubValidator validator, IGeralHubValidator geralValidator, IMemoryCache cache)
+    parameters:
+    - id: matchRepository
+      type: Application.Interfaces.Repositories.IMatchRepository
+    - id: unityOfWork
+      type: Application.Interfaces.Repositories.IUnityOfWork
+    - id: validator
+      type: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+    - id: geralValidator
+      type: Application.Interfaces.Validators.Hub.IGeralHubValidator
+    - id: cache
+      type: Microsoft.Extensions.Caching.Memory.IMemoryCache
+    content.vb: Public Sub New(matchRepository As IMatchRepository, unityOfWork As IUnityOfWork, validator As IStartMatchHubValidator, geralValidator As IGeralHubValidator, cache As IMemoryCache)
+  overload: Application.Services.Hub.ManagerStartMatchService.#ctor*
+  nameWithType.vb: ManagerStartMatchService.New(IMatchRepository, IUnityOfWork, IStartMatchHubValidator, IGeralHubValidator, IMemoryCache)
+  fullName.vb: Application.Services.Hub.ManagerStartMatchService.New(Application.Interfaces.Repositories.IMatchRepository, Application.Interfaces.Repositories.IUnityOfWork, Application.Interfaces.Validators.Hub.IStartMatchHubValidator, Application.Interfaces.Validators.Hub.IGeralHubValidator, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  name.vb: New(IMatchRepository, IUnityOfWork, IStartMatchHubValidator, IGeralHubValidator, IMemoryCache)
+- uid: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  commentId: M:Application.Services.Hub.ManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  id: JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  parent: Application.Services.Hub.ManagerStartMatchService
+  langs:
+  - csharp
+  - vb
+  name: JoinHubAsync(Guid, string, Guid, string)
+  nameWithType: ManagerStartMatchService.JoinHubAsync(Guid, string, Guid, string)
+  fullName: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync(System.Guid, string, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ManagerStartMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinHubAsync
+    path: ../Application/Services/Hub/ManagerStartMatchService.cs
+    startLine: 29
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub
+  example: []
+  syntax:
+    content: public Task<JoinStartMatchResult> JoinHubAsync(Guid matchId, string userId, Guid idTeam, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: userId
+      type: System.String
+    - id: idTeam
+      type: System.Guid
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Application.Hubs.JoinStartMatchResult}
+    content.vb: Public Function JoinHubAsync(matchId As Guid, userId As String, idTeam As Guid, connectionId As String) As Task(Of JoinStartMatchResult)
+  overload: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  nameWithType.vb: ManagerStartMatchService.JoinHubAsync(Guid, String, Guid, String)
+  fullName.vb: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync(System.Guid, String, System.Guid, String)
+  name.vb: JoinHubAsync(Guid, String, Guid, String)
+- uid: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  id: LeaveHubAsync(System.Guid,System.Guid,System.String)
+  parent: Application.Services.Hub.ManagerStartMatchService
+  langs:
+  - csharp
+  - vb
+  name: LeaveHubAsync(Guid, Guid, string)
+  nameWithType: ManagerStartMatchService.LeaveHubAsync(Guid, Guid, string)
+  fullName: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync(System.Guid, System.Guid, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ManagerStartMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveHubAsync
+    path: ../Application/Services/Hub/ManagerStartMatchService.cs
+    startLine: 83
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub
+  example: []
+  syntax:
+    content: public Task<bool> LeaveHubAsync(Guid matchId, Guid idTeam, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: idTeam
+      type: System.Guid
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function LeaveHubAsync(matchId As Guid, idTeam As Guid, connectionId As String) As Task(Of Boolean)
+  overload: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  nameWithType.vb: ManagerStartMatchService.LeaveHubAsync(Guid, Guid, String)
+  fullName.vb: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync(System.Guid, System.Guid, String)
+  name.vb: LeaveHubAsync(Guid, Guid, String)
+- uid: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  commentId: M:Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  id: HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  parent: Application.Services.Hub.ManagerStartMatchService
+  langs:
+  - csharp
+  - vb
+  name: HandleDisconnectAsync(Guid?, Guid?, string)
+  nameWithType: ManagerStartMatchService.HandleDisconnectAsync(Guid?, Guid?, string)
+  fullName: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/Hub/ManagerStartMatchService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: HandleDisconnectAsync
+    path: ../Application/Services/Hub/ManagerStartMatchService.cs
+    startLine: 107
+  assemblies:
+  - Application
+  namespace: Application.Services.Hub
+  example: []
+  syntax:
+    content: public Task<bool> HandleDisconnectAsync(Guid? maybeMatchId, Guid? maybeTeamId, string connectionId)
+    parameters:
+    - id: maybeMatchId
+      type: System.Nullable{System.Guid}
+    - id: maybeTeamId
+      type: System.Nullable{System.Guid}
+    - id: connectionId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function HandleDisconnectAsync(maybeMatchId As Guid?, maybeTeamId As Guid?, connectionId As String) As Task(Of Boolean)
+  overload: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync*
+  implements:
+  - Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  nameWithType.vb: ManagerStartMatchService.HandleDisconnectAsync(Guid?, Guid?, String)
+  fullName.vb: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, String)
+  name.vb: HandleDisconnectAsync(Guid?, Guid?, String)
+references:
+- uid: Application.Services.Hub
+  commentId: N:Application.Services.Hub
+  href: Application.html
+  name: Application.Services.Hub
+  nameWithType: Application.Services.Hub
+  fullName: Application.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.Hub
+    name: Hub
+    href: Application.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.Hub
+    name: Hub
+    href: Application.Services.Hub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.Hub.IManagerStartMatchService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerStartMatchService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html
+  name: IManagerStartMatchService
+  nameWithType: IManagerStartMatchService
+  fullName: Application.Interfaces.Services.Hub.IManagerStartMatchService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+- uid: Application.Services.Hub.ManagerStartMatchService.#ctor*
+  commentId: Overload:Application.Services.Hub.ManagerStartMatchService.#ctor
+  href: Application.Services.Hub.ManagerStartMatchService.html#Application_Services_Hub_ManagerStartMatchService__ctor_Application_Interfaces_Repositories_IMatchRepository_Application_Interfaces_Repositories_IUnityOfWork_Application_Interfaces_Validators_Hub_IStartMatchHubValidator_Application_Interfaces_Validators_Hub_IGeralHubValidator_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  name: ManagerStartMatchService
+  nameWithType: ManagerStartMatchService.ManagerStartMatchService
+  fullName: Application.Services.Hub.ManagerStartMatchService.ManagerStartMatchService
+  nameWithType.vb: ManagerStartMatchService.New
+  fullName.vb: Application.Services.Hub.ManagerStartMatchService.New
+  name.vb: New
+- uid: Application.Interfaces.Repositories.IMatchRepository
+  commentId: T:Application.Interfaces.Repositories.IMatchRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IMatchRepository.html
+  name: IMatchRepository
+  nameWithType: IMatchRepository
+  fullName: Application.Interfaces.Repositories.IMatchRepository
+- uid: Application.Interfaces.Repositories.IUnityOfWork
+  commentId: T:Application.Interfaces.Repositories.IUnityOfWork
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUnityOfWork.html
+  name: IUnityOfWork
+  nameWithType: IUnityOfWork
+  fullName: Application.Interfaces.Repositories.IUnityOfWork
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html
+  name: IStartMatchHubValidator
+  nameWithType: IStartMatchHubValidator
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+- uid: Application.Interfaces.Validators.Hub.IGeralHubValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IGeralHubValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.IGeralHubValidator.html
+  name: IGeralHubValidator
+  nameWithType: IGeralHubValidator
+  fullName: Application.Interfaces.Validators.Hub.IGeralHubValidator
+- uid: Microsoft.Extensions.Caching.Memory.IMemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.IMemoryCache
+  parent: Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache
+  name: IMemoryCache
+  nameWithType: IMemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.IMemoryCache
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Microsoft.Extensions.Caching.Memory
+  commentId: N:Microsoft.Extensions.Caching.Memory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Memory
+  nameWithType: Microsoft.Extensions.Caching.Memory
+  fullName: Microsoft.Extensions.Caching.Memory
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Memory
+    name: Memory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory
+- uid: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync*
+  commentId: Overload:Application.Services.Hub.ManagerStartMatchService.JoinHubAsync
+  href: Application.Services.Hub.ManagerStartMatchService.html#Application_Services_Hub_ManagerStartMatchService_JoinHubAsync_System_Guid_System_String_System_Guid_System_String_
+  name: JoinHubAsync
+  nameWithType: ManagerStartMatchService.JoinHubAsync
+  fullName: Application.Services.Hub.ManagerStartMatchService.JoinHubAsync
+- uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerStartMatchService
+  isExternal: true
+  href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_JoinHubAsync_System_Guid_System_String_System_Guid_System_String_
+  name: JoinHubAsync(Guid, string, Guid, string)
+  nameWithType: IManagerStartMatchService.JoinHubAsync(Guid, string, Guid, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid, string, System.Guid, string)
+  nameWithType.vb: IManagerStartMatchService.JoinHubAsync(Guid, String, Guid, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid, String, System.Guid, String)
+  name.vb: JoinHubAsync(Guid, String, Guid, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+    name: JoinHubAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_JoinHubAsync_System_Guid_System_String_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.JoinHubAsync(System.Guid,System.String,System.Guid,System.String)
+    name: JoinHubAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_JoinHubAsync_System_Guid_System_String_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Application.Hubs.JoinStartMatchResult}
+  commentId: T:System.Threading.Tasks.Task{Application.Hubs.JoinStartMatchResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JoinStartMatchResult>
+  nameWithType: Task<JoinStartMatchResult>
+  fullName: System.Threading.Tasks.Task<Application.Hubs.JoinStartMatchResult>
+  nameWithType.vb: Task(Of JoinStartMatchResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Hubs.JoinStartMatchResult)
+  name.vb: Task(Of JoinStartMatchResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Hubs.JoinStartMatchResult
+    name: JoinStartMatchResult
+    href: Application.Hubs.JoinStartMatchResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Hubs.JoinStartMatchResult
+    name: JoinStartMatchResult
+    href: Application.Hubs.JoinStartMatchResult.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync*
+  commentId: Overload:Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync
+  href: Application.Services.Hub.ManagerStartMatchService.html#Application_Services_Hub_ManagerStartMatchService_LeaveHubAsync_System_Guid_System_Guid_System_String_
+  name: LeaveHubAsync
+  nameWithType: ManagerStartMatchService.LeaveHubAsync
+  fullName: Application.Services.Hub.ManagerStartMatchService.LeaveHubAsync
+- uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerStartMatchService
+  isExternal: true
+  href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_LeaveHubAsync_System_Guid_System_Guid_System_String_
+  name: LeaveHubAsync(Guid, Guid, string)
+  nameWithType: IManagerStartMatchService.LeaveHubAsync(Guid, Guid, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid, System.Guid, string)
+  nameWithType.vb: IManagerStartMatchService.LeaveHubAsync(Guid, Guid, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid, System.Guid, String)
+  name.vb: LeaveHubAsync(Guid, Guid, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+    name: LeaveHubAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_LeaveHubAsync_System_Guid_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.LeaveHubAsync(System.Guid,System.Guid,System.String)
+    name: LeaveHubAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_LeaveHubAsync_System_Guid_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync*
+  commentId: Overload:Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync
+  href: Application.Services.Hub.ManagerStartMatchService.html#Application_Services_Hub_ManagerStartMatchService_HandleDisconnectAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_
+  name: HandleDisconnectAsync
+  nameWithType: ManagerStartMatchService.HandleDisconnectAsync
+  fullName: Application.Services.Hub.ManagerStartMatchService.HandleDisconnectAsync
+- uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  commentId: M:Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+  parent: Application.Interfaces.Services.Hub.IManagerStartMatchService
+  isExternal: true
+  href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_HandleDisconnectAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_
+  name: HandleDisconnectAsync(Guid?, Guid?, string)
+  nameWithType: IManagerStartMatchService.HandleDisconnectAsync(Guid?, Guid?, string)
+  fullName: Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, string)
+  nameWithType.vb: IManagerStartMatchService.HandleDisconnectAsync(Guid?, Guid?, String)
+  fullName.vb: Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Guid?, System.Guid?, String)
+  name.vb: HandleDisconnectAsync(Guid?, Guid?, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+    name: HandleDisconnectAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_HandleDisconnectAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.Hub.IManagerStartMatchService.HandleDisconnectAsync(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String)
+    name: HandleDisconnectAsync
+    href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html#Application_Interfaces_Services_Hub_IManagerStartMatchService_HandleDisconnectAsync_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

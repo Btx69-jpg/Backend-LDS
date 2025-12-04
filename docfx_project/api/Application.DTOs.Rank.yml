@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Rank
+  commentId: N:Application.DTOs.Rank
+  id: Application.DTOs.Rank
+  children:
+  - Application.DTOs.Rank.InfoRankDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Rank
+  nameWithType: Application.DTOs.Rank
+  fullName: Application.DTOs.Rank
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Rank.InfoRankDto
+  commentId: T:Application.DTOs.Rank.InfoRankDto
+  parent: Application.DTOs.Rank
+  href: Application.DTOs.Rank.InfoRankDto.html
+  name: InfoRankDto
+  nameWithType: InfoRankDto
+  fullName: Application.DTOs.Rank.InfoRankDto
+- uid: Application.DTOs.Rank
+  commentId: N:Application.DTOs.Rank
+  href: Application.html
+  name: Application.DTOs.Rank
+  nameWithType: Application.DTOs.Rank
+  fullName: Application.DTOs.Rank
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Rank
+    name: Rank
+    href: Application.DTOs.Rank.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Rank
+    name: Rank
+    href: Application.DTOs.Rank.html

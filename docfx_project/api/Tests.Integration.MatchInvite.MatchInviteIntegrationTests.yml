@@ -1,0 +1,717 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  commentId: T:Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  id: MatchInviteIntegrationTests
+  parent: Tests.Integration.MatchInvite
+  children:
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup
+  - Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown
+  langs:
+  - csharp
+  - vb
+  name: MatchInviteIntegrationTests
+  nameWithType: MatchInviteIntegrationTests
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  type: Class
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchInviteIntegrationTests
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 14
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [TestFixture]
+
+      public class MatchInviteIntegrationTests
+    content.vb: >-
+      <TestFixture>
+
+      Public Class MatchInviteIntegrationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: NUnit.Framework.TestFixtureAttribute
+    ctor: NUnit.Framework.TestFixtureAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup
+  id: Setup
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: MatchInviteIntegrationTests.Setup()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Setup
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 20
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [SetUp]
+
+      public void Setup()
+    content.vb: >-
+      <SetUp>
+
+      Public Sub Setup()
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup*
+  attributes:
+  - type: NUnit.Framework.SetUpAttribute
+    ctor: NUnit.Framework.SetUpAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown
+  id: TearDown
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: TearDown()
+  nameWithType: MatchInviteIntegrationTests.TearDown()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TearDown
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 30
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [TearDown]
+
+      public void TearDown()
+    content.vb: >-
+      <TearDown>
+
+      Public Sub TearDown()
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown*
+  attributes:
+  - type: NUnit.Framework.TearDownAttribute
+    ctor: NUnit.Framework.TearDownAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  id: SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  nameWithType: MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 37
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+  id: AcceptMatchInvite_Returns_Ok_With_MatchDto
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: AcceptMatchInvite_Returns_Ok_With_MatchDto()
+  nameWithType: MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AcceptMatchInvite_Returns_Ok_With_MatchDto
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 122
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task AcceptMatchInvite_Returns_Ok_With_MatchDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function AcceptMatchInvite_Returns_Ok_With_MatchDto() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+  id: RefuseMatchInvite_Returns_Ok
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: RefuseMatchInvite_Returns_Ok()
+  nameWithType: MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RefuseMatchInvite_Returns_Ok
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 181
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task RefuseMatchInvite_Returns_Ok()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function RefuseMatchInvite_Returns_Ok() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  id: NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  nameWithType: MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 228
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  id: GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  nameWithType: MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 287
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  commentId: M:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  id: GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  parent: Tests.Integration.MatchInvite.MatchInviteIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  nameWithType: MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+  type: Method
+  source:
+    remote:
+      path: Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+    path: ../Tests/Integration/ClassTests/MatchInviteTests/MatchInviteIntegrationTests.cs
+    startLine: 381
+  assemblies:
+  - Tests
+  namespace: Tests.Integration.MatchInvite
+  syntax:
+    content: >-
+      [Test]
+
+      public Task GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <Test>
+
+      Public Function GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto() As Task
+  overload: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto*
+  attributes:
+  - type: NUnit.Framework.TestAttribute
+    ctor: NUnit.Framework.TestAttribute.#ctor
+    arguments: []
+references:
+- uid: Tests.Integration.MatchInvite
+  commentId: N:Tests.Integration.MatchInvite
+  href: Tests.html
+  name: Tests.Integration.MatchInvite
+  nameWithType: Tests.Integration.MatchInvite
+  fullName: Tests.Integration.MatchInvite
+  spec.csharp:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.MatchInvite
+    name: MatchInvite
+    href: Tests.Integration.MatchInvite.html
+  spec.vb:
+  - uid: Tests
+    name: Tests
+    href: Tests.html
+  - name: .
+  - uid: Tests.Integration
+    name: Integration
+    href: Tests.Integration.html
+  - name: .
+  - uid: Tests.Integration.MatchInvite
+    name: MatchInvite
+    href: Tests.Integration.MatchInvite.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_Setup
+  name: Setup
+  nameWithType: MatchInviteIntegrationTests.Setup
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.Setup
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_TearDown
+  name: TearDown
+  nameWithType: MatchInviteIntegrationTests.TearDown
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.TearDown
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  name: SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  nameWithType: MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.SendMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_AcceptMatchInvite_Returns_Ok_With_MatchDto
+  name: AcceptMatchInvite_Returns_Ok_With_MatchDto
+  nameWithType: MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.AcceptMatchInvite_Returns_Ok_With_MatchDto
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_RefuseMatchInvite_Returns_Ok
+  name: RefuseMatchInvite_Returns_Ok
+  nameWithType: MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.RefuseMatchInvite_Returns_Ok
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  name: NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  nameWithType: MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.NegociateMatchInvite_Returns_Ok_With_InfoMatchInviteDto
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  name: GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  nameWithType: MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithoutFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+- uid: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto*
+  commentId: Overload:Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  href: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html#Tests_Integration_MatchInvite_MatchInviteIntegrationTests_GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  name: GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  nameWithType: MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto
+  fullName: Tests.Integration.MatchInvite.MatchInviteIntegrationTests.GetAllMatchInvitesTeam_WithFilters_Returns_Ok_With_ListOfInfoMatchInviteDto

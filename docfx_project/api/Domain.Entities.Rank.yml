@@ -1,0 +1,1030 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Rank
+  commentId: T:Domain.Entities.Rank
+  id: Rank
+  parent: Domain.Entities
+  children:
+  - Domain.Entities.Rank.#ctor
+  - Domain.Entities.Rank.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Domain.Entities.Rank,Domain.Entities.Rank)
+  - Domain.Entities.Rank.DrawPoints
+  - Domain.Entities.Rank.Id
+  - Domain.Entities.Rank.IdNextRank
+  - Domain.Entities.Rank.IdPreviousRank
+  - Domain.Entities.Rank.LosePoints
+  - Domain.Entities.Rank.Name
+  - Domain.Entities.Rank.NextRank
+  - Domain.Entities.Rank.PointsToPromotion
+  - Domain.Entities.Rank.PreviousRank
+  - Domain.Entities.Rank.WinPoints
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: Rank
+  fullName: Domain.Entities.Rank
+  type: Class
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Rank
+    path: ../Domain/Entities/Rank.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Entidade que representa um nível de classificação (Rank) no sistema (ex: Ouro, Prata, Bronze).
+
+
+    Define os critérios de pontuação (pontos ganhos/perdidos) e o limite necessário para a promoção.
+
+    Esta entidade é hierárquica, referenciando o rank anterior e o próximo.
+  example: []
+  syntax:
+    content: public class Rank
+    content.vb: Public Class Rank
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Domain.Entities.Rank.Id
+  commentId: P:Domain.Entities.Rank.Id
+  id: Id
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Rank.Id
+  fullName: Domain.Entities.Rank.Id
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Id
+    path: ../Domain/Entities/Rank.cs
+    startLine: 18
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O identificador único (GUID) do Rank.
+
+    Serve como chave primária da entidade.
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key>
+
+      Public Property Id As Guid
+  overload: Domain.Entities.Rank.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Rank.Name
+  commentId: P:Domain.Entities.Rank.Name
+  id: Name
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Rank.Name
+  fullName: Domain.Entities.Rank.Name
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Name
+    path: ../Domain/Entities/Rank.cs
+    startLine: 25
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: 'O nome do nível de classificação (ex: "Ouro", "Prata").'
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(50, MinimumLength = 1)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: A string deve cumprir os limites de comprimento definidos em [ModelConstants.RankConts.MaxNameLength].
+    content.vb: >-
+      <Required>
+
+      <StringLength(50, MinimumLength:=1)>
+
+      Public Property Name As String
+  overload: Domain.Entities.Rank.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 50
+    namedArguments:
+    - name: MinimumLength
+      type: System.Int32
+      value: 1
+- uid: Domain.Entities.Rank.WinPoints
+  commentId: P:Domain.Entities.Rank.WinPoints
+  id: WinPoints
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: WinPoints
+  nameWithType: Rank.WinPoints
+  fullName: Domain.Entities.Rank.WinPoints
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: WinPoints
+    path: ../Domain/Entities/Rank.cs
+    startLine: 33
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O número de pontos que uma equipa ganha por cada vitória.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(1, 2147483647, ErrorMessage = "O número de pontos ganhos por vitoria deve ser superior ou igual a 1")]
+
+      public int WinPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: O valor deve ser maior ou igual a 1.
+    content.vb: >-
+      <Required>
+
+      <Range(1, 2147483647, ErrorMessage:="O número de pontos ganhos por vitoria deve ser superior ou igual a 1")>
+
+      Public Property WinPoints As Integer
+  overload: Domain.Entities.Rank.WinPoints*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: O número de pontos ganhos por vitoria deve ser superior ou igual a 1
+- uid: Domain.Entities.Rank.DrawPoints
+  commentId: P:Domain.Entities.Rank.DrawPoints
+  id: DrawPoints
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: DrawPoints
+  nameWithType: Rank.DrawPoints
+  fullName: Domain.Entities.Rank.DrawPoints
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DrawPoints
+    path: ../Domain/Entities/Rank.cs
+    startLine: 40
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O número de pontos que uma equipa ganha por cada empate.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public int DrawPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property DrawPoints As Integer
+  overload: Domain.Entities.Rank.DrawPoints*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Rank.LosePoints
+  commentId: P:Domain.Entities.Rank.LosePoints
+  id: LosePoints
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: LosePoints
+  nameWithType: Rank.LosePoints
+  fullName: Domain.Entities.Rank.LosePoints
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LosePoints
+    path: ../Domain/Entities/Rank.cs
+    startLine: 48
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O número de pontos que uma equipa perde por cada derrota.
+
+    Este valor pode ser zero ou negativo.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(-2147483648, 0, ErrorMessage = "O número de pontos perdidos deve ser igual ou inferior a 0")]
+
+      public int LosePoints { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: O valor deve ser menor ou igual a 0.
+    content.vb: >-
+      <Required>
+
+      <Range(-2147483648, 0, ErrorMessage:="O número de pontos perdidos deve ser igual ou inferior a 0")>
+
+      Public Property LosePoints As Integer
+  overload: Domain.Entities.Rank.LosePoints*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: -2147483648
+    - type: System.Int32
+      value: 0
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: O número de pontos perdidos deve ser igual ou inferior a 0
+- uid: Domain.Entities.Rank.PointsToPromotion
+  commentId: P:Domain.Entities.Rank.PointsToPromotion
+  id: PointsToPromotion
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: PointsToPromotion
+  nameWithType: Rank.PointsToPromotion
+  fullName: Domain.Entities.Rank.PointsToPromotion
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PointsToPromotion
+    path: ../Domain/Entities/Rank.cs
+    startLine: 56
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O número total de pontos que uma equipa deve ter para ser promovida para este nível.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(0, 2147483647, ErrorMessage = "O número de pontos para estar num rank deve ser maior ou igaul a 0")]
+
+      public int PointsToPromotion { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: O valor deve ser maior ou igual a 0.
+    content.vb: >-
+      <Required>
+
+      <Range(0, 2147483647, ErrorMessage:="O número de pontos para estar num rank deve ser maior ou igaul a 0")>
+
+      Public Property PointsToPromotion As Integer
+  overload: Domain.Entities.Rank.PointsToPromotion*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+    - type: System.Int32
+      value: 2147483647
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: O número de pontos para estar num rank deve ser maior ou igaul a 0
+- uid: Domain.Entities.Rank.NextRank
+  commentId: P:Domain.Entities.Rank.NextRank
+  id: NextRank
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: NextRank
+  nameWithType: Rank.NextRank
+  fullName: Domain.Entities.Rank.NextRank
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NextRank
+    path: ../Domain/Entities/Rank.cs
+    startLine: 64
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Entidade de navegação para o próximo Rank na hierarquia (para promoção).
+
+    É nulo se este for o Rank mais alto.
+  example: []
+  syntax:
+    content: public Rank? NextRank { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Rank
+    content.vb: Public Property NextRank As Rank
+  overload: Domain.Entities.Rank.NextRank*
+- uid: Domain.Entities.Rank.IdNextRank
+  commentId: P:Domain.Entities.Rank.IdNextRank
+  id: IdNextRank
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: IdNextRank
+  nameWithType: Rank.IdNextRank
+  fullName: Domain.Entities.Rank.IdNextRank
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IdNextRank
+    path: ../Domain/Entities/Rank.cs
+    startLine: 70
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    A Chave Estrangeira (FK) para o próximo Rank.
+
+    É nula se este for o Rank mais alto.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("NextRank")]
+
+      public Guid? IdNextRank { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: >-
+      <ForeignKey("NextRank")>
+
+      Public Property IdNextRank As Guid?
+  overload: Domain.Entities.Rank.IdNextRank*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: NextRank
+- uid: Domain.Entities.Rank.PreviousRank
+  commentId: P:Domain.Entities.Rank.PreviousRank
+  id: PreviousRank
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: PreviousRank
+  nameWithType: Rank.PreviousRank
+  fullName: Domain.Entities.Rank.PreviousRank
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PreviousRank
+    path: ../Domain/Entities/Rank.cs
+    startLine: 77
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Entidade de navegação para o Rank anterior na hierarquia (para despromoção).
+
+    É nulo se este for o Rank mais baixo.
+  example: []
+  syntax:
+    content: public Rank? PreviousRank { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Rank
+    content.vb: Public Property PreviousRank As Rank
+  overload: Domain.Entities.Rank.PreviousRank*
+- uid: Domain.Entities.Rank.IdPreviousRank
+  commentId: P:Domain.Entities.Rank.IdPreviousRank
+  id: IdPreviousRank
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: IdPreviousRank
+  nameWithType: Rank.IdPreviousRank
+  fullName: Domain.Entities.Rank.IdPreviousRank
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IdPreviousRank
+    path: ../Domain/Entities/Rank.cs
+    startLine: 83
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    A Chave Estrangeira (FK) para o Rank anterior.
+
+    É nula se este for o Rank mais baixo.
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("PreviousRank")]
+
+      public Guid? IdPreviousRank { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: >-
+      <ForeignKey("PreviousRank")>
+
+      Public Property IdPreviousRank As Guid?
+  overload: Domain.Entities.Rank.IdPreviousRank*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PreviousRank
+- uid: Domain.Entities.Rank.#ctor
+  commentId: M:Domain.Entities.Rank.#ctor
+  id: '#ctor'
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: Rank()
+  nameWithType: Rank.Rank()
+  fullName: Domain.Entities.Rank.Rank()
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/Rank.cs
+    startLine: 89
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor padrão exigido pelo Entity Framework (EF).
+  example: []
+  syntax:
+    content: public Rank()
+    content.vb: Public Sub New()
+  overload: Domain.Entities.Rank.#ctor*
+  nameWithType.vb: Rank.New()
+  fullName.vb: Domain.Entities.Rank.New()
+  name.vb: New()
+- uid: Domain.Entities.Rank.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Domain.Entities.Rank,Domain.Entities.Rank)
+  commentId: M:Domain.Entities.Rank.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Domain.Entities.Rank,Domain.Entities.Rank)
+  id: '#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,Domain.Entities.Rank,Domain.Entities.Rank)'
+  parent: Domain.Entities.Rank
+  langs:
+  - csharp
+  - vb
+  name: Rank(string, int, int, int, int, Rank, Rank)
+  nameWithType: Rank.Rank(string, int, int, int, int, Rank, Rank)
+  fullName: Domain.Entities.Rank.Rank(string, int, int, int, int, Domain.Entities.Rank, Domain.Entities.Rank)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/Rank.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/Rank.cs
+    startLine: 101
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor utilizado para inicializar um novo nível de Rank.
+  example: []
+  syntax:
+    content: public Rank(string name, int winPoints, int drawPoints, int losePoints, int pointsToPromotion, Rank nextRank, Rank previousRank)
+    parameters:
+    - id: name
+      type: System.String
+      description: O nome do Rank.
+    - id: winPoints
+      type: System.Int32
+      description: Pontos atribuídos por vitória.
+    - id: drawPoints
+      type: System.Int32
+      description: Pontos atribuídos por empate.
+    - id: losePoints
+      type: System.Int32
+      description: Pontos perdidos por derrota.
+    - id: pointsToPromotion
+      type: System.Int32
+      description: Pontos necessários para entrar neste Rank.
+    - id: nextRank
+      type: Domain.Entities.Rank
+      description: A entidade do próximo Rank.
+    - id: previousRank
+      type: Domain.Entities.Rank
+      description: A entidade do Rank anterior.
+    content.vb: Public Sub New(name As String, winPoints As Integer, drawPoints As Integer, losePoints As Integer, pointsToPromotion As Integer, nextRank As Rank, previousRank As Rank)
+  overload: Domain.Entities.Rank.#ctor*
+  nameWithType.vb: Rank.New(String, Integer, Integer, Integer, Integer, Rank, Rank)
+  fullName.vb: Domain.Entities.Rank.New(String, Integer, Integer, Integer, Integer, Domain.Entities.Rank, Domain.Entities.Rank)
+  name.vb: New(String, Integer, Integer, Integer, Integer, Rank, Rank)
+references:
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Entities.Rank.Id*
+  commentId: Overload:Domain.Entities.Rank.Id
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_Id
+  name: Id
+  nameWithType: Rank.Id
+  fullName: Domain.Entities.Rank.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.Rank.Name*
+  commentId: Overload:Domain.Entities.Rank.Name
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_Name
+  name: Name
+  nameWithType: Rank.Name
+  fullName: Domain.Entities.Rank.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Entities.Rank.WinPoints*
+  commentId: Overload:Domain.Entities.Rank.WinPoints
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_WinPoints
+  name: WinPoints
+  nameWithType: Rank.WinPoints
+  fullName: Domain.Entities.Rank.WinPoints
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Entities.Rank.DrawPoints*
+  commentId: Overload:Domain.Entities.Rank.DrawPoints
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_DrawPoints
+  name: DrawPoints
+  nameWithType: Rank.DrawPoints
+  fullName: Domain.Entities.Rank.DrawPoints
+- uid: Domain.Entities.Rank.LosePoints*
+  commentId: Overload:Domain.Entities.Rank.LosePoints
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_LosePoints
+  name: LosePoints
+  nameWithType: Rank.LosePoints
+  fullName: Domain.Entities.Rank.LosePoints
+- uid: Domain.Entities.Rank.PointsToPromotion*
+  commentId: Overload:Domain.Entities.Rank.PointsToPromotion
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_PointsToPromotion
+  name: PointsToPromotion
+  nameWithType: Rank.PointsToPromotion
+  fullName: Domain.Entities.Rank.PointsToPromotion
+- uid: Domain.Entities.Rank.NextRank*
+  commentId: Overload:Domain.Entities.Rank.NextRank
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_NextRank
+  name: NextRank
+  nameWithType: Rank.NextRank
+  fullName: Domain.Entities.Rank.NextRank
+- uid: Domain.Entities.Rank
+  commentId: T:Domain.Entities.Rank
+  parent: Domain.Entities
+  href: Domain.Entities.Rank.html
+  name: Rank
+  nameWithType: Rank
+  fullName: Domain.Entities.Rank
+- uid: Domain.Entities.Rank.IdNextRank*
+  commentId: Overload:Domain.Entities.Rank.IdNextRank
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_IdNextRank
+  name: IdNextRank
+  nameWithType: Rank.IdNextRank
+  fullName: Domain.Entities.Rank.IdNextRank
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Rank.PreviousRank*
+  commentId: Overload:Domain.Entities.Rank.PreviousRank
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_PreviousRank
+  name: PreviousRank
+  nameWithType: Rank.PreviousRank
+  fullName: Domain.Entities.Rank.PreviousRank
+- uid: Domain.Entities.Rank.IdPreviousRank*
+  commentId: Overload:Domain.Entities.Rank.IdPreviousRank
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank_IdPreviousRank
+  name: IdPreviousRank
+  nameWithType: Rank.IdPreviousRank
+  fullName: Domain.Entities.Rank.IdPreviousRank
+- uid: Domain.Entities.Rank.#ctor*
+  commentId: Overload:Domain.Entities.Rank.#ctor
+  href: Domain.Entities.Rank.html#Domain_Entities_Rank__ctor
+  name: Rank
+  nameWithType: Rank.Rank
+  fullName: Domain.Entities.Rank.Rank
+  nameWithType.vb: Rank.New
+  fullName.vb: Domain.Entities.Rank.New
+  name.vb: New

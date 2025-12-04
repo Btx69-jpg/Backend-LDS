@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Unit.ApplicationTests.ServicesTests
+  commentId: N:Unit.ApplicationTests.ServicesTests
+  id: Unit.ApplicationTests.ServicesTests
+  children:
+  - Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  - Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  - Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  - Unit.ApplicationTests.ServicesTests.TeamServiceTests
+  langs:
+  - csharp
+  - vb
+  name: Unit.ApplicationTests.ServicesTests
+  nameWithType: Unit.ApplicationTests.ServicesTests
+  fullName: Unit.ApplicationTests.ServicesTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+  href: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html
+  name: MatchInviteServiceTests
+  nameWithType: MatchInviteServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests
+- uid: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MatchServiceTests
+  href: Unit.ApplicationTests.ServicesTests.MatchServiceTests.html
+  name: MatchServiceTests
+  nameWithType: MatchServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MatchServiceTests
+- uid: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+  href: Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html
+  name: MembershipServiceTests
+  nameWithType: MembershipServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.MembershipServiceTests
+- uid: Unit.ApplicationTests.ServicesTests.TeamServiceTests
+  commentId: T:Unit.ApplicationTests.ServicesTests.TeamServiceTests
+  href: Unit.ApplicationTests.ServicesTests.TeamServiceTests.html
+  name: TeamServiceTests
+  nameWithType: TeamServiceTests
+  fullName: Unit.ApplicationTests.ServicesTests.TeamServiceTests
