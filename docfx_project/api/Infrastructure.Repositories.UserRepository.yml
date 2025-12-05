@@ -1,0 +1,923 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Repositories.UserRepository
+  commentId: T:Infrastructure.Repositories.UserRepository
+  id: UserRepository
+  parent: Infrastructure.Repositories
+  children:
+  - Infrastructure.Repositories.UserRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  - Infrastructure.Repositories.UserRepository.GetAllUsersAsync
+  - Infrastructure.Repositories.UserRepository.GetUserByEmailAsync(System.String)
+  - Infrastructure.Repositories.UserRepository.GetUserByIdAsync(System.String)
+  - Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync(System.String)
+  - Infrastructure.Repositories.UserRepository.UpdatePlayer(Domain.Entities.Player)
+  langs:
+  - csharp
+  - vb
+  name: UserRepository
+  nameWithType: UserRepository
+  fullName: Infrastructure.Repositories.UserRepository
+  type: Class
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserRepository
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 13
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: >-
+    Repositório específico para operações de persistência de dados e consulta da entidade base [User].
+
+
+    Esta classe implementa o contrato [IUserRepository] e é utilizada para carregar dados de utilizadores
+
+    de forma agnóstica ao seu tipo (Player, SuperAdmin), usando a tabela base de herança.
+  example: []
+  syntax:
+    content: 'public class UserRepository : IUserRepository'
+    content.vb: Public Class UserRepository Implements IUserRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Repositories.IUserRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Infrastructure.Repositories.UserRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  commentId: M:Infrastructure.Repositories.UserRepository.#ctor(Infrastructure.Data.AmateurFootballContext)
+  id: '#ctor(Infrastructure.Data.AmateurFootballContext)'
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UserRepository(AmateurFootballContext)
+  nameWithType: UserRepository.UserRepository(AmateurFootballContext)
+  fullName: Infrastructure.Repositories.UserRepository.UserRepository(Infrastructure.Data.AmateurFootballContext)
+  type: Constructor
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 25
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Construtor da classe [UserRepository].
+  example: []
+  syntax:
+    content: public UserRepository(AmateurFootballContext context)
+    parameters:
+    - id: context
+      type: Infrastructure.Data.AmateurFootballContext
+      description: O contexto da base de dados (Db Context) injetado via Dependency Injection.
+    content.vb: Public Sub New(context As AmateurFootballContext)
+  overload: Infrastructure.Repositories.UserRepository.#ctor*
+  nameWithType.vb: UserRepository.New(AmateurFootballContext)
+  fullName.vb: Infrastructure.Repositories.UserRepository.New(Infrastructure.Data.AmateurFootballContext)
+  name.vb: New(AmateurFootballContext)
+- uid: Infrastructure.Repositories.UserRepository.GetAllUsersAsync
+  commentId: M:Infrastructure.Repositories.UserRepository.GetAllUsersAsync
+  id: GetAllUsersAsync
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllUsersAsync()
+  nameWithType: UserRepository.GetAllUsersAsync()
+  fullName: Infrastructure.Repositories.UserRepository.GetAllUsersAsync()
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllUsersAsync
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 34
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém uma lista de todos os utilizadores (SuperAdmin e Player).
+  example: []
+  syntax:
+    content: public Task<List<User>> GetAllUsersAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+      description: Uma lista de todas as entidades [User].
+    content.vb: Public Function GetAllUsersAsync() As Task(Of List(Of User))
+  overload: Infrastructure.Repositories.UserRepository.GetAllUsersAsync*
+  implements:
+  - Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+- uid: Infrastructure.Repositories.UserRepository.GetUserByIdAsync(System.String)
+  commentId: M:Infrastructure.Repositories.UserRepository.GetUserByIdAsync(System.String)
+  id: GetUserByIdAsync(System.String)
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByIdAsync(string)
+  nameWithType: UserRepository.GetUserByIdAsync(string)
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByIdAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByIdAsync
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 44
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um utilizador pelo seu identificador único (ID) de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<User?> GetUserByIdAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+      description: O ID (string) do utilizador a procurar.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+      description: A entidade [User] correspondente ou null.
+    content.vb: Public Function GetUserByIdAsync(userId As String) As Task(Of User)
+  overload: Infrastructure.Repositories.UserRepository.GetUserByIdAsync*
+  implements:
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  nameWithType.vb: UserRepository.GetUserByIdAsync(String)
+  fullName.vb: Infrastructure.Repositories.UserRepository.GetUserByIdAsync(String)
+  name.vb: GetUserByIdAsync(String)
+- uid: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync(System.String)
+  commentId: M:Infrastructure.Repositories.UserRepository.GetUserByEmailAsync(System.String)
+  id: GetUserByEmailAsync(System.String)
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByEmailAsync(string)
+  nameWithType: UserRepository.GetUserByEmailAsync(string)
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByEmailAsync
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 54
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um utilizador pelo seu endereço de e-mail de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<User?> GetUserByEmailAsync(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: O endereço de e-mail do utilizador.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+      description: A entidade [User] ou null.
+    content.vb: Public Function GetUserByEmailAsync(email As String) As Task(Of User)
+  overload: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync*
+  implements:
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  nameWithType.vb: UserRepository.GetUserByEmailAsync(String)
+  fullName.vb: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync(String)
+  name.vb: GetUserByEmailAsync(String)
+- uid: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync(System.String)
+  commentId: M:Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync(System.String)
+  id: GetUserByPhoneAsync(System.String)
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: GetUserByPhoneAsync(string)
+  nameWithType: UserRepository.GetUserByPhoneAsync(string)
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetUserByPhoneAsync
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 64
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Obtém um utilizador pelo seu número de telefone de forma assíncrona.
+  example: []
+  syntax:
+    content: public Task<User?> GetUserByPhoneAsync(string phone)
+    parameters:
+    - id: phone
+      type: System.String
+      description: O número de telefone completo.
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.User}
+      description: A entidade [User] ou null.
+    content.vb: Public Function GetUserByPhoneAsync(phone As String) As Task(Of User)
+  overload: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync*
+  implements:
+  - Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  nameWithType.vb: UserRepository.GetUserByPhoneAsync(String)
+  fullName.vb: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync(String)
+  name.vb: GetUserByPhoneAsync(String)
+- uid: Infrastructure.Repositories.UserRepository.UpdatePlayer(Domain.Entities.Player)
+  commentId: M:Infrastructure.Repositories.UserRepository.UpdatePlayer(Domain.Entities.Player)
+  id: UpdatePlayer(Domain.Entities.Player)
+  parent: Infrastructure.Repositories.UserRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdatePlayer(Player)
+  nameWithType: UserRepository.UpdatePlayer(Player)
+  fullName: Infrastructure.Repositories.UserRepository.UpdatePlayer(Domain.Entities.Player)
+  type: Method
+  source:
+    remote:
+      path: Infrastructure/Repositories/UserRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdatePlayer
+    path: ../Infrastructure/Repositories/UserRepository.cs
+    startLine: 73
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Repositories
+  summary: Marca uma entidade [Player] para ser atualizada na base de dados.
+  example: []
+  syntax:
+    content: public void UpdatePlayer(Player updatedPlayer)
+    parameters:
+    - id: updatedPlayer
+      type: Domain.Entities.Player
+      description: A entidade [Player] com os novos valores.
+    content.vb: Public Sub UpdatePlayer(updatedPlayer As Player)
+  overload: Infrastructure.Repositories.UserRepository.UpdatePlayer*
+references:
+- uid: Infrastructure.Repositories
+  commentId: N:Infrastructure.Repositories
+  href: Infrastructure.html
+  name: Infrastructure.Repositories
+  nameWithType: Infrastructure.Repositories
+  fullName: Infrastructure.Repositories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Repositories.IUserRepository
+  commentId: T:Application.Interfaces.Repositories.IUserRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IUserRepository.html
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Application.Interfaces.Repositories.IUserRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Infrastructure.Repositories.UserRepository.#ctor*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.#ctor
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository__ctor_Infrastructure_Data_AmateurFootballContext_
+  name: UserRepository
+  nameWithType: UserRepository.UserRepository
+  fullName: Infrastructure.Repositories.UserRepository.UserRepository
+  nameWithType.vb: UserRepository.New
+  fullName.vb: Infrastructure.Repositories.UserRepository.New
+  name.vb: New
+- uid: Infrastructure.Data.AmateurFootballContext
+  commentId: T:Infrastructure.Data.AmateurFootballContext
+  parent: Infrastructure.Data
+  href: Infrastructure.Data.AmateurFootballContext.html
+  name: AmateurFootballContext
+  nameWithType: AmateurFootballContext
+  fullName: Infrastructure.Data.AmateurFootballContext
+- uid: Infrastructure.Data
+  commentId: N:Infrastructure.Data
+  href: Infrastructure.html
+  name: Infrastructure.Data
+  nameWithType: Infrastructure.Data
+  fullName: Infrastructure.Data
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Data
+    name: Data
+    href: Infrastructure.Data.html
+- uid: Infrastructure.Repositories.UserRepository.GetAllUsersAsync*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.GetAllUsersAsync
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository_GetAllUsersAsync
+  name: GetAllUsersAsync
+  nameWithType: UserRepository.GetAllUsersAsync
+  fullName: Infrastructure.Repositories.UserRepository.GetAllUsersAsync
+- uid: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+  parent: Application.Interfaces.Repositories.IUserRepository
+  name: GetAllUsersAsync()
+  nameWithType: IUserRepository.GetAllUsersAsync()
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync()
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+    name: GetAllUsersAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetAllUsersAsync
+    name: GetAllUsersAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.User}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<User>>
+  nameWithType: Task<List<User>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.User>>
+  nameWithType.vb: Task(Of List(Of User))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.User))
+  name.vb: Task(Of List(Of User))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.User
+    name: User
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Infrastructure.Repositories.UserRepository.GetUserByIdAsync*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.GetUserByIdAsync
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository_GetUserByIdAsync_System_String_
+  name: GetUserByIdAsync
+  nameWithType: UserRepository.GetUserByIdAsync
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByIdAsync
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUserByIdAsync(string)
+  nameWithType: IUserRepository.GetUserByIdAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(string)
+  nameWithType.vb: IUserRepository.GetUserByIdAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(String)
+  name.vb: GetUserByIdAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+    name: GetUserByIdAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByIdAsync(System.String)
+    name: GetUserByIdAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{Domain.Entities.User}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.User}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<User>
+  nameWithType: Task<User>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.User>
+  nameWithType.vb: Task(Of User)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.User)
+  name.vb: Task(Of User)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.User
+    name: User
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.User
+    name: User
+  - name: )
+- uid: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.GetUserByEmailAsync
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository_GetUserByEmailAsync_System_String_
+  name: GetUserByEmailAsync
+  nameWithType: UserRepository.GetUserByEmailAsync
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByEmailAsync
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUserByEmailAsync(string)
+  nameWithType: IUserRepository.GetUserByEmailAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(string)
+  nameWithType.vb: IUserRepository.GetUserByEmailAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(String)
+  name.vb: GetUserByEmailAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+    name: GetUserByEmailAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByEmailAsync(System.String)
+    name: GetUserByEmailAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository_GetUserByPhoneAsync_System_String_
+  name: GetUserByPhoneAsync
+  nameWithType: UserRepository.GetUserByPhoneAsync
+  fullName: Infrastructure.Repositories.UserRepository.GetUserByPhoneAsync
+- uid: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+  parent: Application.Interfaces.Repositories.IUserRepository
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUserByPhoneAsync(string)
+  nameWithType: IUserRepository.GetUserByPhoneAsync(string)
+  fullName: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(string)
+  nameWithType.vb: IUserRepository.GetUserByPhoneAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(String)
+  name.vb: GetUserByPhoneAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+    name: GetUserByPhoneAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Repositories.IUserRepository.GetUserByPhoneAsync(System.String)
+    name: GetUserByPhoneAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Repositories.UserRepository.UpdatePlayer*
+  commentId: Overload:Infrastructure.Repositories.UserRepository.UpdatePlayer
+  href: Infrastructure.Repositories.UserRepository.html#Infrastructure_Repositories_UserRepository_UpdatePlayer_Domain_Entities_Player_
+  name: UpdatePlayer
+  nameWithType: UserRepository.UpdatePlayer
+  fullName: Infrastructure.Repositories.UserRepository.UpdatePlayer
+- uid: Domain.Entities.Player
+  commentId: T:Domain.Entities.Player
+  parent: Domain.Entities
+  href: Domain.Entities.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Domain.Entities.Player
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html

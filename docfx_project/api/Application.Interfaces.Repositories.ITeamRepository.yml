@@ -1,0 +1,1695 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  id: ITeamRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.ITeamRepository.AddAsync(Domain.Entities.Team)
+  - Application.Interfaces.Repositories.ITeamRepository.DeleteTeam(Domain.Entities.Team)
+  - Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync
+  - Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam
+  - Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  - Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer
+  - Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)
+  - Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(System.String)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(System.String)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)
+  - Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(System.Int32)
+  - Application.Interfaces.Repositories.ITeamRepository.UpdateTeam(Domain.Entities.Team)
+  langs:
+  - csharp
+  - vb
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ITeamRepository
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface ITeamRepository
+    content.vb: Public Interface ITeamRepository
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById(System.Guid)
+  id: GetOpponentTeamById(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetOpponentTeamById(Guid)
+  nameWithType: ITeamRepository.GetOpponentTeamById(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetOpponentTeamById
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<TeamDto> GetOpponentTeamById(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+    content.vb: Function GetOpponentTeamById(idTeam As Guid) As Task(Of TeamDto)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)
+  id: GetAdminsIdsByTeamIdAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAdminsIdsByTeamIdAsync(Guid)
+  nameWithType: ITeamRepository.GetAdminsIdsByTeamIdAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAdminsIdsByTeamIdAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<string>> GetAdminsIdsByTeamIdAsync(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+    content.vb: Function GetAdminsIdsByTeamIdAsync(teamId As Guid) As Task(Of List(Of String))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)
+  id: GetMemberIdsByTeamIdAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetMemberIdsByTeamIdAsync(Guid)
+  nameWithType: ITeamRepository.GetMemberIdsByTeamIdAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMemberIdsByTeamIdAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<string>> GetMemberIdsByTeamIdAsync(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+    content.vb: Function GetMemberIdsByTeamIdAsync(teamId As Guid) As Task(Of List(Of String))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync
+  id: GetAllTeamsAsync
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllTeamsAsync()
+  nameWithType: ITeamRepository.GetAllTeamsAsync()
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetAllTeamsAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<Team>?> GetAllTeamsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Team}}
+    content.vb: Function GetAllTeamsAsync() As Task(Of List(Of Team))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync(System.Guid)
+  id: GetTeamByIdAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByIdAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamByIdAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByIdAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamByIdAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(System.String)
+  id: GetTeamByNameAsync(System.String)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByNameAsync(string)
+  nameWithType: ITeamRepository.GetTeamByNameAsync(string)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByNameAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 20
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamByNameAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamByNameAsync(name As String) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync*
+  nameWithType.vb: ITeamRepository.GetTeamByNameAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync(String)
+  name.vb: GetTeamByNameAsync(String)
+- uid: Application.Interfaces.Repositories.ITeamRepository.DeleteTeam(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.DeleteTeam(Domain.Entities.Team)
+  id: DeleteTeam(Domain.Entities.Team)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteTeam(Team)
+  nameWithType: ITeamRepository.DeleteTeam(Team)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.DeleteTeam(Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteTeam
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 22
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: void DeleteTeam(Team teamToRemove)
+    parameters:
+    - id: teamToRemove
+      type: Domain.Entities.Team
+    content.vb: Sub DeleteTeam(teamToRemove As Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.DeleteTeam*
+- uid: Application.Interfaces.Repositories.ITeamRepository.UpdateTeam(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.UpdateTeam(Domain.Entities.Team)
+  id: UpdateTeam(Domain.Entities.Team)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateTeam(Team)
+  nameWithType: ITeamRepository.UpdateTeam(Team)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.UpdateTeam(Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UpdateTeam
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 24
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: void UpdateTeam(Team updatedTeam)
+    parameters:
+    - id: updatedTeam
+      type: Domain.Entities.Team
+    content.vb: Sub UpdateTeam(updatedTeam As Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.UpdateTeam*
+- uid: Application.Interfaces.Repositories.ITeamRepository.AddAsync(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.AddAsync(Domain.Entities.Team)
+  id: AddAsync(Domain.Entities.Team)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Team)
+  nameWithType: ITeamRepository.AddAsync(Team)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.AddAsync(Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: AddAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 26
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task AddAsync(Team team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddAsync(team As Team) As Task
+  overload: Application.Interfaces.Repositories.ITeamRepository.AddAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync(System.Guid)
+  id: GetTeamDetailsDtoAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamDetailsDtoAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamDetailsDtoAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamDetailsDtoAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 28
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<TeamDetailsDto?> GetTeamDetailsDtoAsync(Guid teamId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+    content.vb: Function GetTeamDetailsDtoAsync(teamId As Guid) As Task(Of TeamDetailsDto)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync(System.Guid)
+  id: GetTeamForMembershipRequestAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamForMembershipRequestAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamForMembershipRequestAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamForMembershipRequestAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 30
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamForMembershipRequestAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamForMembershipRequestAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync(System.Guid)
+  id: GetTeamForDeletionAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamForDeletionAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamForDeletionAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamForDeletionAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 32
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamForDeletionAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamForDeletionAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync(System.Guid)
+  id: GetTeamForUpdateAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamForUpdateAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamForUpdateAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamForUpdateAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 34
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamForUpdateAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamForUpdateAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(System.String)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(System.String)
+  id: GetTeamByNameWithMembersAsync(System.String)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByNameWithMembersAsync(string)
+  nameWithType: ITeamRepository.GetTeamByNameWithMembersAsync(string)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByNameWithMembersAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 36
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamByNameWithMembersAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamByNameWithMembersAsync(name As String) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync*
+  nameWithType.vb: ITeamRepository.GetTeamByNameWithMembersAsync(String)
+  fullName.vb: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync(String)
+  name.vb: GetTeamByNameWithMembersAsync(String)
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync(System.Guid)
+  id: GetTeamForMemberManagementAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamForMemberManagementAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamForMemberManagementAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamForMemberManagementAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 38
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamForMemberManagementAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamForMemberManagementAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)
+  id: GetTeamWitchMemberRankAndPitchAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamWitchMemberRankAndPitchAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamWitchMemberRankAndPitchAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 40
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamWitchMemberRankAndPitchAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamWitchMemberRankAndPitchAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync(System.Guid)
+  id: GetTeamByIdWithPitchAsync(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamByIdWithPitchAsync(Guid)
+  nameWithType: ITeamRepository.GetTeamByIdWithPitchAsync(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamByIdWithPitchAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 42
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetTeamByIdWithPitchAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetTeamByIdWithPitchAsync(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)
+  id: GetByIdWithReceivedInvitesAndCalendar(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdWithReceivedInvitesAndCalendar(Guid)
+  nameWithType: ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetByIdWithReceivedInvitesAndCalendar
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 44
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetByIdWithReceivedInvitesAndCalendar(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetByIdWithReceivedInvitesAndCalendar(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites(System.Guid)
+  id: GetByIdWithReceivedInvites(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdWithReceivedInvites(Guid)
+  nameWithType: ITeamRepository.GetByIdWithReceivedInvites(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetByIdWithReceivedInvites
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 46
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Team?> GetByIdWithReceivedInvites(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Team}
+    content.vb: Function GetByIdWithReceivedInvites(id As Guid) As Task(Of Team)
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  id: GetTeamPlayersDtoAsyncWithFilters(System.Guid,Application.DTOs.Filters.FilterTeamPlayers)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTeamPlayersDtoAsyncWithFilters(Guid, FilterTeamPlayers)
+  nameWithType: ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(Guid, FilterTeamPlayers)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters(System.Guid, Application.DTOs.Filters.FilterTeamPlayers)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTeamPlayersDtoAsyncWithFilters
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 48
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<PlayerDetailsDto>> GetTeamPlayersDtoAsyncWithFilters(Guid teamId, FilterTeamPlayers filter)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterTeamPlayers
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+    content.vb: Function GetTeamPlayersDtoAsyncWithFilters(teamId As Guid, filter As FilterTeamPlayers) As Task(Of List(Of PlayerDetailsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(System.Int32)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(System.Int32)
+  id: GetTopTeamsAsync(System.Int32)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTopTeamsAsync(int)
+  nameWithType: ITeamRepository.GetTopTeamsAsync(int)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(int)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetTopTeamsAsync
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 50
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<TeamLeaderboardDto>> GetTopTeamsAsync(int top)
+    parameters:
+    - id: top
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+    content.vb: Function GetTopTeamsAsync(top As Integer) As Task(Of List(Of TeamLeaderboardDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync*
+  nameWithType.vb: ITeamRepository.GetTopTeamsAsync(Integer)
+  fullName.vb: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync(Integer)
+  name.vb: GetTopTeamsAsync(Integer)
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer
+  id: GetListTeamsPlayer
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListTeamsPlayer()
+  nameWithType: ITeamRepository.GetListTeamsPlayer()
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeamsPlayer
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 52
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<InfoTeamsDto>> GetListTeamsPlayer()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Function GetListTeamsPlayer() As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)
+  id: GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListTeamsPlayersWithFilters(FilterListTeamDto)
+  nameWithType: ITeamRepository.GetListTeamsPlayersWithFilters(FilterListTeamDto)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters(Application.DTOs.Filters.FilterListTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeamsPlayersWithFilters
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 54
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<InfoTeamsDto>> GetListTeamsPlayersWithFilters(FilterListTeamDto filters)
+    parameters:
+    - id: filters
+      type: Application.DTOs.Filters.FilterListTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Function GetListTeamsPlayersWithFilters(filters As FilterListTeamDto) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams(System.Guid)
+  id: GetListTeamsForTeams(System.Guid)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListTeamsForTeams(Guid)
+  nameWithType: ITeamRepository.GetListTeamsForTeams(Guid)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeamsForTeams
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 56
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<InfoTeamsDto>> GetListTeamsForTeams(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Function GetListTeamsForTeams(idTeam As Guid) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  id: GetListTeamsByTeamsWithFilters(System.Guid,Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListTeamsByTeamsWithFilters(Guid, FilterListTeamDto)
+  nameWithType: ITeamRepository.GetListTeamsByTeamsWithFilters(Guid, FilterListTeamDto)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters(System.Guid, Application.DTOs.Filters.FilterListTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeamsByTeamsWithFilters
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 58
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<InfoTeamsDto>> GetListTeamsByTeamsWithFilters(Guid idTeam, FilterListTeamDto filters)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filters
+      type: Application.DTOs.Filters.FilterListTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Function GetListTeamsByTeamsWithFilters(idTeam As Guid, filters As FilterListTeamDto) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam
+  id: GetListPlayersWithoutTeam
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListPlayersWithoutTeam()
+  nameWithType: ITeamRepository.GetListPlayersWithoutTeam()
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListPlayersWithoutTeam
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 60
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<PlayerWithoutTeamInfoDto>> GetListPlayersWithoutTeam()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+    content.vb: Function GetListPlayersWithoutTeam() As Task(Of List(Of PlayerWithoutTeamInfoDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  id: GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListPlayersWithoutTeamtWithFilters(FilterTeamDto)
+  nameWithType: ITeamRepository.GetListPlayersWithoutTeamtWithFilters(FilterTeamDto)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters(Application.DTOs.Filters.FilterTeamDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListPlayersWithoutTeamtWithFilters
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 62
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<PlayerWithoutTeamInfoDto>> GetListPlayersWithoutTeamtWithFilters(FilterTeamDto filters)
+    parameters:
+    - id: filters
+      type: Application.DTOs.Filters.FilterTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+    content.vb: Function GetListPlayersWithoutTeamtWithFilters(filters As FilterTeamDto) As Task(Of List(Of PlayerWithoutTeamInfoDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters*
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  commentId: M:Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  id: GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  parent: Application.Interfaces.Repositories.ITeamRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListTeams(FilterListTeamDto?)
+  nameWithType: ITeamRepository.GetListTeams(FilterListTeamDto?)
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/ITeamRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetListTeams
+    path: ../Application/Interfaces/Repositories/ITeamRepository.cs
+    startLine: 64
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<List<InfoTeamsDto>> GetListTeams(FilterListTeamDto? filters)
+    parameters:
+    - id: filters
+      type: Application.DTOs.Filters.FilterListTeamDto
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+    content.vb: Function GetListTeams(filters As FilterListTeamDto) As Task(Of List(Of InfoTeamsDto))
+  overload: Application.Interfaces.Repositories.ITeamRepository.GetListTeams*
+  nameWithType.vb: ITeamRepository.GetListTeams(FilterListTeamDto)
+  fullName.vb: Application.Interfaces.Repositories.ITeamRepository.GetListTeams(Application.DTOs.Filters.FilterListTeamDto)
+  name.vb: GetListTeams(FilterListTeamDto)
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetOpponentTeamById_System_Guid_
+  name: GetOpponentTeamById
+  nameWithType: ITeamRepository.GetOpponentTeamById
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetOpponentTeamById
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Team.TeamDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TeamDto>
+  nameWithType: Task<TeamDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Team.TeamDto>
+  nameWithType.vb: Task(Of TeamDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Team.TeamDto)
+  name.vb: Task(Of TeamDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamDto
+    name: TeamDto
+    href: Application.DTOs.Team.TeamDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamDto
+    name: TeamDto
+    href: Application.DTOs.Team.TeamDto.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetAdminsIdsByTeamIdAsync_System_Guid_
+  name: GetAdminsIdsByTeamIdAsync
+  nameWithType: ITeamRepository.GetAdminsIdsByTeamIdAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetAdminsIdsByTeamIdAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<string>>
+  nameWithType: Task<List<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<string>>
+  nameWithType.vb: Task(Of List(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of String))
+  name.vb: Task(Of List(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetMemberIdsByTeamIdAsync_System_Guid_
+  name: GetMemberIdsByTeamIdAsync
+  nameWithType: ITeamRepository.GetMemberIdsByTeamIdAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetMemberIdsByTeamIdAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetAllTeamsAsync
+  name: GetAllTeamsAsync
+  nameWithType: ITeamRepository.GetAllTeamsAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetAllTeamsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Team}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Domain.Entities.Team}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Team>>
+  nameWithType: Task<List<Team>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Domain.Entities.Team>>
+  nameWithType.vb: Task(Of List(Of Team))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Domain.Entities.Team))
+  name.vb: Task(Of List(Of Team))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdAsync_System_Guid_
+  name: GetTeamByIdAsync
+  nameWithType: ITeamRepository.GetTeamByIdAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdAsync
+- uid: System.Threading.Tasks.Task{Domain.Entities.Team}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.Team}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Team>
+  nameWithType: Task<Team>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.Team>
+  nameWithType.vb: Task(Of Team)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.Team)
+  name.vb: Task(Of Team)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Team
+    name: Team
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameAsync_System_String_
+  name: GetTeamByNameAsync
+  nameWithType: ITeamRepository.GetTeamByNameAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Interfaces.Repositories.ITeamRepository.DeleteTeam*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.DeleteTeam
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_DeleteTeam_Domain_Entities_Team_
+  name: DeleteTeam
+  nameWithType: ITeamRepository.DeleteTeam
+  fullName: Application.Interfaces.Repositories.ITeamRepository.DeleteTeam
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Repositories.ITeamRepository.UpdateTeam*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.UpdateTeam
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_UpdateTeam_Domain_Entities_Team_
+  name: UpdateTeam
+  nameWithType: ITeamRepository.UpdateTeam
+  fullName: Application.Interfaces.Repositories.ITeamRepository.UpdateTeam
+- uid: Application.Interfaces.Repositories.ITeamRepository.AddAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.AddAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_AddAsync_Domain_Entities_Team_
+  name: AddAsync
+  nameWithType: ITeamRepository.AddAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.AddAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamDetailsDtoAsync_System_Guid_
+  name: GetTeamDetailsDtoAsync
+  nameWithType: ITeamRepository.GetTeamDetailsDtoAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamDetailsDtoAsync
+- uid: System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+  commentId: T:System.Threading.Tasks.Task{Application.DTOs.Team.TeamDetailsDto}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TeamDetailsDto>
+  nameWithType: Task<TeamDetailsDto>
+  fullName: System.Threading.Tasks.Task<Application.DTOs.Team.TeamDetailsDto>
+  nameWithType.vb: Task(Of TeamDetailsDto)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.DTOs.Team.TeamDetailsDto)
+  name.vb: Task(Of TeamDetailsDto)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamDetailsDto
+    name: TeamDetailsDto
+    href: Application.DTOs.Team.TeamDetailsDto.html
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamForMembershipRequestAsync_System_Guid_
+  name: GetTeamForMembershipRequestAsync
+  nameWithType: ITeamRepository.GetTeamForMembershipRequestAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMembershipRequestAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamForDeletionAsync_System_Guid_
+  name: GetTeamForDeletionAsync
+  nameWithType: ITeamRepository.GetTeamForDeletionAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForDeletionAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamForUpdateAsync_System_Guid_
+  name: GetTeamForUpdateAsync
+  nameWithType: ITeamRepository.GetTeamForUpdateAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForUpdateAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamByNameWithMembersAsync_System_String_
+  name: GetTeamByNameWithMembersAsync
+  nameWithType: ITeamRepository.GetTeamByNameWithMembersAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByNameWithMembersAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamForMemberManagementAsync_System_Guid_
+  name: GetTeamForMemberManagementAsync
+  nameWithType: ITeamRepository.GetTeamForMemberManagementAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamForMemberManagementAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamWitchMemberRankAndPitchAsync_System_Guid_
+  name: GetTeamWitchMemberRankAndPitchAsync
+  nameWithType: ITeamRepository.GetTeamWitchMemberRankAndPitchAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamWitchMemberRankAndPitchAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamByIdWithPitchAsync_System_Guid_
+  name: GetTeamByIdWithPitchAsync
+  nameWithType: ITeamRepository.GetTeamByIdWithPitchAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamByIdWithPitchAsync
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvitesAndCalendar_System_Guid_
+  name: GetByIdWithReceivedInvitesAndCalendar
+  nameWithType: ITeamRepository.GetByIdWithReceivedInvitesAndCalendar
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvitesAndCalendar
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetByIdWithReceivedInvites_System_Guid_
+  name: GetByIdWithReceivedInvites
+  nameWithType: ITeamRepository.GetByIdWithReceivedInvites
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetByIdWithReceivedInvites
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTeamPlayersDtoAsyncWithFilters_System_Guid_Application_DTOs_Filters_FilterTeamPlayers_
+  name: GetTeamPlayersDtoAsyncWithFilters
+  nameWithType: ITeamRepository.GetTeamPlayersDtoAsyncWithFilters
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTeamPlayersDtoAsyncWithFilters
+- uid: Application.DTOs.Filters.FilterTeamPlayers
+  commentId: T:Application.DTOs.Filters.FilterTeamPlayers
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamPlayers.html
+  name: FilterTeamPlayers
+  nameWithType: FilterTeamPlayers
+  fullName: Application.DTOs.Filters.FilterTeamPlayers
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.PlayerDTOs.PlayerDetailsDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlayerDetailsDto>>
+  nameWithType: Task<List<PlayerDetailsDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.PlayerDTOs.PlayerDetailsDto>>
+  nameWithType.vb: Task(Of List(Of PlayerDetailsDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.PlayerDTOs.PlayerDetailsDto))
+  name.vb: Task(Of List(Of PlayerDetailsDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+    name: PlayerDetailsDto
+    href: Application.DTOs.PlayerDTOs.PlayerDetailsDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.PlayerDTOs.PlayerDetailsDto
+    name: PlayerDetailsDto
+    href: Application.DTOs.PlayerDTOs.PlayerDetailsDto.html
+  - name: )
+  - name: )
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetTopTeamsAsync_System_Int32_
+  name: GetTopTeamsAsync
+  nameWithType: ITeamRepository.GetTopTeamsAsync
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetTopTeamsAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.TeamLeaderboardDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<TeamLeaderboardDto>>
+  nameWithType: Task<List<TeamLeaderboardDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Team.TeamLeaderboardDto>>
+  nameWithType.vb: Task(Of List(Of TeamLeaderboardDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Team.TeamLeaderboardDto))
+  name.vb: Task(Of List(Of TeamLeaderboardDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Team.TeamLeaderboardDto
+    name: TeamLeaderboardDto
+    href: Application.DTOs.Team.TeamLeaderboardDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.TeamLeaderboardDto
+    name: TeamLeaderboardDto
+    href: Application.DTOs.Team.TeamLeaderboardDto.html
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayer
+  name: GetListTeamsPlayer
+  nameWithType: ITeamRepository.GetListTeamsPlayer
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayer
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Team.InfoTeamsDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<InfoTeamsDto>>
+  nameWithType: Task<List<InfoTeamsDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Team.InfoTeamsDto>>
+  nameWithType.vb: Task(Of List(Of InfoTeamsDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Team.InfoTeamsDto))
+  name.vb: Task(Of List(Of InfoTeamsDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Team.InfoTeamsDto
+    name: InfoTeamsDto
+    href: Application.DTOs.Team.InfoTeamsDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Team.InfoTeamsDto
+    name: InfoTeamsDto
+    href: Application.DTOs.Team.InfoTeamsDto.html
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListTeamsPlayersWithFilters_Application_DTOs_Filters_FilterListTeamDto_
+  name: GetListTeamsPlayersWithFilters
+  nameWithType: ITeamRepository.GetListTeamsPlayersWithFilters
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsPlayersWithFilters
+- uid: Application.DTOs.Filters.FilterListTeamDto
+  commentId: T:Application.DTOs.Filters.FilterListTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterListTeamDto.html
+  name: FilterListTeamDto
+  nameWithType: FilterListTeamDto
+  fullName: Application.DTOs.Filters.FilterListTeamDto
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListTeamsForTeams_System_Guid_
+  name: GetListTeamsForTeams
+  nameWithType: ITeamRepository.GetListTeamsForTeams
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsForTeams
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListTeamsByTeamsWithFilters_System_Guid_Application_DTOs_Filters_FilterListTeamDto_
+  name: GetListTeamsByTeamsWithFilters
+  nameWithType: ITeamRepository.GetListTeamsByTeamsWithFilters
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeamsByTeamsWithFilters
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeam
+  name: GetListPlayersWithoutTeam
+  nameWithType: ITeamRepository.GetListPlayersWithoutTeam
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeam
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Player.PlayerWithoutTeamInfoDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlayerWithoutTeamInfoDto>>
+  nameWithType: Task<List<PlayerWithoutTeamInfoDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Player.PlayerWithoutTeamInfoDto>>
+  nameWithType.vb: Task(Of List(Of PlayerWithoutTeamInfoDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Player.PlayerWithoutTeamInfoDto))
+  name.vb: Task(Of List(Of PlayerWithoutTeamInfoDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+    name: PlayerWithoutTeamInfoDto
+    href: Application.DTOs.Player.PlayerWithoutTeamInfoDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Player.PlayerWithoutTeamInfoDto
+    name: PlayerWithoutTeamInfoDto
+    href: Application.DTOs.Player.PlayerWithoutTeamInfoDto.html
+  - name: )
+  - name: )
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListPlayersWithoutTeamtWithFilters_Application_DTOs_Filters_FilterTeamDto_
+  name: GetListPlayersWithoutTeamtWithFilters
+  nameWithType: ITeamRepository.GetListPlayersWithoutTeamtWithFilters
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListPlayersWithoutTeamtWithFilters
+- uid: Application.DTOs.Filters.FilterTeamDto
+  commentId: T:Application.DTOs.Filters.FilterTeamDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterTeamDto.html
+  name: FilterTeamDto
+  nameWithType: FilterTeamDto
+  fullName: Application.DTOs.Filters.FilterTeamDto
+- uid: Application.Interfaces.Repositories.ITeamRepository.GetListTeams*
+  commentId: Overload:Application.Interfaces.Repositories.ITeamRepository.GetListTeams
+  href: Application.Interfaces.Repositories.ITeamRepository.html#Application_Interfaces_Repositories_ITeamRepository_GetListTeams_Application_DTOs_Filters_FilterListTeamDto_
+  name: GetListTeams
+  nameWithType: ITeamRepository.GetListTeams
+  fullName: Application.Interfaces.Repositories.ITeamRepository.GetListTeams

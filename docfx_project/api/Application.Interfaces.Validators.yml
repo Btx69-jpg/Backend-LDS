@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  id: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.ICalendarValidator
+  - Application.Interfaces.Validators.IMatchInviteValidator
+  - Application.Interfaces.Validators.IMembershipValidator
+  - Application.Interfaces.Validators.IPlayerAuthorizationValidator
+  - Application.Interfaces.Validators.IPlayerValidator
+  - Application.Interfaces.Validators.ISuperAdminValidator
+  - Application.Interfaces.Validators.ITeamValidator
+  - Application.Interfaces.Validators.IUserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Validators.ICalendarValidator
+  commentId: T:Application.Interfaces.Validators.ICalendarValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ICalendarValidator.html
+  name: ICalendarValidator
+  nameWithType: ICalendarValidator
+  fullName: Application.Interfaces.Validators.ICalendarValidator
+- uid: Application.Interfaces.Validators.IMatchInviteValidator
+  commentId: T:Application.Interfaces.Validators.IMatchInviteValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html
+  name: IMatchInviteValidator
+  nameWithType: IMatchInviteValidator
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator
+- uid: Application.Interfaces.Validators.IMembershipValidator
+  commentId: T:Application.Interfaces.Validators.IMembershipValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IMembershipValidator.html
+  name: IMembershipValidator
+  nameWithType: IMembershipValidator
+  fullName: Application.Interfaces.Validators.IMembershipValidator
+- uid: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerAuthorizationValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IPlayerAuthorizationValidator.html
+  name: IPlayerAuthorizationValidator
+  nameWithType: IPlayerAuthorizationValidator
+  fullName: Application.Interfaces.Validators.IPlayerAuthorizationValidator
+- uid: Application.Interfaces.Validators.IPlayerValidator
+  commentId: T:Application.Interfaces.Validators.IPlayerValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IPlayerValidator.html
+  name: IPlayerValidator
+  nameWithType: IPlayerValidator
+  fullName: Application.Interfaces.Validators.IPlayerValidator
+- uid: Application.Interfaces.Validators.ISuperAdminValidator
+  commentId: T:Application.Interfaces.Validators.ISuperAdminValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ISuperAdminValidator.html
+  name: ISuperAdminValidator
+  nameWithType: ISuperAdminValidator
+  fullName: Application.Interfaces.Validators.ISuperAdminValidator
+- uid: Application.Interfaces.Validators.ITeamValidator
+  commentId: T:Application.Interfaces.Validators.ITeamValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.ITeamValidator.html
+  name: ITeamValidator
+  nameWithType: ITeamValidator
+  fullName: Application.Interfaces.Validators.ITeamValidator
+- uid: Application.Interfaces.Validators.IUserDataValidator
+  commentId: T:Application.Interfaces.Validators.IUserDataValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IUserDataValidator.html
+  name: IUserDataValidator
+  nameWithType: IUserDataValidator
+  fullName: Application.Interfaces.Validators.IUserDataValidator
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html

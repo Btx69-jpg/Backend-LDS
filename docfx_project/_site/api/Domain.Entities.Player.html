@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Player | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Player | docfx_project ">
+      
+      <meta name="description" content="Entidade que representa um jogador no sistema. Esta entidade herda de [User] e adiciona atributos espec&#237;ficos do contexto desportivo, como a Posi&#231;&#227;o, Altura e a afilia&#231;&#227;o &#224; equipa.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Domain_Entities_Player.md&amp;value=---%0Auid%3A%20Domain.Entities.Player%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Domain.Entities.Player">
+
+
+
+  <h1 id="Domain_Entities_Player" data-uid="Domain.Entities.Player" class="text-break">
+Class Player  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Domain.html">Domain</a>.<a class="xref" href="Domain.Entities.html">Entities</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Domain.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Entidade que representa um jogador no sistema.</p>
+<p>Esta entidade herda de [User] e adiciona atributos específicos do contexto desportivo,
+como a Posição, Altura e a afiliação à equipa.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Player : User</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Domain.Entities.User.html">User</a></div>
+      <div><span class="xref">Player</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_Id">User.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_Name">User.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_DateOfBirth">User.DateOfBirth</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_Address">User.Address</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_Email">User.Email</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_Phone">User.Phone</a>
+    </div>
+    <div>
+      <a class="xref" href="Domain.Entities.User.html#Domain_Entities_User_CreationDate">User.CreationDate</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Domain_Entities_Player__ctor_" data-uid="Domain.Entities.Player.#ctor*"></a>
+
+  <h3 id="Domain_Entities_Player__ctor" data-uid="Domain.Entities.Player.#ctor">
+  Player()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor padrão exigido pelo Entity Framework (EF).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player__ctor_" data-uid="Domain.Entities.Player.#ctor*"></a>
+
+  <h3 id="Domain_Entities_Player__ctor_System_String_System_String_System_DateOnly_System_String_System_String_System_String_Domain_Enums_Position_System_Int32_" data-uid="Domain.Entities.Player.#ctor(System.String,System.String,System.DateOnly,System.String,System.String,System.String,Domain.Enums.Position,System.Int32)">
+  Player(string, string, DateOnly, string, string, string, Position, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor utilizado para inicializar um novo perfil de Jogador.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player(string userId, string name, DateOnly dateOfBirth, string address, string email, string phoneNumber, Position position, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID único do utilizador (herdado de User/Firebase UID).</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O nome do jogador.</p>
+</dd>
+    <dt><code>dateOfBirth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dateonly">DateOnly</a></dt>
+    <dd><p>A data de nascimento.</p>
+</dd>
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A morada/localidade.</p>
+</dd>
+    <dt><code>email</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O email de contacto.</p>
+</dd>
+    <dt><code>phoneNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O número de telefone.</p>
+</dd>
+    <dt><code>position</code> <a class="xref" href="Domain.Enums.Position.html">Position</a></dt>
+    <dd><p>A posição principal em campo.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A altura em centímetros.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Domain_Entities_Player_Height_" data-uid="Domain.Entities.Player.Height*"></a>
+
+  <h3 id="Domain_Entities_Player_Height" data-uid="Domain.Entities.Player.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A altura do jogador em centímetros.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[Range(100, 250, ErrorMessage = &quot;Um jogador deve ter entre {0} e {1} centimetors&quot;)]
+public int Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>O valor deve estar dentro do intervalo definido por [ModelConstants.PlayerConst.MinHeight] e [ModelConstants.PlayerConst.MaxHeight].</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_IdTeam_" data-uid="Domain.Entities.Player.IdTeam*"></a>
+
+  <h3 id="Domain_Entities_Player_IdTeam" data-uid="Domain.Entities.Player.IdTeam">
+  IdTeam
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A Chave Estrangeira (FK) para a Equipa.
+É nula se o jogador não tiver equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ForeignKey(&quot;Team&quot;)]
+public Guid? IdTeam { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_IsAdmin_" data-uid="Domain.Entities.Player.IsAdmin*"></a>
+
+  <h3 id="Domain_Entities_Player_IsAdmin" data-uid="Domain.Entities.Player.IsAdmin">
+  IsAdmin
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag que indica se o jogador possui privilégios de administrador (Capitão/Staff de gestão) na sua equipa atual.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public bool IsAdmin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_IsAdminLastChangedAt_" data-uid="Domain.Entities.Player.IsAdminLastChangedAt*"></a>
+
+  <h3 id="Domain_Entities_Player_IsAdminLastChangedAt" data-uid="Domain.Entities.Player.IsAdminLastChangedAt">
+  IsAdminLastChangedAt
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Carimbo de data e hora da última vez que o estatuto de administração foi alterado (promovido/despromovido).
+É nulo se nunca foi alterado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? IsAdminLastChangedAt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_MembershipRequests_" data-uid="Domain.Entities.Player.MembershipRequests*"></a>
+
+  <h3 id="Domain_Entities_Player_MembershipRequests" data-uid="Domain.Entities.Player.MembershipRequests">
+  MembershipRequests
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coleção de pedidos de adesão (Membership Requests) que este jogador enviou ou recebeu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 2147483647, ErrorMessage = &quot;O n&#250;mero de convites tem de ser pelo menos 0&quot;)]
+public ICollection&lt;MembershipRequest&gt; MembershipRequests { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a>&gt;</dt>
+    <dd><p>O número de elementos na coleção deve ser não negativo.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_Position_" data-uid="Domain.Entities.Player.Position*"></a>
+
+  <h3 id="Domain_Entities_Player_Position" data-uid="Domain.Entities.Player.Position">
+  Position
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A posição principal do jogador em campo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public Position Position { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Domain.Enums.Position.html">Position</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Entities_Player_Team_" data-uid="Domain.Entities.Player.Team*"></a>
+
+  <h3 id="Domain_Entities_Player_Team" data-uid="Domain.Entities.Player.Team">
+  Team
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Entidade de navegação para a equipa à qual o jogador pertence atualmente.
+É nulo se o jogador for um agente livre (sem equipa).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Team? Team { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Domain.Entities.Team.html">Team</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Domain/Entities/Player.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

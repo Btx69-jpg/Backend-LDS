@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  commentId: N:Tests.Unit.ApplicationTests.BackGroundServiceTests
+  id: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  children:
+  - Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  - Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  nameWithType: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+  href: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.html
+  name: NotificationBackGroundServiceTests
+  nameWithType: NotificationBackGroundServiceTests
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests
+- uid: Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests
+  href: Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests.html
+  name: RankMatchMakerBackGroundServiceTests
+  nameWithType: RankMatchMakerBackGroundServiceTests
+  fullName: Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests

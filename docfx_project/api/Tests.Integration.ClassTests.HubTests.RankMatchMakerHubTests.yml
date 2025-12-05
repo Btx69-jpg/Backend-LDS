@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  id: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests
+  - Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  - Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests
+  href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests.html
+  name: CompetitiveMatchesControllerTests
+  nameWithType: CompetitiveMatchesControllerTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+  href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.html
+  name: RankMatchMakerBackGroundServicesTests
+  nameWithType: RankMatchMakerBackGroundServicesTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests
+- uid: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests.html
+  name: RankMatchMakerHubIntegrationTests
+  nameWithType: RankMatchMakerHubIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests

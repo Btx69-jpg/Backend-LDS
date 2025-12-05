@@ -1,0 +1,845 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.User
+  commentId: T:Domain.Entities.User
+  id: User
+  parent: Domain.Entities
+  children:
+  - Domain.Entities.User.#ctor
+  - Domain.Entities.User.#ctor(System.String,System.String,System.DateOnly,System.String,System.String,System.String)
+  - Domain.Entities.User.Address
+  - Domain.Entities.User.CreationDate
+  - Domain.Entities.User.DateOfBirth
+  - Domain.Entities.User.Email
+  - Domain.Entities.User.Id
+  - Domain.Entities.User.Name
+  - Domain.Entities.User.Phone
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: Domain.Entities.User
+  type: Class
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: User
+    path: ../Domain/Entities/User.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Classe abstrata base que representa um utilizador genérico no sistema.
+
+
+    Esta classe define as propriedades de identidade e contacto comuns a todos os tipos de utilizadores (Jogadores, Administradores, etc.).
+
+    É a base para a herança de outras entidades de utilizador (ex: Player, SuperAdmin).
+  example: []
+  syntax:
+    content: public abstract class User
+    content.vb: Public MustInherit Class User
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Domain.Entities.Player
+  - Domain.Entities.SuperAdmin
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Domain.Entities.User.Id
+  commentId: P:Domain.Entities.User.Id
+  id: Id
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: User.Id
+  fullName: Domain.Entities.User.Id
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Id
+    path: ../Domain/Entities/User.cs
+    startLine: 17
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O identificador único (UID) do utilizador.
+
+    Este campo é a chave primária e geralmente corresponde ao ID fornecido pelo Firebase Auth.
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      [MaxLength(128)]
+
+      public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Key>
+
+      <MaxLength(128)>
+
+      Public Property Id As String
+  overload: Domain.Entities.User.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 128
+- uid: Domain.Entities.User.Name
+  commentId: P:Domain.Entities.User.Name
+  id: Name
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: User.Name
+  fullName: Domain.Entities.User.Name
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Name
+    path: ../Domain/Entities/User.cs
+    startLine: 24
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O nome completo do utilizador.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(100, MinimumLength = 3)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(100, MinimumLength:=3)>
+
+      Public Property Name As String
+  overload: Domain.Entities.User.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 100
+    namedArguments:
+    - name: MinimumLength
+      type: System.Int32
+      value: 3
+- uid: Domain.Entities.User.DateOfBirth
+  commentId: P:Domain.Entities.User.DateOfBirth
+  id: DateOfBirth
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: DateOfBirth
+  nameWithType: User.DateOfBirth
+  fullName: Domain.Entities.User.DateOfBirth
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DateOfBirth
+    path: ../Domain/Entities/User.cs
+    startLine: 31
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: A data de nascimento do utilizador.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public DateOnly DateOfBirth { get; set; }
+    parameters: []
+    return:
+      type: System.DateOnly
+    content.vb: >-
+      <Required>
+
+      Public Property DateOfBirth As DateOnly
+  overload: Domain.Entities.User.DateOfBirth*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.User.Address
+  commentId: P:Domain.Entities.User.Address
+  id: Address
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: Address
+  nameWithType: User.Address
+  fullName: Domain.Entities.User.Address
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Address
+    path: ../Domain/Entities/User.cs
+    startLine: 37
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: A morada ou localização primária do utilizador.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(250, MinimumLength = 5)]
+
+      public string Address { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(250, MinimumLength:=5)>
+
+      Public Property Address As String
+  overload: Domain.Entities.User.Address*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 250
+    namedArguments:
+    - name: MinimumLength
+      type: System.Int32
+      value: 5
+- uid: Domain.Entities.User.Email
+  commentId: P:Domain.Entities.User.Email
+  id: Email
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: User.Email
+  fullName: Domain.Entities.User.Email
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Email
+    path: ../Domain/Entities/User.cs
+    startLine: 44
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O endereço de correio eletrónico do utilizador.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(256, MinimumLength = 4)]
+
+      [EmailAddress(ErrorMessage = "Invalid email format")]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(256, MinimumLength:=4)>
+
+      <EmailAddress(ErrorMessage:="Invalid email format")>
+
+      Public Property Email As String
+  overload: Domain.Entities.User.Email*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 256
+    namedArguments:
+    - name: MinimumLength
+      type: System.Int32
+      value: 4
+  - type: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+    ctor: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Invalid email format
+- uid: Domain.Entities.User.Phone
+  commentId: P:Domain.Entities.User.Phone
+  id: Phone
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: Phone
+  nameWithType: User.Phone
+  fullName: Domain.Entities.User.Phone
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Phone
+    path: ../Domain/Entities/User.cs
+    startLine: 52
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O número de telefone do utilizador, incluindo o código do país.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(13, ErrorMessage = "Phone number must have 13 digits")]
+
+      public string Phone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(13, ErrorMessage:="Phone number must have 13 digits")>
+
+      Public Property Phone As String
+  overload: Domain.Entities.User.Phone*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 13
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Phone number must have 13 digits
+- uid: Domain.Entities.User.CreationDate
+  commentId: P:Domain.Entities.User.CreationDate
+  id: CreationDate
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: User.CreationDate
+  fullName: Domain.Entities.User.CreationDate
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreationDate
+    path: ../Domain/Entities/User.cs
+    startLine: 59
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O carimbo de data e hora da criação do perfil.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public DateTime CreationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <Required>
+
+      Public Property CreationDate As Date
+  overload: Domain.Entities.User.CreationDate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.User.#ctor
+  commentId: M:Domain.Entities.User.#ctor
+  id: '#ctor'
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: User()
+  nameWithType: User.User()
+  fullName: Domain.Entities.User.User()
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/User.cs
+    startLine: 66
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Construtor protegido exigido pelo Entity Framework (EF) para inicialização.
+
+    Utilizado apenas pelas classes que herdam de [User].
+  example: []
+  syntax:
+    content: protected User()
+    content.vb: Protected Sub New()
+  overload: Domain.Entities.User.#ctor*
+  nameWithType.vb: User.New()
+  fullName.vb: Domain.Entities.User.New()
+  name.vb: New()
+- uid: Domain.Entities.User.#ctor(System.String,System.String,System.DateOnly,System.String,System.String,System.String)
+  commentId: M:Domain.Entities.User.#ctor(System.String,System.String,System.DateOnly,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.DateOnly,System.String,System.String,System.String)'
+  parent: Domain.Entities.User
+  langs:
+  - csharp
+  - vb
+  name: User(string, string, DateOnly, string, string, string)
+  nameWithType: User.User(string, string, DateOnly, string, string, string)
+  fullName: Domain.Entities.User.User(string, string, System.DateOnly, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/User.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/User.cs
+    startLine: 77
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor principal utilizado para inicializar um novo perfil de utilizador.
+  example: []
+  syntax:
+    content: public User(string Id, string name, DateOnly dateOfBirth, string address, string email, string phone)
+    parameters:
+    - id: Id
+      type: System.String
+      description: O ID único do utilizador (geralmente o UID do Firebase).
+    - id: name
+      type: System.String
+      description: O nome completo.
+    - id: dateOfBirth
+      type: System.DateOnly
+      description: A data de nascimento.
+    - id: address
+      type: System.String
+      description: A morada.
+    - id: email
+      type: System.String
+      description: O email.
+    - id: phone
+      type: System.String
+      description: O número de telefone.
+    content.vb: Public Sub New(Id As String, name As String, dateOfBirth As DateOnly, address As String, email As String, phone As String)
+  overload: Domain.Entities.User.#ctor*
+  nameWithType.vb: User.New(String, String, DateOnly, String, String, String)
+  fullName.vb: Domain.Entities.User.New(String, String, System.DateOnly, String, String, String)
+  name.vb: New(String, String, DateOnly, String, String, String)
+references:
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Entities.User.Id*
+  commentId: Overload:Domain.Entities.User.Id
+  href: Domain.Entities.User.html#Domain_Entities_User_Id
+  name: Id
+  nameWithType: User.Id
+  fullName: Domain.Entities.User.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Entities.User.Name*
+  commentId: Overload:Domain.Entities.User.Name
+  href: Domain.Entities.User.html#Domain_Entities_User_Name
+  name: Name
+  nameWithType: User.Name
+  fullName: Domain.Entities.User.Name
+- uid: Domain.Entities.User.DateOfBirth*
+  commentId: Overload:Domain.Entities.User.DateOfBirth
+  href: Domain.Entities.User.html#Domain_Entities_User_DateOfBirth
+  name: DateOfBirth
+  nameWithType: User.DateOfBirth
+  fullName: Domain.Entities.User.DateOfBirth
+- uid: System.DateOnly
+  commentId: T:System.DateOnly
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly
+  nameWithType: DateOnly
+  fullName: System.DateOnly
+- uid: Domain.Entities.User.Address*
+  commentId: Overload:Domain.Entities.User.Address
+  href: Domain.Entities.User.html#Domain_Entities_User_Address
+  name: Address
+  nameWithType: User.Address
+  fullName: Domain.Entities.User.Address
+- uid: Domain.Entities.User.Email*
+  commentId: Overload:Domain.Entities.User.Email
+  href: Domain.Entities.User.html#Domain_Entities_User_Email
+  name: Email
+  nameWithType: User.Email
+  fullName: Domain.Entities.User.Email
+- uid: Domain.Entities.User.Phone*
+  commentId: Overload:Domain.Entities.User.Phone
+  href: Domain.Entities.User.html#Domain_Entities_User_Phone
+  name: Phone
+  nameWithType: User.Phone
+  fullName: Domain.Entities.User.Phone
+- uid: Domain.Entities.User.CreationDate*
+  commentId: Overload:Domain.Entities.User.CreationDate
+  href: Domain.Entities.User.html#Domain_Entities_User_CreationDate
+  name: CreationDate
+  nameWithType: User.CreationDate
+  fullName: Domain.Entities.User.CreationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Domain.Entities.User.#ctor*
+  commentId: Overload:Domain.Entities.User.#ctor
+  href: Domain.Entities.User.html#Domain_Entities_User__ctor
+  name: User
+  nameWithType: User.User
+  fullName: Domain.Entities.User.User
+  nameWithType.vb: User.New
+  fullName.vb: Domain.Entities.User.New
+  name.vb: New

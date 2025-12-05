@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs
+  commentId: N:Application.DTOs
+  id: Application.DTOs
+  children:
+  - Application.DTOs.FirebaseLoginResponseDto
+  - Application.DTOs.LoginDto
+  - Application.DTOs.LoginResponseDto
+  - Application.DTOs.ProfileSetupDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs
+  nameWithType: Application.DTOs
+  fullName: Application.DTOs
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.FirebaseLoginResponseDto
+  commentId: T:Application.DTOs.FirebaseLoginResponseDto
+  parent: Application.DTOs
+  href: Application.DTOs.FirebaseLoginResponseDto.html
+  name: FirebaseLoginResponseDto
+  nameWithType: FirebaseLoginResponseDto
+  fullName: Application.DTOs.FirebaseLoginResponseDto
+- uid: Application.DTOs.LoginDto
+  commentId: T:Application.DTOs.LoginDto
+  parent: Application.DTOs
+  href: Application.DTOs.LoginDto.html
+  name: LoginDto
+  nameWithType: LoginDto
+  fullName: Application.DTOs.LoginDto
+- uid: Application.DTOs.LoginResponseDto
+  commentId: T:Application.DTOs.LoginResponseDto
+  parent: Application.DTOs
+  href: Application.DTOs.LoginResponseDto.html
+  name: LoginResponseDto
+  nameWithType: LoginResponseDto
+  fullName: Application.DTOs.LoginResponseDto
+- uid: Application.DTOs.ProfileSetupDto
+  commentId: T:Application.DTOs.ProfileSetupDto
+  href: Application.DTOs.ProfileSetupDto.html
+  name: ProfileSetupDto
+  nameWithType: ProfileSetupDto
+  fullName: Application.DTOs.ProfileSetupDto
+- uid: Application.DTOs
+  commentId: N:Application.DTOs
+  href: Application.html
+  name: Application.DTOs
+  nameWithType: Application.DTOs
+  fullName: Application.DTOs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html

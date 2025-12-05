@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.TeamStatistics
+  commentId: T:Domain.Entities.TeamStatistics
+  id: TeamStatistics
+  parent: Domain.Entities
+  children:
+  - Domain.Entities.TeamStatistics.#ctor
+  - Domain.Entities.TeamStatistics.#ctor(Domain.Entities.Team)
+  - Domain.Entities.TeamStatistics.Id
+  - Domain.Entities.TeamStatistics.IdTeam
+  - Domain.Entities.TeamStatistics.Match
+  - Domain.Entities.TeamStatistics.MatchResult
+  - Domain.Entities.TeamStatistics.MatchesId
+  - Domain.Entities.TeamStatistics.NumGoals
+  - Domain.Entities.TeamStatistics.Team
+  langs:
+  - csharp
+  - vb
+  name: TeamStatistics
+  nameWithType: TeamStatistics
+  fullName: Domain.Entities.TeamStatistics
+  type: Class
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TeamStatistics
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 13
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Entidade que representa as estatísticas e o resultado de uma equipa durante uma partida específica.
+
+
+    Esta entidade armazena o número de golos e o resultado final (Vitória, Derrota, Empate)
+
+    em relação ao jogo em que participou.
+  example: []
+  syntax:
+    content: public class TeamStatistics
+    content.vb: Public Class TeamStatistics
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Domain.Entities.TeamStatistics.Id
+  commentId: P:Domain.Entities.TeamStatistics.Id
+  id: Id
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TeamStatistics.Id
+  fullName: Domain.Entities.TeamStatistics.Id
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Id
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 19
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O identificador único (GUID) do registo de estatísticas.
+
+    Serve como a chave primária da entidade.
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key>
+
+      Public Property Id As Guid
+  overload: Domain.Entities.TeamStatistics.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.TeamStatistics.Team
+  commentId: P:Domain.Entities.TeamStatistics.Team
+  id: Team
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: Team
+  nameWithType: TeamStatistics.Team
+  fullName: Domain.Entities.TeamStatistics.Team
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Team
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 25
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Entidade de navegação para a Equipa à qual estas estatísticas pertencem.
+  example: []
+  syntax:
+    content: public Team Team { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Team
+    content.vb: Public Property Team As Team
+  overload: Domain.Entities.TeamStatistics.Team*
+- uid: Domain.Entities.TeamStatistics.IdTeam
+  commentId: P:Domain.Entities.TeamStatistics.IdTeam
+  id: IdTeam
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: IdTeam
+  nameWithType: TeamStatistics.IdTeam
+  fullName: Domain.Entities.TeamStatistics.IdTeam
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IdTeam
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 30
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: A Chave Estrangeira (FK) para a Equipa.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [ForeignKey("Team")]
+
+      public Guid IdTeam { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      <ForeignKey("Team")>
+
+      Public Property IdTeam As Guid
+  overload: Domain.Entities.TeamStatistics.IdTeam*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Team
+- uid: Domain.Entities.TeamStatistics.NumGoals
+  commentId: P:Domain.Entities.TeamStatistics.NumGoals
+  id: NumGoals
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: NumGoals
+  nameWithType: TeamStatistics.NumGoals
+  fullName: Domain.Entities.TeamStatistics.NumGoals
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NumGoals
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 38
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: O número de golos marcados pela equipa nesta partida.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [Range(0, 100, ErrorMessage = "O número de golos deve estar entre 0 e 100")]
+
+      public int NumGoals { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: O valor deve estar dentro do intervalo permitido (0 a 100).
+    content.vb: >-
+      <Required>
+
+      <Range(0, 100, ErrorMessage:="O número de golos deve estar entre 0 e 100")>
+
+      Public Property NumGoals As Integer
+  overload: Domain.Entities.TeamStatistics.NumGoals*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.RangeAttribute
+    ctor: System.ComponentModel.DataAnnotations.RangeAttribute.#ctor(System.Int32,System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+    - type: System.Int32
+      value: 100
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: O número de golos deve estar entre 0 e 100
+- uid: Domain.Entities.TeamStatistics.MatchesId
+  commentId: P:Domain.Entities.TeamStatistics.MatchesId
+  id: MatchesId
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: MatchesId
+  nameWithType: TeamStatistics.MatchesId
+  fullName: Domain.Entities.TeamStatistics.MatchesId
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchesId
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 45
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: A Chave Estrangeira (FK) para a Partida ([Matches]) à qual estas estatísticas pertencem.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [ForeignKey("Match")]
+
+      public Guid MatchesId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      <ForeignKey("Match")>
+
+      Public Property MatchesId As Guid
+  overload: Domain.Entities.TeamStatistics.MatchesId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Match
+- uid: Domain.Entities.TeamStatistics.Match
+  commentId: P:Domain.Entities.TeamStatistics.Match
+  id: Match
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: Match
+  nameWithType: TeamStatistics.Match
+  fullName: Domain.Entities.TeamStatistics.Match
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Match
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 52
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Entidade de navegação para a Partida ([Matches]) associada.
+  example: []
+  syntax:
+    content: public Matches Match { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Matches
+    content.vb: Public Property Match As Matches
+  overload: Domain.Entities.TeamStatistics.Match*
+- uid: Domain.Entities.TeamStatistics.MatchResult
+  commentId: P:Domain.Entities.TeamStatistics.MatchResult
+  id: MatchResult
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: MatchResult
+  nameWithType: TeamStatistics.MatchResult
+  fullName: Domain.Entities.TeamStatistics.MatchResult
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchResult
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 58
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O resultado final da equipa nesta partida (Vitória, Derrota, Empate ou Não Jogado).
+
+    Padrão: [MatchResult.UNPLAYED].
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public MatchResult MatchResult { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.MatchResult
+    content.vb: >-
+      <Required>
+
+      Public Property MatchResult As MatchResult
+  overload: Domain.Entities.TeamStatistics.MatchResult*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.TeamStatistics.#ctor
+  commentId: M:Domain.Entities.TeamStatistics.#ctor
+  id: '#ctor'
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: TeamStatistics()
+  nameWithType: TeamStatistics.TeamStatistics()
+  fullName: Domain.Entities.TeamStatistics.TeamStatistics()
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 64
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor padrão exigido pelo Entity Framework (EF).
+  example: []
+  syntax:
+    content: public TeamStatistics()
+    content.vb: Public Sub New()
+  overload: Domain.Entities.TeamStatistics.#ctor*
+  nameWithType.vb: TeamStatistics.New()
+  fullName.vb: Domain.Entities.TeamStatistics.New()
+  name.vb: New()
+- uid: Domain.Entities.TeamStatistics.#ctor(Domain.Entities.Team)
+  commentId: M:Domain.Entities.TeamStatistics.#ctor(Domain.Entities.Team)
+  id: '#ctor(Domain.Entities.Team)'
+  parent: Domain.Entities.TeamStatistics
+  langs:
+  - csharp
+  - vb
+  name: TeamStatistics(Team)
+  nameWithType: TeamStatistics.TeamStatistics(Team)
+  fullName: Domain.Entities.TeamStatistics.TeamStatistics(Domain.Entities.Team)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/TeamStatistics.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/TeamStatistics.cs
+    startLine: 70
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor utilizado para inicializar a entidade com a Equipa associada.
+  example: []
+  syntax:
+    content: public TeamStatistics(Team team)
+    parameters:
+    - id: team
+      type: Domain.Entities.Team
+      description: A equipa para a qual estas estatísticas serão registadas.
+    content.vb: Public Sub New(team As Team)
+  overload: Domain.Entities.TeamStatistics.#ctor*
+  nameWithType.vb: TeamStatistics.New(Team)
+  fullName.vb: Domain.Entities.TeamStatistics.New(Domain.Entities.Team)
+  name.vb: New(Team)
+references:
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Entities.TeamStatistics.Id*
+  commentId: Overload:Domain.Entities.TeamStatistics.Id
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_Id
+  name: Id
+  nameWithType: TeamStatistics.Id
+  fullName: Domain.Entities.TeamStatistics.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.TeamStatistics.Team*
+  commentId: Overload:Domain.Entities.TeamStatistics.Team
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_Team
+  name: Team
+  nameWithType: TeamStatistics.Team
+  fullName: Domain.Entities.TeamStatistics.Team
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities.TeamStatistics.IdTeam*
+  commentId: Overload:Domain.Entities.TeamStatistics.IdTeam
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_IdTeam
+  name: IdTeam
+  nameWithType: TeamStatistics.IdTeam
+  fullName: Domain.Entities.TeamStatistics.IdTeam
+- uid: Domain.Entities.TeamStatistics.NumGoals*
+  commentId: Overload:Domain.Entities.TeamStatistics.NumGoals
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_NumGoals
+  name: NumGoals
+  nameWithType: TeamStatistics.NumGoals
+  fullName: Domain.Entities.TeamStatistics.NumGoals
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Entities.TeamStatistics.MatchesId*
+  commentId: Overload:Domain.Entities.TeamStatistics.MatchesId
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_MatchesId
+  name: MatchesId
+  nameWithType: TeamStatistics.MatchesId
+  fullName: Domain.Entities.TeamStatistics.MatchesId
+- uid: Domain.Entities.TeamStatistics.Match*
+  commentId: Overload:Domain.Entities.TeamStatistics.Match
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_Match
+  name: Match
+  nameWithType: TeamStatistics.Match
+  fullName: Domain.Entities.TeamStatistics.Match
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: Domain.Entities.TeamStatistics.MatchResult*
+  commentId: Overload:Domain.Entities.TeamStatistics.MatchResult
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics_MatchResult
+  name: MatchResult
+  nameWithType: TeamStatistics.MatchResult
+  fullName: Domain.Entities.TeamStatistics.MatchResult
+- uid: Domain.Enums.MatchResult
+  commentId: T:Domain.Enums.MatchResult
+  parent: Domain.Enums
+  href: Domain.Enums.MatchResult.html
+  name: MatchResult
+  nameWithType: MatchResult
+  fullName: Domain.Enums.MatchResult
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Entities.TeamStatistics.#ctor*
+  commentId: Overload:Domain.Entities.TeamStatistics.#ctor
+  href: Domain.Entities.TeamStatistics.html#Domain_Entities_TeamStatistics__ctor
+  name: TeamStatistics
+  nameWithType: TeamStatistics.TeamStatistics
+  fullName: Domain.Entities.TeamStatistics.TeamStatistics
+  nameWithType.vb: TeamStatistics.New
+  fullName.vb: Domain.Entities.TeamStatistics.New
+  name.vb: New

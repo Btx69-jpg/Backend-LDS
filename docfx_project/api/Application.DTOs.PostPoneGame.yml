@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.PostPoneGame
+  commentId: N:Application.DTOs.PostPoneGame
+  id: Application.DTOs.PostPoneGame
+  children:
+  - Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  - Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  - Application.DTOs.PostPoneGame.PostPoneMatchDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.PostPoneGame
+  nameWithType: Application.DTOs.PostPoneGame
+  fullName: Application.DTOs.PostPoneGame
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  commentId: T:Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html
+  name: AcceptRefusePostPoneDto
+  nameWithType: AcceptRefusePostPoneDto
+  fullName: Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto
+- uid: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  commentId: T:Application.DTOs.PostPoneGame.InfoPostPoneMatch
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.InfoPostPoneMatch.html
+  name: InfoPostPoneMatch
+  nameWithType: InfoPostPoneMatch
+  fullName: Application.DTOs.PostPoneGame.InfoPostPoneMatch
+- uid: Application.DTOs.PostPoneGame.PostPoneMatchDto
+  commentId: T:Application.DTOs.PostPoneGame.PostPoneMatchDto
+  parent: Application.DTOs.PostPoneGame
+  href: Application.DTOs.PostPoneGame.PostPoneMatchDto.html
+  name: PostPoneMatchDto
+  nameWithType: PostPoneMatchDto
+  fullName: Application.DTOs.PostPoneGame.PostPoneMatchDto
+- uid: Application.DTOs.PostPoneGame
+  commentId: N:Application.DTOs.PostPoneGame
+  href: Application.html
+  name: Application.DTOs.PostPoneGame
+  nameWithType: Application.DTOs.PostPoneGame
+  fullName: Application.DTOs.PostPoneGame
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.PostPoneGame
+    name: PostPoneGame
+    href: Application.DTOs.PostPoneGame.html

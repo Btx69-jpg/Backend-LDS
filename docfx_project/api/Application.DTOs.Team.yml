@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Team
+  commentId: N:Application.DTOs.Team
+  id: Application.DTOs.Team
+  children:
+  - Application.DTOs.Team.CreateTeamDto
+  - Application.DTOs.Team.InfoTeamsDto
+  - Application.DTOs.Team.TeamDetailsDto
+  - Application.DTOs.Team.TeamDto
+  - Application.DTOs.Team.TeamLeaderboardDto
+  - Application.DTOs.Team.TeamStatisticsDto
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Team
+  nameWithType: Application.DTOs.Team
+  fullName: Application.DTOs.Team
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Team.CreateTeamDto
+  commentId: T:Application.DTOs.Team.CreateTeamDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.CreateTeamDto.html
+  name: CreateTeamDto
+  nameWithType: CreateTeamDto
+  fullName: Application.DTOs.Team.CreateTeamDto
+- uid: Application.DTOs.Team.InfoTeamsDto
+  commentId: T:Application.DTOs.Team.InfoTeamsDto
+  href: Application.DTOs.Team.InfoTeamsDto.html
+  name: InfoTeamsDto
+  nameWithType: InfoTeamsDto
+  fullName: Application.DTOs.Team.InfoTeamsDto
+- uid: Application.DTOs.Team.TeamDetailsDto
+  commentId: T:Application.DTOs.Team.TeamDetailsDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.TeamDetailsDto.html
+  name: TeamDetailsDto
+  nameWithType: TeamDetailsDto
+  fullName: Application.DTOs.Team.TeamDetailsDto
+- uid: Application.DTOs.Team.TeamDto
+  commentId: T:Application.DTOs.Team.TeamDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.TeamDto.html
+  name: TeamDto
+  nameWithType: TeamDto
+  fullName: Application.DTOs.Team.TeamDto
+- uid: Application.DTOs.Team.TeamLeaderboardDto
+  commentId: T:Application.DTOs.Team.TeamLeaderboardDto
+  href: Application.DTOs.Team.TeamLeaderboardDto.html
+  name: TeamLeaderboardDto
+  nameWithType: TeamLeaderboardDto
+  fullName: Application.DTOs.Team.TeamLeaderboardDto
+- uid: Application.DTOs.Team.TeamStatisticsDto
+  commentId: T:Application.DTOs.Team.TeamStatisticsDto
+  parent: Application.DTOs.Team
+  href: Application.DTOs.Team.TeamStatisticsDto.html
+  name: TeamStatisticsDto
+  nameWithType: TeamStatisticsDto
+  fullName: Application.DTOs.Team.TeamStatisticsDto
+- uid: Application.DTOs.Team
+  commentId: N:Application.DTOs.Team
+  href: Application.html
+  name: Application.DTOs.Team
+  nameWithType: Application.DTOs.Team
+  fullName: Application.DTOs.Team
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Team
+    name: Team
+    href: Application.DTOs.Team.html

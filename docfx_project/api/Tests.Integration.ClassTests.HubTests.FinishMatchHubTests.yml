@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  commentId: N:Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  id: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  children:
+  - Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests
+  - Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  nameWithType: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  fullName: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests.html
+  name: FinishMatchControllerIntegrationTests
+  nameWithType: FinishMatchControllerIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests
+- uid: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests
+  commentId: T:Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests
+  href: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests.html
+  name: FinishMatchIntegrationTests
+  nameWithType: FinishMatchIntegrationTests
+  fullName: Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests

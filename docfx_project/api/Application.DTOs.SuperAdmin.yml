@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  id: Application.DTOs.SuperAdmin
+  children:
+  - Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  - Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+  - Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html
+  name: CreateSuperAdminDTO
+  nameWithType: CreateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.CreateSuperAdminDTO
+- uid: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+  commentId: T:Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO.html
+  name: SuperAdminDetailsDTO
+  nameWithType: SuperAdminDetailsDTO
+  fullName: Application.DTOs.SuperAdmin.SuperAdminDetailsDTO
+- uid: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  commentId: T:Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+  parent: Application.DTOs.SuperAdmin
+  href: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html
+  name: UpdateSuperAdminDTO
+  nameWithType: UpdateSuperAdminDTO
+  fullName: Application.DTOs.SuperAdmin.UpdateSuperAdminDTO
+- uid: Application.DTOs.SuperAdmin
+  commentId: N:Application.DTOs.SuperAdmin
+  href: Application.html
+  name: Application.DTOs.SuperAdmin
+  nameWithType: Application.DTOs.SuperAdmin
+  fullName: Application.DTOs.SuperAdmin
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.SuperAdmin
+    name: SuperAdmin
+    href: Application.DTOs.SuperAdmin.html

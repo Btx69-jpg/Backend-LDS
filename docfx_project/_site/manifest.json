@@ -1,0 +1,4353 @@
+{
+  "source_base_path": "C:/Users/artur/OneDrive/Desktop/universidade/3_ano/1_Semestre/LDS/Backend/Backend-LDS/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.BackGroundServices.NotificationBackGroundService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.BackGroundServices.NotificationBackGroundService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.BackGroundServices.NotificationBackGroundService",
+      "Summary": "<p sourcefile=\"api/Api.BackGroundServices.NotificationBackGroundService.yml\" sourcestartlinenumber=\"1\">Serviço de plano de fundo (Hosted Service) responsável pelo envio automático de notificações de &quot;Dia de Jogo&quot;.</p>\n<p sourcefile=\"api/Api.BackGroundServices.NotificationBackGroundService.yml\" sourcestartlinenumber=\"3\">Este serviço executa periodicamente para verificar se existem partidas agendadas para o dia atual\ne envia alertas para as equipas envolvidas através do [INotificationService] (SignalR).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.BackGroundServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.BackGroundServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.BackGroundServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.CalendarController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.CalendarController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.CalendarController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.CalendarController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão do calendário, partidas e eventos em tempo real de uma equipa.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.ChatController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.ChatController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.ChatController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.ChatController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de salas de chat e comunicação em tempo real.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.CompetitiveMatchesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.CompetitiveMatchesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.CompetitiveMatchesController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.CompetitiveMatchesController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pelo sistema de Matchmaking Competitivo (Ranked).\nGere a entrada e saída da fila de espera para encontrar adversários via SignalR.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.LeaderboardController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.LeaderboardController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.LeaderboardController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.LeaderboardController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela consulta de classificações e rankings (Leaderboard).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.MatchInviteController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.MatchInviteController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.MatchInviteController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.MatchInviteController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de convites para jogos amigáveis entre equipas.\nPermite enviar, aceitar, recusar e negociar convites de partida.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.PlayerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.PlayerController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.PlayerController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.PlayerController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de perfis de jogadores, atualizações de dados e gestão de pedidos de adesão a equipas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.PostPoneMatchController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.PostPoneMatchController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.PostPoneMatchController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.PostPoneMatchController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de pedidos de adiamento de partidas (Postponements).\nPermite consultar, aceitar ou rejeitar propostas de alteração de datas de jogos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.SuperAdminController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.SuperAdminController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.SuperAdminController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.SuperAdminController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de Super Administradores da plataforma.\nPermite criar, consultar, atualizar e eliminar contas de Super Admin.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.TeamController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.TeamController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.TeamController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.TeamController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão completa de equipas: criação, edição, gestão de membros, pesquisas e visualização de perfis de equipa.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.UserController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.UserController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers.UserController",
+      "Summary": "<p sourcefile=\"api/Api.Controllers.UserController.yml\" sourcestartlinenumber=\"1\">Controlador responsável pela gestão de autenticação e perfil do utilizador.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Extensions.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Extensions.DependencyInjection",
+      "Summary": "<p sourcefile=\"api/Api.Extensions.DependencyInjection.yml\" sourcestartlinenumber=\"1\">Classe estática de extensão responsável pela configuração e registo de dependências exclusivas da camada de API (Presentation Layer).</p>\n<p sourcefile=\"api/Api.Extensions.DependencyInjection.yml\" sourcestartlinenumber=\"3\">Serve para organizar a injeção de dependências, separando a lógica de registo de Background Services\nda configuração principal no <code>Program.cs</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Extensions.FirebaseAuthenticationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Extensions.FirebaseAuthenticationExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Extensions.FirebaseAuthenticationExtensions",
+      "Summary": "<p sourcefile=\"api/Api.Extensions.FirebaseAuthenticationExtensions.yml\" sourcestartlinenumber=\"1\">Classe estática de extensão responsável pela configuração personalizada da Autenticação Firebase.</p>\n<p sourcefile=\"api/Api.Extensions.FirebaseAuthenticationExtensions.yml\" sourcestartlinenumber=\"3\">Esta classe configura o pipeline de autenticação JWT (JSON Web Token) para validar tokens emitidos pelo Google Firebase,\nimplementando uma lógica manual de gestão de chaves públicas (JWKS - JSON Web Key Set) para garantir\nque a validação continua a funcionar mesmo quando a Google roda as chaves de assinatura.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Extensions.HubMappingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Extensions.HubMappingExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Extensions.HubMappingExtensions",
+      "Summary": "<p sourcefile=\"api/Api.Extensions.HubMappingExtensions.yml\" sourcestartlinenumber=\"1\">Classe de extensão responsável pelo mapeamento e configuração das rotas (Endpoints) dos Hubs SignalR.</p>\n<p sourcefile=\"api/Api.Extensions.HubMappingExtensions.yml\" sourcestartlinenumber=\"3\">Esta classe centraliza a definição dos caminhos de URL para todos os serviços de tempo real,\nmantendo o ficheiro <code>Program.cs</code> limpo e organizado.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Extensions.SwaggerServiceExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Extensions.SwaggerServiceExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Extensions.SwaggerServiceExtension",
+      "Summary": "<p sourcefile=\"api/Api.Extensions.SwaggerServiceExtension.yml\" sourcestartlinenumber=\"1\">Classe estática de extensão responsável pela configuração do serviço de documentação Swagger/OpenAPI.</p>\n<p sourcefile=\"api/Api.Extensions.SwaggerServiceExtension.yml\" sourcestartlinenumber=\"3\">Esta classe centraliza toda a configuração da interface de documentação interativa (Swagger UI),\nincluindo definições de metadados, configuração de segurança (JWT) e integração com comentários XML do código.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.FinishMatchHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.FinishMatchHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.FinishMatchHub",
+      "Summary": "<p sourcefile=\"api/Api.Hubs.FinishMatchHub.yml\" sourcestartlinenumber=\"1\">Hub SignalR responsável pela coordenação da finalização de uma partida (Finish Match).</p>\n<p sourcefile=\"api/Api.Hubs.FinishMatchHub.yml\" sourcestartlinenumber=\"3\">Este hub gere o processo de submissão de resultados finais por parte dos administradores das equipas.\nO objetivo é garantir que ambas as equipas concordam com o resultado (número de golos) antes de oficializar o fim do jogo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.Notification.NotificationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.Notification.NotificationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.Notification.NotificationService",
+      "Summary": "<p sourcefile=\"api/Api.Hubs.Notification.NotificationService.yml\" sourcestartlinenumber=\"1\">Implementação do serviço de envio de notificações em tempo real.</p>\n<p sourcefile=\"api/Api.Hubs.Notification.NotificationService.yml\" sourcestartlinenumber=\"3\">Esta classe utiliza o [IHubContext] para invocar métodos nos clientes ligados ao [NotificationHub]\na partir de qualquer ponto da aplicação (fora do contexto do Hub).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.Notification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.Notification",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.NotificationHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.NotificationHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.NotificationHub",
+      "Summary": "<p sourcefile=\"api/Api.Hubs.NotificationHub.yml\" sourcestartlinenumber=\"1\">Hub SignalR responsável pelo sistema de notificações em tempo real.</p>\n<p sourcefile=\"api/Api.Hubs.NotificationHub.yml\" sourcestartlinenumber=\"3\">Este Hub permite que os utilizadores (jogadores/admins) se conectem a um canal específico da sua equipa\npara receber alertas instantâneos, como avisos de &quot;Game Day&quot; enviados pelo serviço de background.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.RankMatchMakerHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.RankMatchMakerHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.RankMatchMakerHub",
+      "Summary": "<p sourcefile=\"api/Api.Hubs.RankMatchMakerHub.yml\" sourcestartlinenumber=\"1\">Hub SignalR responsável pelo sistema de Matchmaking (Procura de Jogo) para partidas competitivas (Ranked).</p>\n<p sourcefile=\"api/Api.Hubs.RankMatchMakerHub.yml\" sourcestartlinenumber=\"3\">Funciona como um Lobby de espera onde as equipas entram para procurar adversários.\nO emparelhamento real é gerido por um serviço de background, mas este Hub gere as conexões,\ngrupos e notificações em tempo real para os clientes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.StartMatchHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.StartMatchHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs.StartMatchHub",
+      "Summary": "<p sourcefile=\"api/Api.Hubs.StartMatchHub.yml\" sourcestartlinenumber=\"1\">Hub SignalR responsável por coordenar o início de uma partida (Start Match).</p>\n<p sourcefile=\"api/Api.Hubs.StartMatchHub.yml\" sourcestartlinenumber=\"3\">Este hub gere o &quot;handshake&quot; entre os administradores das duas equipas envolvidas num jogo.\nFunciona como uma sala de espera: o primeiro admin entra e aguarda; quando o segundo entra,\no jogo é marcado como iniciado e ambos são notificados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Hubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Hubs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Hubs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Middlewares.GlobalExceptionHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Middlewares.GlobalExceptionHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Middlewares.GlobalExceptionHandler",
+      "Summary": "<p sourcefile=\"api/Api.Middlewares.GlobalExceptionHandler.yml\" sourcestartlinenumber=\"1\">Middleware global de tratamento de exceções.</p>\n<p sourcefile=\"api/Api.Middlewares.GlobalExceptionHandler.yml\" sourcestartlinenumber=\"3\">Esta classe implementa a interface [IExceptionHandler] e é responsável por interceptar\nqualquer exceção não tratada que ocorra durante o processamento de um pedido HTTP.\nConverte a exceção numa resposta JSON padronizada (RFC 7807 - ProblemDetails),\nmapeando tipos de exceção específicos para códigos de estado HTTP apropriados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Api.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Api.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Api.Middlewares",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Chat.ChatRoomDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Chat.ChatRoomDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Chat.ChatRoomDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Chat.CreateChatRoomDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Chat.CreateChatRoomDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Chat.CreateChatRoomDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Chat.CreateChatRoomRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Chat.CreateChatRoomRequestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Chat.CreateChatRoomRequestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Chat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Chat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterCalendarDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterCalendarDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterCalendarDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterListTeamDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterListTeamDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterListTeamDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterMatchInvitesDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterMatchInvitesDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterMatchInvitesDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterMembershipRequestsPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterMembershipRequestsPlayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterMembershipRequestsPlayer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterMembershipRequestsTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterMembershipRequestsTeam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterMembershipRequestsTeam",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterPostPoneMatchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterPostPoneMatchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterPostPoneMatchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterTeamDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterTeamDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterTeamDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.FilterTeamPlayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.FilterTeamPlayers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters.FilterTeamPlayers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Filters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Filters",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.FirebaseLoginResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.FirebaseLoginResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.FirebaseLoginResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.LoginDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.LoginDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.LoginDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.LoginResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.LoginResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.LoginResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Match.InfoMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Match.InfoMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Match.InfoMatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Match.InfoMatchCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Match.InfoMatchCalendar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Match.InfoMatchCalendar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Match.MatchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Match.MatchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Match.MatchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Match.ResultMatchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Match.ResultMatchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Match.ResultMatchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Match.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Match.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Match",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.MatchInvites.InfoMatchInviteDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.MatchInvites.InfoMatchInviteDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.MatchInvites.InfoMatchInviteDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.MatchInvites.SendMatchInviteDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.MatchInvites.SendMatchInviteDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.MatchInvites.SendMatchInviteDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.MatchInvites.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.MatchInvites.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.MatchInvites",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.MemberShip.MemberShipRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.MemberShip.MemberShipRequestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.MemberShip.MemberShipRequestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.MemberShip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.MemberShip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.MemberShip",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Membership.PlayerDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Membership.PlayerDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Membership.PlayerDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Membership.SendMembershipRequestDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Membership.SendMembershipRequestDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Membership.SendMembershipRequestDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Membership_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Membership_1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Membership",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Pitch.PitchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Pitch.PitchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Pitch.PitchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Pitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Pitch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Pitch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Player.InfoPlayerDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Player.InfoPlayerDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Player.InfoPlayerDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Player.PlayerDataCompleteDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Player.PlayerDataCompleteDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Player.PlayerDataCompleteDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Player.PlayerWithoutTeamInfoDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Player.PlayerWithoutTeamInfoDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Player.PlayerWithoutTeamInfoDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Player.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Player",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PlayerDTOs.CreatePlayerDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PlayerDTOs.CreatePlayerDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PlayerDTOs.CreatePlayerDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PlayerDTOs.PlayerDetailsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PlayerDTOs.PlayerDetailsDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PlayerDTOs.PlayerDetailsDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PlayerDTOs.UpdatePlayerDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PlayerDTOs.UpdatePlayerDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PlayerDTOs.UpdatePlayerDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PlayerDTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PlayerDTOs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PlayerDTOs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PostPoneGame.AcceptRefusePostPoneDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PostPoneGame.InfoPostPoneMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PostPoneGame.InfoPostPoneMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PostPoneGame.InfoPostPoneMatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PostPoneGame.PostPoneMatchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PostPoneGame.PostPoneMatchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PostPoneGame.PostPoneMatchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.PostPoneGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.PostPoneGame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.PostPoneGame",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.ProfileSetupDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.ProfileSetupDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.ProfileSetupDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Rank.InfoRankDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Rank.InfoRankDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Rank.InfoRankDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Rank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Rank.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Rank",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.RankMatchMaker.CriteriaMatchMaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.RankMatchMaker.CriteriaMatchMaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.RankMatchMaker.CriteriaMatchMaker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.RankMatchMaker.InfoTeamRankMatchMakerDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.RankMatchMaker.StartSearchDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.RankMatchMaker.StartSearchDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.RankMatchMaker.StartSearchDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.RankMatchMaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.RankMatchMaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.RankMatchMaker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.SuperAdmin.CreateSuperAdminDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.SuperAdmin.CreateSuperAdminDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.SuperAdmin.CreateSuperAdminDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.SuperAdmin.SuperAdminDetailsDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.SuperAdmin.SuperAdminDetailsDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.SuperAdmin.SuperAdminDetailsDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.SuperAdmin.UpdateSuperAdminDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.SuperAdmin.UpdateSuperAdminDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.SuperAdmin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.SuperAdmin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.SuperAdmin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.CreateTeamDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.CreateTeamDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.CreateTeamDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.InfoTeamsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.InfoTeamsDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.InfoTeamsDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.TeamDetailsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.TeamDetailsDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.TeamDetailsDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.TeamDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.TeamDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.TeamDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.TeamLeaderboardDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.TeamLeaderboardDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.TeamLeaderboardDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.TeamStatisticsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.TeamStatisticsDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team.TeamStatisticsDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.Team.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.Team.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs.Team",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DTOs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DTOs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.DependecyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.DependecyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.DependecyInjection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Hubs.EntryHubFinishMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Hubs.EntryHubFinishMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Hubs.EntryHubFinishMatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Hubs.JoinFinishMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Hubs.JoinFinishMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Hubs.JoinFinishMatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Hubs.JoinStartMatchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Hubs.JoinStartMatchResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Hubs.JoinStartMatchResult",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Hubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Hubs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Hubs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Hub.IFinishMatchHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Hub.IFinishMatchHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Hub.IFinishMatchHub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Hub.IRankMatchMakerHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Hub.IRankMatchMakerHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Hub.IRankMatchMakerHub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Hub.IStartMatchHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Hub.IStartMatchHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Hub.IStartMatchHub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Hub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Hub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Hub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.ICancelledMatchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.ICancelledMatchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.ICancelledMatchRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IMatchInviteRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IMatchInviteRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IMatchInviteRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IMatchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IMatchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IMatchRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IMembershipRequestRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IMembershipRequestRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IMembershipRequestRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IPitchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IPitchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IPitchRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IPlayerRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IPlayerRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IPlayerRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IRankRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IRankRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IRankRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.ISuperAdminRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.ISuperAdminRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.ISuperAdminRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.ITeamPostPoneGameRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.ITeamPostPoneGameRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.ITeamRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.ITeamRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.ITeamRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.ITeamStatisticsRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.ITeamStatisticsRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.ITeamStatisticsRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IUnityOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IUnityOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IUnityOfWork",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.IUserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.IUserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories.IUserRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.ClienteService.IRankMatchMakerHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.ClienteService.IStartMatchHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.ClienteService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.ClienteService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.IManagerFinishMatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.IManagerFinishMatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.IManagerFinishMatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.IManagerRankMatchMakerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.IManagerStartMatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.IManagerStartMatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.IManagerStartMatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.INotificationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.INotificationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub.INotificationService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.Hub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.Hub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.Hub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IAuthService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IAuthService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IChatRoomService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IChatRoomService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IChatRoomService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.ILeaderboardService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.ILeaderboardService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.ILeaderboardService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IMatchInviteService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IMatchInviteService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IMatchInviteService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IMatchMakerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IMatchMakerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IMatchMakerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IMatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IMatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IMatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IMembershipRequestService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IMembershipRequestService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IMembershipRequestService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IPlayerAuthorizationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IPlayerAuthorizationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IPlayerAuthorizationService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.IPlayerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.IPlayerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.IPlayerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.ISuperAdminService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.ISuperAdminService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.ISuperAdminService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.ITeamService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.ITeamService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services.ITeamService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.IFinishMatchValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.IFinishMatchValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.IFinishMatchValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.IGeralHubValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.IGeralHubValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.IGeralHubValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.IHubFinshMatchValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.INotificationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.INotificationValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.INotificationValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.IRankMatchMakerValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.IRankMatchMakerValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.IStartMatchHubValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub.IStartMatchHubValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.Hub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.Hub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.Hub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.ICalendarValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.ICalendarValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.ICalendarValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.IMatchInviteValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.IMatchInviteValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.IMatchInviteValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.IMembershipValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.IMembershipValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.IMembershipValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.IPlayerAuthorizationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.IPlayerAuthorizationValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.IPlayerAuthorizationValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.IPlayerValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.IPlayerValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.IPlayerValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.ISuperAdminValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.ISuperAdminValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.ISuperAdminValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.ITeamValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.ITeamValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.ITeamValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.IUserDataValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.IUserDataValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators.IUserDataValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Interfaces.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Interfaces.Validators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Interfaces.Validators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.BackGroundServices.RankMatchMakerBackGroundService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.BackGroundServices.RankMatchMakerBackGroundService",
+      "Summary": "<p sourcefile=\"api/Application.Services.BackGroundServices.RankMatchMakerBackGroundService.yml\" sourcestartlinenumber=\"1\">Serviço de plano de fundo (Hosted Service) responsável pelo motor de Matchmaking de partidas ranqueadas.</p>\n<p sourcefile=\"api/Application.Services.BackGroundServices.RankMatchMakerBackGroundService.yml\" sourcestartlinenumber=\"3\">Este serviço executa continuamente para emparelhar equipas que estão à espera no lobby ([RankMatchMakerHub]).\nImplementa um algoritmo de <strong sourcefile=\"api/Application.Services.BackGroundServices.RankMatchMakerBackGroundService.yml\" sourcestartlinenumber=\"4\">relaxamento progressivo de critérios</strong>: se não encontrar adversários ideais\nrapidamente, alarga gradualmente os limites de diferença de idade e pontos para facilitar o emparelhamento.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.BackGroundServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.BackGroundServices.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.BackGroundServices",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.FireBaseAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.FireBaseAuthService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.FireBaseAuthService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.FirebaseChatService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.FirebaseChatService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.FirebaseChatService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ClientService.FinishMatchHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ClientService.FinishMatchHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ClientService.FinishMatchHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ClientService.RankMatchMakerHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ClientService.RankMatchMakerHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ClientService.RankMatchMakerHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ClientService.StartMatchHubClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ClientService.StartMatchHubClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ClientService.StartMatchHubClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ClientService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ClientService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ClientService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ManagerFinishMatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ManagerFinishMatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ManagerFinishMatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ManagerRankMatchMakerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ManagerRankMatchMakerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ManagerRankMatchMakerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.ManagerStartMatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.ManagerStartMatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub.ManagerStartMatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.Hub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.Hub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.Hub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.LeaderboardService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.LeaderboardService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.LeaderboardService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.MatchInviteService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.MatchInviteService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.MatchInviteService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.MatchMakerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.MatchMakerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.MatchMakerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.MatchService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.MatchService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.MatchService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.MembershipService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.MembershipService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.MembershipService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.PlayerAuthorizationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.PlayerAuthorizationService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.PlayerAuthorizationService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.PlayerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.PlayerService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.PlayerService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.SuperAdminService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.SuperAdminService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.SuperAdminService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.TeamService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.TeamService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services.TeamService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.CalendarValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.CalendarValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.CalendarValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.FinishMatchValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.FinishMatchValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.FinishMatchValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.GeralHubValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.GeralHubValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.GeralHubValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.HubFinshMatchValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.HubFinshMatchValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.HubFinshMatchValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.NotificationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.NotificationValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.NotificationValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.RankMatchMakerValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.RankMatchMakerValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.RankMatchMakerValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.StartMatchHubValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.StartMatchHubValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs.StartMatchHubValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.Hubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.Hubs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.Hubs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.MatchInviteValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.MatchInviteValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.MatchInviteValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.MembershipValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.MembershipValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.MembershipValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.PlayerAuthorizationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.PlayerAuthorizationValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.PlayerAuthorizationValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.PlayerValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.PlayerValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.PlayerValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.SuperAdminValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.SuperAdminValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.SuperAdminValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.TeamValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.TeamValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.TeamValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.UserDataValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.UserDataValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators.UserDataValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Validators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application.Validators",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.CancelledMatchConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.CancelledMatchConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.CancelledMatchConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.CancelledMatchConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Jogo Cancelado ([CancelledMatch]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.DeafultCriteriaMatchMaker.yml\" sourcestartlinenumber=\"1\">Critérios padrão de tolerância para o algoritmo de Matchmaker de partidas ranqueadas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.FinishMatchHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.FinishMatchHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.FinishMatchHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.FinishMatchHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração para o Hub SignalR de Finalização de Partida (Finish Match Hub).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.GeneralConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.GeneralConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.GeneralConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.GeneralConst.yml\" sourcestartlinenumber=\"1\">Constantes gerais aplicáveis a várias entidades (Golos, Morada, Cidades, Ranks).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.GeralTimeInHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.GeralTimeInHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.GeralTimeInHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.GeralTimeInHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de tempo de vida de sessões ou objetos em Hubs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.HoursValidToCompetitiveMatch.yml\" sourcestartlinenumber=\"1\">Constantes que definem os intervalos de horário válidos para agendar partidas competitivas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.ManagerRankMatchMakerServiceConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração para o Serviço de Gestão do Matchmaker de Partidas Ranqueadas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.MessageConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.MessageConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.MessageConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.MessageConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Mensagem ([Message]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.NotificationHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.NotificationHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.NotificationHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.NotificationHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração para o Hub SignalR de Notificações.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.PitchConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.PitchConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.PitchConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.PitchConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Campo ([Pitch]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.PlayerConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.PlayerConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.PlayerConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.PlayerConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Jogador ([Player]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.RankConts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.RankConts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.RankConts",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.RankConts.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Rank ([Rank]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.RankMatchMakerHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.RankMatchMakerHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.RankMatchMakerHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.RankMatchMakerHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração para o Hub SignalR de Matchmaker de Partidas Ranqueadas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.RouteHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.RouteHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.RouteHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.RouteHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração de rotas e endereços para Hubs SignalR.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.StartMatchHubConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.StartMatchHubConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.StartMatchHubConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.StartMatchHubConst.yml\" sourcestartlinenumber=\"1\">Constantes de configuração para o Hub SignalR de Início de Partida (Start Match Hub).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.TeamConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.TeamConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.TeamConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.TeamConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Equipa ([Team]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.TeamLeaderBoardConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.TeamLeaderBoardConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.TeamLeaderBoardConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.TeamLeaderBoardConst.yml\" sourcestartlinenumber=\"1\">Constantes relacionadas com a Tabela de Classificação (Leaderboard).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.UserConst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.UserConst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants.UserConst",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.UserConst.yml\" sourcestartlinenumber=\"1\">Constantes e limites de validação específicos para a entidade Utilizador ([User]).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.ModelConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.ModelConstants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants.ModelConstants",
+      "Summary": "<p sourcefile=\"api/Domain.Constants.ModelConstants.yml\" sourcestartlinenumber=\"1\">Classe estática que agrega todas as constantes e limites de validação (Constraints)\nutilizados pelas entidades de domínio e pela lógica de negócio.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Calendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Calendar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Calendar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.CancelledMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.CancelledMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.CancelledMatch",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.CancelledMatch.yml\" sourcestartlinenumber=\"1\">Entidade que representa o registo de um jogo que foi cancelado.</p>\n<p sourcefile=\"api/Domain.Entities.CancelledMatch.yml\" sourcestartlinenumber=\"3\">Esta entidade armazena o histórico de cancelamento, incluindo a equipa responsável e o motivo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Chat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Chat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Chat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.MatchInvite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.MatchInvite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.MatchInvite",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Matches.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Matches.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Matches",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.MembershipRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.MembershipRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.MembershipRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Message",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.Message.yml\" sourcestartlinenumber=\"1\">Entidade que representa uma mensagem individual enviada num chat.</p>\n<p sourcefile=\"api/Domain.Entities.Message.yml\" sourcestartlinenumber=\"3\"><strong sourcefile=\"api/Domain.Entities.Message.yml\" sourcestartlinenumber=\"3\">AVISO:</strong> Esta entidade está marcada como Obsoleta. O armazenamento de mensagens\né tipicamente gerido diretamente pelo Firestore (NoSQL) para suportar a escalabilidade\ne as funcionalidades em tempo real (Real-Time Messaging).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Pitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Pitch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Pitch",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.Pitch.yml\" sourcestartlinenumber=\"1\">Entidade que representa um campo de jogo (local, estádio ou recinto) disponível no sistema.</p>\n<p sourcefile=\"api/Domain.Entities.Pitch.yml\" sourcestartlinenumber=\"3\">Utilizada para armazenar as coordenadas geográficas e informações de contacto do local de jogo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Player.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Player",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.Player.yml\" sourcestartlinenumber=\"1\">Entidade que representa um jogador no sistema.</p>\n<p sourcefile=\"api/Domain.Entities.Player.yml\" sourcestartlinenumber=\"3\">Esta entidade herda de [User] e adiciona atributos específicos do contexto desportivo,\ncomo a Posição, Altura e a afiliação à equipa.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.PostPoneMatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.PostPoneMatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.PostPoneMatch",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.PostPoneMatch.yml\" sourcestartlinenumber=\"1\">Entidade que representa o registo de um pedido de adiamento (remarcação) de uma partida.</p>\n<p sourcefile=\"api/Domain.Entities.PostPoneMatch.yml\" sourcestartlinenumber=\"3\">Esta entidade armazena a nova data proposta e a equipa que iniciou o pedido de adiamento.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Rank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Rank.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Rank",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.Rank.yml\" sourcestartlinenumber=\"1\">Entidade que representa um nível de classificação (Rank) no sistema (ex: Ouro, Prata, Bronze).</p>\n<p sourcefile=\"api/Domain.Entities.Rank.yml\" sourcestartlinenumber=\"3\">Define os critérios de pontuação (pontos ganhos/perdidos) e o limite necessário para a promoção.\nEsta entidade é hierárquica, referenciando o rank anterior e o próximo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.SuperAdmin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.SuperAdmin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.SuperAdmin",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.SuperAdmin.yml\" sourcestartlinenumber=\"1\">Entidade que representa um Super Administrador no sistema.</p>\n<p sourcefile=\"api/Domain.Entities.SuperAdmin.yml\" sourcestartlinenumber=\"3\">Esta entidade herda todas as propriedades e funcionalidades da classe base [User]\ne é utilizada principalmente para distinguir utilizadores com os mais altos níveis de privilégio\n(Administração de Sistema/Plataforma).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.Team.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.Team.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.Team",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.Team.yml\" sourcestartlinenumber=\"1\">Entidade que representa uma equipa desportiva no sistema.</p>\n<p sourcefile=\"api/Domain.Entities.Team.yml\" sourcestartlinenumber=\"3\">Esta entidade é o ponto central de agregação para membros, estatísticas, ranking e agenda de jogos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.TeamStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.TeamStatistics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.TeamStatistics",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.TeamStatistics.yml\" sourcestartlinenumber=\"1\">Entidade que representa as estatísticas e o resultado de uma equipa durante uma partida específica.</p>\n<p sourcefile=\"api/Domain.Entities.TeamStatistics.yml\" sourcestartlinenumber=\"3\">Esta entidade armazena o número de golos e o resultado final (Vitória, Derrota, Empate)\nem relação ao jogo em que participou.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities.User",
+      "Summary": "<p sourcefile=\"api/Domain.Entities.User.yml\" sourcestartlinenumber=\"1\">Classe abstrata base que representa um utilizador genérico no sistema.</p>\n<p sourcefile=\"api/Domain.Entities.User.yml\" sourcestartlinenumber=\"3\">Esta classe define as propriedades de identidade e contacto comuns a todos os tipos de utilizadores (Jogadores, Administradores, etc.).\nÉ a base para a herança de outras entidades de utilizador (ex: Player, SuperAdmin).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Entities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Entities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Enums.MatchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Enums.MatchResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Enums.MatchResult",
+      "Summary": "<p sourcefile=\"api/Domain.Enums.MatchResult.yml\" sourcestartlinenumber=\"1\">Define os possíveis resultados de uma equipa numa partida.\nUtilizado para registar o resultado final (Vitória, Derrota, Empate) nas estatísticas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Enums.MatchStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Enums.MatchStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Enums.MatchStatus",
+      "Summary": "<p sourcefile=\"api/Domain.Enums.MatchStatus.yml\" sourcestartlinenumber=\"1\">Define os possíveis estados do ciclo de vida de uma partida ou jogo.\nUtilizado para rastrear o status do jogo desde o agendamento até à conclusão ou cancelamento.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Enums.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Enums.Position.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Enums.Position",
+      "Summary": "<p sourcefile=\"api/Domain.Enums.Position.yml\" sourcestartlinenumber=\"1\">Define as posições de um jogador.\nUtilizada para tipar e categorizar o papel de cadajogador.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Enums.StatusPostPone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Enums.StatusPostPone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Enums.StatusPostPone",
+      "Summary": "<p sourcefile=\"api/Domain.Enums.StatusPostPone.yml\" sourcestartlinenumber=\"1\">Define os possíveis estados de decisão para um pedido de adiamento (Postpone) de partida.\nUtilizado para registar se a equipa adversária aceitou ou rejeitou a data proposta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.AuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.AuthenticationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.AuthenticationException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.AuthenticationException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem durante o processo de autenticação ou autorização de um utilizador.</p>\n<p sourcefile=\"api/Domain.Exceptions.AuthenticationException.yml\" sourcestartlinenumber=\"3\">Esta é uma classe de exceção personalizada que herda de [Exception] e é utilizada na camada de Serviço\npara sinalizar falhas de credenciais (senha/email incorretos) ou problemas de acesso.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.BusinessRuleException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.BusinessRuleException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.BusinessRuleException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.BusinessRuleException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando uma regra de negócio ou uma lógica de domínio da aplicação é violada.</p>\n<p sourcefile=\"api/Domain.Exceptions.BusinessRuleException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Serviço/Domínio para sinalizar que a operação não pode ser concluída,\nmesmo que não haja falha de sistema, rede ou autenticação.\nExemplo: Tentar agendar uma partida para uma data passada.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.EmptyCollectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.EmptyCollectionException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.EmptyCollectionException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.EmptyCollectionException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando uma operação esperava uma coleção, lista ou resultado que não fosse vazio, mas recebeu uma coleção com zero elementos.</p>\n<p sourcefile=\"api/Domain.Exceptions.EmptyCollectionException.yml\" sourcestartlinenumber=\"3\">Esta exceção é útil na camada de Serviço/Domínio para sinalizar à camada de apresentação que não há dados a serem processados.\nExemplo: Tentar obter o primeiro elemento de uma lista vazia.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.MatchException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.MatchException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.MatchException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.MatchException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem especificamente durante as operações de gestão de partidas (Match).</p>\n<p sourcefile=\"api/Domain.Exceptions.MatchException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Serviço/Domínio para sinalizar problemas relacionados com o ciclo de vida,\nestado (Status), ou validade de um jogo (ex: tentar iniciar um jogo já finalizado, ou aceitar um convite inválido).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.MatchInviteException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.MatchInviteException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.MatchInviteException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.MatchInviteException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem especificamente durante o ciclo de vida de um convite de partida (Match Invite).</p>\n<p sourcefile=\"api/Domain.Exceptions.MatchInviteException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Serviço/Domínio para sinalizar problemas relacionados com a validade,\nestado, ou regras de negócio de um convite (ex: tentar negociar um convite já aceite ou rejeitado).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.NotFindException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.NotFindException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.NotFindException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.NotFindException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando uma entidade ou recurso específico procurado na base de dados ou no domínio não é encontrado.</p>\n<p sourcefile=\"api/Domain.Exceptions.NotFindException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Repositório/Serviço e geralmente mapeia para um código de erro HTTP 404 (Not Found) na camada de API.\nExemplo: Tentar obter um jogador por ID que não existe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.NotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.NotFoundException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.NotFoundException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando uma entidade ou recurso específico procurado na base de dados ou no domínio não é encontrado.</p>\n<p sourcefile=\"api/Domain.Exceptions.NotFoundException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Repositório/Serviço para sinalizar a ausência de um recurso\n(corresponde ao código de status HTTP 404 - Not Found).\nExemplo: Tentar obter um objeto por um ID que não existe.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.ValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.ValidationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.ValidationException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.ValidationException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando a validação de dados falha.</p>\n<p sourcefile=\"api/Domain.Exceptions.ValidationException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Domínio/Serviço quando os dados de entrada (input)\nnão cumprem as regras de formato, comprimento ou intervalo (range) esperadas.\nGeralmente mapeia para um código de erro HTTP 400 (Bad Request).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.ValidatorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.ValidatorException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions.ValidatorException",
+      "Summary": "<p sourcefile=\"api/Domain.Exceptions.ValidatorException.yml\" sourcestartlinenumber=\"1\">Representa erros que ocorrem quando a validação de dados ou regras de domínio falha no processo de validação dedicado.</p>\n<p sourcefile=\"api/Domain.Exceptions.ValidatorException.yml\" sourcestartlinenumber=\"3\">Esta exceção é lançada na camada de Serviço/Domínio após a execução de um objeto Validador (Validator)\nque detetou dados inválidos ou inconsistentes.\nExemplo: Tentar criar uma entidade com um campo obrigatório em falta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Domain.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Domain.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Domain.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Data.AmateurFootballContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Data.AmateurFootballContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Data.AmateurFootballContext",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Data.AmateurFootballContext.yml\" sourcestartlinenumber=\"1\">Classe de Contexto de Base de Dados principal para a aplicação Amateur Football.</p>\n<p sourcefile=\"api/Infrastructure.Data.AmateurFootballContext.yml\" sourcestartlinenumber=\"3\">Esta classe herda de [DbContext] e funciona como uma unidade de trabalho (Unit of Work) ou\nsessão de trabalho com a base de dados relacional.\nÉ o ponto central onde as Entidades de Domínio são mapeadas para tabelas da base de dados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.DependencyInjection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.DependencyInjection",
+      "Summary": "<p sourcefile=\"api/Infrastructure.DependencyInjection.yml\" sourcestartlinenumber=\"1\">Classe estática que configura e regista todos os serviços da camada de Infraestrutura no Container de Injeção de Dependências (DI Container).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Migrations.InitialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Migrations.InitialCreate",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Migrations.InitialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Migrations.MigracaoTeste.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Migrations.MigracaoTeste.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Migrations.MigracaoTeste",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Migrations.MigracaoTeste.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Migrations.phoneFix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Migrations.phoneFix.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Migrations.phoneFix",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Migrations.phoneFix.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.CancelledMatchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.CancelledMatchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.CancelledMatchRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.CancelledMatchRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados da entidade [CancelledMatch].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.CancelledMatchRepository.yml\" sourcestartlinenumber=\"3\">Esta classe implementa o contrato [ICancelledMatchRepository] e utiliza o contexto do Entity Framework Core\n([AmateurFootballContext]) para interagir com a tabela 'CancelledMatch' na base de dados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.MatchInviteRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.MatchInviteRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.MatchInviteRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.MatchInviteRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade [MatchInvite].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.MatchInviteRepository.yml\" sourcestartlinenumber=\"3\">Esta classe utiliza o [AmateurFootballContext] e métodos assíncronos do EF Core para gerir\no ciclo de vida dos convites de partida.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.MatchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.MatchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.MatchRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.MatchRepository.yml\" sourcestartlinenumber=\"1\">Repositório principal para a entidade [Matches].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.MatchRepository.yml\" sourcestartlinenumber=\"3\">Esta classe é responsável por todas as operações de persistência, consulta e agregação de dados\nde partidas, incluindo lógica complexa de carregamento de entidades relacionadas e filtragem.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.MembershipRequestRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.MembershipRequestRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.MembershipRequestRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.MembershipRequestRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência e consulta da entidade [MembershipRequest].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.MembershipRequestRepository.yml\" sourcestartlinenumber=\"3\">Gere o ciclo de vida dos pedidos de adesão (Jogador -&gt; Equipa) e convites de recrutamento (Equipa -&gt; Jogador).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.PitchRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.PitchRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.PitchRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.PitchRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência e consulta de dados da entidade [Pitch] (Campo de Jogo).</p>\n<p sourcefile=\"api/Infrastructure.Repositories.PitchRepository.yml\" sourcestartlinenumber=\"3\">Implementa o contrato [IPitchRepository] e utiliza o [AmateurFootballContext] para interagir\ncom a tabela de Campos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.PlayerRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.PlayerRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.PlayerRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.PlayerRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade [Player].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.PlayerRepository.yml\" sourcestartlinenumber=\"3\">Implementa o contrato [IPlayerRepository] e é a fonte de verdade para perfis de jogadores.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.RankRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.RankRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.RankRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.RankRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade [Rank].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.RankRepository.yml\" sourcestartlinenumber=\"3\">Esta classe é responsável por gerir a hierarquia de Ranks (nível anterior e próximo)\ne por fornecer métodos para determinar o Rank padrão e a progressão.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.SuperAdminRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.SuperAdminRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.SuperAdminRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.SuperAdminRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade [SuperAdmin].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.SuperAdminRepository.yml\" sourcestartlinenumber=\"3\">Esta classe é responsável por gerir o ciclo de vida dos utilizadores com privilégios de Super Administrador.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.TeamPostPoneGame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.TeamPostPoneGame.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.TeamPostPoneGame",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.TeamPostPoneGame.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência e consulta da entidade [PostPoneMatch] (Pedidos de Adiamento).</p>\n<p sourcefile=\"api/Infrastructure.Repositories.TeamPostPoneGame.yml\" sourcestartlinenumber=\"3\">Implementa o contrato [ITeamPostPoneGameRepository] e é o responsável por gerir o ciclo de vida\ndos pedidos de remarcação de partidas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.TeamRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.TeamRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.TeamRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.TeamRepository.yml\" sourcestartlinenumber=\"1\">Repositório principal para a entidade [Team].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.TeamRepository.yml\" sourcestartlinenumber=\"3\">Esta classe gere todas as operações de persistência e consultas relacionadas com equipas,\nincluindo o Leaderboard e as listas de pesquisa (Matchmaking e Mercado).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.TeamStatisticsRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.TeamStatisticsRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.TeamStatisticsRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.TeamStatisticsRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade [TeamStatistics].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.TeamStatisticsRepository.yml\" sourcestartlinenumber=\"3\">Esta classe implementa o contrato [ITeamStatisticsRepository] e utiliza o [AmateurFootballContext]\npara gerir o registo de estatísticas de equipas por partida (ex: número de golos).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.UnityOfWork.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.UnityOfWork.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.UnityOfWork",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.UnityOfWork.yml\" sourcestartlinenumber=\"1\">Classe que implementa o padrão Unit of Work (Unidade de Trabalho).</p>\n<p sourcefile=\"api/Infrastructure.Repositories.UnityOfWork.yml\" sourcestartlinenumber=\"3\">É responsável por encapsular o contexto da base de dados ([AmateurFootballContext])\ne garantir que uma série de operações (adições, atualizações, remoções) são tratadas\ncomo uma única transação atómica através do método [SaveChangesAsync].</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.UserRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.UserRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories.UserRepository",
+      "Summary": "<p sourcefile=\"api/Infrastructure.Repositories.UserRepository.yml\" sourcestartlinenumber=\"1\">Repositório específico para operações de persistência de dados e consulta da entidade base [User].</p>\n<p sourcefile=\"api/Infrastructure.Repositories.UserRepository.yml\" sourcestartlinenumber=\"3\">Esta classe implementa o contrato [IUserRepository] e é utilizada para carregar dados de utilizadores\nde forma agnóstica ao seu tipo (Player, SuperAdmin), usando a tabela base de herança.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntegrationTests.Controllers.FirebaseAuthIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntegrationTests.Controllers.FirebaseAuthIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "IntegrationTests.Controllers.FirebaseAuthIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/IntegrationTests.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/IntegrationTests.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "IntegrationTests.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ApiTestAppFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ApiTestAppFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ApiTestAppFactory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Calendar.CalendarIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Calendar.CalendarIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Calendar.CalendarIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Calendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Calendar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Calendar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchControllerIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.FinishMatchIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.FinishMatchHubTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.FinishMatchHubTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.NotificationTests.NotificationHubIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.NotificationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.NotificationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.NotificationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.CompetitiveMatchesControllerTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerBackGroundServicesTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.RankMatchMakerHubIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.RankMatchMakerHubTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchControllerIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.StartMatchHubTests.StartMatchHubIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.ClassTests.HubTests.StartMatchHubTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.ClassTests.HubTests.StartMatchHubTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Helpers.OneShotRankMatchMakerHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Helpers.OneShotRankMatchMakerHostedService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Helpers.OneShotRankMatchMakerHostedService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Helpers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Helpers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Leaderboard.LeaderboardIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Leaderboard.LeaderboardIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Leaderboard.LeaderboardIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Leaderboard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Leaderboard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Leaderboard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.MatchInvite.MatchInviteIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.MatchInvite.MatchInviteIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.MatchInvite.MatchInviteIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.MatchInvite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.MatchInvite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.MatchInvite",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Membership.TeamMembershipIntegrationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Membership.TeamMembershipIntegrationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Membership.TeamMembershipIntegrationTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.Membership.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.Membership.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.Membership",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.TestAuthHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.TestAuthHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration.TestAuthHandler",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Integration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Integration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Integration",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.BackGroundServiceTests.NotificationBackGroundServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.BackGroundServiceTests.RankMatchMakerBackGroundServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.BackGroundServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.BackGroundServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.ManagerRankMatchMakerManagerServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.ManagerRankMatchMakerManagerServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.ManagerRankMatchMakerManagerServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.MatchMakerServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests.RankMatchMakerTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.HubsTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.HubsTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.LeadboardServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.PlayerAuthorizationServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests.PlayerServiceTest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tests.Unit.ApplicationTests.ServicesTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Tests.Unit.ApplicationTests.ServicesTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unit.ApplicationTests.ServicesTests.MatchInviteServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unit.ApplicationTests.ServicesTests.MatchServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unit.ApplicationTests.ServicesTests.MatchServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unit.ApplicationTests.ServicesTests.MatchServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unit.ApplicationTests.ServicesTests.MembershipServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unit.ApplicationTests.ServicesTests.MembershipServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unit.ApplicationTests.ServicesTests.MembershipServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unit.ApplicationTests.ServicesTests.TeamServiceTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unit.ApplicationTests.ServicesTests.TeamServiceTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unit.ApplicationTests.ServicesTests.TeamServiceTests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unit.ApplicationTests.ServicesTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unit.ApplicationTests.ServicesTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unit.ApplicationTests.ServicesTests",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

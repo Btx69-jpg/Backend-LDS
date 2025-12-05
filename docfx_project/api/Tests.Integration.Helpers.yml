@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration.Helpers
+  commentId: N:Tests.Integration.Helpers
+  id: Tests.Integration.Helpers
+  children:
+  - Tests.Integration.Helpers.OneShotRankMatchMakerHostedService
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration.Helpers
+  nameWithType: Tests.Integration.Helpers
+  fullName: Tests.Integration.Helpers
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.Helpers.OneShotRankMatchMakerHostedService
+  commentId: T:Tests.Integration.Helpers.OneShotRankMatchMakerHostedService
+  href: Tests.Integration.Helpers.OneShotRankMatchMakerHostedService.html
+  name: OneShotRankMatchMakerHostedService
+  nameWithType: OneShotRankMatchMakerHostedService
+  fullName: Tests.Integration.Helpers.OneShotRankMatchMakerHostedService

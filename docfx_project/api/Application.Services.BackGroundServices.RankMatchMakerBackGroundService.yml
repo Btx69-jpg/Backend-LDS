@@ -1,0 +1,945 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  commentId: T:Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  id: RankMatchMakerBackGroundService
+  parent: Application.Services.BackGroundServices
+  children:
+  - Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub},Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService})
+  - Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: RankMatchMakerBackGroundService
+  nameWithType: RankMatchMakerBackGroundService
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  type: Class
+  source:
+    remote:
+      path: Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: RankMatchMakerBackGroundService
+    path: ../Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+    startLine: 17
+  assemblies:
+  - Api
+  namespace: Application.Services.BackGroundServices
+  summary: >-
+    Serviço de plano de fundo (Hosted Service) responsável pelo motor de Matchmaking de partidas ranqueadas.
+
+
+    Este serviço executa continuamente para emparelhar equipas que estão à espera no lobby ([RankMatchMakerHub]).
+
+    Implementa um algoritmo de **relaxamento progressivo de critérios**: se não encontrar adversários ideais
+
+    rapidamente, alarga gradualmente os limites de diferença de idade e pontos para facilitar o emparelhamento.
+  example: []
+  syntax:
+    content: 'public class RankMatchMakerBackGroundService : BackgroundService, IHostedService, IDisposable'
+    content.vb: Public Class RankMatchMakerBackGroundService Inherits BackgroundService Implements IHostedService, IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.Extensions.Hosting.BackgroundService
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  - Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  - Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub},Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService})
+  commentId: M:Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub},Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService})
+  id: '#ctor(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory,Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub},Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService})'
+  parent: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  langs:
+  - csharp
+  - vb
+  name: RankMatchMakerBackGroundService(IServiceScopeFactory, IHubContext<RankMatchMakerHub, IRankMatchMakerHub>, ILogger<RankMatchMakerBackGroundService>)
+  nameWithType: RankMatchMakerBackGroundService.RankMatchMakerBackGroundService(IServiceScopeFactory, IHubContext<RankMatchMakerHub, IRankMatchMakerHub>, ILogger<RankMatchMakerBackGroundService>)
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.RankMatchMakerBackGroundService(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory, Microsoft.AspNetCore.SignalR.IHubContext<Api.Hubs.RankMatchMakerHub, Application.Interfaces.Hub.IRankMatchMakerHub>, Microsoft.Extensions.Logging.ILogger<Application.Services.BackGroundServices.RankMatchMakerBackGroundService>)
+  type: Constructor
+  source:
+    remote:
+      path: Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+    startLine: 50
+  assemblies:
+  - Api
+  namespace: Application.Services.BackGroundServices
+  summary: Construtor do serviço de background de Matchmaking.
+  example: []
+  syntax:
+    content: public RankMatchMakerBackGroundService(IServiceScopeFactory scopeFactory, IHubContext<RankMatchMakerHub, IRankMatchMakerHub> hubContext, ILogger<RankMatchMakerBackGroundService> logger)
+    parameters:
+    - id: scopeFactory
+      type: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+      description: Fábrica para criar escopos de serviço (necessário para injetar serviços Scoped).
+    - id: hubContext
+      type: Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub}
+      description: Contexto do Hub para comunicação SignalR.
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService}
+      description: Logger para registo de atividades.
+    content.vb: Public Sub New(scopeFactory As IServiceScopeFactory, hubContext As IHubContext(Of RankMatchMakerHub, IRankMatchMakerHub), logger As ILogger(Of RankMatchMakerBackGroundService))
+  overload: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor*
+  nameWithType.vb: RankMatchMakerBackGroundService.New(IServiceScopeFactory, IHubContext(Of RankMatchMakerHub, IRankMatchMakerHub), ILogger(Of RankMatchMakerBackGroundService))
+  fullName.vb: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.New(Microsoft.Extensions.DependencyInjection.IServiceScopeFactory, Microsoft.AspNetCore.SignalR.IHubContext(Of Api.Hubs.RankMatchMakerHub, Application.Interfaces.Hub.IRankMatchMakerHub), Microsoft.Extensions.Logging.ILogger(Of Application.Services.BackGroundServices.RankMatchMakerBackGroundService))
+  name.vb: New(IServiceScopeFactory, IHubContext(Of RankMatchMakerHub, IRankMatchMakerHub), ILogger(Of RankMatchMakerBackGroundService))
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync(System.Threading.CancellationToken)
+  id: ExecuteAsync(System.Threading.CancellationToken)
+  parent: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: RankMatchMakerBackGroundService.ExecuteAsync(CancellationToken)
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ExecuteAsync
+    path: ../Api/BackGroundServices/RankMatchMakerBackGroundService.cs
+    startLine: 70
+  assemblies:
+  - Api
+  namespace: Application.Services.BackGroundServices
+  summary: Método principal de execução do serviço.
+  remarks: >-
+    O loop infinito executa as seguintes etapas:
+
+    1. Verifica se é necessário relaxar os critérios de pesquisa (aumentar tolerância de idade/pontos).
+
+    2. Cria um escopo e invoca o [IManagerRankMatchMakerService] para tentar emparelhar as equipas em espera.
+
+    3. Processa os resultados (notifica e remove equipas emparelhadas do lobby).
+
+    4. Verifica se é necessário reiniciar os critérios (timeout).
+
+    5. Aguarda o intervalo definido antes da próxima iteração.
+  example: []
+  syntax:
+    content: protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    parameters:
+    - id: stoppingToken
+      type: System.Threading.CancellationToken
+      description: Token de cancelamento para parar o serviço.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overrides Function ExecuteAsync(stoppingToken As CancellationToken) As Task
+  overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  overload: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync*
+references:
+- uid: Application.Services.BackGroundServices
+  commentId: N:Application.Services.BackGroundServices
+  href: Application.html
+  name: Application.Services.BackGroundServices
+  nameWithType: Application.Services.BackGroundServices
+  fullName: Application.Services.BackGroundServices
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.BackGroundServices
+    name: BackGroundServices
+    href: Application.Services.BackGroundServices.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  - name: .
+  - uid: Application.Services.BackGroundServices
+    name: BackGroundServices
+    href: Application.Services.BackGroundServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Hosting.BackgroundService
+  commentId: T:Microsoft.Extensions.Hosting.BackgroundService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice
+  name: BackgroundService
+  nameWithType: BackgroundService
+  fullName: Microsoft.Extensions.Hosting.BackgroundService
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.Dispose
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  name: Dispose()
+  nameWithType: BackgroundService.Dispose()
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.Dispose()
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.dispose
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  name: StartAsync(CancellationToken)
+  nameWithType: BackgroundService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: BackgroundService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  commentId: P:Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executetask
+  name: ExecuteTask
+  nameWithType: BackgroundService.ExecuteTask
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteTask
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor*
+  commentId: Overload:Application.Services.BackGroundServices.RankMatchMakerBackGroundService.#ctor
+  href: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html#Application_Services_BackGroundServices_RankMatchMakerBackGroundService__ctor_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_Microsoft_AspNetCore_SignalR_IHubContext_Api_Hubs_RankMatchMakerHub_Application_Interfaces_Hub_IRankMatchMakerHub__Microsoft_Extensions_Logging_ILogger_Application_Services_BackGroundServices_RankMatchMakerBackGroundService__
+  name: RankMatchMakerBackGroundService
+  nameWithType: RankMatchMakerBackGroundService.RankMatchMakerBackGroundService
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.RankMatchMakerBackGroundService
+  nameWithType.vb: RankMatchMakerBackGroundService.New
+  fullName.vb: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.New
+  name.vb: New
+- uid: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicescopefactory
+  name: IServiceScopeFactory
+  nameWithType: IServiceScopeFactory
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceScopeFactory
+- uid: Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub}
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext{Api.Hubs.RankMatchMakerHub,Application.Interfaces.Hub.IRankMatchMakerHub}
+  parent: Microsoft.AspNetCore.SignalR
+  definition: Microsoft.AspNetCore.SignalR.IHubContext`2
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  name: IHubContext<RankMatchMakerHub, IRankMatchMakerHub>
+  nameWithType: IHubContext<RankMatchMakerHub, IRankMatchMakerHub>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<Api.Hubs.RankMatchMakerHub, Application.Interfaces.Hub.IRankMatchMakerHub>
+  nameWithType.vb: IHubContext(Of RankMatchMakerHub, IRankMatchMakerHub)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of Api.Hubs.RankMatchMakerHub, Application.Interfaces.Hub.IRankMatchMakerHub)
+  name.vb: IHubContext(Of RankMatchMakerHub, IRankMatchMakerHub)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`2
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  - name: <
+  - uid: Api.Hubs.RankMatchMakerHub
+    name: RankMatchMakerHub
+    href: Api.Hubs.RankMatchMakerHub.html
+  - name: ','
+  - name: " "
+  - uid: Application.Interfaces.Hub.IRankMatchMakerHub
+    name: IRankMatchMakerHub
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`2
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Api.Hubs.RankMatchMakerHub
+    name: RankMatchMakerHub
+    href: Api.Hubs.RankMatchMakerHub.html
+  - name: ','
+  - name: " "
+  - uid: Application.Interfaces.Hub.IRankMatchMakerHub
+    name: IRankMatchMakerHub
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Application.Services.BackGroundServices.RankMatchMakerBackGroundService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<RankMatchMakerBackGroundService>
+  nameWithType: ILogger<RankMatchMakerBackGroundService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Application.Services.BackGroundServices.RankMatchMakerBackGroundService>
+  nameWithType.vb: ILogger(Of RankMatchMakerBackGroundService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Application.Services.BackGroundServices.RankMatchMakerBackGroundService)
+  name.vb: ILogger(Of RankMatchMakerBackGroundService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+    name: RankMatchMakerBackGroundService
+    href: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+    name: RankMatchMakerBackGroundService
+    href: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Microsoft.AspNetCore.SignalR.IHubContext`2
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  name: IHubContext<THub, T>
+  nameWithType: IHubContext<THub, T>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<THub, T>
+  nameWithType.vb: IHubContext(Of THub, T)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of THub, T)
+  name.vb: IHubContext(Of THub, T)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`2
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  - name: <
+  - name: THub
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`2
+    name: IHubContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr.ihubcontext-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: THub
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.AspNetCore.SignalR
+  commentId: N:Microsoft.AspNetCore.SignalR
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.SignalR
+  nameWithType: Microsoft.AspNetCore.SignalR
+  fullName: Microsoft.AspNetCore.SignalR
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.SignalR
+    name: SignalR
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.SignalR
+    name: SignalR
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.signalr
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.BackgroundService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: BackgroundService.ExecuteAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+    name: ExecuteAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice.executeasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync*
+  commentId: Overload:Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync
+  href: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html#Application_Services_BackGroundServices_RankMatchMakerBackGroundService_ExecuteAsync_System_Threading_CancellationToken_
+  name: ExecuteAsync
+  nameWithType: RankMatchMakerBackGroundService.ExecuteAsync
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.ExecuteAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

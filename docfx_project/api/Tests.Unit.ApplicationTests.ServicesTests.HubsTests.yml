@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  commentId: N:Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  id: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  children:
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  - Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests
+  langs:
+  - csharp
+  - vb
+  name: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  nameWithType: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests.html
+  name: FinishMatchServiceTests
+  nameWithType: FinishMatchServiceTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.FinishMatchServiceTests
+- uid: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests
+  commentId: T:Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests
+  href: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests.html
+  name: StartMatchTests
+  nameWithType: StartMatchTests
+  fullName: Tests.Unit.ApplicationTests.ServicesTests.HubsTests.StartMatchTests

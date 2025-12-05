@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Hub.IStartMatchHub
+  commentId: T:Application.Interfaces.Hub.IStartMatchHub
+  id: IStartMatchHub
+  parent: Application.Interfaces.Hub
+  children:
+  - Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch(System.Guid)
+  - Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch
+  - Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStartMatchHub
+  nameWithType: IStartMatchHub
+  fullName: Application.Interfaces.Hub.IStartMatchHub
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IStartMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IStartMatchHub
+    path: ../Application/Interfaces/Hub/IStartMatchHub.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: public interface IStartMatchHub
+    content.vb: Public Interface IStartMatchHub
+- uid: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch(System.String)
+  commentId: M:Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch(System.String)
+  id: ReceiveStartMatch(System.String)
+  parent: Application.Interfaces.Hub.IStartMatchHub
+  langs:
+  - csharp
+  - vb
+  name: ReceiveStartMatch(string)
+  nameWithType: IStartMatchHub.ReceiveStartMatch(string)
+  fullName: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IStartMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ReceiveStartMatch
+    path: ../Application/Interfaces/Hub/IStartMatchHub.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task ReceiveStartMatch(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ReceiveStartMatch(msg As String) As Task
+  overload: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch*
+  nameWithType.vb: IStartMatchHub.ReceiveStartMatch(String)
+  fullName.vb: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch(String)
+  name.vb: ReceiveStartMatch(String)
+- uid: Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch(System.Guid)
+  commentId: M:Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch(System.Guid)
+  id: JoinStartMatch(System.Guid)
+  parent: Application.Interfaces.Hub.IStartMatchHub
+  langs:
+  - csharp
+  - vb
+  name: JoinStartMatch(Guid)
+  nameWithType: IStartMatchHub.JoinStartMatch(Guid)
+  fullName: Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IStartMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinStartMatch
+    path: ../Application/Interfaces/Hub/IStartMatchHub.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task JoinStartMatch(Guid idMatch)
+    parameters:
+    - id: idMatch
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinStartMatch(idMatch As Guid) As Task
+  overload: Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch*
+- uid: Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch
+  commentId: M:Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch
+  id: LeaveStartMatch
+  parent: Application.Interfaces.Hub.IStartMatchHub
+  langs:
+  - csharp
+  - vb
+  name: LeaveStartMatch()
+  nameWithType: IStartMatchHub.LeaveStartMatch()
+  fullName: Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IStartMatchHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveStartMatch
+    path: ../Application/Interfaces/Hub/IStartMatchHub.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task LeaveStartMatch()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveStartMatch() As Task
+  overload: Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch*
+references:
+- uid: Application.Interfaces.Hub
+  commentId: N:Application.Interfaces.Hub
+  href: Application.html
+  name: Application.Interfaces.Hub
+  nameWithType: Application.Interfaces.Hub
+  fullName: Application.Interfaces.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+- uid: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch*
+  commentId: Overload:Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch
+  href: Application.Interfaces.Hub.IStartMatchHub.html#Application_Interfaces_Hub_IStartMatchHub_ReceiveStartMatch_System_String_
+  name: ReceiveStartMatch
+  nameWithType: IStartMatchHub.ReceiveStartMatch
+  fullName: Application.Interfaces.Hub.IStartMatchHub.ReceiveStartMatch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch*
+  commentId: Overload:Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch
+  href: Application.Interfaces.Hub.IStartMatchHub.html#Application_Interfaces_Hub_IStartMatchHub_JoinStartMatch_System_Guid_
+  name: JoinStartMatch
+  nameWithType: IStartMatchHub.JoinStartMatch
+  fullName: Application.Interfaces.Hub.IStartMatchHub.JoinStartMatch
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch*
+  commentId: Overload:Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch
+  href: Application.Interfaces.Hub.IStartMatchHub.html#Application_Interfaces_Hub_IStartMatchHub_LeaveStartMatch
+  name: LeaveStartMatch
+  nameWithType: IStartMatchHub.LeaveStartMatch
+  fullName: Application.Interfaces.Hub.IStartMatchHub.LeaveStartMatch

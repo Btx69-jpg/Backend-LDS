@@ -1,0 +1,640 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.UserDataValidator
+  commentId: T:Application.Validators.UserDataValidator
+  id: UserDataValidator
+  parent: Application.Validators
+  children:
+  - Application.Validators.UserDataValidator.CreateUserValidation(System.String)
+  - Application.Validators.UserDataValidator.DeleteUserValidation(System.String)
+  - Application.Validators.UserDataValidator.EmailValidation(System.String)
+  - Application.Validators.UserDataValidator.PhoneNumberValidation(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UserDataValidator
+  nameWithType: UserDataValidator
+  fullName: Application.Validators.UserDataValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/UserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: UserDataValidator
+    path: ../Application/Validators/UserDataValidator.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  syntax:
+    content: 'public class UserDataValidator : IUserDataValidator'
+    content.vb: Public Class UserDataValidator Implements IUserDataValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.IUserDataValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.UserDataValidator.EmailValidation(System.String)
+  commentId: M:Application.Validators.UserDataValidator.EmailValidation(System.String)
+  id: EmailValidation(System.String)
+  parent: Application.Validators.UserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: EmailValidation(string)
+  nameWithType: UserDataValidator.EmailValidation(string)
+  fullName: Application.Validators.UserDataValidator.EmailValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/UserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: EmailValidation
+    path: ../Application/Validators/UserDataValidator.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void EmailValidation(string email)
+    parameters:
+    - id: email
+      type: System.String
+    content.vb: Public Sub EmailValidation(email As String)
+  overload: Application.Validators.UserDataValidator.EmailValidation*
+  implements:
+  - Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  nameWithType.vb: UserDataValidator.EmailValidation(String)
+  fullName.vb: Application.Validators.UserDataValidator.EmailValidation(String)
+  name.vb: EmailValidation(String)
+- uid: Application.Validators.UserDataValidator.PhoneNumberValidation(System.String)
+  commentId: M:Application.Validators.UserDataValidator.PhoneNumberValidation(System.String)
+  id: PhoneNumberValidation(System.String)
+  parent: Application.Validators.UserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberValidation(string)
+  nameWithType: UserDataValidator.PhoneNumberValidation(string)
+  fullName: Application.Validators.UserDataValidator.PhoneNumberValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/UserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: PhoneNumberValidation
+    path: ../Application/Validators/UserDataValidator.cs
+    startLine: 26
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void PhoneNumberValidation(string phoneNumber)
+    parameters:
+    - id: phoneNumber
+      type: System.String
+    content.vb: Public Sub PhoneNumberValidation(phoneNumber As String)
+  overload: Application.Validators.UserDataValidator.PhoneNumberValidation*
+  implements:
+  - Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  nameWithType.vb: UserDataValidator.PhoneNumberValidation(String)
+  fullName.vb: Application.Validators.UserDataValidator.PhoneNumberValidation(String)
+  name.vb: PhoneNumberValidation(String)
+- uid: Application.Validators.UserDataValidator.CreateUserValidation(System.String)
+  commentId: M:Application.Validators.UserDataValidator.CreateUserValidation(System.String)
+  id: CreateUserValidation(System.String)
+  parent: Application.Validators.UserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: CreateUserValidation(string)
+  nameWithType: UserDataValidator.CreateUserValidation(string)
+  fullName: Application.Validators.UserDataValidator.CreateUserValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/UserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateUserValidation
+    path: ../Application/Validators/UserDataValidator.cs
+    startLine: 32
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void CreateUserValidation(string newUserId)
+    parameters:
+    - id: newUserId
+      type: System.String
+    content.vb: Public Sub CreateUserValidation(newUserId As String)
+  overload: Application.Validators.UserDataValidator.CreateUserValidation*
+  implements:
+  - Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  nameWithType.vb: UserDataValidator.CreateUserValidation(String)
+  fullName.vb: Application.Validators.UserDataValidator.CreateUserValidation(String)
+  name.vb: CreateUserValidation(String)
+- uid: Application.Validators.UserDataValidator.DeleteUserValidation(System.String)
+  commentId: M:Application.Validators.UserDataValidator.DeleteUserValidation(System.String)
+  id: DeleteUserValidation(System.String)
+  parent: Application.Validators.UserDataValidator
+  langs:
+  - csharp
+  - vb
+  name: DeleteUserValidation(string)
+  nameWithType: UserDataValidator.DeleteUserValidation(string)
+  fullName: Application.Validators.UserDataValidator.DeleteUserValidation(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/UserDataValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DeleteUserValidation
+    path: ../Application/Validators/UserDataValidator.cs
+    startLine: 38
+  assemblies:
+  - Application
+  namespace: Application.Validators
+  example: []
+  syntax:
+    content: public void DeleteUserValidation(string userIdToDelete)
+    parameters:
+    - id: userIdToDelete
+      type: System.String
+    content.vb: Public Sub DeleteUserValidation(userIdToDelete As String)
+  overload: Application.Validators.UserDataValidator.DeleteUserValidation*
+  implements:
+  - Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  nameWithType.vb: UserDataValidator.DeleteUserValidation(String)
+  fullName.vb: Application.Validators.UserDataValidator.DeleteUserValidation(String)
+  name.vb: DeleteUserValidation(String)
+references:
+- uid: Application.Validators
+  commentId: N:Application.Validators
+  href: Application.html
+  name: Application.Validators
+  nameWithType: Application.Validators
+  fullName: Application.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.IUserDataValidator
+  commentId: T:Application.Interfaces.Validators.IUserDataValidator
+  parent: Application.Interfaces.Validators
+  href: Application.Interfaces.Validators.IUserDataValidator.html
+  name: IUserDataValidator
+  nameWithType: IUserDataValidator
+  fullName: Application.Interfaces.Validators.IUserDataValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Validators.UserDataValidator.EmailValidation*
+  commentId: Overload:Application.Validators.UserDataValidator.EmailValidation
+  href: Application.Validators.UserDataValidator.html#Application_Validators_UserDataValidator_EmailValidation_System_String_
+  name: EmailValidation
+  nameWithType: UserDataValidator.EmailValidation
+  fullName: Application.Validators.UserDataValidator.EmailValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_EmailValidation_System_String_
+  name: EmailValidation(string)
+  nameWithType: IUserDataValidator.EmailValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(string)
+  nameWithType.vb: IUserDataValidator.EmailValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(String)
+  name.vb: EmailValidation(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+    name: EmailValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_EmailValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.EmailValidation(System.String)
+    name: EmailValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_EmailValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Validators.UserDataValidator.PhoneNumberValidation*
+  commentId: Overload:Application.Validators.UserDataValidator.PhoneNumberValidation
+  href: Application.Validators.UserDataValidator.html#Application_Validators_UserDataValidator_PhoneNumberValidation_System_String_
+  name: PhoneNumberValidation
+  nameWithType: UserDataValidator.PhoneNumberValidation
+  fullName: Application.Validators.UserDataValidator.PhoneNumberValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_PhoneNumberValidation_System_String_
+  name: PhoneNumberValidation(string)
+  nameWithType: IUserDataValidator.PhoneNumberValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(string)
+  nameWithType.vb: IUserDataValidator.PhoneNumberValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(String)
+  name.vb: PhoneNumberValidation(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+    name: PhoneNumberValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_PhoneNumberValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.PhoneNumberValidation(System.String)
+    name: PhoneNumberValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_PhoneNumberValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Validators.UserDataValidator.CreateUserValidation*
+  commentId: Overload:Application.Validators.UserDataValidator.CreateUserValidation
+  href: Application.Validators.UserDataValidator.html#Application_Validators_UserDataValidator_CreateUserValidation_System_String_
+  name: CreateUserValidation
+  nameWithType: UserDataValidator.CreateUserValidation
+  fullName: Application.Validators.UserDataValidator.CreateUserValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_CreateUserValidation_System_String_
+  name: CreateUserValidation(string)
+  nameWithType: IUserDataValidator.CreateUserValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(string)
+  nameWithType.vb: IUserDataValidator.CreateUserValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(String)
+  name.vb: CreateUserValidation(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+    name: CreateUserValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_CreateUserValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.CreateUserValidation(System.String)
+    name: CreateUserValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_CreateUserValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Validators.UserDataValidator.DeleteUserValidation*
+  commentId: Overload:Application.Validators.UserDataValidator.DeleteUserValidation
+  href: Application.Validators.UserDataValidator.html#Application_Validators_UserDataValidator_DeleteUserValidation_System_String_
+  name: DeleteUserValidation
+  nameWithType: UserDataValidator.DeleteUserValidation
+  fullName: Application.Validators.UserDataValidator.DeleteUserValidation
+- uid: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  commentId: M:Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+  parent: Application.Interfaces.Validators.IUserDataValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_DeleteUserValidation_System_String_
+  name: DeleteUserValidation(string)
+  nameWithType: IUserDataValidator.DeleteUserValidation(string)
+  fullName: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(string)
+  nameWithType.vb: IUserDataValidator.DeleteUserValidation(String)
+  fullName.vb: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(String)
+  name.vb: DeleteUserValidation(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+    name: DeleteUserValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_DeleteUserValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.IUserDataValidator.DeleteUserValidation(System.String)
+    name: DeleteUserValidation
+    href: Application.Interfaces.Validators.IUserDataValidator.html#Application_Interfaces_Validators_IUserDataValidator_DeleteUserValidation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  commentId: T:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  id: IFinishMatchHubClientService
+  parent: Application.Interfaces.Services.Hub.ClienteService
+  children:
+  - Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  - Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync
+  - Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  - Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync
+  langs:
+  - csharp
+  - vb
+  name: IFinishMatchHubClientService
+  nameWithType: IFinishMatchHubClientService
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IFinishMatchHubClientService
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: public interface IFinishMatchHubClientService
+    content.vb: Public Interface IFinishMatchHubClientService
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync
+  id: InitializeAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: IFinishMatchHubClientService.InitializeAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: InitializeAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function InitializeAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  id: JoinFinishMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: JoinFinishMatchAsync(ResultMatchDto)
+  nameWithType: IFinishMatchHubClientService.JoinFinishMatchAsync(ResultMatchDto)
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinFinishMatchAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task JoinFinishMatchAsync(ResultMatchDto result)
+    parameters:
+    - id: result
+      type: Application.DTOs.Match.ResultMatchDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinFinishMatchAsync(result As ResultMatchDto) As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  id: EditResultMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  parent: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: EditResultMatchAsync(ResultMatchDto)
+  nameWithType: IFinishMatchHubClientService.EditResultMatchAsync(ResultMatchDto)
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync(Application.DTOs.Match.ResultMatchDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: EditResultMatchAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task EditResultMatchAsync(ResultMatchDto result)
+    parameters:
+    - id: result
+      type: Application.DTOs.Match.ResultMatchDto
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function EditResultMatchAsync(result As ResultMatchDto) As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync*
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync
+  commentId: M:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync
+  id: LeaveFinishMatchAsync
+  parent: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService
+  langs:
+  - csharp
+  - vb
+  name: LeaveFinishMatchAsync()
+  nameWithType: IFinishMatchHubClientService.LeaveFinishMatchAsync()
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveFinishMatchAsync
+    path: ../Application/Interfaces/Services/Hub/ClienteService/IFinishMatchHubClientService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Services.Hub.ClienteService
+  syntax:
+    content: Task LeaveFinishMatchAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveFinishMatchAsync() As Task
+  overload: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync*
+references:
+- uid: Application.Interfaces.Services.Hub.ClienteService
+  commentId: N:Application.Interfaces.Services.Hub.ClienteService
+  href: Application.html
+  name: Application.Interfaces.Services.Hub.ClienteService
+  nameWithType: Application.Interfaces.Services.Hub.ClienteService
+  fullName: Application.Interfaces.Services.Hub.ClienteService
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub.ClienteService
+    name: ClienteService
+    href: Application.Interfaces.Services.Hub.ClienteService.html
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IFinishMatchHubClientService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: IFinishMatchHubClientService.InitializeAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IFinishMatchHubClientService_JoinFinishMatchAsync_Application_DTOs_Match_ResultMatchDto_
+  name: JoinFinishMatchAsync
+  nameWithType: IFinishMatchHubClientService.JoinFinishMatchAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.JoinFinishMatchAsync
+- uid: Application.DTOs.Match.ResultMatchDto
+  commentId: T:Application.DTOs.Match.ResultMatchDto
+  parent: Application.DTOs.Match
+  href: Application.DTOs.Match.ResultMatchDto.html
+  name: ResultMatchDto
+  nameWithType: ResultMatchDto
+  fullName: Application.DTOs.Match.ResultMatchDto
+- uid: Application.DTOs.Match
+  commentId: N:Application.DTOs.Match
+  href: Application.html
+  name: Application.DTOs.Match
+  nameWithType: Application.DTOs.Match
+  fullName: Application.DTOs.Match
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Match
+    name: Match
+    href: Application.DTOs.Match.html
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IFinishMatchHubClientService_EditResultMatchAsync_Application_DTOs_Match_ResultMatchDto_
+  name: EditResultMatchAsync
+  nameWithType: IFinishMatchHubClientService.EditResultMatchAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.EditResultMatchAsync
+- uid: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync*
+  commentId: Overload:Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync
+  href: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.html#Application_Interfaces_Services_Hub_ClienteService_IFinishMatchHubClientService_LeaveFinishMatchAsync
+  name: LeaveFinishMatchAsync
+  nameWithType: IFinishMatchHubClientService.LeaveFinishMatchAsync
+  fullName: Application.Interfaces.Services.Hub.ClienteService.IFinishMatchHubClientService.LeaveFinishMatchAsync

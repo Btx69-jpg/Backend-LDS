@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlayerRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlayerRepository | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio espec&#237;fico para opera&#231;&#245;es de persist&#234;ncia de dados e consulta da entidade [Player]. Implementa o contrato [IPlayerRepository] e &#233; a fonte de verdade para perfis de jogadores.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_PlayerRepository.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.PlayerRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.PlayerRepository">
+
+
+
+  <h1 id="Infrastructure_Repositories_PlayerRepository" data-uid="Infrastructure.Repositories.PlayerRepository" class="text-break">
+Class PlayerRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório específico para operações de persistência de dados e consulta da entidade [Player].</p>
+<p>Implementa o contrato [IPlayerRepository] e é a fonte de verdade para perfis de jogadores.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerRepository : IPlayerRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PlayerRepository</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.IPlayerRepository.html">IPlayerRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository__ctor_" data-uid="Infrastructure.Repositories.PlayerRepository.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.PlayerRepository.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  PlayerRepository(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [PlayerRepository].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerRepository(AmateurFootballContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados (Db Context) injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_AddAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.AddAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_AddAsync_Domain_Entities_Player_" data-uid="Infrastructure.Repositories.PlayerRepository.AddAsync(Domain.Entities.Player)">
+  AddAsync(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona um novo jogador à base de dados de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddAsync(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd><p>A entidade [Player] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_DeletePlayer_" data-uid="Infrastructure.Repositories.PlayerRepository.DeletePlayer*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_DeletePlayer_Domain_Entities_Player_" data-uid="Infrastructure.Repositories.PlayerRepository.DeletePlayer(Domain.Entities.Player)">
+  DeletePlayer(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca um jogador existente para ser removido da base de dados (deleção).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeletePlayer(Player playerToRemove)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerToRemove</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd><p>A entidade [Player] a ser removida.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayerByEmailAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayerByEmailAsync_System_String_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByEmailAsync(System.String)">
+  GetPlayerByEmailAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um jogador pelo seu endereço de e-mail de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Player?&gt; GetPlayerByEmailAsync(string email)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>email</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O endereço de e-mail do jogador.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Player.html">Player</a>&gt;</dt>
+    <dd><p>A entidade [Player] ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdAsync_System_String_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByIdAsync(System.String)">
+  GetPlayerByIdAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um jogador pelo seu identificador único (ID), carregando a afiliação à equipa.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Player?&gt; GetPlayerByIdAsync(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID (UID) do jogador.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Player.html">Player</a>&gt;</dt>
+    <dd><p>A entidade [Player] com os dados da equipa carregados, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza <code>.Include(p =&gt; p.Team)</code> para carregar os dados da equipa associada (Eager Loading).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdWithRequestsAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdWithRequestsAsync_System_String_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByIdWithRequestsAsync(System.String)">
+  GetPlayerByIdWithRequestsAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um pedido de adesão específico associado a um jogador, carregando as relações necessárias.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MembershipRequest?&gt; GetPlayerByIdWithRequestsAsync(string playerId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O ID do jogador.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MembershipRequest.html">MembershipRequest</a>&gt;</dt>
+    <dd><p>A entidade [MembershipRequest] correspondente, ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_PlayerRepository_GetPlayerByIdWithRequestsAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Consulta a tabela [MembershipRequests] mas carrega o jogador e a equipa associada através de [ThenInclude].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayerByPhoneNumberAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayerByPhoneNumberAsync_System_String_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayerByPhoneNumberAsync(System.String)">
+  GetPlayerByPhoneNumberAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um jogador pelo seu número de telefone de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Player?&gt; GetPlayerByPhoneNumberAsync(string phoneNumber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>phoneNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>O número de telefone completo do jogador.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.Player.html">Player</a>&gt;</dt>
+    <dd><p>A entidade [Player] ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayersList_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayersList*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayersList_Application_DTOs_Filters_FilterTeamDto_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayersList(Application.DTOs.Filters.FilterTeamDto)">
+  GetPlayersList(FilterTeamDto?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de jogadores para pesquisa de mercado, aplicando filtros dinâmicos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoPlayerDto?&gt;&gt; GetPlayersList(FilterTeamDto? filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filters</code> <a class="xref" href="Application.DTOs.Filters.FilterTeamDto.html">FilterTeamDto</a></dt>
+    <dd><p>O DTO com os critérios de filtragem (Nome, Idade, Altura, Posição).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.Player.InfoPlayerDto.html">InfoPlayerDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de objetos [InfoPlayerDto] para o frontend.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_PlayerRepository_GetPlayersList_Application_DTOs_Filters_FilterTeamDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Esta consulta complexa calcula a idade do jogador usando [EF.Functions.DateDiffDay] e projeta o resultado
+no DTO [InfoPlayerDto]. Também implementa filtragem por nome, cidade e atributos físicos.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_GetPlayersListByIdListAsync_" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_GetPlayersListByIdListAsync_System_Collections_Generic_List_System_String__" data-uid="Infrastructure.Repositories.PlayerRepository.GetPlayersListByIdListAsync(System.Collections.Generic.List{System.String})">
+  GetPlayersListByIdListAsync(List&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista de jogadores com base numa lista de IDs fornecida.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Player&gt;&gt; GetPlayersListByIdListAsync(List&lt;string&gt; playerIdList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerIdList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A lista de IDs (Strings) a procurar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Domain.Entities.Player.html">Player</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de entidades [Player].</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_PlayerRepository_UpdatePlayer_" data-uid="Infrastructure.Repositories.PlayerRepository.UpdatePlayer*"></a>
+
+  <h3 id="Infrastructure_Repositories_PlayerRepository_UpdatePlayer_Domain_Entities_Player_" data-uid="Infrastructure.Repositories.PlayerRepository.UpdatePlayer(Domain.Entities.Player)">
+  UpdatePlayer(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca uma entidade [Player] para ser atualizada na base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlayer(Player updatedPlayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>updatedPlayer</code> <a class="xref" href="Domain.Entities.Player.html">Player</a></dt>
+    <dd><p>A entidade [Player] com os novos valores.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/PlayerRepository.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

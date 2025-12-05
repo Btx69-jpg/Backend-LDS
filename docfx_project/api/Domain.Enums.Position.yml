@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.Position
+  commentId: T:Domain.Enums.Position
+  id: Position
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.Position.DEFENDER
+  - Domain.Enums.Position.FORWARD
+  - Domain.Enums.Position.GOALKEEPER
+  - Domain.Enums.Position.MIDFIELDER
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Position
+  fullName: Domain.Enums.Position
+  type: Enum
+  source:
+    remote:
+      path: Domain/Enums/Postion.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Position
+    path: ../Domain/Enums/Postion.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: >-
+    Define as posições de um jogador.
+
+    Utilizada para tipar e categorizar o papel de cadajogador.
+  example: []
+  syntax:
+    content: public enum Position
+    content.vb: Public Enum Position
+- uid: Domain.Enums.Position.FORWARD
+  commentId: F:Domain.Enums.Position.FORWARD
+  id: FORWARD
+  parent: Domain.Enums.Position
+  langs:
+  - csharp
+  - vb
+  name: FORWARD
+  nameWithType: Position.FORWARD
+  fullName: Domain.Enums.Position.FORWARD
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/Postion.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FORWARD
+    path: ../Domain/Enums/Postion.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: Posição ofensiva (Avançado/Atacante).
+  example: []
+  syntax:
+    content: FORWARD = 0
+    return:
+      type: Domain.Enums.Position
+- uid: Domain.Enums.Position.MIDFIELDER
+  commentId: F:Domain.Enums.Position.MIDFIELDER
+  id: MIDFIELDER
+  parent: Domain.Enums.Position
+  langs:
+  - csharp
+  - vb
+  name: MIDFIELDER
+  nameWithType: Position.MIDFIELDER
+  fullName: Domain.Enums.Position.MIDFIELDER
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/Postion.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MIDFIELDER
+    path: ../Domain/Enums/Postion.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: Posição central, ligando a defesa ao ataque (Médio/Meio-Campo).
+  example: []
+  syntax:
+    content: MIDFIELDER = 1
+    return:
+      type: Domain.Enums.Position
+- uid: Domain.Enums.Position.DEFENDER
+  commentId: F:Domain.Enums.Position.DEFENDER
+  id: DEFENDER
+  parent: Domain.Enums.Position
+  langs:
+  - csharp
+  - vb
+  name: DEFENDER
+  nameWithType: Position.DEFENDER
+  fullName: Domain.Enums.Position.DEFENDER
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/Postion.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: DEFENDER
+    path: ../Domain/Enums/Postion.cs
+    startLine: 21
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: Posição defensiva, responsável por proteger a baliza (Defesa).
+  example: []
+  syntax:
+    content: DEFENDER = 2
+    return:
+      type: Domain.Enums.Position
+- uid: Domain.Enums.Position.GOALKEEPER
+  commentId: F:Domain.Enums.Position.GOALKEEPER
+  id: GOALKEEPER
+  parent: Domain.Enums.Position
+  langs:
+  - csharp
+  - vb
+  name: GOALKEEPER
+  nameWithType: Position.GOALKEEPER
+  fullName: Domain.Enums.Position.GOALKEEPER
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/Postion.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GOALKEEPER
+    path: ../Domain/Enums/Postion.cs
+    startLine: 26
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: Posição de guarda-redes (Goleiro/Keeper).
+  example: []
+  syntax:
+    content: GOALKEEPER = 3
+    return:
+      type: Domain.Enums.Position
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Enums.Position
+  commentId: T:Domain.Enums.Position
+  parent: Domain.Enums
+  href: Domain.Enums.Position.html
+  name: Position
+  nameWithType: Position
+  fullName: Domain.Enums.Position

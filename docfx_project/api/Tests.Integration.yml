@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Tests.Integration
+  commentId: N:Tests.Integration
+  id: Tests.Integration
+  children:
+  - Tests.Integration.ApiTestAppFactory
+  - Tests.Integration.TestAuthHandler
+  langs:
+  - csharp
+  - vb
+  name: Tests.Integration
+  nameWithType: Tests.Integration
+  fullName: Tests.Integration
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: Tests.Integration.ApiTestAppFactory
+  commentId: T:Tests.Integration.ApiTestAppFactory
+  href: Tests.Integration.ApiTestAppFactory.html
+  name: ApiTestAppFactory
+  nameWithType: ApiTestAppFactory
+  fullName: Tests.Integration.ApiTestAppFactory
+- uid: Tests.Integration.TestAuthHandler
+  commentId: T:Tests.Integration.TestAuthHandler
+  href: Tests.Integration.TestAuthHandler.html
+  name: TestAuthHandler
+  nameWithType: TestAuthHandler
+  fullName: Tests.Integration.TestAuthHandler

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MatchInviteRepository | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MatchInviteRepository | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio espec&#237;fico para opera&#231;&#245;es de persist&#234;ncia de dados e consulta da entidade [MatchInvite]. Esta classe utiliza o [AmateurFootballContext] e m&#233;todos ass&#237;ncronos do EF Core para gerir o ciclo de vida dos convites de partida.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_MatchInviteRepository.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.MatchInviteRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.MatchInviteRepository">
+
+
+
+  <h1 id="Infrastructure_Repositories_MatchInviteRepository" data-uid="Infrastructure.Repositories.MatchInviteRepository" class="text-break">
+Class MatchInviteRepository  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório específico para operações de persistência de dados e consulta da entidade [MatchInvite].</p>
+<p>Esta classe utiliza o [AmateurFootballContext] e métodos assíncronos do EF Core para gerir
+o ciclo de vida dos convites de partida.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatchInviteRepository : IMatchInviteRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MatchInviteRepository</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.IMatchInviteRepository.html">IMatchInviteRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository__ctor_" data-uid="Infrastructure.Repositories.MatchInviteRepository.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.MatchInviteRepository.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  MatchInviteRepository(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [MatchInviteRepository].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MatchInviteRepository(AmateurFootballContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_AddMatchInvite_" data-uid="Infrastructure.Repositories.MatchInviteRepository.AddMatchInvite*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_AddMatchInvite_Domain_Entities_MatchInvite_" data-uid="Infrastructure.Repositories.MatchInviteRepository.AddMatchInvite(Domain.Entities.MatchInvite)">
+  AddMatchInvite(MatchInvite)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona um novo convite de partida à base de dados de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddMatchInvite(MatchInvite matchInvite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matchInvite</code> <a class="xref" href="Domain.Entities.MatchInvite.html">MatchInvite</a></dt>
+    <dd><p>A entidade [MatchInvite] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_DeleteMatchInvite_" data-uid="Infrastructure.Repositories.MatchInviteRepository.DeleteMatchInvite*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_DeleteMatchInvite_Domain_Entities_MatchInvite_" data-uid="Infrastructure.Repositories.MatchInviteRepository.DeleteMatchInvite(Domain.Entities.MatchInvite)">
+  DeleteMatchInvite(MatchInvite)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca um convite de partida existente para ser removido da base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteMatchInvite(MatchInvite matchInvite)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matchInvite</code> <a class="xref" href="Domain.Entities.MatchInvite.html">MatchInvite</a></dt>
+    <dd><p>A entidade [MatchInvite] a ser removida.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInviteReceiverById_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetAllMatchInviteReceiverById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInviteReceiverById_System_Guid_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetAllMatchInviteReceiverById(System.Guid)">
+  GetAllMatchInviteReceiverById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista resumida de todos os convites de partida recebidos por uma equipa específica.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoMatchInviteDto&gt;&gt; GetAllMatchInviteReceiverById(Guid idReceiver)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa recetora dos convites.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MatchInvites.InfoMatchInviteDto.html">InfoMatchInviteDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoMatchInviteDto] com informações resumidas dos convites.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInviteReceiverById_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A consulta projeta o resultado diretamente no DTO [InfoMatchInviteDto] para otimização
+e evitar a sobrecarga de carregar dados desnecessários.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInvitesTeamWithFilters_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetAllMatchInvitesTeamWithFilters*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetAllMatchInvitesTeamWithFilters(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)">
+  GetAllMatchInvitesTeamWithFilters(Guid, FilterMatchInvitesDto)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém uma lista filtrada de convites de partida recebidos, utilizando critérios avançados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;InfoMatchInviteDto&gt;&gt; GetAllMatchInvitesTeamWithFilters(Guid idReceiver, FilterMatchInvitesDto filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que está a receber os convites.</p>
+</dd>
+    <dt><code>filter</code> <a class="xref" href="Application.DTOs.Filters.FilterMatchInvitesDto.html">FilterMatchInvitesDto</a></dt>
+    <dd><p>O DTO contendo os critérios de filtragem (Nome do Remetente, Intervalo de Datas, IDs).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Application.DTOs.MatchInvites.InfoMatchInviteDto.html">InfoMatchInviteDto</a>&gt;&gt;</dt>
+    <dd><p>Uma lista de [InfoMatchInviteDto] que satisfaz os critérios de filtragem.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchInviteRepository_GetAllMatchInvitesTeamWithFilters_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Constrói a query de forma dinâmica (<code>AsQueryable()</code>) para aplicar filtros condicionais
+e projeta o resultado no DTO [InfoMatchInviteDto].</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInvite_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInvite*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInvite_System_Guid_System_Guid_System_DateTime_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInvite(System.Guid,System.Guid,System.DateTime)">
+  GetMatchInvite(Guid, Guid, DateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um convite de partida específico com base no remetente, recetor e data do jogo.
+Utilizado para evitar convites duplicados com as mesmas especificações.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MatchInvite?&gt; GetMatchInvite(Guid idSender, Guid idReceiver, DateTime gameDate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idSender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa remetente.</p>
+</dd>
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa recetora.</p>
+</dd>
+    <dt><code>gameDate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd><p>A data e hora proposta para o jogo.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MatchInvite.html">MatchInvite</a>&gt;</dt>
+    <dd><p>A entidade [MatchInvite] correspondente ou null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInviteById_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInviteById*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInviteById_System_Guid_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInviteById(System.Guid)">
+  GetMatchInviteById(Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um convite de partida pelo seu identificador único (ID).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MatchInvite?&gt; GetMatchInviteById(Guid id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID (GUID) do convite.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MatchInvite.html">MatchInvite</a>&gt;</dt>
+    <dd><p>A entidade [MatchInvite] ou null se não for encontrada.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInviteWithPitchByTeams_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInviteWithPitchByTeams*"></a>
+
+  <h3 id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInviteWithPitchByTeams_System_Guid_System_Guid_" data-uid="Infrastructure.Repositories.MatchInviteRepository.GetMatchInviteWithPitchByTeams(System.Guid,System.Guid)">
+  GetMatchInviteWithPitchByTeams(Guid, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um convite de partida específico, carregando as entidades relacionadas (Equipas e Local).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MatchInvite?&gt; GetMatchInviteWithPitchByTeams(Guid idSender, Guid idReceiver)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idSender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa remetente.</p>
+</dd>
+    <dt><code>idReceiver</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa recetora.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.MatchInvite.html">MatchInvite</a>&gt;</dt>
+    <dd><p>A entidade [MatchInvite] completa com entidades de navegação carregadas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_MatchInviteRepository_GetMatchInviteWithPitchByTeams_System_Guid_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza <code>.Include()</code> para carregar as entidades [Sender], [Receiver] e [Pitch] numa única consulta (Eager Loading).</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/MatchInviteRepository.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

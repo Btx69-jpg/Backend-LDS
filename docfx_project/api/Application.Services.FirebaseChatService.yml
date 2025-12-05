@@ -1,0 +1,916 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.FirebaseChatService
+  commentId: T:Application.Services.FirebaseChatService
+  id: FirebaseChatService
+  parent: Application.Services
+  children:
+  - Application.Services.FirebaseChatService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  - Application.Services.FirebaseChatService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  - Application.Services.FirebaseChatService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  - Application.Services.FirebaseChatService.GetMyRoomsAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FirebaseChatService
+  nameWithType: FirebaseChatService
+  fullName: Application.Services.FirebaseChatService
+  type: Class
+  source:
+    remote:
+      path: Application/Services/FirebaseChatService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FirebaseChatService
+    path: ../Application/Services/FirebaseChatService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: 'public class FirebaseChatService : IChatRoomService'
+    content.vb: Public Class FirebaseChatService Implements IChatRoomService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Services.IChatRoomService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Services.FirebaseChatService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  commentId: M:Application.Services.FirebaseChatService.#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  id: '#ctor(Google.Cloud.Firestore.FirestoreDb,Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)'
+  parent: Application.Services.FirebaseChatService
+  langs:
+  - csharp
+  - vb
+  name: FirebaseChatService(FirestoreDb, ITeamRepository, IPlayerRepository)
+  nameWithType: FirebaseChatService.FirebaseChatService(FirestoreDb, ITeamRepository, IPlayerRepository)
+  fullName: Application.Services.FirebaseChatService.FirebaseChatService(Google.Cloud.Firestore.FirestoreDb, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Services/FirebaseChatService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Services/FirebaseChatService.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Services
+  syntax:
+    content: public FirebaseChatService(FirestoreDb firestoreDb, ITeamRepository teamRepository, IPlayerRepository playerRepository)
+    parameters:
+    - id: firestoreDb
+      type: Google.Cloud.Firestore.FirestoreDb
+    - id: teamRepository
+      type: Application.Interfaces.Repositories.ITeamRepository
+    - id: playerRepository
+      type: Application.Interfaces.Repositories.IPlayerRepository
+    content.vb: Public Sub New(firestoreDb As FirestoreDb, teamRepository As ITeamRepository, playerRepository As IPlayerRepository)
+  overload: Application.Services.FirebaseChatService.#ctor*
+  nameWithType.vb: FirebaseChatService.New(FirestoreDb, ITeamRepository, IPlayerRepository)
+  fullName.vb: Application.Services.FirebaseChatService.New(Google.Cloud.Firestore.FirestoreDb, Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository)
+  name.vb: New(FirestoreDb, ITeamRepository, IPlayerRepository)
+- uid: Application.Services.FirebaseChatService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  commentId: M:Application.Services.FirebaseChatService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  id: CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  parent: Application.Services.FirebaseChatService
+  langs:
+  - csharp
+  - vb
+  name: CreateMatchRoomAsync(CreateChatRoomRequestDto, string)
+  nameWithType: FirebaseChatService.CreateMatchRoomAsync(CreateChatRoomRequestDto, string)
+  fullName: Application.Services.FirebaseChatService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FirebaseChatService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateMatchRoomAsync
+    path: ../Application/Services/FirebaseChatService.cs
+    startLine: 22
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<string> CreateMatchRoomAsync(CreateChatRoomRequestDto request, string createdByUserId)
+    parameters:
+    - id: request
+      type: Application.DTOs.Chat.CreateChatRoomRequestDto
+    - id: createdByUserId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function CreateMatchRoomAsync(request As CreateChatRoomRequestDto, createdByUserId As String) As Task(Of String)
+  overload: Application.Services.FirebaseChatService.CreateMatchRoomAsync*
+  implements:
+  - Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  nameWithType.vb: FirebaseChatService.CreateMatchRoomAsync(CreateChatRoomRequestDto, String)
+  fullName.vb: Application.Services.FirebaseChatService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto, String)
+  name.vb: CreateMatchRoomAsync(CreateChatRoomRequestDto, String)
+- uid: Application.Services.FirebaseChatService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  commentId: M:Application.Services.FirebaseChatService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  id: CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  parent: Application.Services.FirebaseChatService
+  langs:
+  - csharp
+  - vb
+  name: CreateRoomAsync(CreateChatRoomDto, string)
+  nameWithType: FirebaseChatService.CreateRoomAsync(CreateChatRoomDto, string)
+  fullName: Application.Services.FirebaseChatService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FirebaseChatService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: CreateRoomAsync
+    path: ../Application/Services/FirebaseChatService.cs
+    startLine: 49
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<string> CreateRoomAsync(CreateChatRoomDto request, string createdByUserId)
+    parameters:
+    - id: request
+      type: Application.DTOs.Chat.CreateChatRoomDto
+    - id: createdByUserId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function CreateRoomAsync(request As CreateChatRoomDto, createdByUserId As String) As Task(Of String)
+  overload: Application.Services.FirebaseChatService.CreateRoomAsync*
+  implements:
+  - Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  nameWithType.vb: FirebaseChatService.CreateRoomAsync(CreateChatRoomDto, String)
+  fullName.vb: Application.Services.FirebaseChatService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto, String)
+  name.vb: CreateRoomAsync(CreateChatRoomDto, String)
+- uid: Application.Services.FirebaseChatService.GetMyRoomsAsync(System.String)
+  commentId: M:Application.Services.FirebaseChatService.GetMyRoomsAsync(System.String)
+  id: GetMyRoomsAsync(System.String)
+  parent: Application.Services.FirebaseChatService
+  langs:
+  - csharp
+  - vb
+  name: GetMyRoomsAsync(string)
+  nameWithType: FirebaseChatService.GetMyRoomsAsync(string)
+  fullName: Application.Services.FirebaseChatService.GetMyRoomsAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Services/FirebaseChatService.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetMyRoomsAsync
+    path: ../Application/Services/FirebaseChatService.cs
+    startLine: 73
+  assemblies:
+  - Application
+  namespace: Application.Services
+  example: []
+  syntax:
+    content: public Task<List<ChatRoomDto>> GetMyRoomsAsync(string userId)
+    parameters:
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Chat.ChatRoomDto}}
+    content.vb: Public Function GetMyRoomsAsync(userId As String) As Task(Of List(Of ChatRoomDto))
+  overload: Application.Services.FirebaseChatService.GetMyRoomsAsync*
+  implements:
+  - Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(System.String)
+  nameWithType.vb: FirebaseChatService.GetMyRoomsAsync(String)
+  fullName.vb: Application.Services.FirebaseChatService.GetMyRoomsAsync(String)
+  name.vb: GetMyRoomsAsync(String)
+references:
+- uid: Application.Services
+  commentId: N:Application.Services
+  href: Application.html
+  name: Application.Services
+  nameWithType: Application.Services
+  fullName: Application.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Services
+    name: Services
+    href: Application.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Services.IChatRoomService
+  commentId: T:Application.Interfaces.Services.IChatRoomService
+  parent: Application.Interfaces.Services
+  href: Application.Interfaces.Services.IChatRoomService.html
+  name: IChatRoomService
+  nameWithType: IChatRoomService
+  fullName: Application.Interfaces.Services.IChatRoomService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Services
+  commentId: N:Application.Interfaces.Services
+  href: Application.html
+  name: Application.Interfaces.Services
+  nameWithType: Application.Interfaces.Services
+  fullName: Application.Interfaces.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+- uid: Application.Services.FirebaseChatService.#ctor*
+  commentId: Overload:Application.Services.FirebaseChatService.#ctor
+  href: Application.Services.FirebaseChatService.html#Application_Services_FirebaseChatService__ctor_Google_Cloud_Firestore_FirestoreDb_Application_Interfaces_Repositories_ITeamRepository_Application_Interfaces_Repositories_IPlayerRepository_
+  name: FirebaseChatService
+  nameWithType: FirebaseChatService.FirebaseChatService
+  fullName: Application.Services.FirebaseChatService.FirebaseChatService
+  nameWithType.vb: FirebaseChatService.New
+  fullName.vb: Application.Services.FirebaseChatService.New
+  name.vb: New
+- uid: Google.Cloud.Firestore.FirestoreDb
+  commentId: T:Google.Cloud.Firestore.FirestoreDb
+  parent: Google.Cloud.Firestore
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/632133143ad27e28c99d8f0cb2e89aafced9e2e1/apis/Google.Cloud.Firestore/Google.Cloud.Firestore/FirestoreDb.cs
+  name: FirestoreDb
+  nameWithType: FirestoreDb
+  fullName: Google.Cloud.Firestore.FirestoreDb
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: Google.Cloud.Firestore
+  commentId: N:Google.Cloud.Firestore
+  isExternal: true
+  name: Google.Cloud.Firestore
+  nameWithType: Google.Cloud.Firestore
+  fullName: Google.Cloud.Firestore
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Firestore
+    name: Firestore
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Firestore
+    name: Firestore
+    isExternal: true
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Services.FirebaseChatService.CreateMatchRoomAsync*
+  commentId: Overload:Application.Services.FirebaseChatService.CreateMatchRoomAsync
+  href: Application.Services.FirebaseChatService.html#Application_Services_FirebaseChatService_CreateMatchRoomAsync_Application_DTOs_Chat_CreateChatRoomRequestDto_System_String_
+  name: CreateMatchRoomAsync
+  nameWithType: FirebaseChatService.CreateMatchRoomAsync
+  fullName: Application.Services.FirebaseChatService.CreateMatchRoomAsync
+- uid: Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  commentId: M:Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+  parent: Application.Interfaces.Services.IChatRoomService
+  isExternal: true
+  href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateMatchRoomAsync_Application_DTOs_Chat_CreateChatRoomRequestDto_System_String_
+  name: CreateMatchRoomAsync(CreateChatRoomRequestDto, string)
+  nameWithType: IChatRoomService.CreateMatchRoomAsync(CreateChatRoomRequestDto, string)
+  fullName: Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto, string)
+  nameWithType.vb: IChatRoomService.CreateMatchRoomAsync(CreateChatRoomRequestDto, String)
+  fullName.vb: Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto, String)
+  name.vb: CreateMatchRoomAsync(CreateChatRoomRequestDto, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+    name: CreateMatchRoomAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateMatchRoomAsync_Application_DTOs_Chat_CreateChatRoomRequestDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+    name: CreateChatRoomRequestDto
+    href: Application.DTOs.Chat.CreateChatRoomRequestDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IChatRoomService.CreateMatchRoomAsync(Application.DTOs.Chat.CreateChatRoomRequestDto,System.String)
+    name: CreateMatchRoomAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateMatchRoomAsync_Application_DTOs_Chat_CreateChatRoomRequestDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+    name: CreateChatRoomRequestDto
+    href: Application.DTOs.Chat.CreateChatRoomRequestDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.DTOs.Chat.CreateChatRoomRequestDto
+  commentId: T:Application.DTOs.Chat.CreateChatRoomRequestDto
+  parent: Application.DTOs.Chat
+  href: Application.DTOs.Chat.CreateChatRoomRequestDto.html
+  name: CreateChatRoomRequestDto
+  nameWithType: CreateChatRoomRequestDto
+  fullName: Application.DTOs.Chat.CreateChatRoomRequestDto
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.DTOs.Chat
+  commentId: N:Application.DTOs.Chat
+  href: Application.html
+  name: Application.DTOs.Chat
+  nameWithType: Application.DTOs.Chat
+  fullName: Application.DTOs.Chat
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Chat
+    name: Chat
+    href: Application.DTOs.Chat.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Services.FirebaseChatService.CreateRoomAsync*
+  commentId: Overload:Application.Services.FirebaseChatService.CreateRoomAsync
+  href: Application.Services.FirebaseChatService.html#Application_Services_FirebaseChatService_CreateRoomAsync_Application_DTOs_Chat_CreateChatRoomDto_System_String_
+  name: CreateRoomAsync
+  nameWithType: FirebaseChatService.CreateRoomAsync
+  fullName: Application.Services.FirebaseChatService.CreateRoomAsync
+- uid: Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  commentId: M:Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+  parent: Application.Interfaces.Services.IChatRoomService
+  isExternal: true
+  href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateRoomAsync_Application_DTOs_Chat_CreateChatRoomDto_System_String_
+  name: CreateRoomAsync(CreateChatRoomDto, string)
+  nameWithType: IChatRoomService.CreateRoomAsync(CreateChatRoomDto, string)
+  fullName: Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto, string)
+  nameWithType.vb: IChatRoomService.CreateRoomAsync(CreateChatRoomDto, String)
+  fullName.vb: Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto, String)
+  name.vb: CreateRoomAsync(CreateChatRoomDto, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+    name: CreateRoomAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateRoomAsync_Application_DTOs_Chat_CreateChatRoomDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Chat.CreateChatRoomDto
+    name: CreateChatRoomDto
+    href: Application.DTOs.Chat.CreateChatRoomDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IChatRoomService.CreateRoomAsync(Application.DTOs.Chat.CreateChatRoomDto,System.String)
+    name: CreateRoomAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_CreateRoomAsync_Application_DTOs_Chat_CreateChatRoomDto_System_String_
+  - name: (
+  - uid: Application.DTOs.Chat.CreateChatRoomDto
+    name: CreateChatRoomDto
+    href: Application.DTOs.Chat.CreateChatRoomDto.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.DTOs.Chat.CreateChatRoomDto
+  commentId: T:Application.DTOs.Chat.CreateChatRoomDto
+  parent: Application.DTOs.Chat
+  href: Application.DTOs.Chat.CreateChatRoomDto.html
+  name: CreateChatRoomDto
+  nameWithType: CreateChatRoomDto
+  fullName: Application.DTOs.Chat.CreateChatRoomDto
+- uid: Application.Services.FirebaseChatService.GetMyRoomsAsync*
+  commentId: Overload:Application.Services.FirebaseChatService.GetMyRoomsAsync
+  href: Application.Services.FirebaseChatService.html#Application_Services_FirebaseChatService_GetMyRoomsAsync_System_String_
+  name: GetMyRoomsAsync
+  nameWithType: FirebaseChatService.GetMyRoomsAsync
+  fullName: Application.Services.FirebaseChatService.GetMyRoomsAsync
+- uid: Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(System.String)
+  commentId: M:Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(System.String)
+  parent: Application.Interfaces.Services.IChatRoomService
+  isExternal: true
+  href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_GetMyRoomsAsync_System_String_
+  name: GetMyRoomsAsync(string)
+  nameWithType: IChatRoomService.GetMyRoomsAsync(string)
+  fullName: Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(string)
+  nameWithType.vb: IChatRoomService.GetMyRoomsAsync(String)
+  fullName.vb: Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(String)
+  name.vb: GetMyRoomsAsync(String)
+  spec.csharp:
+  - uid: Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(System.String)
+    name: GetMyRoomsAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_GetMyRoomsAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Services.IChatRoomService.GetMyRoomsAsync(System.String)
+    name: GetMyRoomsAsync
+    href: Application.Interfaces.Services.IChatRoomService.html#Application_Interfaces_Services_IChatRoomService_GetMyRoomsAsync_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Chat.ChatRoomDto}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Application.DTOs.Chat.ChatRoomDto}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<ChatRoomDto>>
+  nameWithType: Task<List<ChatRoomDto>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Application.DTOs.Chat.ChatRoomDto>>
+  nameWithType.vb: Task(Of List(Of ChatRoomDto))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Application.DTOs.Chat.ChatRoomDto))
+  name.vb: Task(Of List(Of ChatRoomDto))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.Chat.ChatRoomDto
+    name: ChatRoomDto
+    href: Application.DTOs.Chat.ChatRoomDto.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.Chat.ChatRoomDto
+    name: ChatRoomDto
+    href: Application.DTOs.Chat.ChatRoomDto.html
+  - name: )
+  - name: )

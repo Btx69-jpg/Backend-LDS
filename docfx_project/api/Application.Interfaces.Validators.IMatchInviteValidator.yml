@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.IMatchInviteValidator
+  commentId: T:Application.Interfaces.Validators.IMatchInviteValidator
+  id: IMatchInviteValidator
+  parent: Application.Interfaces.Validators
+  children:
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite(Domain.Entities.Team,Domain.Entities.Matches,Domain.Entities.MatchInvite,Domain.Entities.Pitch)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite(System.Guid,System.Guid)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(System.Boolean)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite(Domain.Entities.MatchInvite)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite(Domain.Entities.Pitch,Domain.Entities.MatchInvite,Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.Matches)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever(Domain.Entities.Team)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite(Domain.Entities.Team,Domain.Entities.MatchInvite)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite(Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.MatchInvite,Domain.Entities.Matches)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite(Application.DTOs.MatchInvites.SendMatchInviteDto,System.Guid)
+  - Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: IMatchInviteValidator
+  nameWithType: IMatchInviteValidator
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IMatchInviteValidator
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: public interface IMatchInviteValidator
+    content.vb: Public Interface IMatchInviteValidator
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite(Application.DTOs.MatchInvites.SendMatchInviteDto,System.Guid)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite(Application.DTOs.MatchInvites.SendMatchInviteDto,System.Guid)
+  id: ValidateSenderMatchInvite(Application.DTOs.MatchInvites.SendMatchInviteDto,System.Guid)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSenderMatchInvite(SendMatchInviteDto, Guid)
+  nameWithType: IMatchInviteValidator.ValidateSenderMatchInvite(SendMatchInviteDto, Guid)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite(Application.DTOs.MatchInvites.SendMatchInviteDto, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateSenderMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateSenderMatchInvite(SendMatchInviteDto dto, Guid idSender)
+    parameters:
+    - id: dto
+      type: Application.DTOs.MatchInvites.SendMatchInviteDto
+    - id: idSender
+      type: System.Guid
+    content.vb: Sub ValidateSenderMatchInvite(dto As SendMatchInviteDto, idSender As Guid)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite(System.Guid,System.Guid)
+  id: ValidateAcceptRefuseMatchInvite(System.Guid,System.Guid)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAcceptRefuseMatchInvite(Guid, Guid)
+  nameWithType: IMatchInviteValidator.ValidateAcceptRefuseMatchInvite(Guid, Guid)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateAcceptRefuseMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateAcceptRefuseMatchInvite(Guid idReceiver, Guid idMatchInvite)
+    parameters:
+    - id: idReceiver
+      type: System.Guid
+    - id: idMatchInvite
+      type: System.Guid
+    content.vb: Sub ValidateAcceptRefuseMatchInvite(idReceiver As Guid, idMatchInvite As Guid)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar(System.Guid)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar(System.Guid)
+  id: ValidateTeamCalendar(System.Guid)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamCalendar(Guid)
+  nameWithType: IMatchInviteValidator.ValidateTeamCalendar(Guid)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamCalendar
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateTeamCalendar(Guid idTeam)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    content.vb: Sub ValidateTeamCalendar(idTeam As Guid)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite(Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.MatchInvite,Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite(Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.MatchInvite,Domain.Entities.Matches)
+  id: ValidateSendMatchInvite(Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.MatchInvite,Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateSendMatchInvite(Team, Team, MatchInvite, Matches)
+  nameWithType: IMatchInviteValidator.ValidateSendMatchInvite(Team, Team, MatchInvite, Matches)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite(Domain.Entities.Team, Domain.Entities.Team, Domain.Entities.MatchInvite, Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateSendMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateSendMatchInvite(Team receiver, Team sender, MatchInvite matchInviteFind, Matches findMatchWith12hours)
+    parameters:
+    - id: receiver
+      type: Domain.Entities.Team
+    - id: sender
+      type: Domain.Entities.Team
+    - id: matchInviteFind
+      type: Domain.Entities.MatchInvite
+    - id: findMatchWith12hours
+      type: Domain.Entities.Matches
+    content.vb: Sub ValidateSendMatchInvite(receiver As Team, sender As Team, matchInviteFind As MatchInvite, findMatchWith12hours As Matches)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite(Domain.Entities.MatchInvite)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite(Domain.Entities.MatchInvite)
+  id: ValidateMatchInvite(Domain.Entities.MatchInvite)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMatchInvite(MatchInvite)
+  nameWithType: IMatchInviteValidator.ValidateMatchInvite(MatchInvite)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite(Domain.Entities.MatchInvite)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateMatchInvite(MatchInvite matchInvite)
+    parameters:
+    - id: matchInvite
+      type: Domain.Entities.MatchInvite
+    content.vb: Sub ValidateMatchInvite(matchInvite As MatchInvite)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite(Domain.Entities.Team,Domain.Entities.Matches,Domain.Entities.MatchInvite,Domain.Entities.Pitch)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite(Domain.Entities.Team,Domain.Entities.Matches,Domain.Entities.MatchInvite,Domain.Entities.Pitch)
+  id: ValidateAcceptMatchInvite(Domain.Entities.Team,Domain.Entities.Matches,Domain.Entities.MatchInvite,Domain.Entities.Pitch)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAcceptMatchInvite(Team, Matches, MatchInvite, Pitch)
+  nameWithType: IMatchInviteValidator.ValidateAcceptMatchInvite(Team, Matches, MatchInvite, Pitch)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite(Domain.Entities.Team, Domain.Entities.Matches, Domain.Entities.MatchInvite, Domain.Entities.Pitch)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateAcceptMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateAcceptMatchInvite(Team sender, Matches twentyhoursMatch, MatchInvite matchInvite, Pitch pitch)
+    parameters:
+    - id: sender
+      type: Domain.Entities.Team
+    - id: twentyhoursMatch
+      type: Domain.Entities.Matches
+    - id: matchInvite
+      type: Domain.Entities.MatchInvite
+    - id: pitch
+      type: Domain.Entities.Pitch
+    content.vb: Sub ValidateAcceptMatchInvite(sender As Team, twentyhoursMatch As Matches, matchInvite As MatchInvite, pitch As Pitch)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever(Domain.Entities.Team)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever(Domain.Entities.Team)
+  id: ValidateReciever(Domain.Entities.Team)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateReciever(Team)
+  nameWithType: IMatchInviteValidator.ValidateReciever(Team)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever(Domain.Entities.Team)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateReciever
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateReciever(Team receiver)
+    parameters:
+    - id: receiver
+      type: Domain.Entities.Team
+    content.vb: Sub ValidateReciever(receiver As Team)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite(Domain.Entities.Team,Domain.Entities.MatchInvite)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite(Domain.Entities.Team,Domain.Entities.MatchInvite)
+  id: ValidateRefuseMatchInvite(Domain.Entities.Team,Domain.Entities.MatchInvite)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateRefuseMatchInvite(Team, MatchInvite)
+  nameWithType: IMatchInviteValidator.ValidateRefuseMatchInvite(Team, MatchInvite)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite(Domain.Entities.Team, Domain.Entities.MatchInvite)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateRefuseMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateRefuseMatchInvite(Team sender, MatchInvite matchInvite)
+    parameters:
+    - id: sender
+      type: Domain.Entities.Team
+    - id: matchInvite
+      type: Domain.Entities.MatchInvite
+    content.vb: Sub ValidateRefuseMatchInvite(sender As Team, matchInvite As MatchInvite)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite(Domain.Entities.Pitch,Domain.Entities.MatchInvite,Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite(Domain.Entities.Pitch,Domain.Entities.MatchInvite,Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.Matches)
+  id: ValidateNegociateMatchInvite(Domain.Entities.Pitch,Domain.Entities.MatchInvite,Domain.Entities.Team,Domain.Entities.Team,Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateNegociateMatchInvite(Pitch, MatchInvite, Team, Team, Matches)
+  nameWithType: IMatchInviteValidator.ValidateNegociateMatchInvite(Pitch, MatchInvite, Team, Team, Matches)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite(Domain.Entities.Pitch, Domain.Entities.MatchInvite, Domain.Entities.Team, Domain.Entities.Team, Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateNegociateMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateNegociateMatchInvite(Pitch pitch, MatchInvite matchInvite, Team senderTeam, Team receiverTeam, Matches findMatchWith12hour)
+    parameters:
+    - id: pitch
+      type: Domain.Entities.Pitch
+    - id: matchInvite
+      type: Domain.Entities.MatchInvite
+    - id: senderTeam
+      type: Domain.Entities.Team
+    - id: receiverTeam
+      type: Domain.Entities.Team
+    - id: findMatchWith12hour
+      type: Domain.Entities.Matches
+    content.vb: Sub ValidateNegociateMatchInvite(pitch As Pitch, matchInvite As MatchInvite, senderTeam As Team, receiverTeam As Team, findMatchWith12hour As Matches)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite*
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(System.Boolean)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(System.Boolean)
+  id: ValidateHasChangeNegociateMatchInvite(System.Boolean)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateHasChangeNegociateMatchInvite(bool)
+  nameWithType: IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(bool)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(bool)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateHasChangeNegociateMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateHasChangeNegociateMatchInvite(bool hasChanged)
+    parameters:
+    - id: hasChanged
+      type: System.Boolean
+    content.vb: Sub ValidateHasChangeNegociateMatchInvite(hasChanged As Boolean)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite*
+  nameWithType.vb: IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(Boolean)
+  fullName.vb: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite(Boolean)
+  name.vb: ValidateHasChangeNegociateMatchInvite(Boolean)
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  commentId: M:Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  id: ValidateFilterMatchInvite(System.Guid,Application.DTOs.Filters.FilterMatchInvitesDto)
+  parent: Application.Interfaces.Validators.IMatchInviteValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateFilterMatchInvite(Guid, FilterMatchInvitesDto)
+  nameWithType: IMatchInviteValidator.ValidateFilterMatchInvite(Guid, FilterMatchInvitesDto)
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite(System.Guid, Application.DTOs.Filters.FilterMatchInvitesDto)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/IMatchInviteValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateFilterMatchInvite
+    path: ../Application/Interfaces/Validators/IMatchInviteValidator.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators
+  syntax:
+    content: void ValidateFilterMatchInvite(Guid idTeam, FilterMatchInvitesDto filter)
+    parameters:
+    - id: idTeam
+      type: System.Guid
+    - id: filter
+      type: Application.DTOs.Filters.FilterMatchInvitesDto
+    content.vb: Sub ValidateFilterMatchInvite(idTeam As Guid, filter As FilterMatchInvitesDto)
+  overload: Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite*
+references:
+- uid: Application.Interfaces.Validators
+  commentId: N:Application.Interfaces.Validators
+  href: Application.html
+  name: Application.Interfaces.Validators
+  nameWithType: Application.Interfaces.Validators
+  fullName: Application.Interfaces.Validators
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateSenderMatchInvite_Application_DTOs_MatchInvites_SendMatchInviteDto_System_Guid_
+  name: ValidateSenderMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateSenderMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSenderMatchInvite
+- uid: Application.DTOs.MatchInvites.SendMatchInviteDto
+  commentId: T:Application.DTOs.MatchInvites.SendMatchInviteDto
+  parent: Application.DTOs.MatchInvites
+  href: Application.DTOs.MatchInvites.SendMatchInviteDto.html
+  name: SendMatchInviteDto
+  nameWithType: SendMatchInviteDto
+  fullName: Application.DTOs.MatchInvites.SendMatchInviteDto
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.DTOs.MatchInvites
+  commentId: N:Application.DTOs.MatchInvites
+  href: Application.html
+  name: Application.DTOs.MatchInvites
+  nameWithType: Application.DTOs.MatchInvites
+  fullName: Application.DTOs.MatchInvites
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.MatchInvites
+    name: MatchInvites
+    href: Application.DTOs.MatchInvites.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateAcceptRefuseMatchInvite_System_Guid_System_Guid_
+  name: ValidateAcceptRefuseMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateAcceptRefuseMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptRefuseMatchInvite
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateTeamCalendar_System_Guid_
+  name: ValidateTeamCalendar
+  nameWithType: IMatchInviteValidator.ValidateTeamCalendar
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateTeamCalendar
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateSendMatchInvite_Domain_Entities_Team_Domain_Entities_Team_Domain_Entities_MatchInvite_Domain_Entities_Matches_
+  name: ValidateSendMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateSendMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateSendMatchInvite
+- uid: Domain.Entities.Team
+  commentId: T:Domain.Entities.Team
+  parent: Domain.Entities
+  href: Domain.Entities.Team.html
+  name: Team
+  nameWithType: Team
+  fullName: Domain.Entities.Team
+- uid: Domain.Entities.MatchInvite
+  commentId: T:Domain.Entities.MatchInvite
+  parent: Domain.Entities
+  href: Domain.Entities.MatchInvite.html
+  name: MatchInvite
+  nameWithType: MatchInvite
+  fullName: Domain.Entities.MatchInvite
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateMatchInvite_Domain_Entities_MatchInvite_
+  name: ValidateMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateMatchInvite
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateAcceptMatchInvite_Domain_Entities_Team_Domain_Entities_Matches_Domain_Entities_MatchInvite_Domain_Entities_Pitch_
+  name: ValidateAcceptMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateAcceptMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateAcceptMatchInvite
+- uid: Domain.Entities.Pitch
+  commentId: T:Domain.Entities.Pitch
+  parent: Domain.Entities
+  href: Domain.Entities.Pitch.html
+  name: Pitch
+  nameWithType: Pitch
+  fullName: Domain.Entities.Pitch
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateReciever_Domain_Entities_Team_
+  name: ValidateReciever
+  nameWithType: IMatchInviteValidator.ValidateReciever
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateReciever
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateRefuseMatchInvite_Domain_Entities_Team_Domain_Entities_MatchInvite_
+  name: ValidateRefuseMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateRefuseMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateRefuseMatchInvite
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateNegociateMatchInvite_Domain_Entities_Pitch_Domain_Entities_MatchInvite_Domain_Entities_Team_Domain_Entities_Team_Domain_Entities_Matches_
+  name: ValidateNegociateMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateNegociateMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateNegociateMatchInvite
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateHasChangeNegociateMatchInvite_System_Boolean_
+  name: ValidateHasChangeNegociateMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateHasChangeNegociateMatchInvite
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite*
+  commentId: Overload:Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite
+  href: Application.Interfaces.Validators.IMatchInviteValidator.html#Application_Interfaces_Validators_IMatchInviteValidator_ValidateFilterMatchInvite_System_Guid_Application_DTOs_Filters_FilterMatchInvitesDto_
+  name: ValidateFilterMatchInvite
+  nameWithType: IMatchInviteValidator.ValidateFilterMatchInvite
+  fullName: Application.Interfaces.Validators.IMatchInviteValidator.ValidateFilterMatchInvite
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto
+  commentId: T:Application.DTOs.Filters.FilterMatchInvitesDto
+  parent: Application.DTOs.Filters
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html
+  name: FilterMatchInvitesDto
+  nameWithType: FilterMatchInvitesDto
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html

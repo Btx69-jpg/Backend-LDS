@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.StatusPostPone
+  commentId: T:Domain.Enums.StatusPostPone
+  id: StatusPostPone
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.StatusPostPone.ACCEPT
+  - Domain.Enums.StatusPostPone.REJECT
+  langs:
+  - csharp
+  - vb
+  name: StatusPostPone
+  nameWithType: StatusPostPone
+  fullName: Domain.Enums.StatusPostPone
+  type: Enum
+  source:
+    remote:
+      path: Domain/Enums/StatusPostPone.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: StatusPostPone
+    path: ../Domain/Enums/StatusPostPone.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: >-
+    Define os possíveis estados de decisão para um pedido de adiamento (Postpone) de partida.
+
+    Utilizado para registar se a equipa adversária aceitou ou rejeitou a data proposta.
+  example: []
+  syntax:
+    content: public enum StatusPostPone
+    content.vb: Public Enum StatusPostPone
+- uid: Domain.Enums.StatusPostPone.ACCEPT
+  commentId: F:Domain.Enums.StatusPostPone.ACCEPT
+  id: ACCEPT
+  parent: Domain.Enums.StatusPostPone
+  langs:
+  - csharp
+  - vb
+  name: ACCEPT
+  nameWithType: StatusPostPone.ACCEPT
+  fullName: Domain.Enums.StatusPostPone.ACCEPT
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/StatusPostPone.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ACCEPT
+    path: ../Domain/Enums/StatusPostPone.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: O pedido de adiamento foi aceite pela equipa recetora.
+  example: []
+  syntax:
+    content: ACCEPT = 0
+    return:
+      type: Domain.Enums.StatusPostPone
+- uid: Domain.Enums.StatusPostPone.REJECT
+  commentId: F:Domain.Enums.StatusPostPone.REJECT
+  id: REJECT
+  parent: Domain.Enums.StatusPostPone
+  langs:
+  - csharp
+  - vb
+  name: REJECT
+  nameWithType: StatusPostPone.REJECT
+  fullName: Domain.Enums.StatusPostPone.REJECT
+  type: Field
+  source:
+    remote:
+      path: Domain/Enums/StatusPostPone.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: REJECT
+    path: ../Domain/Enums/StatusPostPone.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  summary: O pedido de adiamento foi rejeitado pela equipa recetora.
+  example: []
+  syntax:
+    content: REJECT = 1
+    return:
+      type: Domain.Enums.StatusPostPone
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Enums.StatusPostPone
+  commentId: T:Domain.Enums.StatusPostPone
+  parent: Domain.Enums
+  href: Domain.Enums.StatusPostPone.html
+  name: StatusPostPone
+  nameWithType: StatusPostPone
+  fullName: Domain.Enums.StatusPostPone

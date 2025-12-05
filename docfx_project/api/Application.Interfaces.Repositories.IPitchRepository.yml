@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Repositories.IPitchRepository
+  commentId: T:Application.Interfaces.Repositories.IPitchRepository
+  id: IPitchRepository
+  parent: Application.Interfaces.Repositories
+  children:
+  - Application.Interfaces.Repositories.IPitchRepository.GetPitchById(System.Guid)
+  - Application.Interfaces.Repositories.IPitchRepository.GetPitchByName(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IPitchRepository
+  nameWithType: IPitchRepository
+  fullName: Application.Interfaces.Repositories.IPitchRepository
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IPitchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IPitchRepository
+    path: ../Application/Interfaces/Repositories/IPitchRepository.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: public interface IPitchRepository
+    content.vb: Public Interface IPitchRepository
+- uid: Application.Interfaces.Repositories.IPitchRepository.GetPitchById(System.Guid)
+  commentId: M:Application.Interfaces.Repositories.IPitchRepository.GetPitchById(System.Guid)
+  id: GetPitchById(System.Guid)
+  parent: Application.Interfaces.Repositories.IPitchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPitchById(Guid)
+  nameWithType: IPitchRepository.GetPitchById(Guid)
+  fullName: Application.Interfaces.Repositories.IPitchRepository.GetPitchById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IPitchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPitchById
+    path: ../Application/Interfaces/Repositories/IPitchRepository.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Pitch?> GetPitchById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Pitch}
+    content.vb: Function GetPitchById(id As Guid) As Task(Of Pitch)
+  overload: Application.Interfaces.Repositories.IPitchRepository.GetPitchById*
+- uid: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName(System.String)
+  commentId: M:Application.Interfaces.Repositories.IPitchRepository.GetPitchByName(System.String)
+  id: GetPitchByName(System.String)
+  parent: Application.Interfaces.Repositories.IPitchRepository
+  langs:
+  - csharp
+  - vb
+  name: GetPitchByName(string)
+  nameWithType: IPitchRepository.GetPitchByName(string)
+  fullName: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Repositories/IPitchRepository.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: GetPitchByName
+    path: ../Application/Interfaces/Repositories/IPitchRepository.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Repositories
+  syntax:
+    content: Task<Pitch?> GetPitchByName(string namePitch)
+    parameters:
+    - id: namePitch
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Domain.Entities.Pitch}
+    content.vb: Function GetPitchByName(namePitch As String) As Task(Of Pitch)
+  overload: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName*
+  nameWithType.vb: IPitchRepository.GetPitchByName(String)
+  fullName.vb: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName(String)
+  name.vb: GetPitchByName(String)
+references:
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Interfaces.Repositories.IPitchRepository.GetPitchById*
+  commentId: Overload:Application.Interfaces.Repositories.IPitchRepository.GetPitchById
+  href: Application.Interfaces.Repositories.IPitchRepository.html#Application_Interfaces_Repositories_IPitchRepository_GetPitchById_System_Guid_
+  name: GetPitchById
+  nameWithType: IPitchRepository.GetPitchById
+  fullName: Application.Interfaces.Repositories.IPitchRepository.GetPitchById
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Domain.Entities.Pitch}
+  commentId: T:System.Threading.Tasks.Task{Domain.Entities.Pitch}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Pitch>
+  nameWithType: Task<Pitch>
+  fullName: System.Threading.Tasks.Task<Domain.Entities.Pitch>
+  nameWithType.vb: Task(Of Pitch)
+  fullName.vb: System.Threading.Tasks.Task(Of Domain.Entities.Pitch)
+  name.vb: Task(Of Pitch)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Domain.Entities.Pitch
+    name: Pitch
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Pitch
+    name: Pitch
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName*
+  commentId: Overload:Application.Interfaces.Repositories.IPitchRepository.GetPitchByName
+  href: Application.Interfaces.Repositories.IPitchRepository.html#Application_Interfaces_Repositories_IPitchRepository_GetPitchByName_System_String_
+  name: GetPitchByName
+  nameWithType: IPitchRepository.GetPitchByName
+  fullName: Application.Interfaces.Repositories.IPitchRepository.GetPitchByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

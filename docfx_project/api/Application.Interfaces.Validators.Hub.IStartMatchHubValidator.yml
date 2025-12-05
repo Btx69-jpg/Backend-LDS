@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  id: IStartMatchHubValidator
+  parent: Application.Interfaces.Validators.Hub
+  children:
+  - Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch(Domain.Entities.TeamStatistics,System.Guid,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String})
+  - Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch(Domain.Entities.Matches)
+  - Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch(System.Guid,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IStartMatchHubValidator
+  nameWithType: IStartMatchHubValidator
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IStartMatchHubValidator
+    path: ../Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: public interface IStartMatchHubValidator
+    content.vb: Public Interface IStartMatchHubValidator
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch(System.Guid,System.String,System.String)
+  commentId: M:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch(System.Guid,System.String,System.String)
+  id: ValidateVariableJoinMatch(System.Guid,System.String,System.String)
+  parent: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateVariableJoinMatch(Guid, string, string)
+  nameWithType: IStartMatchHubValidator.ValidateVariableJoinMatch(Guid, string, string)
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateVariableJoinMatch
+    path: ../Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: void ValidateVariableJoinMatch(Guid matchId, string userId, string connectionId)
+    parameters:
+    - id: matchId
+      type: System.Guid
+    - id: userId
+      type: System.String
+    - id: connectionId
+      type: System.String
+    content.vb: Sub ValidateVariableJoinMatch(matchId As Guid, userId As String, connectionId As String)
+  overload: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch*
+  nameWithType.vb: IStartMatchHubValidator.ValidateVariableJoinMatch(Guid, String, String)
+  fullName.vb: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch(System.Guid, String, String)
+  name.vb: ValidateVariableJoinMatch(Guid, String, String)
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch(Domain.Entities.Matches)
+  commentId: M:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch(Domain.Entities.Matches)
+  id: ValidateMatchJoinMatch(Domain.Entities.Matches)
+  parent: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateMatchJoinMatch(Matches)
+  nameWithType: IStartMatchHubValidator.ValidateMatchJoinMatch(Matches)
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch(Domain.Entities.Matches)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateMatchJoinMatch
+    path: ../Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: void ValidateMatchJoinMatch(Matches match)
+    parameters:
+    - id: match
+      type: Domain.Entities.Matches
+    content.vb: Sub ValidateMatchJoinMatch(match As Matches)
+  overload: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch*
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch(Domain.Entities.TeamStatistics,System.Guid,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String})
+  commentId: M:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch(Domain.Entities.TeamStatistics,System.Guid,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String})
+  id: ValidateJoinMatch(Domain.Entities.TeamStatistics,System.Guid,System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String})
+  parent: Application.Interfaces.Validators.Hub.IStartMatchHubValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateJoinMatch(TeamStatistics, Guid, ConcurrentDictionary<Guid, string>)
+  nameWithType: IStartMatchHubValidator.ValidateJoinMatch(TeamStatistics, Guid, ConcurrentDictionary<Guid, string>)
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch(Domain.Entities.TeamStatistics, System.Guid, System.Collections.Concurrent.ConcurrentDictionary<System.Guid, string>)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateJoinMatch
+    path: ../Application/Interfaces/Validators/Hub/IStartMatchHubValidator.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: void ValidateJoinMatch(TeamStatistics teamMatchAdmin, Guid idTeam, ConcurrentDictionary<Guid, string> hub)
+    parameters:
+    - id: teamMatchAdmin
+      type: Domain.Entities.TeamStatistics
+    - id: idTeam
+      type: System.Guid
+    - id: hub
+      type: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String}
+    content.vb: Sub ValidateJoinMatch(teamMatchAdmin As TeamStatistics, idTeam As Guid, hub As ConcurrentDictionary(Of Guid, String))
+  overload: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch*
+  nameWithType.vb: IStartMatchHubValidator.ValidateJoinMatch(TeamStatistics, Guid, ConcurrentDictionary(Of Guid, String))
+  fullName.vb: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch(Domain.Entities.TeamStatistics, System.Guid, System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, String))
+  name.vb: ValidateJoinMatch(TeamStatistics, Guid, ConcurrentDictionary(Of Guid, String))
+references:
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch*
+  commentId: Overload:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch
+  href: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html#Application_Interfaces_Validators_Hub_IStartMatchHubValidator_ValidateVariableJoinMatch_System_Guid_System_String_System_String_
+  name: ValidateVariableJoinMatch
+  nameWithType: IStartMatchHubValidator.ValidateVariableJoinMatch
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateVariableJoinMatch
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch*
+  commentId: Overload:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch
+  href: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html#Application_Interfaces_Validators_Hub_IStartMatchHubValidator_ValidateMatchJoinMatch_Domain_Entities_Matches_
+  name: ValidateMatchJoinMatch
+  nameWithType: IStartMatchHubValidator.ValidateMatchJoinMatch
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateMatchJoinMatch
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  parent: Domain.Entities
+  href: Domain.Entities.Matches.html
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch*
+  commentId: Overload:Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch
+  href: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.html#Application_Interfaces_Validators_Hub_IStartMatchHubValidator_ValidateJoinMatch_Domain_Entities_TeamStatistics_System_Guid_System_Collections_Concurrent_ConcurrentDictionary_System_Guid_System_String__
+  name: ValidateJoinMatch
+  nameWithType: IStartMatchHubValidator.ValidateJoinMatch
+  fullName: Application.Interfaces.Validators.Hub.IStartMatchHubValidator.ValidateJoinMatch
+- uid: Domain.Entities.TeamStatistics
+  commentId: T:Domain.Entities.TeamStatistics
+  parent: Domain.Entities
+  href: Domain.Entities.TeamStatistics.html
+  name: TeamStatistics
+  nameWithType: TeamStatistics
+  fullName: Domain.Entities.TeamStatistics
+- uid: System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String}
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary{System.Guid,System.String}
+  parent: System.Collections.Concurrent
+  definition: System.Collections.Concurrent.ConcurrentDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<Guid, string>
+  nameWithType: ConcurrentDictionary<Guid, string>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<System.Guid, string>
+  nameWithType.vb: ConcurrentDictionary(Of Guid, String)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of System.Guid, String)
+  name.vb: ConcurrentDictionary(Of Guid, String)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  name: ConcurrentDictionary<TKey, TValue>
+  nameWithType: ConcurrentDictionary<TKey, TValue>
+  fullName: System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>
+  nameWithType.vb: ConcurrentDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Concurrent.ConcurrentDictionary(Of TKey, TValue)
+  name.vb: ConcurrentDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Concurrent.ConcurrentDictionary`2
+    name: ConcurrentDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent.concurrentdictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Concurrent
+  commentId: N:System.Collections.Concurrent
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Concurrent
+  nameWithType: System.Collections.Concurrent
+  fullName: System.Collections.Concurrent
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Concurrent
+    name: Concurrent
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.concurrent

@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Membership
+  commentId: N:Application.DTOs.Membership
+  id: Application.DTOs.Membership
+  children:
+  - Application.DTOs.Membership.PlayerDto
+  - Application.DTOs.Membership.SendMembershipRequestDTO
+  langs:
+  - csharp
+  - vb
+  name: Application.DTOs.Membership
+  nameWithType: Application.DTOs.Membership
+  fullName: Application.DTOs.Membership
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.DTOs.Membership.PlayerDto
+  commentId: T:Application.DTOs.Membership.PlayerDto
+  parent: Application.DTOs.Membership
+  href: Application.DTOs.Membership.PlayerDto.html
+  name: PlayerDto
+  nameWithType: PlayerDto
+  fullName: Application.DTOs.Membership.PlayerDto
+- uid: Application.DTOs.Membership.SendMembershipRequestDTO
+  commentId: T:Application.DTOs.Membership.SendMembershipRequestDTO
+  href: Application.DTOs.Membership.SendMembershipRequestDTO.html
+  name: SendMembershipRequestDTO
+  nameWithType: SendMembershipRequestDTO
+  fullName: Application.DTOs.Membership.SendMembershipRequestDTO
+- uid: Application.DTOs.Membership
+  commentId: N:Application.DTOs.Membership
+  href: Application.html
+  name: Application.DTOs.Membership
+  nameWithType: Application.DTOs.Membership
+  fullName: Application.DTOs.Membership
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Membership
+    name: Membership
+    href: Application.DTOs.Membership.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Membership
+    name: Membership
+    href: Application.DTOs.Membership.html

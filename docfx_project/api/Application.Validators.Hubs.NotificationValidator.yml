@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Validators.Hubs.NotificationValidator
+  commentId: T:Application.Validators.Hubs.NotificationValidator
+  id: NotificationValidator
+  parent: Application.Validators.Hubs
+  children:
+  - Application.Validators.Hubs.NotificationValidator.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  - Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  langs:
+  - csharp
+  - vb
+  name: NotificationValidator
+  nameWithType: NotificationValidator
+  fullName: Application.Validators.Hubs.NotificationValidator
+  type: Class
+  source:
+    remote:
+      path: Application/Validators/Hubs/NotificationValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NotificationValidator
+    path: ../Application/Validators/Hubs/NotificationValidator.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  syntax:
+    content: 'public class NotificationValidator : INotificationValidator'
+    content.vb: Public Class NotificationValidator Implements INotificationValidator
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Interfaces.Validators.Hub.INotificationValidator
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.Validators.Hubs.NotificationValidator.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  commentId: M:Application.Validators.Hubs.NotificationValidator.#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)
+  id: '#ctor(Application.Interfaces.Repositories.ITeamRepository,Application.Interfaces.Repositories.IPlayerRepository)'
+  parent: Application.Validators.Hubs.NotificationValidator
+  langs:
+  - csharp
+  - vb
+  name: NotificationValidator(ITeamRepository, IPlayerRepository)
+  nameWithType: NotificationValidator.NotificationValidator(ITeamRepository, IPlayerRepository)
+  fullName: Application.Validators.Hubs.NotificationValidator.NotificationValidator(Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository)
+  type: Constructor
+  source:
+    remote:
+      path: Application/Validators/Hubs/NotificationValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Application/Validators/Hubs/NotificationValidator.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  syntax:
+    content: public NotificationValidator(ITeamRepository teamRepository, IPlayerRepository playerRepository)
+    parameters:
+    - id: teamRepository
+      type: Application.Interfaces.Repositories.ITeamRepository
+    - id: playerRepository
+      type: Application.Interfaces.Repositories.IPlayerRepository
+    content.vb: Public Sub New(teamRepository As ITeamRepository, playerRepository As IPlayerRepository)
+  overload: Application.Validators.Hubs.NotificationValidator.#ctor*
+  nameWithType.vb: NotificationValidator.New(ITeamRepository, IPlayerRepository)
+  fullName.vb: Application.Validators.Hubs.NotificationValidator.New(Application.Interfaces.Repositories.ITeamRepository, Application.Interfaces.Repositories.IPlayerRepository)
+  name.vb: New(ITeamRepository, IPlayerRepository)
+- uid: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  commentId: M:Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  id: ValidateTeamMembershipAsync(System.Guid,System.String)
+  parent: Application.Validators.Hubs.NotificationValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateTeamMembershipAsync(Guid, string?)
+  nameWithType: NotificationValidator.ValidateTeamMembershipAsync(Guid, string?)
+  fullName: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync(System.Guid, string?)
+  type: Method
+  source:
+    remote:
+      path: Application/Validators/Hubs/NotificationValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateTeamMembershipAsync
+    path: ../Application/Validators/Hubs/NotificationValidator.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Validators.Hubs
+  example: []
+  syntax:
+    content: public Task ValidateTeamMembershipAsync(Guid teamId, string? userId)
+    parameters:
+    - id: teamId
+      type: System.Guid
+    - id: userId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ValidateTeamMembershipAsync(teamId As Guid, userId As String) As Task
+  overload: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync*
+  implements:
+  - Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  nameWithType.vb: NotificationValidator.ValidateTeamMembershipAsync(Guid, String)
+  fullName.vb: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync(System.Guid, String)
+  name.vb: ValidateTeamMembershipAsync(Guid, String)
+references:
+- uid: Application.Validators.Hubs
+  commentId: N:Application.Validators.Hubs
+  href: Application.html
+  name: Application.Validators.Hubs
+  nameWithType: Application.Validators.Hubs
+  fullName: Application.Validators.Hubs
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  - name: .
+  - uid: Application.Validators.Hubs
+    name: Hubs
+    href: Application.Validators.Hubs.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Validators
+    name: Validators
+    href: Application.Validators.html
+  - name: .
+  - uid: Application.Validators.Hubs
+    name: Hubs
+    href: Application.Validators.Hubs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator
+  commentId: T:Application.Interfaces.Validators.Hub.INotificationValidator
+  parent: Application.Interfaces.Validators.Hub
+  href: Application.Interfaces.Validators.Hub.INotificationValidator.html
+  name: INotificationValidator
+  nameWithType: INotificationValidator
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Application.Validators.Hubs.NotificationValidator.#ctor*
+  commentId: Overload:Application.Validators.Hubs.NotificationValidator.#ctor
+  href: Application.Validators.Hubs.NotificationValidator.html#Application_Validators_Hubs_NotificationValidator__ctor_Application_Interfaces_Repositories_ITeamRepository_Application_Interfaces_Repositories_IPlayerRepository_
+  name: NotificationValidator
+  nameWithType: NotificationValidator.NotificationValidator
+  fullName: Application.Validators.Hubs.NotificationValidator.NotificationValidator
+  nameWithType.vb: NotificationValidator.New
+  fullName.vb: Application.Validators.Hubs.NotificationValidator.New
+  name.vb: New
+- uid: Application.Interfaces.Repositories.ITeamRepository
+  commentId: T:Application.Interfaces.Repositories.ITeamRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.ITeamRepository.html
+  name: ITeamRepository
+  nameWithType: ITeamRepository
+  fullName: Application.Interfaces.Repositories.ITeamRepository
+- uid: Application.Interfaces.Repositories.IPlayerRepository
+  commentId: T:Application.Interfaces.Repositories.IPlayerRepository
+  parent: Application.Interfaces.Repositories
+  href: Application.Interfaces.Repositories.IPlayerRepository.html
+  name: IPlayerRepository
+  nameWithType: IPlayerRepository
+  fullName: Application.Interfaces.Repositories.IPlayerRepository
+- uid: Application.Interfaces.Repositories
+  commentId: N:Application.Interfaces.Repositories
+  href: Application.html
+  name: Application.Interfaces.Repositories
+  nameWithType: Application.Interfaces.Repositories
+  fullName: Application.Interfaces.Repositories
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Repositories
+    name: Repositories
+    href: Application.Interfaces.Repositories.html
+- uid: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync*
+  commentId: Overload:Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync
+  href: Application.Validators.Hubs.NotificationValidator.html#Application_Validators_Hubs_NotificationValidator_ValidateTeamMembershipAsync_System_Guid_System_String_
+  name: ValidateTeamMembershipAsync
+  nameWithType: NotificationValidator.ValidateTeamMembershipAsync
+  fullName: Application.Validators.Hubs.NotificationValidator.ValidateTeamMembershipAsync
+- uid: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  commentId: M:Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+  parent: Application.Interfaces.Validators.Hub.INotificationValidator
+  isExternal: true
+  href: Application.Interfaces.Validators.Hub.INotificationValidator.html#Application_Interfaces_Validators_Hub_INotificationValidator_ValidateTeamMembershipAsync_System_Guid_System_String_
+  name: ValidateTeamMembershipAsync(Guid, string)
+  nameWithType: INotificationValidator.ValidateTeamMembershipAsync(Guid, string)
+  fullName: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid, string)
+  nameWithType.vb: INotificationValidator.ValidateTeamMembershipAsync(Guid, String)
+  fullName.vb: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid, String)
+  name.vb: ValidateTeamMembershipAsync(Guid, String)
+  spec.csharp:
+  - uid: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+    name: ValidateTeamMembershipAsync
+    href: Application.Interfaces.Validators.Hub.INotificationValidator.html#Application_Interfaces_Validators_Hub_INotificationValidator_ValidateTeamMembershipAsync_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Interfaces.Validators.Hub.INotificationValidator.ValidateTeamMembershipAsync(System.Guid,System.String)
+    name: ValidateTeamMembershipAsync
+    href: Application.Interfaces.Validators.Hub.INotificationValidator.html#Application_Interfaces_Validators_Hub_INotificationValidator_ValidateTeamMembershipAsync_System_Guid_System_String_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

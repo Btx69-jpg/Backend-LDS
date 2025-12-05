@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Hub
+  commentId: N:Application.Interfaces.Hub
+  id: Application.Interfaces.Hub
+  children:
+  - Application.Interfaces.Hub.IFinishMatchHub
+  - Application.Interfaces.Hub.IRankMatchMakerHub
+  - Application.Interfaces.Hub.IStartMatchHub
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Hub
+  nameWithType: Application.Interfaces.Hub
+  fullName: Application.Interfaces.Hub
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Hub.IFinishMatchHub
+  commentId: T:Application.Interfaces.Hub.IFinishMatchHub
+  href: Application.Interfaces.Hub.IFinishMatchHub.html
+  name: IFinishMatchHub
+  nameWithType: IFinishMatchHub
+  fullName: Application.Interfaces.Hub.IFinishMatchHub
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub
+  commentId: T:Application.Interfaces.Hub.IRankMatchMakerHub
+  href: Application.Interfaces.Hub.IRankMatchMakerHub.html
+  name: IRankMatchMakerHub
+  nameWithType: IRankMatchMakerHub
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub
+- uid: Application.Interfaces.Hub.IStartMatchHub
+  commentId: T:Application.Interfaces.Hub.IStartMatchHub
+  href: Application.Interfaces.Hub.IStartMatchHub.html
+  name: IStartMatchHub
+  nameWithType: IStartMatchHub
+  fullName: Application.Interfaces.Hub.IStartMatchHub

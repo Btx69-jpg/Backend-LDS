@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: IntegrationTests.Controllers
+  commentId: N:IntegrationTests.Controllers
+  id: IntegrationTests.Controllers
+  children:
+  - IntegrationTests.Controllers.FirebaseAuthIntegrationTests
+  langs:
+  - csharp
+  - vb
+  name: IntegrationTests.Controllers
+  nameWithType: IntegrationTests.Controllers
+  fullName: IntegrationTests.Controllers
+  type: Namespace
+  assemblies:
+  - Tests
+references:
+- uid: IntegrationTests.Controllers.FirebaseAuthIntegrationTests
+  commentId: T:IntegrationTests.Controllers.FirebaseAuthIntegrationTests
+  href: IntegrationTests.Controllers.FirebaseAuthIntegrationTests.html
+  name: FirebaseAuthIntegrationTests
+  nameWithType: FirebaseAuthIntegrationTests
+  fullName: IntegrationTests.Controllers.FirebaseAuthIntegrationTests

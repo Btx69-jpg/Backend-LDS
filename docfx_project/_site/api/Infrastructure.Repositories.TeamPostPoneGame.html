@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TeamPostPoneGame | docfx_project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TeamPostPoneGame | docfx_project ">
+      
+      <meta name="description" content="Reposit&#243;rio espec&#237;fico para opera&#231;&#245;es de persist&#234;ncia e consulta da entidade [PostPoneMatch] (Pedidos de Adiamento). Implementa o contrato [ITeamPostPoneGameRepository] e &#233; o respons&#225;vel por gerir o ciclo de vida dos pedidos de remarca&#231;&#227;o de partidas.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Btx69-jpg/Backend-LDS/new/documentacion/apiSpec/new?filename=Infrastructure_Repositories_TeamPostPoneGame.md&amp;value=---%0Auid%3A%20Infrastructure.Repositories.TeamPostPoneGame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="docfx_project">
+            docfx_project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Infrastructure.Repositories.TeamPostPoneGame">
+
+
+
+  <h1 id="Infrastructure_Repositories_TeamPostPoneGame" data-uid="Infrastructure.Repositories.TeamPostPoneGame" class="text-break">
+Class TeamPostPoneGame  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Infrastructure.html">Infrastructure</a>.<a class="xref" href="Infrastructure.Repositories.html">Repositories</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Repositório específico para operações de persistência e consulta da entidade [PostPoneMatch] (Pedidos de Adiamento).</p>
+<p>Implementa o contrato [ITeamPostPoneGameRepository] e é o responsável por gerir o ciclo de vida
+dos pedidos de remarcação de partidas.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TeamPostPoneGame : ITeamPostPoneGameRepository</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TeamPostPoneGame</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Application.Interfaces.Repositories.ITeamPostPoneGameRepository.html">ITeamPostPoneGameRepository</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Infrastructure_Repositories_TeamPostPoneGame__ctor_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.#ctor*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamPostPoneGame__ctor_Infrastructure_Data_AmateurFootballContext_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.#ctor(Infrastructure.Data.AmateurFootballContext)">
+  TeamPostPoneGame(AmateurFootballContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Construtor da classe [TeamPostPoneGame].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TeamPostPoneGame(AmateurFootballContext context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="Infrastructure.Data.AmateurFootballContext.html">AmateurFootballContext</a></dt>
+    <dd><p>O contexto da base de dados (Db Context) injetado via Dependency Injection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Infrastructure_Repositories_TeamPostPoneGame_AddTeamPostPoneMatch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.AddTeamPostPoneMatch*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamPostPoneGame_AddTeamPostPoneMatch_Domain_Entities_PostPoneMatch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.AddTeamPostPoneMatch(Domain.Entities.PostPoneMatch)">
+  AddTeamPostPoneMatch(PostPoneMatch)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adiciona um novo registo de pedido de adiamento à base de dados de forma assíncrona.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddTeamPostPoneMatch(PostPoneMatch postPoneMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postPoneMatch</code> <a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a></dt>
+    <dd><p>A entidade [PostPoneMatch] a ser persistida.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Uma tarefa assíncrona (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>) que representa a operação de adição.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.GetTeamPostPoneMatch*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatch_System_Guid_System_Guid_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.GetTeamPostPoneMatch(System.Guid,System.Guid)">
+  GetTeamPostPoneMatch(Guid, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um pedido de adiamento específico com base na Equipa Remetente e na Partida Alvo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostPoneMatch?&gt; GetTeamPostPoneMatch(Guid idTeam, Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que fez o pedido.</p>
+</dd>
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida que está a ser adiada.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a>&gt;</dt>
+    <dd><p>A entidade [PostPoneMatch] com a partida carregada, ou null se não existir.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatch_System_Guid_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza <code>.Include()</code> para carregar a entidade de navegação [Match] (Partida) associada (Eager Loading).</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatchWithPitch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.GetTeamPostPoneMatchWithPitch*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatchWithPitch_System_Guid_System_Guid_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.GetTeamPostPoneMatchWithPitch(System.Guid,System.Guid)">
+  GetTeamPostPoneMatchWithPitch(Guid, Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtém um pedido de adiamento específico, carregando a Partida e o Campo ([Pitch]) associado.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PostPoneMatch?&gt; GetTeamPostPoneMatchWithPitch(Guid idTeam, Guid idMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idTeam</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da equipa que fez o pedido.</p>
+</dd>
+    <dt><code>idMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd><p>O ID da partida que está a ser adiada.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a>&gt;</dt>
+    <dd><p>A entidade [PostPoneMatch] com a Partida e o Local do Jogo carregados.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Infrastructure_Repositories_TeamPostPoneGame_GetTeamPostPoneMatchWithPitch_System_Guid_System_Guid__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Utiliza <code>.Include().ThenInclude()</code> para carregar a relação profunda: PostPoneMatch -&gt; Match -&gt; Pitch.</p>
+</div>
+
+
+
+
+  <a id="Infrastructure_Repositories_TeamPostPoneGame_RemoveTeamPostPoneMatch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.RemoveTeamPostPoneMatch*"></a>
+
+  <h3 id="Infrastructure_Repositories_TeamPostPoneGame_RemoveTeamPostPoneMatch_Domain_Entities_PostPoneMatch_" data-uid="Infrastructure.Repositories.TeamPostPoneGame.RemoveTeamPostPoneMatch(Domain.Entities.PostPoneMatch)">
+  RemoveTeamPostPoneMatch(PostPoneMatch)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marca um registo de pedido de adiamento existente para ser removido da base de dados.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTeamPostPoneMatch(PostPoneMatch postPoneMatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postPoneMatch</code> <a class="xref" href="Domain.Entities.PostPoneMatch.html">PostPoneMatch</a></dt>
+    <dd><p>A entidade [PostPoneMatch] a ser removida (ex: após o pedido ter sido aceite ou cancelado).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Btx69-jpg/Backend-LDS/blob/documentacion/Infrastructure/Repositories/TeamPostPoneGame.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

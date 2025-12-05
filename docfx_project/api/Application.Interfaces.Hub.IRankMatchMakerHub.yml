@@ -1,0 +1,385 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub
+  commentId: T:Application.Interfaces.Hub.IRankMatchMakerHub
+  id: IRankMatchMakerHub
+  parent: Application.Interfaces.Hub
+  children:
+  - Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker(System.Guid,System.Guid)
+  - Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker
+  - Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams(System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  - Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRankMatchMakerHub
+  nameWithType: IRankMatchMakerHub
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IRankMatchMakerHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IRankMatchMakerHub
+    path: ../Application/Interfaces/Hub/IRankMatchMakerHub.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: public interface IRankMatchMakerHub
+    content.vb: Public Interface IRankMatchMakerHub
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker(System.Guid,System.Guid)
+  commentId: M:Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker(System.Guid,System.Guid)
+  id: JoinRankMatchMaker(System.Guid,System.Guid)
+  parent: Application.Interfaces.Hub.IRankMatchMakerHub
+  langs:
+  - csharp
+  - vb
+  name: JoinRankMatchMaker(Guid, Guid)
+  nameWithType: IRankMatchMakerHub.JoinRankMatchMaker(Guid, Guid)
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IRankMatchMakerHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: JoinRankMatchMaker
+    path: ../Application/Interfaces/Hub/IRankMatchMakerHub.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task JoinRankMatchMaker(Guid idPlayer, Guid idTeam)
+    parameters:
+    - id: idPlayer
+      type: System.Guid
+    - id: idTeam
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function JoinRankMatchMaker(idPlayer As Guid, idTeam As Guid) As Task
+  overload: Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker*
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker
+  commentId: M:Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker
+  id: LeaveRankMatchMaker
+  parent: Application.Interfaces.Hub.IRankMatchMakerHub
+  langs:
+  - csharp
+  - vb
+  name: LeaveRankMatchMaker()
+  nameWithType: IRankMatchMakerHub.LeaveRankMatchMaker()
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker()
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IRankMatchMakerHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: LeaveRankMatchMaker
+    path: ../Application/Interfaces/Hub/IRankMatchMakerHub.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task LeaveRankMatchMaker()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LeaveRankMatchMaker() As Task
+  overload: Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker*
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams(System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  commentId: M:Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams(System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  id: NotifyAllTeams(System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub})
+  parent: Application.Interfaces.Hub.IRankMatchMakerHub
+  langs:
+  - csharp
+  - vb
+  name: NotifyAllTeams(List<EntryRankMatchMakerHub>)
+  nameWithType: IRankMatchMakerHub.NotifyAllTeams(List<EntryRankMatchMakerHub>)
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams(System.Collections.Generic.List<Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IRankMatchMakerHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: NotifyAllTeams
+    path: ../Application/Interfaces/Hub/IRankMatchMakerHub.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task NotifyAllTeams(List<EntryRankMatchMakerHub> teamsToNotify)
+    parameters:
+    - id: teamsToNotify
+      type: System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function NotifyAllTeams(teamsToNotify As List(Of EntryRankMatchMakerHub)) As Task
+  overload: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams*
+  nameWithType.vb: IRankMatchMakerHub.NotifyAllTeams(List(Of EntryRankMatchMakerHub))
+  fullName.vb: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams(System.Collections.Generic.List(Of Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub))
+  name.vb: NotifyAllTeams(List(Of EntryRankMatchMakerHub))
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed(System.String)
+  commentId: M:Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed(System.String)
+  id: OnGroupClosed(System.String)
+  parent: Application.Interfaces.Hub.IRankMatchMakerHub
+  langs:
+  - csharp
+  - vb
+  name: OnGroupClosed(string)
+  nameWithType: IRankMatchMakerHub.OnGroupClosed(string)
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed(string)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Hub/IRankMatchMakerHub.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: OnGroupClosed
+    path: ../Application/Interfaces/Hub/IRankMatchMakerHub.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Hub
+  syntax:
+    content: Task OnGroupClosed(string groupName)
+    parameters:
+    - id: groupName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnGroupClosed(groupName As String) As Task
+  overload: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed*
+  nameWithType.vb: IRankMatchMakerHub.OnGroupClosed(String)
+  fullName.vb: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed(String)
+  name.vb: OnGroupClosed(String)
+references:
+- uid: Application.Interfaces.Hub
+  commentId: N:Application.Interfaces.Hub
+  href: Application.html
+  name: Application.Interfaces.Hub
+  nameWithType: Application.Interfaces.Hub
+  fullName: Application.Interfaces.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Hub
+    name: Hub
+    href: Application.Interfaces.Hub.html
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker*
+  commentId: Overload:Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker
+  href: Application.Interfaces.Hub.IRankMatchMakerHub.html#Application_Interfaces_Hub_IRankMatchMakerHub_JoinRankMatchMaker_System_Guid_System_Guid_
+  name: JoinRankMatchMaker
+  nameWithType: IRankMatchMakerHub.JoinRankMatchMaker
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.JoinRankMatchMaker
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker*
+  commentId: Overload:Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker
+  href: Application.Interfaces.Hub.IRankMatchMakerHub.html#Application_Interfaces_Hub_IRankMatchMakerHub_LeaveRankMatchMaker
+  name: LeaveRankMatchMaker
+  nameWithType: IRankMatchMakerHub.LeaveRankMatchMaker
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.LeaveRankMatchMaker
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams*
+  commentId: Overload:Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams
+  href: Application.Interfaces.Hub.IRankMatchMakerHub.html#Application_Interfaces_Hub_IRankMatchMakerHub_NotifyAllTeams_System_Collections_Generic_List_Application_DTOs_RankMatchMaker_EntryRankMatchMakerHub__
+  name: NotifyAllTeams
+  nameWithType: IRankMatchMakerHub.NotifyAllTeams
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.NotifyAllTeams
+- uid: System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  commentId: T:System.Collections.Generic.List{Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EntryRankMatchMakerHub>
+  nameWithType: List<EntryRankMatchMakerHub>
+  fullName: System.Collections.Generic.List<Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub>
+  nameWithType.vb: List(Of EntryRankMatchMakerHub)
+  fullName.vb: System.Collections.Generic.List(Of Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub)
+  name.vb: List(Of EntryRankMatchMakerHub)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub
+    name: EntryRankMatchMakerHub
+    href: Application.DTOs.RankMatchMaker.EntryRankMatchMakerHub.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed*
+  commentId: Overload:Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed
+  href: Application.Interfaces.Hub.IRankMatchMakerHub.html#Application_Interfaces_Hub_IRankMatchMakerHub_OnGroupClosed_System_String_
+  name: OnGroupClosed
+  nameWithType: IRankMatchMakerHub.OnGroupClosed
+  fullName: Application.Interfaces.Hub.IRankMatchMakerHub.OnGroupClosed
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

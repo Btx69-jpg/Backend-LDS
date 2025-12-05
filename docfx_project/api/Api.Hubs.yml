@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Api.Hubs
+  commentId: N:Api.Hubs
+  id: Api.Hubs
+  children:
+  - Api.Hubs.FinishMatchHub
+  - Api.Hubs.NotificationHub
+  - Api.Hubs.RankMatchMakerHub
+  - Api.Hubs.StartMatchHub
+  langs:
+  - csharp
+  - vb
+  name: Api.Hubs
+  nameWithType: Api.Hubs
+  fullName: Api.Hubs
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Api.Hubs.FinishMatchHub
+  commentId: T:Api.Hubs.FinishMatchHub
+  href: Api.Hubs.FinishMatchHub.html
+  name: FinishMatchHub
+  nameWithType: FinishMatchHub
+  fullName: Api.Hubs.FinishMatchHub
+- uid: Api.Hubs.NotificationHub
+  commentId: T:Api.Hubs.NotificationHub
+  href: Api.Hubs.NotificationHub.html
+  name: NotificationHub
+  nameWithType: NotificationHub
+  fullName: Api.Hubs.NotificationHub
+- uid: Api.Hubs.RankMatchMakerHub
+  commentId: T:Api.Hubs.RankMatchMakerHub
+  href: Api.Hubs.RankMatchMakerHub.html
+  name: RankMatchMakerHub
+  nameWithType: RankMatchMakerHub
+  fullName: Api.Hubs.RankMatchMakerHub
+- uid: Api.Hubs.StartMatchHub
+  commentId: T:Api.Hubs.StartMatchHub
+  href: Api.Hubs.StartMatchHub.html
+  name: StartMatchHub
+  nameWithType: StartMatchHub
+  fullName: Api.Hubs.StartMatchHub

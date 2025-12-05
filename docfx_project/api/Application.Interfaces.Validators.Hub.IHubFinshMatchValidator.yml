@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  commentId: T:Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  id: IHubFinshMatchValidator
+  parent: Application.Interfaces.Validators.Hub
+  children:
+  - Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide(System.Nullable{System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: IHubFinshMatchValidator
+  nameWithType: IHubFinshMatchValidator
+  fullName: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  type: Interface
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IHubFinshMatchValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IHubFinshMatchValidator
+    path: ../Application/Interfaces/Validators/Hub/IHubFinshMatchValidator.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: public interface IHubFinshMatchValidator
+    content.vb: Public Interface IHubFinshMatchValidator
+- uid: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide(System.Nullable{System.Boolean})
+  commentId: M:Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide(System.Nullable{System.Boolean})
+  id: ValidateIsCoincide(System.Nullable{System.Boolean})
+  parent: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator
+  langs:
+  - csharp
+  - vb
+  name: ValidateIsCoincide(bool?)
+  nameWithType: IHubFinshMatchValidator.ValidateIsCoincide(bool?)
+  fullName: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide(bool?)
+  type: Method
+  source:
+    remote:
+      path: Application/Interfaces/Validators/Hub/IHubFinshMatchValidator.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: ValidateIsCoincide
+    path: ../Application/Interfaces/Validators/Hub/IHubFinshMatchValidator.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Interfaces.Validators.Hub
+  syntax:
+    content: void ValidateIsCoincide(bool? isCoincide)
+    parameters:
+    - id: isCoincide
+      type: System.Nullable{System.Boolean}
+    content.vb: Sub ValidateIsCoincide(isCoincide As Boolean?)
+  overload: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide*
+  nameWithType.vb: IHubFinshMatchValidator.ValidateIsCoincide(Boolean?)
+  fullName.vb: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide(Boolean?)
+  name.vb: ValidateIsCoincide(Boolean?)
+references:
+- uid: Application.Interfaces.Validators.Hub
+  commentId: N:Application.Interfaces.Validators.Hub
+  href: Application.html
+  name: Application.Interfaces.Validators.Hub
+  nameWithType: Application.Interfaces.Validators.Hub
+  fullName: Application.Interfaces.Validators.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Validators
+    name: Validators
+    href: Application.Interfaces.Validators.html
+  - name: .
+  - uid: Application.Interfaces.Validators.Hub
+    name: Hub
+    href: Application.Interfaces.Validators.Hub.html
+- uid: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide*
+  commentId: Overload:Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide
+  href: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.html#Application_Interfaces_Validators_Hub_IHubFinshMatchValidator_ValidateIsCoincide_System_Nullable_System_Boolean__
+  name: ValidateIsCoincide
+  nameWithType: IHubFinshMatchValidator.ValidateIsCoincide
+  fullName: Application.Interfaces.Validators.Hub.IHubFinshMatchValidator.ValidateIsCoincide
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Services.BackGroundServices
+  commentId: N:Application.Services.BackGroundServices
+  id: Application.Services.BackGroundServices
+  children:
+  - Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  langs:
+  - csharp
+  - vb
+  name: Application.Services.BackGroundServices
+  nameWithType: Application.Services.BackGroundServices
+  fullName: Application.Services.BackGroundServices
+  type: Namespace
+  assemblies:
+  - Api
+references:
+- uid: Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  commentId: T:Application.Services.BackGroundServices.RankMatchMakerBackGroundService
+  href: Application.Services.BackGroundServices.RankMatchMakerBackGroundService.html
+  name: RankMatchMakerBackGroundService
+  nameWithType: RankMatchMakerBackGroundService
+  fullName: Application.Services.BackGroundServices.RankMatchMakerBackGroundService

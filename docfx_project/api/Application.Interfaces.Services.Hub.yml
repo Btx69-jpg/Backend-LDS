@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  id: Application.Interfaces.Services.Hub
+  children:
+  - Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  - Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  - Application.Interfaces.Services.Hub.IManagerStartMatchService
+  - Application.Interfaces.Services.Hub.INotificationService
+  langs:
+  - csharp
+  - vb
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerFinishMatchService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.IManagerFinishMatchService.html
+  name: IManagerFinishMatchService
+  nameWithType: IManagerFinishMatchService
+  fullName: Application.Interfaces.Services.Hub.IManagerFinishMatchService
+- uid: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService.html
+  name: IManagerRankMatchMakerService
+  nameWithType: IManagerRankMatchMakerService
+  fullName: Application.Interfaces.Services.Hub.IManagerRankMatchMakerService
+- uid: Application.Interfaces.Services.Hub.IManagerStartMatchService
+  commentId: T:Application.Interfaces.Services.Hub.IManagerStartMatchService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.IManagerStartMatchService.html
+  name: IManagerStartMatchService
+  nameWithType: IManagerStartMatchService
+  fullName: Application.Interfaces.Services.Hub.IManagerStartMatchService
+- uid: Application.Interfaces.Services.Hub.INotificationService
+  commentId: T:Application.Interfaces.Services.Hub.INotificationService
+  parent: Application.Interfaces.Services.Hub
+  href: Application.Interfaces.Services.Hub.INotificationService.html
+  name: INotificationService
+  nameWithType: INotificationService
+  fullName: Application.Interfaces.Services.Hub.INotificationService
+- uid: Application.Interfaces.Services.Hub
+  commentId: N:Application.Interfaces.Services.Hub
+  href: Application.html
+  name: Application.Interfaces.Services.Hub
+  nameWithType: Application.Interfaces.Services.Hub
+  fullName: Application.Interfaces.Services.Hub
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Interfaces
+    name: Interfaces
+    href: Application.Interfaces.html
+  - name: .
+  - uid: Application.Interfaces.Services
+    name: Services
+    href: Application.Interfaces.Services.html
+  - name: .
+  - uid: Application.Interfaces.Services.Hub
+    name: Hub
+    href: Application.Interfaces.Services.Hub.html

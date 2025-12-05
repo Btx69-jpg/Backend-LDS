@@ -1,0 +1,566 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto
+  commentId: T:Application.DTOs.Filters.FilterMatchInvitesDto
+  id: FilterMatchInvitesDto
+  parent: Application.DTOs.Filters
+  children:
+  - Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+  - Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate
+  - Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+  - Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+  - Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+  langs:
+  - csharp
+  - vb
+  name: FilterMatchInvitesDto
+  nameWithType: FilterMatchInvitesDto
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto
+  type: Class
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: FilterMatchInvitesDto
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public class FilterMatchInvitesDto
+    content.vb: Public Class FilterMatchInvitesDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+  commentId: P:Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+  id: SenderName
+  parent: Application.DTOs.Filters.FilterMatchInvitesDto
+  langs:
+  - csharp
+  - vb
+  name: SenderName
+  nameWithType: FilterMatchInvitesDto.SenderName
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SenderName
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: >-
+      [MinLength(3)]
+
+      [MaxLength(50)]
+
+      public string? SenderName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <MinLength(3)>
+
+      <MaxLength(50)>
+
+      Public Property SenderName As String
+  overload: Application.DTOs.Filters.FilterMatchInvitesDto.SenderName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.MinLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MinLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 50
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+  commentId: P:Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+  id: SenderId
+  parent: Application.DTOs.Filters.FilterMatchInvitesDto
+  langs:
+  - csharp
+  - vb
+  name: SenderId
+  nameWithType: FilterMatchInvitesDto.SenderId
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: SenderId
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public string? SenderId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SenderId As String
+  overload: Application.DTOs.Filters.FilterMatchInvitesDto.SenderId*
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+  commentId: P:Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+  id: MatchInviteId
+  parent: Application.DTOs.Filters.FilterMatchInvitesDto
+  langs:
+  - csharp
+  - vb
+  name: MatchInviteId
+  nameWithType: FilterMatchInvitesDto.MatchInviteId
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchInviteId
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public string? MatchInviteId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MatchInviteId As String
+  overload: Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId*
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+  commentId: P:Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+  id: MinDate
+  parent: Application.DTOs.Filters.FilterMatchInvitesDto
+  langs:
+  - csharp
+  - vb
+  name: MinDate
+  nameWithType: FilterMatchInvitesDto.MinDate
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MinDate
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public DateOnly? MinDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateOnly}
+    content.vb: Public Property MinDate As DateOnly?
+  overload: Application.DTOs.Filters.FilterMatchInvitesDto.MinDate*
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate
+  commentId: P:Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate
+  id: MaxDate
+  parent: Application.DTOs.Filters.FilterMatchInvitesDto
+  langs:
+  - csharp
+  - vb
+  name: MaxDate
+  nameWithType: FilterMatchInvitesDto.MaxDate
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate
+  type: Property
+  source:
+    remote:
+      path: Application/DTOs/Filters/FilterMatchInvitesDto.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MaxDate
+    path: ../Application/DTOs/Filters/FilterMatchInvitesDto.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.DTOs.Filters
+  syntax:
+    content: public DateOnly? MaxDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateOnly}
+    content.vb: Public Property MaxDate As DateOnly?
+  overload: Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate*
+references:
+- uid: Application.DTOs.Filters
+  commentId: N:Application.DTOs.Filters
+  href: Application.html
+  name: Application.DTOs.Filters
+  nameWithType: Application.DTOs.Filters
+  fullName: Application.DTOs.Filters
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.DTOs
+    name: DTOs
+    href: Application.DTOs.html
+  - name: .
+  - uid: Application.DTOs.Filters
+    name: Filters
+    href: Application.DTOs.Filters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.SenderName*
+  commentId: Overload:Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html#Application_DTOs_Filters_FilterMatchInvitesDto_SenderName
+  name: SenderName
+  nameWithType: FilterMatchInvitesDto.SenderName
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.SenderName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.SenderId*
+  commentId: Overload:Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html#Application_DTOs_Filters_FilterMatchInvitesDto_SenderId
+  name: SenderId
+  nameWithType: FilterMatchInvitesDto.SenderId
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.SenderId
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId*
+  commentId: Overload:Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html#Application_DTOs_Filters_FilterMatchInvitesDto_MatchInviteId
+  name: MatchInviteId
+  nameWithType: FilterMatchInvitesDto.MatchInviteId
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MatchInviteId
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MinDate*
+  commentId: Overload:Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html#Application_DTOs_Filters_FilterMatchInvitesDto_MinDate
+  name: MinDate
+  nameWithType: FilterMatchInvitesDto.MinDate
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MinDate
+- uid: System.Nullable{System.DateOnly}
+  commentId: T:System.Nullable{System.DateOnly}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly?
+  nameWithType: DateOnly?
+  fullName: System.DateOnly?
+  spec.csharp:
+  - uid: System.DateOnly
+    name: DateOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  - name: '?'
+  spec.vb:
+  - uid: System.DateOnly
+    name: DateOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate*
+  commentId: Overload:Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate
+  href: Application.DTOs.Filters.FilterMatchInvitesDto.html#Application_DTOs_Filters_FilterMatchInvitesDto_MaxDate
+  name: MaxDate
+  nameWithType: FilterMatchInvitesDto.MaxDate
+  fullName: Application.DTOs.Filters.FilterMatchInvitesDto.MaxDate

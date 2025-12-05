@@ -1,0 +1,1188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Matches
+  commentId: T:Domain.Entities.Matches
+  id: Matches
+  parent: Domain.Entities
+  children:
+  - Domain.Entities.Matches.#ctor
+  - Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics})
+  - Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics},Domain.Entities.Chat)
+  - Domain.Entities.Matches.Chat
+  - Domain.Entities.Matches.Id
+  - Domain.Entities.Matches.IdChat
+  - Domain.Entities.Matches.IsCompetive
+  - Domain.Entities.Matches.MatchDate
+  - Domain.Entities.Matches.MatchStatus
+  - Domain.Entities.Matches.Pitch
+  - Domain.Entities.Matches.Teams
+  - Domain.Entities.Matches.TimeStart
+  - Domain.Entities.Matches.idPitch
+  langs:
+  - csharp
+  - vb
+  name: Matches
+  nameWithType: Matches
+  fullName: Domain.Entities.Matches
+  type: Class
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Matches
+    path: ../Domain/Entities/Matches.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  syntax:
+    content: public class Matches
+    content.vb: Public Class Matches
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Domain.Entities.Matches.Id
+  commentId: P:Domain.Entities.Matches.Id
+  id: Id
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Matches.Id
+  fullName: Domain.Entities.Matches.Id
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Id
+    path: ../Domain/Entities/Matches.cs
+    startLine: 17
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O identificador único (GUID) da Partida.
+
+    Serve como a chave primária da entidade.
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key>
+
+      Public Property Id As Guid
+  overload: Domain.Entities.Matches.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Matches.MatchStatus
+  commentId: P:Domain.Entities.Matches.MatchStatus
+  id: MatchStatus
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: MatchStatus
+  nameWithType: Matches.MatchStatus
+  fullName: Domain.Entities.Matches.MatchStatus
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchStatus
+    path: ../Domain/Entities/Matches.cs
+    startLine: 24
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O estado atual da partida (Agendada, A Decorrer, Finalizada, etc.).
+
+    Padrão: [MatchStatus.SCHEDULED].
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public MatchStatus MatchStatus { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.MatchStatus
+    content.vb: >-
+      <Required>
+
+      Public Property MatchStatus As MatchStatus
+  overload: Domain.Entities.Matches.MatchStatus*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Matches.Teams
+  commentId: P:Domain.Entities.Matches.Teams
+  id: Teams
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Teams
+  nameWithType: Matches.Teams
+  fullName: Domain.Entities.Matches.Teams
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Teams
+    path: ../Domain/Entities/Matches.cs
+    startLine: 31
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Coleção de estatísticas das equipas que participam nesta partida.
+
+    (Geralmente haverá 2 entradas nesta coleção).
+  example: []
+  syntax:
+    content: public ICollection<TeamStatistics> Teams { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Domain.Entities.TeamStatistics}
+    content.vb: Public Property Teams As ICollection(Of TeamStatistics)
+  overload: Domain.Entities.Matches.Teams*
+- uid: Domain.Entities.Matches.MatchDate
+  commentId: P:Domain.Entities.Matches.MatchDate
+  id: MatchDate
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: MatchDate
+  nameWithType: Matches.MatchDate
+  fullName: Domain.Entities.Matches.MatchDate
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: MatchDate
+    path: ../Domain/Entities/Matches.cs
+    startLine: 36
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: A data e hora planeada para a realização da partida.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public DateTime MatchDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <Required>
+
+      Public Property MatchDate As Date
+  overload: Domain.Entities.Matches.MatchDate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Matches.TimeStart
+  commentId: P:Domain.Entities.Matches.TimeStart
+  id: TimeStart
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: TimeStart
+  nameWithType: Matches.TimeStart
+  fullName: Domain.Entities.Matches.TimeStart
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: TimeStart
+    path: ../Domain/Entities/Matches.cs
+    startLine: 43
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    O carimbo de data e hora em que a partida efetivamente começou.
+
+    É nulo se a partida ainda não tiver iniciado.
+  example: []
+  syntax:
+    content: public DateTime? TimeStart { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property TimeStart As Date?
+  overload: Domain.Entities.Matches.TimeStart*
+- uid: Domain.Entities.Matches.IsCompetive
+  commentId: P:Domain.Entities.Matches.IsCompetive
+  id: IsCompetive
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: IsCompetive
+  nameWithType: Matches.IsCompetive
+  fullName: Domain.Entities.Matches.IsCompetive
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IsCompetive
+    path: ../Domain/Entities/Matches.cs
+    startLine: 49
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: >-
+    Flag que indica se o jogo é competitivo e conta para o ranking/pontuação global (true)
+
+    ou se é apenas amigável/casual (false).
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public bool IsCompetive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Required>
+
+      Public Property IsCompetive As Boolean
+  overload: Domain.Entities.Matches.IsCompetive*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: Domain.Entities.Matches.Pitch
+  commentId: P:Domain.Entities.Matches.Pitch
+  id: Pitch
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Pitch
+  nameWithType: Matches.Pitch
+  fullName: Domain.Entities.Matches.Pitch
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Pitch
+    path: ../Domain/Entities/Matches.cs
+    startLine: 55
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Entidade de navegação para o local onde a partida será disputada.
+  example: []
+  syntax:
+    content: public Pitch Pitch { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Pitch
+    content.vb: Public Property Pitch As Pitch
+  overload: Domain.Entities.Matches.Pitch*
+- uid: Domain.Entities.Matches.idPitch
+  commentId: P:Domain.Entities.Matches.idPitch
+  id: idPitch
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: idPitch
+  nameWithType: Matches.idPitch
+  fullName: Domain.Entities.Matches.idPitch
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: idPitch
+    path: ../Domain/Entities/Matches.cs
+    startLine: 60
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Chave Estrangeira (FK) para o Local ([Pitch]) da partida.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [ForeignKey("Pitch")]
+
+      public Guid idPitch { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      <ForeignKey("Pitch")>
+
+      Public Property idPitch As Guid
+  overload: Domain.Entities.Matches.idPitch*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pitch
+- uid: Domain.Entities.Matches.Chat
+  commentId: P:Domain.Entities.Matches.Chat
+  id: Chat
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Chat
+  nameWithType: Matches.Chat
+  fullName: Domain.Entities.Matches.Chat
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: Chat
+    path: ../Domain/Entities/Matches.cs
+    startLine: 67
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Entidade de navegação para o Chat associado a esta partida.
+  example: []
+  syntax:
+    content: public Chat Chat { get; set; }
+    parameters: []
+    return:
+      type: Domain.Entities.Chat
+    content.vb: Public Property Chat As Chat
+  overload: Domain.Entities.Matches.Chat*
+- uid: Domain.Entities.Matches.IdChat
+  commentId: P:Domain.Entities.Matches.IdChat
+  id: IdChat
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: IdChat
+  nameWithType: Matches.IdChat
+  fullName: Domain.Entities.Matches.IdChat
+  type: Property
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: IdChat
+    path: ../Domain/Entities/Matches.cs
+    startLine: 72
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Chave Estrangeira (FK) para a Sala de Chat ([Chat]) da partida.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [ForeignKey("Chat")]
+
+      public Guid IdChat { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      <ForeignKey("Chat")>
+
+      Public Property IdChat As Guid
+  overload: Domain.Entities.Matches.IdChat*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Chat
+- uid: Domain.Entities.Matches.#ctor
+  commentId: M:Domain.Entities.Matches.#ctor
+  id: '#ctor'
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Matches()
+  nameWithType: Matches.Matches()
+  fullName: Domain.Entities.Matches.Matches()
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/Matches.cs
+    startLine: 79
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor padrão exigido pelo Entity Framework (EF).
+  example: []
+  syntax:
+    content: public Matches()
+    content.vb: Public Sub New()
+  overload: Domain.Entities.Matches.#ctor*
+  nameWithType.vb: Matches.New()
+  fullName.vb: Domain.Entities.Matches.New()
+  name.vb: New()
+- uid: Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics},Domain.Entities.Chat)
+  commentId: M:Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics},Domain.Entities.Chat)
+  id: '#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics},Domain.Entities.Chat)'
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Matches(DateTime, bool, Guid, List<TeamStatistics>, Chat)
+  nameWithType: Matches.Matches(DateTime, bool, Guid, List<TeamStatistics>, Chat)
+  fullName: Domain.Entities.Matches.Matches(System.DateTime, bool, System.Guid, System.Collections.Generic.List<Domain.Entities.TeamStatistics>, Domain.Entities.Chat)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/Matches.cs
+    startLine: 89
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor para inicializar a partida utilizando o ID do campo (FK) em vez da entidade completa.
+  example: []
+  syntax:
+    content: public Matches(DateTime matchDate, bool isCompetive, Guid idPitch, List<TeamStatistics> teamStatistics, Chat chat)
+    parameters:
+    - id: matchDate
+      type: System.DateTime
+      description: Data e hora do jogo.
+    - id: isCompetive
+      type: System.Boolean
+      description: Indica se o jogo é competitivo.
+    - id: idPitch
+      type: System.Guid
+      description: O ID da Chave Estrangeira do campo.
+    - id: teamStatistics
+      type: System.Collections.Generic.List{Domain.Entities.TeamStatistics}
+      description: A lista de estatísticas das equipas participantes.
+    - id: chat
+      type: Domain.Entities.Chat
+      description: O objeto Chat pré-existente.
+    content.vb: Public Sub New(matchDate As Date, isCompetive As Boolean, idPitch As Guid, teamStatistics As List(Of TeamStatistics), chat As Chat)
+  overload: Domain.Entities.Matches.#ctor*
+  nameWithType.vb: Matches.New(Date, Boolean, Guid, List(Of TeamStatistics), Chat)
+  fullName.vb: Domain.Entities.Matches.New(Date, Boolean, System.Guid, System.Collections.Generic.List(Of Domain.Entities.TeamStatistics), Domain.Entities.Chat)
+  name.vb: New(Date, Boolean, Guid, List(Of TeamStatistics), Chat)
+- uid: Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics})
+  commentId: M:Domain.Entities.Matches.#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics})
+  id: '#ctor(System.DateTime,System.Boolean,System.Guid,System.Collections.Generic.List{Domain.Entities.TeamStatistics})'
+  parent: Domain.Entities.Matches
+  langs:
+  - csharp
+  - vb
+  name: Matches(DateTime, bool, Guid, List<TeamStatistics>)
+  nameWithType: Matches.Matches(DateTime, bool, Guid, List<TeamStatistics>)
+  fullName: Domain.Entities.Matches.Matches(System.DateTime, bool, System.Guid, System.Collections.Generic.List<Domain.Entities.TeamStatistics>)
+  type: Constructor
+  source:
+    remote:
+      path: Domain/Entities/Matches.cs
+      branch: documentacion
+      repo: https://github.com/Btx69-jpg/Backend-LDS.git
+    id: .ctor
+    path: ../Domain/Entities/Matches.cs
+    startLine: 115
+  assemblies:
+  - Domain
+  namespace: Domain.Entities
+  summary: Construtor para inicializar a partida usando apenas o ID do campo e sem a entidade Chat pré-existente.
+  example: []
+  syntax:
+    content: public Matches(DateTime matchDate, bool isCompetive, Guid idPitch, List<TeamStatistics> teamStatistics)
+    parameters:
+    - id: matchDate
+      type: System.DateTime
+      description: Data e hora do jogo.
+    - id: isCompetive
+      type: System.Boolean
+      description: Indica se o jogo é competitivo.
+    - id: idPitch
+      type: System.Guid
+      description: O ID da Chave Estrangeira do campo.
+    - id: teamStatistics
+      type: System.Collections.Generic.List{Domain.Entities.TeamStatistics}
+      description: A lista de estatísticas das equipas participantes.
+    content.vb: Public Sub New(matchDate As Date, isCompetive As Boolean, idPitch As Guid, teamStatistics As List(Of TeamStatistics))
+  overload: Domain.Entities.Matches.#ctor*
+  nameWithType.vb: Matches.New(Date, Boolean, Guid, List(Of TeamStatistics))
+  fullName.vb: Domain.Entities.Matches.New(Date, Boolean, System.Guid, System.Collections.Generic.List(Of Domain.Entities.TeamStatistics))
+  name.vb: New(Date, Boolean, Guid, List(Of TeamStatistics))
+references:
+- uid: Domain.Entities
+  commentId: N:Domain.Entities
+  href: Domain.html
+  name: Domain.Entities
+  nameWithType: Domain.Entities
+  fullName: Domain.Entities
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Entities.Matches.Id*
+  commentId: Overload:Domain.Entities.Matches.Id
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_Id
+  name: Id
+  nameWithType: Matches.Id
+  fullName: Domain.Entities.Matches.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.Matches.MatchStatus*
+  commentId: Overload:Domain.Entities.Matches.MatchStatus
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_MatchStatus
+  name: MatchStatus
+  nameWithType: Matches.MatchStatus
+  fullName: Domain.Entities.Matches.MatchStatus
+- uid: Domain.Enums.MatchStatus
+  commentId: T:Domain.Enums.MatchStatus
+  parent: Domain.Enums
+  href: Domain.Enums.MatchStatus.html
+  name: MatchStatus
+  nameWithType: MatchStatus
+  fullName: Domain.Enums.MatchStatus
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Entities.Matches.Teams*
+  commentId: Overload:Domain.Entities.Matches.Teams
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_Teams
+  name: Teams
+  nameWithType: Matches.Teams
+  fullName: Domain.Entities.Matches.Teams
+- uid: System.Collections.Generic.ICollection{Domain.Entities.TeamStatistics}
+  commentId: T:System.Collections.Generic.ICollection{Domain.Entities.TeamStatistics}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<TeamStatistics>
+  nameWithType: ICollection<TeamStatistics>
+  fullName: System.Collections.Generic.ICollection<Domain.Entities.TeamStatistics>
+  nameWithType.vb: ICollection(Of TeamStatistics)
+  fullName.vb: System.Collections.Generic.ICollection(Of Domain.Entities.TeamStatistics)
+  name.vb: ICollection(Of TeamStatistics)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+    href: Domain.Entities.TeamStatistics.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+    href: Domain.Entities.TeamStatistics.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Domain.Entities.Matches.MatchDate*
+  commentId: Overload:Domain.Entities.Matches.MatchDate
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_MatchDate
+  name: MatchDate
+  nameWithType: Matches.MatchDate
+  fullName: Domain.Entities.Matches.MatchDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Domain.Entities.Matches.TimeStart*
+  commentId: Overload:Domain.Entities.Matches.TimeStart
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_TimeStart
+  name: TimeStart
+  nameWithType: Matches.TimeStart
+  fullName: Domain.Entities.Matches.TimeStart
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Matches.IsCompetive*
+  commentId: Overload:Domain.Entities.Matches.IsCompetive
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_IsCompetive
+  name: IsCompetive
+  nameWithType: Matches.IsCompetive
+  fullName: Domain.Entities.Matches.IsCompetive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Domain.Entities.Matches.Pitch*
+  commentId: Overload:Domain.Entities.Matches.Pitch
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_Pitch
+  name: Pitch
+  nameWithType: Matches.Pitch
+  fullName: Domain.Entities.Matches.Pitch
+- uid: Domain.Entities.Pitch
+  commentId: T:Domain.Entities.Pitch
+  parent: Domain.Entities
+  href: Domain.Entities.Pitch.html
+  name: Pitch
+  nameWithType: Pitch
+  fullName: Domain.Entities.Pitch
+- uid: Domain.Entities.Matches.idPitch*
+  commentId: Overload:Domain.Entities.Matches.idPitch
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_idPitch
+  name: idPitch
+  nameWithType: Matches.idPitch
+  fullName: Domain.Entities.Matches.idPitch
+- uid: Domain.Entities.Matches.Chat*
+  commentId: Overload:Domain.Entities.Matches.Chat
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_Chat
+  name: Chat
+  nameWithType: Matches.Chat
+  fullName: Domain.Entities.Matches.Chat
+- uid: Domain.Entities.Chat
+  commentId: T:Domain.Entities.Chat
+  parent: Domain.Entities
+  href: Domain.Entities.Chat.html
+  name: Chat
+  nameWithType: Chat
+  fullName: Domain.Entities.Chat
+- uid: Domain.Entities.Matches.IdChat*
+  commentId: Overload:Domain.Entities.Matches.IdChat
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches_IdChat
+  name: IdChat
+  nameWithType: Matches.IdChat
+  fullName: Domain.Entities.Matches.IdChat
+- uid: Domain.Entities.Matches.#ctor*
+  commentId: Overload:Domain.Entities.Matches.#ctor
+  href: Domain.Entities.Matches.html#Domain_Entities_Matches__ctor
+  name: Matches
+  nameWithType: Matches.Matches
+  fullName: Domain.Entities.Matches.Matches
+  nameWithType.vb: Matches.New
+  fullName.vb: Domain.Entities.Matches.New
+  name.vb: New
+- uid: System.Collections.Generic.List{Domain.Entities.TeamStatistics}
+  commentId: T:System.Collections.Generic.List{Domain.Entities.TeamStatistics}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TeamStatistics>
+  nameWithType: List<TeamStatistics>
+  fullName: System.Collections.Generic.List<Domain.Entities.TeamStatistics>
+  nameWithType.vb: List(Of TeamStatistics)
+  fullName.vb: System.Collections.Generic.List(Of Domain.Entities.TeamStatistics)
+  name.vb: List(Of TeamStatistics)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+    href: Domain.Entities.TeamStatistics.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.TeamStatistics
+    name: TeamStatistics
+    href: Domain.Entities.TeamStatistics.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

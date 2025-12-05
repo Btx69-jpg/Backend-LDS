@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Migrations
+  commentId: N:Infrastructure.Migrations
+  id: Infrastructure.Migrations
+  children:
+  - Infrastructure.Migrations.InitialCreate
+  - Infrastructure.Migrations.MigracaoTeste
+  - Infrastructure.Migrations.phoneFix
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure.Migrations
+  nameWithType: Infrastructure.Migrations
+  fullName: Infrastructure.Migrations
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.Migrations.MigracaoTeste
+  commentId: T:Infrastructure.Migrations.MigracaoTeste
+  href: Infrastructure.Migrations.MigracaoTeste.html
+  name: MigracaoTeste
+  nameWithType: MigracaoTeste
+  fullName: Infrastructure.Migrations.MigracaoTeste
+- uid: Infrastructure.Migrations.InitialCreate
+  commentId: T:Infrastructure.Migrations.InitialCreate
+  href: Infrastructure.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: Infrastructure.Migrations.InitialCreate
+- uid: Infrastructure.Migrations.phoneFix
+  commentId: T:Infrastructure.Migrations.phoneFix
+  href: Infrastructure.Migrations.phoneFix.html
+  name: phoneFix
+  nameWithType: phoneFix
+  fullName: Infrastructure.Migrations.phoneFix
