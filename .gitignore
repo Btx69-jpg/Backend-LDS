@@ -365,3 +365,8 @@ FodyWeavers.xsd
 /Domain/obj
 /Domain/obj/Debug
 
+.aider*
+.env
+.env
+.env
+/LDS-documentation
