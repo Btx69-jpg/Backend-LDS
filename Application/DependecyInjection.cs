@@ -1,4 +1,4 @@
-﻿using Application.Interfaces;
+using Application.Interfaces;
 using Application.Interfaces.Services;
 using Application.Interfaces.Services.Hub;
 using Application.Interfaces.Validators;
@@ -46,6 +46,7 @@ namespace Application
         /// <returns>A coleção de serviços atualizada.</returns>
         private static IServiceCollection AddServices(this IServiceCollection services)
         {
+            // Registra os serviços de domínio e lógica de negócio
             services.AddScoped<ITeamService, TeamService>();
             services.AddScoped<IMatchInviteService, MatchInviteService>();
             services.AddScoped<IMatchService, MatchService>();
@@ -58,24 +59,8 @@ namespace Application
             services.AddScoped<IAuthService, FireBaseAuthService>();
             services.AddScoped<INotificationFirebaseService, NotificationFirebaseService>();
 
+            // Registra os serviços de gestão de estado dos Hubs (Manager Hub Services)
             services.AddManagerHubService();
-
-            return services;
-        }
-
-        /// <summary>
-        /// Regista os serviços de gestão de estado dos Hubs (Manager Hub Services).
-        /// </summary>
-        /// <remarks>
-        /// Estes serviços contêm a lógica pesada de gestão de salas, lobbies e sincronização de estado (ex: quem está pronto para começar o jogo).
-        /// </remarks>
-        /// <param name="services">A coleção de serviços.</param>
-        /// <returns>A coleção de serviços atualizada.</returns>
-        private static IServiceCollection AddManagerHubService(this IServiceCollection services)
-        {
-            services.AddScoped<IManagerStartMatchService, ManagerStartMatchService>();
-            services.AddScoped<IManagerFinishMatchService, ManagerFinishMatchService>();
-            services.AddScoped<IManagerRankMatchMakerService, ManagerRankMatchMakerService>(); 
 
             return services;
         }
@@ -91,6 +76,7 @@ namespace Application
         /// <returns>A coleção de serviços atualizada.</returns>
         private static IServiceCollection AddValidators(this IServiceCollection services)
         {
+            // Registra os validadores da aplicação
             services.AddScoped<IPlayerValidator, PlayerValidator>();
             services.AddScoped<ITeamValidator, TeamValidator>();
             services.AddScoped<IMatchInviteValidator, MatchInviteValidator>();
@@ -102,9 +88,11 @@ namespace Application
             services.AddScoped<IPlayerAuthorizationValidator, PlayerAuthorizationValidator>();
             services.AddScoped<IMembershipValidator, MembershipValidator>();
 
+            // Registra os validadores específicos para operações de Hub em tempo real
             services.AddScoped<IGeralHubValidator, GeralHubValidator>();
             services.AddScoped<IStartMatchHubValidator, StartMatchHubValidator>();
             services.AddScoped<IHubFinshMatchValidator, HubFinshMatchValidator>();
+
             return services;
         }
     }
